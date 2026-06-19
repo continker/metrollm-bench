@@ -1,0 +1,30 @@
+[project]
+name = "metrollm-bench"
+version = "0.1.0"
+description = "Benchmark for evaluating LLMs as transit kiosk intelligence"
+license = {text = "Apache-2.0"}
+authors = [{name = "Remco Hendriks", email = "remco.hendriks@continker.ai"}]
+requires-python = ">=3.12"
+dependencies = [
+    "networkx>=3.4",
+    "httpx>=0.28",
+    "fastapi>=0.115",
+    "uvicorn>=0.34",
+    "openai>=1.60",
+    "pyyaml>=6.0",
+    "pydantic>=2.10",
+    "anthropic>=0.84.0",
+    "python-dotenv>=1.2.2",
+    "itsdangerous>=2.1",
+    "python-multipart>=0.0.20",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+mock-server = "harness.mock_server:main"
+run-bench = "harness.runner:main"
+score-bench = "harness.scorer:main"
+generate-cases = "cases.generator:main"
+build-dashboard = "dashboard.build_data:main"

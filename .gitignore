@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.python-version
+.pytest_cache/
+
+# Environment / secrets
+.env
+
+# Benchmark + analysis outputs
+results/
+
+# GGUFs pulled from HF on demand (not source-of-truth)
+data/mac_models/
+
+# Node / dashboard build
+dashboard/node_modules/
+dashboard/dist/
+dashboard/public/data.json
+
+# OS / editor
+.DS_Store

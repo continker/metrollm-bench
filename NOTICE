@@ -1,0 +1,35 @@
+MetroLLM-Bench
+Copyright 2026 Continker B.V.
+
+This product is licensed under the Apache License, Version 2.0 (the "License");
+see the LICENSE file. The exception is third-party-derived data, described below.
+
+------------------------------------------------------------------------------
+Third-party data
+------------------------------------------------------------------------------
+
+The metro station, line, and coordinate data under data/ (including
+data/systems/ and data/gtfs/) is derived from two kinds of public source:
+
+1. Transit-agency GTFS feeds and official agency information, for fares,
+   operating hours, station lists, and line topology:
+     - MARTA, Atlanta (itsmarta.com)
+     - Doha Metro, Qatar
+     - BART, San Francisco Bay Area (bart.gov)
+     - Taipei MRT (metro.taipei)
+     - Chicago CTA "L" (transitchicago.com, chicago-l.org)
+     - Beijing Subway
+   Factual data such as fares, operating hours, and policies reflects public
+   agency information as of the dates noted in docs/references.md.
+
+2. Wikipedia / Wikimedia, for station lists, geographic coordinates, and line
+   topology (notably the files data/gtfs/*_wiki.json and *_scraped.json, and
+   the per-station coordinates used by data/verify.py).
+
+   Wikipedia content is licensed CC BY-SA 4.0 by its respective authors. The
+   Wikipedia-derived portions of this dataset are redistributed under
+   CC BY-SA 4.0, with attribution to the Wikipedia contributors of the
+   corresponding metro-system articles. The CC BY-SA 4.0 license text is at
+   https://creativecommons.org/licenses/by-sa/4.0/.
+
+------------------------------------------------------------------------------

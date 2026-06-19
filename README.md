@@ -169,3 +169,9 @@ A paper describing the benchmark is under review. This section will be updated w
 The code in this repository is licensed under the Apache License 2.0. See [`LICENSE`](LICENSE). The benchmark cases, ground truth, and framebooks are released under the same terms.
 
 The station, line, and coordinate data under `data/` is derived from public transit-agency GTFS feeds and from Wikipedia. Wikipedia-derived content is CC BY-SA 4.0 by its authors and is redistributed here under CC BY-SA 4.0 (not Apache-2.0), with attribution. See [`NOTICE`](NOTICE) for the data sources.
+
+## About Continker
+
+MetroLLM-Bench is built by [Continker](https://continker.ai), a studio building sovereign AI cloud platforms. The AI infrastructure organizations own and run themselves, on European terms. This benchmark is the public proof that the model layer is ready to own.
+
+Own the model. Own the cloud it runs on.

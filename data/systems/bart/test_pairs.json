@@ -1,0 +1,507 @@
+{
+  "memorizable_pairs": [
+    [
+      "BART-EMBR",
+      "BART-DALY"
+    ],
+    [
+      "BART-RICH",
+      "BART-EMBR"
+    ],
+    [
+      "BART-EMBR",
+      "BART-SFO"
+    ],
+    [
+      "BART-COLS",
+      "BART-OAKL"
+    ],
+    [
+      "BART-DALY",
+      "BART-MLBR"
+    ],
+    [
+      "BART-MCAR",
+      "BART-MONT"
+    ],
+    [
+      "BART-DUBL",
+      "BART-EMBR"
+    ],
+    [
+      "BART-BERY",
+      "BART-DALY"
+    ],
+    [
+      "BART-ANTC",
+      "BART-CIVC"
+    ],
+    [
+      "BART-FRMT",
+      "BART-POWL"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "BART-RICH",
+        "BART-DELN",
+        "BART-NBRK",
+        "BART-DBRK",
+        "BART-ASHB"
+      ],
+      [
+        "BART-COLM",
+        "BART-SSAN",
+        "BART-SANB",
+        "BART-MLBR"
+      ]
+    ],
+    [
+      [
+        "BART-ANTC",
+        "BART-PCTR",
+        "BART-PITT",
+        "BART-CONC"
+      ],
+      [
+        "BART-EMBR",
+        "BART-MONT",
+        "BART-POWL",
+        "BART-CIVC"
+      ]
+    ],
+    [
+      [
+        "BART-DUBL",
+        "BART-WDUB",
+        "BART-CAST"
+      ],
+      [
+        "BART-16TH",
+        "BART-24TH",
+        "BART-GLEN",
+        "BART-BALB"
+      ]
+    ],
+    [
+      [
+        "BART-FRMT",
+        "BART-UCTY",
+        "BART-WARM",
+        "BART-BERY"
+      ],
+      [
+        "BART-RICH",
+        "BART-DELN",
+        "BART-ASHB"
+      ]
+    ],
+    [
+      [
+        "BART-LAKE",
+        "BART-FTVL",
+        "BART-COLS",
+        "BART-SANL"
+      ],
+      [
+        "BART-DALY",
+        "BART-COLM",
+        "BART-SSAN"
+      ]
+    ],
+    [
+      [
+        "BART-ANTC",
+        "BART-CONC",
+        "BART-LAFY"
+      ],
+      [
+        "BART-DUBL",
+        "BART-WDUB",
+        "BART-CAST"
+      ]
+    ],
+    [
+      [
+        "BART-FRMT",
+        "BART-UCTY",
+        "BART-HAYW"
+      ],
+      [
+        "BART-ANTC",
+        "BART-PITT",
+        "BART-CONC"
+      ]
+    ],
+    [
+      [
+        "BART-19TH",
+        "BART-12TH",
+        "BART-WOAK"
+      ],
+      [
+        "BART-SFO",
+        "BART-MLBR"
+      ]
+    ],
+    [
+      [
+        "BART-RICH",
+        "BART-ASHB",
+        "BART-DBRK"
+      ],
+      [
+        "BART-BERY",
+        "BART-MLPT",
+        "BART-WARM"
+      ]
+    ],
+    [
+      [
+        "BART-DUBL",
+        "BART-CAST"
+      ],
+      [
+        "BART-RICH",
+        "BART-DELN",
+        "BART-NBRK"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "BART-EMBR",
+    "dest": "BART-DALY",
+    "payment": "clipper_card",
+    "compositions": [
+      [
+        "1 adult",
+        {
+          "adults": 1
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "2 adults",
+        {
+          "adults": 2
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 adult + 1 child",
+        {
+          "adults": 1,
+          "children": 1
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 adult + 2 children",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 adult + 3 children (1 pays)",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "2 adults + 3 children",
+        {
+          "adults": 2,
+          "children": 3
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 senior",
+        {
+          "seniors": 1
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "2 seniors",
+        {
+          "seniors": 2
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 disabled",
+        {
+          "disabled": 1
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 adult + 1 senior + 1 disabled",
+        {
+          "adults": 1,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "3 adults",
+        {
+          "adults": 3
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "1 senior + 1 disabled + 2 children",
+        {
+          "seniors": 1,
+          "disabled": 1,
+          "children": 2
+        },
+        "single",
+        "clipper_card"
+      ],
+      [
+        "2 adults + 2 children + 1 senior + 1 disabled",
+        {
+          "adults": 2,
+          "children": 2,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "clipper_card"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-embarcadero",
+      "BART-RICH",
+      "BART-MONT"
+    ],
+    [
+      "sc-macarthur",
+      "BART-RICH",
+      "BART-EMBR"
+    ],
+    [
+      "sc-12th-st",
+      "BART-MCAR",
+      "BART-LAKE"
+    ],
+    [
+      "sc-bay-fair",
+      "BART-SANL",
+      "BART-DUBL"
+    ],
+    [
+      "sc-powell",
+      "BART-EMBR",
+      "BART-CIVC"
+    ],
+    [
+      "pm-transbay-tube",
+      "BART-12TH",
+      "BART-EMBR"
+    ],
+    [
+      "pm-yellow-north",
+      "BART-ANTC",
+      "BART-CONC"
+    ],
+    [
+      "pm-dublin-branch",
+      "BART-EMBR",
+      "BART-DUBL"
+    ],
+    [
+      "pm-peninsula",
+      "BART-EMBR",
+      "BART-MLBR"
+    ],
+    [
+      "pm-fremont-south",
+      "BART-FRMT",
+      "BART-BERY"
+    ],
+    [
+      "eq-advisory",
+      "BART-EMBR",
+      "BART-DALY"
+    ],
+    [
+      "eq-service-pause",
+      "BART-12TH",
+      "BART-MONT"
+    ],
+    [
+      "eq-major",
+      "BART-RICH",
+      "BART-SFO"
+    ],
+    [
+      "eq-partial-restore",
+      "BART-RICH",
+      "BART-BERY"
+    ],
+    [
+      "eq-crowd-giants",
+      "BART-EMBR",
+      "BART-DALY"
+    ],
+    [
+      "ls-yellow-full",
+      "BART-ANTC",
+      "BART-MLBR"
+    ],
+    [
+      "ls-blue-partial-east",
+      "BART-DUBL",
+      "BART-DALY"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "BART-EMBR",
+        "BART-MONT",
+        "wheelchair"
+      ],
+      [
+        "BART-RICH",
+        "BART-ASHB",
+        "step_free"
+      ],
+      [
+        "BART-DUBL",
+        "BART-CAST",
+        "elevator_required"
+      ],
+      [
+        "BART-FRMT",
+        "BART-WARM",
+        "wheelchair"
+      ],
+      [
+        "BART-ANTC",
+        "BART-CONC",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "BART-EMBR",
+        "BART-GLEN",
+        "wheelchair"
+      ],
+      [
+        "BART-SANL",
+        "BART-DUBL",
+        "step_free"
+      ],
+      [
+        "BART-MCAR",
+        "BART-DALY",
+        "elevator_required"
+      ],
+      [
+        "BART-FTVL",
+        "BART-HAYW",
+        "wheelchair"
+      ],
+      [
+        "BART-MONT",
+        "BART-BALB",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "BART-EMBR",
+        "BART-CIVC",
+        "wheelchair"
+      ],
+      [
+        "BART-RICH",
+        "BART-BAYF",
+        "step_free"
+      ],
+      [
+        "BART-DUBL",
+        "BART-COLS",
+        "elevator_required"
+      ],
+      [
+        "BART-MONT",
+        "BART-16TH",
+        "wheelchair"
+      ],
+      [
+        "BART-DALY",
+        "BART-24TH",
+        "step_free"
+      ]
+    ]
+  },
+  "tolerances": {
+    "fare": 1.0,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "BART",
+  "closed_station_name": "Nonexistent Station",
+  "main_line": "red",
+  "cat_b_freetext_balance": [
+    {
+      "id": "clipper-low-balance",
+      "origin": "BART-EMBR",
+      "dest": "BART-BALB",
+      "passengers": {
+        "adults": 1
+      },
+      "payment_method": "clipper_card",
+      "given_balance": 1.2,
+      "currency_symbol": "$",
+      "freetext": "My Clipper card only has $1.20 on it. Can I still make this trip?",
+      "advisory_must_mention": [
+        "add fare",
+        "clipper"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+framebook:
+  org_name: "Qatar Rail"
+  full_name: "Qatar Railways Company"
+  primary_language: en
+  secondary_languages: ["ar"]
+  currency_symbol: "QR"
+  currency_code: "QAR"
+  fare_display_format: "QR X"
+  terminology:
+    smartcard: "Travel Card"
+    smartcard_premium: "Gold Travel Card"
+    contactless: "Contactless payment"
+    reduced_fare: null
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+    standard_class: "Standard"
+    gold_class: "Gold"
+    family_carriage: "Family carriage"
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: info
+    sandstorm_warning: warning
+  accessibility_labels:
+    step_free: "Wheelchair Accessible"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+    - class_selector
+  operating_hours:
+    default: "06:00-23:00"
+    weekday: "06:00-23:00"
+    friday: "14:00-23:00"
+    saturday: "06:00-23:00"
+    late_night_headway_min: 10
+    notes: "Friday morning service starts at 14:00 due to prayer hours. Extended hours during major events."
+  cultural_notes:
+    - "Family carriage: reserved for women, children, and families. Solo male passengers are not permitted in the family carriage."
+    - "No eating or drinking is allowed on trains or in stations."
+    - "Photography inside trains and stations requires a permit from Qatar Rail."
+    - "Modest dress is expected in public areas."
+    - "Gold class carriages offer premium seating and a quieter environment."

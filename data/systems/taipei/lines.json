@@ -1,0 +1,199 @@
+[
+  {
+    "id": "red",
+    "name": "Tamsui-Xinyi Line",
+    "color": "#E3002C",
+    "stations": [
+      "TRTC-TAM",
+      "TRTC-HSL",
+      "TRTC-ZHU",
+      "TRTC-GUA",
+      "TRTC-ZHO",
+      "TRTC-FUX",
+      "TRTC-BTO",
+      "TRTC-QIY",
+      "TRTC-QIL",
+      "TRTC-SHI",
+      "TRTC-MIN",
+      "TRTC-ZHI",
+      "TRTC-SHL",
+      "TRTC-JNT",
+      "TRTC-YUA",
+      "TRTC-MWR",
+      "TRTC-SHU",
+      "TRTC-ZSN",
+      "TRTC-TPM",
+      "TRTC-NTH",
+      "TRTC-CKS",
+      "TRTC-DGM",
+      "TRTC-DAP",
+      "TRTC-DAA",
+      "TRTC-XIA",
+      "TRTC-T101",
+      "TRTC-XSH"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10,
+    "branches": [
+      {
+        "name": "Xinbeitou Branch",
+        "diverges_at": "Beitou",
+        "stations": [
+          "Beitou",
+          "Xinbeitou"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "blue",
+    "name": "Bannan Line",
+    "color": "#0070BD",
+    "stations": [
+      "TRTC-DIN",
+      "TRTC-YNG",
+      "TRTC-TUC",
+      "TRTC-HAI",
+      "TRTC-FEH",
+      "TRTC-FUZ",
+      "TRTC-BQO",
+      "TRTC-XPU",
+      "TRTC-JIA",
+      "TRTC-LOT",
+      "TRTC-XMN",
+      "TRTC-TPM",
+      "TRTC-SHT",
+      "TRTC-ZXS",
+      "TRTC-ZXF",
+      "TRTC-ZXD",
+      "TRTC-SYS",
+      "TRTC-CTH",
+      "TRTC-YCH",
+      "TRTC-HSP",
+      "TRTC-KUN",
+      "TRTC-NKG",
+      "TRTC-NEC"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  },
+  {
+    "id": "green",
+    "name": "Songshan-Xindian Line",
+    "color": "#008659",
+    "stations": [
+      "TRTC-SSN",
+      "TRTC-NAS",
+      "TRTC-TAA",
+      "TRTC-NJF",
+      "TRTC-SJN",
+      "TRTC-ZSN",
+      "TRTC-BEI",
+      "TRTC-XMN",
+      "TRTC-XIA2",
+      "TRTC-CKS",
+      "TRTC-GUT",
+      "TRTC-TAB",
+      "TRTC-GGN",
+      "TRTC-WLG",
+      "TRTC-JME",
+      "TRTC-DPL",
+      "TRTC-QZH",
+      "TRTC-XDO",
+      "TRTC-XDN"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10,
+    "branches": [
+      {
+        "name": "Xiaobitan Branch",
+        "diverges_at": "Qizhang",
+        "stations": [
+          "Qizhang",
+          "Xiaobitan"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "orange",
+    "name": "Zhonghe-Xinlu Line",
+    "color": "#F8B61C",
+    "stations": [
+      "TRTC-LUZ",
+      "TRTC-SSHS",
+      "TRTC-SIHS",
+      "TRTC-SES",
+      "TRTC-DAQ",
+      "TRTC-MWR",
+      "TRTC-ZES",
+      "TRTC-XIT",
+      "TRTC-SJN",
+      "TRTC-ZXS",
+      "TRTC-DGM",
+      "TRTC-GUT",
+      "TRTC-DXI",
+      "TRTC-YOM",
+      "TRTC-JIN",
+      "TRTC-NSJ"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10,
+    "branches": [
+      {
+        "name": "Xinzhuang Branch",
+        "diverges_at": "Daqiaotou",
+        "stations": [
+          "Daqiaotou",
+          "Taipei Bridge",
+          "Cailiao",
+          "Sanchong",
+          "Xianse Temple",
+          "Touqianzhuang",
+          "Xinzhuang",
+          "Fu Jen University",
+          "Danfeng",
+          "Huilong"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "brown",
+    "name": "Wenhu Line",
+    "color": "#C48C31",
+    "stations": [
+      "TRTC-TPZ",
+      "TRTC-MZH",
+      "TRTC-WFC",
+      "TRTC-WFH",
+      "TRTC-XIN2",
+      "TRTC-LIN",
+      "TRTC-LZL",
+      "TRTC-TEB",
+      "TRTC-DAA",
+      "TRTC-ZXF",
+      "TRTC-NJF",
+      "TRTC-ZJHS",
+      "TRTC-SSA",
+      "TRTC-DZH",
+      "TRTC-JIR",
+      "TRTC-XIH",
+      "TRTC-GAN",
+      "TRTC-WEN",
+      "TRTC-NEI",
+      "TRTC-DAP2",
+      "TRTC-HUZ",
+      "TRTC-DON",
+      "TRTC-NSP",
+      "TRTC-NEC"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  }
+]

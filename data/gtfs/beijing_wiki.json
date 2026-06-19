@@ -1,0 +1,2399 @@
+{
+  "lines": [
+    {
+      "id": "1",
+      "name": "Line 1",
+      "color": "#A4343A",
+      "stations": [
+        "Fushouling",
+        "Pingguoyuan",
+        "Gucheng",
+        "Bajiao Amusement Park",
+        "Babaoshan",
+        "Yuquan Lu",
+        "Wukesong",
+        "Wanshou Lu",
+        "Gongzhufen",
+        "Military Museum",
+        "Muxidi",
+        "Nanlishi Lu",
+        "Fuxingmen",
+        "Xidan",
+        "Tian'anmenxi",
+        "Tian'anmendong",
+        "Wangfujing",
+        "Dongdan",
+        "Jianguomen",
+        "Yong'an Li",
+        "Guomao",
+        "Dawang Lu",
+        "Sihui",
+        "Sihuidong",
+        "Gaobeidian",
+        "Communication Univ of China",
+        "Shuang Qiao",
+        "Guaanzhuang",
+        "Bali Qiao",
+        "Tongzhou Beiyuan",
+        "Guoyuan",
+        "Jiukeshu",
+        "Liyuan",
+        "Linheli",
+        "Tu Qiao",
+        "Huazhuang",
+        "Universal Resort"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Line 2",
+      "color": "#004B87",
+      "stations": [
+        "Jishuitan",
+        "Xizhimen",
+        "Chegongzhuang",
+        "Fucheng Men",
+        "Fuxingmen",
+        "Changchun Jie",
+        "Xuanwu Men",
+        "Heping Men",
+        "Qianmen",
+        "Chongwen Men",
+        "Beijing railway",
+        "Jianguomen",
+        "Chaoyang Men",
+        "Dongsi Shitiao",
+        "Dongzhimen",
+        "Yonghegong Lama Temple",
+        "Anding Men",
+        "Gulou Dajie"
+      ],
+      "loop_closure": [
+        "Gulou Dajie",
+        "Jishuitan"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Line 3",
+      "color": "#D90627",
+      "stations": [
+        "Dongsi Shitiao",
+        "Workers' Stadium",
+        "Tuanjiehu",
+        "Chaoyang Park",
+        "Shifoying",
+        "Chaoyang railway",
+        "Yaojiayuan",
+        "Dongbanan",
+        "Dongba",
+        "Dongbabei"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Line 4",
+      "color": "#008C95",
+      "stations": [
+        "Anheqiaobei",
+        "Beigongmen",
+        "Xi Yuan",
+        "Yuanmingyuan Park",
+        "Peking Univ East Gate",
+        "Zhongguancun",
+        "Haidian Huangzhuang",
+        "Renmin Daxue (Renmin Univ.)",
+        "Weigongcun",
+        "Guojia Tushuguan (National Library)",
+        "Dongwuyuan (Beijing Zoo)",
+        "Xizhimen",
+        "Xinjie Kou",
+        "Ping'anli",
+        "Xisi",
+        "Lingjing Hutong",
+        "Xidan",
+        "Xuanwu Men",
+        "Caishi Kou",
+        "Taoranting",
+        "Beijing South railway",
+        "Majiapu",
+        "Jiaomenxi",
+        "Gongyi Xiqiao",
+        "Xingong",
+        "Xihong Men",
+        "Gaomidianbei",
+        "Gaomidiannan",
+        "Zaoyuan",
+        "Qingyuan Lu",
+        "Huangcun Xidajie",
+        "Huangcun railway",
+        "Yihezhuang",
+        "Biomedical Base",
+        "Tiangong Yuan"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Line 5",
+      "color": "#AA0061",
+      "stations": [
+        "Tiantongyuanbei",
+        "Tiantongyuan",
+        "Tiantongyuannan",
+        "Lishui Qiao",
+        "Lishuiqiaonan",
+        "Beiyuanlubei",
+        "Datunludong",
+        "Huixin Xijie Beikou",
+        "Huixin Xijie Nankou",
+        "Heping Xiqiao",
+        "Hepingli Beijie",
+        "Yonghegong Lama Temple",
+        "Beixinqiao",
+        "Zhangzizhong Lu",
+        "Dongsi",
+        "Dengshi Kou",
+        "Dongdan",
+        "Chongwen Men",
+        "Ciqi Kou",
+        "Temple of Heaven East Gate",
+        "Puhuangyu",
+        "Liujiayao",
+        "Songjiazhuang"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Line 6",
+      "color": "#B58500",
+      "stations": [
+        "Jin'anqiao",
+        "Pingguoyuan",
+        "Yangzhuang",
+        "Xihuangcun",
+        "Liaogongzhuang",
+        "Tiancun",
+        "Haidian Wuluju",
+        "Cishou Si",
+        "Huayuan Qiao",
+        "Baishiqiaonan",
+        "Erligou",
+        "Chegongzhuangxi",
+        "Chegongzhuang",
+        "Ping'anli",
+        "Beihaibei",
+        "Nanluogu Xiang",
+        "Dongsi",
+        "Chaoyang Men",
+        "Dongdaqiao",
+        "Hujialou",
+        "Jintai Lu",
+        "Shilipu",
+        "Qingnian Lu",
+        "Dalianpo",
+        "Huangqu",
+        "Changying",
+        "Caofang",
+        "Wuzi Xueyuan Lu",
+        "Tongzhou Beiguan",
+        "Tongyun Men",
+        "Beiyunhexi",
+        "Beiyunhedong",
+        "Haojia Fu",
+        "Dongxia Yuan",
+        "Lucheng",
+        "Luyang"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Line 7",
+      "color": "#FFC56E",
+      "stations": [
+        "Beijing West railway",
+        "Wanzi",
+        "Daguanying",
+        "Guang'anmen Nei",
+        "Niujie",
+        "Caishi Kou",
+        "Hufangqiao",
+        "Zhushikou",
+        "Qiaowan",
+        "Ciqi Kou",
+        "Guangqumen Nei",
+        "Guangqumen Wai",
+        "Shuangjing",
+        "Jiulongshan",
+        "Dajiaoting",
+        "Baiziwan",
+        "Huagong",
+        "Nanlouzi Zhuang",
+        "Happy Valley",
+        "Fatou",
+        "Shuanghe",
+        "Jiaohua Chang",
+        "Huangchang",
+        "Langxinzhuang",
+        "Heizhuanghu",
+        "Wanshengxi",
+        "Wanshengdong",
+        "Qunfang",
+        "Gaoloujin",
+        "Huazhuang",
+        "Universal Resort"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Line 8",
+      "color": "#009B77",
+      "stations": [
+        "Zhuxinzhuang",
+        "Yuzhi Lu",
+        "Pingxi Fu",
+        "Huilongguan Dongdajie",
+        "Huoying",
+        "Yuxin",
+        "Xixiao Kou",
+        "Yongtaizhuang",
+        "Lincuiqiao",
+        "Senlin Gongyuan Nanmen (Forest Park South Gate)",
+        "Aolinpike Gongyuan (Olympic Park)",
+        "Aoti Zhongxin (Olympic Sports Center)",
+        "Beitucheng",
+        "Anhua Qiao",
+        "Andeli Beijie",
+        "Gulou Dajie",
+        "Shichahai",
+        "Nanluogu Xiang",
+        "Zhongguo Meishuguan (National Art Museum)",
+        "Jinyu Hutong",
+        "Wangfujing",
+        "Qianmen",
+        "Zhushikou",
+        "Tianqiao",
+        "Yongdingmenwai",
+        "Muxi Yuan",
+        "Haihutun",
+        "Dahong Men",
+        "Dahongmennan",
+        "Heyi",
+        "Donggaodi",
+        "Huojian Wanyuan",
+        "Wufutang",
+        "Demao",
+        "Yinghai"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Line 9",
+      "color": "#97D700",
+      "stations": [
+        "Guojia Tushuguan (National Library)",
+        "Baishiqiaonan",
+        "Baiduizi",
+        "Military Museum",
+        "Beijing West railway",
+        "Liuliqiaodong",
+        "Liuli Qiao",
+        "Qilizhuang",
+        "Fengtai Dongdajie",
+        "Fengtai Nanlu",
+        "Keyi Lu",
+        "Fengtai Science Park",
+        "Guogongzhuang"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Line 10",
+      "color": "#0092BC",
+      "stations": [
+        "Huoqiying",
+        "Bagou",
+        "Suzhou Jie",
+        "Haidian Huangzhuang",
+        "Zhichun Li",
+        "Zhichun Lu",
+        "Xitucheng",
+        "Mudanyuan",
+        "Jiande Men",
+        "Beitucheng",
+        "Anzhenmen",
+        "Huixin Xijie Nankou",
+        "Shaoyaoju",
+        "Taiyanggong",
+        "Sanyuan Qiao",
+        "Liangma Qiao",
+        "Agricultural Exhibition Center",
+        "Tuanjiehu",
+        "Hujialou",
+        "Jintai Xizhao",
+        "Guomao",
+        "Shuangjing",
+        "Jingsong",
+        "Panjia Yuan",
+        "Shilihe",
+        "Fenzhong Si",
+        "Chengshou Si",
+        "Songjiazhuang",
+        "Shiliuzhuang",
+        "Dahong Men",
+        "Jiaomendong",
+        "Jiaomenxi",
+        "Caoqiao",
+        "Jijiamiao",
+        "Capital Univ. of Economics & Business",
+        "Fengtai railway",
+        "Niwa",
+        "Xiju",
+        "Liuli Qiao",
+        "Lianhua Qiao",
+        "Gongzhufen",
+        "Xidiaoyutai",
+        "Cishou Si",
+        "Chedaogou",
+        "Changchun Qiao"
+      ],
+      "loop_closure": [
+        "Changchun Qiao",
+        "Huoqiying"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Line 11",
+      "color": "#FF8674",
+      "stations": [
+        "Moshikou",
+        "Jin'anqiao",
+        "Beixin'an",
+        "Xinshougang (Shougang Park)"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Line 12",
+      "color": "#9C4F01",
+      "stations": [
+        "Haidian Wuluju",
+        "Sijiqing Qiao",
+        "Landianchang",
+        "Changchun Qiao",
+        "Suzhou Qiao",
+        "Renmin Daxue (Renmin Univ.)",
+        "Dazhong Si",
+        "Jimen Qiao",
+        "Beitaipingzhuang",
+        "Madian Qiao",
+        "Anhua Qiao",
+        "Anzhen Qiao",
+        "Heping Xiqiao",
+        "Guangxi Men",
+        "Xibahe",
+        "Sanyuan Qiao",
+        "Jiangtaixi",
+        "Gaojiayuan",
+        "Tuofangying",
+        "Dongbaxi",
+        "Dongbabei"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Line 13",
+      "color": "#F4DA40",
+      "stations": [
+        "Xizhimen",
+        "Dazhong Si",
+        "Zhichun Lu",
+        "Wudao Kou",
+        "Shangdi",
+        "Qinghe railway",
+        "Xi'erqi",
+        "Longze",
+        "Huilong Guan",
+        "Huoying",
+        "Lishui Qiao",
+        "Bei Yuan",
+        "Wangjingxi",
+        "Shaoyaoju",
+        "Guangxi Men",
+        "Liufang",
+        "Dongzhimen"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Line 14",
+      "color": "#CA9A8E",
+      "stations": [
+        "Zhangguozhuang",
+        "Garden Expo Park",
+        "Dawayao",
+        "Guozhuangzi",
+        "Dajing",
+        "Qilizhuang",
+        "Xiju",
+        "Dongguantou",
+        "Lize Shangwuqu",
+        "Caihuying",
+        "Xitieying",
+        "Jingfengmen",
+        "Beijing South railway",
+        "Taoran Qiao",
+        "Yongdingmenwai",
+        "Jingtai",
+        "Puhuangyu",
+        "Fangzhuang",
+        "Shilihe",
+        "Beijing Univ. of Tech West Gate",
+        "Pingle Yuan",
+        "Jiulongshan",
+        "Dawang Lu",
+        "Hongmiao",
+        "Jintai Lu",
+        "Chaoyang Park",
+        "Zaoying",
+        "Dongfeng Beiqiao",
+        "Jiangtai",
+        "Gaojiayuan",
+        "Wangjing Nan (S)",
+        "Futong",
+        "Wangjing",
+        "Donghuqu",
+        "Laiguangying",
+        "Shangezhuang"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Line 15",
+      "color": "#653279",
+      "stations": [
+        "Qinghua Donglu Xikou",
+        "Liudao Kou",
+        "Beishatan",
+        "Aolinpike Gongyuan (Olympic Park)",
+        "Anli Lu",
+        "Datunludong",
+        "Guanzhuang",
+        "Wangjingxi",
+        "Wangjing",
+        "Wangjingdong",
+        "Cuigezhuang",
+        "Maquanying",
+        "Sunhe",
+        "China Int'l Exhibition Center",
+        "Hualikan",
+        "Houshayu",
+        "Nanfaxin",
+        "Shimen",
+        "Shunyi",
+        "Fengbo"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Line 16",
+      "color": "#6BA539",
+      "stations": [
+        "Bei'anhe",
+        "Wenyang Lu",
+        "Daoxianghu Lu",
+        "Tundian",
+        "Yongfeng",
+        "Yongfengnan",
+        "Xibeiwang",
+        "Malianwa",
+        "Nongda Nanlu",
+        "Xi Yuan",
+        "Wanquanhe Qiao",
+        "Suzhou Jie",
+        "Suzhou Qiao",
+        "Wanshou Si",
+        "Guojia Tushuguan (National Library)",
+        "Erligou",
+        "Ganjia Kou",
+        "Yuyuantan Dongmen (Yuyuantan Park East Gate)",
+        "Muxidi",
+        "Daguanying",
+        "Honglian Nanlu",
+        "Lize Shangwuqu",
+        "Dongguantounan",
+        "Fengtai railway",
+        "Fengtai Nanlu",
+        "Fufengqiao",
+        "Kandan",
+        "Yushuzhuang",
+        "Hongtaizhuang",
+        "Wanpingcheng"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Line 17",
+      "color": "#00ABAB",
+      "stations": [
+        "Weilaikexuechengbei (Future Science City North)",
+        "Weilaikexuecheng (Future Science City)",
+        "Tiantongyuandong",
+        "Qingheying",
+        "Hongjunying",
+        "Wangjingxi",
+        "Taiyanggong",
+        "Xibahe",
+        "Zuojiazhuang",
+        "Workers' Stadium",
+        "Dongdaqiao",
+        "Yong'an Li",
+        "Guangqumen Wai",
+        "Panjiayuanxi",
+        "Shilihe",
+        "Zhoujiazhuang",
+        "Shibalidian",
+        "Beishenshu",
+        "Ciqubei",
+        "Ciqu",
+        "Jiahuihu"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Line 18",
+      "color": "#685BC7",
+      "stations": [
+        "Malianwa",
+        "Shangdi Software Park",
+        "Dongbeiwang",
+        "Longzexi",
+        "Huilongguan Xidajie",
+        "Wenhualu",
+        "Huilongguan Dongdajie",
+        "Huoyingdong",
+        "Tiantongyuan",
+        "Taipingzhuang",
+        "Tiantongyuandong"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Line 19",
+      "color": "#D3A3C9",
+      "stations": [
+        "Longzexi",
+        "Qinghe Xiaoyingqiao",
+        "Beishatan",
+        "Mudanyuan",
+        "Beitaipingzhuang",
+        "Jishuitan",
+        "Ping'anli",
+        "Taipingqiao",
+        "Fuxingmen",
+        "Niujie",
+        "Guang'anmen Nei",
+        "Jingfengmen",
+        "Caoqiao",
+        "Xinfadi",
+        "Xingong"
+      ]
+    },
+    {
+      "id": "yizhuang",
+      "name": "Yizhuang Line",
+      "color": "#D0006F",
+      "stations": [
+        "Songjiazhuang",
+        "Xiaocun",
+        "Xiaohong Men",
+        "Jiu Gong",
+        "Yizhuang Qiao",
+        "Yizhuang Culture Park",
+        "Wanyuan Jie",
+        "Rongjing Dongjie",
+        "Rongchang Dongjie",
+        "Tongji Nanlu",
+        "Jinghai Lu",
+        "Ciqunan",
+        "Ciqu",
+        "Yizhuang railway"
+      ]
+    },
+    {
+      "id": "fangshan",
+      "name": "Fangshan Line",
+      "color": "#D86018",
+      "stations": [
+        "Dongguantounan",
+        "Capital Univ. of Economics & Business",
+        "Huaxiang Dongqiao",
+        "Baipenyao",
+        "Guogongzhuang",
+        "Dabaotai",
+        "Daotian",
+        "Changyang",
+        "Libafang",
+        "Guangyang Cheng",
+        "Liangxiang Univ. Town North",
+        "Liangxiang Univ. Town",
+        "Liangxiang Univ. Town West",
+        "Liangxiang Nanguan",
+        "Suzhuang",
+        "Yancundong"
+      ]
+    },
+    {
+      "id": "yanfang",
+      "name": "Yanfang Line",
+      "color": "#D86018",
+      "stations": [
+        "Yancundong",
+        "Zicaowu",
+        "Yancun",
+        "Xingcheng",
+        "Dashihedong",
+        "Magezhuang",
+        "Raole Fu",
+        "Fangshan Chengguan",
+        "Yanshan"
+      ]
+    },
+    {
+      "id": "s1",
+      "name": "Line S1",
+      "color": "#A45A2A",
+      "stations": [
+        "Shichang",
+        "Xiaoyuan",
+        "Liyuanzhuang",
+        "Shang'an",
+        "Qiaohuying",
+        "Sidao Qiao",
+        "Jin'anqiao",
+        "Pingguoyuan"
+      ]
+    },
+    {
+      "id": "changping",
+      "name": "Changping Line",
+      "color": "#D986BA",
+      "stations": [
+        "Changping Xishankou",
+        "Ming Tombs",
+        "Changping",
+        "Changping Dongguan",
+        "Beishaowa",
+        "Nanshao",
+        "Shahe Univ. Park",
+        "Shahe",
+        "Gonghua Cheng",
+        "Zhuxinzhuang",
+        "Life Science Park",
+        "Xi'erqi",
+        "Qinghe railway",
+        "Zhufangbei",
+        "Qinghe Xiaoyingqiao",
+        "Xuezhiyuan",
+        "Liudao Kou",
+        "Xueyuanqiao",
+        "Xitucheng",
+        "Jimen Qiao"
+      ]
+    },
+    {
+      "id": "capital_airport",
+      "name": "Capital Airport Express",
+      "color": "#A192B2",
+      "stations": [
+        "Beixinqiao",
+        "Dongzhimen",
+        "Sanyuan Qiao",
+        "3 Hao Hangzhanlou (Terminal 3)",
+        "2 Hao Hangzhanlou (Terminal 2)"
+      ]
+    },
+    {
+      "id": "daxing_airport",
+      "name": "Daxing Airport Express",
+      "color": "#0049A5",
+      "stations": [
+        "Lize Shangwuqu",
+        "Caoqiao",
+        "Daxing Xincheng",
+        "Daxing Jichang (Daxing Airport)"
+      ]
+    },
+    {
+      "id": "xijiao",
+      "name": "Xijiao Line",
+      "color": "#D22630",
+      "stations": [
+        "Fragrant Hills",
+        "China National Botanical Garden",
+        "Wan'an",
+        "Chapeng",
+        "Summer Palace West Gate",
+        "Bagou"
+      ]
+    }
+  ],
+  "stations": {
+    "Fushouling": {
+      "lat": 39.938694,
+      "lon": 116.165469
+    },
+    "Pingguoyuan": {
+      "lat": 39.926727,
+      "lon": 116.177388
+    },
+    "Gucheng": {
+      "lat": 39.90745,
+      "lon": 116.190337
+    },
+    "Bajiao Amusement Park": {
+      "lat": 39.907442,
+      "lon": 116.212684
+    },
+    "Babaoshan": {
+      "lat": 39.90744,
+      "lon": 116.235948
+    },
+    "Yuquan Lu": {
+      "lat": 39.907433,
+      "lon": 116.252888
+    },
+    "Wukesong": {
+      "lat": 39.907456,
+      "lon": 116.273987
+    },
+    "Wanshou Lu": {
+      "lat": 39.907474,
+      "lon": 116.294765
+    },
+    "Gongzhufen": {
+      "lat": 39.907469,
+      "lon": 116.309919
+    },
+    "Military Museum": {
+      "lat": 39.907422,
+      "lon": 116.321459
+    },
+    "Muxidi": {
+      "lat": 39.907379,
+      "lon": 116.337583
+    },
+    "Nanlishi Lu": {
+      "lat": 39.907234,
+      "lon": 116.352583
+    },
+    "Fuxingmen": {
+      "lat": 39.907242,
+      "lon": 116.356866
+    },
+    "Taipingqiao": {
+      "lat": 39.90889,
+      "lon": 116.35701
+    },
+    "Xidan": {
+      "lat": 39.907383,
+      "lon": 116.374072
+    },
+    "Tian'anmenxi": {
+      "lat": 39.907472,
+      "lon": 116.391278
+    },
+    "Tian'anmendong": {
+      "lat": 39.90778,
+      "lon": 116.401216
+    },
+    "Wangfujing": {
+      "lat": 39.906681,
+      "lon": 116.405186
+    },
+    "Dongdan": {
+      "lat": 39.908255,
+      "lon": 116.419845
+    },
+    "Jianguomen": {
+      "lat": 39.908501,
+      "lon": 116.435806
+    },
+    "Yong'an Li": {
+      "lat": 39.908454,
+      "lon": 116.450497
+    },
+    "Guomao": {
+      "lat": 39.909104,
+      "lon": 116.461841
+    },
+    "Dawang Lu": {
+      "lat": 39.908333,
+      "lon": 116.477778
+    },
+    "Sihui": {
+      "lat": 39.9088,
+      "lon": 116.4955
+    },
+    "Sihuidong": {
+      "lat": 39.9085,
+      "lon": 116.5157
+    },
+    "Gaobeidian": {
+      "lat": 39.909448,
+      "lon": 116.531421
+    },
+    "Communication Univ of China": {
+      "lat": 39.9092,
+      "lon": 116.555
+    },
+    "Shuang Qiao": {
+      "lat": 39.910139,
+      "lon": 116.576709
+    },
+    "Guaanzhuang": {
+      "lat": 39.9092,
+      "lon": 116.599
+    },
+    "Bali Qiao": {
+      "lat": 39.906532,
+      "lon": 116.618126
+    },
+    "Tongzhou Beiyuan": {
+      "lat": 39.903864,
+      "lon": 116.637252
+    },
+    "Guoyuan": {
+      "lat": 39.893393,
+      "lon": 116.646606
+    },
+    "Jiukeshu": {
+      "lat": 39.890278,
+      "lon": 116.657533
+    },
+    "Liyuan": {
+      "lat": 39.8834,
+      "lon": 116.6692
+    },
+    "Linheli": {
+      "lat": 39.8754,
+      "lon": 116.6787
+    },
+    "Tu Qiao": {
+      "lat": 39.871689,
+      "lon": 116.686083
+    },
+    "Huazhuang": {
+      "lat": 39.855366,
+      "lon": 116.689106
+    },
+    "Universal Resort": {
+      "lat": 39.847936,
+      "lon": 116.673142
+    },
+    "Zhangguozhuang": {
+      "lat": 39.8581,
+      "lon": 116.187193
+    },
+    "Jishuitan": {
+      "lat": 39.948653,
+      "lon": 116.373126
+    },
+    "Xizhimen": {
+      "lat": 39.9405,
+      "lon": 116.355
+    },
+    "Chegongzhuang": {
+      "lat": 39.932347,
+      "lon": 116.355728
+    },
+    "Fucheng Men": {
+      "lat": 39.9235,
+      "lon": 116.356
+    },
+    "Changchun Jie": {
+      "lat": 39.899433,
+      "lon": 116.363355
+    },
+    "Xuanwu Men": {
+      "lat": 39.8997,
+      "lon": 116.3743
+    },
+    "Heping Men": {
+      "lat": 39.900098,
+      "lon": 116.384209
+    },
+    "Qianmen": {
+      "lat": 39.898653,
+      "lon": 116.391659
+    },
+    "Chongwen Men": {
+      "lat": 39.9011,
+      "lon": 116.417
+    },
+    "Beijing railway": {
+      "lat": 39.9023,
+      "lon": 116.421
+    },
+    "Chaoyang Men": {
+      "lat": 39.9241,
+      "lon": 116.4329
+    },
+    "Dongsi Shitiao": {
+      "lat": 39.933801,
+      "lon": 116.434133
+    },
+    "Dongzhimen": {
+      "lat": 39.941626,
+      "lon": 116.435842
+    },
+    "Yonghegong Lama Temple": {
+      "lat": 39.9493,
+      "lon": 116.4171
+    },
+    "Anding Men": {
+      "lat": 39.949167,
+      "lon": 116.408333
+    },
+    "Gulou Dajie": {
+      "lat": 39.949,
+      "lon": 116.3938
+    },
+    "Workers' Stadium": {
+      "lat": 39.932233,
+      "lon": 116.44377
+    },
+    "Tuanjiehu": {
+      "lat": 39.933747,
+      "lon": 116.461806
+    },
+    "Chaoyang Park": {
+      "lat": 39.9337,
+      "lon": 116.4783
+    },
+    "Shifoying": {
+      "lat": 39.934426,
+      "lon": 116.493011
+    },
+    "Chaoyang railway": {
+      "lat": 39.94303,
+      "lon": 116.50038
+    },
+    "Yaojiayuan": {
+      "lat": 39.94654,
+      "lon": 116.521177
+    },
+    "Dongbanan": {
+      "lat": 39.951104,
+      "lon": 116.541112
+    },
+    "Dongba": {
+      "lat": 39.963767,
+      "lon": 116.541293
+    },
+    "Dongbabei": {
+      "lat": 39.97468,
+      "lon": 116.55127
+    },
+    "Anheqiaobei": {
+      "lat": 40.012195,
+      "lon": 116.269956
+    },
+    "Beigongmen": {
+      "lat": 40.002373,
+      "lon": 116.277647
+    },
+    "Xi Yuan": {
+      "lat": 39.99694,
+      "lon": 116.2847
+    },
+    "Yuanmingyuan Park": {
+      "lat": 39.999662,
+      "lon": 116.310186
+    },
+    "Peking Univ East Gate": {
+      "lat": 39.992212,
+      "lon": 116.315842
+    },
+    "Zhongguancun": {
+      "lat": 39.983991,
+      "lon": 116.316467
+    },
+    "Haidian Huangzhuang": {
+      "lat": 39.975996,
+      "lon": 116.317564
+    },
+    "Renmin Daxue (Renmin Univ.)": {
+      "lat": 39.966956,
+      "lon": 116.321367
+    },
+    "Weigongcun": {
+      "lat": 39.957904,
+      "lon": 116.32322
+    },
+    "Guojia Tushuguan (National Library)": {
+      "lat": 39.943114,
+      "lon": 116.32519
+    },
+    "Dongwuyuan (Beijing Zoo)": {
+      "lat": 39.93825,
+      "lon": 116.339031
+    },
+    "Xinjie Kou": {
+      "lat": 39.9405,
+      "lon": 116.3673
+    },
+    "Ping'anli": {
+      "lat": 39.9338,
+      "lon": 116.3729
+    },
+    "Xisi": {
+      "lat": 39.9249,
+      "lon": 116.3737
+    },
+    "Lingjing Hutong": {
+      "lat": 39.9161,
+      "lon": 116.3737
+    },
+    "Caishi Kou": {
+      "lat": 39.889296,
+      "lon": 116.374425
+    },
+    "Taoranting": {
+      "lat": 39.8771,
+      "lon": 116.3682
+    },
+    "Beijing South railway": {
+      "lat": 39.865833,
+      "lon": 116.376389
+    },
+    "Majiapu": {
+      "lat": 39.8532,
+      "lon": 116.3714
+    },
+    "Jiaomenxi": {
+      "lat": 39.8458,
+      "lon": 116.3712
+    },
+    "Gongyi Xiqiao": {
+      "lat": 39.835833,
+      "lon": 116.370833
+    },
+    "Xingong": {
+      "lat": 39.812592,
+      "lon": 116.365549
+    },
+    "Xihong Men": {
+      "lat": 39.7898,
+      "lon": 116.328689
+    },
+    "Gaomidianbei": {
+      "lat": 39.773547,
+      "lon": 116.330787
+    },
+    "Gaomidiannan": {
+      "lat": 39.763489,
+      "lon": 116.331605
+    },
+    "Zaoyuan": {
+      "lat": 39.753458,
+      "lon": 116.332204
+    },
+    "Qingyuan Lu": {
+      "lat": 39.742724,
+      "lon": 116.332513
+    },
+    "Huangcun Xidajie": {
+      "lat": 39.732361,
+      "lon": 116.33295
+    },
+    "Huangcun railway": {
+      "lat": 39.720189,
+      "lon": 116.331651
+    },
+    "Yihezhuang": {
+      "lat": 39.712387,
+      "lon": 116.319079
+    },
+    "Biomedical Base": {
+      "lat": 39.68651,
+      "lon": 116.321662
+    },
+    "Tiangong Yuan": {
+      "lat": 39.670342,
+      "lon": 116.319932
+    },
+    "Tiantongyuanbei": {
+      "lat": 40.083552,
+      "lon": 116.41315
+    },
+    "Tiantongyuan": {
+      "lat": 40.075222,
+      "lon": 116.412759
+    },
+    "Tiantongyuannan": {
+      "lat": 40.066458,
+      "lon": 116.412661
+    },
+    "Lishui Qiao": {
+      "lat": 40.053032,
+      "lon": 116.41235
+    },
+    "Lishuiqiaonan": {
+      "lat": 40.041956,
+      "lon": 116.414496
+    },
+    "Beiyuanlubei": {
+      "lat": 40.030436,
+      "lon": 116.418089
+    },
+    "Datunludong": {
+      "lat": 40.003841,
+      "lon": 116.417377
+    },
+    "Huixin Xijie Beikou": {
+      "lat": 39.9879,
+      "lon": 116.417
+    },
+    "Huixin Xijie Nankou": {
+      "lat": 39.977121,
+      "lon": 116.417537
+    },
+    "Heping Xiqiao": {
+      "lat": 39.9684,
+      "lon": 116.418
+    },
+    "Hepingli Beijie": {
+      "lat": 39.9587,
+      "lon": 116.4185
+    },
+    "Beixinqiao": {
+      "lat": 39.9408,
+      "lon": 116.4169
+    },
+    "Zhangzizhong Lu": {
+      "lat": 39.9337,
+      "lon": 116.4172
+    },
+    "Dongsi": {
+      "lat": 39.92437,
+      "lon": 116.417493
+    },
+    "Dengshi Kou": {
+      "lat": 39.9171,
+      "lon": 116.4178
+    },
+    "Ciqi Kou": {
+      "lat": 39.893172,
+      "lon": 116.41994
+    },
+    "Temple of Heaven East Gate": {
+      "lat": 39.8825,
+      "lon": 116.4208
+    },
+    "Puhuangyu": {
+      "lat": 39.865556,
+      "lon": 116.421944
+    },
+    "Liujiayao": {
+      "lat": 39.8575,
+      "lon": 116.4221
+    },
+    "Songjiazhuang": {
+      "lat": 39.845849,
+      "lon": 116.428368
+    },
+    "Jin'anqiao": {
+      "lat": 39.92362,
+      "lon": 116.163167
+    },
+    "Yangzhuang": {
+      "lat": 39.926729,
+      "lon": 116.182473
+    },
+    "Xihuangcun": {
+      "lat": 39.932502,
+      "lon": 116.200174
+    },
+    "Liaogongzhuang": {
+      "lat": 39.931154,
+      "lon": 116.220863
+    },
+    "Tiancun": {
+      "lat": 39.928138,
+      "lon": 116.246833
+    },
+    "Haidian Wuluju": {
+      "lat": 39.932584,
+      "lon": 116.276531
+    },
+    "Cishou Si": {
+      "lat": 39.9333,
+      "lon": 116.2952
+    },
+    "Huayuan Qiao": {
+      "lat": 39.9324,
+      "lon": 116.3107
+    },
+    "Baishiqiaonan": {
+      "lat": 39.933,
+      "lon": 116.3257
+    },
+    "Erligou": {
+      "lat": 39.931025,
+      "lon": 116.327294
+    },
+    "Chegongzhuangxi": {
+      "lat": 39.931098,
+      "lon": 116.337992
+    },
+    "Beihaibei": {
+      "lat": 39.933247,
+      "lon": 116.386829
+    },
+    "Nanluogu Xiang": {
+      "lat": 39.933848,
+      "lon": 116.404192
+    },
+    "Dongdaqiao": {
+      "lat": 39.923054,
+      "lon": 116.451657
+    },
+    "Hujialou": {
+      "lat": 39.923337,
+      "lon": 116.461618
+    },
+    "Jintai Lu": {
+      "lat": 39.9229,
+      "lon": 116.4781
+    },
+    "Shilipu": {
+      "lat": 39.921597,
+      "lon": 116.496192
+    },
+    "Qingnian Lu": {
+      "lat": 39.923168,
+      "lon": 116.517429
+    },
+    "Dalianpo": {
+      "lat": 39.924,
+      "lon": 116.564
+    },
+    "Huangqu": {
+      "lat": 39.9242,
+      "lon": 116.5782
+    },
+    "Changying": {
+      "lat": 39.925696,
+      "lon": 116.599722
+    },
+    "Caofang": {
+      "lat": 39.924781,
+      "lon": 116.616067
+    },
+    "Wuzi Xueyuan Lu": {
+      "lat": 39.9269,
+      "lon": 116.6393
+    },
+    "Tongzhou Beiguan": {
+      "lat": 39.917374,
+      "lon": 116.655515
+    },
+    "Tongyun Men": {
+      "lat": 39.909603,
+      "lon": 116.667369
+    },
+    "Beiyunhexi": {
+      "lat": 39.9028,
+      "lon": 116.6899
+    },
+    "Beiyunhedong": {
+      "lat": 39.902006,
+      "lon": 116.701131
+    },
+    "Haojia Fu": {
+      "lat": 39.9024,
+      "lon": 116.7204
+    },
+    "Dongxia Yuan": {
+      "lat": 39.9029,
+      "lon": 116.7362
+    },
+    "Lucheng": {
+      "lat": 39.902652,
+      "lon": 116.747434
+    },
+    "Luyang": {
+      "lat": 39.88749,
+      "lon": 116.75064
+    },
+    "Beijing West railway": {
+      "lat": 39.894914,
+      "lon": 116.322062
+    },
+    "Wanzi": {
+      "lat": 39.888606,
+      "lon": 116.321708
+    },
+    "Daguanying": {
+      "lat": 39.888535,
+      "lon": 116.330051
+    },
+    "Guang'anmen Nei": {
+      "lat": 39.8894,
+      "lon": 116.3574
+    },
+    "Niujie": {
+      "lat": 39.889306,
+      "lon": 116.357361
+    },
+    "Hufangqiao": {
+      "lat": 39.8895,
+      "lon": 116.3847
+    },
+    "Zhushikou": {
+      "lat": 39.8912,
+      "lon": 116.3982
+    },
+    "Qiaowan": {
+      "lat": 39.892725,
+      "lon": 116.408464
+    },
+    "Guangqumen Nei": {
+      "lat": 39.89214,
+      "lon": 116.427299
+    },
+    "Guangqumen Wai": {
+      "lat": 39.8934,
+      "lon": 116.4472
+    },
+    "Shuangjing": {
+      "lat": 39.893479,
+      "lon": 116.460627
+    },
+    "Jiulongshan": {
+      "lat": 39.8927,
+      "lon": 116.4769
+    },
+    "Dajiaoting": {
+      "lat": 39.8932,
+      "lon": 116.4892
+    },
+    "Baiziwan": {
+      "lat": 39.89253,
+      "lon": 116.497768
+    },
+    "Huagong": {
+      "lat": 39.887369,
+      "lon": 116.503439
+    },
+    "Nanlouzi Zhuang": {
+      "lat": 39.8748,
+      "lon": 116.5011
+    },
+    "Happy Valley": {
+      "lat": 39.867,
+      "lon": 116.4998
+    },
+    "Fatou": {
+      "lat": 39.864082,
+      "lon": 116.513817
+    },
+    "Shuanghe": {
+      "lat": 39.859691,
+      "lon": 116.526836
+    },
+    "Jiaohua Chang": {
+      "lat": 39.855488,
+      "lon": 116.537247
+    },
+    "Huangchang": {
+      "lat": 39.847828,
+      "lon": 116.547514
+    },
+    "Langxinzhuang": {
+      "lat": 39.855461,
+      "lon": 116.564144
+    },
+    "Heizhuanghu": {
+      "lat": 39.857742,
+      "lon": 116.595418
+    },
+    "Wanshengxi": {
+      "lat": 39.862344,
+      "lon": 116.626618
+    },
+    "Wanshengdong": {
+      "lat": 39.862276,
+      "lon": 116.650774
+    },
+    "Qunfang": {
+      "lat": 39.86226,
+      "lon": 116.664728
+    },
+    "Gaoloujin": {
+      "lat": 39.86189,
+      "lon": 116.6794
+    },
+    "Zhuxinzhuang": {
+      "lat": 40.104297,
+      "lon": 116.313698
+    },
+    "Yuzhi Lu": {
+      "lat": 40.0878,
+      "lon": 116.3265
+    },
+    "Pingxi Fu": {
+      "lat": 40.090607,
+      "lon": 116.350425
+    },
+    "Huilongguan Dongdajie": {
+      "lat": 40.081175,
+      "lon": 116.363025
+    },
+    "Huoying": {
+      "lat": 40.070556,
+      "lon": 116.360278
+    },
+    "Yuxin": {
+      "lat": 40.060039,
+      "lon": 116.347328
+    },
+    "Xixiao Kou": {
+      "lat": 40.0468,
+      "lon": 116.3517
+    },
+    "Yongtaizhuang": {
+      "lat": 40.0377,
+      "lon": 116.3546
+    },
+    "Lincuiqiao": {
+      "lat": 40.0219,
+      "lon": 116.373
+    },
+    "Senlin Gongyuan Nanmen (Forest Park South Gate)": {
+      "lat": 40.01,
+      "lon": 116.3925
+    },
+    "Aolinpike Gongyuan (Olympic Park)": {
+      "lat": 40.002207,
+      "lon": 116.391758
+    },
+    "Aoti Zhongxin (Olympic Sports Center)": {
+      "lat": 39.9851,
+      "lon": 116.3928
+    },
+    "Beitucheng": {
+      "lat": 39.976953,
+      "lon": 116.394193
+    },
+    "Anhua Qiao": {
+      "lat": 39.9686,
+      "lon": 116.3946
+    },
+    "Andeli Beijie": {
+      "lat": 39.957227,
+      "lon": 116.395145
+    },
+    "Shichahai": {
+      "lat": 39.9376,
+      "lon": 116.3962
+    },
+    "Zhongguo Meishuguan (National Art Museum)": {
+      "lat": 39.925274,
+      "lon": 116.410835
+    },
+    "Jinyu Hutong": {
+      "lat": 39.914162,
+      "lon": 116.404865
+    },
+    "Tianqiao": {
+      "lat": 39.880809,
+      "lon": 116.39248
+    },
+    "Yongdingmenwai": {
+      "lat": 39.867435,
+      "lon": 116.399369
+    },
+    "Muxi Yuan": {
+      "lat": 39.858673,
+      "lon": 116.393598
+    },
+    "Haihutun": {
+      "lat": 39.8503,
+      "lon": 116.394
+    },
+    "Dahong Men": {
+      "lat": 39.845383,
+      "lon": 116.399154
+    },
+    "Dahongmennan": {
+      "lat": 39.835265,
+      "lon": 116.394849
+    },
+    "Heyi": {
+      "lat": 39.813069,
+      "lon": 116.395817
+    },
+    "Donggaodi": {
+      "lat": 39.803813,
+      "lon": 116.403484
+    },
+    "Huojian Wanyuan": {
+      "lat": 39.798706,
+      "lon": 116.411861
+    },
+    "Wufutang": {
+      "lat": 39.783533,
+      "lon": 116.417674
+    },
+    "Demao": {
+      "lat": 39.771255,
+      "lon": 116.435509
+    },
+    "Yinghai": {
+      "lat": 39.759301,
+      "lon": 116.442778
+    },
+    "Baiduizi": {
+      "lat": 39.9239,
+      "lon": 116.3258
+    },
+    "Liuliqiaodong": {
+      "lat": 39.8871,
+      "lon": 116.3158
+    },
+    "Liuli Qiao": {
+      "lat": 39.880239,
+      "lon": 116.302808
+    },
+    "Qilizhuang": {
+      "lat": 39.8661,
+      "lon": 116.2921
+    },
+    "Fengtai Dongdajie": {
+      "lat": 39.8551,
+      "lon": 116.2938
+    },
+    "Fengtai Nanlu": {
+      "lat": 39.8404,
+      "lon": 116.2967
+    },
+    "Keyi Lu": {
+      "lat": 39.8324,
+      "lon": 116.2976
+    },
+    "Fengtai Science Park": {
+      "lat": 39.8253,
+      "lon": 116.297
+    },
+    "Guogongzhuang": {
+      "lat": 39.814322,
+      "lon": 116.301889
+    },
+    "Huoqiying": {
+      "lat": 39.965938,
+      "lon": 116.289058
+    },
+    "Bagou": {
+      "lat": 39.974179,
+      "lon": 116.293727
+    },
+    "Suzhou Jie": {
+      "lat": 39.975642,
+      "lon": 116.306332
+    },
+    "Zhichun Li": {
+      "lat": 39.974889,
+      "lon": 116.322695
+    },
+    "Zhichun Lu": {
+      "lat": 39.976476,
+      "lon": 116.33996
+    },
+    "Xitucheng": {
+      "lat": 39.976549,
+      "lon": 116.354098
+    },
+    "Mudanyuan": {
+      "lat": 39.974913,
+      "lon": 116.363064
+    },
+    "Jiande Men": {
+      "lat": 39.976723,
+      "lon": 116.381353
+    },
+    "Anzhenmen": {
+      "lat": 39.977005,
+      "lon": 116.405954
+    },
+    "Shaoyaoju": {
+      "lat": 39.977636,
+      "lon": 116.435914
+    },
+    "Taiyanggong": {
+      "lat": 39.972678,
+      "lon": 116.447469
+    },
+    "Sanyuan Qiao": {
+      "lat": 39.961508,
+      "lon": 116.456997
+    },
+    "Liangma Qiao": {
+      "lat": 39.949326,
+      "lon": 116.461558
+    },
+    "Agricultural Exhibition Center": {
+      "lat": 39.941344,
+      "lon": 116.461724
+    },
+    "Jintai Xizhao": {
+      "lat": 39.916838,
+      "lon": 116.461743
+    },
+    "Jingsong": {
+      "lat": 39.884387,
+      "lon": 116.461325
+    },
+    "Panjia Yuan": {
+      "lat": 39.875387,
+      "lon": 116.460926
+    },
+    "Shilihe": {
+      "lat": 39.866417,
+      "lon": 116.457983
+    },
+    "Fenzhong Si": {
+      "lat": 39.852227,
+      "lon": 116.453976
+    },
+    "Chengshou Si": {
+      "lat": 39.8459,
+      "lon": 116.4475
+    },
+    "Shiliuzhuang": {
+      "lat": 39.8459,
+      "lon": 116.4141
+    },
+    "Jiaomendong": {
+      "lat": 39.8451,
+      "lon": 116.3855
+    },
+    "Caoqiao": {
+      "lat": 39.845833,
+      "lon": 116.351944
+    },
+    "Jijiamiao": {
+      "lat": 39.844433,
+      "lon": 116.333381
+    },
+    "Capital Univ. of Economics & Business": {
+      "lat": 39.8445,
+      "lon": 116.3202
+    },
+    "Fengtai railway": {
+      "lat": 39.849772,
+      "lon": 116.294567
+    },
+    "Niwa": {
+      "lat": 39.85858,
+      "lon": 116.30427
+    },
+    "Xiju": {
+      "lat": 39.86677,
+      "lon": 116.303819
+    },
+    "Lianhua Qiao": {
+      "lat": 39.8972,
+      "lon": 116.3105
+    },
+    "Xidiaoyutai": {
+      "lat": 39.924,
+      "lon": 116.3001
+    },
+    "Chedaogou": {
+      "lat": 39.9479,
+      "lon": 116.2938
+    },
+    "Changchun Qiao": {
+      "lat": 39.958527,
+      "lon": 116.294255
+    },
+    "Moshikou": {
+      "lat": 39.932339,
+      "lon": 116.14969
+    },
+    "Beixin'an": {
+      "lat": 39.913424,
+      "lon": 116.158449
+    },
+    "Xinshougang (Shougang Park)": {
+      "lat": 39.9082,
+      "lon": 116.1585
+    },
+    "Lize Shangwuqu": {
+      "lat": 39.867957,
+      "lon": 116.336174
+    },
+    "Sijiqing Qiao": {
+      "lat": 39.943732,
+      "lon": 116.267568
+    },
+    "Landianchang": {
+      "lat": 39.95584,
+      "lon": 116.27667
+    },
+    "Suzhou Qiao": {
+      "lat": 39.960351,
+      "lon": 116.301686
+    },
+    "Dazhong Si": {
+      "lat": 39.966612,
+      "lon": 116.345139
+    },
+    "Jimen Qiao": {
+      "lat": 39.966304,
+      "lon": 116.349137
+    },
+    "Beitaipingzhuang": {
+      "lat": 39.96644,
+      "lon": 116.363963
+    },
+    "Madian Qiao": {
+      "lat": 39.96668,
+      "lon": 116.37404
+    },
+    "Anzhen Qiao": {
+      "lat": 39.96724,
+      "lon": 116.40114
+    },
+    "Guangxi Men": {
+      "lat": 39.9684,
+      "lon": 116.4318
+    },
+    "Xibahe": {
+      "lat": 39.965102,
+      "lon": 116.434989
+    },
+    "Jiangtaixi": {
+      "lat": 39.970921,
+      "lon": 116.473398
+    },
+    "Gaojiayuan": {
+      "lat": 39.979253,
+      "lon": 116.482741
+    },
+    "Tuofangying": {
+      "lat": 39.979212,
+      "lon": 116.499542
+    },
+    "Dongbaxi": {
+      "lat": 39.973186,
+      "lon": 116.528728
+    },
+    "Wudao Kou": {
+      "lat": 39.992778,
+      "lon": 116.3375
+    },
+    "Shangdi": {
+      "lat": 40.033,
+      "lon": 116.3202
+    },
+    "Qinghe railway": {
+      "lat": 40.038611,
+      "lon": 116.31
+    },
+    "Xi'erqi": {
+      "lat": 40.053034,
+      "lon": 116.306295
+    },
+    "Longze": {
+      "lat": 40.0709,
+      "lon": 116.3193
+    },
+    "Huilong Guan": {
+      "lat": 40.070833,
+      "lon": 116.336111
+    },
+    "Bei Yuan": {
+      "lat": 40.042997,
+      "lon": 116.434518
+    },
+    "Wangjingxi": {
+      "lat": 39.995724,
+      "lon": 116.449884
+    },
+    "Liufang": {
+      "lat": 39.9582,
+      "lon": 116.4328
+    },
+    "Malianwa": {
+      "lat": 40.032637,
+      "lon": 116.27252
+    },
+    "Shangdi Software Park": {
+      "lat": 40.0426,
+      "lon": 116.280569
+    },
+    "Dongbeiwang": {
+      "lat": 40.051919,
+      "lon": 116.28875
+    },
+    "Longzexi": {
+      "lat": 40.0713,
+      "lon": 116.301781
+    },
+    "Huilongguan Xidajie": {
+      "lat": 40.07755,
+      "lon": 116.32545
+    },
+    "Wenhualu": {
+      "lat": 40.07895,
+      "lon": 116.336061
+    },
+    "Huoyingdong": {
+      "lat": 40.0806,
+      "lon": 116.369533
+    },
+    "Taipingzhuang": {
+      "lat": 40.072719,
+      "lon": 116.420569
+    },
+    "Tiantongyuandong": {
+      "lat": 40.06498,
+      "lon": 116.43592
+    },
+    "Qinghua Donglu Xikou": {
+      "lat": 40.000673,
+      "lon": 116.33953
+    },
+    "Garden Expo Park": {
+      "lat": 39.861328,
+      "lon": 116.201643
+    },
+    "Dawayao": {
+      "lat": 39.8593,
+      "lon": 116.2403
+    },
+    "Guozhuangzi": {
+      "lat": 39.8644,
+      "lon": 116.2532
+    },
+    "Dajing": {
+      "lat": 39.865226,
+      "lon": 116.276061
+    },
+    "Dongguantou": {
+      "lat": 39.86616,
+      "lon": 116.31469
+    },
+    "Caihuying": {
+      "lat": 39.86627,
+      "lon": 116.33667
+    },
+    "Xitieying": {
+      "lat": 39.859738,
+      "lon": 116.349568
+    },
+    "Jingfengmen": {
+      "lat": 39.862723,
+      "lon": 116.365805
+    },
+    "Taoran Qiao": {
+      "lat": 39.8673,
+      "lon": 116.3809
+    },
+    "Jingtai": {
+      "lat": 39.865255,
+      "lon": 116.411027
+    },
+    "Fangzhuang": {
+      "lat": 39.865868,
+      "lon": 116.440244
+    },
+    "Beijing Univ. of Tech West Gate": {
+      "lat": 39.875445,
+      "lon": 116.477319
+    },
+    "Pingle Yuan": {
+      "lat": 39.885275,
+      "lon": 116.477307
+    },
+    "Hongmiao": {
+      "lat": 39.9146,
+      "lon": 116.4721
+    },
+    "Zaoying": {
+      "lat": 39.944132,
+      "lon": 116.474947
+    },
+    "Dongfeng Beiqiao": {
+      "lat": 39.9576,
+      "lon": 116.4867
+    },
+    "Jiangtai": {
+      "lat": 39.9713,
+      "lon": 116.4899
+    },
+    "Wangjing Nan (S)": {
+      "lat": 39.984543,
+      "lon": 116.481691
+    },
+    "Futong": {
+      "lat": 39.9927,
+      "lon": 116.4701
+    },
+    "Wangjing": {
+      "lat": 39.998521,
+      "lon": 116.469409
+    },
+    "Donghuqu": {
+      "lat": 40.0102,
+      "lon": 116.4674
+    },
+    "Laiguangying": {
+      "lat": 40.020588,
+      "lon": 116.466994
+    },
+    "Shangezhuang": {
+      "lat": 40.02716,
+      "lon": 116.478195
+    },
+    "Liudao Kou": {
+      "lat": 40.0011,
+      "lon": 116.3509
+    },
+    "Beishatan": {
+      "lat": 40.0015,
+      "lon": 116.369
+    },
+    "Anli Lu": {
+      "lat": 40.0027,
+      "lon": 116.4078
+    },
+    "Guanzhuang": {
+      "lat": 40.001134,
+      "lon": 116.430947
+    },
+    "Wangjingdong": {
+      "lat": 40.0032,
+      "lon": 116.487105
+    },
+    "Cuigezhuang": {
+      "lat": 40.022201,
+      "lon": 116.492968
+    },
+    "Maquanying": {
+      "lat": 40.033721,
+      "lon": 116.50348
+    },
+    "Sunhe": {
+      "lat": 40.045113,
+      "lon": 116.5347
+    },
+    "China Int'l Exhibition Center": {
+      "lat": 40.07003,
+      "lon": 116.555127
+    },
+    "Hualikan": {
+      "lat": 40.084436,
+      "lon": 116.557593
+    },
+    "Houshayu": {
+      "lat": 40.114127,
+      "lon": 116.564211
+    },
+    "Nanfaxin": {
+      "lat": 40.128478,
+      "lon": 116.609535
+    },
+    "Shimen": {
+      "lat": 40.129802,
+      "lon": 116.641117
+    },
+    "Shunyi": {
+      "lat": 40.129994,
+      "lon": 116.657023
+    },
+    "Fengbo": {
+      "lat": 40.1326,
+      "lon": 116.6847
+    },
+    "Bei'anhe": {
+      "lat": 40.068128,
+      "lon": 116.130428
+    },
+    "Wenyang Lu": {
+      "lat": 40.0685,
+      "lon": 116.1613
+    },
+    "Daoxianghu Lu": {
+      "lat": 40.0689,
+      "lon": 116.1881
+    },
+    "Tundian": {
+      "lat": 40.0685,
+      "lon": 116.215
+    },
+    "Yongfeng": {
+      "lat": 40.071868,
+      "lon": 116.238481
+    },
+    "Yongfengnan": {
+      "lat": 40.065575,
+      "lon": 116.248154
+    },
+    "Xibeiwang": {
+      "lat": 40.048703,
+      "lon": 116.257923
+    },
+    "Nongda Nanlu": {
+      "lat": 40.021398,
+      "lon": 116.282272
+    },
+    "Wanquanhe Qiao": {
+      "lat": 39.983778,
+      "lon": 116.292941
+    },
+    "Wanshou Si": {
+      "lat": 39.946751,
+      "lon": 116.303318
+    },
+    "Ganjia Kou": {
+      "lat": 39.921805,
+      "lon": 116.328378
+    },
+    "Yuyuantan Dongmen (Yuyuantan Park East Gate)": {
+      "lat": 39.912949,
+      "lon": 116.328836
+    },
+    "Honglian Nanlu": {
+      "lat": 39.876294,
+      "lon": 116.330804
+    },
+    "Dongguantounan": {
+      "lat": 39.853142,
+      "lon": 116.316661
+    },
+    "Fufengqiao": {
+      "lat": 39.834921,
+      "lon": 116.280878
+    },
+    "Kandan": {
+      "lat": 39.833599,
+      "lon": 116.26654
+    },
+    "Yushuzhuang": {
+      "lat": 39.837518,
+      "lon": 116.252907
+    },
+    "Hongtaizhuang": {
+      "lat": 39.8462,
+      "lon": 116.2433
+    },
+    "Wanpingcheng": {
+      "lat": 39.847167,
+      "lon": 116.221684
+    },
+    "Weilaikexuechengbei (Future Science City North)": {
+      "lat": 40.12878,
+      "lon": 116.46248
+    },
+    "Weilaikexuecheng (Future Science City)": {
+      "lat": 40.11424,
+      "lon": 116.46043
+    },
+    "Qingheying": {
+      "lat": 40.04996,
+      "lon": 116.43575
+    },
+    "Hongjunying": {
+      "lat": 40.03287,
+      "lon": 116.43557
+    },
+    "Zuojiazhuang": {
+      "lat": 39.94797,
+      "lon": 116.43641
+    },
+    "Panjiayuanxi": {
+      "lat": 39.873872,
+      "lon": 116.444722
+    },
+    "Zhoujiazhuang": {
+      "lat": 39.8551,
+      "lon": 116.47066
+    },
+    "Shibalidian": {
+      "lat": 39.84328,
+      "lon": 116.48947
+    },
+    "Beishenshu": {
+      "lat": 39.81756,
+      "lon": 116.5467
+    },
+    "Ciqubei": {
+      "lat": 39.80861,
+      "lon": 116.57058
+    },
+    "Ciqu": {
+      "lat": 39.804167,
+      "lon": 116.591667
+    },
+    "Jiahuihu": {
+      "lat": 39.79143,
+      "lon": 116.60442
+    },
+    "Qinghe Xiaoyingqiao": {
+      "lat": 40.03357,
+      "lon": 116.337041
+    },
+    "Xinfadi": {
+      "lat": 39.82236,
+      "lon": 116.340065
+    },
+    "Xiaocun": {
+      "lat": 39.834217,
+      "lon": 116.448364
+    },
+    "Xiaohong Men": {
+      "lat": 39.827951,
+      "lon": 116.459226
+    },
+    "Jiu Gong": {
+      "lat": 39.80722,
+      "lon": 116.46083
+    },
+    "Yizhuang Qiao": {
+      "lat": 39.80306,
+      "lon": 116.48028
+    },
+    "Yizhuang Culture Park": {
+      "lat": 39.806944,
+      "lon": 116.490833
+    },
+    "Wanyuan Jie": {
+      "lat": 39.803056,
+      "lon": 116.505556
+    },
+    "Rongjing Dongjie": {
+      "lat": 39.793611,
+      "lon": 116.513333
+    },
+    "Rongchang Dongjie": {
+      "lat": 39.783056,
+      "lon": 116.521667
+    },
+    "Tongji Nanlu": {
+      "lat": 39.773056,
+      "lon": 116.539722
+    },
+    "Jinghai Lu": {
+      "lat": 39.783611,
+      "lon": 116.562222
+    },
+    "Ciqunan": {
+      "lat": 39.794722,
+      "lon": 116.581111
+    },
+    "Yizhuang railway": {
+      "lat": 39.811944,
+      "lon": 116.596111
+    },
+    "Huaxiang Dongqiao": {
+      "lat": 39.827783,
+      "lon": 116.313899
+    },
+    "Baipenyao": {
+      "lat": 39.818147,
+      "lon": 116.30724
+    },
+    "Dabaotai": {
+      "lat": 39.8077,
+      "lon": 116.2915
+    },
+    "Daotian": {
+      "lat": 39.794885,
+      "lon": 116.21884
+    },
+    "Changyang": {
+      "lat": 39.763871,
+      "lon": 116.212692
+    },
+    "Libafang": {
+      "lat": 39.760685,
+      "lon": 116.18927
+    },
+    "Guangyang Cheng": {
+      "lat": 39.748,
+      "lon": 116.185
+    },
+    "Liangxiang Univ. Town North": {
+      "lat": 39.729906,
+      "lon": 116.18348
+    },
+    "Liangxiang Univ. Town": {
+      "lat": 39.723159,
+      "lon": 116.176541
+    },
+    "Liangxiang Univ. Town West": {
+      "lat": 39.723157,
+      "lon": 116.156282
+    },
+    "Liangxiang Nanguan": {
+      "lat": 39.723202,
+      "lon": 116.140804
+    },
+    "Suzhuang": {
+      "lat": 39.723188,
+      "lon": 116.125306
+    },
+    "Yancundong": {
+      "lat": 39.729028,
+      "lon": 116.100817
+    },
+    "Zicaowu": {
+      "lat": 39.724606,
+      "lon": 116.08672
+    },
+    "Yancun": {
+      "lat": 39.716731,
+      "lon": 116.080165
+    },
+    "Xingcheng": {
+      "lat": 39.713681,
+      "lon": 116.06137
+    },
+    "Dashihedong": {
+      "lat": 39.709893,
+      "lon": 116.039906
+    },
+    "Magezhuang": {
+      "lat": 39.705103,
+      "lon": 116.016606
+    },
+    "Raole Fu": {
+      "lat": 39.701471,
+      "lon": 116.006103
+    },
+    "Fangshan Chengguan": {
+      "lat": 39.706061,
+      "lon": 115.989599
+    },
+    "Yanshan": {
+      "lat": 39.719615,
+      "lon": 115.973395
+    },
+    "Shichang": {
+      "lat": 39.889378,
+      "lon": 116.100334
+    },
+    "Xiaoyuan": {
+      "lat": 39.890465,
+      "lon": 116.114443
+    },
+    "Liyuanzhuang": {
+      "lat": 39.89578,
+      "lon": 116.123254
+    },
+    "Shang'an": {
+      "lat": 39.905138,
+      "lon": 116.122225
+    },
+    "Qiaohuying": {
+      "lat": 39.912383,
+      "lon": 116.125809
+    },
+    "Sidao Qiao": {
+      "lat": 39.91603,
+      "lon": 116.13401
+    },
+    "Changping Xishankou": {
+      "lat": 40.244624,
+      "lon": 116.195371
+    },
+    "Ming Tombs": {
+      "lat": 40.240255,
+      "lon": 116.207729
+    },
+    "Changping": {
+      "lat": 40.22055,
+      "lon": 116.23359
+    },
+    "Changping Dongguan": {
+      "lat": 40.221726,
+      "lon": 116.262059
+    },
+    "Beishaowa": {
+      "lat": 40.222001,
+      "lon": 116.281949
+    },
+    "Nanshao": {
+      "lat": 40.207492,
+      "lon": 116.287534
+    },
+    "Shahe Univ. Park": {
+      "lat": 40.164666,
+      "lon": 116.280465
+    },
+    "Shahe": {
+      "lat": 40.148278,
+      "lon": 116.288865
+    },
+    "Gonghua Cheng": {
+      "lat": 40.130836,
+      "lon": 116.293701
+    },
+    "Life Science Park": {
+      "lat": 40.09479,
+      "lon": 116.29423
+    },
+    "Zhufangbei": {
+      "lat": 40.03457,
+      "lon": 116.32467
+    },
+    "Xuezhiyuan": {
+      "lat": 40.01393,
+      "lon": 116.34584
+    },
+    "Xueyuanqiao": {
+      "lat": 39.98556,
+      "lon": 116.34727
+    },
+    "3 Hao Hangzhanlou (Terminal 3)": {
+      "lat": 40.0542,
+      "lon": 116.6157
+    },
+    "2 Hao Hangzhanlou (Terminal 2)": {
+      "lat": 40.079444,
+      "lon": 116.592778
+    },
+    "Daxing Xincheng": {
+      "lat": 39.73121,
+      "lon": 116.359549
+    },
+    "Daxing Jichang (Daxing Airport)": {
+      "lat": 39.51249,
+      "lon": 116.41071
+    },
+    "Fragrant Hills": {
+      "lat": 39.994056,
+      "lon": 116.204491
+    },
+    "China National Botanical Garden": {
+      "lat": 39.993582,
+      "lon": 116.214853
+    },
+    "Wan'an": {
+      "lat": 39.984001,
+      "lon": 116.231977
+    },
+    "Chapeng": {
+      "lat": 39.982113,
+      "lon": 116.2481
+    },
+    "Summer Palace West Gate": {
+      "lat": 39.985697,
+      "lon": 116.263248
+    }
+  }
+}

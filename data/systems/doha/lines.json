@@ -1,0 +1,81 @@
+[
+  {
+    "id": "red",
+    "name": "Red Line (Al Wakra Line)",
+    "color": "#CC0000",
+    "stations": [
+      "DOHA-LUS",
+      "DOHA-QU",
+      "DOHA-LEG",
+      "DOHA-KAT",
+      "DOHA-QAS",
+      "DOHA-DEC",
+      "DOHA-WBQ",
+      "DOHA-COR",
+      "DOHA-BID",
+      "DOHA-MSH",
+      "DOHA-DAJ",
+      "DOHA-UMG",
+      "DOHA-MAQ",
+      "DOHA-OQB",
+      "DOHA-FRZ",
+      "DOHA-RBF",
+      "DOHA-WKR"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10,
+    "branches": [
+      {
+        "name": "Airport Branch",
+        "diverges_at": "Oqba Ibn Nafie",
+        "stations": [
+          "Oqba Ibn Nafie",
+          "Hamad International Airport"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "green",
+    "name": "Green Line (Education Line)",
+    "color": "#00A651",
+    "stations": [
+      "DOHA-MAN",
+      "DOHA-MSH",
+      "DOHA-BID",
+      "DOHA-WHP",
+      "DOHA-HHO",
+      "DOHA-MES",
+      "DOHA-RAQ",
+      "DOHA-SHA",
+      "DOHA-QNL",
+      "DOHA-EDC",
+      "DOHA-RIF"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  },
+  {
+    "id": "gold",
+    "name": "Gold Line (Historic Line)",
+    "color": "#FFD700",
+    "stations": [
+      "DOHA-RBA",
+      "DOHA-NMU",
+      "DOHA-SWQ",
+      "DOHA-MSH",
+      "DOHA-BNM",
+      "DOHA-SAD",
+      "DOHA-JOA",
+      "DOHA-SUD",
+      "DOHA-WAB",
+      "DOHA-SPC",
+      "DOHA-AZZ"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  }
+]

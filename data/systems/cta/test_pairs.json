@@ -1,0 +1,477 @@
+{
+  "memorizable_pairs": [
+    [
+      "CTA-ORD",
+      "CTA-CLK"
+    ],
+    [
+      "CTA-MID",
+      "CTA-CLK"
+    ],
+    [
+      "CTA-HOW",
+      "CTA-95D"
+    ],
+    [
+      "CTA-ORD",
+      "CTA-FPK"
+    ],
+    [
+      "CTA-KIM",
+      "CTA-CLK"
+    ],
+    [
+      "CTA-HLK",
+      "CTA-RSV"
+    ],
+    [
+      "CTA-MID",
+      "CTA-RSV"
+    ],
+    [
+      "CTA-LIN",
+      "CTA-CLK"
+    ],
+    [
+      "CTA-ORD",
+      "CTA-MID"
+    ],
+    [
+      "CTA-HOW",
+      "CTA-CLK"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "CTA-HOW",
+        "CTA-JRV",
+        "CTA-LYL",
+        "CTA-GRN",
+        "CTA-THN"
+      ],
+      [
+        "CTA-JEF",
+        "CTA-LOG",
+        "CTA-FPK"
+      ]
+    ],
+    [
+      [
+        "CTA-95D",
+        "CTA-CRM"
+      ],
+      [
+        "CTA-HLK",
+        "CTA-OAK",
+        "CTA-CON"
+      ]
+    ],
+    [
+      [
+        "CTA-ORD",
+        "CTA-ROS",
+        "CTA-CUM"
+      ],
+      [
+        "CTA-KIM",
+        "CTA-FRA",
+        "CTA-WBR"
+      ]
+    ],
+    [
+      [
+        "CTA-MID",
+        "CTA-PUL",
+        "CTA-KDZ"
+      ],
+      [
+        "CTA-LIN",
+        "CTA-DVS"
+      ]
+    ],
+    [
+      [
+        "CTA-54C",
+        "CTA-CIC",
+        "CTA-CLP"
+      ],
+      [
+        "CTA-HOW",
+        "CTA-JRV",
+        "CTA-95D"
+      ]
+    ],
+    [
+      [
+        "CTA-HLK",
+        "CTA-OAK",
+        "CTA-ASH"
+      ],
+      [
+        "CTA-MID",
+        "CTA-PUL"
+      ]
+    ],
+    [
+      [
+        "CTA-DMP",
+        "CTA-OKT"
+      ],
+      [
+        "CTA-ORD",
+        "CTA-ROS",
+        "CTA-FPK"
+      ]
+    ],
+    [
+      [
+        "CTA-KIM",
+        "CTA-DVY"
+      ],
+      [
+        "CTA-54C",
+        "CTA-CIC"
+      ]
+    ],
+    [
+      [
+        "CTA-HOW",
+        "CTA-BLM"
+      ],
+      [
+        "CTA-MID",
+        "CTA-KDZ"
+      ]
+    ],
+    [
+      [
+        "CTA-ORD",
+        "CTA-JEF",
+        "CTA-LOG"
+      ],
+      [
+        "CTA-HLK",
+        "CTA-OAK"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "CTA-CLK",
+    "dest": "CTA-RSV",
+    "payment": "ventra",
+    "compositions": [
+      [
+        "1 adult (ventra)",
+        {
+          "adults": 1
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 adult (contactless)",
+        {
+          "adults": 1
+        },
+        "single",
+        "contactless"
+      ],
+      [
+        "1 adult (disposable)",
+        {
+          "adults": 1
+        },
+        "single",
+        "disposable_ticket"
+      ],
+      [
+        "2 adults (ventra)",
+        {
+          "adults": 2
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 adult + 1 child",
+        {
+          "adults": 1,
+          "children": 1
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 adult + 2 children",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 adult + 3 children (1 pays)",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 senior",
+        {
+          "seniors": 1
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "2 seniors",
+        {
+          "seniors": 2
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 disabled",
+        {
+          "disabled": 1
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 adult + 1 senior + 1 disabled",
+        {
+          "adults": 1,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "3 adults (contactless)",
+        {
+          "adults": 3
+        },
+        "single",
+        "contactless"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "ventra"
+      ],
+      [
+        "1 senior + 1 disabled + 2 children",
+        {
+          "seniors": 1,
+          "disabled": 1,
+          "children": 2
+        },
+        "single",
+        "ventra"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-clark-lake",
+      "CTA-KIM",
+      "CTA-MID"
+    ],
+    [
+      "sc-belmont",
+      "CTA-HOW",
+      "CTA-95D"
+    ],
+    [
+      "sc-fullerton",
+      "CTA-LIN",
+      "CTA-95D"
+    ],
+    [
+      "sc-roosevelt",
+      "CTA-HLK",
+      "CTA-MID"
+    ],
+    [
+      "sc-howard",
+      "CTA-DMP",
+      "CTA-BLM"
+    ],
+    [
+      "pm-red-north",
+      "CTA-HOW",
+      "CTA-BLM"
+    ],
+    [
+      "pm-blue-ohare",
+      "CTA-ORD",
+      "CTA-CLK"
+    ],
+    [
+      "pm-brown-kimball",
+      "CTA-KIM",
+      "CTA-CLK"
+    ],
+    [
+      "pm-green-west",
+      "CTA-HLK",
+      "CTA-CLK"
+    ],
+    [
+      "pm-orange-midway",
+      "CTA-MID",
+      "CTA-CLK"
+    ],
+    [
+      "pv-advisory",
+      "CTA-ORD",
+      "CTA-CLK"
+    ],
+    [
+      "pv-elevated-suspended",
+      "CTA-KIM",
+      "CTA-MID"
+    ],
+    [
+      "pv-full-suspension",
+      "CTA-HOW",
+      "CTA-95D"
+    ],
+    [
+      "ca-united-center",
+      "CTA-CLK",
+      "CTA-ASH"
+    ],
+    [
+      "ca-mccormick",
+      "CTA-CLK",
+      "CTA-CRM"
+    ],
+    [
+      "ls-blue-full",
+      "CTA-ORD",
+      "CTA-FPK"
+    ],
+    [
+      "ls-red-partial-north",
+      "CTA-HOW",
+      "CTA-95D"
+    ],
+    [
+      "ls-loop-shutdown",
+      "CTA-KIM",
+      "CTA-RSV"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "CTA-CLK",
+        "CTA-RSV",
+        "wheelchair"
+      ],
+      [
+        "CTA-ORD",
+        "CTA-ROS",
+        "step_free"
+      ],
+      [
+        "CTA-HOW",
+        "CTA-BLM",
+        "elevator_required"
+      ],
+      [
+        "CTA-MID",
+        "CTA-HAL",
+        "wheelchair"
+      ],
+      [
+        "CTA-LIN",
+        "CTA-HOW",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "CTA-KIM",
+        "CTA-CLK",
+        "wheelchair"
+      ],
+      [
+        "CTA-HLK",
+        "CTA-CLK",
+        "step_free"
+      ],
+      [
+        "CTA-54C",
+        "CTA-CLK",
+        "elevator_required"
+      ],
+      [
+        "CTA-ORD",
+        "CTA-FPK",
+        "wheelchair"
+      ],
+      [
+        "CTA-LIN",
+        "CTA-BLM",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "CTA-CLK",
+        "CTA-DVY",
+        "wheelchair"
+      ],
+      [
+        "CTA-CLK",
+        "CTA-DAM",
+        "step_free"
+      ],
+      [
+        "CTA-CLK",
+        "CTA-CON",
+        "elevator_required"
+      ],
+      [
+        "CTA-HOW",
+        "CTA-DVS",
+        "wheelchair"
+      ],
+      [
+        "CTA-CLK",
+        "CTA-54C",
+        "step_free"
+      ]
+    ]
+  },
+  "tolerances": {
+    "fare": 0.5,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "CTA",
+  "closed_station_name": "State/Lake",
+  "main_line": "red"
+}

@@ -1,0 +1,89 @@
+{
+  "system": "doha",
+  "policies": [
+    {
+      "policy_id": "doha-refund-001",
+      "category": "refunds",
+      "title": "Travel Card Refund Policy",
+      "content": "Unused Travel Card credit may be refunded at any Qatar Rail Customer Service counter within 90 days of last use. Standard Travel Cards carry a QR 10 deposit that is refundable upon return. Gold Travel Card deposits of QR 30 are refundable only at the main service center at Msheireb station.",
+      "synonyms": ["money back on my Travel Card", "return my card for a refund", "get my deposit back", "how do I get reimbursed"]
+    },
+    {
+      "policy_id": "doha-refund-002",
+      "category": "refunds",
+      "title": "Day Pass and Weekly Pass Refund",
+      "content": "Activated day passes (QR 6 Standard, QR 30 Gold) and weekly passes (QR 20 Standard, QR 100 Gold) are non-refundable once first tapped. Unactivated passes may be returned within 14 days of purchase at Msheireb or Al Bidda station service desks for a full refund in QAR.",
+      "synonyms": ["return my day pass", "unused pass refund", "can I get money back for my weekly pass", "cancel my pass"]
+    },
+    {
+      "policy_id": "doha-lost-001",
+      "category": "lost_property",
+      "title": "Lost and Found Service",
+      "content": "Report lost items by calling Qatar Rail Customer Care at +974 4458 8888 or visiting the Lost & Found desk at Msheireb station. Items recovered on trains are catalogued and held for 60 days. Claimants must present a valid Qatar ID or passport and describe the item in detail.",
+      "synonyms": ["I left something on the train", "forgot my bag on the metro", "lost my phone", "where do I find lost items"]
+    },
+    {
+      "policy_id": "doha-lost-002",
+      "category": "lost_property",
+      "title": "Lost Travel Card Replacement",
+      "content": "Lost or stolen Travel Cards should be reported immediately to +974 4458 8888 to block the card. Registered Travel Cards can have their remaining balance transferred to a replacement card within 3 business days. Unregistered cards cannot be replaced or refunded.",
+      "synonyms": ["lost my Travel Card", "my card was stolen", "can I get a replacement card", "block my lost card"]
+    },
+    {
+      "policy_id": "doha-access-001",
+      "category": "accessibility",
+      "title": "Wheelchair and Mobility Assistance",
+      "content": "All Doha Metro stations are wheelchair accessible with elevators, tactile paving, and platform screen doors. Dedicated wheelchair spaces are available in every carriage. Station staff can provide assistance; press the blue assistance button on any platform or call +974 4458 8888 before travel.",
+      "synonyms": ["wheelchair access", "is there an elevator", "I need mobility help", "disabled access at station"]
+    },
+    {
+      "policy_id": "doha-access-002",
+      "category": "accessibility",
+      "title": "Family Carriage Policy",
+      "content": "The family carriage (first carriage of each train) is reserved for women, children, and families. Solo male passengers are not permitted in the family carriage and may be asked to move by Qatar Rail staff. Gold class carriages are located in the center of each train and are accessible to Gold Travel Card holders only.",
+      "synonyms": ["women only carriage", "which car is for families", "can men sit in the family section", "where is gold class"]
+    },
+    {
+      "policy_id": "doha-fare-001",
+      "category": "fare_policy",
+      "title": "Standard and Gold Class Fares",
+      "content": "Standard class fares are QR 2 per journey using a Travel Card or contactless payment. Gold class fares are QR 10 per journey using a Gold Travel Card. Free transfers between lines are permitted within 90 minutes of the initial tap. No senior or disabled discount is available on Doha Metro.",
+      "synonyms": ["how much is a ride", "what does gold class cost", "is there a transfer fee", "senior discount available"]
+    },
+    {
+      "policy_id": "doha-fare-002",
+      "category": "fare_policy",
+      "title": "Children's Fare Policy",
+      "content": "Children under 5 ride free when accompanied by a paying adult, with a maximum of 2 free children per adult. Children aged 5 and older must pay the full Standard (QR 2) or Gold (QR 10) fare. Strollers are permitted but must be folded on escalators.",
+      "synonyms": ["do kids ride free", "how much for my child", "bringing a stroller on the metro", "children's ticket price"]
+    },
+    {
+      "policy_id": "doha-safety-001",
+      "category": "safety",
+      "title": "Emergency Procedures",
+      "content": "In an emergency, press the red emergency button located on each platform and inside every train car. Qatar Rail staff and security are present at all stations during operating hours. For immediate assistance, call Qatar Emergency Services at 999 or Qatar Rail Security at +974 4458 8899.",
+      "synonyms": ["there is an emergency", "how do I call for help", "emergency button location", "someone needs medical help"]
+    },
+    {
+      "policy_id": "doha-safety-002",
+      "category": "safety",
+      "title": "Prohibited Conduct and Items",
+      "content": "Eating, drinking, and chewing gum are strictly prohibited on trains and in stations. Photography inside trains and stations requires a permit from Qatar Rail. Passengers must dress modestly in accordance with local customs. Violations may result in fines up to QR 500.",
+      "synonyms": ["can I eat on the train", "is drinking water allowed", "can I take photos in the metro", "what is the dress code"]
+    },
+    {
+      "policy_id": "doha-general-001",
+      "category": "general",
+      "title": "Operating Hours",
+      "content": "Doha Metro operates Saturday through Thursday from 5:30 AM to 11:30 PM, and Friday from 2:00 PM to 11:30 PM. During Ramadan and major holidays, hours may be extended. Schedule updates are posted at qr.com.qa and announced in English and Arabic.",
+      "synonyms": ["what time does the metro open", "when is the last train", "is the metro running on Friday", "Ramadan schedule"]
+    },
+    {
+      "policy_id": "doha-general-002",
+      "category": "general",
+      "title": "Customer Service and Feedback",
+      "content": "Qatar Rail Customer Care is available at +974 4458 8888, Saturday through Thursday from 7:00 AM to 10:00 PM. Feedback may also be submitted via the Qatar Rail app or at qr.com.qa/contact. Complaints are acknowledged within 48 hours and resolved within 10 business days.",
+      "synonyms": ["I want to complain", "how do I contact Qatar Rail", "where do I give feedback", "report a problem with the metro"]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "system": "taipei",
+  "policies": [
+    {
+      "policy_id": "taipei-refund-001",
+      "category": "refunds",
+      "title": "EasyCard Refund Policy",
+      "content": "EasyCard remaining balance and the NT$100 deposit are refundable at any MRT station service counter. Cards used fewer than 5 times or owned for fewer than 3 months incur a NT$20 handling fee. Refunds are paid in cash (TWD) immediately upon card surrender.",
+      "synonyms": ["money back on my EasyCard", "return my EasyCard", "get my deposit back", "how do I get reimbursed"]
+    },
+    {
+      "policy_id": "taipei-refund-002",
+      "category": "refunds",
+      "title": "Tourist Pass Refund Policy",
+      "content": "Taipei Fun Pass and Taipei Metro day passes are non-refundable once activated by first tap. Unactivated passes may be returned within 7 days of purchase at the Taipei Metro Service Center at Taipei Main Station for a full refund. Multi-day tourist passes (NT$1,200 5-day unlimited) must be completely unused.",
+      "synonyms": ["return my tourist pass", "can I get money back for my Fun Pass", "unused day pass refund", "cancel my Taipei pass"]
+    },
+    {
+      "policy_id": "taipei-lost-001",
+      "category": "lost_property",
+      "title": "Lost and Found Service",
+      "content": "Report lost items by calling TRTC Lost & Found at (02) 2181-2345 or visiting the Taipei Metro Service Center at Taipei Main Station. Items are held for 6 months per Taipei City regulations, then turned over to police. Bring a valid ID (ARC, passport, or National ID) to claim items.",
+      "synonyms": ["I left something on the MRT", "forgot my bag on the train", "lost my phone on the metro", "where is lost and found"]
+    },
+    {
+      "policy_id": "taipei-lost-002",
+      "category": "lost_property",
+      "title": "Lost EasyCard Replacement",
+      "content": "Registered EasyCards (linked via the EasyCard app or easycard.com.tw) can be blocked and the balance transferred to a replacement card within 3 business days. Report the loss at any MRT service counter or call (02) 2181-2345. Unregistered EasyCards cannot be blocked or replaced.",
+      "synonyms": ["lost my EasyCard", "my card was stolen", "can I get a replacement EasyCard", "block my lost card"]
+    },
+    {
+      "policy_id": "taipei-access-001",
+      "category": "accessibility",
+      "title": "Wheelchair and Mobility Accessibility",
+      "content": "All Taipei Metro stations are wheelchair accessible with at least one elevator per station, tactile guide paths, and wide fare gates. The Wenhu (Brown) Line has platform screen doors at every station. For travel assistance, press the intercom button at any elevator entrance or call (02) 2181-2345 at least 30 minutes before travel.",
+      "synonyms": ["wheelchair access", "is there an elevator", "I use a wheelchair", "accessible entrance at station"]
+    },
+    {
+      "policy_id": "taipei-access-002",
+      "category": "accessibility",
+      "title": "Senior and Disabled Discount",
+      "content": "Seniors aged 65 and older and persons with disabilities receive a 50% discount on all Taipei Metro fares when using a registered Senior/Disabled EasyCard. Apply at the EasyCard Customer Service Center, No. 3, Sec. 1, Zhongxiao W. Road, Taipei, with a valid National ID or Disability Certificate. Foreign seniors may apply with passport and ARC.",
+      "synonyms": ["senior discount", "disabled fare", "do elderly get half price", "reduced price for old people"]
+    },
+    {
+      "policy_id": "taipei-fare-001",
+      "category": "fare_policy",
+      "title": "Distance-Based Fare Structure",
+      "content": "Taipei Metro fares range from NT$20 for trips up to 5 km to NT$65 for trips over 19 km. Fares are deducted automatically from EasyCard upon exit. Single-journey tokens may be purchased at station vending machines. Transfers between metro lines are free within the same journey.",
+      "synonyms": ["how much is a ride", "what does the MRT cost", "token price", "is there a transfer fee"]
+    },
+    {
+      "policy_id": "taipei-fare-002",
+      "category": "fare_policy",
+      "title": "Children's Fare Policy",
+      "content": "Children under 6 or under 115 cm in height ride free when accompanied by a paying adult, with a maximum of 2 free children per adult. Children aged 6-12 may use a discounted Student EasyCard for half-price fares. Height is measured at fare gates with a yellow marking.",
+      "synonyms": ["do kids ride free", "how much for children", "my child is small enough to ride free", "student card for kids"]
+    },
+    {
+      "policy_id": "taipei-safety-001",
+      "category": "safety",
+      "title": "No Eating and Drinking Rule",
+      "content": "Eating, drinking, and chewing gum are strictly prohibited past the yellow line in paid areas of all Taipei Metro stations and on trains. Violators are subject to fines from NT$1,500 to NT$7,500. Water bottles must remain sealed. Nursing mothers are exempt when feeding infants.",
+      "synonyms": ["can I eat on the MRT", "is drinking water allowed", "what is the fine for eating", "no food or drink rule"]
+    },
+    {
+      "policy_id": "taipei-safety-002",
+      "category": "safety",
+      "title": "Emergency and Typhoon Procedures",
+      "content": "In an emergency, use the red emergency intercom in each train car or press the SOS button on platforms. During typhoon warnings, TRTC may suspend outdoor sections (Tamsui-Xinyi and Xinbeitou lines) while underground sections continue operating. Check metro.taipei or call (02) 2181-2345 for typhoon service updates.",
+      "synonyms": ["there is an emergency", "does MRT run during typhoon", "emergency button on train", "is the metro closed for the storm"]
+    },
+    {
+      "policy_id": "taipei-general-001",
+      "category": "general",
+      "title": "Operating Hours",
+      "content": "Taipei Metro operates daily from 6:00 AM to midnight. First and last train times vary by station and are posted at metro.taipei. During New Year's Eve and Lantern Festival, service is extended to 2:00 AM. Frequency is every 3-6 minutes during peak and every 7-12 minutes off-peak.",
+      "synonyms": ["what time does the MRT open", "when is the last train", "is the metro running now", "New Year's Eve schedule"]
+    },
+    {
+      "policy_id": "taipei-general-002",
+      "category": "general",
+      "title": "Customer Service and Feedback",
+      "content": "Contact TRTC Customer Service at (02) 2181-2345 daily from 6:00 AM to midnight. Announcements are made in Mandarin, Taiwanese, Hakka, and English; major interchange stations also include Japanese and Korean. Feedback can be submitted at metro.taipei/contact or via the Taipei Metro GO app.",
+      "synonyms": ["I want to make a complaint", "how do I contact the MRT", "where do I give feedback", "report a problem with the metro"]
+    }
+  ]
+}

@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "BART-12TH",
+    "name": "12th St Oakland",
+    "lines": [
+      "orange",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-19TH",
+      "BART-LAKE",
+      "BART-WOAK"
+    ],
+    "zone": "oakland"
+  },
+  {
+    "id": "BART-16TH",
+    "name": "16th St Mission",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-24TH",
+      "BART-CIVC"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-19TH",
+    "name": "19th St Oakland",
+    "lines": [
+      "orange",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-12TH",
+      "BART-MCAR"
+    ],
+    "zone": "oakland"
+  },
+  {
+    "id": "BART-24TH",
+    "name": "24th St Mission",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-16TH",
+      "BART-GLEN"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-ANTC",
+    "name": "Antioch",
+    "lines": [
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "antioch"
+  },
+  {
+    "id": "BART-ASHB",
+    "name": "Ashby",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DBRK",
+      "BART-MCAR"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-BALB",
+    "name": "Balboa Park",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DALY",
+      "BART-GLEN"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-BAYF",
+    "name": "Bay Fair",
+    "lines": [
+      "blue",
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-HAYW",
+      "BART-SANL"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-BERY",
+    "name": "Berryessa/North San Jose",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-MLPT"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-CAST",
+    "name": "Castro Valley",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-BAYF"
+    ],
+    "zone": "dublin"
+  },
+  {
+    "id": "BART-CIVC",
+    "name": "Civic Center",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-16TH",
+      "BART-POWL"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-COLM",
+    "name": "Colma",
+    "lines": [
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DALY",
+      "BART-SSAN"
+    ],
+    "zone": "peninsula"
+  },
+  {
+    "id": "BART-COLS",
+    "name": "Coliseum",
+    "lines": [
+      "blue",
+      "green",
+      "oac",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-FTVL",
+      "BART-SANL"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-CONC",
+    "name": "Concord",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "antioch"
+  },
+  {
+    "id": "BART-DALY",
+    "name": "Daly City",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-BALB",
+      "BART-COLM"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-DBRK",
+    "name": "Downtown Berkeley",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-ASHB",
+      "BART-NBRK"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-DELN",
+    "name": "El Cerrito del Norte",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DELP",
+      "BART-RICH"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-DELP",
+    "name": "El Cerrito Plaza",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DELN",
+      "BART-NBRK"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-DUBL",
+    "name": "Dublin/Pleasanton",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "dublin"
+  },
+  {
+    "id": "BART-EMBR",
+    "name": "Embarcadero",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-MONT",
+      "BART-WOAK"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-FRMT",
+    "name": "Fremont",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-UCTY",
+      "BART-WARM"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-FTVL",
+    "name": "Fruitvale",
+    "lines": [
+      "blue",
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-COLS",
+      "BART-LAKE"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-GLEN",
+    "name": "Glen Park",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-24TH",
+      "BART-BALB"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-HAYW",
+    "name": "Hayward",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-BAYF",
+      "BART-SHAY"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-LAFY",
+    "name": "Lafayette",
+    "lines": [
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "antioch"
+  },
+  {
+    "id": "BART-LAKE",
+    "name": "Lake Merritt",
+    "lines": [
+      "blue",
+      "green",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-12TH",
+      "BART-FTVL",
+      "BART-WOAK"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-MCAR",
+    "name": "MacArthur",
+    "lines": [
+      "orange",
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-19TH",
+      "BART-ASHB"
+    ],
+    "zone": "oakland"
+  },
+  {
+    "id": "BART-MLBR",
+    "name": "Millbrae",
+    "lines": [
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-SFO"
+    ],
+    "zone": "peninsula"
+  },
+  {
+    "id": "BART-MLPT",
+    "name": "Milpitas",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-BERY",
+      "BART-WARM"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-MONT",
+    "name": "Montgomery St",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-EMBR",
+      "BART-POWL"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-NBRK",
+    "name": "North Berkeley",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DBRK",
+      "BART-DELP"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-NOC",
+    "name": "North Concord/Martinez",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yellow"
+  },
+  {
+    "id": "BART-OAKL",
+    "name": "Oakland Intl Airport",
+    "lines": [
+      "oac"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-COLS"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-ORI",
+    "name": "Orinda",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yellow"
+  },
+  {
+    "id": "BART-PCTR",
+    "name": "Pittsburg Center",
+    "lines": [
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "antioch"
+  },
+  {
+    "id": "BART-PITT",
+    "name": "Pittsburg/Bay Point",
+    "lines": [
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "antioch"
+  },
+  {
+    "id": "BART-PLH",
+    "name": "Pleasant Hill",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yellow"
+  },
+  {
+    "id": "BART-POWL",
+    "name": "Powell St",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-CIVC",
+      "BART-MONT"
+    ],
+    "zone": "sf_downtown"
+  },
+  {
+    "id": "BART-RICH",
+    "name": "Richmond",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-DELN"
+    ],
+    "zone": "richmond"
+  },
+  {
+    "id": "BART-ROC",
+    "name": "Rockridge",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BART-MCAR"
+    ],
+    "zone": "yellow"
+  },
+  {
+    "id": "BART-SANB",
+    "name": "San Bruno",
+    "lines": [
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-SFO",
+      "BART-SSAN"
+    ],
+    "zone": "peninsula"
+  },
+  {
+    "id": "BART-SANL",
+    "name": "San Leandro",
+    "lines": [
+      "blue",
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-BAYF",
+      "BART-COLS"
+    ],
+    "zone": "east_bay"
+  },
+  {
+    "id": "BART-SFO",
+    "name": "San Francisco Intl Airport",
+    "lines": [
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-MLBR",
+      "BART-SANB"
+    ],
+    "zone": "peninsula"
+  },
+  {
+    "id": "BART-SHAY",
+    "name": "South Hayward",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-HAYW",
+      "BART-UCTY"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-SSAN",
+    "name": "South San Francisco",
+    "lines": [
+      "red",
+      "yellow"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-COLM",
+      "BART-SANB"
+    ],
+    "zone": "peninsula"
+  },
+  {
+    "id": "BART-UCTY",
+    "name": "Union City",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-FRMT",
+      "BART-SHAY"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-WAC",
+    "name": "Walnut Creek",
+    "lines": [
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yellow"
+  },
+  {
+    "id": "BART-WARM",
+    "name": "Warm Springs/South Fremont",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-FRMT",
+      "BART-MLPT"
+    ],
+    "zone": "fremont"
+  },
+  {
+    "id": "BART-WDUB",
+    "name": "West Dublin/Pleasanton",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "dublin"
+  },
+  {
+    "id": "BART-WOAK",
+    "name": "West Oakland",
+    "lines": [
+      "blue",
+      "green",
+      "red",
+      "yellow"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BART-12TH",
+      "BART-EMBR",
+      "BART-LAKE"
+    ],
+    "zone": "oakland"
+  }
+]

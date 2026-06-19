@@ -1,0 +1,1485 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "from": "CTA-HOW",
+      "to": "CTA-JRV",
+      "distance_miles": 0.28,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-JRV",
+      "to": "CTA-MOR",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MOR",
+      "to": "CTA-LYL",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LYL",
+      "to": "CTA-GRN",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-GRN",
+      "to": "CTA-THN",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-THN",
+      "to": "CTA-BRM",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BRM",
+      "to": "CTA-BER",
+      "distance_miles": 0.38,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BER",
+      "to": "CTA-ARG",
+      "distance_miles": 0.32,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ARG",
+      "to": "CTA-LAW",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LAW",
+      "to": "CTA-WIL",
+      "distance_miles": 0.24,
+      "travel_time_min": 0.5,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WIL",
+      "to": "CTA-SHE",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SHE",
+      "to": "CTA-ADD",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ADD",
+      "to": "CTA-BLM",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BLM",
+      "to": "CTA-FUL",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-FUL",
+      "to": "CTA-NOR",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-NOR",
+      "to": "CTA-CLA",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLA",
+      "to": "CTA-CHI",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CHI",
+      "to": "CTA-GRA",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-GRA",
+      "to": "CTA-LAK",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LAK",
+      "to": "CTA-MON",
+      "distance_miles": 0.28,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MON",
+      "to": "CTA-JAC",
+      "distance_miles": 0.18,
+      "travel_time_min": 0.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-JAC",
+      "to": "CTA-HAR",
+      "distance_miles": 0.28,
+      "travel_time_min": 0.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HAR",
+      "to": "CTA-RSV",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-RSV",
+      "to": "CTA-CRM",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CRM",
+      "to": "CTA-SOX",
+      "distance_miles": 1.52,
+      "travel_time_min": 3.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SOX",
+      "to": "CTA-47T",
+      "distance_miles": 1.44,
+      "travel_time_min": 2.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-47T",
+      "to": "CTA-GAR",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-GAR",
+      "to": "CTA-63R",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-63R",
+      "to": "CTA-69T",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-69T",
+      "to": "CTA-79T",
+      "distance_miles": 1.24,
+      "travel_time_min": 2.5,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-79T",
+      "to": "CTA-87T",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-87T",
+      "to": "CTA-95D",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ORD",
+      "to": "CTA-ROS",
+      "distance_miles": 2.34,
+      "travel_time_min": 4.7,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ROS",
+      "to": "CTA-CUM",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CUM",
+      "to": "CTA-HAR2",
+      "distance_miles": 1.6,
+      "travel_time_min": 3.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HAR2",
+      "to": "CTA-JEF",
+      "distance_miles": 2.48,
+      "travel_time_min": 5.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-JEF",
+      "to": "CTA-MON2",
+      "distance_miles": 1.16,
+      "travel_time_min": 2.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MON2",
+      "to": "CTA-IRP",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-IRP",
+      "to": "CTA-ADD2",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ADD2",
+      "to": "CTA-BEL",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BEL",
+      "to": "CTA-LOG",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LOG",
+      "to": "CTA-CAL2",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CAL2",
+      "to": "CTA-WES",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WES",
+      "to": "CTA-DAM",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DAM",
+      "to": "CTA-DIV",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DIV",
+      "to": "CTA-CHI3",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CHI3",
+      "to": "CTA-GRA2",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-GRA2",
+      "to": "CTA-CLK",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-WAS",
+      "distance_miles": 0.19,
+      "travel_time_min": 0.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAS",
+      "to": "CTA-MON3",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MON3",
+      "to": "CTA-JAC2",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-JAC2",
+      "to": "CTA-LAS",
+      "distance_miles": 0.22,
+      "travel_time_min": 0.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LAS",
+      "to": "CTA-CLI",
+      "distance_miles": 0.48,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLI",
+      "to": "CTA-UIC",
+      "distance_miles": 0.45,
+      "travel_time_min": 0.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-UIC",
+      "to": "CTA-RAC",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-RAC",
+      "to": "CTA-IMD",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-IMD",
+      "to": "CTA-WES2",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WES2",
+      "to": "CTA-KED",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KED",
+      "to": "CTA-PUL2",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-PUL2",
+      "to": "CTA-CIC2",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CIC2",
+      "to": "CTA-AUS",
+      "distance_miles": 1.63,
+      "travel_time_min": 3.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AUS",
+      "to": "CTA-OAP",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-OAP",
+      "to": "CTA-HAR3",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HAR3",
+      "to": "CTA-FPK",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KIM",
+      "to": "CTA-KED2",
+      "distance_miles": 0.25,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KED2",
+      "to": "CTA-FRA",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-FRA",
+      "to": "CTA-ROC",
+      "distance_miles": 0.39,
+      "travel_time_min": 0.8,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ROC",
+      "to": "CTA-WBR",
+      "distance_miles": 0.29,
+      "travel_time_min": 0.6,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WBR",
+      "to": "CTA-DAM2",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DAM2",
+      "to": "CTA-MON4",
+      "distance_miles": 0.36,
+      "travel_time_min": 0.7,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MON4",
+      "to": "CTA-IRP2",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-IRP2",
+      "to": "CTA-ADD3",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ADD3",
+      "to": "CTA-PAU",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-PAU",
+      "to": "CTA-SOU",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SOU",
+      "to": "CTA-BLM",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BLM",
+      "to": "CTA-WEL",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WEL",
+      "to": "CTA-DVY",
+      "distance_miles": 0.23,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DVY",
+      "to": "CTA-FUL",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-FUL",
+      "to": "CTA-ARM",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ARM",
+      "to": "CTA-SED",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SED",
+      "to": "CTA-CHI2",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CHI2",
+      "to": "CTA-MRC",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MRC",
+      "to": "CTA-WAW",
+      "distance_miles": 0.43,
+      "travel_time_min": 0.9,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAW",
+      "to": "CTA-QCY",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-QCY",
+      "to": "CTA-LVB",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LVB",
+      "to": "CTA-HWL",
+      "distance_miles": 0.18,
+      "travel_time_min": 0.4,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HWL",
+      "to": "CTA-AWB",
+      "distance_miles": 0.21,
+      "travel_time_min": 0.4,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AWB",
+      "to": "CTA-WAB",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAB",
+      "to": "CTA-STL",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-STL",
+      "to": "CTA-CLK",
+      "distance_miles": 0.0,
+      "travel_time_min": 0.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-MRC",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HLK",
+      "to": "CTA-OAK",
+      "distance_miles": 0.48,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-OAK",
+      "to": "CTA-RID",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-RID",
+      "to": "CTA-AUS2",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AUS2",
+      "to": "CTA-CEN",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CEN",
+      "to": "CTA-LAR",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LAR",
+      "to": "CTA-CIC3",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CIC3",
+      "to": "CTA-PUL3",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-PUL3",
+      "to": "CTA-CON",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CON",
+      "to": "CTA-KED3",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KED3",
+      "to": "CTA-CAL",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CAL",
+      "to": "CTA-DAM3",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DAM3",
+      "to": "CTA-ASH",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ASH",
+      "to": "CTA-MOR2",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MOR2",
+      "to": "CTA-CLN",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLN",
+      "to": "CTA-CLK",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-STL",
+      "distance_miles": 0.0,
+      "travel_time_min": 0.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-STL",
+      "to": "CTA-WAB",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAB",
+      "to": "CTA-AWB",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AWB",
+      "to": "CTA-RSV",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-RSV",
+      "to": "CTA-CEP",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CEP",
+      "to": "CTA-35T",
+      "distance_miles": 1.48,
+      "travel_time_min": 3.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-35T",
+      "to": "CTA-IND",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-IND",
+      "to": "CTA-43R",
+      "distance_miles": 0.38,
+      "travel_time_min": 0.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-43R",
+      "to": "CTA-47T2",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-47T2",
+      "to": "CTA-51S",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-51S",
+      "to": "CTA-GAR2",
+      "distance_miles": 0.48,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-GAR2",
+      "to": "CTA-KID",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KID",
+      "to": "CTA-COG",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MID",
+      "to": "CTA-PUL",
+      "distance_miles": 1.14,
+      "travel_time_min": 2.3,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-PUL",
+      "to": "CTA-KDZ",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KDZ",
+      "to": "CTA-WES3",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WES3",
+      "to": "CTA-35T2",
+      "distance_miles": 1.72,
+      "travel_time_min": 3.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-35T2",
+      "to": "CTA-ASH2",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ASH2",
+      "to": "CTA-HAL",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HAL",
+      "to": "CTA-RSV",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-RSV",
+      "to": "CTA-HWL",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HWL",
+      "to": "CTA-LVB",
+      "distance_miles": 0.18,
+      "travel_time_min": 0.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LVB",
+      "to": "CTA-QCY",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-QCY",
+      "to": "CTA-WAW",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAW",
+      "to": "CTA-CLK",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-STL",
+      "distance_miles": 0.0,
+      "travel_time_min": 0.0,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-STL",
+      "to": "CTA-WAB",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAB",
+      "to": "CTA-AWB",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AWB",
+      "to": "CTA-RSV",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-54C",
+      "to": "CTA-CIC",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CIC",
+      "to": "CTA-KOS",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KOS",
+      "to": "CTA-PUL4",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-PUL4",
+      "to": "CTA-CEP2",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CEP2",
+      "to": "CTA-KED4",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-KED4",
+      "to": "CTA-CLP",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLP",
+      "to": "CTA-WES4",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WES4",
+      "to": "CTA-DAM4",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DAM4",
+      "to": "CTA-18T",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-18T",
+      "to": "CTA-POL",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-POL",
+      "to": "CTA-ASH",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ASH",
+      "to": "CTA-MOR2",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MOR2",
+      "to": "CTA-CLN",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLN",
+      "to": "CTA-CLK",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-STL",
+      "distance_miles": 0.0,
+      "travel_time_min": 0.0,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-STL",
+      "to": "CTA-WAB",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAB",
+      "to": "CTA-AWB",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AWB",
+      "to": "CTA-HWL",
+      "distance_miles": 0.21,
+      "travel_time_min": 0.4,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HWL",
+      "to": "CTA-LVB",
+      "distance_miles": 0.18,
+      "travel_time_min": 0.4,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LVB",
+      "to": "CTA-QCY",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-QCY",
+      "to": "CTA-WAW",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAW",
+      "to": "CTA-CLN",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "pink",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LIN",
+      "to": "CTA-CEN2",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CEN2",
+      "to": "CTA-NOY",
+      "distance_miles": 0.41,
+      "travel_time_min": 0.8,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-NOY",
+      "to": "CTA-FOS",
+      "distance_miles": 0.29,
+      "travel_time_min": 0.6,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-FOS",
+      "to": "CTA-DVS",
+      "distance_miles": 0.45,
+      "travel_time_min": 0.9,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DVS",
+      "to": "CTA-DEM",
+      "distance_miles": 0.43,
+      "travel_time_min": 0.9,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DEM",
+      "to": "CTA-MAI",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MAI",
+      "to": "CTA-SOB",
+      "distance_miles": 0.41,
+      "travel_time_min": 0.8,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SOB",
+      "to": "CTA-HOW",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HOW",
+      "to": "CTA-WIL",
+      "distance_miles": 3.78,
+      "travel_time_min": 7.6,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WIL",
+      "to": "CTA-BLM",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-BLM",
+      "to": "CTA-WEL",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WEL",
+      "to": "CTA-DVY",
+      "distance_miles": 0.23,
+      "travel_time_min": 0.5,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-DVY",
+      "to": "CTA-FUL",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-FUL",
+      "to": "CTA-ARM",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-ARM",
+      "to": "CTA-SED",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-SED",
+      "to": "CTA-CHI2",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CHI2",
+      "to": "CTA-MRC",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-MRC",
+      "to": "CTA-CLK",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-CLK",
+      "to": "CTA-STL",
+      "distance_miles": 0.0,
+      "travel_time_min": 0.0,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-STL",
+      "to": "CTA-WAB",
+      "distance_miles": 0.3,
+      "travel_time_min": 0.6,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAB",
+      "to": "CTA-AWB",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-AWB",
+      "to": "CTA-HWL",
+      "distance_miles": 0.21,
+      "travel_time_min": 0.4,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HWL",
+      "to": "CTA-LVB",
+      "distance_miles": 0.18,
+      "travel_time_min": 0.4,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-LVB",
+      "to": "CTA-QCY",
+      "distance_miles": 0.17,
+      "travel_time_min": 0.3,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-QCY",
+      "to": "CTA-WAW",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-WAW",
+      "to": "CTA-MRC",
+      "distance_miles": 0.43,
+      "travel_time_min": 0.9,
+      "line": "purple",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-HOW",
+      "to": "CTA-OKT",
+      "distance_miles": 3.85,
+      "travel_time_min": 7.7,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "CTA-OKT",
+      "to": "CTA-DMP",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "yellow",
+      "type": "rail"
+    }
+  ]
+}

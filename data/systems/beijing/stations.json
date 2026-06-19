@@ -1,0 +1,7865 @@
+[
+  {
+    "id": "BJM-2HH",
+    "name": "2 Hao Hangzhanlou (Terminal 2)",
+    "lines": [
+      "capital_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "capital_airport"
+  },
+  {
+    "id": "BJM-3HH",
+    "name": "3 Hao Hangzhanlou (Terminal 3)",
+    "lines": [
+      "capital_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SAQ"
+    ],
+    "zone": "capital_airport"
+  },
+  {
+    "id": "BJM-AEC",
+    "name": "Agricultural Exhibition Center",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-TUA"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-ANB",
+    "name": "Andeli Beijie",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ANQ",
+      "BJM-GUD"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-ANH",
+    "name": "Anheqiaobei",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-ANL",
+    "name": "Anli Lu",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-AOG",
+      "BJM-DAT"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-ANM",
+    "name": "Anding Men",
+    "lines": [
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUD",
+      "BJM-YLT"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-ANQ",
+    "name": "Anhua Qiao",
+    "lines": [
+      "12",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI7"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-ANQ2",
+    "name": "Anzhen Qiao",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ANQ",
+      "BJM-HEX"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-ANZ",
+    "name": "Anzhenmen",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BEI7",
+      "BJM-HXN"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-AOG",
+    "name": "Aolinpike Gongyuan (Olympic Park)",
+    "lines": [
+      "15",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI10"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-AOZ",
+    "name": "Aoti Zhongxin (Olympic Sports Center)",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-AOG",
+      "BJM-BEI7"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-BAB",
+    "name": "Babaoshan",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-BAG",
+    "name": "Bagou",
+    "lines": [
+      "10",
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-SUJ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-BAI",
+    "name": "Baishiqiaonan",
+    "lines": [
+      "6",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-ERL",
+      "BJM-GUT"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-BAI2",
+    "name": "Baiziwan",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-BAI3",
+    "name": "Baiduizi",
+    "lines": [
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BAI",
+      "BJM-MIM"
+    ],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-BAI4",
+    "name": "Baipenyao",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUO3"
+    ],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-BAP",
+    "name": "Bajiao Amusement Park",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-BAQ",
+    "name": "Bali Qiao",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-BEI",
+    "name": "Beigongmen",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XIY"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-BEI10",
+    "name": "Beishatan",
+    "lines": [
+      "15",
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-AOG",
+      "BJM-LIK",
+      "BJM-MUD",
+      "BJM-QIX"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-BEI11",
+    "name": "Bei'anhe",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-BEI12",
+    "name": "Beishenshu",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-BEI13",
+    "name": "Beishaowa",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-BEI2",
+    "name": "Beiyuanlubei",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAT"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-BEI3",
+    "name": "Beixinqiao",
+    "lines": [
+      "5",
+      "capital_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON2",
+      "BJM-YLT"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-BEI4",
+    "name": "Beihaibei",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-NAX",
+      "BJM-PIN2"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-BEI5",
+    "name": "Beiyunhexi",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-BEI6",
+    "name": "Beiyunhedong",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-BEI7",
+    "name": "Beitucheng",
+    "lines": [
+      "10",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-ANQ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-BEI8",
+    "name": "Beixin'an",
+    "lines": [
+      "11"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIN"
+    ],
+    "zone": "11"
+  },
+  {
+    "id": "BJM-BEI9",
+    "name": "Beitaipingzhuang",
+    "lines": [
+      "12",
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIQ",
+      "BJM-JIS",
+      "BJM-MUD"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-BER",
+    "name": "Beijing railway",
+    "lines": [
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHM",
+      "BJM-JIA"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-BEY",
+    "name": "Bei Yuan",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIQ",
+      "BJM-WAN5"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-BIB",
+    "name": "Biomedical Base",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-BSR",
+    "name": "Beijing South railway",
+    "lines": [
+      "14",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIN3"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-BUOT",
+    "name": "Beijing Univ. of Tech West Gate",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SHI4"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-BWR",
+    "name": "Beijing West railway",
+    "lines": [
+      "7",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-MIM"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-CAI",
+    "name": "Caihuying",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIS2"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-CAK",
+    "name": "Caishi Kou",
+    "lines": [
+      "4",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-NIU",
+      "BJM-XUM"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-CAO",
+    "name": "Caofang",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-CAO2",
+    "name": "Caoqiao",
+    "lines": [
+      "10",
+      "19",
+      "daxing_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIA2",
+      "BJM-JIN3",
+      "BJM-LIS2"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-CHA",
+    "name": "Changying",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-CHA2",
+    "name": "Changyang",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-CHA3",
+    "name": "Changping",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-CHA4",
+    "name": "Chapeng",
+    "lines": [
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "xijiao"
+  },
+  {
+    "id": "BJM-CHD",
+    "name": "Changping Dongguan",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-CHE",
+    "name": "Chegongzhuang",
+    "lines": [
+      "2",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-PIN2",
+      "BJM-XIZ"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-CHE2",
+    "name": "Chegongzhuangxi",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHE",
+      "BJM-ERL"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-CHE3",
+    "name": "Chedaogou",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHQ",
+      "BJM-CIS"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-CHJ",
+    "name": "Changchun Jie",
+    "lines": [
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FUX",
+      "BJM-XUM"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-CHM",
+    "name": "Chongwen Men",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CIK",
+      "BJM-DON",
+      "BJM-QIA"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-CHM2",
+    "name": "Chaoyang Men",
+    "lines": [
+      "2",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON7",
+      "BJM-DON8",
+      "BJM-DOS",
+      "BJM-JIA"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-CHP",
+    "name": "Chaoyang Park",
+    "lines": [
+      "14",
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIL",
+      "BJM-TUA"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-CHQ",
+    "name": "Changchun Qiao",
+    "lines": [
+      "10",
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-SUQ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-CHR",
+    "name": "Chaoyang railway",
+    "lines": [
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "3"
+  },
+  {
+    "id": "BJM-CHS",
+    "name": "Chengshou Si",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SON"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-CHX",
+    "name": "Changping Xishankou",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-CIEC",
+    "name": "China Int'l Exhibition Center",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-CIK",
+    "name": "Ciqi Kou",
+    "lines": [
+      "5",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-CIQ",
+    "name": "Ciqubei",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIQ2"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-CIQ2",
+    "name": "Ciqu",
+    "lines": [
+      "17",
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-CIQ3",
+    "name": "Ciqunan",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIQ2"
+    ],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-CIS",
+    "name": "Cishou Si",
+    "lines": [
+      "10",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HAW"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-CNBG",
+    "name": "China National Botanical Garden",
+    "lines": [
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "xijiao"
+  },
+  {
+    "id": "BJM-CUI",
+    "name": "Cuigezhuang",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-CUOC",
+    "name": "Communication Univ of China",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-CUOE",
+    "name": "Capital Univ. of Economics & Business",
+    "lines": [
+      "10",
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON13",
+      "BJM-FER"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-DAB",
+    "name": "Dabaotai",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUO3"
+    ],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-DAG",
+    "name": "Daguanying",
+    "lines": [
+      "16",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUN",
+      "BJM-MUX"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-DAH",
+    "name": "Dahongmennan",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAM"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-DAJ",
+    "name": "Dajiaoting",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIU2"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-DAJ2",
+    "name": "Dajing",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-QIL3"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-DAJ3",
+    "name": "Daxing Jichang (Daxing Airport)",
+    "lines": [
+      "daxing_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "daxing_airport"
+  },
+  {
+    "id": "BJM-DAL",
+    "name": "Dawang Lu",
+    "lines": [
+      "1",
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUO",
+      "BJM-JIU2"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-DAL2",
+    "name": "Dalianpo",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-DAL3",
+    "name": "Daoxianghu Lu",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-DAM",
+    "name": "Dahong Men",
+    "lines": [
+      "10",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-DAO",
+    "name": "Daotian",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-DAS",
+    "name": "Dazhong Si",
+    "lines": [
+      "12",
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIQ",
+      "BJM-RED",
+      "BJM-XIZ",
+      "BJM-ZHL3"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-DAS2",
+    "name": "Dashihedong",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-DAT",
+    "name": "Datunludong",
+    "lines": [
+      "15",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-DAW",
+    "name": "Dawayao",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-DAX",
+    "name": "Daxing Xincheng",
+    "lines": [
+      "daxing_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CAO2"
+    ],
+    "zone": "daxing_airport"
+  },
+  {
+    "id": "BJM-DEK",
+    "name": "Dengshi Kou",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DON",
+      "BJM-DON7"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-DEM",
+    "name": "Demao",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-DOB",
+    "name": "Dongfeng Beiqiao",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-DON",
+    "name": "Dongdan",
+    "lines": [
+      "1",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM",
+      "BJM-JIA",
+      "BJM-WAN"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-DON10",
+    "name": "Dongbaxi",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DON5"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-DON11",
+    "name": "Dongguantou",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIS2",
+      "BJM-XIJ"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-DON12",
+    "name": "Donghuqu",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN7"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-DON13",
+    "name": "Dongguantounan",
+    "lines": [
+      "16",
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CUOE",
+      "BJM-FER",
+      "BJM-LIS2"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-DON14",
+    "name": "Dongbeiwang",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LON2"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-DON2",
+    "name": "Dongzhimen",
+    "lines": [
+      "13",
+      "2",
+      "capital_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI3",
+      "BJM-DOS",
+      "BJM-SAQ",
+      "BJM-YLT"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-DON3",
+    "name": "Dongbanan",
+    "lines": [
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "3"
+  },
+  {
+    "id": "BJM-DON4",
+    "name": "Dongba",
+    "lines": [
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DON5"
+    ],
+    "zone": "3"
+  },
+  {
+    "id": "BJM-DON5",
+    "name": "Dongbabei",
+    "lines": [
+      "12",
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-DON6",
+    "name": "Dongwuyuan (Beijing Zoo)",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUT",
+      "BJM-XIZ"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-DON7",
+    "name": "Dongsi",
+    "lines": [
+      "5",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM2",
+      "BJM-NAX"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-DON8",
+    "name": "Dongdaqiao",
+    "lines": [
+      "17",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM2",
+      "BJM-HUJ",
+      "BJM-WOS",
+      "BJM-YOL"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-DON9",
+    "name": "Donggaodi",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-DOS",
+    "name": "Dongsi Shitiao",
+    "lines": [
+      "2",
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM2",
+      "BJM-DON2",
+      "BJM-WOS"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-DOY",
+    "name": "Dongxia Yuan",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-ERL",
+    "name": "Erligou",
+    "lines": [
+      "16",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BAI",
+      "BJM-GUT"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-FAC",
+    "name": "Fangshan Chengguan",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-FAN",
+    "name": "Fangzhuang",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PUH",
+      "BJM-SHI4"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-FAT",
+    "name": "Fatou",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-FED",
+    "name": "Fengtai Dongdajie",
+    "lines": [
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FEN",
+      "BJM-QIL3"
+    ],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-FEN",
+    "name": "Fengtai Nanlu",
+    "lines": [
+      "16",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-FER"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-FEN2",
+    "name": "Fengbo",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-FER",
+    "name": "Fengtai railway",
+    "lines": [
+      "10",
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CUOE",
+      "BJM-DON13",
+      "BJM-FEN"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-FES",
+    "name": "Fenzhong Si",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SHI4"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-FRH",
+    "name": "Fragrant Hills",
+    "lines": [
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "xijiao"
+  },
+  {
+    "id": "BJM-FSP",
+    "name": "Fengtai Science Park",
+    "lines": [
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUO3"
+    ],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-FUF",
+    "name": "Fufengqiao",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FEN"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-FUM",
+    "name": "Fucheng Men",
+    "lines": [
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHE",
+      "BJM-FUX"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-FUS",
+    "name": "Fushouling",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PIN"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-FUT",
+    "name": "Futong",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN7"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-FUX",
+    "name": "Fuxingmen",
+    "lines": [
+      "1",
+      "19",
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-NIU",
+      "BJM-XID"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GAK",
+    "name": "Ganjia Kou",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ERL"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-GAO",
+    "name": "Gaobeidian",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GAO2",
+    "name": "Gaomidianbei",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-GAO3",
+    "name": "Gaomidiannan",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-GAO4",
+    "name": "Gaoloujin",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUA"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-GAO5",
+    "name": "Gaojiayuan",
+    "lines": [
+      "12",
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-GEP",
+    "name": "Garden Expo Park",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-GOC",
+    "name": "Gonghua Cheng",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ZHU2"
+    ],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-GON",
+    "name": "Gongzhufen",
+    "lines": [
+      "1",
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-MIM"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GOX",
+    "name": "Gongyi Xiqiao",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIA2",
+      "BJM-XIN"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-GUA",
+    "name": "Guaanzhuang",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GUA2",
+    "name": "Guanzhuang",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAT",
+      "BJM-WAN5"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-GUC",
+    "name": "Gucheng",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PIN"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GUC2",
+    "name": "Guangyang Cheng",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-GUD",
+    "name": "Gulou Dajie",
+    "lines": [
+      "2",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIS"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-GUM",
+    "name": "Guangxi Men",
+    "lines": [
+      "12",
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HEX",
+      "BJM-SHA",
+      "BJM-XIB"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-GUN",
+    "name": "Guang'anmen Nei",
+    "lines": [
+      "19",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAG",
+      "BJM-JIN3",
+      "BJM-NIU"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-GUN2",
+    "name": "Guangqumen Nei",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIK",
+      "BJM-GUW"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-GUO",
+    "name": "Guomao",
+    "lines": [
+      "1",
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAL",
+      "BJM-SHU",
+      "BJM-YOL"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GUO2",
+    "name": "Guoyuan",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-GUO3",
+    "name": "Guogongzhuang",
+    "lines": [
+      "9",
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-GUO4",
+    "name": "Guozhuangzi",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-GUT",
+    "name": "Guojia Tushuguan (National Library)",
+    "lines": [
+      "16",
+      "4",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BAI",
+      "BJM-ERL"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-GUW",
+    "name": "Guangqumen Wai",
+    "lines": [
+      "17",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-SHU",
+      "BJM-YOL"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-HAF",
+    "name": "Haojia Fu",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-HAH",
+    "name": "Haidian Huangzhuang",
+    "lines": [
+      "10",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-RED",
+      "BJM-SUJ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-HAI",
+    "name": "Haihutun",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAM"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-HAV",
+    "name": "Happy Valley",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-HAW",
+    "name": "Haidian Wuluju",
+    "lines": [
+      "12",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CIS"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-HEB",
+    "name": "Hepingli Beijie",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HEX",
+      "BJM-YLT"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-HEI",
+    "name": "Heizhuanghu",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-HEM",
+    "name": "Heping Men",
+    "lines": [
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-QIA",
+      "BJM-XUM"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-HEX",
+    "name": "Heping Xiqiao",
+    "lines": [
+      "12",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUM",
+      "BJM-HXN"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-HEY",
+    "name": "Heyi",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-HON",
+    "name": "Hongmiao",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAL",
+      "BJM-JIL"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-HON2",
+    "name": "Honglian Nanlu",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAG",
+      "BJM-LIS2"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-HON3",
+    "name": "Hongtaizhuang",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-HON4",
+    "name": "Hongjunying",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN5"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-HOU",
+    "name": "Houshayu",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-HUA",
+    "name": "Huazhuang",
+    "lines": [
+      "1",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-UNR"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-HUA2",
+    "name": "Huangqu",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-HUA3",
+    "name": "Huagong",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-HUA4",
+    "name": "Huangchang",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-HUA5",
+    "name": "Hualikan",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-HUD",
+    "name": "Huilongguan Dongdajie",
+    "lines": [
+      "18",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HUO"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-HUD2",
+    "name": "Huaxiang Dongqiao",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CUOE"
+    ],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-HUF",
+    "name": "Hufangqiao",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CAK",
+      "BJM-ZHU"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-HUG",
+    "name": "Huilong Guan",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUO"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-HUJ",
+    "name": "Hujialou",
+    "lines": [
+      "10",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON8",
+      "BJM-JIL",
+      "BJM-TUA"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-HUO",
+    "name": "Huoying",
+    "lines": [
+      "13",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HUD",
+      "BJM-LIQ"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-HUO2",
+    "name": "Huoqiying",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BAG",
+      "BJM-CHQ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-HUO3",
+    "name": "Huoyingdong",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUD",
+      "BJM-TIA4"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-HUQ",
+    "name": "Huayuan Qiao",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BAI",
+      "BJM-CIS"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-HUR",
+    "name": "Huangcun railway",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-HUW",
+    "name": "Huojian Wanyuan",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-HUX",
+    "name": "Huangcun Xidajie",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-HUX2",
+    "name": "Huilongguan Xidajie",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LON2"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-HXB",
+    "name": "Huixin Xijie Beikou",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAT",
+      "BJM-HXN"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-HXN",
+    "name": "Huixin Xijie Nankou",
+    "lines": [
+      "10",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HEX",
+      "BJM-SHA"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIA",
+    "name": "Jianguomen",
+    "lines": [
+      "1",
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM2",
+      "BJM-DON",
+      "BJM-YOL"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-JIA2",
+    "name": "Jiaomenxi",
+    "lines": [
+      "10",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CAO2"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIA3",
+    "name": "Jiaomendong",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAM",
+      "BJM-JIA2"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIA4",
+    "name": "Jiangtaixi",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GAO5",
+      "BJM-SAQ"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-JIA5",
+    "name": "Jiangtai",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GAO5"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-JIA6",
+    "name": "Jiahuihu",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIQ2"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-JIC",
+    "name": "Jiaohua Chang",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-JIG",
+    "name": "Jiu Gong",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-JIH",
+    "name": "Jinyu Hutong",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-JIJ",
+    "name": "Jijiamiao",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CAO2",
+      "BJM-CUOE"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIL",
+    "name": "Jintai Lu",
+    "lines": [
+      "14",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHP",
+      "BJM-HUJ"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-JIL2",
+    "name": "Jinghai Lu",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-JIM",
+    "name": "Jiande Men",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BEI7",
+      "BJM-MUD"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIN",
+    "name": "Jin'anqiao",
+    "lines": [
+      "11",
+      "6",
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-PIN"
+    ],
+    "zone": "11"
+  },
+  {
+    "id": "BJM-JIN2",
+    "name": "Jingsong",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SHU"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-JIN3",
+    "name": "Jingfengmen",
+    "lines": [
+      "14",
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BSR",
+      "BJM-CAO2",
+      "BJM-GUN"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-JIN4",
+    "name": "Jingtai",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PUH",
+      "BJM-YON2"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-JIQ",
+    "name": "Jimen Qiao",
+    "lines": [
+      "12",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI9",
+      "BJM-DAS",
+      "BJM-XIT"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-JIS",
+    "name": "Jishuitan",
+    "lines": [
+      "19",
+      "2"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI9",
+      "BJM-GUD",
+      "BJM-PIN2",
+      "BJM-XIZ"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-JIU",
+    "name": "Jiukeshu",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-JIU2",
+    "name": "Jiulongshan",
+    "lines": [
+      "14",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAL",
+      "BJM-SHU"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-JIX",
+    "name": "Jintai Xizhao",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUO",
+      "BJM-HUJ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-KAN",
+    "name": "Kandan",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-KEL",
+    "name": "Keyi Lu",
+    "lines": [
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FEN"
+    ],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-LAI",
+    "name": "Laiguangying",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-LAN",
+    "name": "Langxinzhuang",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-LAN2",
+    "name": "Landianchang",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHQ"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-LIA",
+    "name": "Liaogongzhuang",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-LIB",
+    "name": "Libafang",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-LIH",
+    "name": "Lingjing Hutong",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XID"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-LIK",
+    "name": "Liudao Kou",
+    "lines": [
+      "15",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI10"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-LIN",
+    "name": "Linheli",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-LIN2",
+    "name": "Lincuiqiao",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-LIN3",
+    "name": "Liangxiang Nanguan",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-LIQ",
+    "name": "Lishui Qiao",
+    "lines": [
+      "13",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HUO"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-LIQ2",
+    "name": "Liuli Qiao",
+    "lines": [
+      "10",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-QIL3",
+      "BJM-XIJ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-LIQ3",
+    "name": "Liangma Qiao",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SAQ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-LIQ4",
+    "name": "Lianhua Qiao",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GON",
+      "BJM-LIQ2"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-LIS",
+    "name": "Lishuiqiaonan",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIQ"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-LIS2",
+    "name": "Lize Shangwuqu",
+    "lines": [
+      "14",
+      "16",
+      "daxing_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CAO2",
+      "BJM-DON13"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-LIU",
+    "name": "Liujiayao",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PUH",
+      "BJM-SON"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-LIU2",
+    "name": "Liuliqiaodong",
+    "lines": [
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BWR",
+      "BJM-LIQ2"
+    ],
+    "zone": "9"
+  },
+  {
+    "id": "BJM-LIU3",
+    "name": "Liufang",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DON2",
+      "BJM-GUM"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-LIY",
+    "name": "Liyuan",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-LIY2",
+    "name": "Liyuanzhuang",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-LON",
+    "name": "Longze",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XIE"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-LON2",
+    "name": "Longzexi",
+    "lines": [
+      "18",
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-QIX"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-LSP",
+    "name": "Life Science Park",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XIE",
+      "BJM-ZHU2"
+    ],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-LUC",
+    "name": "Lucheng",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-LUT",
+    "name": "Liangxiang Univ. Town",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-LUTN",
+    "name": "Liangxiang Univ. Town North",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-LUTW",
+    "name": "Liangxiang Univ. Town West",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-LUY",
+    "name": "Luyang",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-MAG",
+    "name": "Magezhuang",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-MAJ",
+    "name": "Majiapu",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BSR",
+      "BJM-JIA2"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-MAL",
+    "name": "Malianwa",
+    "lines": [
+      "16",
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-MAQ",
+    "name": "Madian Qiao",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ANQ",
+      "BJM-BEI9"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-MAQ2",
+    "name": "Maquanying",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-MIM",
+    "name": "Military Museum",
+    "lines": [
+      "1",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BWR",
+      "BJM-GON",
+      "BJM-MUX"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-MIT",
+    "name": "Ming Tombs",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-MOS",
+    "name": "Moshikou",
+    "lines": [
+      "11"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIN"
+    ],
+    "zone": "11"
+  },
+  {
+    "id": "BJM-MUD",
+    "name": "Mudanyuan",
+    "lines": [
+      "10",
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI10",
+      "BJM-BEI9",
+      "BJM-XIT"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-MUX",
+    "name": "Muxidi",
+    "lines": [
+      "1",
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAG",
+      "BJM-MIM"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-MUY",
+    "name": "Muxi Yuan",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-YON2"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-NAL",
+    "name": "Nanlishi Lu",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FUX",
+      "BJM-MUX"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-NAN",
+    "name": "Nanfaxin",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-NAN2",
+    "name": "Nanshao",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-NAX",
+    "name": "Nanluogu Xiang",
+    "lines": [
+      "6",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON7"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-NAZ",
+    "name": "Nanlouzi Zhuang",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-NIU",
+    "name": "Niujie",
+    "lines": [
+      "19",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CAK",
+      "BJM-FUX",
+      "BJM-GUN"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-NIW",
+    "name": "Niwa",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FER",
+      "BJM-XIJ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-NON",
+    "name": "Nongda Nanlu",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-MAL",
+      "BJM-XIY"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-PAN",
+    "name": "Panjiayuanxi",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUW",
+      "BJM-SHI4"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-PAY",
+    "name": "Panjia Yuan",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SHI4"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-PIF",
+    "name": "Pingxi Fu",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUD"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-PIN",
+    "name": "Pingguoyuan",
+    "lines": [
+      "1",
+      "6",
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIN"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-PIN2",
+    "name": "Ping'anli",
+    "lines": [
+      "19",
+      "4",
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHE",
+      "BJM-JIS"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-PIY",
+    "name": "Pingle Yuan",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIU2"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-PUEG",
+    "name": "Peking Univ East Gate",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-PUH",
+    "name": "Puhuangyu",
+    "lines": [
+      "14",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-QDX",
+    "name": "Qinghua Donglu Xikou",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIK"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-QIA",
+    "name": "Qianmen",
+    "lines": [
+      "2",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHM",
+      "BJM-WAN",
+      "BJM-ZHU"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-QIA2",
+    "name": "Qiaowan",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIK",
+      "BJM-ZHU"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-QIA3",
+    "name": "Qiaohuying",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-QIL",
+    "name": "Qingyuan Lu",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-QIL2",
+    "name": "Qingnian Lu",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-QIL3",
+    "name": "Qilizhuang",
+    "lines": [
+      "14",
+      "9"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-LIQ2",
+      "BJM-XIJ"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-QIN",
+    "name": "Qingheying",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-TIA8"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-QIR",
+    "name": "Qinghe railway",
+    "lines": [
+      "13",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-XIE"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-QIX",
+    "name": "Qinghe Xiaoyingqiao",
+    "lines": [
+      "19",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI10",
+      "BJM-LON2"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-QUN",
+    "name": "Qunfang",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-RAF",
+    "name": "Raole Fu",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-RED",
+    "name": "Renmin Daxue (Renmin Univ.)",
+    "lines": [
+      "12",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAS",
+      "BJM-HAH",
+      "BJM-SUQ"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-ROD",
+    "name": "Rongjing Dongjie",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-ROD2",
+    "name": "Rongchang Dongjie",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-SAQ",
+    "name": "Sanyuan Qiao",
+    "lines": [
+      "10",
+      "12",
+      "capital_airport"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON2",
+      "BJM-TAI",
+      "BJM-XIB"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SGN",
+    "name": "Senlin Gongyuan Nanmen (Forest Park South Gate)",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-AOG"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-SHA",
+    "name": "Shaoyaoju",
+    "lines": [
+      "10",
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUM",
+      "BJM-HXN",
+      "BJM-TAI",
+      "BJM-WAN5"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SHA2",
+    "name": "Shangdi",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-QIR"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-SHA3",
+    "name": "Shangezhuang",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-SHA4",
+    "name": "Shang'an",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-SHA5",
+    "name": "Shahe",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-SHI",
+    "name": "Shifoying",
+    "lines": [
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHP"
+    ],
+    "zone": "3"
+  },
+  {
+    "id": "BJM-SHI2",
+    "name": "Shilipu",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIL"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-SHI3",
+    "name": "Shichahai",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUD",
+      "BJM-NAX"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-SHI4",
+    "name": "Shilihe",
+    "lines": [
+      "10",
+      "14",
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SHI5",
+    "name": "Shiliuzhuang",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAM",
+      "BJM-SON"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SHI6",
+    "name": "Shimen",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-SHI7",
+    "name": "Shibalidian",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-SHI8",
+    "name": "Shichang",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-SHQ",
+    "name": "Shuang Qiao",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-SHU",
+    "name": "Shuangjing",
+    "lines": [
+      "10",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUO",
+      "BJM-GUW",
+      "BJM-JIU2"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SHU2",
+    "name": "Shuanghe",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-SHU3",
+    "name": "Shunyi",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-SIH",
+    "name": "Sihui",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-DAL"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-SIH2",
+    "name": "Sihuidong",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-SIQ",
+    "name": "Sijiqing Qiao",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HAW"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-SIQ2",
+    "name": "Sidao Qiao",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIN"
+    ],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-SON",
+    "name": "Songjiazhuang",
+    "lines": [
+      "10",
+      "5",
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SPWG",
+    "name": "Summer Palace West Gate",
+    "lines": [
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BAG"
+    ],
+    "zone": "xijiao"
+  },
+  {
+    "id": "BJM-SSP",
+    "name": "Shangdi Software Park",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-MAL"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-SUJ",
+    "name": "Suzhou Jie",
+    "lines": [
+      "10",
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BAG",
+      "BJM-HAH",
+      "BJM-SUQ"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-SUN",
+    "name": "Sunhe",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-SUP",
+    "name": "Shahe Univ. Park",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-SUQ",
+    "name": "Suzhou Qiao",
+    "lines": [
+      "12",
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHQ",
+      "BJM-RED",
+      "BJM-SUJ"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-SUZ",
+    "name": "Suzhuang",
+    "lines": [
+      "fangshan"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-YAN2"
+    ],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-TAI",
+    "name": "Taiyanggong",
+    "lines": [
+      "10",
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-SAQ",
+      "BJM-SHA",
+      "BJM-WAN5",
+      "BJM-XIB"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-TAI2",
+    "name": "Taipingzhuang",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-TIA4",
+      "BJM-TIA8"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-TAI3",
+    "name": "Taipingqiao",
+    "lines": [
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-FUX",
+      "BJM-PIN2"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-TAO",
+    "name": "Taoranting",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BSR",
+      "BJM-CAK"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-TAQ",
+    "name": "Taoran Qiao",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BSR",
+      "BJM-YON2"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-TIA",
+    "name": "Tian'anmenxi",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XID"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-TIA2",
+    "name": "Tian'anmendong",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-TIA3",
+    "name": "Tiantongyuanbei",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-TIA4"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-TIA4",
+    "name": "Tiantongyuan",
+    "lines": [
+      "18",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-TIA5",
+    "name": "Tiantongyuannan",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIQ",
+      "BJM-TIA4"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-TIA6",
+    "name": "Tiancun",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HAW"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-TIA7",
+    "name": "Tianqiao",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-YON2",
+      "BJM-ZHU"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-TIA8",
+    "name": "Tiantongyuandong",
+    "lines": [
+      "17",
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-TIY",
+    "name": "Tiangong Yuan",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-TOB",
+    "name": "Tongzhou Beiyuan",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-TOB2",
+    "name": "Tongzhou Beiguan",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-TOHE",
+    "name": "Temple of Heaven East Gate",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIK",
+      "BJM-PUH"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-TOM",
+    "name": "Tongyun Men",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-TON",
+    "name": "Tongji Nanlu",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-TUA",
+    "name": "Tuanjiehu",
+    "lines": [
+      "10",
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHP",
+      "BJM-HUJ",
+      "BJM-WOS"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-TUN",
+    "name": "Tundian",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-TUO",
+    "name": "Tuofangying",
+    "lines": [
+      "12"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GAO5"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-TUQ",
+    "name": "Tu Qiao",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUA"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-UNR",
+    "name": "Universal Resort",
+    "lines": [
+      "1",
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-HUA"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-WAJ",
+    "name": "Wanyuan Jie",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-WAL",
+    "name": "Wanshou Lu",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GON"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-WAN",
+    "name": "Wangfujing",
+    "lines": [
+      "1",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON",
+      "BJM-QIA"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-WAN10",
+    "name": "Wan'an",
+    "lines": [
+      "xijiao"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "xijiao"
+  },
+  {
+    "id": "BJM-WAN2",
+    "name": "Wanzi",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BWR",
+      "BJM-DAG"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-WAN3",
+    "name": "Wanshengxi",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-WAN4",
+    "name": "Wanshengdong",
+    "lines": [
+      "7"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-WAN5",
+    "name": "Wangjingxi",
+    "lines": [
+      "13",
+      "15",
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-SHA",
+      "BJM-TAI",
+      "BJM-WAN7"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-WAN6",
+    "name": "Wangjing Nan (S)",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GAO5"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-WAN7",
+    "name": "Wangjing",
+    "lines": [
+      "14",
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-WAN5"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-WAN8",
+    "name": "Wangjingdong",
+    "lines": [
+      "15"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WAN7"
+    ],
+    "zone": "15"
+  },
+  {
+    "id": "BJM-WAN9",
+    "name": "Wanpingcheng",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-WAQ",
+    "name": "Wanquanhe Qiao",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SUJ",
+      "BJM-XIY"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-WAS",
+    "name": "Wanshou Si",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUT",
+      "BJM-SUQ"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-WEI",
+    "name": "Weigongcun",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-GUT",
+      "BJM-RED"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-WEI2",
+    "name": "Weilaikexuechengbei (Future Science City North)",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-WEI3",
+    "name": "Weilaikexuecheng (Future Science City)",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-TIA8"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-WEL",
+    "name": "Wenyang Lu",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-WEN",
+    "name": "Wenhualu",
+    "lines": [
+      "18"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUD"
+    ],
+    "zone": "18"
+  },
+  {
+    "id": "BJM-WOS",
+    "name": "Workers' Stadium",
+    "lines": [
+      "17",
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON8",
+      "BJM-DOS",
+      "BJM-TUA"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-WUF",
+    "name": "Wufutang",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-WUK",
+    "name": "Wukesong",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-WUK2",
+    "name": "Wudao Kou",
+    "lines": [
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ZHL3"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-WXL",
+    "name": "Wuzi Xueyuan Lu",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-XIA",
+    "name": "Xiaocun",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SON"
+    ],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-XIA2",
+    "name": "Xiaoyuan",
+    "lines": [
+      "s1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "s1"
+  },
+  {
+    "id": "BJM-XIB",
+    "name": "Xibahe",
+    "lines": [
+      "12",
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-GUM",
+      "BJM-SAQ",
+      "BJM-TAI"
+    ],
+    "zone": "12"
+  },
+  {
+    "id": "BJM-XIB2",
+    "name": "Xibeiwang",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-MAL"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-XID",
+    "name": "Xidan",
+    "lines": [
+      "1",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-FUX",
+      "BJM-XUM"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-XID2",
+    "name": "Xidiaoyutai",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIS",
+      "BJM-GON"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-XIE",
+    "name": "Xi'erqi",
+    "lines": [
+      "13",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-QIR"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-XIH",
+    "name": "Xihuangcun",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-XIJ",
+    "name": "Xiju",
+    "lines": [
+      "10",
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-LIQ2",
+      "BJM-QIL3"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-XIK",
+    "name": "Xinjie Kou",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PIN2",
+      "BJM-XIZ"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-XIK2",
+    "name": "Xixiao Kou",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-XIM",
+    "name": "Xihong Men",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XIN"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-XIM2",
+    "name": "Xiaohong Men",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-XIN",
+    "name": "Xingong",
+    "lines": [
+      "19",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-XIN2",
+    "name": "Xinshougang (Shougang Park)",
+    "lines": [
+      "11"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "11"
+  },
+  {
+    "id": "BJM-XIN3",
+    "name": "Xinfadi",
+    "lines": [
+      "19"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CAO2",
+      "BJM-XIN"
+    ],
+    "zone": "19"
+  },
+  {
+    "id": "BJM-XIN4",
+    "name": "Xingcheng",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-XIS",
+    "name": "Xisi",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PIN2"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-XIT",
+    "name": "Xitucheng",
+    "lines": [
+      "10",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-JIQ",
+      "BJM-MUD",
+      "BJM-ZHL3"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-XIT2",
+    "name": "Xitieying",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-JIN3"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-XIY",
+    "name": "Xi Yuan",
+    "lines": [
+      "16",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-XIZ",
+    "name": "Xizhimen",
+    "lines": [
+      "13",
+      "2",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CHE",
+      "BJM-DAS",
+      "BJM-JIS"
+    ],
+    "zone": "13"
+  },
+  {
+    "id": "BJM-XUE",
+    "name": "Xuezhiyuan",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIK",
+      "BJM-QIX"
+    ],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-XUE2",
+    "name": "Xueyuanqiao",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-LIK",
+      "BJM-XIT"
+    ],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-XUM",
+    "name": "Xuanwu Men",
+    "lines": [
+      "2",
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-CAK",
+      "BJM-XID"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-YAN",
+    "name": "Yangzhuang",
+    "lines": [
+      "6"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-PIN"
+    ],
+    "zone": "6"
+  },
+  {
+    "id": "BJM-YAN2",
+    "name": "Yancundong",
+    "lines": [
+      "fangshan",
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "fangshan"
+  },
+  {
+    "id": "BJM-YAN3",
+    "name": "Yancun",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-YAN4",
+    "name": "Yanshan",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-YAO",
+    "name": "Yaojiayuan",
+    "lines": [
+      "3"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "3"
+  },
+  {
+    "id": "BJM-YCP",
+    "name": "Yizhuang Culture Park",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-YIH",
+    "name": "Yihezhuang",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-YIN",
+    "name": "Yinghai",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-YIQ",
+    "name": "Yizhuang Qiao",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-YIR",
+    "name": "Yizhuang railway",
+    "lines": [
+      "yizhuang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CIQ2"
+    ],
+    "zone": "yizhuang"
+  },
+  {
+    "id": "BJM-YLT",
+    "name": "Yonghegong Lama Temple",
+    "lines": [
+      "2",
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-BEI3",
+      "BJM-DON2"
+    ],
+    "zone": "2"
+  },
+  {
+    "id": "BJM-YOL",
+    "name": "Yong'an Li",
+    "lines": [
+      "1",
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DON8",
+      "BJM-GUO",
+      "BJM-GUW",
+      "BJM-JIA"
+    ],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-YON",
+    "name": "Yongtaizhuang",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-YON2",
+    "name": "Yongdingmenwai",
+    "lines": [
+      "14",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-YON3",
+    "name": "Yongfeng",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-YON4",
+    "name": "Yongfengnan",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-YUD",
+    "name": "Yuyuantan Dongmen (Yuyuantan Park East Gate)",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-MUX"
+    ],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-YUL",
+    "name": "Yuquan Lu",
+    "lines": [
+      "1"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "1"
+  },
+  {
+    "id": "BJM-YUL2",
+    "name": "Yuzhi Lu",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-ZHU2"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-YUP",
+    "name": "Yuanmingyuan Park",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-XIY"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-YUS",
+    "name": "Yushuzhuang",
+    "lines": [
+      "16"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "16"
+  },
+  {
+    "id": "BJM-YUX",
+    "name": "Yuxin",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HUO"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-ZAO",
+    "name": "Zaoyuan",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-ZAO2",
+    "name": "Zaoying",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-CHP"
+    ],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-ZHA",
+    "name": "Zhangguozhuang",
+    "lines": [
+      "14"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "14"
+  },
+  {
+    "id": "BJM-ZHL",
+    "name": "Zhangzizhong Lu",
+    "lines": [
+      "5"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-BEI3",
+      "BJM-DON7"
+    ],
+    "zone": "5"
+  },
+  {
+    "id": "BJM-ZHL2",
+    "name": "Zhichun Li",
+    "lines": [
+      "10"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HAH",
+      "BJM-ZHL3"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-ZHL3",
+    "name": "Zhichun Lu",
+    "lines": [
+      "10",
+      "13"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-DAS",
+      "BJM-XIT"
+    ],
+    "zone": "10"
+  },
+  {
+    "id": "BJM-ZHM",
+    "name": "Zhongguo Meishuguan (National Art Museum)",
+    "lines": [
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-NAX"
+    ],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-ZHO",
+    "name": "Zhongguancun",
+    "lines": [
+      "4"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-HAH"
+    ],
+    "zone": "4"
+  },
+  {
+    "id": "BJM-ZHO2",
+    "name": "Zhoujiazhuang",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-SHI4"
+    ],
+    "zone": "17"
+  },
+  {
+    "id": "BJM-ZHU",
+    "name": "Zhushikou",
+    "lines": [
+      "7",
+      "8"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "BJM-QIA"
+    ],
+    "zone": "7"
+  },
+  {
+    "id": "BJM-ZHU2",
+    "name": "Zhuxinzhuang",
+    "lines": [
+      "8",
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "8"
+  },
+  {
+    "id": "BJM-ZHU3",
+    "name": "Zhufangbei",
+    "lines": [
+      "changping"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-QIR",
+      "BJM-QIX"
+    ],
+    "zone": "changping"
+  },
+  {
+    "id": "BJM-ZIC",
+    "name": "Zicaowu",
+    "lines": [
+      "yanfang"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-YAN2"
+    ],
+    "zone": "yanfang"
+  },
+  {
+    "id": "BJM-ZUO",
+    "name": "Zuojiazhuang",
+    "lines": [
+      "17"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "BJM-WOS",
+      "BJM-XIB"
+    ],
+    "zone": "17"
+  }
+]

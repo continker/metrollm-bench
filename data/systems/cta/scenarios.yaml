@@ -1,0 +1,36 @@
+- id: kimball_to_midway_clark_lake_skip
+  title: Kimball → Midway, Clark/Lake bypassed
+  oneliner: Downtown hub closed mid-trip — agent re-plans around it and still sells the ride
+  origin_id: CTA-KIM
+  dest_id: CTA-MID
+  event_ids: [sc-clark-lake]
+- id: howard_to_clark_lake_red_north_pm
+  title: Howard → Clark/Lake, Red north single-tracking
+  oneliner: Weekend track renewal with free shuttle — ride proceeds with a delay advisory
+  origin_id: CTA-HOW
+  dest_id: CTA-CLK
+  event_ids: [pm-red-north]
+- id: ohare_to_ashland_bulls_crowd
+  title: O'Hare → Ashland, Bulls game crowd
+  oneliner: Heavy game-day ridership near United Center — ticket issued with a crowd banner
+  origin_id: CTA-ORD
+  dest_id: CTA-ASH
+  event_ids: [ca-united-center]
+- id: ohare_to_clark_lake_closed
+  title: O'Hare → Clark/Lake, Clark/Lake closed
+  oneliner: Destination station closed — agent declines the ticket and advises an alternate
+  origin_id: CTA-ORD
+  dest_id: CTA-CLK
+  event_ids: [sc-clark-lake]
+- id: howard_to_95th_polar_vortex
+  title: Howard → 95th/Dan Ryan, polar vortex
+  oneliner: Elevated lines suspended in extreme cold — staff-and-advise on a partial suspension
+  origin_id: CTA-HOW
+  dest_id: CTA-95D
+  event_ids: [pv-elevated-suspended]
+- id: ohare_to_clark_lake
+  title: O'Hare → Clark/Lake
+  oneliner: Airport to downtown via the Blue Line — no disruptions
+  origin_id: CTA-ORD
+  dest_id: CTA-CLK
+  event_ids: []

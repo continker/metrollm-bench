@@ -1,0 +1,512 @@
+{
+  "memorizable_pairs": [
+    [
+      "TRTC-TAM",
+      "TRTC-T101"
+    ],
+    [
+      "TRTC-TPM",
+      "TRTC-T101"
+    ],
+    [
+      "TRTC-XMN",
+      "TRTC-T101"
+    ],
+    [
+      "TRTC-SSN",
+      "TRTC-XMN"
+    ],
+    [
+      "TRTC-TPZ",
+      "TRTC-TPM"
+    ],
+    [
+      "TRTC-BQO",
+      "TRTC-TPM"
+    ],
+    [
+      "TRTC-NKG",
+      "TRTC-XMN"
+    ],
+    [
+      "TRTC-XDN",
+      "TRTC-TPM"
+    ],
+    [
+      "TRTC-LUZ",
+      "TRTC-DGM"
+    ],
+    [
+      "TRTC-TAM",
+      "TRTC-XSH"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "TRTC-TAM",
+        "TRTC-HSL",
+        "TRTC-BTO",
+        "TRTC-SHL"
+      ],
+      [
+        "TRTC-ZXD",
+        "TRTC-SYS",
+        "TRTC-YCH",
+        "TRTC-HSP",
+        "TRTC-CTH",
+        "TRTC-NKG"
+      ]
+    ],
+    [
+      [
+        "TRTC-XDN",
+        "TRTC-QZH",
+        "TRTC-DPL",
+        "TRTC-JME",
+        "TRTC-WLG"
+      ],
+      [
+        "TRTC-BQO",
+        "TRTC-YNG",
+        "TRTC-XPU"
+      ]
+    ],
+    [
+      [
+        "TRTC-LUZ",
+        "TRTC-SCH",
+        "TRTC-XZH",
+        "TRTC-NSJ"
+      ],
+      [
+        "TRTC-TPZ",
+        "TRTC-MZH",
+        "TRTC-NEC",
+        "TRTC-SSA"
+      ]
+    ],
+    [
+      [
+        "TRTC-T101",
+        "TRTC-XSH"
+      ],
+      [
+        "TRTC-LUZ",
+        "TRTC-SCH",
+        "TRTC-XZH"
+      ]
+    ],
+    [
+      [
+        "TRTC-NKG",
+        "TRTC-CTH",
+        "TRTC-HSP",
+        "TRTC-YCH"
+      ],
+      [
+        "TRTC-XDN",
+        "TRTC-QZH",
+        "TRTC-DPL"
+      ]
+    ],
+    [
+      [
+        "TRTC-TPZ",
+        "TRTC-MZH",
+        "TRTC-NEC"
+      ],
+      [
+        "TRTC-TAM",
+        "TRTC-HSL",
+        "TRTC-BTO",
+        "TRTC-SHL"
+      ]
+    ],
+    [
+      [
+        "TRTC-NSJ",
+        "TRTC-DXI"
+      ],
+      [
+        "TRTC-XDN",
+        "TRTC-QZH",
+        "TRTC-DPL",
+        "TRTC-WLG"
+      ]
+    ],
+    [
+      [
+        "TRTC-YNG",
+        "TRTC-BQO"
+      ],
+      [
+        "TRTC-T101",
+        "TRTC-XSH"
+      ]
+    ],
+    [
+      [
+        "TRTC-NEC",
+        "TRTC-SSA",
+        "TRTC-DZH"
+      ],
+      [
+        "TRTC-NSJ",
+        "TRTC-DXI"
+      ]
+    ],
+    [
+      [
+        "TRTC-TAM",
+        "TRTC-SHL",
+        "TRTC-JNT"
+      ],
+      [
+        "TRTC-GGN",
+        "TRTC-WLG",
+        "TRTC-JME"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "TRTC-TPM",
+    "dest": "TRTC-T101",
+    "payment": "easycard",
+    "compositions": [
+      [
+        "1 adult",
+        {
+          "adults": 1
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "2 adults",
+        {
+          "adults": 2
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 adult + 1 child",
+        {
+          "adults": 1,
+          "children": 1
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 adult + 2 children",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 adult + 3 children (1 pays)",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "2 adults + 3 children",
+        {
+          "adults": 2,
+          "children": 3
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 senior",
+        {
+          "seniors": 1
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "2 seniors",
+        {
+          "seniors": 2
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 disabled",
+        {
+          "disabled": 1
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 adult + 1 senior + 1 disabled",
+        {
+          "adults": 1,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "3 adults",
+        {
+          "adults": 3
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "1 senior + 1 disabled + 2 children",
+        {
+          "seniors": 1,
+          "disabled": 1,
+          "children": 2
+        },
+        "single",
+        "easycard"
+      ],
+      [
+        "2 adults + 2 children + 1 senior + 1 disabled",
+        {
+          "adults": 2,
+          "children": 2,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "easycard"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-taipei-main",
+      "TRTC-BQO",
+      "TRTC-SHL"
+    ],
+    [
+      "sc-zhongxiao-fuxing",
+      "TRTC-NKG",
+      "TRTC-TPZ"
+    ],
+    [
+      "sc-daan",
+      "TRTC-XSH",
+      "TRTC-TAM"
+    ],
+    [
+      "sc-guting",
+      "TRTC-XDN",
+      "TRTC-LUZ"
+    ],
+    [
+      "sc-songshan-airport",
+      "TRTC-TPZ",
+      "TRTC-NEC"
+    ],
+    [
+      "pm-red-tamsui",
+      "TRTC-TAM",
+      "TRTC-TPM"
+    ],
+    [
+      "pm-blue-nangang",
+      "TRTC-XMN",
+      "TRTC-NKG"
+    ],
+    [
+      "pm-green-xindian",
+      "TRTC-DGM",
+      "TRTC-XDN"
+    ],
+    [
+      "pm-orange-luzhou",
+      "TRTC-ZXS",
+      "TRTC-LUZ"
+    ],
+    [
+      "pm-brown-muzha",
+      "TRTC-DAA",
+      "TRTC-TPZ"
+    ],
+    [
+      "tw-advisory",
+      "TRTC-TPM",
+      "TRTC-T101"
+    ],
+    [
+      "tw-brown-suspended",
+      "TRTC-TPZ",
+      "TRTC-NEC"
+    ],
+    [
+      "tw-elevated-reduced",
+      "TRTC-NKG",
+      "TRTC-TAM"
+    ],
+    [
+      "tw-full-suspension",
+      "TRTC-BQO",
+      "TRTC-TPM"
+    ],
+    [
+      "tw-post-typhoon",
+      "TRTC-TPZ",
+      "TRTC-TPM"
+    ],
+    [
+      "ls-red-full",
+      "TRTC-TAM",
+      "TRTC-XSH"
+    ],
+    [
+      "ls-blue-partial-west",
+      "TRTC-DIN",
+      "TRTC-NEC"
+    ],
+    [
+      "wsz-wenhu-rain",
+      "TRTC-NEI",
+      "TRTC-TPM"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "TRTC-TPM",
+        "TRTC-T101",
+        "wheelchair"
+      ],
+      [
+        "TRTC-XMN",
+        "TRTC-NKG",
+        "step_free"
+      ],
+      [
+        "TRTC-SSN",
+        "TRTC-GUT",
+        "elevator_required"
+      ],
+      [
+        "TRTC-LUZ",
+        "TRTC-DGM",
+        "wheelchair"
+      ],
+      [
+        "TRTC-TAM",
+        "TRTC-SHL",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "TRTC-NEC",
+        "TRTC-DAA",
+        "wheelchair"
+      ],
+      [
+        "TRTC-TPZ",
+        "TRTC-ZXF",
+        "step_free"
+      ],
+      [
+        "TRTC-LZL",
+        "TRTC-NEC",
+        "elevator_required"
+      ],
+      [
+        "TRTC-WFH",
+        "TRTC-NJF",
+        "wheelchair"
+      ],
+      [
+        "TRTC-DZH",
+        "TRTC-MZH",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "TRTC-LZL",
+        "TRTC-TPZ",
+        "wheelchair"
+      ],
+      [
+        "TRTC-DAA",
+        "TRTC-MZH",
+        "step_free"
+      ],
+      [
+        "TRTC-NJF",
+        "TRTC-SSA",
+        "elevator_required"
+      ],
+      [
+        "TRTC-ZXF",
+        "TRTC-WFC",
+        "wheelchair"
+      ],
+      [
+        "TRTC-NEC",
+        "TRTC-TPZ",
+        "step_free"
+      ]
+    ]
+  },
+  "tolerances": {
+    "fare": 5.0,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "TRTC",
+  "closed_station_name": "Nonexistent Station",
+  "main_line": "red",
+  "cat_b_freetext_balance": [
+    {
+      "id": "easycard-low-balance",
+      "origin": "TRTC-TPM",
+      "dest": "TRTC-T101",
+      "passengers": {
+        "adults": 1
+      },
+      "payment_method": "easycard",
+      "given_balance": 12.0,
+      "currency_symbol": "NT$",
+      "freetext": "My EasyCard only has NT$12 on it. Can I still travel?",
+      "advisory_must_mention": [
+        "add value",
+        "easycard"
+      ]
+    }
+  ]
+}

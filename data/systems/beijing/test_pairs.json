@@ -1,0 +1,535 @@
+{
+  "memorizable_pairs": [
+    [
+      "BJM-3HH",
+      "BJM-TIA2"
+    ],
+    [
+      "BJM-BSR",
+      "BJM-WAN"
+    ],
+    [
+      "BJM-XIZ",
+      "BJM-DON2"
+    ],
+    [
+      "BJM-GUO",
+      "BJM-AOG"
+    ],
+    [
+      "BJM-XID",
+      "BJM-UNR"
+    ],
+    [
+      "BJM-BWR",
+      "BJM-BER"
+    ],
+    [
+      "BJM-DAJ3",
+      "BJM-GUO"
+    ],
+    [
+      "BJM-FUS",
+      "BJM-SIH"
+    ],
+    [
+      "BJM-TIA3",
+      "BJM-SON"
+    ],
+    [
+      "BJM-HAH",
+      "BJM-JIA"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "BJM-UNR",
+        "BJM-SIH",
+        "BJM-DAL"
+      ],
+      [
+        "BJM-ANH",
+        "BJM-YUP",
+        "BJM-ZHO"
+      ]
+    ],
+    [
+      [
+        "BJM-FUX",
+        "BJM-XUM",
+        "BJM-QIA"
+      ],
+      [
+        "BJM-SON",
+        "BJM-PUH",
+        "BJM-CIK"
+      ]
+    ],
+    [
+      [
+        "BJM-JIN",
+        "BJM-PIN",
+        "BJM-CIS"
+      ],
+      [
+        "BJM-ZHU2",
+        "BJM-HUO",
+        "BJM-AOG"
+      ]
+    ],
+    [
+      [
+        "BJM-GUO",
+        "BJM-SHU",
+        "BJM-JIX"
+      ],
+      [
+        "BJM-ZHA",
+        "BJM-DAG",
+        "BJM-QIL3"
+      ]
+    ],
+    [
+      [
+        "BJM-3HH",
+        "BJM-2HH"
+      ],
+      [
+        "BJM-BWR",
+        "BJM-CAK",
+        "BJM-HUA"
+      ]
+    ],
+    [
+      [
+        "BJM-CHX",
+        "BJM-QIR",
+        "BJM-XIE"
+      ],
+      [
+        "BJM-YIR",
+        "BJM-CIQ2",
+        "BJM-SON"
+      ]
+    ],
+    [
+      [
+        "BJM-DAJ3",
+        "BJM-LIS2"
+      ],
+      [
+        "BJM-BEI11",
+        "BJM-XIY",
+        "BJM-GUT"
+      ]
+    ],
+    [
+      [
+        "BJM-XIZ",
+        "BJM-XIE",
+        "BJM-SHA"
+      ],
+      [
+        "BJM-FEN2",
+        "BJM-AOG",
+        "BJM-WAN5"
+      ]
+    ],
+    [
+      [
+        "BJM-GUT",
+        "BJM-BWR",
+        "BJM-FEN"
+      ],
+      [
+        "BJM-HAW",
+        "BJM-DAS",
+        "BJM-DON5"
+      ]
+    ],
+    [
+      [
+        "BJM-YAN2",
+        "BJM-DON13",
+        "BJM-CUOE"
+      ],
+      [
+        "BJM-LON2",
+        "BJM-MUD",
+        "BJM-XIN"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "BJM-WAN",
+    "dest": "BJM-AOG",
+    "payment": "yikatong",
+    "compositions": [
+      [
+        "1 adult (yikatong)",
+        {
+          "adults": 1
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 adult (mobile pay)",
+        {
+          "adults": 1
+        },
+        "single",
+        "mobile_pay"
+      ],
+      [
+        "1 adult (single journey)",
+        {
+          "adults": 1
+        },
+        "single",
+        "single_journey"
+      ],
+      [
+        "2 adults (yikatong)",
+        {
+          "adults": 2
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 adult + 1 child",
+        {
+          "adults": 1,
+          "children": 1
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 adult + 2 children",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 adult + 3 children (1 pays)",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 senior",
+        {
+          "seniors": 1
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "2 seniors",
+        {
+          "seniors": 2
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 disabled",
+        {
+          "disabled": 1
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 adult + 1 senior + 1 disabled",
+        {
+          "adults": 1,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "3 adults (mobile pay)",
+        {
+          "adults": 3
+        },
+        "single",
+        "mobile_pay"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "yikatong"
+      ],
+      [
+        "1 senior + 1 disabled + 2 children",
+        {
+          "seniors": 1,
+          "disabled": 1,
+          "children": 2
+        },
+        "single",
+        "yikatong"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-guomao",
+      "BJM-XID",
+      "BJM-DAL"
+    ],
+    [
+      "sc-xizhimen",
+      "BJM-HAH",
+      "BJM-BER"
+    ],
+    [
+      "sc-dongzhimen",
+      "BJM-3HH",
+      "BJM-GUO"
+    ],
+    [
+      "sc-xidan",
+      "BJM-FUX",
+      "BJM-XID"
+    ],
+    [
+      "sc-songjiazhuang",
+      "BJM-PUH",
+      "BJM-YIR"
+    ],
+    [
+      "pm-line1-west",
+      "BJM-FUS",
+      "BJM-GON"
+    ],
+    [
+      "pm-line4-north",
+      "BJM-ANH",
+      "BJM-XID"
+    ],
+    [
+      "pm-line10-north",
+      "BJM-BAG",
+      "BJM-SHA"
+    ],
+    [
+      "pm-line6-west",
+      "BJM-JIN",
+      "BJM-ERL"
+    ],
+    [
+      "pm-line5-south",
+      "BJM-DON7",
+      "BJM-SON"
+    ],
+    [
+      "sw-advisory",
+      "BJM-WAN",
+      "BJM-AOG"
+    ],
+    [
+      "sw-outdoor-reduced",
+      "BJM-FRH",
+      "BJM-GUO"
+    ],
+    [
+      "sw-full-suspension",
+      "BJM-3HH",
+      "BJM-TIA2"
+    ],
+    [
+      "ca-tiananmen",
+      "BJM-XID",
+      "BJM-TIA2"
+    ],
+    [
+      "ca-olympic",
+      "BJM-GUO",
+      "BJM-AOG"
+    ],
+    [
+      "ls-line10-full",
+      "BJM-YAN4",
+      "BJM-DON5"
+    ],
+    [
+      "ls-line10-full-central",
+      "BJM-SUJ",
+      "BJM-SAQ"
+    ],
+    [
+      "ls-line14-partial",
+      "BJM-ZHA",
+      "BJM-BSR"
+    ],
+    [
+      "ls-line2-loop-full",
+      "BJM-XIZ",
+      "BJM-DON2"
+    ],
+    [
+      "ls-line15-full-noalt",
+      "BJM-QDX",
+      "BJM-WAN7"
+    ],
+    [
+      "ls-line10-plus-line9",
+      "BJM-YAN4",
+      "BJM-DON5"
+    ],
+    [
+      "ser-guomao-peak",
+      "BJM-GUO",
+      "BJM-XIZ"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "BJM-WAN",
+        "BJM-AOG",
+        "wheelchair"
+      ],
+      [
+        "BJM-XID",
+        "BJM-JIA",
+        "step_free"
+      ],
+      [
+        "BJM-GUO",
+        "BJM-DON2",
+        "elevator_required"
+      ],
+      [
+        "BJM-BSR",
+        "BJM-FUX",
+        "wheelchair"
+      ],
+      [
+        "BJM-3HH",
+        "BJM-SAQ",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "BJM-FUS",
+        "BJM-GON",
+        "wheelchair"
+      ],
+      [
+        "BJM-JIS",
+        "BJM-JIA",
+        "step_free"
+      ],
+      [
+        "BJM-TIA3",
+        "BJM-DON",
+        "elevator_required"
+      ],
+      [
+        "BJM-JIN",
+        "BJM-CIS",
+        "wheelchair"
+      ],
+      [
+        "BJM-FUS",
+        "BJM-XID",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "BJM-XID",
+        "BJM-GUC",
+        "wheelchair"
+      ],
+      [
+        "BJM-DON",
+        "BJM-YLT",
+        "step_free"
+      ],
+      [
+        "BJM-GUO",
+        "BJM-NAL",
+        "elevator_required"
+      ],
+      [
+        "BJM-WAN",
+        "BJM-FUM",
+        "wheelchair"
+      ],
+      [
+        "BJM-JIN",
+        "BJM-LIA",
+        "step_free"
+      ]
+    ]
+  },
+  "tolerances": {
+    "fare": 1.0,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "BJM",
+  "closed_station_name": "Nonexistent Station",
+  "main_line": "1",
+  "cat_a_direction": [
+    {
+      "origin": "BJM-JIN2",
+      "dest": "BJM-SHI4",
+      "direction": "clockwise",
+      "passengers": {
+        "adults": 1
+      },
+      "advisory_must_mention": [
+        "clockwise",
+        "line 10"
+      ]
+    }
+  ],
+  "cat_b_advisory_extra": [
+    {
+      "id": "airport-express-separate-ticket",
+      "origin": "BJM-DON2",
+      "dest": "BJM-3HH",
+      "passengers": {
+        "adults": 1
+      },
+      "payment_method": "yikatong",
+      "difficulty": "medium",
+      "title": "Fare: Airport Express separate ticket window",
+      "freetext": "I need to get to Terminal 3 at Capital Airport.",
+      "advisory_must_mention": [
+        "separate ticket",
+        "airport express",
+        "\u00a525"
+      ]
+    }
+  ]
+}

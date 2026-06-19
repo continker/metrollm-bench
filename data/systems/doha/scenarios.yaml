@@ -1,0 +1,42 @@
+- id: airport_to_msheireb_sandstorm_advisory
+  title: Hamad Airport → Msheireb, sandstorm advisory
+  oneliner: Storm approaching but all lines run normally — sell ticket, advise monitoring
+  origin_id: DOHA-HIA
+  dest_id: DOHA-MSH
+  event_ids: [sw-approaching]
+- id: lusail_to_msheireb_red_pm
+  title: Lusail QNB → Msheireb, Red Line maintenance
+  oneliner: Planned work on the south/airport branch — ride proceeds with a delay advisory
+  origin_id: DOHA-LUS
+  dest_id: DOHA-MSH
+  event_ids: [pm-red-south]
+- id: riffa_to_msheireb_edu_city_closed
+  title: Al Riffa → Msheireb, Education City closed
+  oneliner: Intermediate station skipped — agent re-plans Green Line and still sells a ticket
+  origin_id: DOHA-RIF
+  dest_id: DOHA-MSH
+  event_ids: [sc-education-city]
+- id: lusail_to_souq_waqif_sandstorm
+  title: Lusail QNB → Souq Waqif, sandstorm
+  oneliner: Reduced 12-min headways, no line suspended — sell ticket, warn of delays
+  origin_id: DOHA-LUS
+  dest_id: DOHA-SWQ
+  event_ids: [sw-moderate]
+- id: msheireb_to_hia
+  title: Msheireb → Hamad International Airport
+  oneliner: Hub station to the airport on the Red Line, no disruptions
+  origin_id: DOHA-MSH
+  dest_id: DOHA-HIA
+  event_ids: []
+- id: msheireb_to_hia_airport_closed
+  title: Msheireb → Hamad International, airport closed
+  oneliner: Destination station closed — agent declines ticket and refers to shuttle/staff
+  origin_id: DOHA-MSH
+  dest_id: DOHA-HIA
+  event_ids: [sc-hia]
+- id: west_bay_to_education_city_west_bay_closed
+  title: West Bay → Education City, West Bay closed
+  oneliner: Origin station closed — agent cannot depart, redirects to nearby station
+  origin_id: DOHA-WBQ
+  dest_id: DOHA-EDC
+  event_ids: [sc-west-bay]

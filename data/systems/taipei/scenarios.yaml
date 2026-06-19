@@ -1,0 +1,48 @@
+- id: taipei_main_closed_reroute
+  title: Banqiao to Shilin, Taipei Main closed
+  oneliner: Hub station shut - agent reroutes via Ximen/Zhongshan and still sells a ticket
+  origin_id: TRTC-BQO
+  dest_id: TRTC-SHL
+  event_ids: [sc-taipei-main]
+- id: ximen_to_nangang_blue_pm
+  title: Ximen to Nangang, Blue Line night work
+  oneliner: Late-night signal upgrade - ride proceeds, agent tickets with a last-train delay advisory
+  origin_id: TRTC-XMN
+  dest_id: TRTC-NKG
+  event_ids: [pm-blue-nangang]
+- id: neihu_to_taipei_main_rain_slow
+  title: Neihu to Taipei Main, Brown Line rain delays
+  oneliner: Heavy rain slows the Wenhu Line - agent tickets and warns of 10-15 min delays
+  origin_id: TRTC-NEI
+  dest_id: TRTC-TPM
+  event_ids: [wsz-wenhu-rain]
+- id: taipei_main_to_taipei_101
+  title: Taipei Main to Taipei 101
+  oneliner: Downtown to the observation tower - clean route, no disruption
+  origin_id: TRTC-TPM
+  dest_id: TRTC-T101
+  event_ids: []
+- id: tamsui_to_taipei_main_red_pm
+  title: Tamsui to Taipei Main, Red Line maintenance
+  oneliner: Weekend track work cuts the only northern Red segment - advisory only, no ticket
+  origin_id: TRTC-TAM
+  dest_id: TRTC-TPM
+  event_ids: [pm-red-tamsui]
+- id: taipei_main_to_songshan_airport_closed
+  title: Taipei Main to Songshan Airport, airport closed
+  oneliner: Destination station shut for inspection - agent declines and advises staff
+  origin_id: TRTC-TPM
+  dest_id: TRTC-SSA
+  event_ids: [sc-songshan-airport]
+- id: tamsui_to_xiangshan_typhoon
+  title: Tamsui to Xiangshan, typhoon warning
+  oneliner: Brown Line suspended for high winds - agent relays the typhoon advisory
+  origin_id: TRTC-TAM
+  dest_id: TRTC-XSH
+  event_ids: [tw-brown-suspended]
+- id: daan_to_tamsui_red_suspended
+  title: Daan to Tamsui, Red Line suspended
+  oneliner: Full Red Line outage - agent declines rail and points to bus/TRA
+  origin_id: TRTC-TAM
+  dest_id: TRTC-XSH
+  event_ids: [ls-red-full]

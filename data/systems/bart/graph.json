@@ -1,0 +1,877 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "from": "BART-RICH",
+      "to": "BART-DELN",
+      "distance_miles": 2.12,
+      "travel_time_min": 4.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DELN",
+      "to": "BART-DELP",
+      "distance_miles": 1.84,
+      "travel_time_min": 3.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DELP",
+      "to": "BART-NBRK",
+      "distance_miles": 2.15,
+      "travel_time_min": 4.3,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-NBRK",
+      "to": "BART-DBRK",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DBRK",
+      "to": "BART-ASHB",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-ASHB",
+      "to": "BART-MCAR",
+      "distance_miles": 1.69,
+      "travel_time_min": 3.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MCAR",
+      "to": "BART-19TH",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-19TH",
+      "to": "BART-12TH",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-12TH",
+      "to": "BART-WOAK",
+      "distance_miles": 1.29,
+      "travel_time_min": 2.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WOAK",
+      "to": "BART-EMBR",
+      "distance_miles": 5.62,
+      "travel_time_min": 11.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-EMBR",
+      "to": "BART-MONT",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MONT",
+      "to": "BART-POWL",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-POWL",
+      "to": "BART-CIVC",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CIVC",
+      "to": "BART-16TH",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-16TH",
+      "to": "BART-24TH",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-24TH",
+      "to": "BART-GLEN",
+      "distance_miles": 1.56,
+      "travel_time_min": 3.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-GLEN",
+      "to": "BART-BALB",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BALB",
+      "to": "BART-DALY",
+      "distance_miles": 1.58,
+      "travel_time_min": 3.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DALY",
+      "to": "BART-COLM",
+      "distance_miles": 1.51,
+      "travel_time_min": 3.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLM",
+      "to": "BART-SSAN",
+      "distance_miles": 1.84,
+      "travel_time_min": 3.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SSAN",
+      "to": "BART-SANB",
+      "distance_miles": 2.4,
+      "travel_time_min": 4.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SANB",
+      "to": "BART-SFO",
+      "distance_miles": 2.0,
+      "travel_time_min": 4.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SFO",
+      "to": "BART-MLBR",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "BART-RICH",
+      "to": "BART-DELN",
+      "distance_miles": 2.12,
+      "travel_time_min": 4.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DELN",
+      "to": "BART-DELP",
+      "distance_miles": 1.84,
+      "travel_time_min": 3.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DELP",
+      "to": "BART-NBRK",
+      "distance_miles": 2.15,
+      "travel_time_min": 4.3,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-NBRK",
+      "to": "BART-DBRK",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DBRK",
+      "to": "BART-ASHB",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-ASHB",
+      "to": "BART-MCAR",
+      "distance_miles": 1.69,
+      "travel_time_min": 3.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MCAR",
+      "to": "BART-19TH",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-19TH",
+      "to": "BART-12TH",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-12TH",
+      "to": "BART-LAKE",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-LAKE",
+      "to": "BART-FTVL",
+      "distance_miles": 2.73,
+      "travel_time_min": 5.5,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-FTVL",
+      "to": "BART-COLS",
+      "distance_miles": 2.09,
+      "travel_time_min": 4.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLS",
+      "to": "BART-SANL",
+      "distance_miles": 2.95,
+      "travel_time_min": 5.9,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SANL",
+      "to": "BART-BAYF",
+      "distance_miles": 2.54,
+      "travel_time_min": 5.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BAYF",
+      "to": "BART-HAYW",
+      "distance_miles": 2.86,
+      "travel_time_min": 5.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-HAYW",
+      "to": "BART-SHAY",
+      "distance_miles": 2.94,
+      "travel_time_min": 5.9,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SHAY",
+      "to": "BART-UCTY",
+      "distance_miles": 3.72,
+      "travel_time_min": 7.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-UCTY",
+      "to": "BART-FRMT",
+      "distance_miles": 3.19,
+      "travel_time_min": 6.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-FRMT",
+      "to": "BART-WARM",
+      "distance_miles": 4.32,
+      "travel_time_min": 8.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WARM",
+      "to": "BART-MLPT",
+      "distance_miles": 6.89,
+      "travel_time_min": 13.8,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MLPT",
+      "to": "BART-BERY",
+      "distance_miles": 3.03,
+      "travel_time_min": 6.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "BART-ANTC",
+      "to": "BART-PCTR",
+      "distance_miles": 6.11,
+      "travel_time_min": 12.2,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-PCTR",
+      "to": "BART-PITT",
+      "distance_miles": 3.0,
+      "travel_time_min": 6.0,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-PITT",
+      "to": "BART-NOC",
+      "distance_miles": 4.5,
+      "travel_time_min": 9.0,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-NOC",
+      "to": "BART-CONC",
+      "distance_miles": 2.06,
+      "travel_time_min": 4.1,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CONC",
+      "to": "BART-PLH",
+      "distance_miles": 3.46,
+      "travel_time_min": 6.9,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-PLH",
+      "to": "BART-WAC",
+      "distance_miles": 1.68,
+      "travel_time_min": 3.4,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WAC",
+      "to": "BART-LAFY",
+      "distance_miles": 3.24,
+      "travel_time_min": 6.5,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-LAFY",
+      "to": "BART-ORI",
+      "distance_miles": 3.38,
+      "travel_time_min": 6.8,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-ORI",
+      "to": "BART-ROC",
+      "distance_miles": 4.36,
+      "travel_time_min": 8.7,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-ROC",
+      "to": "BART-MCAR",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MCAR",
+      "to": "BART-19TH",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-19TH",
+      "to": "BART-12TH",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-12TH",
+      "to": "BART-WOAK",
+      "distance_miles": 1.29,
+      "travel_time_min": 2.6,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WOAK",
+      "to": "BART-EMBR",
+      "distance_miles": 5.62,
+      "travel_time_min": 11.2,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-EMBR",
+      "to": "BART-MONT",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MONT",
+      "to": "BART-POWL",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-POWL",
+      "to": "BART-CIVC",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CIVC",
+      "to": "BART-16TH",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-16TH",
+      "to": "BART-24TH",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-24TH",
+      "to": "BART-GLEN",
+      "distance_miles": 1.56,
+      "travel_time_min": 3.1,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-GLEN",
+      "to": "BART-BALB",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BALB",
+      "to": "BART-DALY",
+      "distance_miles": 1.58,
+      "travel_time_min": 3.2,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DALY",
+      "to": "BART-COLM",
+      "distance_miles": 1.51,
+      "travel_time_min": 3.0,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLM",
+      "to": "BART-SSAN",
+      "distance_miles": 1.84,
+      "travel_time_min": 3.7,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SSAN",
+      "to": "BART-SANB",
+      "distance_miles": 2.4,
+      "travel_time_min": 4.8,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SANB",
+      "to": "BART-SFO",
+      "distance_miles": 2.0,
+      "travel_time_min": 4.0,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SFO",
+      "to": "BART-MLBR",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "yellow",
+      "type": "rail"
+    },
+    {
+      "from": "BART-DUBL",
+      "to": "BART-WDUB",
+      "distance_miles": 1.6,
+      "travel_time_min": 3.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WDUB",
+      "to": "BART-CAST",
+      "distance_miles": 8.08,
+      "travel_time_min": 16.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CAST",
+      "to": "BART-BAYF",
+      "distance_miles": 2.81,
+      "travel_time_min": 5.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BAYF",
+      "to": "BART-SANL",
+      "distance_miles": 2.54,
+      "travel_time_min": 5.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SANL",
+      "to": "BART-COLS",
+      "distance_miles": 2.95,
+      "travel_time_min": 5.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLS",
+      "to": "BART-FTVL",
+      "distance_miles": 2.09,
+      "travel_time_min": 4.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-FTVL",
+      "to": "BART-LAKE",
+      "distance_miles": 2.73,
+      "travel_time_min": 5.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-LAKE",
+      "to": "BART-WOAK",
+      "distance_miles": 1.72,
+      "travel_time_min": 3.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WOAK",
+      "to": "BART-EMBR",
+      "distance_miles": 5.62,
+      "travel_time_min": 11.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-EMBR",
+      "to": "BART-MONT",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MONT",
+      "to": "BART-POWL",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-POWL",
+      "to": "BART-CIVC",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CIVC",
+      "to": "BART-16TH",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-16TH",
+      "to": "BART-24TH",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-24TH",
+      "to": "BART-GLEN",
+      "distance_miles": 1.56,
+      "travel_time_min": 3.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-GLEN",
+      "to": "BART-BALB",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BALB",
+      "to": "BART-DALY",
+      "distance_miles": 1.58,
+      "travel_time_min": 3.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BERY",
+      "to": "BART-MLPT",
+      "distance_miles": 3.03,
+      "travel_time_min": 6.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MLPT",
+      "to": "BART-WARM",
+      "distance_miles": 6.89,
+      "travel_time_min": 13.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WARM",
+      "to": "BART-FRMT",
+      "distance_miles": 4.32,
+      "travel_time_min": 8.6,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-FRMT",
+      "to": "BART-UCTY",
+      "distance_miles": 3.19,
+      "travel_time_min": 6.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-UCTY",
+      "to": "BART-SHAY",
+      "distance_miles": 3.72,
+      "travel_time_min": 7.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SHAY",
+      "to": "BART-HAYW",
+      "distance_miles": 2.94,
+      "travel_time_min": 5.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-HAYW",
+      "to": "BART-BAYF",
+      "distance_miles": 2.86,
+      "travel_time_min": 5.7,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BAYF",
+      "to": "BART-SANL",
+      "distance_miles": 2.54,
+      "travel_time_min": 5.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-SANL",
+      "to": "BART-COLS",
+      "distance_miles": 2.95,
+      "travel_time_min": 5.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLS",
+      "to": "BART-FTVL",
+      "distance_miles": 2.09,
+      "travel_time_min": 4.2,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-FTVL",
+      "to": "BART-LAKE",
+      "distance_miles": 2.73,
+      "travel_time_min": 5.5,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-LAKE",
+      "to": "BART-WOAK",
+      "distance_miles": 1.72,
+      "travel_time_min": 3.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-WOAK",
+      "to": "BART-EMBR",
+      "distance_miles": 5.62,
+      "travel_time_min": 11.2,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-EMBR",
+      "to": "BART-MONT",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-MONT",
+      "to": "BART-POWL",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-POWL",
+      "to": "BART-CIVC",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-CIVC",
+      "to": "BART-16TH",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-16TH",
+      "to": "BART-24TH",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-24TH",
+      "to": "BART-GLEN",
+      "distance_miles": 1.56,
+      "travel_time_min": 3.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-GLEN",
+      "to": "BART-BALB",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-BALB",
+      "to": "BART-DALY",
+      "distance_miles": 1.58,
+      "travel_time_min": 3.2,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "BART-COLS",
+      "to": "BART-OAKL",
+      "distance_miles": 2.91,
+      "travel_time_min": 5.8,
+      "line": "oac",
+      "type": "rail"
+    }
+  ]
+}

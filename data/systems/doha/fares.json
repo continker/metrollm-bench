@@ -1,0 +1,22 @@
+{
+  "system": "doha",
+  "model": "flat",
+  "currency": "QAR",
+  "currency_symbol": "QR",
+  "base_fare": 2,
+  "gold_fare": 10,
+  "payment_methods": {
+    "travel_card": {"fare": 2, "class": "standard", "transfers": "free_within_90min"},
+    "gold_travel_card": {"fare": 10, "class": "gold", "transfers": "free_within_90min"},
+    "contactless": {"fare": 2, "class": "standard", "transfers": "free_within_90min"}
+  },
+  "discounts": {
+    "children": {"fare": 0, "max_per_adult": 2, "qualifier": "under 5", "note": "Must be accompanied by paying adult"}
+  },
+  "passes": {
+    "1_day": {"price": 6, "class": "standard"},
+    "1_day_gold": {"price": 30, "class": "gold"},
+    "7_day": {"price": 20, "class": "standard"},
+    "7_day_gold": {"price": 100, "class": "gold"}
+  }
+}

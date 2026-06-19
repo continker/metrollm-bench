@@ -1,0 +1,468 @@
+templates:
+  station_closure:
+    instantiations:
+      - id: "sc-taipei-main"
+        disruption:
+          id: "sc-taipei-main"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Taipei Main Station closed due to suspicious package investigation. All Red and Blue line trains skip this station. Use Ximen (Blue) or Zhongshan (Red) as alternatives."
+          alternative: "Use Ximen (Blue Line, one station west) or Zhongshan (Red Line, one station north)"
+          eta_resolution: "2-4 hours"
+        station_id: "TRTC-TPM"
+        station_name: "Taipei Main Station"
+        reason: "Suspicious package investigation"
+        nearest_alternatives: ["TRTC-XMN", "TRTC-ZSN"]
+        advisory_must_mention: ["taipei main", "closed", "suspicious package"]
+        blocked_stations: ["TRTC-TPM"]
+        blocked_edges: []
+
+      - id: "sc-zhongxiao-fuxing"
+        disruption:
+          id: "sc-zhongxiao-fuxing"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Zhongxiao Fuxing station closed for emergency water leak repair. Blue and Brown line trains skip this station. Use Zhongxiao Xinsheng (Blue) or Zhongxiao Dunhua (Blue) / Nanjing Fuxing (Brown) or Daan (Brown) as alternatives."
+          alternative: "Use Zhongxiao Xinsheng or Zhongxiao Dunhua (Blue), Nanjing Fuxing or Daan (Brown)"
+          eta_resolution: "4-6 hours"
+        station_id: "TRTC-ZXF"
+        station_name: "Zhongxiao Fuxing"
+        reason: "Emergency water leak repair"
+        nearest_alternatives: ["TRTC-ZXS", "TRTC-ZXD", "TRTC-NJF", "TRTC-DAA"]
+        advisory_must_mention: ["zhongxiao fuxing", "closed", "water leak"]
+        blocked_stations: ["TRTC-ZXF"]
+        blocked_edges: []
+
+      - id: "sc-daan"
+        disruption:
+          id: "sc-daan"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Daan station closed due to electrical fault in signaling system. Red and Brown line trains skip this station. Use Dongmen (Red) or Taipei 101/WTC (Red), Liuzhangli (Brown) or Zhongxiao Fuxing (Brown) as alternatives."
+          alternative: "Use Dongmen or Taipei 101/WTC (Red), Liuzhangli or Zhongxiao Fuxing (Brown)"
+          eta_resolution: "3-5 hours"
+        station_id: "TRTC-DAA"
+        station_name: "Daan"
+        reason: "Electrical fault in signaling system"
+        nearest_alternatives: ["TRTC-DGM", "TRTC-T101", "TRTC-LZL", "TRTC-ZXF"]
+        advisory_must_mention: ["daan", "closed", "electrical fault"]
+        blocked_stations: ["TRTC-DAA"]
+        blocked_edges: []
+
+      - id: "sc-guting"
+        disruption:
+          id: "sc-guting"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Guting station closed due to fire alarm activation. Green and Orange line trains skip this station. Use Dongmen (Green/Orange) or Taipower Building (Green) / Ancient Pavilion (Orange) as alternatives."
+          alternative: "Use Dongmen (northbound) or Taipower Building (Green south) / Ancient Pavilion (Orange south)"
+          eta_resolution: "1-3 hours"
+        station_id: "TRTC-GUT"
+        station_name: "Guting"
+        reason: "Fire alarm activation"
+        nearest_alternatives: ["TRTC-DGM", "TRTC-TPB", "TRTC-APV"]
+        advisory_must_mention: ["guting", "closed", "fire alarm"]
+        blocked_stations: ["TRTC-GUT"]
+        blocked_edges: []
+
+      - id: "sc-songshan-airport"
+        disruption:
+          id: "sc-songshan-airport"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Songshan Airport station closed for platform safety inspection. Brown line trains skip this station. Use Zhongshan Junior High or Dazhi as alternatives."
+          alternative: "Use Zhongshan Junior High (southbound) or Dazhi (northbound)"
+          eta_resolution: "2-3 hours"
+        station_id: "TRTC-SSA"
+        station_name: "Songshan Airport"
+        reason: "Platform safety inspection"
+        nearest_alternatives: ["TRTC-ZJH", "TRTC-DZH"]
+        advisory_must_mention: ["songshan airport", "closed", "inspection"]
+        blocked_stations: ["TRTC-SSA"]
+        blocked_edges: []
+
+  planned_maintenance:
+    instantiations:
+      - id: "pm-red-tamsui"
+        disruption:
+          id: "pm-red-tamsui"
+          line: "red"
+          segment:
+            from_station: "TRTC-TAM"
+            to_station: "TRTC-BTO"
+            stations: ["TRTC-TAM", "TRTC-HSL", "TRTC-BTO"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Tamsui and Beitou this weekend due to track replacement. Free shuttle bus available between affected stations."
+          alternative: "Free shuttle bus between Tamsui and Beitou"
+          eta_resolution: "Service resumes Tuesday 6:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T06:00:00"
+        line: "red"
+        segment:
+          from_station: "TRTC-TAM"
+          to_station: "TRTC-BTO"
+          stations: ["TRTC-TAM", "TRTC-HSL", "TRTC-BTO"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["red line", "tamsui", "beitou", "bus"]
+        blocked_stations: []
+        blocked_edges:
+          - ["TRTC-TAM", "TRTC-HSL"]
+          - ["TRTC-HSL", "TRTC-BTO"]
+
+      - id: "pm-blue-nangang"
+        disruption:
+          id: "pm-blue-nangang"
+          line: "blue"
+          segment:
+            from_station: "TRTC-CTH"
+            to_station: "TRTC-NKG"
+            stations: ["TRTC-CTH", "TRTC-NKG"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Blue Line: No late-night service between City Hall and Nangang due to signal upgrade. Last train departs City Hall at 10:30 PM."
+          alternative: "No replacement service; plan travel before 10:30 PM"
+          eta_resolution: "Normal service resumes at 6:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T06:00:00"
+        line: "blue"
+        segment:
+          from_station: "TRTC-CTH"
+          to_station: "TRTC-NKG"
+          stations: ["TRTC-CTH", "TRTC-NKG"]
+        schedule: "night"
+        replacement_service: null
+        advisory_must_mention: ["blue line", "city hall", "nangang", "night"]
+        blocked_stations: []
+        blocked_edges:
+          - ["TRTC-CTH", "TRTC-NKG"]
+
+      - id: "pm-green-xindian"
+        disruption:
+          id: "pm-green-xindian"
+          line: "green"
+          segment:
+            from_station: "TRTC-XDN"
+            to_station: "TRTC-DPL"
+            stations: ["TRTC-XDN", "TRTC-QZH", "TRTC-DPL"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Green Line: No service between Xindian and Dapinglin this weekend due to tunnel waterproofing work. Free shuttle bus available between affected stations."
+          alternative: "Free shuttle bus between Xindian and Dapinglin"
+          eta_resolution: "Service resumes Tuesday 6:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T06:00:00"
+        line: "green"
+        segment:
+          from_station: "TRTC-XDN"
+          to_station: "TRTC-DPL"
+          stations: ["TRTC-XDN", "TRTC-QZH", "TRTC-DPL"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["green line", "xindian", "dapinglin", "bus"]
+        blocked_stations: []
+        blocked_edges:
+          - ["TRTC-XDN", "TRTC-QZH"]
+          - ["TRTC-QZH", "TRTC-DPL"]
+
+      - id: "pm-orange-luzhou"
+        disruption:
+          id: "pm-orange-luzhou"
+          line: "orange"
+          segment:
+            from_station: "TRTC-LUZ"
+            to_station: "TRTC-SCH"
+            stations: ["TRTC-LUZ", "TRTC-SCH"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Orange Line: Reduced service between Luzhou and Sanchong due to ventilation system upgrade. Trains running on 12-minute headways instead of 7 minutes."
+          alternative: "Allow extra travel time; service at reduced frequency"
+          eta_resolution: "Normal frequency resumes next week"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-15T06:00:00"
+        line: "orange"
+        segment:
+          from_station: "TRTC-LUZ"
+          to_station: "TRTC-SCH"
+          stations: ["TRTC-LUZ", "TRTC-SCH"]
+        schedule: "all_day"
+        replacement_service: null
+        advisory_must_mention: ["orange line", "luzhou", "sanchong", "reduced"]
+        blocked_stations: []
+        blocked_edges:
+          - ["TRTC-LUZ", "TRTC-SCH"]
+
+      - id: "pm-brown-muzha"
+        disruption:
+          id: "pm-brown-muzha"
+          line: "brown"
+          segment:
+            from_station: "TRTC-TPZ"
+            to_station: "TRTC-WFH"
+            stations: ["TRTC-TPZ", "TRTC-MZH", "TRTC-WFH"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Brown Line: No service between Taipei Zoo and Wanfang Hospital this weekend due to guideway resurfacing. Free shuttle bus available between affected stations."
+          alternative: "Free shuttle bus between Taipei Zoo and Wanfang Hospital"
+          eta_resolution: "Service resumes Tuesday 6:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T06:00:00"
+        line: "brown"
+        segment:
+          from_station: "TRTC-TPZ"
+          to_station: "TRTC-WFH"
+          stations: ["TRTC-TPZ", "TRTC-MZH", "TRTC-WFH"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["brown line", "taipei zoo", "wanfang hospital", "bus"]
+        blocked_stations: []
+        blocked_edges:
+          - ["TRTC-TPZ", "TRTC-MZH"]
+          - ["TRTC-MZH", "TRTC-WFH"]
+
+  typhoon_warning:
+    instantiations:
+      - id: "tw-advisory"
+        disruption:
+          id: "tw-advisory"
+          line: null
+          segment: null
+          type: "typhoon_warning"
+          severity: "info"
+          message: "Typhoon advisory: Typhoon approaching northern Taiwan. All TRTC lines are currently operating normally. Passengers should monitor Central Weather Administration updates and plan travel accordingly."
+          alternative: null
+          eta_resolution: "Monitoring - CWA updates every 3 hours"
+        category: "advisory"
+        phase: "monitoring"
+        suspended_lines: []
+        reduced_lines: []
+        advisory_must_mention: ["typhoon", "monitoring", "normal"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "tw-brown-suspended"
+        disruption:
+          id: "tw-brown-suspended"
+          line: "brown"
+          segment: null
+          type: "typhoon_warning"
+          severity: "warning"
+          message: "Typhoon update: Brown (Wenhu) Line suspended due to high winds affecting elevated guideway. All other lines operating normally. Brown Line passengers should use alternative routes via Red Line (Daan) or Blue Line (Zhongxiao Fuxing)."
+          alternative: "Use Red Line via Daan or Blue Line via Zhongxiao Fuxing for Brown Line destinations"
+          eta_resolution: "Brown Line resumes when sustained winds drop below 80 km/h"
+        category: "elevated_suspended"
+        phase: "brown_suspended"
+        suspended_lines: ["brown"]
+        reduced_lines: []
+        advisory_must_mention: ["typhoon", "brown", "suspended", "winds"]
+        blocked_stations: ["TRTC-TPZ", "TRTC-MZH", "TRTC-WFH", "TRTC-WFC", "TRTC-LZL", "TRTC-NJF", "TRTC-ZJH", "TRTC-SSA", "TRTC-DZH", "TRTC-JNR", "TRTC-NEC"]
+        blocked_edges:
+          - ["TRTC-TPZ", "TRTC-MZH"]
+          - ["TRTC-MZH", "TRTC-WFH"]
+          - ["TRTC-WFH", "TRTC-WFC"]
+          - ["TRTC-WFC", "TRTC-LZL"]
+          - ["TRTC-LZL", "TRTC-DAA"]
+          - ["TRTC-DAA", "TRTC-ZXF"]
+          - ["TRTC-ZXF", "TRTC-NJF"]
+          - ["TRTC-NJF", "TRTC-ZJH"]
+          - ["TRTC-ZJH", "TRTC-SSA"]
+          - ["TRTC-SSA", "TRTC-DZH"]
+          - ["TRTC-DZH", "TRTC-JNR"]
+          - ["TRTC-JNR", "TRTC-NEC"]
+
+      - id: "tw-elevated-reduced"
+        disruption:
+          id: "tw-elevated-reduced"
+          line: null
+          segment: null
+          type: "typhoon_warning"
+          severity: "warning"
+          message: "Typhoon escalation: Brown Line remains suspended. Surface and elevated terminal stations (Tamsui, Xindian, Yongning) may close if conditions worsen. Underground lines continuing service on extended 10-minute headways."
+          alternative: "Underground lines running at reduced frequency; avoid non-essential travel"
+          eta_resolution: "Duration depends on typhoon track"
+        category: "elevated_reduced"
+        phase: "reduced_service"
+        suspended_lines: ["brown"]
+        reduced_lines: ["red", "blue", "green", "orange"]
+        advisory_must_mention: ["typhoon", "brown", "suspended", "reduced"]
+        blocked_stations: ["TRTC-TPZ", "TRTC-MZH", "TRTC-WFH", "TRTC-WFC", "TRTC-LZL", "TRTC-NJF", "TRTC-ZJH", "TRTC-SSA", "TRTC-DZH", "TRTC-JNR", "TRTC-NEC"]
+        blocked_edges:
+          - ["TRTC-TPZ", "TRTC-MZH"]
+          - ["TRTC-MZH", "TRTC-WFH"]
+          - ["TRTC-WFH", "TRTC-WFC"]
+          - ["TRTC-WFC", "TRTC-LZL"]
+          - ["TRTC-LZL", "TRTC-DAA"]
+          - ["TRTC-DAA", "TRTC-ZXF"]
+          - ["TRTC-ZXF", "TRTC-NJF"]
+          - ["TRTC-NJF", "TRTC-ZJH"]
+          - ["TRTC-ZJH", "TRTC-SSA"]
+          - ["TRTC-SSA", "TRTC-DZH"]
+          - ["TRTC-DZH", "TRTC-JNR"]
+          - ["TRTC-JNR", "TRTC-NEC"]
+
+      - id: "tw-full-suspension"
+        disruption:
+          id: "tw-full-suspension"
+          line: null
+          segment: null
+          type: "typhoon_warning"
+          severity: "critical"
+          message: "Typhoon emergency: All TRTC service suspended. Taipei City government has declared work and school cancellation. All stations are closed. Do not attempt to travel. Seek shelter indoors."
+          alternative: "No rail service available. Stay indoors and follow emergency instructions."
+          eta_resolution: "Until further notice after typhoon passes"
+        category: "full_suspension"
+        phase: "full_suspension"
+        suspended_lines: ["red", "blue", "green", "orange", "brown"]
+        reduced_lines: []
+        advisory_must_mention: ["typhoon", "suspended", "all", "shelter"]
+        blocked_stations:
+          - "TRTC-TAM"
+          - "TRTC-HSL"
+          - "TRTC-BTO"
+          - "TRTC-QIL"
+          - "TRTC-SHL"
+          - "TRTC-JNT"
+          - "TRTC-YSN"
+          - "TRTC-MQW"
+          - "TRTC-ZSN"
+          - "TRTC-TPM"
+          - "TRTC-CKS"
+          - "TRTC-DGM"
+          - "TRTC-DAA"
+          - "TRTC-T101"
+          - "TRTC-XSH"
+          - "TRTC-YNG"
+          - "TRTC-BQO"
+          - "TRTC-XPU"
+          - "TRTC-LST"
+          - "TRTC-XMN"
+          - "TRTC-SDT"
+          - "TRTC-ZXS"
+          - "TRTC-ZXF"
+          - "TRTC-ZXD"
+          - "TRTC-SYS"
+          - "TRTC-YCH"
+          - "TRTC-HSP"
+          - "TRTC-CTH"
+          - "TRTC-NKG"
+          - "TRTC-SSN"
+          - "TRTC-NSM"
+          - "TRTC-SJN"
+          - "TRTC-GUT"
+          - "TRTC-TPB"
+          - "TRTC-GGN"
+          - "TRTC-WLG"
+          - "TRTC-JME"
+          - "TRTC-DPL"
+          - "TRTC-QZH"
+          - "TRTC-XDN"
+          - "TRTC-LUZ"
+          - "TRTC-SCH"
+          - "TRTC-XZH"
+          - "TRTC-TQZ"
+          - "TRTC-APV"
+          - "TRTC-DXI"
+          - "TRTC-NSJ"
+          - "TRTC-TPZ"
+          - "TRTC-MZH"
+          - "TRTC-WFH"
+          - "TRTC-WFC"
+          - "TRTC-LZL"
+          - "TRTC-NJF"
+          - "TRTC-ZJH"
+          - "TRTC-SSA"
+          - "TRTC-DZH"
+          - "TRTC-JNR"
+          - "TRTC-NEC"
+        blocked_edges: []
+
+      - id: "tw-post-typhoon"
+        disruption:
+          id: "tw-post-typhoon"
+          line: null
+          segment: null
+          type: "typhoon_warning"
+          severity: "warning"
+          message: "Post-typhoon update: Underground lines (Red, Blue, Green, Orange) resuming limited service with 10-minute headways pending full track inspection. Brown Line remains suspended due to debris on elevated guideway. Allow extra travel time."
+          alternative: "Underground lines running limited service only; Brown Line still suspended"
+          eta_resolution: "Brown Line restoration pending guideway inspection and debris clearance"
+        category: "post_typhoon"
+        phase: "partial_restoration"
+        suspended_lines: ["brown"]
+        reduced_lines: ["red", "blue", "green", "orange"]
+        advisory_must_mention: ["resuming", "limited", "brown", "suspended", "debris"]
+        blocked_stations: ["TRTC-TPZ", "TRTC-MZH", "TRTC-WFH", "TRTC-WFC", "TRTC-LZL", "TRTC-NJF", "TRTC-ZJH", "TRTC-SSA", "TRTC-DZH", "TRTC-JNR", "TRTC-NEC"]
+        blocked_edges:
+          - ["TRTC-TPZ", "TRTC-MZH"]
+          - ["TRTC-MZH", "TRTC-WFH"]
+          - ["TRTC-WFH", "TRTC-WFC"]
+          - ["TRTC-WFC", "TRTC-LZL"]
+          - ["TRTC-LZL", "TRTC-DAA"]
+          - ["TRTC-DAA", "TRTC-ZXF"]
+          - ["TRTC-ZXF", "TRTC-NJF"]
+          - ["TRTC-NJF", "TRTC-ZJH"]
+          - ["TRTC-ZJH", "TRTC-SSA"]
+          - ["TRTC-SSA", "TRTC-DZH"]
+          - ["TRTC-DZH", "TRTC-JNR"]
+          - ["TRTC-JNR", "TRTC-NEC"]
+
+  line_suspension:
+    instantiations:
+      - id: "ls-red-full"
+        disruption:
+          id: "ls-red-full"
+          line: "red"
+          segment: null
+          type: "line_suspension"
+          severity: "critical"
+          message: "Tamsui-Xinyi (Red) Line fully suspended due to power system failure. No Red Line trains running. Passengers heading north-south across the city should use buses or TRA rail."
+          alternative: "Bus service along Zhongshan North Road; TRA rail between Taipei Main Station and Shilin"
+          eta_resolution: "Engineering team on site, 2-4 hours expected"
+        line_closures:
+          - line: "red"
+        advisory_must_mention: ["red line", "suspended"]
+        blocked_stations: []
+        blocked_edges: []
+      - id: "ls-blue-partial-west"
+        disruption:
+          id: "ls-blue-partial-west"
+          line: "blue"
+          segment: null
+          type: "line_suspension"
+          severity: "warning"
+          message: "Bannan (Blue) Line closed between Dingpu and Xinpu for emergency track repair. No trains on this segment. Stations east of Xinpu continue normal service."
+          alternative: "Bus shuttle between Dingpu and Xinpu"
+          eta_resolution: "Service restoration late evening"
+        line_closures:
+          - line: "blue"
+            from_station: "Dingpu"
+            to_station: "Xinpu"
+        advisory_must_mention: ["blue line", "dingpu", "xinpu"]
+        blocked_stations: []
+        blocked_edges: []
+  weather_slow_zone:
+    instantiations:
+      - id: "wsz-wenhu-rain"
+        disruption:
+          id: "wsz-wenhu-rain"
+          line: "wenhu"
+          segment: null
+          type: "weather_slow_zone"
+          severity: "info"
+          message: "Wenhu (Brown) Line: Heavy rain has triggered the automatic safety mechanism. Trains are operating at reduced speed. Expect 10-15 minute delays on Brown Line segments."
+          alternative: "Allow extra 15 minutes for Brown Line travel. Red or Blue Lines unaffected."
+          eta_resolution: "Until rain subsides"
+        advisory_must_mention: ["brown", "delay", "weather"]
+        blocked_stations: []
+        blocked_edges: []

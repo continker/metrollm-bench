@@ -1,0 +1,103 @@
+[
+  {
+    "id": "red",
+    "name": "Red Line",
+    "color": "#CC0000",
+    "stations": [
+      "MARTA-NS",
+      "MARTA-SS",
+      "MARTA-DW",
+      "MARTA-MC",
+      "MARTA-BH",
+      "MARTA-LC",
+      "MARTA-AC",
+      "MARTA-MT",
+      "MARTA-NA",
+      "MARTA-CV",
+      "MARTA-PC",
+      "MARTA-FP",
+      "MARTA-GA",
+      "MARTA-WE",
+      "MARTA-OC",
+      "MARTA-LF",
+      "MARTA-EP",
+      "MARTA-CP",
+      "MARTA-AP"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  },
+  {
+    "id": "gold",
+    "name": "Gold Line",
+    "color": "#D4A017",
+    "stations": [
+      "MARTA-DO",
+      "MARTA-CH",
+      "MARTA-BO",
+      "MARTA-LX",
+      "MARTA-LC",
+      "MARTA-AC",
+      "MARTA-MT",
+      "MARTA-NA",
+      "MARTA-CV",
+      "MARTA-PC",
+      "MARTA-FP",
+      "MARTA-GA",
+      "MARTA-WE",
+      "MARTA-OC",
+      "MARTA-LF",
+      "MARTA-EP",
+      "MARTA-CP",
+      "MARTA-AP"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 10
+  },
+  {
+    "id": "blue",
+    "name": "Blue Line",
+    "color": "#0060A9",
+    "stations": [
+      "MARTA-HEH",
+      "MARTA-WEL",
+      "MARTA-AS",
+      "MARTA-VC",
+      "MARTA-OM",
+      "MARTA-FP",
+      "MARTA-GS",
+      "MARTA-KM",
+      "MARTA-IR",
+      "MARTA-EC",
+      "MARTA-EL",
+      "MARTA-DC",
+      "MARTA-AV",
+      "MARTA-KN",
+      "MARTA-IC"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 20
+  },
+  {
+    "id": "green",
+    "name": "Green Line",
+    "color": "#009B3A",
+    "stations": [
+      "MARTA-BK",
+      "MARTA-AS",
+      "MARTA-VC",
+      "MARTA-OM",
+      "MARTA-FP",
+      "MARTA-GS",
+      "MARTA-KM",
+      "MARTA-IR",
+      "MARTA-EC"
+    ],
+    "type": "heavy_rail",
+    "24h": false,
+    "typical_headway_min": 20
+  }
+]

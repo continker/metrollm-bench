@@ -1,0 +1,89 @@
+{
+  "system": "bart",
+  "policies": [
+    {
+      "policy_id": "bart-refund-001",
+      "category": "refunds",
+      "title": "Clipper Card Refund Policy",
+      "content": "Clipper Card cash value can be refunded by submitting a request at clippercard.com or calling (877) 878-8883. A $5.00 processing fee is deducted from the refund. Allow 4-6 weeks for processing. Cards must have been inactive for at least 60 days before a refund is issued.",
+      "synonyms": ["money back on my Clipper Card", "return my Clipper Card", "get a refund on my card", "how do I get reimbursed"]
+    },
+    {
+      "policy_id": "bart-refund-002",
+      "category": "refunds",
+      "title": "Excursion Ticket Refund Policy",
+      "content": "Single-ride paper tickets purchased from station vending machines are non-refundable. High-value tickets (HVT) with remaining value may be exchanged at the BART Customer Service Center, 2150 Webster Street, Suite 300, Oakland, CA 94612, within 90 days of purchase. Transbay and SFO Airport surcharges are non-refundable once the trip is completed.",
+      "synonyms": ["return my paper ticket", "can I exchange my ticket", "refund the surcharge", "unused ticket money back"]
+    },
+    {
+      "policy_id": "bart-lost-001",
+      "category": "lost_property",
+      "title": "Lost and Found Reporting",
+      "content": "Report lost items by calling BART Lost & Found at (510) 464-7090 Monday through Friday, 8:00 AM to 5:00 PM. Items are held at the Lake Merritt Lost & Found office for 30 days. A valid photo ID and description of the item are required for retrieval. High-value items (electronics, wallets) are catalogued separately.",
+      "synonyms": ["I left something on the train", "forgot my bag on BART", "lost my phone", "where is lost and found"]
+    },
+    {
+      "policy_id": "bart-lost-002",
+      "category": "lost_property",
+      "title": "Lost Clipper Card Replacement",
+      "content": "Report a lost or stolen Clipper Card immediately at clippercard.com or by calling (877) 878-8883 to freeze the balance. Registered Clipper Cards can have their remaining balance transferred to a new card within 5 business days. A $3.00 replacement card fee applies. Unregistered cards cannot be recovered.",
+      "synonyms": ["lost my Clipper Card", "my card was stolen", "can I get a new Clipper Card", "replace my Clipper Card"]
+    },
+    {
+      "policy_id": "bart-access-001",
+      "category": "accessibility",
+      "title": "Elevator and Station Accessibility",
+      "content": "All BART stations are ADA accessible with elevators, tactile path tiles, and level boarding. Real-time elevator status is available at bart.gov/elevators and via the BART app. If an elevator is out of service, BART provides free accessible shuttle service between stations. Call (510) 464-6000 for real-time assistance.",
+      "synonyms": ["wheelchair access", "is the elevator working", "I need an accessible station", "ADA accessible"]
+    },
+    {
+      "policy_id": "bart-access-002",
+      "category": "accessibility",
+      "title": "Clipper Discount Fare Eligibility",
+      "content": "Seniors aged 65 and older, persons with disabilities, and Medicare cardholders qualify for the Clipper Discount fare at 62.5% off the standard fare. Apply at a Clipper Customer Service Center with a valid photo ID and proof of eligibility. RTC (Regional Transit Connection) disability cards from MTC are also accepted.",
+      "synonyms": ["senior discount", "disabled fare BART", "how much do seniors pay", "reduced price for elderly"]
+    },
+    {
+      "policy_id": "bart-fare-001",
+      "category": "fare_policy",
+      "title": "Distance-Based Fare Structure",
+      "content": "BART fares are calculated based on distance traveled, starting at $2.15 for trips up to 6 miles and reaching $10.30 for trips over 40 miles. A $1.40 Transbay surcharge applies when crossing the Bay between San Francisco and East Bay stations. An additional $4.95 surcharge applies for trips to or from SFO Airport, and $6.70 for Oakland Airport.",
+      "synonyms": ["how much is my ride", "what does BART cost", "airport surcharge", "price to cross the Bay"]
+    },
+    {
+      "policy_id": "bart-fare-002",
+      "category": "fare_policy",
+      "title": "Children's Fare Policy",
+      "content": "Children under 5 ride free on BART when accompanied by a paying adult, with a maximum of 2 free children per paying adult. Children aged 5-12 pay a reduced fare of 50% of the adult distance-based fare using a youth Clipper Card. All surcharges (Transbay, SFO, Oakland Airport) apply at full rate regardless of age.",
+      "synonyms": ["do kids ride free", "how much for children on BART", "youth fare", "my kid needs a ticket"]
+    },
+    {
+      "policy_id": "bart-safety-001",
+      "category": "safety",
+      "title": "Emergency Procedures",
+      "content": "In an emergency, use the white emergency intercom on each BART car to contact the train operator, or press the red emergency call button on station platforms. BART Police can be reached 24/7 at (510) 464-7000. Text tips can be sent anonymously to 472727 (GBPD). Do not exit trains between stations unless directed by BART personnel.",
+      "synonyms": ["there is an emergency", "how do I call for help on BART", "emergency intercom", "I need BART police"]
+    },
+    {
+      "policy_id": "bart-safety-002",
+      "category": "safety",
+      "title": "Food, Drink, and Conduct Policy",
+      "content": "Eating, drinking, and smoking are prohibited on BART trains and in paid areas of stations. Fines start at $250 for violations. Bikes are allowed on BART at all times except peak commute hours (weekdays 7:00-9:00 AM and 4:30-6:30 PM) in the first three cars. Quiet cars are designated in the first and last car of each train.",
+      "synonyms": ["can I eat on BART", "is drinking water allowed", "can I bring my bike", "when are bikes allowed"]
+    },
+    {
+      "policy_id": "bart-general-001",
+      "category": "general",
+      "title": "Operating Hours",
+      "content": "BART operates Monday through Friday from 5:00 AM to midnight, Saturday from 6:00 AM to midnight, and Sunday from 8:00 AM to 9:00 PM. Service frequency is every 15 minutes during peak hours and every 20 minutes during off-peak. Holiday and special event schedules are posted at bart.gov/schedules.",
+      "synonyms": ["what time does BART open", "when is the last BART train", "is BART running on Sunday", "weekend hours"]
+    },
+    {
+      "policy_id": "bart-general-002",
+      "category": "general",
+      "title": "Customer Service and Feedback",
+      "content": "Contact BART Customer Service at (510) 464-6000 Monday through Friday, 6:00 AM to 7:00 PM. Feedback may also be submitted online at bart.gov/contact. Service alerts and real-time departure information are available via the BART app and @SFBARTalert on X. Written complaints receive a response within 21 business days.",
+      "synonyms": ["I want to make a complaint", "how do I contact BART", "where do I give feedback", "report a problem with BART"]
+    }
+  ]
+}

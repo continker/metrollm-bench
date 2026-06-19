@@ -1,0 +1,44 @@
+{
+  "system": "beijing",
+  "model": "distance",
+  "currency": "CNY",
+  "currency_symbol": "¥",
+  "base_fare": 3,
+  "fare_brackets": [
+    {"max_miles": 3.7, "fare": 3},
+    {"max_miles": 7.5, "fare": 4},
+    {"max_miles": 12.4, "fare": 5},
+    {"max_miles": 14.3, "fare": 6},
+    {"max_miles": 18.0, "fare": 7},
+    {"max_miles": 24.9, "fare": 8},
+    {"max_miles": 31.1, "fare": 9},
+    {"max_miles": 999, "fare": 10}
+  ],
+  "surcharges": {
+    "capital_airport_express": {
+      "amount": 25,
+      "stations": ["BJM-2HH", "BJM-3HH"],
+      "replaces_base": true,
+      "description": "Capital Airport Express flat fare (replaces base fare)"
+    },
+    "daxing_airport_express": {
+      "amount": 35,
+      "stations": ["BJM-DAJ3"],
+      "replaces_base": true,
+      "description": "Daxing Airport Express ordinary seat (replaces base fare)"
+    }
+  },
+  "payment_methods": {
+    "yikatong": {"fare_adjustment": 0.0},
+    "mobile_pay": {"fare_adjustment": 0.0},
+    "single_journey": {"fare_adjustment": 0.0}
+  },
+  "discounts": {
+    "children": {"fare": 0, "max_per_adult": 2, "qualifier": "under 120cm", "note": "Children shorter than 120cm ride free"},
+    "senior_65_plus": {"multiplier": 0.0, "note": "Free with Beijing Senior Card"},
+    "disabled": {"multiplier": 0.0, "note": "Free with disability card"}
+  },
+  "passes": {
+    "yikatong_monthly": {"price": 0, "discount_threshold": 100, "discount_rate": 0.5, "note": "After ¥100 spent in a month, remaining rides at 50% off"}
+  }
+}

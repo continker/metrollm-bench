@@ -1,0 +1,54 @@
+- id: ec_to_fp_inman_park_closed
+  title: Edgewood/Candler Park → Five Points, Inman Park closed
+  oneliner: Track-defect closure at Inman Park — agent reroutes and still sells the ticket
+  origin_id: MARTA-EC
+  dest_id: MARTA-FP
+  event_ids: [sc-inman-park]
+- id: lenox_to_airport_gold_maintenance
+  title: Lenox → Airport, Gold Line weekend work
+  oneliner: Weekend rail work north of Lenox — southbound ride proceeds with a delay advisory
+  origin_id: MARTA-LX
+  dest_id: MARTA-AP
+  event_ids: [pm-gold-north]
+- id: airport_to_ns_hurricane_advisory
+  title: Airport → North Springs, hurricane advisory
+  oneliner: Storm approaching, all lines normal — agent sells ticket plus a monitor-weather banner
+  origin_id: MARTA-AP
+  dest_id: MARTA-NS
+  event_ids: [hw-approaching]
+- id: ns_to_airport_lindbergh_closed
+  title: North Springs → Airport, Lindbergh closed
+  oneliner: Suspicious-package closure at Lindbergh — agent reroutes around the skip and still tickets
+  origin_id: MARTA-NS
+  dest_id: MARTA-AP
+  event_ids: [sc-lindbergh]
+- id: ns_to_decatur
+  title: North Springs → Decatur
+  oneliner: Cross-line trip with a transfer at Five Points
+  origin_id: MARTA-NS
+  dest_id: MARTA-DC
+  event_ids: []
+- id: fp_to_airport_clear
+  title: Five Points → Airport
+  oneliner: Direct ride on the Red Line, no disruptions
+  origin_id: MARTA-FP
+  dest_id: MARTA-AP
+  event_ids: []
+- id: doraville_to_airport_airport_closed
+  title: Doraville → Airport, Airport closed
+  oneliner: Security incident at Airport — agent declines and redirects to College Park
+  origin_id: MARTA-DO
+  dest_id: MARTA-AP
+  event_ids: [sc-airport]
+- id: fp_to_airport_red_maintenance
+  title: Five Points → Airport, Red Line weekend
+  oneliner: Bus bridge severs the only path to Airport — agent advises the replacement service
+  origin_id: MARTA-FP
+  dest_id: MARTA-AP
+  event_ids: [pm-red-south]
+- id: lindbergh_to_decatur_hurricane
+  title: Lindbergh Center → Decatur, hurricane (Green suspended)
+  oneliner: Cat-1 hurricane suspends the Green Line — no transfer path, agent warns of service risk
+  origin_id: MARTA-LC
+  dest_id: MARTA-DC
+  event_ids: [hw-cat1]

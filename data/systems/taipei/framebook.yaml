@@ -1,0 +1,47 @@
+framebook:
+  org_name: "TRTC"
+  full_name: "Taipei Rapid Transit Corporation"
+  primary_language: zh-TW
+  secondary_languages: ["en", "ja", "ko"]
+  currency_symbol: "NT$"
+  currency_code: "TWD"
+  fare_display_format: "NT$X"
+  terminology:
+    smartcard: "EasyCard"
+    contactless: "Contactless payment"
+    reduced_fare: "Senior/Disabled Discount"
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: info
+    typhoon_warning: critical
+  accessibility_labels:
+    step_free: "Wheelchair Accessible"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+  operating_hours:
+    default: "06:00-00:00"
+    weekday: "06:00-00:00"
+    saturday: "06:00-00:00"
+    sunday: "06:00-00:00"
+    late_night_headway_min: 12
+    notes: "All lines follow the same schedule. Extended service during major holidays (New Year's Eve, Lantern Festival)."
+  cultural_notes:
+    - "No eating, drinking, or chewing gum past the yellow line in paid areas. Fines up to NT$7,500."
+    - "Priority seats reserved for elderly, disabled, pregnant, and those with young children."
+    - "Brown (Wenhu) Line is fully automated with platform screen doors."
+    - "Announcements in Mandarin, Taiwanese, Hakka, English. Major stations also Japanese and Korean."
+    - "Bicycles only on weekends/holidays, last car only."

@@ -1,0 +1,4245 @@
+[
+  {
+    "id": "DOHA-A-002",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Msheireb to Souq Waqif",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Souq Waqif",
+        "station_id": "DOHA-SWQ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-SWQ"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 0.71,
+        "estimated_minutes": 1.4
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-A-006",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Ras Bu Abboud to Msheireb",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ras Bu Abboud",
+        "station_id": "DOHA-RBA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-RBA",
+          "DOHA-NMU",
+          "DOHA-SWQ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.92,
+        "estimated_minutes": 5.8
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-A-011",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Lusail QNB to Al Aziziyah",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Lusail QNB",
+        "station_id": "DOHA-LUS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Aziziyah",
+        "station_id": "DOHA-AZZ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-LUS",
+          "DOHA-QU",
+          "DOHA-LEG",
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH",
+          "DOHA-BNM",
+          "DOHA-SAD",
+          "DOHA-JOA",
+          "DOHA-SUD",
+          "DOHA-WAB",
+          "DOHA-SPC",
+          "DOHA-AZZ"
+        ],
+        "line_sequence": [
+          "red",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 16.48,
+        "estimated_minutes": 38.0
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-A-014",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Hamad International Airport to Al Shaqab",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Shaqab",
+        "station_id": "DOHA-SHA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH",
+          "DOHA-BID",
+          "DOHA-WHP",
+          "DOHA-HHO",
+          "DOHA-MES",
+          "DOHA-RAQ",
+          "DOHA-SHA"
+        ],
+        "line_sequence": [
+          "red",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 13.5,
+        "estimated_minutes": 31.9
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-A-019",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Hamad International Airport to Education City",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Education City",
+        "station_id": "DOHA-EDC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH",
+          "DOHA-BID",
+          "DOHA-WHP",
+          "DOHA-HHO",
+          "DOHA-MES",
+          "DOHA-RAQ",
+          "DOHA-SHA",
+          "DOHA-QNL",
+          "DOHA-EDC"
+        ],
+        "line_sequence": [
+          "red",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 15.52,
+        "estimated_minutes": 35.9
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-A-020",
+    "system": "doha",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Al Mansoura to Al Waab",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Al Mansoura",
+        "station_id": "DOHA-MAN"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Waab",
+        "station_id": "DOHA-WAB"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MAN",
+          "DOHA-MSH",
+          "DOHA-BNM",
+          "DOHA-SAD",
+          "DOHA-JOA",
+          "DOHA-SUD",
+          "DOHA-WAB"
+        ],
+        "line_sequence": [
+          "green",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 4.9,
+        "estimated_minutes": 14.8
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-B-004",
+    "system": "doha",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult + 2 children",
+    "title": "Fare: 1 adult + 2 children",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 2,
+            "currency": "QAR"
+          }
+        ],
+        "subtotal": 2,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "QAR"
+          }
+        ],
+        "total": 2.0,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 2,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.0,
+            "subtotal": 2,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-B-013",
+    "system": "doha",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult + 2 children (gold class)",
+    "title": "Fare: 1 adult + 2 children (gold class)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "gold_travel_card"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 10,
+            "currency": "QAR"
+          }
+        ],
+        "subtotal": 10,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "QAR"
+          }
+        ],
+        "total": 10.0,
+        "currency": "QAR"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 2,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 10.0,
+            "subtotal": 10,
+            "currency": "QAR"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-002",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "disruption_type": "sc_al-bidda",
+    "title": "Katara to The White Palace (station_closure)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Katara",
+        "station_id": "DOHA-KAT"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "The White Palace",
+        "station_id": "DOHA-WHP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH",
+          "DOHA-BID",
+          "DOHA-WHP"
+        ],
+        "line_sequence": [
+          "red",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 7.27,
+        "estimated_minutes": 19.6
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-WHP"
+        ],
+        "line_sequence": [
+          "red",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 6.01,
+        "estimated_minutes": 17.0
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": {
+          "path": [
+            "DOHA-KAT",
+            "DOHA-QAS",
+            "DOHA-DEC",
+            "DOHA-WBQ",
+            "DOHA-COR",
+            "DOHA-BID",
+            "DOHA-MSH",
+            "DOHA-BID",
+            "DOHA-WHP"
+          ],
+          "line_sequence": [
+            "red",
+            "green"
+          ],
+          "transfers": 1,
+          "distance_miles": 7.27,
+          "estimated_minutes": 19.6
+        },
+        "restriction_type": "skip",
+        "expected_restrictions": [
+          {
+            "station": "DOHA-BID",
+            "restriction": "skip"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "al bidda",
+          "closed",
+          "water leak"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-003",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "sc_hia",
+    "title": "Msheireb to Hamad International Airport (station_closure)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-hia",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "Hamad International Airport station closed due to security incident at airport terminal. No train service to HIA. Use Oqba Ibn Nafie station and airport shuttle as alternative.",
+          "alternative": "Use Oqba Ibn Nafie station and airport shuttle service",
+          "eta_resolution": "unknown"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-hia",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "Hamad International Airport station closed due to security incident at airport terminal. No train service to HIA. Use Oqba Ibn Nafie station and airport shuttle as alternative.",
+          "alternative": "Use Oqba Ibn Nafie station and airport shuttle service",
+          "eta_resolution": "unknown"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "skip",
+        "expected_restrictions": [
+          {
+            "station": "DOHA-HIA",
+            "restriction": "skip"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "airport",
+          "closed",
+          "security"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-004",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "disruption_type": "sc_west-bay",
+    "title": "Lusail QNB to Msheireb (station_closure)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Lusail QNB",
+        "station_id": "DOHA-LUS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-west-bay",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "West Bay Qatar Energy station closed due to suspicious unattended package. Red Line trains will skip this station. Use DECC or Corniche as alternatives.",
+          "alternative": "Use DECC (northbound) or Corniche (southbound)",
+          "eta_resolution": "1-3 hours"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-west-bay",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "West Bay Qatar Energy station closed due to suspicious unattended package. Red Line trains will skip this station. Use DECC or Corniche as alternatives.",
+          "alternative": "Use DECC (northbound) or Corniche (southbound)",
+          "eta_resolution": "1-3 hours"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-LUS",
+          "DOHA-QU",
+          "DOHA-LEG",
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.93,
+        "estimated_minutes": 21.9
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-LUS",
+          "DOHA-QU",
+          "DOHA-LEG",
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.93,
+        "estimated_minutes": 21.9
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": {
+          "path": [
+            "DOHA-LUS",
+            "DOHA-QU",
+            "DOHA-LEG",
+            "DOHA-KAT",
+            "DOHA-QAS",
+            "DOHA-DEC",
+            "DOHA-WBQ",
+            "DOHA-COR",
+            "DOHA-BID",
+            "DOHA-MSH"
+          ],
+          "line_sequence": [
+            "red"
+          ],
+          "transfers": 0,
+          "distance_miles": 10.93,
+          "estimated_minutes": 21.9
+        },
+        "restriction_type": "skip",
+        "expected_restrictions": [
+          {
+            "station": "DOHA-WBQ",
+            "restriction": "skip"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "west bay",
+          "closed",
+          "suspicious"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-006",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_red-south",
+    "title": "Msheireb to Al Wakra (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Wakra",
+        "station_id": "DOHA-WKR"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-red-south",
+          "line": "red",
+          "segment": [
+            "DOHA-OQB",
+            "DOHA-FRZ",
+            "DOHA-RBF",
+            "DOHA-WKR"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Oqba Ibn Nafie and Al Wakra this weekend due to track maintenance. Free bus replacement service available between affected stations. Airport branch service unaffected.",
+          "alternative": "Free bus replacement between Oqba Ibn Nafie and Al Wakra",
+          "eta_resolution": "Service resumes Tuesday 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-red-south",
+          "line": "red",
+          "segment": [
+            "DOHA-OQB",
+            "DOHA-FRZ",
+            "DOHA-RBF",
+            "DOHA-WKR"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Oqba Ibn Nafie and Al Wakra this weekend due to track maintenance. Free bus replacement service available between affected stations. Airport branch service unaffected.",
+          "alternative": "Free bus replacement between Oqba Ibn Nafie and Al Wakra",
+          "eta_resolution": "Service resumes Tuesday 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-FRZ",
+          "DOHA-RBF",
+          "DOHA-WKR"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 9.49,
+        "estimated_minutes": 19.0
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-FRZ",
+          "DOHA-RBF",
+          "DOHA-WKR"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 9.49,
+        "estimated_minutes": 19.0
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "DOHA-OQB",
+            "DOHA-FRZ"
+          ],
+          [
+            "DOHA-FRZ",
+            "DOHA-RBF"
+          ],
+          [
+            "DOHA-RBF",
+            "DOHA-WKR"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "red line",
+          "oqba ibn nafie",
+          "al wakra",
+          "bus replacement",
+          "weekend"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-010",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_gold-west",
+    "title": "Msheireb to Al Aziziyah (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Aziziyah",
+        "station_id": "DOHA-AZZ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-gold-west",
+          "line": "gold",
+          "segment": [
+            "DOHA-WAB",
+            "DOHA-SPC",
+            "DOHA-AZZ"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Gold Line: No service between Al Waab and Al Aziziyah all day due to track geometry correction. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Al Waab and Al Aziziyah",
+          "eta_resolution": "Service resumes tomorrow 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-gold-west",
+          "line": "gold",
+          "segment": [
+            "DOHA-WAB",
+            "DOHA-SPC",
+            "DOHA-AZZ"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Gold Line: No service between Al Waab and Al Aziziyah all day due to track geometry correction. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Al Waab and Al Aziziyah",
+          "eta_resolution": "Service resumes tomorrow 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-BNM",
+          "DOHA-SAD",
+          "DOHA-JOA",
+          "DOHA-SUD",
+          "DOHA-WAB",
+          "DOHA-SPC",
+          "DOHA-AZZ"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.55,
+        "estimated_minutes": 11.1
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-BNM",
+          "DOHA-SAD",
+          "DOHA-JOA",
+          "DOHA-SUD",
+          "DOHA-WAB",
+          "DOHA-SPC",
+          "DOHA-AZZ"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.55,
+        "estimated_minutes": 11.1
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "DOHA-WAB",
+            "DOHA-SPC"
+          ],
+          [
+            "DOHA-SPC",
+            "DOHA-AZZ"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "gold line",
+          "al waab",
+          "al aziziyah",
+          "bus replacement"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-014",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "sw_extreme",
+    "title": "Hamad International Airport to Msheireb (sandstorm_warning)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sw-extreme",
+          "line": null,
+          "segment": null,
+          "type": "sandstorm_warning",
+          "severity": "critical",
+          "message": "Extreme sandstorm emergency: All Qatar Rail service is suspended effective immediately. All stations are closed. Seek shelter immediately. Do not attempt to travel. Visibility near zero.",
+          "alternative": "No rail service available. Seek shelter immediately.",
+          "eta_resolution": "Until further notice"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sw-extreme",
+          "line": null,
+          "segment": null,
+          "type": "sandstorm_warning",
+          "severity": "critical",
+          "message": "Extreme sandstorm emergency: All Qatar Rail service is suspended effective immediately. All stations are closed. Seek shelter immediately. Do not attempt to travel. Visibility near zero.",
+          "alternative": "No rail service available. Seek shelter immediately.",
+          "eta_resolution": "Until further notice"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [
+          {
+            "station": "DOHA-LUS",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-QU",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-LEG",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-KAT",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-QAS",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-DEC",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-WBQ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-COR",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-BID",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-MSH",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-DAJ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-UMG",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-MAQ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-OQB",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-FRZ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-RBF",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-WKR",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-HIA",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-MAN",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-WHP",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-HHO",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-MES",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-RAQ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-SHA",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-QNL",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-EDC",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-RIF",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-RBA",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-NMU",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-SWQ",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-BNM",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-SAD",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-JOA",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-SUD",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-WAB",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-SPC",
+            "restriction": "closed"
+          },
+          {
+            "station": "DOHA-AZZ",
+            "restriction": "closed"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "sandstorm",
+          "suspended",
+          "all lines",
+          "shelter"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-015",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "sw_post-storm",
+    "title": "Ras Bu Abboud to Msheireb (sandstorm_warning)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ras Bu Abboud",
+        "station_id": "DOHA-RBA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sw-post-storm",
+          "line": null,
+          "segment": null,
+          "type": "sandstorm_warning",
+          "severity": "warning",
+          "message": "Post-sandstorm update: Red and Gold lines resuming limited service with 20-minute headways. Green Line remains suspended pending ventilation system cleaning. Travel only if necessary.",
+          "alternative": "Red and Gold lines running limited service; Green Line suspended",
+          "eta_resolution": "Green Line restoration pending cleaning"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sw-post-storm",
+          "line": null,
+          "segment": null,
+          "type": "sandstorm_warning",
+          "severity": "warning",
+          "message": "Post-sandstorm update: Red and Gold lines resuming limited service with 20-minute headways. Green Line remains suspended pending ventilation system cleaning. Travel only if necessary.",
+          "alternative": "Red and Gold lines running limited service; Green Line suspended",
+          "eta_resolution": "Green Line restoration pending cleaning"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-RBA",
+          "DOHA-NMU",
+          "DOHA-SWQ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.92,
+        "estimated_minutes": 5.8
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-RBA",
+          "DOHA-NMU",
+          "DOHA-SWQ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.92,
+        "estimated_minutes": 5.8
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "DOHA-MAN",
+            "DOHA-MSH"
+          ],
+          [
+            "DOHA-MSH",
+            "DOHA-BID"
+          ],
+          [
+            "DOHA-BID",
+            "DOHA-WHP"
+          ],
+          [
+            "DOHA-WHP",
+            "DOHA-HHO"
+          ],
+          [
+            "DOHA-HHO",
+            "DOHA-MES"
+          ],
+          [
+            "DOHA-MES",
+            "DOHA-RAQ"
+          ],
+          [
+            "DOHA-RAQ",
+            "DOHA-SHA"
+          ],
+          [
+            "DOHA-SHA",
+            "DOHA-QNL"
+          ],
+          [
+            "DOHA-QNL",
+            "DOHA-EDC"
+          ],
+          [
+            "DOHA-EDC",
+            "DOHA-RIF"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "resuming",
+          "limited",
+          "green",
+          "suspended",
+          "cleaning"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-C-016",
+    "system": "doha",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "ls_gold-maintenance",
+    "title": "Al Aziziyah to Msheireb (line_suspension)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Al Aziziyah",
+        "station_id": "DOHA-AZZ"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "ls-gold-maintenance",
+          "line": "gold",
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "critical",
+          "message": "Gold Line service suspended today for scheduled annual maintenance. Qatar Rail is operating replacement buses along the Gold Line corridor. Regular Metro fares apply; board buses at station entrances. Staff available at stations for assistance.",
+          "alternative": "Free replacement bus service between all Gold Line stations",
+          "eta_resolution": "Service resumes tomorrow at 06:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "ls-gold-maintenance",
+          "line": "gold",
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "critical",
+          "message": "Gold Line service suspended today for scheduled annual maintenance. Qatar Rail is operating replacement buses along the Gold Line corridor. Regular Metro fares apply; board buses at station entrances. Staff available at stations for assistance.",
+          "alternative": "Free replacement bus service between all Gold Line stations",
+          "eta_resolution": "Service resumes tomorrow at 06:00"
+        }
+      ],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-AZZ",
+          "DOHA-SPC",
+          "DOHA-WAB",
+          "DOHA-SUD",
+          "DOHA-JOA",
+          "DOHA-SAD",
+          "DOHA-BNM",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.55,
+        "estimated_minutes": 11.1
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "original_route": {
+        "path": [
+          "DOHA-AZZ",
+          "DOHA-SPC",
+          "DOHA-WAB",
+          "DOHA-SUD",
+          "DOHA-JOA",
+          "DOHA-SAD",
+          "DOHA-BNM",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.55,
+        "estimated_minutes": 11.1
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "DOHA-RBA",
+            "DOHA-NMU"
+          ],
+          [
+            "DOHA-NMU",
+            "DOHA-SWQ"
+          ],
+          [
+            "DOHA-SWQ",
+            "DOHA-MSH"
+          ],
+          [
+            "DOHA-MSH",
+            "DOHA-BNM"
+          ],
+          [
+            "DOHA-BNM",
+            "DOHA-SAD"
+          ],
+          [
+            "DOHA-SAD",
+            "DOHA-JOA"
+          ],
+          [
+            "DOHA-JOA",
+            "DOHA-SUD"
+          ],
+          [
+            "DOHA-SUD",
+            "DOHA-WAB"
+          ],
+          [
+            "DOHA-WAB",
+            "DOHA-SPC"
+          ],
+          [
+            "DOHA-SPC",
+            "DOHA-AZZ"
+          ]
+        ],
+        "expected_line_closures": [
+          {
+            "line": "gold"
+          }
+        ],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "gold line",
+          "suspended",
+          "bus",
+          "staff"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-D-006",
+    "system": "doha",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "Katara to Al Doha Al Jadeda (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Katara",
+        "station_id": "DOHA-KAT"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Doha Al Jadeda",
+        "station_id": "DOHA-DAJ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH",
+          "DOHA-DAJ"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.79,
+        "estimated_minutes": 13.6
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": [
+          {
+            "station_id": "DOHA-MSH",
+            "station_name": "Msheireb",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-E-006",
+    "system": "doha",
+    "category": "E",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "cultural_id": "family-carriage-redirect",
+    "title": "Cultural: Family Carriage Redirect",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I want to ride in the family carriage. I'm traveling alone."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "family carriage",
+          "standard"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-E-007",
+    "system": "doha",
+    "category": "E",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "cultural_id": "gold-class-on-red",
+    "title": "Cultural: Gold Class On Red",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a Gold Travel Card. For my trip on the Red Line \u2014 can I use Gold Class, and what's the fare?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "gold class",
+          "qr10",
+          "gold travel card"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-F-001",
+    "system": "doha",
+    "category": "F",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "policy_id": "mask_required",
+    "title": "Policy: Mask Required",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "policy_change": {
+        "text": "Masks are required on all trains effective today.",
+        "policy_id": "mask_required"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "policy": {
+        "old_fare": 2,
+        "new_fare": 2,
+        "policy_id": "mask_required",
+        "policy_must_mention": [
+          "mask",
+          "required"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-F-002",
+    "system": "doha",
+    "category": "F",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "policy_id": "cash_unavailable",
+    "title": "Policy: Cash Unavailable",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "policy_change": {
+        "text": "Cash payments are temporarily unavailable. Use Travel Card or contactless only.",
+        "policy_id": "cash_unavailable"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "policy": {
+        "old_fare": 2,
+        "new_fare": 2,
+        "policy_id": "cash_unavailable",
+        "policy_must_mention": [
+          "cash",
+          "unavailable"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-F-007",
+    "system": "doha",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "children_free",
+    "title": "Policy: Children Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Children under 12 ride free (limit 2 per paying adult).",
+        "policy_id": "children_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 2.0,
+        "currency": "QAR"
+      },
+      "policy": {
+        "old_fare": 2.0,
+        "new_fare": 2.0,
+        "policy_id": "children_free",
+        "policy_must_mention": [
+          "children",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-F-015",
+    "system": "doha",
+    "category": "F",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "policy_id": "seniors_children_peak_surcharge",
+    "title": "Policy: Seniors Children Peak Surcharge",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb",
+        "station_id": "DOHA-MSH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Hamad International Airport",
+        "station_id": "DOHA-HIA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 3,
+        "seniors": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Seniors (65+) ride free, children under 12 ride free (limit 3 per paying adult), and a $1.00 peak surcharge applies to each paying passenger.",
+        "policy_id": "seniors_children_peak_surcharge"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ",
+          "DOHA-OQB",
+          "DOHA-HIA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 3.0,
+        "currency": "QAR"
+      },
+      "policy": {
+        "old_fare": 4.0,
+        "new_fare": 3.0,
+        "policy_id": "seniors_children_peak_surcharge",
+        "policy_must_mention": [
+          "senior",
+          "free",
+          "children",
+          "surcharge"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-G-002",
+    "system": "doha",
+    "category": "G",
+    "difficulty": "easy",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "payment-switch",
+    "title": "Multi-turn: Switch payment method after initial selection",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Msheireb"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Souq Waqif"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "gold_travel_card"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Msheireb"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Souq Waqif"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "payment_method_selected",
+          "method": "gold_travel_card"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MSH",
+          "DOHA-SWQ"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 0.71,
+        "estimated_minutes": 1.4
+      },
+      "fare": {
+        "total": 10,
+        "currency": "QAR"
+      },
+      "final_state": {
+        "origin": "Msheireb",
+        "destination": "Souq Waqif",
+        "passengers": {
+          "adults": 1
+        },
+        "payment_method": "gold_travel_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-G-013",
+    "system": "doha",
+    "category": "G",
+    "difficulty": "hard",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "add-remove-constraint",
+    "title": "Multi-turn: Add then remove accessibility constraint",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Free Zone"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Ras Bu Abboud"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I can use stairs, no wheelchair needed"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Free Zone"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Ras Bu Abboud"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "I need wheelchair access"
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "Actually I can use stairs, no wheelchair needed"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-FRZ",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH",
+          "DOHA-SWQ",
+          "DOHA-NMU",
+          "DOHA-RBA"
+        ],
+        "line_sequence": [
+          "red",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 9.75,
+        "estimated_minutes": 24.4
+      },
+      "fare": {
+        "total": 2.0,
+        "currency": "QAR"
+      },
+      "final_state": {
+        "origin": "Free Zone",
+        "destination": "Ras Bu Abboud",
+        "passengers": {
+          "adults": 1,
+          "children": 1
+        },
+        "payment_method": "travel_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-G-015",
+    "system": "doha",
+    "category": "G",
+    "difficulty": "hard",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "full-sequence",
+    "title": "Multi-turn: Build trip incrementally over 5 turns",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Al Mansoura"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Waab"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need step-free access"
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "gold_travel_card"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Al Mansoura"
+        }
+      ],
+      [
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Al Waab"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2,
+          "children": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "I need step-free access"
+        }
+      ],
+      [
+        {
+          "type": "payment_method_selected",
+          "method": "gold_travel_card"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-MAN",
+          "DOHA-MSH",
+          "DOHA-BNM",
+          "DOHA-SAD",
+          "DOHA-JOA",
+          "DOHA-SUD",
+          "DOHA-WAB"
+        ],
+        "line_sequence": [
+          "green",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 4.9,
+        "estimated_minutes": 14.8
+      },
+      "fare": {
+        "total": 20.0,
+        "currency": "QAR"
+      },
+      "final_state": {
+        "origin": "Al Mansoura",
+        "destination": "Al Waab",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "payment_method": "gold_travel_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-001",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "easy",
+    "interaction_mode": "adversarial",
+    "scenario_id": "impossible-nonexistent",
+    "scenario_type": "impossible_route",
+    "title": "Adversarial: Impossible Nonexistent",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Take me to Nonexistent Station XYZ"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Station does not exist in the system",
+      "acceptable_response_patterns": [
+        "not found",
+        "does not exist",
+        "no such station",
+        "unknown"
+      ],
+      "acceptable_tools": [],
+      "hallucination_traps": [],
+      "expected_outcome": "request_declined",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "invalid_request"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-002",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "impossible-cross-system",
+    "scenario_type": "impossible_route",
+    "title": "Adversarial: Impossible Cross System",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to go from Msheireb to Times Square"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Times Square is not in this transit system",
+      "acceptable_response_patterns": [
+        "not available",
+        "different system",
+        "not found",
+        "does not exist"
+      ],
+      "acceptable_tools": [],
+      "hallucination_traps": [],
+      "expected_outcome": "request_declined",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "invalid_request"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-003",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "hard",
+    "interaction_mode": "adversarial",
+    "scenario_id": "impossible-closed-station",
+    "scenario_type": "impossible_route",
+    "title": "Adversarial: Impossible Closed Station",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Route from Lusail QNB to Nonexistent Station"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Destination station is closed or does not exist",
+      "acceptable_response_patterns": [
+        "closed",
+        "not available",
+        "does not exist",
+        "unavailable"
+      ],
+      "acceptable_tools": [
+        "station_info"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-011",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "exploit-double-discount",
+    "scenario_type": "policy_exploit",
+    "title": "Adversarial: Exploit Double Discount",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Hamad International Airport"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Msheireb"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1,
+        "disabled": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I'm both a senior and disabled, do I get double discount?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.28,
+        "estimated_minutes": 16.5
+      },
+      "fare": {
+        "total": 6,
+        "currency": "QAR"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "discount",
+        "fare"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-013",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "easy",
+    "interaction_mode": "adversarial",
+    "scenario_id": "contra-same-station",
+    "scenario_type": "contradictory",
+    "title": "Adversarial: Contra Same Station",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Lusail QNB"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Lusail QNB"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Origin and destination are the same station",
+      "acceptable_response_patterns": [
+        "same",
+        "already",
+        "identical"
+      ],
+      "acceptable_tools": [],
+      "hallucination_traps": [],
+      "expected_outcome": "request_declined",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "invalid_request"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-H-014",
+    "system": "doha",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "contra-scenic-route",
+    "scenario_type": "constrained_compliance",
+    "title": "Adversarial: Contra Scenic Route",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Hamad International Airport"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Katara"
+      },
+      {
+        "type": "freetext_input",
+        "text": "Take the scenic route through all stations from Hamad International Airport to Katara"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-HIA",
+          "DOHA-OQB",
+          "DOHA-MAQ",
+          "DOHA-UMG",
+          "DOHA-DAJ",
+          "DOHA-MSH",
+          "DOHA-BID",
+          "DOHA-COR",
+          "DOHA-WBQ",
+          "DOHA-DEC",
+          "DOHA-QAS",
+          "DOHA-KAT"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 14.05,
+        "estimated_minutes": 28.1
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "should_reject": false,
+      "rejection_reason": "No scenic route mode available; only shortest path",
+      "acceptable_response_patterns": [
+        "shortest",
+        "available",
+        "direct",
+        "route"
+      ],
+      "acceptable_tools": [
+        "route_planner"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-J-007",
+    "system": "doha",
+    "category": "J",
+    "difficulty": "medium",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "misuse-refund-policy",
+    "trap_type": "tool_misuse",
+    "title": "Hallucination trap: Misuse Refund Policy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "What's the refund policy?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "knowledge_query": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [],
+      "acceptable_tools": [
+        "knowledge_base"
+      ],
+      "should_reject": false,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-I-009",
+    "system": "doha",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "overnight_closed",
+    "title": "Temporal: 24H Line Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I need to transfer between lines to get from Msheireb to Al Aziziyah. It's 03:30 Sunday. Can I make this trip?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "temporal_context": {
+        "current_time": "2026-03-19T03:30:00",
+        "day_of_week": "Sunday",
+        "notes": "Operating hours (Sunday): 06:00-23:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "transfer",
+          "not running",
+          "service hours",
+          "overnight",
+          "no service"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-I-013",
+    "system": "doha",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "How long will it take to get from Lusail QNB to Msheireb? It's 22:30 on Tuesday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "temporal_context": {
+        "current_time": "2026-03-23T22:30:00",
+        "day_of_week": "Tuesday",
+        "notes": "Operating hours (Tuesday): 06:00-23:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-LUS",
+          "DOHA-QU",
+          "DOHA-LEG",
+          "DOHA-KAT",
+          "DOHA-QAS",
+          "DOHA-DEC",
+          "DOHA-WBQ",
+          "DOHA-COR",
+          "DOHA-BID",
+          "DOHA-MSH"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.93,
+        "estimated_minutes": 21.9
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "wait time",
+          "frequency",
+          "headway",
+          "minutes"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-I-015",
+    "system": "doha",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "It's 00:15 on Saturday night. I need to go from Al Wakra to Msheireb. How frequent are trains right now?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "doha",
+      "temporal_context": {
+        "current_time": "2026-03-25T00:15:00",
+        "day_of_week": "Saturday",
+        "notes": "Operating hours (Saturday): 06:00-23:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "late night",
+          "reduced",
+          "headway",
+          "last train",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-K-001",
+    "system": "doha",
+    "category": "K",
+    "difficulty": "easy",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility"
+    ],
+    "title": "Compound: Route with active disruption AND wheelchair user",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Al Doha Al Jadeda",
+        "station_id": "DOHA-DAJ"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Al Matar Al Qadeem",
+        "station_id": "DOHA-MAQ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      ],
+      "framebook": "doha",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-DAJ",
+          "DOHA-UMG",
+          "DOHA-MAQ"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.74,
+        "estimated_minutes": 3.4
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "al bidda",
+          "closed",
+          "water leak"
+        ]
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-K-004",
+    "system": "doha",
+    "category": "K",
+    "difficulty": "hard",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility",
+      "temporal"
+    ],
+    "title": "Compound: Station closure + wheelchair + near-closing",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ras Bu Abboud",
+        "station_id": "DOHA-RBA"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "National Museum",
+        "station_id": "DOHA-NMU"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      ],
+      "framebook": "doha",
+      "accessibility_mode": true,
+      "temporal_context": {
+        "current_time": "2026-03-14T00:15:00",
+        "day_of_week": "Thursday",
+        "notes": "Operating hours (Thursday): 06:00-23:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "al bidda",
+          "closed",
+          "water leak"
+        ]
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "service hours"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "DOHA-K-005",
+    "system": "doha",
+    "category": "K",
+    "difficulty": "hard",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility",
+      "temporal",
+      "policy"
+    ],
+    "title": "Compound: All failure modes active simultaneously",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Lusail QNB",
+        "station_id": "DOHA-LUS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Katara",
+        "station_id": "DOHA-KAT"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "disabled": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need step free access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-al-bidda",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives.",
+          "alternative": "Use Msheireb or Corniche (Red); The White Palace (Green)",
+          "eta_resolution": "2-3 hours"
+        }
+      ],
+      "framebook": "doha",
+      "accessibility_mode": true,
+      "temporal_context": {
+        "current_time": "2026-03-15T22:00:00",
+        "day_of_week": "Friday",
+        "notes": "Operating hours (Friday): 14:00-23:00"
+      },
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Disabled riders ride free.",
+        "policy_id": "disabled_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "DOHA-LUS",
+          "DOHA-QU",
+          "DOHA-LEG",
+          "DOHA-KAT"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.16,
+        "estimated_minutes": 10.3
+      },
+      "fare": {
+        "total": 2,
+        "currency": "QAR"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "al bidda",
+          "closed",
+          "water leak"
+        ]
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": []
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "service hours"
+        ]
+      },
+      "policy": {
+        "old_fare": 4,
+        "new_fare": 2,
+        "policy_id": "disabled_free",
+        "policy_must_mention": [
+          "disabled",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "temporal_accuracy": 10,
+      "policy_acknowledged": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  }
+]

@@ -1,0 +1,42 @@
+- id: terminal3_to_guomao_dongzhimen_closed
+  title: Terminal 3 to Guomao, Dongzhimen closed
+  oneliner: Mid-route station closed - agent re-plans around it and still sells a ticket
+  origin_id: BJM-3HH
+  dest_id: BJM-GUO
+  event_ids: [sc-dongzhimen]
+- id: xidan_to_wangfujing_line1_west_pm
+  title: Xidan to Wangfujing, Line 1 west maintenance
+  oneliner: Planned weekend single-tracking far west; central ride proceeds with a delay advisory
+  origin_id: BJM-XID
+  dest_id: BJM-WAN
+  event_ids: [pm-line1-west]
+- id: wangfujing_to_olympic_park_smog_advisory
+  title: Wangfujing to Olympic Park, air-quality advisory
+  oneliner: Heavy-pollution advisory, all lines normal - agent sells ticket plus a mask/AQI banner
+  origin_id: BJM-WAN
+  dest_id: BJM-AOG
+  event_ids: [sw-advisory]
+- id: xidan_to_guomao_smog_red_alert
+  title: Xidan to Guomao, smog service reduction
+  oneliner: Severe smog suspends outdoor lines; this underground Line 1 ride is unaffected
+  origin_id: BJM-XID
+  dest_id: BJM-GUO
+  event_ids: [sw-outdoor-reduced]
+- id: wangfujing_to_capital_airport
+  title: Wangfujing to Daxing Airport
+  oneliner: Downtown to airport via Line 1 and Daxing express - clean trip, no disruption
+  origin_id: BJM-WAN
+  dest_id: BJM-DAJ3
+  event_ids: []
+- id: wangfujing_to_xizhimen_xizhimen_closed
+  title: Wangfujing to Xizhimen, Xizhimen closed
+  oneliner: Destination station closed - agent declines and advises staff
+  origin_id: BJM-WAN
+  dest_id: BJM-XIZ
+  event_ids: [sc-xizhimen]
+- id: guomao_closed
+  title: Wangfujing to Guomao, Guomao closed
+  oneliner: Destination station closed on Line 1 - agent declines and advises staff
+  origin_id: BJM-WAN
+  dest_id: BJM-GUO
+  event_ids: [sc-guomao]

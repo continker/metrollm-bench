@@ -1,0 +1,59 @@
+{
+  "system": "bart",
+  "model": "distance",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "base_fare": 2.15,
+  "fare_brackets": [
+    {"max_miles": 6, "fare": 2.15},
+    {"max_miles": 12, "fare": 3.50},
+    {"max_miles": 20, "fare": 5.00},
+    {"max_miles": 30, "fare": 6.75},
+    {"max_miles": 40, "fare": 8.50},
+    {"max_miles": 999, "fare": 10.30}
+  ],
+  "surcharges": {
+    "transbay": {
+      "amount": 1.40,
+      "description": "Transbay tube crossing",
+      "sf_side": [
+        "BART-EMBR", "BART-MONT", "BART-POWL", "BART-CIVC", "BART-16TH", "BART-24TH",
+        "BART-GLEN", "BART-BALB", "BART-DALY",
+        "BART-COLM", "BART-SSAN", "BART-SANB", "BART-SFO", "BART-MLBR"
+      ],
+      "east_bay_side": [
+        "BART-WOAK", "BART-12TH", "BART-19TH", "BART-MCAR",
+        "BART-ASHB", "BART-DBRK", "BART-NBRK", "BART-DELP", "BART-DELN", "BART-RICH",
+        "BART-ROCK", "BART-ORIN", "BART-LAFY", "BART-WCRK", "BART-PHIL", "BART-CONC",
+        "BART-NCON", "BART-PITT", "BART-PCTR", "BART-ANTC",
+        "BART-LAKE", "BART-FTVL", "BART-COLS", "BART-OAKL", "BART-SANL", "BART-BAYF",
+        "BART-CAST", "BART-WDUB", "BART-DUBL",
+        "BART-HAYW", "BART-SHAY", "BART-UCTY", "BART-FRMT", "BART-WARM", "BART-MLPT", "BART-BERY"
+      ]
+    },
+    "sfo_airport": {
+      "amount": 4.95,
+      "station": "BART-SFO",
+      "description": "SFO Airport surcharge"
+    },
+    "oakl_airport": {
+      "amount": 6.70,
+      "station": "BART-OAKL",
+      "description": "Oakland Airport surcharge"
+    }
+  },
+  "payment_methods": {
+    "clipper_card": {"fare_adjustment": 0.0},
+    "contactless": {"fare_adjustment": 0.0}
+  },
+  "discounts": {
+    "children": {"fare": 0.00, "max_per_adult": 2, "qualifier": "under 5"},
+    "senior_65_plus": {"multiplier": 0.375},
+    "disabled": {"multiplier": 0.375}
+  },
+  "passes": {
+    "1_day": {"price": 10.15},
+    "7_day": {"price": 49.00},
+    "31_day": {"price": 104.00}
+  }
+}

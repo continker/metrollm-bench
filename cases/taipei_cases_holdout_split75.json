@@ -1,0 +1,4477 @@
+[
+  {
+    "id": "TRTC-A-002",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Taipei Main Station to Taipei 101/World Trade Center",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 25.0,
+            "subtotal": 25,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-A-003",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Ximen to Taipei 101/World Trade Center",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ximen",
+        "station_id": "TRTC-XMN"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XMN",
+          "TRTC-XIA2",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "green",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 3.78,
+        "estimated_minutes": 12.6
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 25.0,
+            "subtotal": 25,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-A-005",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Taipei Zoo to Taipei Main Station",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Zoo",
+        "station_id": "TRTC-TPZ"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPZ",
+          "TRTC-MZH",
+          "TRTC-WFC",
+          "TRTC-WFH",
+          "TRTC-XIN2",
+          "TRTC-LIN",
+          "TRTC-LZL",
+          "TRTC-TEB",
+          "TRTC-DAA",
+          "TRTC-ZXF",
+          "TRTC-ZXS",
+          "TRTC-SHT",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "brown",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 6.63,
+        "estimated_minutes": 18.1
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 30.0,
+            "subtotal": 30,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-A-013",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Luzhou to Taipei Zoo",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Luzhou",
+        "station_id": "TRTC-LUZ"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Zoo",
+        "station_id": "TRTC-TPZ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-LUZ",
+          "TRTC-SSHS",
+          "TRTC-SIHS",
+          "TRTC-SES",
+          "TRTC-DAQ",
+          "TRTC-MWR",
+          "TRTC-ZES",
+          "TRTC-XIT",
+          "TRTC-SJN",
+          "TRTC-ZXS",
+          "TRTC-ZXF",
+          "TRTC-DAA",
+          "TRTC-TEB",
+          "TRTC-LZL",
+          "TRTC-LIN",
+          "TRTC-XIN2",
+          "TRTC-WFH",
+          "TRTC-WFC",
+          "TRTC-MZH",
+          "TRTC-TPZ"
+        ],
+        "line_sequence": [
+          "orange",
+          "blue",
+          "brown"
+        ],
+        "transfers": 2,
+        "distance_miles": 11.73,
+        "estimated_minutes": 33.4
+      },
+      "fare": {
+        "total": 40,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 40.0,
+            "subtotal": 40,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-A-014",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Shilin to Gongguan",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Shilin",
+        "station_id": "TRTC-SHL"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Gongguan",
+        "station_id": "TRTC-GGN"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-GUT",
+          "TRTC-TAB",
+          "TRTC-GGN"
+        ],
+        "line_sequence": [
+          "red",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 5.92,
+        "estimated_minutes": 16.7
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 30.0,
+            "subtotal": 30,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-A-020",
+    "system": "taipei",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Taipei Zoo to Tamsui",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Zoo",
+        "station_id": "TRTC-TPZ"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Tamsui",
+        "station_id": "TRTC-TAM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPZ",
+          "TRTC-MZH",
+          "TRTC-WFC",
+          "TRTC-WFH",
+          "TRTC-XIN2",
+          "TRTC-LIN",
+          "TRTC-LZL",
+          "TRTC-TEB",
+          "TRTC-DAA",
+          "TRTC-DAP",
+          "TRTC-DGM",
+          "TRTC-CKS",
+          "TRTC-NTH",
+          "TRTC-TPM",
+          "TRTC-ZSN",
+          "TRTC-SHU",
+          "TRTC-MWR",
+          "TRTC-YUA",
+          "TRTC-JNT",
+          "TRTC-SHL",
+          "TRTC-ZHI",
+          "TRTC-MIN",
+          "TRTC-SHI",
+          "TRTC-QIL",
+          "TRTC-QIY",
+          "TRTC-BTO",
+          "TRTC-FUX",
+          "TRTC-ZHO",
+          "TRTC-GUA",
+          "TRTC-ZHU",
+          "TRTC-HSL",
+          "TRTC-TAM"
+        ],
+        "line_sequence": [
+          "brown",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 19.15,
+        "estimated_minutes": 42.9
+      },
+      "fare": {
+        "total": 55,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 55.0,
+            "subtotal": 55,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-B-001",
+    "system": "taipei",
+    "category": "B",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult",
+    "title": "Fare: 1 adult",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 25,
+            "currency": "TWD"
+          }
+        ],
+        "subtotal": 25,
+        "discounts": [],
+        "total": 25,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 25.0,
+            "subtotal": 25,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-B-004",
+    "system": "taipei",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult + 2 children",
+    "title": "Fare: 1 adult + 2 children",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 25,
+            "currency": "TWD"
+          }
+        ],
+        "subtotal": 25,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "TWD"
+          }
+        ],
+        "total": 25.0,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 2,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 25.0,
+            "subtotal": 25,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-B-013",
+    "system": "taipei",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "2 adults + 4 children",
+    "title": "Fare: 2 adults + 4 children",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 4
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x2",
+            "amount": 50,
+            "currency": "TWD"
+          }
+        ],
+        "subtotal": 50,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x4",
+            "amount": 0.0,
+            "currency": "TWD"
+          }
+        ],
+        "total": 50.0,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 2,
+          "children": 4,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 4
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 2,
+            "unit_fare": 25.0,
+            "subtotal": 50,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-B-015",
+    "system": "taipei",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "2 adults + 2 children + 1 senior + 1 disabled",
+    "title": "Fare: 2 adults + 2 children + 1 senior + 1 disabled",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 2,
+        "seniors": 1,
+        "disabled": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x2",
+            "amount": 50,
+            "currency": "TWD"
+          },
+          {
+            "label": "Senior x1",
+            "amount": 12.5,
+            "currency": "TWD"
+          },
+          {
+            "label": "Disabled x1",
+            "amount": 12.5,
+            "currency": "TWD"
+          }
+        ],
+        "subtotal": 75.0,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "TWD"
+          }
+        ],
+        "total": 75.0,
+        "currency": "TWD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 2,
+          "children": 2,
+          "seniors": 1,
+          "disabled": 1,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 2,
+            "unit_fare": 25.0,
+            "subtotal": 50,
+            "currency": "TWD"
+          },
+          {
+            "rider_type": "senior",
+            "count": 1,
+            "unit_fare": 12.5,
+            "subtotal": 12.5,
+            "currency": "TWD"
+          },
+          {
+            "rider_type": "disabled",
+            "count": 1,
+            "unit_fare": 12.5,
+            "subtotal": 12.5,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-B-016",
+    "system": "taipei",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "easycard-low-balance",
+    "title": "Fare with low balance: Taipei Main Station to Taipei 101/World Trade Center",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      },
+      {
+        "type": "freetext_input",
+        "text": "My EasyCard only has NT$12 on it. Can I still travel?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 25,
+            "currency": "TWD"
+          }
+        ],
+        "subtotal": 25,
+        "discounts": [],
+        "total": 25,
+        "currency": "TWD"
+      },
+      "balance_advisory": {
+        "given_balance": 12.0,
+        "required_fare": 25,
+        "top_up_amount": 13.0,
+        "currency_symbol": "NT$"
+      },
+      "advisory_must_mention": [
+        "add value",
+        "easycard",
+        "NT$13.00"
+      ],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 25.0,
+            "subtotal": 25,
+            "currency": "TWD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5,
+      "advisory_content_correct": 10
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-C-006",
+    "system": "taipei",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_red-tamsui",
+    "title": "Tamsui to Taipei Main Station (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Tamsui",
+        "station_id": "TRTC-TAM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-red-tamsui",
+          "line": "red",
+          "segment": [
+            "TRTC-TAM",
+            "TRTC-HSL",
+            "TRTC-BTO"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Tamsui and Beitou this weekend due to track replacement. Free shuttle bus available between affected stations.",
+          "alternative": "Free shuttle bus between Tamsui and Beitou",
+          "eta_resolution": "Service resumes Tuesday 6:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T06:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-red-tamsui",
+          "line": "red",
+          "segment": [
+            "TRTC-TAM",
+            "TRTC-HSL",
+            "TRTC-BTO"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Tamsui and Beitou this weekend due to track replacement. Free shuttle bus available between affected stations.",
+          "alternative": "Free shuttle bus between Tamsui and Beitou",
+          "eta_resolution": "Service resumes Tuesday 6:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T06:00:00"
+        }
+      ],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TAM",
+          "TRTC-HSL",
+          "TRTC-ZHU",
+          "TRTC-GUA",
+          "TRTC-ZHO",
+          "TRTC-FUX",
+          "TRTC-BTO",
+          "TRTC-QIY",
+          "TRTC-QIL",
+          "TRTC-SHI",
+          "TRTC-MIN",
+          "TRTC-ZHI",
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.23,
+        "estimated_minutes": 24.2
+      },
+      "fare": {
+        "total": 40,
+        "currency": "TWD"
+      },
+      "original_route": {
+        "path": [
+          "TRTC-TAM",
+          "TRTC-HSL",
+          "TRTC-ZHU",
+          "TRTC-GUA",
+          "TRTC-ZHO",
+          "TRTC-FUX",
+          "TRTC-BTO",
+          "TRTC-QIY",
+          "TRTC-QIL",
+          "TRTC-SHI",
+          "TRTC-MIN",
+          "TRTC-ZHI",
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.23,
+        "estimated_minutes": 24.2
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "TRTC-TAM",
+            "TRTC-HSL"
+          ],
+          [
+            "TRTC-HSL",
+            "TRTC-BTO"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "red line",
+          "tamsui",
+          "beitou",
+          "bus"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-C-009",
+    "system": "taipei",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_orange-luzhou",
+    "title": "Zhongxiao Xinsheng to Luzhou (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Zhongxiao Xinsheng",
+        "station_id": "TRTC-ZXS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Luzhou",
+        "station_id": "TRTC-LUZ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-orange-luzhou",
+          "line": "orange",
+          "segment": [
+            "TRTC-LUZ",
+            "TRTC-SCH"
+          ],
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Orange Line: Reduced service between Luzhou and Sanchong due to ventilation system upgrade. Trains running on 12-minute headways instead of 7 minutes.",
+          "alternative": "Allow extra travel time; service at reduced frequency",
+          "eta_resolution": "Normal frequency resumes next week",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-15T06:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-orange-luzhou",
+          "line": "orange",
+          "segment": [
+            "TRTC-LUZ",
+            "TRTC-SCH"
+          ],
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Orange Line: Reduced service between Luzhou and Sanchong due to ventilation system upgrade. Trains running on 12-minute headways instead of 7 minutes.",
+          "alternative": "Allow extra travel time; service at reduced frequency",
+          "eta_resolution": "Normal frequency resumes next week",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-15T06:00:00"
+        }
+      ],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-ZXS",
+          "TRTC-SJN",
+          "TRTC-XIT",
+          "TRTC-ZES",
+          "TRTC-MWR",
+          "TRTC-DAQ",
+          "TRTC-SES",
+          "TRTC-SIHS",
+          "TRTC-SSHS",
+          "TRTC-LUZ"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.17,
+        "estimated_minutes": 12.4
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "original_route": {
+        "path": [
+          "TRTC-ZXS",
+          "TRTC-SJN",
+          "TRTC-XIT",
+          "TRTC-ZES",
+          "TRTC-MWR",
+          "TRTC-DAQ",
+          "TRTC-SES",
+          "TRTC-SIHS",
+          "TRTC-SSHS",
+          "TRTC-LUZ"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.17,
+        "estimated_minutes": 12.4
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "TRTC-LUZ",
+            "TRTC-SCH"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "info",
+        "advisory_must_mention": [
+          "orange line",
+          "luzhou",
+          "sanchong",
+          "reduced"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-C-013",
+    "system": "taipei",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "tw_elevated-reduced",
+    "title": "Nangang to Tamsui (typhoon_warning)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Nangang",
+        "station_id": "TRTC-NKG"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Tamsui",
+        "station_id": "TRTC-TAM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "tw-elevated-reduced",
+          "line": null,
+          "segment": null,
+          "type": "typhoon_warning",
+          "severity": "warning",
+          "message": "Typhoon escalation: Brown Line remains suspended. Surface and elevated terminal stations (Tamsui, Xindian, Yongning) may close if conditions worsen. Underground lines continuing service on extended 10-minute headways.",
+          "alternative": "Underground lines running at reduced frequency; avoid non-essential travel",
+          "eta_resolution": "Duration depends on typhoon track"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "tw-elevated-reduced",
+          "line": null,
+          "segment": null,
+          "type": "typhoon_warning",
+          "severity": "warning",
+          "message": "Typhoon escalation: Brown Line remains suspended. Surface and elevated terminal stations (Tamsui, Xindian, Yongning) may close if conditions worsen. Underground lines continuing service on extended 10-minute headways.",
+          "alternative": "Underground lines running at reduced frequency; avoid non-essential travel",
+          "eta_resolution": "Duration depends on typhoon track"
+        }
+      ],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-NKG",
+          "TRTC-KUN",
+          "TRTC-HSP",
+          "TRTC-YCH",
+          "TRTC-CTH",
+          "TRTC-SYS",
+          "TRTC-ZXD",
+          "TRTC-ZXF",
+          "TRTC-ZXS",
+          "TRTC-SHT",
+          "TRTC-TPM",
+          "TRTC-ZSN",
+          "TRTC-SHU",
+          "TRTC-MWR",
+          "TRTC-YUA",
+          "TRTC-JNT",
+          "TRTC-SHL",
+          "TRTC-ZHI",
+          "TRTC-MIN",
+          "TRTC-SHI",
+          "TRTC-QIL",
+          "TRTC-QIY",
+          "TRTC-BTO",
+          "TRTC-FUX",
+          "TRTC-ZHO",
+          "TRTC-GUA",
+          "TRTC-ZHU",
+          "TRTC-HSL",
+          "TRTC-TAM"
+        ],
+        "line_sequence": [
+          "blue",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 18.14,
+        "estimated_minutes": 41.1
+      },
+      "fare": {
+        "total": 55,
+        "currency": "TWD"
+      },
+      "original_route": {
+        "path": [
+          "TRTC-NKG",
+          "TRTC-KUN",
+          "TRTC-HSP",
+          "TRTC-YCH",
+          "TRTC-CTH",
+          "TRTC-SYS",
+          "TRTC-ZXD",
+          "TRTC-ZXF",
+          "TRTC-ZXS",
+          "TRTC-SHT",
+          "TRTC-TPM",
+          "TRTC-ZSN",
+          "TRTC-SHU",
+          "TRTC-MWR",
+          "TRTC-YUA",
+          "TRTC-JNT",
+          "TRTC-SHL",
+          "TRTC-ZHI",
+          "TRTC-MIN",
+          "TRTC-SHI",
+          "TRTC-QIL",
+          "TRTC-QIY",
+          "TRTC-BTO",
+          "TRTC-FUX",
+          "TRTC-ZHO",
+          "TRTC-GUA",
+          "TRTC-ZHU",
+          "TRTC-HSL",
+          "TRTC-TAM"
+        ],
+        "line_sequence": [
+          "blue",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 18.14,
+        "estimated_minutes": 41.1
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [
+          {
+            "station": "TRTC-TPZ",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-MZH",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-WFH",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-WFC",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-LZL",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-NJF",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-ZJH",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-SSA",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-DZH",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-JNR",
+            "restriction": "closed"
+          },
+          {
+            "station": "TRTC-NEC",
+            "restriction": "closed"
+          }
+        ],
+        "expected_segment_closures": [
+          [
+            "TRTC-TPZ",
+            "TRTC-MZH"
+          ],
+          [
+            "TRTC-MZH",
+            "TRTC-WFH"
+          ],
+          [
+            "TRTC-WFH",
+            "TRTC-WFC"
+          ],
+          [
+            "TRTC-WFC",
+            "TRTC-LZL"
+          ],
+          [
+            "TRTC-LZL",
+            "TRTC-DAA"
+          ],
+          [
+            "TRTC-DAA",
+            "TRTC-ZXF"
+          ],
+          [
+            "TRTC-ZXF",
+            "TRTC-NJF"
+          ],
+          [
+            "TRTC-NJF",
+            "TRTC-ZJH"
+          ],
+          [
+            "TRTC-ZJH",
+            "TRTC-SSA"
+          ],
+          [
+            "TRTC-SSA",
+            "TRTC-DZH"
+          ],
+          [
+            "TRTC-DZH",
+            "TRTC-JNR"
+          ],
+          [
+            "TRTC-JNR",
+            "TRTC-NEC"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "typhoon",
+          "brown",
+          "suspended",
+          "reduced"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-C-018",
+    "system": "taipei",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "wsz_wenhu-rain",
+    "title": "Neihu to Taipei Main Station (weather_slow_zone)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Neihu",
+        "station_id": "TRTC-NEI"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "wsz-wenhu-rain",
+          "line": "wenhu",
+          "segment": null,
+          "type": "weather_slow_zone",
+          "severity": "info",
+          "message": "Wenhu (Brown) Line: Heavy rain has triggered the automatic safety mechanism. Trains are operating at reduced speed. Expect 10-15 minute delays on Brown Line segments.",
+          "alternative": "Allow extra 15 minutes for Brown Line travel. Red or Blue Lines unaffected.",
+          "eta_resolution": "Until rain subsides"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "wsz-wenhu-rain",
+          "line": "wenhu",
+          "segment": null,
+          "type": "weather_slow_zone",
+          "severity": "info",
+          "message": "Wenhu (Brown) Line: Heavy rain has triggered the automatic safety mechanism. Trains are operating at reduced speed. Expect 10-15 minute delays on Brown Line segments.",
+          "alternative": "Allow extra 15 minutes for Brown Line travel. Red or Blue Lines unaffected.",
+          "eta_resolution": "Until rain subsides"
+        }
+      ],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-NEI",
+          "TRTC-WEN",
+          "TRTC-GAN",
+          "TRTC-XIH",
+          "TRTC-JIR",
+          "TRTC-DZH",
+          "TRTC-SSA",
+          "TRTC-ZJHS",
+          "TRTC-NJF",
+          "TRTC-ZXF",
+          "TRTC-ZXS",
+          "TRTC-SHT",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "brown",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 7.99,
+        "estimated_minutes": 21.0
+      },
+      "fare": {
+        "total": 35,
+        "currency": "TWD"
+      },
+      "original_route": {
+        "path": [
+          "TRTC-NEI",
+          "TRTC-WEN",
+          "TRTC-GAN",
+          "TRTC-XIH",
+          "TRTC-JIR",
+          "TRTC-DZH",
+          "TRTC-SSA",
+          "TRTC-ZJHS",
+          "TRTC-NJF",
+          "TRTC-ZXF",
+          "TRTC-ZXS",
+          "TRTC-SHT",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "brown",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 7.99,
+        "estimated_minutes": 21.0
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "info",
+        "advisory_must_mention": [
+          "brown",
+          "delay",
+          "weather"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-D-003",
+    "system": "taipei",
+    "category": "D",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "accessibility_tier": "happy_path",
+    "title": "Songshan to Guting (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Songshan",
+        "station_id": "TRTC-SSN"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Guting",
+        "station_id": "TRTC-GUT"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need working elevators at all stations \u2014 I cannot use stairs or escalators."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-SSN",
+          "TRTC-NAS",
+          "TRTC-TAA",
+          "TRTC-NJF",
+          "TRTC-SJN",
+          "TRTC-ZSN",
+          "TRTC-BEI",
+          "TRTC-XMN",
+          "TRTC-XIA2",
+          "TRTC-CKS",
+          "TRTC-GUT"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.3,
+        "estimated_minutes": 12.6
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "accessibility": {
+        "requirement": "elevator_required",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-D-008",
+    "system": "taipei",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "Liuzhangli to Nangang Exhibition Center (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Liuzhangli",
+        "station_id": "TRTC-LZL"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Nangang Exhibition Center",
+        "station_id": "TRTC-NEC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need working elevators at all stations \u2014 I cannot use stairs or escalators."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-LZL",
+          "TRTC-TEB",
+          "TRTC-DAA",
+          "TRTC-ZXF",
+          "TRTC-ZXD",
+          "TRTC-SYS",
+          "TRTC-CTH",
+          "TRTC-YCH",
+          "TRTC-HSP",
+          "TRTC-KUN",
+          "TRTC-NKG",
+          "TRTC-NEC"
+        ],
+        "line_sequence": [
+          "brown",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 6.54,
+        "estimated_minutes": 18.1
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "accessibility": {
+        "requirement": "elevator_required",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-D-015",
+    "system": "taipei",
+    "category": "D",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "Nangang Exhibition Center to Taipei Zoo (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Nangang Exhibition Center",
+        "station_id": "TRTC-NEC"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Zoo",
+        "station_id": "TRTC-TPZ"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-NEC",
+          "TRTC-NKG",
+          "TRTC-KUN",
+          "TRTC-HSP",
+          "TRTC-YCH",
+          "TRTC-CTH",
+          "TRTC-SYS",
+          "TRTC-ZXD",
+          "TRTC-ZXF",
+          "TRTC-DAA",
+          "TRTC-TEB",
+          "TRTC-LZL",
+          "TRTC-LIN",
+          "TRTC-XIN2",
+          "TRTC-WFH",
+          "TRTC-WFC",
+          "TRTC-MZH",
+          "TRTC-TPZ"
+        ],
+        "line_sequence": [
+          "blue",
+          "brown"
+        ],
+        "transfers": 1,
+        "distance_miles": 9.74,
+        "estimated_minutes": 24.4
+      },
+      "fare": {
+        "total": 35,
+        "currency": "TWD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "TRTC-WFC",
+            "station_name": "Wanfang Community",
+            "issue": "elevator out of service"
+          },
+          {
+            "station_id": "TRTC-MZH",
+            "station_name": "Muzha",
+            "issue": "elevator out of service"
+          },
+          {
+            "station_id": "TRTC-TPZ",
+            "station_name": "Taipei Zoo",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-E-004",
+    "system": "taipei",
+    "category": "E",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "cultural_id": "brown-line-auto",
+    "title": "Cultural: Brown Line Auto",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "Is the Brown Line operated by a driver?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "automated",
+          "driverless"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-E-006",
+    "system": "taipei",
+    "category": "E",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "cultural_id": "suica-card",
+    "title": "Cultural: Suica Card",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a Suica card from Japan. Can I use it on the Taipei MRT?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "easycard",
+          "suica"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-E-007",
+    "system": "taipei",
+    "category": "E",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "cultural_id": "octopus-card",
+    "title": "Cultural: Octopus Card",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "Does my Octopus card from Hong Kong work here?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "easycard",
+          "octopus"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-E-012",
+    "system": "taipei",
+    "category": "E",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "cultural_id": "korean-query",
+    "title": "Cultural: Korean Query",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "\uc2dc\uba3c\ub529\uc5d0\uc11c \ud0c0\uc774\ubca0\uc774 \ub3d9\ubb3c\uc6d0\uae4c\uc9c0 \uc5b4\ub5bb\uac8c \uac00\ub098\uc694?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "ximen",
+          "taipei zoo"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-E-013",
+    "system": "taipei",
+    "category": "E",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "cultural_id": "chinese-traditional",
+    "title": "Cultural: Chinese Traditional",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "\u6211\u60f3\u5f9e\u677f\u6a4b\u642d\u5230\u58eb\u6797\u591c\u5e02\uff0c\u8acb\u554f\u600e\u9ebc\u8d70\uff1f"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "banqiao",
+          "shilin"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-F-006",
+    "system": "taipei",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "seniors_free",
+    "title": "Policy: Seniors Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Senior citizens (65+) ride free.",
+        "policy_id": "seniors_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25.0,
+        "currency": "TWD"
+      },
+      "policy": {
+        "old_fare": 37.5,
+        "new_fare": 25.0,
+        "policy_id": "seniors_free",
+        "policy_must_mention": [
+          "senior",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-F-010",
+    "system": "taipei",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "disabled_free",
+    "title": "Policy: Disabled Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station",
+        "station_id": "TRTC-TPM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center",
+        "station_id": "TRTC-T101"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "disabled": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Disabled riders ride free.",
+        "policy_id": "disabled_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 25.0,
+        "currency": "TWD"
+      },
+      "policy": {
+        "old_fare": 37.5,
+        "new_fare": 25.0,
+        "policy_id": "disabled_free",
+        "policy_must_mention": [
+          "disabled",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-G-001",
+    "system": "taipei",
+    "category": "G",
+    "difficulty": "easy",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "pax-change",
+    "title": "Multi-turn: Add a child passenger mid-conversation",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Tamsui"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Tamsui"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Taipei 101/World Trade Center"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TAM",
+          "TRTC-HSL",
+          "TRTC-ZHU",
+          "TRTC-GUA",
+          "TRTC-ZHO",
+          "TRTC-FUX",
+          "TRTC-BTO",
+          "TRTC-QIY",
+          "TRTC-QIL",
+          "TRTC-SHI",
+          "TRTC-MIN",
+          "TRTC-ZHI",
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 16.06,
+        "estimated_minutes": 31.9
+      },
+      "fare": {
+        "total": 55.0,
+        "currency": "TWD"
+      },
+      "final_state": {
+        "origin": "Tamsui",
+        "destination": "Taipei 101/World Trade Center",
+        "passengers": {
+          "adults": 1,
+          "children": 1
+        },
+        "payment_method": "easycard"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-G-004",
+    "system": "taipei",
+    "category": "G",
+    "difficulty": "easy",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "add-accessibility",
+    "title": "Multi-turn: Add accessibility requirement after initial route",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Songshan"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Ximen"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Songshan"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Ximen"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "I use a wheelchair"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-SSN",
+          "TRTC-NAS",
+          "TRTC-TAA",
+          "TRTC-NJF",
+          "TRTC-SJN",
+          "TRTC-ZSN",
+          "TRTC-BEI",
+          "TRTC-XMN"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 4.8,
+        "estimated_minutes": 9.6
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "final_state": {
+        "origin": "Songshan",
+        "destination": "Ximen",
+        "passengers": {
+          "adults": 1
+        },
+        "payment_method": "easycard"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-G-008",
+    "system": "taipei",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "add-passengers-late",
+    "title": "Multi-turn: Route planned for 1, then passengers added",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Dazhi"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Nanshijiao"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "How much for all of us?"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Dazhi"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Nanshijiao"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2,
+          "children": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "How much for all of us?"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-DZH",
+          "TRTC-SSA",
+          "TRTC-ZJHS",
+          "TRTC-NJF",
+          "TRTC-SJN",
+          "TRTC-ZXS",
+          "TRTC-DGM",
+          "TRTC-GUT",
+          "TRTC-DXI",
+          "TRTC-YOM",
+          "TRTC-JIN",
+          "TRTC-NSJ"
+        ],
+        "line_sequence": [
+          "brown",
+          "green",
+          "orange"
+        ],
+        "transfers": 2,
+        "distance_miles": 7.86,
+        "estimated_minutes": 25.6
+      },
+      "fare": {
+        "total": 70.0,
+        "currency": "TWD"
+      },
+      "final_state": {
+        "origin": "Dazhi",
+        "destination": "Nanshijiao",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "payment_method": "easycard"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-G-009",
+    "system": "taipei",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "late-accessibility",
+    "title": "Multi-turn: Accessibility requirement added late, then child added",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Shilin"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Sun Yat-Sen Memorial Hall"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I need elevator access"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Shilin"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Sun Yat-Sen Memorial Hall"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 2
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "Actually I need elevator access"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM",
+          "TRTC-SHT",
+          "TRTC-ZXS",
+          "TRTC-ZXF",
+          "TRTC-ZXD",
+          "TRTC-SYS"
+        ],
+        "line_sequence": [
+          "red",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 5.9,
+        "estimated_minutes": 16.6
+      },
+      "fare": {
+        "total": 60.0,
+        "currency": "TWD"
+      },
+      "final_state": {
+        "origin": "Shilin",
+        "destination": "Sun Yat-Sen Memorial Hall",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "payment_method": "easycard"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-G-015",
+    "system": "taipei",
+    "category": "G",
+    "difficulty": "hard",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "full-sequence",
+    "title": "Multi-turn: Build trip incrementally over 5 turns",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Xiangshan"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Luzhou"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need step-free access"
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "contactless"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Xiangshan"
+        }
+      ],
+      [
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Luzhou"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2,
+          "children": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "I need step-free access"
+        }
+      ],
+      [
+        {
+          "type": "payment_method_selected",
+          "method": "contactless"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XSH",
+          "TRTC-T101",
+          "TRTC-XIA",
+          "TRTC-DAA",
+          "TRTC-DAP",
+          "TRTC-DGM",
+          "TRTC-ZXS",
+          "TRTC-SJN",
+          "TRTC-XIT",
+          "TRTC-ZES",
+          "TRTC-MWR",
+          "TRTC-DAQ",
+          "TRTC-SES",
+          "TRTC-SIHS",
+          "TRTC-SSHS",
+          "TRTC-LUZ"
+        ],
+        "line_sequence": [
+          "red",
+          "orange"
+        ],
+        "transfers": 1,
+        "distance_miles": 9.31,
+        "estimated_minutes": 23.7
+      },
+      "fare": {
+        "total": 70.0,
+        "currency": "TWD"
+      },
+      "final_state": {
+        "origin": "Xiangshan",
+        "destination": "Luzhou",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "payment_method": "contactless"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-H-002",
+    "system": "taipei",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "impossible-cross-system",
+    "scenario_type": "impossible_route",
+    "title": "Adversarial: Impossible Cross System",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to go from Taipei Main Station to Times Square"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Times Square is not in this transit system",
+      "acceptable_response_patterns": [
+        "not available",
+        "different system",
+        "not found",
+        "does not exist"
+      ],
+      "acceptable_tools": [],
+      "hallucination_traps": [],
+      "expected_outcome": "request_declined",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "invalid_request"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-H-006",
+    "system": "taipei",
+    "category": "H",
+    "difficulty": "hard",
+    "interaction_mode": "adversarial",
+    "scenario_id": "invalid-pax-flip-flop",
+    "scenario_type": "invalid_passengers",
+    "title": "Adversarial: Invalid Pax Flip Flop",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Banqiao"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei Main Station"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I said 3 adults"
+      },
+      {
+        "type": "freetext_input",
+        "text": "No wait, just 1"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-BQO",
+          "TRTC-XPU",
+          "TRTC-JIA",
+          "TRTC-LOT",
+          "TRTC-XMN",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 4.36,
+        "estimated_minutes": 8.7
+      },
+      "fare": {
+        "total": 50,
+        "currency": "TWD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "1 adult",
+        "fare"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-H-012",
+    "system": "taipei",
+    "category": "H",
+    "difficulty": "hard",
+    "interaction_mode": "adversarial",
+    "scenario_id": "exploit-mass-children",
+    "scenario_type": "policy_exploit",
+    "title": "Adversarial: Exploit Mass Children",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Taipei Main Station"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Taipei 101/World Trade Center"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 10
+      },
+      {
+        "type": "freetext_input",
+        "text": "All 10 children are mine and all ride free right?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.83,
+        "estimated_minutes": 7.7
+      },
+      "fare": {
+        "total": 225.0,
+        "currency": "TWD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "free",
+        "pay"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-H-014",
+    "system": "taipei",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "contra-scenic-route",
+    "scenario_type": "constrained_compliance",
+    "title": "Adversarial: Contra Scenic Route",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Songshan"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Ximen"
+      },
+      {
+        "type": "freetext_input",
+        "text": "Take the scenic route through all stations from Songshan to Ximen"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-SSN",
+          "TRTC-NAS",
+          "TRTC-TAA",
+          "TRTC-NJF",
+          "TRTC-SJN",
+          "TRTC-ZSN",
+          "TRTC-BEI",
+          "TRTC-XMN"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 4.8,
+        "estimated_minutes": 9.6
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "should_reject": false,
+      "rejection_reason": "No scenic route mode available; only shortest path",
+      "acceptable_response_patterns": [
+        "shortest",
+        "available",
+        "direct",
+        "route"
+      ],
+      "acceptable_tools": [
+        "route_planner"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-J-007",
+    "system": "taipei",
+    "category": "J",
+    "difficulty": "medium",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "misuse-refund-policy",
+    "trap_type": "tool_misuse",
+    "title": "Hallucination trap: Misuse Refund Policy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "What's the refund policy?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "knowledge_query": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [],
+      "acceptable_tools": [
+        "knowledge_base"
+      ],
+      "should_reject": false,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-J-008",
+    "system": "taipei",
+    "category": "J",
+    "difficulty": "medium",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "misuse-route-query",
+    "trap_type": "tool_misuse",
+    "title": "Hallucination trap: Misuse Route Query",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "How do I get from Xindian to Taipei Main Station?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XDN",
+          "TRTC-XDO",
+          "TRTC-QZH",
+          "TRTC-DPL",
+          "TRTC-JME",
+          "TRTC-WLG",
+          "TRTC-GGN",
+          "TRTC-TAB",
+          "TRTC-GUT",
+          "TRTC-CKS",
+          "TRTC-NTH",
+          "TRTC-TPM"
+        ],
+        "line_sequence": [
+          "green",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 6.68,
+        "estimated_minutes": 18.3
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "hallucination_traps": [],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "should_reject": false,
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-J-013",
+    "system": "taipei",
+    "category": "J",
+    "difficulty": "hard",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "plausible-ticket",
+    "trap_type": "plausible_name",
+    "title": "Hallucination trap: Plausible Ticket",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to buy a ticket from Ximen to Taipei 101/World Trade Center"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XMN",
+          "TRTC-XIA2",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "green",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 3.78,
+        "estimated_minutes": 12.6
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "hallucination_traps": [
+        "vending_machine",
+        "checkout_terminal",
+        "card_charger"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "should_reject": false,
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-I-005",
+    "system": "taipei",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "before_opening",
+    "title": "Temporal: Before Opening Medium",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Planning to go from Taipei Zoo to Taipei Main Station. It's 05:30 on Sunday morning."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "temporal_context": {
+        "current_time": "2026-03-15T05:30:00",
+        "day_of_week": "Sunday",
+        "notes": "Operating hours (Sunday): 06:00-00:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "sunday",
+          "weekend",
+          "opens at",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-I-007",
+    "system": "taipei",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "overnight_closed",
+    "title": "Temporal: 24H Line Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to travel from Nangang to Ximen. It's 02:00 on Wednesday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "temporal_context": {
+        "current_time": "2026-03-17T02:00:00",
+        "day_of_week": "Wednesday",
+        "notes": "Operating hours (Wednesday): 06:00-00:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "overnight",
+          "limited service",
+          "service hours",
+          "overnight",
+          "no service"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-I-011",
+    "system": "taipei",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "time_constraint",
+    "title": "Temporal: Time Constraint Medium",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I must arrive at Taipei 101/World Trade Center by 22:30 tonight from Tamsui. It's 22:00 on Friday. Will I make it?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "temporal_context": {
+        "current_time": "2026-03-21T22:00:00",
+        "day_of_week": "Friday",
+        "notes": "Operating hours (Friday): 06:00-00:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-TAM",
+          "TRTC-HSL",
+          "TRTC-ZHU",
+          "TRTC-GUA",
+          "TRTC-ZHO",
+          "TRTC-FUX",
+          "TRTC-BTO",
+          "TRTC-QIY",
+          "TRTC-QIL",
+          "TRTC-SHI",
+          "TRTC-MIN",
+          "TRTC-ZHI",
+          "TRTC-SHL",
+          "TRTC-JNT",
+          "TRTC-YUA",
+          "TRTC-MWR",
+          "TRTC-SHU",
+          "TRTC-ZSN",
+          "TRTC-TPM",
+          "TRTC-NTH",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 16.06,
+        "estimated_minutes": 31.9
+      },
+      "fare": {
+        "total": 55,
+        "currency": "TWD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "arrive by",
+          "estimated",
+          "minutes",
+          "last train"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-I-013",
+    "system": "taipei",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "How long will it take to get from Ximen to Taipei 101/World Trade Center? It's 22:30 on Tuesday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "taipei",
+      "temporal_context": {
+        "current_time": "2026-03-23T22:30:00",
+        "day_of_week": "Tuesday",
+        "notes": "Operating hours (Tuesday): 06:00-00:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XMN",
+          "TRTC-XIA2",
+          "TRTC-CKS",
+          "TRTC-DGM",
+          "TRTC-DAP",
+          "TRTC-DAA",
+          "TRTC-XIA",
+          "TRTC-T101"
+        ],
+        "line_sequence": [
+          "green",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 3.78,
+        "estimated_minutes": 12.6
+      },
+      "fare": {
+        "total": 25,
+        "currency": "TWD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "wait time",
+          "frequency",
+          "headway",
+          "minutes"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "TRTC-K-001",
+    "system": "taipei",
+    "category": "K",
+    "difficulty": "easy",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility"
+    ],
+    "title": "Compound: Route with active disruption AND wheelchair user",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ximen",
+        "station_id": "TRTC-XMN"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Nangang",
+        "station_id": "TRTC-NKG"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "payment_method_selected",
+        "method": "easycard"
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-daan",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Daan station closed due to electrical fault in signaling system. Red and Brown line trains skip this station. Use Dongmen (Red) or Taipei 101/WTC (Red), Liuzhangli (Brown) or Zhongxiao Fuxing (Brown) as alternatives.",
+          "alternative": "Use Dongmen or Taipei 101/WTC (Red), Liuzhangli or Zhongxiao Fuxing (Brown)",
+          "eta_resolution": "3-5 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-daan",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Daan station closed due to electrical fault in signaling system. Red and Brown line trains skip this station. Use Dongmen (Red) or Taipei 101/WTC (Red), Liuzhangli (Brown) or Zhongxiao Fuxing (Brown) as alternatives.",
+          "alternative": "Use Dongmen or Taipei 101/WTC (Red), Liuzhangli or Zhongxiao Fuxing (Brown)",
+          "eta_resolution": "3-5 hours"
+        }
+      ],
+      "framebook": "taipei",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "TRTC-XMN",
+          "TRTC-TPM",
+          "TRTC-SHT",
+          "TRTC-ZXS",
+          "TRTC-ZXF",
+          "TRTC-ZXD",
+          "TRTC-SYS",
+          "TRTC-CTH",
+          "TRTC-YCH",
+          "TRTC-HSP",
+          "TRTC-KUN",
+          "TRTC-NKG"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.57,
+        "estimated_minutes": 13.2
+      },
+      "fare": {
+        "total": 30,
+        "currency": "TWD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "daan",
+          "closed",
+          "electrical fault"
+        ]
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 5.0,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "lines": [
+    {
+      "id": "red",
+      "name": "Red Line",
+      "color": "#CC0000",
+      "stations": [
+        "North Springs",
+        "Sandy Springs",
+        "Dunwoody",
+        "Medical Center",
+        "Buckhead",
+        "Lindbergh Center",
+        "Arts Center",
+        "Midtown",
+        "North Avenue",
+        "Civic Center",
+        "Peachtree Center",
+        "Five Points",
+        "Garnett",
+        "West End",
+        "Oakland City",
+        "Lakewood/Ft McPherson",
+        "East Point",
+        "College Park",
+        "Airport"
+      ],
+      "typical_headway_min": 10
+    },
+    {
+      "id": "gold",
+      "name": "Gold Line",
+      "color": "#D4A017",
+      "stations": [
+        "Doraville",
+        "Chamblee",
+        "Brookhaven/Oglethorpe",
+        "Lenox",
+        "Lindbergh Center",
+        "Arts Center",
+        "Midtown",
+        "North Avenue",
+        "Civic Center",
+        "Peachtree Center",
+        "Five Points",
+        "Garnett",
+        "West End",
+        "Oakland City",
+        "Lakewood/Ft McPherson",
+        "East Point",
+        "College Park",
+        "Airport"
+      ],
+      "typical_headway_min": 10
+    },
+    {
+      "id": "blue",
+      "name": "Blue Line",
+      "color": "#0060A9",
+      "stations": [
+        "Hamilton E. Holmes",
+        "West Lake",
+        "Ashby",
+        "Vine City",
+        "OMNI/Dome/GWCC/Philips Arena/CNN Center",
+        "Five Points",
+        "Georgia State",
+        "King Memorial",
+        "Inman Park/Reynoldstown",
+        "Edgewood/Candler Park",
+        "East Lake",
+        "Decatur",
+        "Avondale",
+        "Kensington",
+        "Indian Creek"
+      ],
+      "typical_headway_min": 20
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "color": "#009B3A",
+      "stations": [
+        "Bankhead",
+        "Ashby",
+        "Vine City",
+        "OMNI/Dome/GWCC/Philips Arena/CNN Center",
+        "Five Points",
+        "Georgia State",
+        "King Memorial",
+        "Inman Park/Reynoldstown",
+        "Edgewood/Candler Park"
+      ],
+      "typical_headway_min": 20
+    }
+  ],
+  "stations": {
+    "Buckhead": {
+      "lat": 33.84781,
+      "lon": -84.367629
+    },
+    "Avondale": {
+      "lat": 33.775554,
+      "lon": -84.281487
+    },
+    "Hamilton E. Holmes": {
+      "lat": 33.754517,
+      "lon": -84.469824
+    },
+    "Chamblee": {
+      "lat": 33.887929,
+      "lon": -84.305556
+    },
+    "North Springs": {
+      "lat": 33.944377,
+      "lon": -84.357253
+    },
+    "North Avenue": {
+      "lat": 33.771472,
+      "lon": -84.387258
+    },
+    "East Point": {
+      "lat": 33.676985,
+      "lon": -84.440704
+    },
+    "Civic Center": {
+      "lat": 33.766111,
+      "lon": -84.387504
+    },
+    "Inman Park/Reynoldstown": {
+      "lat": 33.757227,
+      "lon": -84.353066
+    },
+    "Edgewood/Candler Park": {
+      "lat": 33.761803,
+      "lon": -84.340825
+    },
+    "Georgia State": {
+      "lat": 33.750161,
+      "lon": -84.385915
+    },
+    "Lindbergh Center": {
+      "lat": 33.823447,
+      "lon": -84.369324
+    },
+    "West Lake": {
+      "lat": 33.753247,
+      "lon": -84.445568
+    },
+    "Dunwoody": {
+      "lat": 33.920862,
+      "lon": -84.344213
+    },
+    "Kensington": {
+      "lat": 33.772647,
+      "lon": -84.251607
+    },
+    "Bankhead": {
+      "lat": 33.772436,
+      "lon": -84.428906
+    },
+    "Arts Center": {
+      "lat": 33.789669,
+      "lon": -84.387414
+    },
+    "Medical Center": {
+      "lat": 33.910757,
+      "lon": -84.35189
+    },
+    "Lenox": {
+      "lat": 33.845388,
+      "lon": -84.358235
+    },
+    "Midtown": {
+      "lat": 33.781355,
+      "lon": -84.386353
+    },
+    "Oakland City": {
+      "lat": 33.7173,
+      "lon": -84.42503
+    },
+    "Vine City": {
+      "lat": 33.756613,
+      "lon": -84.404021
+    },
+    "East Lake": {
+      "lat": 33.765241,
+      "lon": -84.312937
+    },
+    "Brookhaven/Oglethorpe": {
+      "lat": 33.859989,
+      "lon": -84.339397
+    },
+    "Peachtree Center": {
+      "lat": 33.758189,
+      "lon": -84.387596
+    },
+    "Lakewood/Ft McPherson": {
+      "lat": 33.70088,
+      "lon": -84.428768
+    },
+    "Ashby": {
+      "lat": 33.756477,
+      "lon": -84.417328
+    },
+    "Sandy Springs": {
+      "lat": 33.931671,
+      "lon": -84.351069
+    },
+    "Airport": {
+      "lat": 33.640294,
+      "lon": -84.446197
+    },
+    "West End": {
+      "lat": 33.736564,
+      "lon": -84.413653
+    },
+    "College Park": {
+      "lat": 33.650282,
+      "lon": -84.448612
+    },
+    "Five Points": {
+      "lat": 33.754123,
+      "lon": -84.391876
+    },
+    "Doraville": {
+      "lat": 33.902787,
+      "lon": -84.28061
+    },
+    "Indian Creek": {
+      "lat": 33.769856,
+      "lon": -84.228906
+    },
+    "Decatur": {
+      "lat": 33.774699,
+      "lon": -84.295417
+    },
+    "King Memorial": {
+      "lat": 33.749853,
+      "lon": -84.37599
+    },
+    "Garnett": {
+      "lat": 33.748938,
+      "lon": -84.395545
+    },
+    "OMNI/Dome/GWCC/Philips Arena/CNN Center": {
+      "lat": 33.756179,
+      "lon": -84.397215
+    }
+  }
+}

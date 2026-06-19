@@ -1,0 +1,380 @@
+templates:
+  station_closure:
+    instantiations:
+      - id: "sc-five-points"
+        disruption:
+          id: "sc-five-points"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Five Points station closed due to emergency structural inspection. Trains will skip this station. Use Garnett or Peachtree Center as alternatives."
+          alternative: "Use Garnett (southbound) or Peachtree Center (northbound)"
+          eta_resolution: "4-6 hours"
+        station_id: "MARTA-FP"
+        station_name: "Five Points"
+        reason: "Emergency structural inspection"
+        nearest_alternatives: ["MARTA-GA", "MARTA-PC"]
+        advisory_must_mention: ["five points", "closed", "structural"]
+        blocked_stations: ["MARTA-FP"]
+        blocked_edges: []
+
+      - id: "sc-midtown"
+        disruption:
+          id: "sc-midtown"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Midtown station closed due to water main break near station entrance. Trains will skip this station. Use North Avenue or Arts Center as alternatives."
+          alternative: "Use North Avenue (southbound) or Arts Center (northbound)"
+          eta_resolution: "2-3 hours"
+        station_id: "MARTA-MT"
+        station_name: "Midtown"
+        reason: "Water main break near station entrance"
+        nearest_alternatives: ["MARTA-NA", "MARTA-AC"]
+        advisory_must_mention: ["midtown", "closed", "water main"]
+        blocked_stations: ["MARTA-MT"]
+        blocked_edges: []
+
+      - id: "sc-airport"
+        disruption:
+          id: "sc-airport"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Airport station closed due to security incident at airport terminal. No train service to Airport. Use College Park station and airport shuttle as alternative."
+          alternative: "Use College Park station and airport shuttle service"
+          eta_resolution: "unknown"
+        station_id: "MARTA-AP"
+        station_name: "Airport"
+        reason: "Security incident at airport terminal"
+        nearest_alternatives: ["MARTA-CP"]
+        advisory_must_mention: ["airport", "closed", "security"]
+        blocked_stations: ["MARTA-AP"]
+        blocked_edges: []
+
+      - id: "sc-lindbergh"
+        disruption:
+          id: "sc-lindbergh"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Lindbergh Center station closed due to suspicious package investigation. Red and Gold line trains will skip this station. Use Arts Center or Buckhead as alternatives."
+          alternative: "Use Arts Center (southbound) or Buckhead (northbound/Red); Lenox (Gold)"
+          eta_resolution: "1-3 hours"
+        station_id: "MARTA-LC"
+        station_name: "Lindbergh Center"
+        reason: "Suspicious package investigation"
+        nearest_alternatives: ["MARTA-AC", "MARTA-BH"]
+        advisory_must_mention: ["lindbergh", "closed", "suspicious package"]
+        blocked_stations: ["MARTA-LC"]
+        blocked_edges: []
+
+      - id: "sc-inman-park"
+        disruption:
+          id: "sc-inman-park"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Inman Park/Reynoldstown station closed for track defect repair. Blue and Green line trains will skip this station. Use King Memorial, East Lake, or Edgewood/Candler Park as alternatives."
+          alternative: "Use King Memorial (westbound) or East Lake (eastbound/Blue) or Edgewood/Candler Park (Green)"
+          eta_resolution: "3-5 hours"
+        station_id: "MARTA-IR"
+        station_name: "Inman Park/Reynoldstown"
+        reason: "Track defect repair"
+        nearest_alternatives: ["MARTA-KM", "MARTA-EL", "MARTA-EC"]
+        advisory_must_mention: ["inman park", "closed", "track defect"]
+        blocked_stations: ["MARTA-IR"]
+        blocked_edges: []
+
+  planned_maintenance:
+    instantiations:
+      - id: "pm-red-south"
+        disruption:
+          id: "pm-red-south"
+          line: "red"
+          segment:
+            from_station: "MARTA-GA"
+            to_station: "MARTA-AP"
+            stations: ["MARTA-GA", "MARTA-WE", "MARTA-OC", "MARTA-LF", "MARTA-EP", "MARTA-CP", "MARTA-AP"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Garnett and Airport this weekend due to track maintenance. Free bus replacement service available between affected stations."
+          alternative: "Free bus replacement between Garnett and Airport"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "red"
+        segment:
+          from_station: "MARTA-GA"
+          to_station: "MARTA-AP"
+          stations: ["MARTA-GA", "MARTA-WE", "MARTA-OC", "MARTA-LF", "MARTA-EP", "MARTA-CP", "MARTA-AP"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["red line", "garnett", "airport", "bus replacement", "weekend"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-GA", "MARTA-WE"]
+          - ["MARTA-WE", "MARTA-OC"]
+          - ["MARTA-OC", "MARTA-LF"]
+          - ["MARTA-LF", "MARTA-EP"]
+          - ["MARTA-EP", "MARTA-CP"]
+          - ["MARTA-CP", "MARTA-AP"]
+
+      - id: "pm-blue-east"
+        disruption:
+          id: "pm-blue-east"
+          line: "blue"
+          segment:
+            from_station: "MARTA-EL"
+            to_station: "MARTA-IC"
+            stations: ["MARTA-EL", "MARTA-DC", "MARTA-AV", "MARTA-KN", "MARTA-IC"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Blue Line: No late-night service between East Lake and Indian Creek due to signal upgrade work. Last train departs East Lake at 10:00 PM."
+          alternative: "No replacement service; plan travel before 10:00 PM"
+          eta_resolution: "Normal service resumes at 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "blue"
+        segment:
+          from_station: "MARTA-EL"
+          to_station: "MARTA-IC"
+          stations: ["MARTA-EL", "MARTA-DC", "MARTA-AV", "MARTA-KN", "MARTA-IC"]
+        schedule: "night"
+        replacement_service: null
+        advisory_must_mention: ["blue line", "east lake", "indian creek", "night", "signal"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-EL", "MARTA-DC"]
+          - ["MARTA-DC", "MARTA-AV"]
+          - ["MARTA-AV", "MARTA-KN"]
+          - ["MARTA-KN", "MARTA-IC"]
+
+      - id: "pm-gold-north"
+        disruption:
+          id: "pm-gold-north"
+          line: "gold"
+          segment:
+            from_station: "MARTA-LX"
+            to_station: "MARTA-DO"
+            stations: ["MARTA-LX", "MARTA-BO", "MARTA-CH", "MARTA-DO"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Gold Line: No service between Lenox and Doraville all day due to platform renovation. Free bus replacement service available between affected stations."
+          alternative: "Free bus replacement between Lenox and Doraville"
+          eta_resolution: "Service resumes tomorrow 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "gold"
+        segment:
+          from_station: "MARTA-LX"
+          to_station: "MARTA-DO"
+          stations: ["MARTA-LX", "MARTA-BO", "MARTA-CH", "MARTA-DO"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["gold line", "lenox", "doraville", "bus replacement"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-LX", "MARTA-BO"]
+          - ["MARTA-BO", "MARTA-CH"]
+          - ["MARTA-CH", "MARTA-DO"]
+
+      - id: "pm-red-north"
+        disruption:
+          id: "pm-red-north"
+          line: "red"
+          segment:
+            from_station: "MARTA-BH"
+            to_station: "MARTA-NS"
+            stations: ["MARTA-BH", "MARTA-MC", "MARTA-DW", "MARTA-SS", "MARTA-NS"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Buckhead and North Springs this weekend due to rail replacement. Free shuttle service available between affected stations."
+          alternative: "Free shuttle service between Buckhead and North Springs"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "red"
+        segment:
+          from_station: "MARTA-BH"
+          to_station: "MARTA-NS"
+          stations: ["MARTA-BH", "MARTA-MC", "MARTA-DW", "MARTA-SS", "MARTA-NS"]
+        schedule: "weekend"
+        replacement_service: "shuttle"
+        advisory_must_mention: ["red line", "buckhead", "north springs", "shuttle", "weekend"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-BH", "MARTA-MC"]
+          - ["MARTA-MC", "MARTA-DW"]
+          - ["MARTA-DW", "MARTA-SS"]
+          - ["MARTA-SS", "MARTA-NS"]
+
+      - id: "pm-blue-west"
+        disruption:
+          id: "pm-blue-west"
+          line: "blue"
+          segment:
+            from_station: "MARTA-FP"
+            to_station: "MARTA-BK"
+            stations: ["MARTA-FP", "MARTA-OM", "MARTA-VC", "MARTA-AS", "MARTA-BK"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Blue Line: No service between Five Points and Bankhead all day due to track geometry correction. Free bus replacement service available between affected stations."
+          alternative: "Free bus replacement between Five Points and Bankhead"
+          eta_resolution: "Service resumes tomorrow 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "blue"
+        segment:
+          from_station: "MARTA-FP"
+          to_station: "MARTA-BK"
+          stations: ["MARTA-FP", "MARTA-OM", "MARTA-VC", "MARTA-AS", "MARTA-BK"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["blue line", "five points", "bankhead", "bus replacement"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-FP", "MARTA-OM"]
+          - ["MARTA-OM", "MARTA-VC"]
+          - ["MARTA-VC", "MARTA-AS"]
+          - ["MARTA-AS", "MARTA-BK"]
+
+  hurricane_warning:
+    instantiations:
+      - id: "hw-approaching"
+        disruption:
+          id: "hw-approaching"
+          line: null
+          segment: null
+          type: "hurricane_warning"
+          severity: "info"
+          message: "Hurricane advisory: A hurricane is approaching the Atlanta metro area. All MARTA rail lines are currently operating normally. Passengers should monitor weather updates and plan travel accordingly."
+          alternative: null
+          eta_resolution: "Monitoring situation"
+        category: "approaching"
+        phase: "advisory"
+        suspended_lines: []
+        reduced_lines: []
+        advisory_must_mention: ["hurricane", "approaching", "monitor"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "hw-cat1"
+        disruption:
+          id: "hw-cat1"
+          line: null
+          segment: null
+          type: "hurricane_warning"
+          severity: "warning"
+          message: "Hurricane warning: Green Line service suspended due to elevated track sections vulnerable to high winds. Red, Gold, and Blue lines operating normally. Passengers should avoid travel on the Green Line and use alternative routes."
+          alternative: "Use Blue Line between Bankhead and Five Points; transfer at Five Points or Inman Park/Reynoldstown"
+          eta_resolution: "Until storm passes"
+        category: "cat1"
+        phase: "landfall_warning"
+        suspended_lines: ["green"]
+        reduced_lines: []
+        advisory_must_mention: ["hurricane", "suspended", "green line"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-EC", "MARTA-IR"]
+
+      - id: "hw-cat2"
+        disruption:
+          id: "hw-cat2"
+          line: null
+          segment: null
+          type: "hurricane_warning"
+          severity: "warning"
+          message: "Hurricane warning: Green Line service suspended. Red, Gold, and Blue lines operating on reduced frequency (15-minute headways). Expect significant delays on all lines. Travel only if essential."
+          alternative: "All lines reduced to 15-minute headways; Green Line suspended"
+          eta_resolution: "Until storm passes"
+        category: "cat2"
+        phase: "reduced_service"
+        suspended_lines: ["green"]
+        reduced_lines: ["red", "gold", "blue"]
+        advisory_must_mention: ["hurricane", "reduced", "frequency", "delays"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-EC", "MARTA-IR"]
+
+      - id: "hw-direct-hit"
+        disruption:
+          id: "hw-direct-hit"
+          line: null
+          segment: null
+          type: "hurricane_warning"
+          severity: "critical"
+          message: "Hurricane emergency: All MARTA rail service is suspended effective immediately. All stations are closed. Seek shelter immediately. Do not attempt to travel. Emergency services are active."
+          alternative: "No rail service available. Seek shelter immediately."
+          eta_resolution: "Until further notice"
+        category: "direct_hit"
+        phase: "full_suspension"
+        suspended_lines: ["red", "gold", "blue", "green"]
+        reduced_lines: []
+        advisory_must_mention: ["hurricane", "suspended", "all lines", "shelter"]
+        blocked_stations:
+          - "MARTA-NS"
+          - "MARTA-SS"
+          - "MARTA-DW"
+          - "MARTA-MC"
+          - "MARTA-BH"
+          - "MARTA-DO"
+          - "MARTA-CH"
+          - "MARTA-BO"
+          - "MARTA-LX"
+          - "MARTA-LC"
+          - "MARTA-AC"
+          - "MARTA-MT"
+          - "MARTA-NA"
+          - "MARTA-CV"
+          - "MARTA-PC"
+          - "MARTA-FP"
+          - "MARTA-GA"
+          - "MARTA-WE"
+          - "MARTA-OC"
+          - "MARTA-LF"
+          - "MARTA-EP"
+          - "MARTA-CP"
+          - "MARTA-AP"
+          - "MARTA-IC"
+          - "MARTA-KN"
+          - "MARTA-AV"
+          - "MARTA-DC"
+          - "MARTA-EL"
+          - "MARTA-IR"
+          - "MARTA-KM"
+          - "MARTA-GS"
+          - "MARTA-OM"
+          - "MARTA-VC"
+          - "MARTA-AS"
+          - "MARTA-BK"
+          - "MARTA-EC"
+        blocked_edges: []
+
+      - id: "hw-post-storm"
+        disruption:
+          id: "hw-post-storm"
+          line: null
+          segment: null
+          type: "hurricane_warning"
+          severity: "warning"
+          message: "Post-storm update: Red and Blue lines resuming limited service with 20-minute headways. Gold and Green lines remain suspended pending infrastructure inspection. Travel only if necessary."
+          alternative: "Red and Blue lines running limited service; Gold and Green lines suspended"
+          eta_resolution: "Gold/Green restoration pending inspection"
+        category: "post_storm"
+        phase: "partial_restoration"
+        suspended_lines: ["gold", "green"]
+        reduced_lines: ["red", "blue"]
+        advisory_must_mention: ["resuming", "limited", "gold", "green", "suspended"]
+        blocked_stations: []
+        blocked_edges:
+          - ["MARTA-DO", "MARTA-CH"]
+          - ["MARTA-CH", "MARTA-BO"]
+          - ["MARTA-BO", "MARTA-LX"]
+          - ["MARTA-LX", "MARTA-LC"]
+          - ["MARTA-EC", "MARTA-IR"]

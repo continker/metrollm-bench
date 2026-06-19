@@ -1,0 +1,291 @@
+{
+  "system": "doha",
+  "scraped_at": "2026-03-24",
+  "source": "wikipedia",
+  "lines": [
+    {
+      "id": "red",
+      "name": "Red Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Line_(Doha_Metro)",
+      "stations": [
+        "Lusail",
+        "Qatar University",
+        "Legtaifiya",
+        "Katara",
+        "Al Qassar",
+        "DECC",
+        "West Bay",
+        "Corniche",
+        "Al Bidda",
+        "Msheireb",
+        "Al Doha Al Jadeda",
+        "Umm Ghuwailina",
+        "Al Matar Al Qadeem",
+        "Oqba Ibn Nafie",
+        "Hamad International Airport",
+        "Free Zone",
+        "Ras Bu Fontas",
+        "Al Wakra"
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Green_Line_(Doha_Metro)",
+      "stations": [
+        "Al Riffa",
+        "Education City",
+        "Qatar National Library",
+        "Al Shaqab",
+        "Al Rayyan Al Qadeem",
+        "Al Messila",
+        "Hamad Hospital",
+        "The White Palace",
+        "Al Bidda",
+        "Msheireb",
+        "Al Mansoura"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gold_Line_(Doha_Metro)",
+      "stations": [
+        "Al Aziziyah",
+        "Sport City",
+        "Al Waab",
+        "Al Sudan",
+        "Joaan",
+        "Al Sadd",
+        "Bin Mahmoud",
+        "Msheireb",
+        "Souq Waqif",
+        "National Museum",
+        "Ras Bu Abboud"
+      ]
+    }
+  ],
+  "stations": {
+    "Lusail": {
+      "lat": 25.41484,
+      "lon": 51.48817,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lusail_station"
+    },
+    "Qatar University": {
+      "lat": 25.381863,
+      "lon": 51.493016,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qatar_University_station"
+    },
+    "Legtaifiya": {
+      "lat": 25.370688,
+      "lon": 51.524938,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Legtaifiya_station"
+    },
+    "Katara": {
+      "lat": 25.3603,
+      "lon": 51.5264,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Katara_station"
+    },
+    "Al Qassar": {
+      "lat": 25.350062,
+      "lon": 51.524062,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Qassar_station"
+    },
+    "DECC": {
+      "lat": 25.323062,
+      "lon": 51.527563,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/DECC_station"
+    },
+    "West Bay": {
+      "lat": 25.315062,
+      "lon": 51.519813,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/West_Bay_station"
+    },
+    "Corniche": {
+      "lat": 25.3078,
+      "lon": 51.5155,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Corniche_station"
+    },
+    "Al Bidda": {
+      "lat": 25.29042,
+      "lon": 51.52025,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Bidda_station"
+    },
+    "Msheireb": {
+      "lat": 25.28278,
+      "lon": 51.52571,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Msheireb_station"
+    },
+    "Al Doha Al Jadeda": {
+      "lat": 25.27522,
+      "lon": 51.5398,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Doha_Al_Jadeda_station"
+    },
+    "Umm Ghuwailina": {
+      "lat": 25.267313,
+      "lon": 51.550687,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umm_Ghuwailina_station"
+    },
+    "Al Matar Al Qadeem": {
+      "lat": 25.27522,
+      "lon": 51.5398,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Matar_Al_Qadeem_station"
+    },
+    "Oqba Ibn Nafie": {
+      "lat": 25.249063,
+      "lon": 51.567062,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Oqba_Ibn_Nafie_station"
+    },
+    "Hamad International Airport": {
+      "lat": 25.2567,
+      "lon": 51.6149,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_International_Airport_T1_station"
+    },
+    "Free Zone": {
+      "lat": 25.22829,
+      "lon": 51.57788,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Free_Zone_station"
+    },
+    "Ras Bu Fontas": {
+      "lat": 25.21143,
+      "lon": 51.58638,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ras_Bu_Fontas_station"
+    },
+    "Al Wakra": {
+      "lat": 25.19349,
+      "lon": 51.59601,
+      "opened": "2019-05-08",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Wakra_station"
+    },
+    "Al Riffa": {
+      "lat": 25.32412,
+      "lon": 51.34806,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Riffa_station"
+    },
+    "Education City": {
+      "lat": 25.31674,
+      "lon": 51.42563,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Education_City_station"
+    },
+    "Qatar National Library": {
+      "lat": 25.31923,
+      "lon": 51.44173,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qatar_National_Library_station"
+    },
+    "Al Shaqab": {
+      "lat": 25.30931,
+      "lon": 51.45334,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Shaqab_station"
+    },
+    "Al Rayyan Al Qadeem": {
+      "lat": 25.30152,
+      "lon": 51.46112,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Rayyan_Al_Qadeem_station"
+    },
+    "Al Messila": {
+      "lat": 25.29331,
+      "lon": 51.4837,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Messila_station"
+    },
+    "Hamad Hospital": {
+      "lat": 25.29053,
+      "lon": 51.50055,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hamad_Hospital_station"
+    },
+    "The White Palace": {
+      "lat": 25.29268,
+      "lon": 51.50649,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/The_White_Palace_station"
+    },
+    "Al Mansoura": {
+      "lat": 25.27033,
+      "lon": 51.53528,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Mansoura_station"
+    },
+    "Al Aziziyah": {
+      "lat": 25.257688,
+      "lon": 51.444063,
+      "opened": "2019-12-10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Aziziyah_station"
+    },
+    "Sport City": {
+      "lat": 25.259687,
+      "lon": 51.453312,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sport_City_station"
+    },
+    "Al Waab": {
+      "lat": 25.2675,
+      "lon": 51.4689,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Waab_QLM_station"
+    },
+    "Al Sudan": {
+      "lat": 25.27234,
+      "lon": 51.48446,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Sudan_station"
+    },
+    "Joaan": {
+      "lat": 25.28077,
+      "lon": 51.49657,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Joaan_station"
+    },
+    "Al Sadd": {
+      "lat": 25.28246,
+      "lon": 51.50472,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Al_Sadd_station"
+    },
+    "Bin Mahmoud": {
+      "lat": 25.28052,
+      "lon": 51.51436,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bin_Mahmoud_station"
+    },
+    "Souq Waqif": {
+      "lat": 25.28647,
+      "lon": 51.5363,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Souq_Waqif_station"
+    },
+    "National Museum": {
+      "lat": 25.28467,
+      "lon": 51.54928,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/National_Museum_station"
+    },
+    "Ras Bu Abboud": {
+      "lat": 25.27912,
+      "lon": 51.57069,
+      "opened": "2019-11-21",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ras_Bu_Aboud_station"
+    }
+  },
+  "missing_coords": []
+}

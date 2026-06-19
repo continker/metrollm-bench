@@ -1,0 +1,403 @@
+templates:
+  station_closure:
+    instantiations:
+      - id: "sc-msheireb"
+        disruption:
+          id: "sc-msheireb"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Msheireb station closed due to emergency escalator repair in central concourse. Red, Green, and Gold line trains will skip this station. Use Al Bidda (Red/Green), Souq Waqif (Gold), or Al Doha Al Jadeda (Red) as alternatives."
+          alternative: "Use Al Bidda (Red/Green) or Souq Waqif (Gold) or Al Doha Al Jadeda (Red)"
+          eta_resolution: "4-6 hours"
+        station_id: "DOHA-MSH"
+        station_name: "Msheireb"
+        reason: "Emergency escalator repair in central concourse"
+        nearest_alternatives: ["DOHA-BID", "DOHA-SWQ", "DOHA-DAJ"]
+        advisory_must_mention: ["msheireb", "closed", "escalator"]
+        blocked_stations: ["DOHA-MSH"]
+        blocked_edges: []
+
+      - id: "sc-al-bidda"
+        disruption:
+          id: "sc-al-bidda"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Al Bidda station closed due to water leak from cooling system. Red and Green line trains will skip this station. Use Msheireb or Corniche (Red), The White Palace (Green) as alternatives."
+          alternative: "Use Msheireb or Corniche (Red); The White Palace (Green)"
+          eta_resolution: "2-3 hours"
+        station_id: "DOHA-BID"
+        station_name: "Al Bidda"
+        reason: "Water leak from cooling system"
+        nearest_alternatives: ["DOHA-MSH", "DOHA-COR", "DOHA-WHP"]
+        advisory_must_mention: ["al bidda", "closed", "water leak"]
+        blocked_stations: ["DOHA-BID"]
+        blocked_edges: []
+
+      - id: "sc-hia"
+        disruption:
+          id: "sc-hia"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Hamad International Airport station closed due to security incident at airport terminal. No train service to HIA. Use Oqba Ibn Nafie station and airport shuttle as alternative."
+          alternative: "Use Oqba Ibn Nafie station and airport shuttle service"
+          eta_resolution: "unknown"
+        station_id: "DOHA-HIA"
+        station_name: "Hamad International Airport"
+        reason: "Security incident at airport terminal"
+        nearest_alternatives: ["DOHA-OQB"]
+        advisory_must_mention: ["airport", "closed", "security"]
+        blocked_stations: ["DOHA-HIA"]
+        blocked_edges: []
+
+      - id: "sc-west-bay"
+        disruption:
+          id: "sc-west-bay"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "West Bay Qatar Energy station closed due to suspicious unattended package. Red Line trains will skip this station. Use DECC or Corniche as alternatives."
+          alternative: "Use DECC (northbound) or Corniche (southbound)"
+          eta_resolution: "1-3 hours"
+        station_id: "DOHA-WBQ"
+        station_name: "West Bay Qatar Energy"
+        reason: "Suspicious unattended package"
+        nearest_alternatives: ["DOHA-DEC", "DOHA-COR"]
+        advisory_must_mention: ["west bay", "closed", "suspicious"]
+        blocked_stations: ["DOHA-WBQ"]
+        blocked_edges: []
+
+      - id: "sc-education-city"
+        disruption:
+          id: "sc-education-city"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Education City station closed for platform tile repair. Green Line trains will skip this station. Use Qatar National Library or Al Riffa as alternatives."
+          alternative: "Use Qatar National Library (eastbound) or Al Riffa (westbound)"
+          eta_resolution: "3-5 hours"
+        station_id: "DOHA-EDC"
+        station_name: "Education City"
+        reason: "Platform tile repair"
+        nearest_alternatives: ["DOHA-QNL", "DOHA-RIF"]
+        advisory_must_mention: ["education city", "closed", "repair"]
+        blocked_stations: ["DOHA-EDC"]
+        blocked_edges: []
+
+  planned_maintenance:
+    instantiations:
+      - id: "pm-red-south"
+        disruption:
+          id: "pm-red-south"
+          line: "red"
+          segment:
+            from_station: "DOHA-OQB"
+            to_station: "DOHA-WKR"
+            stations: ["DOHA-OQB", "DOHA-FRZ", "DOHA-RBF", "DOHA-WKR"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Oqba Ibn Nafie and Al Wakra this weekend due to track maintenance. Free bus replacement service available between affected stations. Airport branch service unaffected."
+          alternative: "Free bus replacement between Oqba Ibn Nafie and Al Wakra"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "red"
+        segment:
+          from_station: "DOHA-OQB"
+          to_station: "DOHA-WKR"
+          stations: ["DOHA-OQB", "DOHA-FRZ", "DOHA-RBF", "DOHA-WKR"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["red line", "oqba ibn nafie", "al wakra", "bus replacement", "weekend"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-OQB", "DOHA-FRZ"]
+          - ["DOHA-FRZ", "DOHA-RBF"]
+          - ["DOHA-RBF", "DOHA-WKR"]
+
+      - id: "pm-green-west"
+        disruption:
+          id: "pm-green-west"
+          line: "green"
+          segment:
+            from_station: "DOHA-SHA"
+            to_station: "DOHA-RIF"
+            stations: ["DOHA-SHA", "DOHA-QNL", "DOHA-EDC", "DOHA-RIF"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Green Line: No late-night service between Al Shaqab and Al Riffa due to signal upgrade work. Last train departs Al Shaqab at 10:00 PM."
+          alternative: "No replacement service; plan travel before 10:00 PM"
+          eta_resolution: "Normal service resumes at 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "green"
+        segment:
+          from_station: "DOHA-SHA"
+          to_station: "DOHA-RIF"
+          stations: ["DOHA-SHA", "DOHA-QNL", "DOHA-EDC", "DOHA-RIF"]
+        schedule: "night"
+        replacement_service: null
+        advisory_must_mention: ["green line", "al shaqab", "al riffa", "night", "signal"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-SHA", "DOHA-QNL"]
+          - ["DOHA-QNL", "DOHA-EDC"]
+          - ["DOHA-EDC", "DOHA-RIF"]
+
+      - id: "pm-gold-east"
+        disruption:
+          id: "pm-gold-east"
+          line: "gold"
+          segment:
+            from_station: "DOHA-SWQ"
+            to_station: "DOHA-RBA"
+            stations: ["DOHA-SWQ", "DOHA-NMU", "DOHA-RBA"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Gold Line: No service between Souq Waqif and Ras Bu Abboud all day due to platform renovation. Free bus replacement service available between affected stations."
+          alternative: "Free bus replacement between Souq Waqif and Ras Bu Abboud"
+          eta_resolution: "Service resumes tomorrow 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "gold"
+        segment:
+          from_station: "DOHA-SWQ"
+          to_station: "DOHA-RBA"
+          stations: ["DOHA-SWQ", "DOHA-NMU", "DOHA-RBA"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["gold line", "souq waqif", "ras bu abboud", "bus replacement"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-SWQ", "DOHA-NMU"]
+          - ["DOHA-NMU", "DOHA-RBA"]
+
+      - id: "pm-red-north"
+        disruption:
+          id: "pm-red-north"
+          line: "red"
+          segment:
+            from_station: "DOHA-KAT"
+            to_station: "DOHA-LUS"
+            stations: ["DOHA-KAT", "DOHA-LEG", "DOHA-QU", "DOHA-LUS"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Katara and Lusail QNB this weekend due to rail replacement. Free shuttle service available between affected stations."
+          alternative: "Free shuttle service between Katara and Lusail QNB"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "red"
+        segment:
+          from_station: "DOHA-KAT"
+          to_station: "DOHA-LUS"
+          stations: ["DOHA-KAT", "DOHA-LEG", "DOHA-QU", "DOHA-LUS"]
+        schedule: "weekend"
+        replacement_service: "shuttle"
+        advisory_must_mention: ["red line", "katara", "lusail", "shuttle", "weekend"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-KAT", "DOHA-LEG"]
+          - ["DOHA-LEG", "DOHA-QU"]
+          - ["DOHA-QU", "DOHA-LUS"]
+
+      - id: "pm-gold-west"
+        disruption:
+          id: "pm-gold-west"
+          line: "gold"
+          segment:
+            from_station: "DOHA-WAB"
+            to_station: "DOHA-AZZ"
+            stations: ["DOHA-WAB", "DOHA-SPC", "DOHA-AZZ"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Gold Line: No service between Al Waab and Al Aziziyah all day due to track geometry correction. Free bus replacement service available between affected stations."
+          alternative: "Free bus replacement between Al Waab and Al Aziziyah"
+          eta_resolution: "Service resumes tomorrow 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "gold"
+        segment:
+          from_station: "DOHA-WAB"
+          to_station: "DOHA-AZZ"
+          stations: ["DOHA-WAB", "DOHA-SPC", "DOHA-AZZ"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["gold line", "al waab", "al aziziyah", "bus replacement"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-WAB", "DOHA-SPC"]
+          - ["DOHA-SPC", "DOHA-AZZ"]
+
+  sandstorm_warning:
+    instantiations:
+      - id: "sw-approaching"
+        disruption:
+          id: "sw-approaching"
+          line: null
+          segment: null
+          type: "sandstorm_warning"
+          severity: "info"
+          message: "Sandstorm advisory: A sandstorm is approaching the Doha metro area. All Qatar Rail lines are currently operating normally. Passengers should monitor weather updates and plan travel accordingly."
+          alternative: null
+          eta_resolution: "Monitoring situation"
+        category: "approaching"
+        phase: "advisory"
+        suspended_lines: []
+        reduced_lines: []
+        advisory_must_mention: ["sandstorm", "approaching", "monitor"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "sw-moderate"
+        disruption:
+          id: "sw-moderate"
+          line: null
+          segment: null
+          type: "sandstorm_warning"
+          severity: "warning"
+          message: "Sandstorm warning: All metro lines operating on reduced frequency (12-minute headways) due to poor visibility and sand ingress at ventilation systems. Expect delays. Travel only if necessary."
+          alternative: "All lines reduced to 12-minute headways"
+          eta_resolution: "Until storm passes"
+        category: "moderate"
+        phase: "reduced_service"
+        suspended_lines: []
+        reduced_lines: ["red", "green", "gold"]
+        advisory_must_mention: ["sandstorm", "reduced", "frequency", "delays"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "sw-severe"
+        disruption:
+          id: "sw-severe"
+          line: null
+          segment: null
+          type: "sandstorm_warning"
+          severity: "warning"
+          message: "Severe sandstorm warning: Green Line service suspended due to sand accumulation at above-ground ventilation intakes near Education City. Red and Gold lines operating on reduced frequency (15-minute headways). Avoid non-essential travel."
+          alternative: "Red and Gold lines running reduced service; Green Line suspended"
+          eta_resolution: "Until storm passes"
+        category: "severe"
+        phase: "partial_suspension"
+        suspended_lines: ["green"]
+        reduced_lines: ["red", "gold"]
+        advisory_must_mention: ["sandstorm", "severe", "green line", "suspended"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-MAN", "DOHA-MSH"]
+          - ["DOHA-MSH", "DOHA-BID"]
+          - ["DOHA-BID", "DOHA-WHP"]
+          - ["DOHA-WHP", "DOHA-HHO"]
+          - ["DOHA-HHO", "DOHA-MES"]
+          - ["DOHA-MES", "DOHA-RAQ"]
+          - ["DOHA-RAQ", "DOHA-SHA"]
+          - ["DOHA-SHA", "DOHA-QNL"]
+          - ["DOHA-QNL", "DOHA-EDC"]
+          - ["DOHA-EDC", "DOHA-RIF"]
+
+      - id: "sw-extreme"
+        disruption:
+          id: "sw-extreme"
+          line: null
+          segment: null
+          type: "sandstorm_warning"
+          severity: "critical"
+          message: "Extreme sandstorm emergency: All Qatar Rail service is suspended effective immediately. All stations are closed. Seek shelter immediately. Do not attempt to travel. Visibility near zero."
+          alternative: "No rail service available. Seek shelter immediately."
+          eta_resolution: "Until further notice"
+        category: "extreme"
+        phase: "full_suspension"
+        suspended_lines: ["red", "green", "gold"]
+        reduced_lines: []
+        advisory_must_mention: ["sandstorm", "suspended", "all lines", "shelter"]
+        blocked_stations:
+          - "DOHA-LUS"
+          - "DOHA-QU"
+          - "DOHA-LEG"
+          - "DOHA-KAT"
+          - "DOHA-QAS"
+          - "DOHA-DEC"
+          - "DOHA-WBQ"
+          - "DOHA-COR"
+          - "DOHA-BID"
+          - "DOHA-MSH"
+          - "DOHA-DAJ"
+          - "DOHA-UMG"
+          - "DOHA-MAQ"
+          - "DOHA-OQB"
+          - "DOHA-FRZ"
+          - "DOHA-RBF"
+          - "DOHA-WKR"
+          - "DOHA-HIA"
+          - "DOHA-MAN"
+          - "DOHA-WHP"
+          - "DOHA-HHO"
+          - "DOHA-MES"
+          - "DOHA-RAQ"
+          - "DOHA-SHA"
+          - "DOHA-QNL"
+          - "DOHA-EDC"
+          - "DOHA-RIF"
+          - "DOHA-RBA"
+          - "DOHA-NMU"
+          - "DOHA-SWQ"
+          - "DOHA-BNM"
+          - "DOHA-SAD"
+          - "DOHA-JOA"
+          - "DOHA-SUD"
+          - "DOHA-WAB"
+          - "DOHA-SPC"
+          - "DOHA-AZZ"
+        blocked_edges: []
+
+      - id: "sw-post-storm"
+        disruption:
+          id: "sw-post-storm"
+          line: null
+          segment: null
+          type: "sandstorm_warning"
+          severity: "warning"
+          message: "Post-sandstorm update: Red and Gold lines resuming limited service with 20-minute headways. Green Line remains suspended pending ventilation system cleaning. Travel only if necessary."
+          alternative: "Red and Gold lines running limited service; Green Line suspended"
+          eta_resolution: "Green Line restoration pending cleaning"
+        category: "post_storm"
+        phase: "partial_restoration"
+        suspended_lines: ["green"]
+        reduced_lines: ["red", "gold"]
+        advisory_must_mention: ["resuming", "limited", "green", "suspended", "cleaning"]
+        blocked_stations: []
+        blocked_edges:
+          - ["DOHA-MAN", "DOHA-MSH"]
+          - ["DOHA-MSH", "DOHA-BID"]
+          - ["DOHA-BID", "DOHA-WHP"]
+          - ["DOHA-WHP", "DOHA-HHO"]
+          - ["DOHA-HHO", "DOHA-MES"]
+          - ["DOHA-MES", "DOHA-RAQ"]
+          - ["DOHA-RAQ", "DOHA-SHA"]
+          - ["DOHA-SHA", "DOHA-QNL"]
+          - ["DOHA-QNL", "DOHA-EDC"]
+          - ["DOHA-EDC", "DOHA-RIF"]
+  line_suspension:
+    instantiations:
+      - id: "ls-gold-maintenance"
+        disruption:
+          id: "ls-gold-maintenance"
+          line: "gold"
+          segment: null
+          type: "line_suspension"
+          severity: "critical"
+          message: "Gold Line service suspended today for scheduled annual maintenance. Qatar Rail is operating replacement buses along the Gold Line corridor. Regular Metro fares apply; board buses at station entrances. Staff available at stations for assistance."
+          alternative: "Free replacement bus service between all Gold Line stations"
+          eta_resolution: "Service resumes tomorrow at 06:00"
+        line_closures:
+          - line: "gold"
+        advisory_must_mention: ["gold line", "suspended", "bus", "staff"]
+        blocked_stations: []
+        blocked_edges: []

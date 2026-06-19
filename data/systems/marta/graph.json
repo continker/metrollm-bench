@@ -1,0 +1,461 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "from": "MARTA-NS",
+      "to": "MARTA-SS",
+      "distance_miles": 0.95,
+      "travel_time_min": 1.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-SS",
+      "to": "MARTA-DW",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-DW",
+      "to": "MARTA-MC",
+      "distance_miles": 0.83,
+      "travel_time_min": 1.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-MC",
+      "to": "MARTA-BH",
+      "distance_miles": 4.44,
+      "travel_time_min": 8.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-BH",
+      "to": "MARTA-LC",
+      "distance_miles": 1.69,
+      "travel_time_min": 3.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-LC",
+      "to": "MARTA-AC",
+      "distance_miles": 2.55,
+      "travel_time_min": 5.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-AC",
+      "to": "MARTA-MT",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-MT",
+      "to": "MARTA-NA",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-NA",
+      "to": "MARTA-CV",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-CV",
+      "to": "MARTA-PC",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-PC",
+      "to": "MARTA-FP",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-FP",
+      "to": "MARTA-GA",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-GA",
+      "to": "MARTA-WE",
+      "distance_miles": 1.35,
+      "travel_time_min": 2.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-WE",
+      "to": "MARTA-OC",
+      "distance_miles": 1.48,
+      "travel_time_min": 3.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-OC",
+      "to": "MARTA-LF",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-LF",
+      "to": "MARTA-EP",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-EP",
+      "to": "MARTA-CP",
+      "distance_miles": 1.9,
+      "travel_time_min": 3.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-CP",
+      "to": "MARTA-AP",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-DO",
+      "to": "MARTA-CH",
+      "distance_miles": 1.76,
+      "travel_time_min": 3.5,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-CH",
+      "to": "MARTA-BO",
+      "distance_miles": 2.74,
+      "travel_time_min": 5.5,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-BO",
+      "to": "MARTA-LX",
+      "distance_miles": 1.48,
+      "travel_time_min": 3.0,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-LX",
+      "to": "MARTA-LC",
+      "distance_miles": 1.64,
+      "travel_time_min": 3.3,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-LC",
+      "to": "MARTA-AC",
+      "distance_miles": 2.55,
+      "travel_time_min": 5.1,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-AC",
+      "to": "MARTA-MT",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-MT",
+      "to": "MARTA-NA",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-NA",
+      "to": "MARTA-CV",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-CV",
+      "to": "MARTA-PC",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-PC",
+      "to": "MARTA-FP",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-FP",
+      "to": "MARTA-GA",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-GA",
+      "to": "MARTA-WE",
+      "distance_miles": 1.35,
+      "travel_time_min": 2.7,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-WE",
+      "to": "MARTA-OC",
+      "distance_miles": 1.48,
+      "travel_time_min": 3.0,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-OC",
+      "to": "MARTA-LF",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-LF",
+      "to": "MARTA-EP",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-EP",
+      "to": "MARTA-CP",
+      "distance_miles": 1.9,
+      "travel_time_min": 3.8,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-CP",
+      "to": "MARTA-AP",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "gold",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-HEH",
+      "to": "MARTA-WEL",
+      "distance_miles": 1.4,
+      "travel_time_min": 2.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-WEL",
+      "to": "MARTA-AS",
+      "distance_miles": 1.64,
+      "travel_time_min": 3.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-AS",
+      "to": "MARTA-VC",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-VC",
+      "to": "MARTA-OM",
+      "distance_miles": 0.39,
+      "travel_time_min": 0.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-OM",
+      "to": "MARTA-FP",
+      "distance_miles": 0.34,
+      "travel_time_min": 0.7,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-FP",
+      "to": "MARTA-GS",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-GS",
+      "to": "MARTA-KM",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-KM",
+      "to": "MARTA-IR",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-IR",
+      "to": "MARTA-EC",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-EC",
+      "to": "MARTA-EL",
+      "distance_miles": 1.62,
+      "travel_time_min": 3.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-EL",
+      "to": "MARTA-DC",
+      "distance_miles": 1.2,
+      "travel_time_min": 2.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-DC",
+      "to": "MARTA-AV",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-AV",
+      "to": "MARTA-KN",
+      "distance_miles": 1.73,
+      "travel_time_min": 3.5,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-KN",
+      "to": "MARTA-IC",
+      "distance_miles": 1.32,
+      "travel_time_min": 2.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-BK",
+      "to": "MARTA-AS",
+      "distance_miles": 1.29,
+      "travel_time_min": 2.6,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-AS",
+      "to": "MARTA-VC",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-VC",
+      "to": "MARTA-OM",
+      "distance_miles": 0.39,
+      "travel_time_min": 0.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-OM",
+      "to": "MARTA-FP",
+      "distance_miles": 0.34,
+      "travel_time_min": 0.7,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-FP",
+      "to": "MARTA-GS",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-GS",
+      "to": "MARTA-KM",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-KM",
+      "to": "MARTA-IR",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "MARTA-IR",
+      "to": "MARTA-EC",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "green",
+      "type": "rail"
+    }
+  ]
+}

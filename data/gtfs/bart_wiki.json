@@ -1,0 +1,140 @@
+{
+  "stations": {
+    "Richmond": {"lat": 37.9368, "lon": -122.3530},
+    "El Cerrito del Norte": {"lat": 37.9252, "lon": -122.3169},
+    "El Cerrito Plaza": {"lat": 37.9026, "lon": -122.2989},
+    "North Berkeley": {"lat": 37.8740, "lon": -122.2835},
+    "Downtown Berkeley": {"lat": 37.8701, "lon": -122.2681},
+    "Ashby": {"lat": 37.8531, "lon": -122.2698},
+    "MacArthur": {"lat": 37.8288, "lon": -122.2671},
+    "19th St Oakland": {"lat": 37.8081, "lon": -122.2688},
+    "12th St Oakland": {"lat": 37.8035, "lon": -122.2716},
+    "West Oakland": {"lat": 37.8049, "lon": -122.2952},
+    "Embarcadero": {"lat": 37.7928, "lon": -122.3970},
+    "Montgomery St": {"lat": 37.7892, "lon": -122.4016},
+    "Powell St": {"lat": 37.7846, "lon": -122.4073},
+    "Civic Center": {"lat": 37.7794, "lon": -122.4138},
+    "16th St Mission": {"lat": 37.7652, "lon": -122.4197},
+    "24th St Mission": {"lat": 37.7524, "lon": -122.4185},
+    "Glen Park": {"lat": 37.7332, "lon": -122.4335},
+    "Balboa Park": {"lat": 37.7217, "lon": -122.4475},
+    "Daly City": {"lat": 37.7063, "lon": -122.4689},
+    "Colma": {"lat": 37.6846, "lon": -122.4662},
+    "South San Francisco": {"lat": 37.6645, "lon": -122.4442},
+    "San Bruno": {"lat": 37.6377, "lon": -122.4163},
+    "San Francisco Intl Airport": {"lat": 37.6161, "lon": -122.3920},
+    "Millbrae": {"lat": 37.6002, "lon": -122.3868},
+    "Antioch": {"lat": 37.9954, "lon": -121.7803},
+    "Pittsburg Center": {"lat": 38.0168, "lon": -121.8891},
+    "Pittsburg/Bay Point": {"lat": 38.0189, "lon": -121.9442},
+    "North Concord/Martinez": {"lat": 38.0034, "lon": -122.0245},
+    "Concord": {"lat": 37.9738, "lon": -122.0291},
+    "Pleasant Hill": {"lat": 37.9284, "lon": -122.0560},
+    "Walnut Creek": {"lat": 37.9058, "lon": -122.0673},
+    "Lafayette": {"lat": 37.8932, "lon": -122.1246},
+    "Orinda": {"lat": 37.8785, "lon": -122.1837},
+    "Rockridge": {"lat": 37.8448, "lon": -122.2512},
+    "Lake Merritt": {"lat": 37.7973, "lon": -122.2652},
+    "Fruitvale": {"lat": 37.7748, "lon": -122.2241},
+    "Coliseum": {"lat": 37.7536, "lon": -122.1967},
+    "San Leandro": {"lat": 37.7218, "lon": -122.1607},
+    "Bay Fair": {"lat": 37.6969, "lon": -122.1264},
+    "Castro Valley": {"lat": 37.6907, "lon": -122.0756},
+    "West Dublin/Pleasanton": {"lat": 37.6997, "lon": -121.9283},
+    "Dublin/Pleasanton": {"lat": 37.7016, "lon": -121.8992},
+    "Hayward": {"lat": 37.6697, "lon": -122.0870},
+    "South Hayward": {"lat": 37.6343, "lon": -122.0572},
+    "Union City": {"lat": 37.5907, "lon": -122.0172},
+    "Fremont": {"lat": 37.5575, "lon": -121.9766},
+    "Warm Springs/South Fremont": {"lat": 37.5023, "lon": -121.9394},
+    "Milpitas": {"lat": 37.4103, "lon": -121.8911},
+    "Berryessa/North San Jose": {"lat": 37.3685, "lon": -121.8747},
+    "Oakland Intl Airport": {"lat": 37.7133, "lon": -122.2122}
+  },
+  "lines": [
+    {
+      "id": "red",
+      "name": "Red Line",
+      "color": "#EF4136",
+      "stations": [
+        "Richmond", "El Cerrito del Norte", "El Cerrito Plaza",
+        "North Berkeley", "Downtown Berkeley", "Ashby",
+        "MacArthur", "19th St Oakland", "12th St Oakland",
+        "West Oakland", "Embarcadero", "Montgomery St", "Powell St",
+        "Civic Center", "16th St Mission", "24th St Mission",
+        "Glen Park", "Balboa Park", "Daly City",
+        "Colma", "South San Francisco", "San Bruno",
+        "San Francisco Intl Airport", "Millbrae"
+      ],
+      "typical_headway_min": 15
+    },
+    {
+      "id": "orange",
+      "name": "Orange Line",
+      "color": "#F58220",
+      "stations": [
+        "Richmond", "El Cerrito del Norte", "El Cerrito Plaza",
+        "North Berkeley", "Downtown Berkeley", "Ashby",
+        "MacArthur", "19th St Oakland", "12th St Oakland",
+        "Lake Merritt", "Fruitvale", "Coliseum", "San Leandro",
+        "Bay Fair", "Hayward", "South Hayward", "Union City",
+        "Fremont", "Warm Springs/South Fremont", "Milpitas",
+        "Berryessa/North San Jose"
+      ],
+      "typical_headway_min": 15
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow Line",
+      "color": "#FFE800",
+      "stations": [
+        "Antioch", "Pittsburg Center", "Pittsburg/Bay Point",
+        "North Concord/Martinez", "Concord", "Pleasant Hill",
+        "Walnut Creek", "Lafayette", "Orinda", "Rockridge",
+        "MacArthur", "19th St Oakland", "12th St Oakland",
+        "West Oakland", "Embarcadero", "Montgomery St", "Powell St",
+        "Civic Center", "16th St Mission", "24th St Mission",
+        "Glen Park", "Balboa Park", "Daly City",
+        "Colma", "South San Francisco", "San Bruno",
+        "San Francisco Intl Airport", "Millbrae"
+      ],
+      "typical_headway_min": 15
+    },
+    {
+      "id": "blue",
+      "name": "Blue Line",
+      "color": "#00AEEF",
+      "stations": [
+        "Dublin/Pleasanton", "West Dublin/Pleasanton", "Castro Valley",
+        "Bay Fair", "San Leandro", "Coliseum", "Fruitvale",
+        "Lake Merritt", "West Oakland", "Embarcadero", "Montgomery St",
+        "Powell St", "Civic Center", "16th St Mission", "24th St Mission",
+        "Glen Park", "Balboa Park", "Daly City"
+      ],
+      "typical_headway_min": 15
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "color": "#4DB848",
+      "stations": [
+        "Berryessa/North San Jose", "Milpitas",
+        "Warm Springs/South Fremont", "Fremont", "Union City",
+        "South Hayward", "Hayward", "Bay Fair", "San Leandro",
+        "Coliseum", "Fruitvale", "Lake Merritt",
+        "West Oakland", "Embarcadero", "Montgomery St", "Powell St",
+        "Civic Center", "16th St Mission", "24th St Mission",
+        "Glen Park", "Balboa Park", "Daly City"
+      ],
+      "typical_headway_min": 15
+    },
+    {
+      "id": "oac",
+      "name": "Oakland Airport Connector",
+      "color": "#8E8E8E",
+      "type": "people_mover",
+      "stations": ["Coliseum", "Oakland Intl Airport"],
+      "typical_headway_min": 6
+    }
+  ]
+}

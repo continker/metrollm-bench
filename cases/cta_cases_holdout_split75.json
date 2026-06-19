@@ -1,0 +1,4735 @@
+[
+  {
+    "id": "CTA-A-001",
+    "system": "cta",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "O'Hare to Clark/Lake",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare",
+        "station_id": "CTA-ORD"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS",
+          "CTA-CUM",
+          "CTA-HAR2",
+          "CTA-JEF",
+          "CTA-MON2",
+          "CTA-IRP",
+          "CTA-ADD2",
+          "CTA-BEL",
+          "CTA-LOG",
+          "CTA-CAL2",
+          "CTA-WES",
+          "CTA-DAM",
+          "CTA-DIV",
+          "CTA-CHI3",
+          "CTA-GRA2",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 16.61,
+        "estimated_minutes": 33.1
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 5.0,
+            "subtotal": 5.0,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-A-010",
+    "system": "cta",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Howard to Clark/Lake",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Howard",
+        "station_id": "CTA-HOW"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HOW",
+          "CTA-WIL",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "purple"
+        ],
+        "transfers": 0,
+        "distance_miles": 9.71,
+        "estimated_minutes": 19.4
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-A-012",
+    "system": "cta",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "54th/Cermak to Howard",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "54th/Cermak",
+        "station_id": "CTA-54C"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Howard",
+        "station_id": "CTA-HOW"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-54C",
+          "CTA-CIC",
+          "CTA-KOS",
+          "CTA-PUL4",
+          "CTA-CEP2",
+          "CTA-KED4",
+          "CTA-CLP",
+          "CTA-WES4",
+          "CTA-DAM4",
+          "CTA-18T",
+          "CTA-POL",
+          "CTA-ASH",
+          "CTA-MOR2",
+          "CTA-CLN",
+          "CTA-CLK",
+          "CTA-MRC",
+          "CTA-CHI2",
+          "CTA-SED",
+          "CTA-ARM",
+          "CTA-FUL",
+          "CTA-DVY",
+          "CTA-WEL",
+          "CTA-BLM",
+          "CTA-WIL",
+          "CTA-HOW"
+        ],
+        "line_sequence": [
+          "pink",
+          "purple"
+        ],
+        "transfers": 1,
+        "distance_miles": 18.06,
+        "estimated_minutes": 41.1
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-A-019",
+    "system": "cta",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "Oakton-Skokie to Rosemont",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Oakton-Skokie",
+        "station_id": "CTA-OKT"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Rosemont",
+        "station_id": "CTA-ROS"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-OKT",
+          "CTA-HOW",
+          "CTA-WIL",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK",
+          "CTA-GRA2",
+          "CTA-CHI3",
+          "CTA-DIV",
+          "CTA-DAM",
+          "CTA-WES",
+          "CTA-CAL2",
+          "CTA-LOG",
+          "CTA-BEL",
+          "CTA-ADD2",
+          "CTA-IRP",
+          "CTA-MON2",
+          "CTA-JEF",
+          "CTA-HAR2",
+          "CTA-CUM",
+          "CTA-ROS"
+        ],
+        "line_sequence": [
+          "yellow",
+          "purple",
+          "blue"
+        ],
+        "transfers": 2,
+        "distance_miles": 27.83,
+        "estimated_minutes": 65.5
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-B-007",
+    "system": "cta",
+    "category": "B",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult + 3 children (1 pays)",
+    "title": "Fare: 1 adult + 3 children (1 pays)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 3
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 2.5,
+            "currency": "USD"
+          },
+          {
+            "label": "Child (fare required) x1",
+            "amount": 2.5,
+            "currency": "USD"
+          }
+        ],
+        "subtotal": 5.0,
+        "discounts": [
+          {
+            "label": "Child (under 7, free) x2",
+            "amount": 0.0,
+            "currency": "USD"
+          }
+        ],
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 3,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          },
+          {
+            "rider_type": "child",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-B-010",
+    "system": "cta",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 disabled",
+    "title": "Fare: 1 disabled",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "disabled": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Disabled x1",
+            "amount": 1.25,
+            "currency": "USD"
+          }
+        ],
+        "subtotal": 1.25,
+        "discounts": [],
+        "total": 1.25,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 0,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 1,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "disabled",
+            "count": 1,
+            "unit_fare": 1.25,
+            "subtotal": 1.25,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-C-008",
+    "system": "cta",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_brown-kimball",
+    "title": "Kimball to Clark/Lake (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Kimball",
+        "station_id": "CTA-KIM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-brown-kimball",
+          "line": "brown",
+          "segment": [
+            "CTA-KIM",
+            "CTA-FRA",
+            "CTA-WBR",
+            "CTA-DVY"
+          ],
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Brown Line: No late-night service between Kimball and Diversey due to platform lighting replacement. Last train departs Kimball at 9:30 PM.",
+          "alternative": "No replacement service; plan travel before 9:30 PM",
+          "eta_resolution": "Normal service resumes at 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-brown-kimball",
+          "line": "brown",
+          "segment": [
+            "CTA-KIM",
+            "CTA-FRA",
+            "CTA-WBR",
+            "CTA-DVY"
+          ],
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Brown Line: No late-night service between Kimball and Diversey due to platform lighting replacement. Last train departs Kimball at 9:30 PM.",
+          "alternative": "No replacement service; plan travel before 9:30 PM",
+          "eta_resolution": "Normal service resumes at 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      ],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "brown"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.59,
+        "estimated_minutes": 17.0
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "brown"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.59,
+        "estimated_minutes": 17.0
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "CTA-KIM",
+            "CTA-FRA"
+          ],
+          [
+            "CTA-FRA",
+            "CTA-WBR"
+          ],
+          [
+            "CTA-WBR",
+            "CTA-DVY"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "info",
+        "advisory_must_mention": [
+          "brown line",
+          "kimball",
+          "diversey",
+          "night"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-C-012",
+    "system": "cta",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "pv_elevated-suspended",
+    "title": "Kimball to Midway (polar_vortex)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Kimball",
+        "station_id": "CTA-KIM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Midway",
+        "station_id": "CTA-MID"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pv-elevated-suspended",
+          "line": null,
+          "segment": null,
+          "type": "polar_vortex",
+          "severity": "warning",
+          "message": "Polar vortex service reduction: Extreme cold has caused switch failures on elevated tracks. Brown, Green, Orange, Pink, and Purple lines are suspended until further notice. Red and Blue lines (subway) continue operating with 15-minute headways.",
+          "alternative": "Red and Blue lines remain in service. Use bus bridges for suspended lines.",
+          "eta_resolution": "Elevated service restoration pending temperature recovery"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pv-elevated-suspended",
+          "line": null,
+          "segment": null,
+          "type": "polar_vortex",
+          "severity": "warning",
+          "message": "Polar vortex service reduction: Extreme cold has caused switch failures on elevated tracks. Brown, Green, Orange, Pink, and Purple lines are suspended until further notice. Red and Blue lines (subway) continue operating with 15-minute headways.",
+          "alternative": "Red and Blue lines remain in service. Use bus bridges for suspended lines.",
+          "eta_resolution": "Elevated service restoration pending temperature recovery"
+        }
+      ],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV",
+          "CTA-HAL",
+          "CTA-ASH2",
+          "CTA-35T2",
+          "CTA-WES3",
+          "CTA-KDZ",
+          "CTA-PUL",
+          "CTA-MID"
+        ],
+        "line_sequence": [
+          "brown",
+          "orange"
+        ],
+        "transfers": 1,
+        "distance_miles": 18.84,
+        "estimated_minutes": 42.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV",
+          "CTA-HAL",
+          "CTA-ASH2",
+          "CTA-35T2",
+          "CTA-WES3",
+          "CTA-KDZ",
+          "CTA-PUL",
+          "CTA-MID"
+        ],
+        "line_sequence": [
+          "brown",
+          "orange"
+        ],
+        "transfers": 1,
+        "distance_miles": 18.84,
+        "estimated_minutes": 42.6
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "CTA-KIM",
+            "CTA-FRA"
+          ],
+          [
+            "CTA-FRA",
+            "CTA-WBR"
+          ],
+          [
+            "CTA-WBR",
+            "CTA-DVY"
+          ],
+          [
+            "CTA-DVY",
+            "CTA-BLM"
+          ],
+          [
+            "CTA-FUL",
+            "CTA-MRC"
+          ],
+          [
+            "CTA-MRC",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-HLK",
+            "CTA-OAK"
+          ],
+          [
+            "CTA-OAK",
+            "CTA-CON"
+          ],
+          [
+            "CTA-CON",
+            "CTA-CAL"
+          ],
+          [
+            "CTA-CAL",
+            "CTA-ASH"
+          ],
+          [
+            "CTA-ASH",
+            "CTA-CLN"
+          ],
+          [
+            "CTA-CLN",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-MID",
+            "CTA-PUL"
+          ],
+          [
+            "CTA-PUL",
+            "CTA-KDZ"
+          ],
+          [
+            "CTA-KDZ",
+            "CTA-HAL"
+          ],
+          [
+            "CTA-HAL",
+            "CTA-RSV"
+          ],
+          [
+            "CTA-54C",
+            "CTA-CIC"
+          ],
+          [
+            "CTA-CIC",
+            "CTA-CLP"
+          ],
+          [
+            "CTA-CLP",
+            "CTA-18T"
+          ],
+          [
+            "CTA-18T",
+            "CTA-POL"
+          ],
+          [
+            "CTA-POL",
+            "CTA-CLN"
+          ],
+          [
+            "CTA-LIN",
+            "CTA-DVS"
+          ],
+          [
+            "CTA-DVS",
+            "CTA-HOW"
+          ],
+          [
+            "CTA-CLK",
+            "CTA-WAB"
+          ],
+          [
+            "CTA-WAB",
+            "CTA-AWB"
+          ],
+          [
+            "CTA-AWB",
+            "CTA-HWL"
+          ],
+          [
+            "CTA-HWL",
+            "CTA-LVB"
+          ],
+          [
+            "CTA-LVB",
+            "CTA-QCY"
+          ],
+          [
+            "CTA-QCY",
+            "CTA-WAW"
+          ],
+          [
+            "CTA-WAW",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-AWB",
+            "CTA-RSV"
+          ],
+          [
+            "CTA-DMP",
+            "CTA-OKT"
+          ],
+          [
+            "CTA-OKT",
+            "CTA-HOW"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "polar vortex",
+          "elevated",
+          "suspended",
+          "red",
+          "blue"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-C-015",
+    "system": "cta",
+    "category": "C",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "disruption_type": "ca_mccormick",
+    "title": "Clark/Lake to Cermak/Chinatown (crowd_advisory)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Cermak/Chinatown",
+        "station_id": "CTA-CRM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "ca-mccormick",
+          "line": null,
+          "segment": null,
+          "type": "crowd_advisory",
+          "severity": "info",
+          "message": "Crowd advisory: Major convention at McCormick Place. Expect heavy ridership at Cermak/Chinatown (Red Line) and Roosevelt (Red/Green/Orange). Additional trains running on Red and Green lines. Allow extra travel time.",
+          "alternative": "Consider using Jackson (Red) or Adams/Wabash to avoid congestion",
+          "eta_resolution": "Congestion expected through 6:00 PM"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "ca-mccormick",
+          "line": null,
+          "segment": null,
+          "type": "crowd_advisory",
+          "severity": "info",
+          "message": "Crowd advisory: Major convention at McCormick Place. Expect heavy ridership at Cermak/Chinatown (Red Line) and Roosevelt (Red/Green/Orange). Additional trains running on Red and Green lines. Allow extra travel time.",
+          "alternative": "Consider using Jackson (Red) or Adams/Wabash to avoid congestion",
+          "eta_resolution": "Congestion expected through 6:00 PM"
+        }
+      ],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV",
+          "CTA-CRM"
+        ],
+        "line_sequence": [
+          "orange",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 2.4,
+        "estimated_minutes": 9.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV",
+          "CTA-CRM"
+        ],
+        "line_sequence": [
+          "orange",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 2.4,
+        "estimated_minutes": 9.8
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "skip",
+        "expected_restrictions": [],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "info",
+        "advisory_must_mention": [
+          "mccormick",
+          "crowd",
+          "convention"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-C-017",
+    "system": "cta",
+    "category": "C",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "disruption_type": "ls_red-partial-north",
+    "title": "Howard to 95th/Dan Ryan (line_suspension)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Howard",
+        "station_id": "CTA-HOW"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "95th/Dan Ryan",
+        "station_id": "CTA-95D"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "ls-red-partial-north",
+          "line": "red",
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "warning",
+          "message": "Red Line closed between Howard and Fullerton for emergency track work. No service on the north branch. Stations south of Fullerton continue normal operation.",
+          "alternative": "Use Purple Line Express or buses along the North Side",
+          "eta_resolution": "Service restoration by evening rush"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "ls-red-partial-north",
+          "line": "red",
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "warning",
+          "message": "Red Line closed between Howard and Fullerton for emergency track work. No service on the north branch. Stations south of Fullerton continue normal operation.",
+          "alternative": "Use Purple Line Express or buses along the North Side",
+          "eta_resolution": "Service restoration by evening rush"
+        }
+      ],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HOW",
+          "CTA-WIL",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-NOR",
+          "CTA-CLA",
+          "CTA-CHI",
+          "CTA-GRA",
+          "CTA-LAK",
+          "CTA-MON",
+          "CTA-JAC",
+          "CTA-HAR",
+          "CTA-RSV",
+          "CTA-CRM",
+          "CTA-SOX",
+          "CTA-47T",
+          "CTA-GAR",
+          "CTA-63R",
+          "CTA-69T",
+          "CTA-79T",
+          "CTA-87T",
+          "CTA-95D"
+        ],
+        "line_sequence": [
+          "purple",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 21.26,
+        "estimated_minutes": 47.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "CTA-HOW",
+          "CTA-JRV",
+          "CTA-MOR",
+          "CTA-LYL",
+          "CTA-GRN",
+          "CTA-THN",
+          "CTA-BRM",
+          "CTA-BER",
+          "CTA-ARG",
+          "CTA-LAW",
+          "CTA-WIL",
+          "CTA-SHE",
+          "CTA-ADD",
+          "CTA-BLM",
+          "CTA-FUL",
+          "CTA-NOR",
+          "CTA-CLA",
+          "CTA-CHI",
+          "CTA-GRA",
+          "CTA-LAK",
+          "CTA-MON",
+          "CTA-JAC",
+          "CTA-HAR",
+          "CTA-RSV",
+          "CTA-CRM",
+          "CTA-SOX",
+          "CTA-47T",
+          "CTA-GAR",
+          "CTA-63R",
+          "CTA-69T",
+          "CTA-79T",
+          "CTA-87T",
+          "CTA-95D"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 21.36,
+        "estimated_minutes": 42.9
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": {
+          "path": [
+            "CTA-HOW",
+            "CTA-WIL",
+            "CTA-BLM",
+            "CTA-WEL",
+            "CTA-DVY",
+            "CTA-FUL",
+            "CTA-NOR",
+            "CTA-CLA",
+            "CTA-CHI",
+            "CTA-GRA",
+            "CTA-LAK",
+            "CTA-MON",
+            "CTA-JAC",
+            "CTA-HAR",
+            "CTA-RSV",
+            "CTA-CRM",
+            "CTA-SOX",
+            "CTA-47T",
+            "CTA-GAR",
+            "CTA-63R",
+            "CTA-69T",
+            "CTA-79T",
+            "CTA-87T",
+            "CTA-95D"
+          ],
+          "line_sequence": [
+            "purple",
+            "red"
+          ],
+          "transfers": 1,
+          "distance_miles": 21.26,
+          "estimated_minutes": 47.9
+        },
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "CTA-HOW",
+            "CTA-JRV"
+          ],
+          [
+            "CTA-JRV",
+            "CTA-MOR"
+          ],
+          [
+            "CTA-MOR",
+            "CTA-LYL"
+          ],
+          [
+            "CTA-LYL",
+            "CTA-GRN"
+          ],
+          [
+            "CTA-GRN",
+            "CTA-THN"
+          ],
+          [
+            "CTA-THN",
+            "CTA-BRM"
+          ],
+          [
+            "CTA-BRM",
+            "CTA-BER"
+          ],
+          [
+            "CTA-BER",
+            "CTA-ARG"
+          ],
+          [
+            "CTA-ARG",
+            "CTA-LAW"
+          ],
+          [
+            "CTA-LAW",
+            "CTA-WIL"
+          ],
+          [
+            "CTA-WIL",
+            "CTA-SHE"
+          ],
+          [
+            "CTA-SHE",
+            "CTA-ADD"
+          ],
+          [
+            "CTA-ADD",
+            "CTA-BLM"
+          ],
+          [
+            "CTA-BLM",
+            "CTA-FUL"
+          ]
+        ],
+        "expected_line_closures": [
+          {
+            "line": "red",
+            "from_station": "CTA-HOW",
+            "to_station": "CTA-FUL"
+          }
+        ],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "red line",
+          "howard",
+          "fullerton"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-C-018",
+    "system": "cta",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "ls_loop-shutdown",
+    "title": "Kimball to Roosevelt (line_suspension)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Kimball",
+        "station_id": "CTA-KIM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "ls-loop-shutdown",
+          "line": null,
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "critical",
+          "message": "Weekend track work at Tower 18: Brown, Orange, and Pink Lines are suspended within the Loop. Pink Line trains are diverted to Racine (Blue Line) for downtown access. Red and Blue subway lines are operating normally \u2014 use them for Loop destinations.",
+          "alternative": "Take Red or Blue subway for downtown; Pink Line connects to Blue via Racine",
+          "eta_resolution": "Service resumes Monday at 2 AM"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "ls-loop-shutdown",
+          "line": null,
+          "segment": null,
+          "type": "line_suspension",
+          "severity": "critical",
+          "message": "Weekend track work at Tower 18: Brown, Orange, and Pink Lines are suspended within the Loop. Pink Line trains are diverted to Racine (Blue Line) for downtown access. Red and Blue subway lines are operating normally \u2014 use them for Loop destinations.",
+          "alternative": "Take Red or Blue subway for downtown; Pink Line connects to Blue via Racine",
+          "eta_resolution": "Service resumes Monday at 2 AM"
+        }
+      ],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "brown",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 9.99,
+        "estimated_minutes": 24.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "brown",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 9.99,
+        "estimated_minutes": 24.8
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "CTA-KIM",
+            "CTA-KED2"
+          ],
+          [
+            "CTA-KED2",
+            "CTA-FRA"
+          ],
+          [
+            "CTA-FRA",
+            "CTA-ROC"
+          ],
+          [
+            "CTA-ROC",
+            "CTA-WBR"
+          ],
+          [
+            "CTA-WBR",
+            "CTA-DAM2"
+          ],
+          [
+            "CTA-DAM2",
+            "CTA-MON4"
+          ],
+          [
+            "CTA-MON4",
+            "CTA-IRP2"
+          ],
+          [
+            "CTA-IRP2",
+            "CTA-ADD3"
+          ],
+          [
+            "CTA-ADD3",
+            "CTA-PAU"
+          ],
+          [
+            "CTA-PAU",
+            "CTA-SOU"
+          ],
+          [
+            "CTA-SOU",
+            "CTA-BLM"
+          ],
+          [
+            "CTA-BLM",
+            "CTA-WEL"
+          ],
+          [
+            "CTA-WEL",
+            "CTA-DVY"
+          ],
+          [
+            "CTA-DVY",
+            "CTA-FUL"
+          ],
+          [
+            "CTA-FUL",
+            "CTA-ARM"
+          ],
+          [
+            "CTA-ARM",
+            "CTA-SED"
+          ],
+          [
+            "CTA-SED",
+            "CTA-CHI2"
+          ],
+          [
+            "CTA-CHI2",
+            "CTA-MRC"
+          ],
+          [
+            "CTA-MRC",
+            "CTA-WAW"
+          ],
+          [
+            "CTA-WAW",
+            "CTA-QCY"
+          ],
+          [
+            "CTA-QCY",
+            "CTA-LVB"
+          ],
+          [
+            "CTA-LVB",
+            "CTA-HWL"
+          ],
+          [
+            "CTA-HWL",
+            "CTA-AWB"
+          ],
+          [
+            "CTA-AWB",
+            "CTA-WAB"
+          ],
+          [
+            "CTA-WAB",
+            "CTA-STL"
+          ],
+          [
+            "CTA-STL",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-CLK",
+            "CTA-MRC"
+          ],
+          [
+            "CTA-MID",
+            "CTA-PUL"
+          ],
+          [
+            "CTA-PUL",
+            "CTA-KDZ"
+          ],
+          [
+            "CTA-KDZ",
+            "CTA-WES3"
+          ],
+          [
+            "CTA-WES3",
+            "CTA-35T2"
+          ],
+          [
+            "CTA-35T2",
+            "CTA-ASH2"
+          ],
+          [
+            "CTA-ASH2",
+            "CTA-HAL"
+          ],
+          [
+            "CTA-HAL",
+            "CTA-RSV"
+          ],
+          [
+            "CTA-RSV",
+            "CTA-HWL"
+          ],
+          [
+            "CTA-HWL",
+            "CTA-LVB"
+          ],
+          [
+            "CTA-LVB",
+            "CTA-QCY"
+          ],
+          [
+            "CTA-QCY",
+            "CTA-WAW"
+          ],
+          [
+            "CTA-WAW",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-CLK",
+            "CTA-STL"
+          ],
+          [
+            "CTA-STL",
+            "CTA-WAB"
+          ],
+          [
+            "CTA-WAB",
+            "CTA-AWB"
+          ],
+          [
+            "CTA-AWB",
+            "CTA-RSV"
+          ],
+          [
+            "CTA-54C",
+            "CTA-CIC"
+          ],
+          [
+            "CTA-CIC",
+            "CTA-KOS"
+          ],
+          [
+            "CTA-KOS",
+            "CTA-PUL4"
+          ],
+          [
+            "CTA-PUL4",
+            "CTA-CEP2"
+          ],
+          [
+            "CTA-CEP2",
+            "CTA-KED4"
+          ],
+          [
+            "CTA-KED4",
+            "CTA-CLP"
+          ],
+          [
+            "CTA-CLP",
+            "CTA-WES4"
+          ],
+          [
+            "CTA-WES4",
+            "CTA-DAM4"
+          ],
+          [
+            "CTA-DAM4",
+            "CTA-18T"
+          ],
+          [
+            "CTA-18T",
+            "CTA-POL"
+          ],
+          [
+            "CTA-POL",
+            "CTA-ASH"
+          ],
+          [
+            "CTA-ASH",
+            "CTA-MOR2"
+          ],
+          [
+            "CTA-MOR2",
+            "CTA-CLN"
+          ],
+          [
+            "CTA-CLN",
+            "CTA-CLK"
+          ],
+          [
+            "CTA-AWB",
+            "CTA-HWL"
+          ],
+          [
+            "CTA-WAW",
+            "CTA-CLN"
+          ]
+        ],
+        "expected_line_closures": [
+          {
+            "line": "brown"
+          },
+          {
+            "line": "orange"
+          },
+          {
+            "line": "pink"
+          }
+        ],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "loop",
+          "suspended",
+          "red",
+          "blue"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-001",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "accessibility_tier": "happy_path",
+    "title": "Clark/Lake to Roosevelt (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-007",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "Harlem/Lake to Clark/Lake (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Harlem/Lake",
+        "station_id": "CTA-HLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HLK",
+          "CTA-OAK",
+          "CTA-RID",
+          "CTA-AUS2",
+          "CTA-CEN",
+          "CTA-LAR",
+          "CTA-CIC3",
+          "CTA-PUL3",
+          "CTA-CON",
+          "CTA-KED3",
+          "CTA-CAL",
+          "CTA-DAM3",
+          "CTA-ASH",
+          "CTA-MOR2",
+          "CTA-CLN",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.87,
+        "estimated_minutes": 17.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-CON",
+            "station_name": "Conservatory",
+            "issue": "elevator out of service"
+          },
+          {
+            "station_id": "CTA-CAL",
+            "station_name": "California (Green)",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-009",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "O'Hare to Forest Park (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare",
+        "station_id": "CTA-ORD"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Forest Park",
+        "station_id": "CTA-FPK"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS",
+          "CTA-CUM",
+          "CTA-HAR2",
+          "CTA-JEF",
+          "CTA-MON2",
+          "CTA-IRP",
+          "CTA-ADD2",
+          "CTA-BEL",
+          "CTA-LOG",
+          "CTA-CAL2",
+          "CTA-WES",
+          "CTA-DAM",
+          "CTA-DIV",
+          "CTA-CHI3",
+          "CTA-GRA2",
+          "CTA-CLK",
+          "CTA-WAS",
+          "CTA-MON3",
+          "CTA-JAC2",
+          "CTA-LAS",
+          "CTA-CLI",
+          "CTA-UIC",
+          "CTA-RAC",
+          "CTA-IMD",
+          "CTA-WES2",
+          "CTA-KED",
+          "CTA-PUL2",
+          "CTA-CIC2",
+          "CTA-AUS",
+          "CTA-OAP",
+          "CTA-HAR3",
+          "CTA-FPK"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 26.95,
+        "estimated_minutes": 53.7
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-DAM",
+            "station_name": "Damen",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-010",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "Linden to Belmont (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Linden",
+        "station_id": "CTA-LIN"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Belmont",
+        "station_id": "CTA-BLM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-LIN",
+          "CTA-CEN2",
+          "CTA-NOY",
+          "CTA-FOS",
+          "CTA-DVS",
+          "CTA-DEM",
+          "CTA-MAI",
+          "CTA-SOB",
+          "CTA-HOW",
+          "CTA-WIL",
+          "CTA-BLM"
+        ],
+        "line_sequence": [
+          "purple"
+        ],
+        "transfers": 0,
+        "distance_miles": 9.48,
+        "estimated_minutes": 19.1
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-DVS",
+            "station_name": "Davis",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-011",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "Clark/Lake to Diversey (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Diversey",
+        "station_id": "CTA-DVY"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-MRC",
+          "CTA-CHI2",
+          "CTA-SED",
+          "CTA-ARM",
+          "CTA-FUL",
+          "CTA-DVY"
+        ],
+        "line_sequence": [
+          "purple"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.65,
+        "estimated_minutes": 7.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-DVY",
+            "station_name": "Diversey",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-012",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "Clark/Lake to Damen (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Damen",
+        "station_id": "CTA-DAM"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-GRA2",
+          "CTA-CHI3",
+          "CTA-DIV",
+          "CTA-DAM"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.95,
+        "estimated_minutes": 5.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-DAM",
+            "station_name": "Damen",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-D-013",
+    "system": "cta",
+    "category": "D",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "Clark/Lake to Conservatory (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Conservatory",
+        "station_id": "CTA-CON"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need working elevators at all stations \u2014 I cannot use stairs or escalators."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-CLN",
+          "CTA-MOR2",
+          "CTA-ASH",
+          "CTA-DAM3",
+          "CTA-CAL",
+          "CTA-KED3",
+          "CTA-CON"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 4.4,
+        "estimated_minutes": 8.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "elevator_required",
+        "issues_on_route": [
+          {
+            "station_id": "CTA-CAL",
+            "station_name": "California (Green)",
+            "issue": "elevator out of service"
+          },
+          {
+            "station_id": "CTA-CON",
+            "station_name": "Conservatory",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-F-006",
+    "system": "cta",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "seniors_free",
+    "title": "Policy: Seniors Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Senior citizens (65+) ride free.",
+        "policy_id": "seniors_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 3.75,
+        "new_fare": 2.5,
+        "policy_id": "seniors_free",
+        "policy_must_mention": [
+          "senior",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-F-007",
+    "system": "cta",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "children_free",
+    "title": "Policy: Children Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Children under 12 ride free (limit 2 per paying adult).",
+        "policy_id": "children_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 2.5,
+        "new_fare": 2.5,
+        "policy_id": "children_free",
+        "policy_must_mention": [
+          "children",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-F-015",
+    "system": "cta",
+    "category": "F",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "policy_id": "seniors_children_peak_surcharge",
+    "title": "Policy: Seniors Children Peak Surcharge",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 3,
+        "seniors": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Seniors (65+) ride free, children under 12 ride free (limit 3 per paying adult), and a $1.00 peak surcharge applies to each paying passenger.",
+        "policy_id": "seniors_children_peak_surcharge"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "total": 3.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 3.75,
+        "new_fare": 3.5,
+        "policy_id": "seniors_children_peak_surcharge",
+        "policy_must_mention": [
+          "senior",
+          "free",
+          "children",
+          "surcharge"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-F-016",
+    "system": "cta",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "cta_state_lake_closed",
+    "title": "Policy: Cta State Lake Closed",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "State/Lake",
+        "station_id": "CTA-STL"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-04-25T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "policy_change": {
+        "text": "State/Lake station is permanently closed for renovation. Passengers should use Washington/Wabash or Clark/Lake (both within a two-block walk) for Loop elevated line access.",
+        "policy_id": "cta_state_lake_closed"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "policy": {
+        "old_fare": 2.5,
+        "new_fare": 2.5,
+        "policy_id": "cta_state_lake_closed",
+        "policy_must_mention": [
+          "State/Lake",
+          "closed"
+        ],
+        "advisory_must_mention": [
+          "Washington/Wabash",
+          "Clark/Lake"
+        ],
+        "expected_station_restrictions": [
+          {
+            "station": "CTA-STL",
+            "restriction": "closed"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok",
+      "admissible_outcomes": [
+        "route_and_fare_ready"
+      ],
+      "admissible_kiosk_actions": [
+        "prompt_purchase"
+      ]
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5,
+      "advisory_content_correct": 10
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-G-005",
+    "system": "cta",
+    "category": "G",
+    "difficulty": "easy",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "confirm-proceed",
+    "title": "Multi-turn: Confirm and proceed with initial route",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Kimball"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "Looks good, please issue the ticket"
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Kimball"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Clark/Lake"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "Looks good, please issue the ticket"
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "brown"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.59,
+        "estimated_minutes": 17.0
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Kimball",
+        "destination": "Clark/Lake",
+        "passengers": {
+          "adults": 1
+        },
+        "payment_method": "ventra"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-G-006",
+    "system": "cta",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "cross-line-dest",
+    "title": "Multi-turn: Change destination from same-line to cross-line station",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Cermak/Chinatown"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Oak Park"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Forest Park"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Cermak/Chinatown"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Oak Park"
+        }
+      ],
+      [
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Forest Park"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CRM",
+          "CTA-RSV",
+          "CTA-AWB",
+          "CTA-WAB",
+          "CTA-STL",
+          "CTA-CLK",
+          "CTA-WAS",
+          "CTA-MON3",
+          "CTA-JAC2",
+          "CTA-LAS",
+          "CTA-CLI",
+          "CTA-UIC",
+          "CTA-RAC",
+          "CTA-IMD",
+          "CTA-WES2",
+          "CTA-KED",
+          "CTA-PUL2",
+          "CTA-CIC2",
+          "CTA-AUS",
+          "CTA-OAP",
+          "CTA-HAR3",
+          "CTA-FPK"
+        ],
+        "line_sequence": [
+          "red",
+          "green",
+          "blue"
+        ],
+        "transfers": 2,
+        "distance_miles": 12.74,
+        "estimated_minutes": 35.4
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Cermak/Chinatown",
+        "destination": "Forest Park",
+        "passengers": {
+          "adults": 2
+        },
+        "payment_method": "ventra"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-G-007",
+    "system": "cta",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "pax-expansion",
+    "title": "Multi-turn: Incrementally expand passenger group",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Harlem/Lake"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "O'Hare"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Harlem/Lake"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "seniors": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "seniors": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS",
+          "CTA-CUM",
+          "CTA-HAR2",
+          "CTA-JEF",
+          "CTA-MON2",
+          "CTA-IRP",
+          "CTA-ADD2",
+          "CTA-BEL",
+          "CTA-LOG",
+          "CTA-CAL2",
+          "CTA-WES",
+          "CTA-DAM",
+          "CTA-DIV",
+          "CTA-CHI3",
+          "CTA-GRA2",
+          "CTA-CLK",
+          "CTA-CLN",
+          "CTA-MOR2",
+          "CTA-ASH",
+          "CTA-DAM3",
+          "CTA-CAL",
+          "CTA-KED3",
+          "CTA-CON",
+          "CTA-PUL3",
+          "CTA-CIC3",
+          "CTA-LAR",
+          "CTA-CEN",
+          "CTA-AUS2",
+          "CTA-RID",
+          "CTA-OAK",
+          "CTA-HLK"
+        ],
+        "line_sequence": [
+          "blue",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 25.48,
+        "estimated_minutes": 55.9
+      },
+      "fare": {
+        "total": 6.25,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "O'Hare",
+        "destination": "Harlem/Lake",
+        "passengers": {
+          "adults": 1,
+          "children": 1,
+          "seniors": 1
+        },
+        "payment_method": "ventra"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-H-004",
+    "system": "cta",
+    "category": "H",
+    "difficulty": "easy",
+    "interaction_mode": "adversarial",
+    "scenario_id": "invalid-negative-pax",
+    "scenario_type": "invalid_passengers",
+    "title": "Adversarial: Invalid Negative Pax",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Forest Park"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": -1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": true,
+      "rejection_reason": "Negative passenger count is invalid",
+      "acceptable_response_patterns": [
+        "invalid",
+        "negative",
+        "cannot",
+        "positive"
+      ],
+      "acceptable_tools": [],
+      "hallucination_traps": [],
+      "expected_outcome": "request_declined",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "invalid_request"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-H-005",
+    "system": "cta",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "invalid-many-children",
+    "scenario_type": "invalid_passengers",
+    "title": "Adversarial: Invalid Many Children",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Kimball"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake"
+      },
+      {
+        "type": "passenger_count_changed",
+        "children": 20,
+        "adults": 0
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "brown"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.59,
+        "estimated_minutes": 17.0
+      },
+      "fare": {
+        "total": 50.0,
+        "currency": "USD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "free",
+        "pay",
+        "children",
+        "fare"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-H-006",
+    "system": "cta",
+    "category": "H",
+    "difficulty": "hard",
+    "interaction_mode": "adversarial",
+    "scenario_id": "invalid-pax-flip-flop",
+    "scenario_type": "invalid_passengers",
+    "title": "Adversarial: Invalid Pax Flip Flop",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Harlem/Lake"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I said 3 adults"
+      },
+      {
+        "type": "freetext_input",
+        "text": "No wait, just 1"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HLK",
+          "CTA-OAK",
+          "CTA-RID",
+          "CTA-AUS2",
+          "CTA-CEN",
+          "CTA-LAR",
+          "CTA-CIC3",
+          "CTA-PUL3",
+          "CTA-CON",
+          "CTA-KED3",
+          "CTA-CAL",
+          "CTA-DAM3",
+          "CTA-ASH",
+          "CTA-MOR2",
+          "CTA-CLN",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.27,
+        "estimated_minutes": 20.6
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "1 adult",
+        "fare"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-H-009",
+    "system": "cta",
+    "category": "H",
+    "difficulty": "hard",
+    "interaction_mode": "adversarial",
+    "scenario_id": "oos-refund",
+    "scenario_type": "out_of_scope",
+    "title": "Adversarial: Oos Refund",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I need to process a refund for my Ventra Card"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "knowledge_query": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "refund",
+        "policy"
+      ],
+      "acceptable_tools": [
+        "knowledge_base"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-H-011",
+    "system": "cta",
+    "category": "H",
+    "difficulty": "medium",
+    "interaction_mode": "adversarial",
+    "scenario_id": "exploit-double-discount",
+    "scenario_type": "policy_exploit",
+    "title": "Adversarial: Exploit Double Discount",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Clark/Lake"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1,
+        "disabled": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I'm both a senior and disabled, do I get double discount?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS",
+          "CTA-CUM",
+          "CTA-HAR2",
+          "CTA-JEF",
+          "CTA-MON2",
+          "CTA-IRP",
+          "CTA-ADD2",
+          "CTA-BEL",
+          "CTA-LOG",
+          "CTA-CAL2",
+          "CTA-WES",
+          "CTA-DAM",
+          "CTA-DIV",
+          "CTA-CHI3",
+          "CTA-GRA2",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 16.61,
+        "estimated_minutes": 33.1
+      },
+      "fare": {
+        "total": 7.5,
+        "currency": "USD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "discount",
+        "fare"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-J-006",
+    "system": "cta",
+    "category": "J",
+    "difficulty": "easy",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "trap-bus",
+    "trap_type": "tempting_tool",
+    "title": "Hallucination trap: Trap Bus",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Is the connecting bus to downtown on time?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "knowledge_query": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [
+        "bus_tracker",
+        "connection_feed",
+        "bus_status"
+      ],
+      "acceptable_tools": [
+        "knowledge_base"
+      ],
+      "should_reject": true,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-J-014",
+    "system": "cta",
+    "category": "J",
+    "difficulty": "hard",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "plausible-next-train",
+    "trap_type": "plausible_name",
+    "title": "Hallucination trap: Plausible Next Train",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "When does the next train to Forest Park arrive?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [
+        "eta_calculator",
+        "arrival_predictor",
+        "schedule_api"
+      ],
+      "acceptable_tools": [
+        "station_info"
+      ],
+      "should_reject": true,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-I-007",
+    "system": "cta",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "24h_vs_limited",
+    "title": "Temporal: 24H Line Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to travel from Midway to Roosevelt. It's 02:00 on Wednesday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "temporal_context": {
+        "current_time": "2026-03-17T02:00:00",
+        "day_of_week": "Wednesday",
+        "notes": "Operating hours (Wednesday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-MID",
+          "CTA-PUL",
+          "CTA-KDZ",
+          "CTA-WES3",
+          "CTA-35T2",
+          "CTA-ASH2",
+          "CTA-HAL",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.85,
+        "estimated_minutes": 17.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "24 hour",
+          "overnight",
+          "limited service",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-I-009",
+    "system": "cta",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "24h_vs_limited",
+    "title": "Temporal: 24H Line Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I need to transfer between lines to get from O'Hare to Midway. It's 03:30 Sunday. Can I make this trip?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "temporal_context": {
+        "current_time": "2026-03-19T03:30:00",
+        "day_of_week": "Sunday",
+        "notes": "Operating hours (Sunday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS",
+          "CTA-CUM",
+          "CTA-HAR2",
+          "CTA-JEF",
+          "CTA-MON2",
+          "CTA-IRP",
+          "CTA-ADD2",
+          "CTA-BEL",
+          "CTA-LOG",
+          "CTA-CAL2",
+          "CTA-WES",
+          "CTA-DAM",
+          "CTA-DIV",
+          "CTA-CHI3",
+          "CTA-GRA2",
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV",
+          "CTA-HAL",
+          "CTA-ASH2",
+          "CTA-35T2",
+          "CTA-WES3",
+          "CTA-KDZ",
+          "CTA-PUL",
+          "CTA-MID"
+        ],
+        "line_sequence": [
+          "blue",
+          "orange"
+        ],
+        "transfers": 1,
+        "distance_miles": 26.86,
+        "estimated_minutes": 58.7
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "transfer",
+          "24 hour",
+          "not running",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-I-010",
+    "system": "cta",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "time_constraint",
+    "title": "Temporal: Time Constraint Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I need to get from Howard to Clark/Lake and arrive by 10:00 AM. It's 09:00 on Monday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "temporal_context": {
+        "current_time": "2026-03-20T09:00:00",
+        "day_of_week": "Monday",
+        "notes": "Operating hours (Monday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HOW",
+          "CTA-WIL",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "purple"
+        ],
+        "transfers": 0,
+        "distance_miles": 9.71,
+        "estimated_minutes": 19.4
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "arrive by",
+          "estimated",
+          "minutes",
+          "on time"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-I-015",
+    "system": "cta",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "It's 00:15 on Saturday night. I need to go from Kimball to Clark/Lake. How frequent are trains right now?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "cta",
+      "temporal_context": {
+        "current_time": "2026-03-25T00:15:00",
+        "day_of_week": "Saturday",
+        "notes": "Operating hours (Saturday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-KIM",
+          "CTA-KED2",
+          "CTA-FRA",
+          "CTA-ROC",
+          "CTA-WBR",
+          "CTA-DAM2",
+          "CTA-MON4",
+          "CTA-IRP2",
+          "CTA-ADD3",
+          "CTA-PAU",
+          "CTA-SOU",
+          "CTA-BLM",
+          "CTA-WEL",
+          "CTA-DVY",
+          "CTA-FUL",
+          "CTA-ARM",
+          "CTA-SED",
+          "CTA-CHI2",
+          "CTA-MRC",
+          "CTA-CLK"
+        ],
+        "line_sequence": [
+          "brown"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.59,
+        "estimated_minutes": 17.0
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "late night",
+          "reduced",
+          "headway",
+          "last train",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-K-001",
+    "system": "cta",
+    "category": "K",
+    "difficulty": "easy",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility"
+    ],
+    "title": "Compound: Route with active disruption AND wheelchair user",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "O'Hare",
+        "station_id": "CTA-ORD"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Rosemont",
+        "station_id": "CTA-ROS"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-roosevelt",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Roosevelt station closed due to water main break. Red, Green, and Orange line trains skip this station. Use Cermak/Chinatown (Red Line south) or Adams/Wabash (Green/Orange Loop) as alternatives.",
+          "alternative": "Use Cermak/Chinatown (Red) or Adams/Wabash (Green/Orange)",
+          "eta_resolution": "6-8 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-roosevelt",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Roosevelt station closed due to water main break. Red, Green, and Orange line trains skip this station. Use Cermak/Chinatown (Red Line south) or Adams/Wabash (Green/Orange Loop) as alternatives.",
+          "alternative": "Use Cermak/Chinatown (Red) or Adams/Wabash (Green/Orange)",
+          "eta_resolution": "6-8 hours"
+        }
+      ],
+      "framebook": "cta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-ORD",
+          "CTA-ROS"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.34,
+        "estimated_minutes": 4.7
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "roosevelt",
+          "closed",
+          "water"
+        ]
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-K-002",
+    "system": "cta",
+    "category": "K",
+    "difficulty": "medium",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "temporal"
+    ],
+    "title": "Compound: Late-night trip during service disruption",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Howard",
+        "station_id": "CTA-HOW"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "95th/Dan Ryan",
+        "station_id": "CTA-95D"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-red-north",
+          "line": "red",
+          "segment": [
+            "CTA-HOW",
+            "CTA-JRV",
+            "CTA-LYL",
+            "CTA-GRN",
+            "CTA-THN",
+            "CTA-BLM"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Howard and Belmont this weekend due to track renewal. Free shuttle buses available between affected stations.",
+          "alternative": "Free shuttle bus between Howard and Belmont",
+          "eta_resolution": "Service resumes Tuesday 4:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T04:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-red-north",
+          "line": "red",
+          "segment": [
+            "CTA-HOW",
+            "CTA-JRV",
+            "CTA-LYL",
+            "CTA-GRN",
+            "CTA-THN",
+            "CTA-BLM"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Howard and Belmont this weekend due to track renewal. Free shuttle buses available between affected stations.",
+          "alternative": "Free shuttle bus between Howard and Belmont",
+          "eta_resolution": "Service resumes Tuesday 4:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T04:00:00"
+        }
+      ],
+      "framebook": "cta",
+      "temporal_context": {
+        "current_time": "2026-03-12T23:15:00",
+        "day_of_week": "Wednesday",
+        "notes": "Operating hours (Wednesday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-HOW",
+          "CTA-JRV",
+          "CTA-MOR",
+          "CTA-LYL",
+          "CTA-GRN",
+          "CTA-THN",
+          "CTA-BRM",
+          "CTA-BER",
+          "CTA-ARG",
+          "CTA-LAW",
+          "CTA-WIL",
+          "CTA-SHE",
+          "CTA-ADD",
+          "CTA-BLM",
+          "CTA-FUL",
+          "CTA-NOR",
+          "CTA-CLA",
+          "CTA-CHI",
+          "CTA-GRA",
+          "CTA-LAK",
+          "CTA-MON",
+          "CTA-JAC",
+          "CTA-HAR",
+          "CTA-RSV",
+          "CTA-CRM",
+          "CTA-SOX",
+          "CTA-47T",
+          "CTA-GAR",
+          "CTA-63R",
+          "CTA-69T",
+          "CTA-79T",
+          "CTA-87T",
+          "CTA-95D"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 21.36,
+        "estimated_minutes": 42.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "red line",
+          "howard",
+          "belmont",
+          "shuttle"
+        ]
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "CTA-K-005",
+    "system": "cta",
+    "category": "K",
+    "difficulty": "hard",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility",
+      "temporal",
+      "policy"
+    ],
+    "title": "Compound: All failure modes active simultaneously",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Clark/Lake",
+        "station_id": "CTA-CLK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Roosevelt",
+        "station_id": "CTA-RSV"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "disabled": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-roosevelt",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Roosevelt station closed due to water main break. Red, Green, and Orange line trains skip this station. Use Cermak/Chinatown (Red Line south) or Adams/Wabash (Green/Orange Loop) as alternatives.",
+          "alternative": "Use Cermak/Chinatown (Red) or Adams/Wabash (Green/Orange)",
+          "eta_resolution": "6-8 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need step free access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-roosevelt",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Roosevelt station closed due to water main break. Red, Green, and Orange line trains skip this station. Use Cermak/Chinatown (Red Line south) or Adams/Wabash (Green/Orange Loop) as alternatives.",
+          "alternative": "Use Cermak/Chinatown (Red) or Adams/Wabash (Green/Orange)",
+          "eta_resolution": "6-8 hours"
+        }
+      ],
+      "framebook": "cta",
+      "accessibility_mode": true,
+      "temporal_context": {
+        "current_time": "2026-03-15T22:00:00",
+        "day_of_week": "Friday",
+        "notes": "Operating hours (Friday): 04:00-01:00. 24-hour lines: Red Line, Blue Line"
+      },
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Disabled riders ride free.",
+        "policy_id": "disabled_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "CTA-CLK",
+          "CTA-STL",
+          "CTA-WAB",
+          "CTA-AWB",
+          "CTA-RSV"
+        ],
+        "line_sequence": [
+          "orange"
+        ],
+        "transfers": 0,
+        "distance_miles": 1.4,
+        "estimated_minutes": 2.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "roosevelt",
+          "closed",
+          "water"
+        ]
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": []
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "service hours"
+        ]
+      },
+      "policy": {
+        "old_fare": 3.75,
+        "new_fare": 2.5,
+        "policy_id": "disabled_free",
+        "policy_must_mention": [
+          "disabled",
+          "free"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "temporal_accuracy": 10,
+      "policy_acknowledged": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  }
+]

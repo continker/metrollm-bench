@@ -1,0 +1,30 @@
+{
+  "system": "cta",
+  "model": "flat_with_exceptions",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "base_fare": 2.50,
+  "payment_methods": {
+    "ventra": {"fare_adjustment": 0.0},
+    "contactless": {"fare_adjustment": 0.50},
+    "disposable_ticket": {"fare_adjustment": 1.00}
+  },
+  "station_overrides": {
+    "CTA-ORD": {
+      "fare": 5.00,
+      "description": "O'Hare Blue Line station",
+      "ignores_payment_adjustment": true
+    }
+  },
+  "discounts": {
+    "children": {"fare": 0.00, "max_per_adult": 2, "qualifier": "under 7"},
+    "senior_65_plus": {"fare": 1.25},
+    "disabled": {"fare": 1.25}
+  },
+  "passes": {
+    "1_day": {"price": 5.00},
+    "3_day": {"price": 15.00},
+    "7_day": {"price": 20.00},
+    "30_day": {"price": 75.00}
+  }
+}

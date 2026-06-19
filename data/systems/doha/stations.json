@@ -1,0 +1,650 @@
+[
+  {
+    "id": "DOHA-AZZ",
+    "name": "Al Aziziyah",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-BID",
+    "name": "Al Bidda",
+    "lines": [
+      "green",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-MSH"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "DOHA-BNM",
+    "name": "Bin Mahmoud",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-MSH"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-COR",
+    "name": "Corniche",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-BID"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "DOHA-DAJ",
+    "name": "Al Doha Al Jadeda",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-MSH"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-DEC",
+    "name": "DECC",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_bay"
+  },
+  {
+    "id": "DOHA-EDC",
+    "name": "Education City",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "education_city"
+  },
+  {
+    "id": "DOHA-FRZ",
+    "name": "Free Zone",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south"
+  },
+  {
+    "id": "DOHA-HHO",
+    "name": "Hamad Hospital",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-HIA",
+    "name": "Hamad International Airport",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "airport"
+  },
+  {
+    "id": "DOHA-JOA",
+    "name": "Joaan",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-KAT",
+    "name": "Katara",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "DOHA-LEG",
+    "name": "Legtaifiya",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "DOHA-LUS",
+    "name": "Lusail QNB",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "lusail"
+  },
+  {
+    "id": "DOHA-MAN",
+    "name": "Al Mansoura",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-MSH"
+    ],
+    "zone": "east"
+  },
+  {
+    "id": "DOHA-MAQ",
+    "name": "Al Matar Al Qadeem",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south"
+  },
+  {
+    "id": "DOHA-MES",
+    "name": "Al Messila",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-MSH",
+    "name": "Msheireb",
+    "lines": [
+      "gold",
+      "green",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-BID"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "DOHA-NMU",
+    "name": "National Museum",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "DOHA-OQB",
+    "name": "Oqba Ibn Nafie",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south"
+  },
+  {
+    "id": "DOHA-QAS",
+    "name": "Al Qassar",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_bay"
+  },
+  {
+    "id": "DOHA-QNL",
+    "name": "Qatar National Library",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "education_city"
+  },
+  {
+    "id": "DOHA-QU",
+    "name": "Qatar University",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "DOHA-RAQ",
+    "name": "Al Rayyan Al Qadeem",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-RBA",
+    "name": "Ras Bu Abboud",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "DOHA-RBF",
+    "name": "Ras Bu Fontas",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south"
+  },
+  {
+    "id": "DOHA-RIF",
+    "name": "Al Riffa",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-SAD",
+    "name": "Al Sadd",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-SHA",
+    "name": "Al Shaqab",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "education_city"
+  },
+  {
+    "id": "DOHA-SPC",
+    "name": "Sport City",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-SUD",
+    "name": "Al Sudan",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-SWQ",
+    "name": "Souq Waqif",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-MSH"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "DOHA-UMG",
+    "name": "Umm Ghuwailina",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-WAB",
+    "name": "Al Waab",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west"
+  },
+  {
+    "id": "DOHA-WBQ",
+    "name": "West Bay Qatar Energy",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_bay"
+  },
+  {
+    "id": "DOHA-WHP",
+    "name": "The White Palace",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "DOHA-BID"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "DOHA-WKR",
+    "name": "Al Wakra",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south"
+  }
+]

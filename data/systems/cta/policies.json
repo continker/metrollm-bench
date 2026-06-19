@@ -1,0 +1,89 @@
+{
+  "system": "cta",
+  "policies": [
+    {
+      "policy_id": "cta-refund-001",
+      "category": "refunds",
+      "title": "Ventra Card Refund Policy",
+      "content": "Ventra Card transit value can be refunded by calling Ventra Customer Service at (877) 669-8368 or submitting a request at ventrachicago.com. A $5.00 processing fee applies. Refunds are issued to the original payment method within 10 business days. The Ventra Card itself is non-refundable.",
+      "synonyms": ["money back on my Ventra Card", "return my Ventra Card", "get a refund", "how do I get reimbursed"]
+    },
+    {
+      "policy_id": "cta-refund-002",
+      "category": "refunds",
+      "title": "Disposable Ticket and Pass Refund",
+      "content": "Single-ride disposable tickets ($3.50) are non-refundable once purchased. Unused CTA day passes (1-day $5.00, 3-day $15.00, 7-day $20.00) may be refunded within 14 days of purchase at the CTA Customer Service Center, 567 W. Lake Street, Chicago, IL 60661. Activated passes are non-refundable.",
+      "synonyms": ["return my day pass", "can I get money back for my pass", "unused pass refund", "cancel my CTA pass"]
+    },
+    {
+      "policy_id": "cta-lost-001",
+      "category": "lost_property",
+      "title": "Lost and Found Service",
+      "content": "Report lost items by calling CTA Lost & Found at (312) 664-7200 Monday through Friday, 8:00 AM to 4:30 PM. Items are held at the CTA Lost & Found office, 120 N. Racine Avenue, Chicago, for 30 days. A valid photo ID and description of the item are required. Items left on the L are collected at terminal stations.",
+      "synonyms": ["I left something on the L", "forgot my bag on the train", "lost my phone on CTA", "where is lost and found"]
+    },
+    {
+      "policy_id": "cta-lost-002",
+      "category": "lost_property",
+      "title": "Lost Ventra Card Replacement",
+      "content": "Report a lost or stolen Ventra Card immediately at ventrachicago.com or by calling (877) 669-8368 to freeze the balance. Registered Ventra Cards can have their transit value and any active pass transferred to a new card. A $5.00 replacement card fee applies. Unregistered cards cannot be recovered.",
+      "synonyms": ["lost my Ventra Card", "my card was stolen", "can I get a new Ventra Card", "replace my Ventra Card"]
+    },
+    {
+      "policy_id": "cta-access-001",
+      "category": "accessibility",
+      "title": "L Station Accessibility",
+      "content": "Not all CTA L stations are wheelchair accessible. Accessible stations are marked with the international wheelchair symbol on system maps and at station entrances. CTA operates free accessible shuttle bus service between inaccessible and nearby accessible stations. For trip planning assistance, call CTA Accessibility at (312) 681-4236.",
+      "synonyms": ["wheelchair access on the L", "which stations have elevators", "is this station accessible", "handicap accessible stations"]
+    },
+    {
+      "policy_id": "cta-access-002",
+      "category": "accessibility",
+      "title": "Reduced Fare Program",
+      "content": "Seniors aged 65 and older, persons with disabilities, and Medicare cardholders are eligible for the $1.25 Reduced Fare using a Ventra Reduced Fare Card. Apply in person at the CTA/Pace Reduced Fare Office, 567 W. Lake Street, Chicago, IL 60661, with a valid photo ID and proof of eligibility. RTA Ride Free permits are also accepted.",
+      "synonyms": ["senior discount", "disabled fare", "do old people get a discount", "reduced price for elderly"]
+    },
+    {
+      "policy_id": "cta-fare-001",
+      "category": "fare_policy",
+      "title": "Flat Fare and O'Hare Exception",
+      "content": "CTA L fares are $2.50 with a Ventra Card, $3.00 with contactless payment, and $3.50 with a disposable ticket. O'Hare Blue Line station charges a flat $5.00 regardless of payment method. Free transfers between CTA rail and bus are available within 2 hours of the initial tap using a Ventra Card.",
+      "synonyms": ["how much is a ride on the L", "what does CTA cost", "O'Hare airport fare", "do I pay again to transfer"]
+    },
+    {
+      "policy_id": "cta-fare-002",
+      "category": "fare_policy",
+      "title": "Children's Fare Policy",
+      "content": "Children under 7 ride free on CTA when accompanied by a paying adult, with a maximum of 2 free children per adult. Children aged 7-11 pay the full fare. CTA does not offer a separate youth fare card; families are encouraged to use a Ventra Card for fare capping benefits.",
+      "synonyms": ["do kids ride free", "how much for children on the L", "my kid needs a ticket", "children's ticket price"]
+    },
+    {
+      "policy_id": "cta-safety-001",
+      "category": "safety",
+      "title": "Emergency Procedures on the L",
+      "content": "In an emergency, use the yellow emergency intercom on L train cars to contact the operator, or press the blue emergency call point on station platforms. CTA Security can be reached 24/7 at (888) 968-7282. Text tips anonymously to CTATIP (282847). Do not exit trains on elevated tracks under any circumstances unless directed by CTA personnel.",
+      "synonyms": ["there is an emergency", "how do I call for help on the L", "emergency button", "I need CTA security"]
+    },
+    {
+      "policy_id": "cta-safety-002",
+      "category": "safety",
+      "title": "Extreme Weather and Polar Vortex Procedures",
+      "content": "During extreme cold (polar vortex) events, CTA may reduce service frequency on outdoor L segments while maintaining full service in the Loop subway. Heated waiting areas are available at major stations including Clark/Lake, Jackson, and Chicago. Service alerts are issued via the CTA app and @caborot on X when wind chill drops below -20F.",
+      "synonyms": ["is the L running in the cold", "does CTA run during polar vortex", "where can I stay warm at a station", "bad weather schedule"]
+    },
+    {
+      "policy_id": "cta-general-001",
+      "category": "general",
+      "title": "Operating Hours",
+      "content": "The Red and Blue L lines operate 24 hours a day, 7 days a week. All other L lines (Brown, Green, Orange, Pink, Purple, Yellow) operate approximately 4:00 AM to 1:00 AM. State/Lake station is permanently closed; use Clark/Lake as an alternative. Real-time train arrivals are available via the CTA Train Tracker at transitchicago.com.",
+      "synonyms": ["what time does the L close", "is the Red Line running all night", "when is the last Brown Line train", "24 hour service"]
+    },
+    {
+      "policy_id": "cta-general-002",
+      "category": "general",
+      "title": "Customer Service and Feedback",
+      "content": "Contact CTA Customer Service at (312) 681-4CTA (4282) Monday through Friday, 7:00 AM to 8:00 PM. Feedback can be submitted at transitchicago.com/feedback. CTA's main office is at 567 W. Lake Street in the Loop. Service advisories are pushed via the CTA app and at transitchicago.com/alerts.",
+      "synonyms": ["I want to make a complaint", "how do I contact CTA", "where do I give feedback", "report a problem with the L"]
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "station_names": {
+    "MARTA-NS": "North Springs",
+    "MARTA-SS": "Sandy Springs",
+    "MARTA-DW": "Dunwoody",
+    "MARTA-MC": "Medical Center",
+    "MARTA-BH": "Buckhead",
+    "MARTA-DO": "Doraville",
+    "MARTA-CH": "Chamblee",
+    "MARTA-BO": "Brookhaven/Oglethorpe",
+    "MARTA-LX": "Lenox",
+    "MARTA-LC": "Lindbergh Center",
+    "MARTA-AC": "Arts Center",
+    "MARTA-MT": "Midtown",
+    "MARTA-NA": "North Avenue",
+    "MARTA-CV": "Civic Center",
+    "MARTA-PC": "Peachtree Center",
+    "MARTA-FP": "Five Points",
+    "MARTA-GA": "Garnett",
+    "MARTA-WE": "West End",
+    "MARTA-OC": "Oakland City",
+    "MARTA-LF": "Lakewood/Ft McPherson",
+    "MARTA-EP": "East Point",
+    "MARTA-CP": "College Park",
+    "MARTA-AP": "Airport",
+    "MARTA-IC": "Indian Creek",
+    "MARTA-KN": "Kensington",
+    "MARTA-AV": "Avondale",
+    "MARTA-DC": "Decatur",
+    "MARTA-EL": "East Lake",
+    "MARTA-IR": "Inman Park/Reynoldstown",
+    "MARTA-KM": "King Memorial",
+    "MARTA-GS": "Georgia State",
+    "MARTA-OM": "OMNI/Dome/GWCC/Philips Arena/CNN Center",
+    "MARTA-VC": "Vine City",
+    "MARTA-AS": "Ashby",
+    "MARTA-BK": "Bankhead",
+    "MARTA-EC": "Edgewood/Candler Park"
+  },
+  "memorizable_pairs": [
+    [
+      "MARTA-AP",
+      "MARTA-FP"
+    ],
+    [
+      "MARTA-AP",
+      "MARTA-MT"
+    ],
+    [
+      "MARTA-BH",
+      "MARTA-AP"
+    ],
+    [
+      "MARTA-DC",
+      "MARTA-FP"
+    ],
+    [
+      "MARTA-NS",
+      "MARTA-AP"
+    ],
+    [
+      "MARTA-DO",
+      "MARTA-AP"
+    ],
+    [
+      "MARTA-LC",
+      "MARTA-FP"
+    ],
+    [
+      "MARTA-IC",
+      "MARTA-FP"
+    ],
+    [
+      "MARTA-BK",
+      "MARTA-FP"
+    ],
+    [
+      "MARTA-EC",
+      "MARTA-AP"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "MARTA-IC",
+        "MARTA-KN",
+        "MARTA-AV",
+        "MARTA-DC",
+        "MARTA-EL"
+      ],
+      [
+        "MARTA-NS",
+        "MARTA-SS",
+        "MARTA-DW",
+        "MARTA-MC"
+      ]
+    ],
+    [
+      [
+        "MARTA-IC",
+        "MARTA-KN",
+        "MARTA-AV",
+        "MARTA-DC",
+        "MARTA-EL"
+      ],
+      [
+        "MARTA-DO",
+        "MARTA-CH",
+        "MARTA-BO",
+        "MARTA-LX"
+      ]
+    ],
+    [
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ],
+      [
+        "MARTA-NS",
+        "MARTA-SS",
+        "MARTA-DW",
+        "MARTA-MC"
+      ]
+    ],
+    [
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ],
+      [
+        "MARTA-DO",
+        "MARTA-CH",
+        "MARTA-BO",
+        "MARTA-LX"
+      ]
+    ],
+    [
+      [
+        "MARTA-EC"
+      ],
+      [
+        "MARTA-NS",
+        "MARTA-SS",
+        "MARTA-DW",
+        "MARTA-MC"
+      ]
+    ],
+    [
+      [
+        "MARTA-EC"
+      ],
+      [
+        "MARTA-DO",
+        "MARTA-CH",
+        "MARTA-BO",
+        "MARTA-LX"
+      ]
+    ],
+    [
+      [
+        "MARTA-IC",
+        "MARTA-KN",
+        "MARTA-AV",
+        "MARTA-DC",
+        "MARTA-EL"
+      ],
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ]
+    ],
+    [
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ],
+      [
+        "MARTA-IC",
+        "MARTA-KN",
+        "MARTA-AV",
+        "MARTA-DC",
+        "MARTA-EL"
+      ]
+    ],
+    [
+      [
+        "MARTA-NS",
+        "MARTA-SS",
+        "MARTA-DW",
+        "MARTA-MC"
+      ],
+      [
+        "MARTA-IC",
+        "MARTA-KN",
+        "MARTA-AV",
+        "MARTA-DC",
+        "MARTA-EL"
+      ]
+    ],
+    [
+      [
+        "MARTA-DO",
+        "MARTA-CH",
+        "MARTA-BO",
+        "MARTA-LX"
+      ],
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ]
+    ],
+    [
+      [
+        "MARTA-EC"
+      ],
+      [
+        "MARTA-BK",
+        "MARTA-AS",
+        "MARTA-VC",
+        "MARTA-OM"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "MARTA-FP",
+    "dest": "MARTA-AP",
+    "payment": "breeze_card",
+    "compositions": [
+      [
+        "1 adult",
+        {
+          "adults": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "2 adults + 1 child",
+        {
+          "adults": 2,
+          "children": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 adult + 3 children",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "2 seniors",
+        {
+          "seniors": 2
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 adult + 1 senior + 1 disabled",
+        {
+          "adults": 1,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 adult + 1 child + 1 senior",
+        {
+          "adults": 1,
+          "children": 1,
+          "seniors": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "3 adults",
+        {
+          "adults": 3
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 disabled",
+        {
+          "disabled": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "2 adults + 3 children",
+        {
+          "adults": 2,
+          "children": 3
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "2 adults + 2 children + 1 senior + 1 disabled",
+        {
+          "adults": 2,
+          "children": 2,
+          "seniors": 1,
+          "disabled": 1
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 adult + 2 children (max free hit)",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 adult + 4 children (2 free 2 pay)",
+        {
+          "adults": 1,
+          "children": 4
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "breeze_card"
+      ],
+      [
+        "1 senior + 1 disabled + 2 children",
+        {
+          "seniors": 1,
+          "disabled": 1,
+          "children": 2
+        },
+        "single",
+        "breeze_card"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-five-points",
+      "MARTA-AP",
+      "MARTA-IC"
+    ],
+    [
+      "sc-midtown",
+      "MARTA-BH",
+      "MARTA-FP"
+    ],
+    [
+      "sc-airport",
+      "MARTA-FP",
+      "MARTA-AP"
+    ],
+    [
+      "sc-lindbergh",
+      "MARTA-NS",
+      "MARTA-AP"
+    ],
+    [
+      "sc-inman-park",
+      "MARTA-EC",
+      "MARTA-FP"
+    ],
+    [
+      "pm-red-south",
+      "MARTA-FP",
+      "MARTA-AP"
+    ],
+    [
+      "pm-blue-east",
+      "MARTA-IC",
+      "MARTA-FP"
+    ],
+    [
+      "pm-gold-north",
+      "MARTA-DO",
+      "MARTA-FP"
+    ],
+    [
+      "pm-red-north",
+      "MARTA-NS",
+      "MARTA-FP"
+    ],
+    [
+      "pm-blue-west",
+      "MARTA-FP",
+      "MARTA-BK"
+    ],
+    [
+      "hw-approaching",
+      "MARTA-AP",
+      "MARTA-NS"
+    ],
+    [
+      "hw-cat1",
+      "MARTA-EC",
+      "MARTA-FP"
+    ],
+    [
+      "hw-cat2",
+      "MARTA-BH",
+      "MARTA-IC"
+    ],
+    [
+      "hw-direct-hit",
+      "MARTA-AP",
+      "MARTA-FP"
+    ],
+    [
+      "hw-post-storm",
+      "MARTA-DO",
+      "MARTA-FP"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "MARTA-BH",
+        "MARTA-LC",
+        "wheelchair"
+      ],
+      [
+        "MARTA-CH",
+        "MARTA-LC",
+        "step_free"
+      ],
+      [
+        "MARTA-AP",
+        "MARTA-CP",
+        "elevator_required"
+      ],
+      [
+        "MARTA-DO",
+        "MARTA-AC",
+        "wheelchair"
+      ],
+      [
+        "MARTA-OC",
+        "MARTA-AP",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "MARTA-NS",
+        "MARTA-NA",
+        "wheelchair"
+      ],
+      [
+        "MARTA-EL",
+        "MARTA-AS",
+        "step_free"
+      ],
+      [
+        "MARTA-DC",
+        "MARTA-BK",
+        "elevator_required"
+      ],
+      [
+        "MARTA-BH",
+        "MARTA-NA",
+        "wheelchair"
+      ],
+      [
+        "MARTA-KN",
+        "MARTA-OM",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "MARTA-AP",
+        "MARTA-FP",
+        "wheelchair"
+      ],
+      [
+        "MARTA-NS",
+        "MARTA-MT",
+        "step_free"
+      ],
+      [
+        "MARTA-IC",
+        "MARTA-DC",
+        "elevator_required"
+      ],
+      [
+        "MARTA-BH",
+        "MARTA-WE",
+        "wheelchair"
+      ],
+      [
+        "MARTA-AC",
+        "MARTA-FP",
+        "step_free"
+      ]
+    ],
+    "with_disruption": [
+      {
+        "origin": "MARTA-AP",
+        "dest": "MARTA-IC",
+        "requirement": "wheelchair",
+        "disruption": {
+          "id": "fp-elevator-out",
+          "type": "elevator_outage",
+          "severity": "critical",
+          "station_id": "MARTA-FP",
+          "message": "Five Points elevator is out of service. Wheelchair users cannot transfer between Red/Gold and Blue/Green lines. No accessible alternative available. Staff assistance required.",
+          "advisory_must_mention": [
+            "Five Points",
+            "elevator",
+            "staff"
+          ]
+        },
+        "expected_outcome": "service_unavailable",
+        "expected_kiosk_action": "refer_to_staff",
+        "expected_reason_code": "no_accessible_alternative"
+      }
+    ]
+  },
+  "tolerances": {
+    "fare": 0.5,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "MARTA",
+  "closed_station_name": "Nonexistent Station",
+  "main_line": "red"
+}

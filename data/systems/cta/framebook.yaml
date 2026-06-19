@@ -1,0 +1,49 @@
+framebook:
+  org_name: "CTA"
+  full_name: "Chicago Transit Authority"
+  primary_language: en
+  secondary_languages: ["es", "pl", "zh"]
+  currency_symbol: "$"
+  currency_code: "USD"
+  fare_display_format: "$X.XX"
+  terminology:
+    smartcard: "Ventra Card"
+    contactless: "Contactless payment"
+    reduced_fare: "Reduced Fare"
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: info
+    polar_vortex: critical
+  accessibility_labels:
+    step_free: "Wheelchair Accessible"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+  operating_hours:
+    default: "04:00-01:00"
+    weekday: "04:00-01:00"
+    saturday: "04:00-01:00"
+    sunday: "04:00-01:00"
+    twenty_four_hour_lines: ["Red Line", "Blue Line"]
+    late_night_headway_min: 15
+    notes: "Red and Blue lines run 24 hours with 15-minute headways overnight. Elevated lines (Brown, Green, Orange, Pink, Purple, Yellow) stop approximately 01:00 AM and resume at 04:00 AM."
+  cultural_notes:
+    - "CTA elevated lines are called 'the L' (or 'the El'). The downtown rectangle is 'the Loop'."
+    - "Red and Blue lines run 24 hours. Elevated lines stop approximately 1:00 AM."
+    - "State/Lake station is permanently closed. Use Clark/Lake instead."
+    - "O'Hare Blue Line station has a flat $5.00 fare regardless of payment method."
+    - "Bikes allowed on all trains; avoid rush hour doors."
+    - "Quiet cars are not enforced on CTA."

@@ -1,0 +1,45 @@
+framebook:
+  org_name: "BART"
+  full_name: "Bay Area Rapid Transit"
+  primary_language: en
+  secondary_languages: ["es", "zh"]
+  currency_symbol: "$"
+  currency_code: "USD"
+  fare_display_format: "$X.XX"
+  terminology:
+    smartcard: "Clipper Card"
+    contactless: "Tap and Ride"
+    reduced_fare: "Clipper Discount"
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: info
+    earthquake_warning: critical
+  accessibility_labels:
+    step_free: "Wheelchair Accessible"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+  operating_hours:
+    default: "05:00-00:00"
+    weekday: "05:00-00:00"
+    saturday: "06:00-00:00"
+    sunday: "08:00-00:00"
+    late_night_headway_min: 20
+    notes: "Last trains depart terminal stations approximately 30 minutes before closing. Weekend service starts later."
+  cultural_notes:
+    - "Bikes are allowed on BART except during peak commute hours (weekdays 7-9 AM and 4:30-6:30 PM) in the first three cars."
+    - "Quiet cars are available on the first and last car of each train."
+    - "No eating or drinking is allowed on BART trains or in paid areas of stations."

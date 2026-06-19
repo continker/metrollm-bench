@@ -1,0 +1,48 @@
+- id: richmond_to_montgomery_embarcadero_skip
+  title: Richmond → Montgomery St, Embarcadero closed
+  oneliner: Embarcadero shut for police activity — re-plan to skip it, ticket still sells
+  origin_id: BART-RICH
+  dest_id: BART-MONT
+  event_ids: [sc-embarcadero]
+- id: embarcadero_to_daly_giants_crowd
+  title: Embarcadero → Daly City, Giants crowd advisory
+  oneliner: Heavy ballgame crowds at Embarcadero — sell ticket, flag extra travel time
+  origin_id: BART-EMBR
+  dest_id: BART-DALY
+  event_ids: [eq-crowd-giants]
+- id: embarcadero_to_civic_peninsula_pm
+  title: Embarcadero → Civic Center, Peninsula rail work
+  oneliner: Weekend Daly City–Millbrae maintenance elsewhere — downtown ride proceeds with a delay note
+  origin_id: BART-EMBR
+  dest_id: BART-CIVC
+  event_ids: [pm-peninsula]
+- id: powell_to_dublin_transfer
+  title: Powell St → Dublin/Pleasanton
+  oneliner: Normal service — Blue Line ride to the East Bay branch
+  origin_id: BART-POWL
+  dest_id: BART-DUBL
+  event_ids: []
+- id: embarcadero_to_sfo
+  title: Embarcadero → SFO Airport
+  oneliner: Normal service — direct ride to San Francisco Intl
+  origin_id: BART-EMBR
+  dest_id: BART-SFO
+  event_ids: []
+- id: dublin_to_embarcadero_branch_pm
+  title: Dublin/Pleasanton → Embarcadero, Blue Line maintenance
+  oneliner: Dublin branch single-tracked out — only path closed, advise shuttle/staff
+  origin_id: BART-DUBL
+  dest_id: BART-EMBR
+  event_ids: [pm-dublin-branch]
+- id: macarthur_to_embarcadero_closed
+  title: MacArthur → Embarcadero, MacArthur closed
+  oneliner: Origin station shut for track repair — cannot depart, advise alternative/staff
+  origin_id: BART-MCAR
+  dest_id: BART-EMBR
+  event_ids: [sc-macarthur]
+- id: powell_to_macarthur_earthquake
+  title: Powell St → MacArthur, earthquake service pause
+  oneliner: Transbay Tube suspended for inspection — no cross-bay path, decline + advise
+  origin_id: BART-POWL
+  dest_id: BART-MCAR
+  event_ids: [eq-service-pause]

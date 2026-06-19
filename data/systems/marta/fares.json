@@ -1,0 +1,23 @@
+{
+  "system": "marta",
+  "model": "flat",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "base_fare": 2.50,
+  "payment_methods": {
+    "breeze_card": {"fare": 2.50, "transfers": "free_within_3h"},
+    "contactless": {"fare": 2.50, "transfers": "free_within_3h"}
+  },
+  "discounts": {
+    "children": {"fare": 0.00, "max_per_adult": 2, "qualifier": "under 5"},
+    "senior_65_plus": {"fare": 1.25},
+    "disabled": {"fare": 1.25}
+  },
+  "passes": {
+    "1_day": {"price": 9.00},
+    "2_day": {"price": 14.00},
+    "3_day": {"price": 16.00},
+    "7_day": {"price": 23.75},
+    "30_day": {"price": 95.00}
+  }
+}

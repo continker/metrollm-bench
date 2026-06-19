@@ -1,0 +1,232 @@
+{
+  "lines": [
+    {
+      "id": "red",
+      "name": "Red Line (Al Wakra Line)",
+      "color": "#CC0000",
+      "stations": [
+        "Lusail QNB",
+        "Qatar University",
+        "Legtaifiya",
+        "Katara",
+        "Al Qassar",
+        "DECC",
+        "West Bay Qatar Energy",
+        "Corniche",
+        "Al Bidda",
+        "Msheireb",
+        "Al Doha Al Jadeda",
+        "Umm Ghuwailina",
+        "Al Matar Al Qadeem",
+        "Oqba Ibn Nafie",
+        "Free Zone",
+        "Ras Bu Fontas",
+        "Al Wakra"
+      ],
+      "branches": [
+        {
+          "name": "Airport Branch",
+          "diverges_at": "Oqba Ibn Nafie",
+          "stations": [
+            "Oqba Ibn Nafie",
+            "Hamad International Airport"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Line (Education Line)",
+      "color": "#00A651",
+      "stations": [
+        "Al Mansoura",
+        "Msheireb",
+        "Al Bidda",
+        "The White Palace",
+        "Hamad Hospital",
+        "Al Messila",
+        "Al Rayyan Al Qadeem",
+        "Al Shaqab",
+        "Qatar National Library",
+        "Education City",
+        "Al Riffa"
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold Line (Historic Line)",
+      "color": "#FFD700",
+      "stations": [
+        "Ras Bu Abboud",
+        "National Museum",
+        "Souq Waqif",
+        "Msheireb",
+        "Bin Mahmoud",
+        "Al Sadd",
+        "Joaan",
+        "Al Sudan",
+        "Al Waab",
+        "Sport City",
+        "Al Aziziyah"
+      ]
+    }
+  ],
+  "stations": {
+    "Lusail": {
+      "lat": 25.41484,
+      "lon": 51.48817
+    },
+    "Qatar University": {
+      "lat": 25.381863,
+      "lon": 51.493016
+    },
+    "Legtaifiya": {
+      "lat": 25.370688,
+      "lon": 51.524938
+    },
+    "Katara": {
+      "lat": 25.3603,
+      "lon": 51.5264
+    },
+    "Al Qassar": {
+      "lat": 25.350062,
+      "lon": 51.524062
+    },
+    "DECC": {
+      "lat": 25.323062,
+      "lon": 51.527563
+    },
+    "West Bay": {
+      "lat": 25.315062,
+      "lon": 51.519813
+    },
+    "Corniche": {
+      "lat": 25.3078,
+      "lon": 51.5155
+    },
+    "Al Bidda": {
+      "lat": 25.29042,
+      "lon": 51.52025
+    },
+    "Msheireb": {
+      "lat": 25.28278,
+      "lon": 51.52571
+    },
+    "Al Doha Al Jadeda": {
+      "lat": 25.27522,
+      "lon": 51.5398
+    },
+    "Umm Ghuwailina": {
+      "lat": 25.267313,
+      "lon": 51.550687
+    },
+    "Al Matar Al Qadeem": {
+      "lat": 25.27522,
+      "lon": 51.5398
+    },
+    "Oqba Ibn Nafie": {
+      "lat": 25.249063,
+      "lon": 51.567062
+    },
+    "Hamad International Airport": {
+      "lat": 25.2567,
+      "lon": 51.6149
+    },
+    "Free Zone": {
+      "lat": 25.22829,
+      "lon": 51.57788
+    },
+    "Ras Bu Fontas": {
+      "lat": 25.21143,
+      "lon": 51.58638
+    },
+    "Al Wakra": {
+      "lat": 25.19349,
+      "lon": 51.59601
+    },
+    "Al Riffa": {
+      "lat": 25.32412,
+      "lon": 51.34806
+    },
+    "Education City": {
+      "lat": 25.31674,
+      "lon": 51.42563
+    },
+    "Qatar National Library": {
+      "lat": 25.31923,
+      "lon": 51.44173
+    },
+    "Al Shaqab": {
+      "lat": 25.30931,
+      "lon": 51.45334
+    },
+    "Al Rayyan Al Qadeem": {
+      "lat": 25.30152,
+      "lon": 51.46112
+    },
+    "Al Messila": {
+      "lat": 25.29331,
+      "lon": 51.4837
+    },
+    "Hamad Hospital": {
+      "lat": 25.29053,
+      "lon": 51.50055
+    },
+    "The White Palace": {
+      "lat": 25.29268,
+      "lon": 51.50649
+    },
+    "Al Mansoura": {
+      "lat": 25.27033,
+      "lon": 51.53528
+    },
+    "Al Aziziyah": {
+      "lat": 25.257688,
+      "lon": 51.444063
+    },
+    "Sport City": {
+      "lat": 25.259687,
+      "lon": 51.453312
+    },
+    "Al Waab": {
+      "lat": 25.2675,
+      "lon": 51.4689
+    },
+    "Al Sudan": {
+      "lat": 25.27234,
+      "lon": 51.48446
+    },
+    "Joaan": {
+      "lat": 25.28077,
+      "lon": 51.49657
+    },
+    "Al Sadd": {
+      "lat": 25.28246,
+      "lon": 51.50472
+    },
+    "Bin Mahmoud": {
+      "lat": 25.28052,
+      "lon": 51.51436
+    },
+    "Souq Waqif": {
+      "lat": 25.28647,
+      "lon": 51.5363
+    },
+    "National Museum": {
+      "lat": 25.28467,
+      "lon": 51.54928
+    },
+    "Ras Bu Abboud": {
+      "lat": 25.27912,
+      "lon": 51.57069
+    },
+    "Lusail QNB": {
+      "lat": 25.41484,
+      "lon": 51.48817
+    },
+    "West Bay Qatar Energy": {
+      "lat": 25.315062,
+      "lon": 51.519813
+    }
+  }
+}

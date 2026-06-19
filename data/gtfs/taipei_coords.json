@@ -1,0 +1,430 @@
+{
+  "Dingpu": {
+    "lat": 24.9597,
+    "lon": 121.4195
+  },
+  "Yongning": {
+    "lat": 24.966597,
+    "lon": 121.436121
+  },
+  "Tucheng": {
+    "lat": 24.97222,
+    "lon": 121.44389
+  },
+  "Haishan": {
+    "lat": 24.985229,
+    "lon": 121.448603
+  },
+  "Far Eastern Hospital": {
+    "lat": 24.9986,
+    "lon": 121.4526
+  },
+  "Fuzhong": {
+    "lat": 25.0084,
+    "lon": 121.4594
+  },
+  "Banqiao": {
+    "lat": 25.0144,
+    "lon": 121.4635
+  },
+  "Xinpu": {
+    "lat": 25.0231,
+    "lon": 121.4681
+  },
+  "Jiangzicui": {
+    "lat": 25.03,
+    "lon": 121.4724
+  },
+  "Longshan Temple": {
+    "lat": 25.0352,
+    "lon": 121.5004
+  },
+  "Ximen": {
+    "lat": 25.0422,
+    "lon": 121.5083
+  },
+  "Taipei Main Station": {
+    "lat": 25.0475,
+    "lon": 121.517
+  },
+  "Shandao Temple": {
+    "lat": 25.044716,
+    "lon": 121.523651
+  },
+  "Zhongxiao Xinsheng": {
+    "lat": 25.0418,
+    "lon": 121.5329
+  },
+  "Zhongxiao Fuxing": {
+    "lat": 25.0416,
+    "lon": 121.5438
+  },
+  "Zhongxiao Dunhua": {
+    "lat": 25.0415,
+    "lon": 121.5508
+  },
+  "Sun Yat-Sen Memorial Hall": {
+    "lat": 25.0414,
+    "lon": 121.5575
+  },
+  "City Hall": {
+    "lat": 25.0411,
+    "lon": 121.5663
+  },
+  "Yongchun": {
+    "lat": 25.04087,
+    "lon": 121.575607
+  },
+  "Houshanpi": {
+    "lat": 25.044864,
+    "lon": 121.582342
+  },
+  "Kunyang": {
+    "lat": 25.050492,
+    "lon": 121.593276
+  },
+  "Nangang": {
+    "lat": 25.0529,
+    "lon": 121.607
+  },
+  "Nangang Exhibition Center": {
+    "lat": 25.0554,
+    "lon": 121.6179
+  },
+  "Tamsui": {
+    "lat": 25.1681,
+    "lon": 121.4455
+  },
+  "Hongshulin": {
+    "lat": 25.154103,
+    "lon": 121.459002
+  },
+  "Zhuwei": {
+    "lat": 25.137,
+    "lon": 121.459501
+  },
+  "Guandu": {
+    "lat": 25.125805,
+    "lon": 121.467338
+  },
+  "Zhongyi": {
+    "lat": 25.131221,
+    "lon": 121.473422
+  },
+  "Fuxinggang": {
+    "lat": 25.137515,
+    "lon": 121.485448
+  },
+  "Beitou": {
+    "lat": 25.131901,
+    "lon": 121.498597
+  },
+  "Xinbeitou": {
+    "lat": 25.136956,
+    "lon": 121.502368
+  },
+  "Qiyan": {
+    "lat": 25.125759,
+    "lon": 121.501157
+  },
+  "Qilian": {
+    "lat": 25.120931,
+    "lon": 121.506255
+  },
+  "Shipai": {
+    "lat": 25.1144,
+    "lon": 121.5156
+  },
+  "Mingde": {
+    "lat": 25.109811,
+    "lon": 121.518778
+  },
+  "Zhishan": {
+    "lat": 25.1031,
+    "lon": 121.5225
+  },
+  "Shilin": {
+    "lat": 25.0934,
+    "lon": 121.5262
+  },
+  "Jiantan": {
+    "lat": 25.0845,
+    "lon": 121.5251
+  },
+  "Yuanshan": {
+    "lat": 25.0697,
+    "lon": 121.5202
+  },
+  "Minquan West Road": {
+    "lat": 25.0629,
+    "lon": 121.5197
+  },
+  "Shuanglian": {
+    "lat": 25.0578,
+    "lon": 121.5207
+  },
+  "Zhongshan": {
+    "lat": 25.0526,
+    "lon": 121.5204
+  },
+  "NTU Hospital": {
+    "lat": 25.0421,
+    "lon": 121.5163
+  },
+  "CKS Memorial Hall": {
+    "lat": 25.0327,
+    "lon": 121.5183
+  },
+  "Dongmen": {
+    "lat": 25.0339,
+    "lon": 121.5285
+  },
+  "Daan Park": {
+    "lat": 25.0331,
+    "lon": 121.5353
+  },
+  "Daan": {
+    "lat": 25.033,
+    "lon": 121.5436
+  },
+  "Xinyi Anhe": {
+    "lat": 25.0332,
+    "lon": 121.5516
+  },
+  "Taipei 101/World Trade Center": {
+    "lat": 25.033,
+    "lon": 121.5628
+  },
+  "Xiangshan": {
+    "lat": 25.0327,
+    "lon": 121.5689
+  },
+  "Songshan": {
+    "lat": 25.0493,
+    "lon": 121.578
+  },
+  "Nanjing Sanmin": {
+    "lat": 25.0514,
+    "lon": 121.5639
+  },
+  "Taipei Arena": {
+    "lat": 25.0517,
+    "lon": 121.5519
+  },
+  "Nanjing Fuxing": {
+    "lat": 25.0519,
+    "lon": 121.544
+  },
+  "Songjiang Nanjing": {
+    "lat": 25.0521,
+    "lon": 121.533
+  },
+  "Beimen": {
+    "lat": 25.049444,
+    "lon": 121.510306
+  },
+  "Xiaonanmen": {
+    "lat": 25.035637,
+    "lon": 121.510787
+  },
+  "Guting": {
+    "lat": 25.0266,
+    "lon": 121.5228
+  },
+  "Taipower Building": {
+    "lat": 25.020522,
+    "lon": 121.528325
+  },
+  "Gongguan": {
+    "lat": 25.0148,
+    "lon": 121.5342
+  },
+  "Wanlong": {
+    "lat": 25.001884,
+    "lon": 121.539001
+  },
+  "Jingmei": {
+    "lat": 24.992661,
+    "lon": 121.540622
+  },
+  "Dapinglin": {
+    "lat": 24.982939,
+    "lon": 121.541362
+  },
+  "Qizhang": {
+    "lat": 24.975073,
+    "lon": 121.543296
+  },
+  "Xindian District Office": {
+    "lat": 24.967842,
+    "lon": 121.541429
+  },
+  "Xindian": {
+    "lat": 24.95797,
+    "lon": 121.537711
+  },
+  "Xiaobitan": {
+    "lat": 24.973065,
+    "lon": 121.529987
+  },
+  "Luzhou": {
+    "lat": 25.091528,
+    "lon": 121.464452
+  },
+  "Sanmin Senior High School": {
+    "lat": 25.085385,
+    "lon": 121.473427
+  },
+  "St. Ignatius High School": {
+    "lat": 25.080463,
+    "lon": 121.4801
+  },
+  "Sanchong Elementary School": {
+    "lat": 25.070002,
+    "lon": 121.497384
+  },
+  "Daqiaotou": {
+    "lat": 25.063277,
+    "lon": 121.512984
+  },
+  "Zhongshan Elementary School": {
+    "lat": 25.062689,
+    "lon": 121.526572
+  },
+  "Xingtian Temple": {
+    "lat": 25.0597,
+    "lon": 121.5332
+  },
+  "Dingxi": {
+    "lat": 25.0135,
+    "lon": 121.5154
+  },
+  "Yongan Market": {
+    "lat": 25.0023,
+    "lon": 121.511
+  },
+  "Jingan": {
+    "lat": 24.9939,
+    "lon": 121.5046
+  },
+  "Nanshijiao": {
+    "lat": 24.9899,
+    "lon": 121.509
+  },
+  "Taipei Bridge": {
+    "lat": 25.0628,
+    "lon": 121.4996
+  },
+  "Cailiao": {
+    "lat": 25.06,
+    "lon": 121.4917
+  },
+  "Sanchong": {
+    "lat": 25.0558,
+    "lon": 121.4847
+  },
+  "Xianse Temple": {
+    "lat": 25.0464,
+    "lon": 121.4717
+  },
+  "Touqianzhuang": {
+    "lat": 25.0392,
+    "lon": 121.4606
+  },
+  "Xinzhuang": {
+    "lat": 25.0361,
+    "lon": 121.4523
+  },
+  "Fu Jen University": {
+    "lat": 25.0328,
+    "lon": 121.4359
+  },
+  "Danfeng": {
+    "lat": 25.0289,
+    "lon": 121.4227
+  },
+  "Huilong": {
+    "lat": 25.022086,
+    "lon": 121.411898
+  },
+  "Taipei Zoo": {
+    "lat": 24.998447,
+    "lon": 121.579519
+  },
+  "Muzha": {
+    "lat": 24.99823,
+    "lon": 121.573125
+  },
+  "Wanfang Community": {
+    "lat": 24.998639,
+    "lon": 121.56801
+  },
+  "Wanfang Hospital": {
+    "lat": 24.99938,
+    "lon": 121.55811
+  },
+  "Xinhai": {
+    "lat": 25.005457,
+    "lon": 121.557069
+  },
+  "Linguang": {
+    "lat": 25.018328,
+    "lon": 121.55878
+  },
+  "Liuzhangli": {
+    "lat": 25.023998,
+    "lon": 121.55296
+  },
+  "Technology Building": {
+    "lat": 25.02614,
+    "lon": 121.5434
+  },
+  "Zhongshan Junior High School": {
+    "lat": 25.060784,
+    "lon": 121.544189
+  },
+  "Songshan Airport": {
+    "lat": 25.063144,
+    "lon": 121.551664
+  },
+  "Dazhi": {
+    "lat": 25.079596,
+    "lon": 121.546903
+  },
+  "Jiannan Road": {
+    "lat": 25.08486,
+    "lon": 121.555567
+  },
+  "Xihu": {
+    "lat": 25.082074,
+    "lon": 121.566963
+  },
+  "Gangqian": {
+    "lat": 25.080088,
+    "lon": 121.575124
+  },
+  "Wende": {
+    "lat": 25.078734,
+    "lon": 121.584754
+  },
+  "Neihu": {
+    "lat": 25.083772,
+    "lon": 121.594644
+  },
+  "Dahu Park": {
+    "lat": 25.083527,
+    "lon": 121.60242
+  },
+  "Huzhou": {
+    "lat": 25.072816,
+    "lon": 121.607374
+  },
+  "Donghu": {
+    "lat": 25.067262,
+    "lon": 121.611488
+  },
+  "Nangang Software Park": {
+    "lat": 25.059934,
+    "lon": 121.615874
+  }
+}

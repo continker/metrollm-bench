@@ -1,0 +1,925 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "from": "TRTC-TAM",
+      "to": "TRTC-HSL",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-HSL",
+      "to": "TRTC-ZHU",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZHU",
+      "to": "TRTC-GUA",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-GUA",
+      "to": "TRTC-ZHO",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZHO",
+      "to": "TRTC-FUX",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-FUX",
+      "to": "TRTC-BTO",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-BTO",
+      "to": "TRTC-QIY",
+      "distance_miles": 0.45,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-QIY",
+      "to": "TRTC-QIL",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-QIL",
+      "to": "TRTC-SHI",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SHI",
+      "to": "TRTC-MIN",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-MIN",
+      "to": "TRTC-ZHI",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZHI",
+      "to": "TRTC-SHL",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SHL",
+      "to": "TRTC-JNT",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-JNT",
+      "to": "TRTC-YUA",
+      "distance_miles": 1.07,
+      "travel_time_min": 2.1,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-YUA",
+      "to": "TRTC-MWR",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-MWR",
+      "to": "TRTC-SHU",
+      "distance_miles": 0.36,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SHU",
+      "to": "TRTC-ZSN",
+      "distance_miles": 0.36,
+      "travel_time_min": 0.7,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZSN",
+      "to": "TRTC-TPM",
+      "distance_miles": 0.41,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TPM",
+      "to": "TRTC-NTH",
+      "distance_miles": 0.38,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NTH",
+      "to": "TRTC-CKS",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-CKS",
+      "to": "TRTC-DGM",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DGM",
+      "to": "TRTC-DAP",
+      "distance_miles": 0.43,
+      "travel_time_min": 0.9,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAP",
+      "to": "TRTC-DAA",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAA",
+      "to": "TRTC-XIA",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIA",
+      "to": "TRTC-T101",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-T101",
+      "to": "TRTC-XSH",
+      "distance_miles": 0.38,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-BTO",
+      "to": "TRTC-XIN",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "red",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DIN",
+      "to": "TRTC-YNG",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-YNG",
+      "to": "TRTC-TUC",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TUC",
+      "to": "TRTC-HAI",
+      "distance_miles": 0.95,
+      "travel_time_min": 1.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-HAI",
+      "to": "TRTC-FEH",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-FEH",
+      "to": "TRTC-FUZ",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-FUZ",
+      "to": "TRTC-BQO",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-BQO",
+      "to": "TRTC-XPU",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XPU",
+      "to": "TRTC-JIA",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-JIA",
+      "to": "TRTC-LOT",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-LOT",
+      "to": "TRTC-XMN",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XMN",
+      "to": "TRTC-TPM",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TPM",
+      "to": "TRTC-SHT",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SHT",
+      "to": "TRTC-ZXS",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZXS",
+      "to": "TRTC-ZXF",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZXF",
+      "to": "TRTC-ZXD",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZXD",
+      "to": "TRTC-SYS",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SYS",
+      "to": "TRTC-CTH",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-CTH",
+      "to": "TRTC-YCH",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-YCH",
+      "to": "TRTC-HSP",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-HSP",
+      "to": "TRTC-KUN",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-KUN",
+      "to": "TRTC-NKG",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NKG",
+      "to": "TRTC-NEC",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "blue",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SSN",
+      "to": "TRTC-NAS",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NAS",
+      "to": "TRTC-TAA",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TAA",
+      "to": "TRTC-NJF",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NJF",
+      "to": "TRTC-SJN",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SJN",
+      "to": "TRTC-ZSN",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZSN",
+      "to": "TRTC-BEI",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-BEI",
+      "to": "TRTC-XMN",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XMN",
+      "to": "TRTC-XIA2",
+      "distance_miles": 0.48,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIA2",
+      "to": "TRTC-CKS",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-CKS",
+      "to": "TRTC-GUT",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-GUT",
+      "to": "TRTC-TAB",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TAB",
+      "to": "TRTC-GGN",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-GGN",
+      "to": "TRTC-WLG",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-WLG",
+      "to": "TRTC-JME",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-JME",
+      "to": "TRTC-DPL",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DPL",
+      "to": "TRTC-QZH",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-QZH",
+      "to": "TRTC-XDO",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XDO",
+      "to": "TRTC-XDN",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-QZH",
+      "to": "TRTC-XIA3",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "green",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-LUZ",
+      "to": "TRTC-SSHS",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SSHS",
+      "to": "TRTC-SIHS",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SIHS",
+      "to": "TRTC-SES",
+      "distance_miles": 1.3,
+      "travel_time_min": 2.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SES",
+      "to": "TRTC-DAQ",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAQ",
+      "to": "TRTC-MWR",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-MWR",
+      "to": "TRTC-ZES",
+      "distance_miles": 0.43,
+      "travel_time_min": 0.9,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZES",
+      "to": "TRTC-XIT",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIT",
+      "to": "TRTC-SJN",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SJN",
+      "to": "TRTC-ZXS",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZXS",
+      "to": "TRTC-DGM",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DGM",
+      "to": "TRTC-GUT",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-GUT",
+      "to": "TRTC-DXI",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DXI",
+      "to": "TRTC-YOM",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-YOM",
+      "to": "TRTC-JIN",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-JIN",
+      "to": "TRTC-NSJ",
+      "distance_miles": 0.39,
+      "travel_time_min": 0.8,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAQ",
+      "to": "TRTC-TAB2",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TAB2",
+      "to": "TRTC-CAI",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-CAI",
+      "to": "TRTC-SCH",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SCH",
+      "to": "TRTC-XIT2",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIT2",
+      "to": "TRTC-TOU",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TOU",
+      "to": "TRTC-XZH",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XZH",
+      "to": "TRTC-FJU",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-FJU",
+      "to": "TRTC-DAN",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAN",
+      "to": "TRTC-HUI",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "orange",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TPZ",
+      "to": "TRTC-MZH",
+      "distance_miles": 0.4,
+      "travel_time_min": 0.8,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-MZH",
+      "to": "TRTC-WFC",
+      "distance_miles": 0.32,
+      "travel_time_min": 0.6,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-WFC",
+      "to": "TRTC-WFH",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-WFH",
+      "to": "TRTC-XIN2",
+      "distance_miles": 0.42,
+      "travel_time_min": 0.8,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIN2",
+      "to": "TRTC-LIN",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-LIN",
+      "to": "TRTC-LZL",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-LZL",
+      "to": "TRTC-TEB",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-TEB",
+      "to": "TRTC-DAA",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAA",
+      "to": "TRTC-ZXF",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZXF",
+      "to": "TRTC-NJF",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NJF",
+      "to": "TRTC-ZJHS",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-ZJHS",
+      "to": "TRTC-SSA",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-SSA",
+      "to": "TRTC-DZH",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DZH",
+      "to": "TRTC-JIR",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-JIR",
+      "to": "TRTC-XIH",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-XIH",
+      "to": "TRTC-GAN",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-GAN",
+      "to": "TRTC-WEN",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-WEN",
+      "to": "TRTC-NEI",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NEI",
+      "to": "TRTC-DAP2",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DAP2",
+      "to": "TRTC-HUZ",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-HUZ",
+      "to": "TRTC-DON",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-DON",
+      "to": "TRTC-NSP",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "brown",
+      "type": "rail"
+    },
+    {
+      "from": "TRTC-NSP",
+      "to": "TRTC-NEC",
+      "distance_miles": 0.34,
+      "travel_time_min": 0.7,
+      "line": "brown",
+      "type": "rail"
+    }
+  ]
+}

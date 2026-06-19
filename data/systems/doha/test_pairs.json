@@ -1,0 +1,474 @@
+{
+  "memorizable_pairs": [
+    [
+      "DOHA-HIA",
+      "DOHA-MSH"
+    ],
+    [
+      "DOHA-MSH",
+      "DOHA-SWQ"
+    ],
+    [
+      "DOHA-LUS",
+      "DOHA-MSH"
+    ],
+    [
+      "DOHA-HIA",
+      "DOHA-KAT"
+    ],
+    [
+      "DOHA-WKR",
+      "DOHA-MSH"
+    ],
+    [
+      "DOHA-RBA",
+      "DOHA-MSH"
+    ],
+    [
+      "DOHA-EDC",
+      "DOHA-MSH"
+    ],
+    [
+      "DOHA-SPC",
+      "DOHA-HIA"
+    ],
+    [
+      "DOHA-MSH",
+      "DOHA-AZZ"
+    ],
+    [
+      "DOHA-WBQ",
+      "DOHA-RIF"
+    ]
+  ],
+  "novel_groups": [
+    [
+      [
+        "DOHA-LUS",
+        "DOHA-QU",
+        "DOHA-LEG",
+        "DOHA-KAT"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-NMU",
+        "DOHA-SWQ"
+      ]
+    ],
+    [
+      [
+        "DOHA-LUS",
+        "DOHA-QU",
+        "DOHA-LEG",
+        "DOHA-KAT"
+      ],
+      [
+        "DOHA-WAB",
+        "DOHA-SPC",
+        "DOHA-AZZ"
+      ]
+    ],
+    [
+      [
+        "DOHA-FRZ",
+        "DOHA-RBF",
+        "DOHA-WKR"
+      ],
+      [
+        "DOHA-RIF",
+        "DOHA-EDC",
+        "DOHA-QNL",
+        "DOHA-SHA"
+      ]
+    ],
+    [
+      [
+        "DOHA-FRZ",
+        "DOHA-RBF",
+        "DOHA-WKR"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-NMU",
+        "DOHA-SWQ"
+      ]
+    ],
+    [
+      [
+        "DOHA-RIF",
+        "DOHA-EDC",
+        "DOHA-QNL",
+        "DOHA-SHA"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-NMU",
+        "DOHA-SWQ"
+      ]
+    ],
+    [
+      [
+        "DOHA-RIF",
+        "DOHA-EDC",
+        "DOHA-QNL",
+        "DOHA-SHA"
+      ],
+      [
+        "DOHA-WAB",
+        "DOHA-SPC",
+        "DOHA-AZZ"
+      ]
+    ],
+    [
+      [
+        "DOHA-MAN"
+      ],
+      [
+        "DOHA-LUS",
+        "DOHA-QU",
+        "DOHA-LEG",
+        "DOHA-KAT"
+      ]
+    ],
+    [
+      [
+        "DOHA-MAN"
+      ],
+      [
+        "DOHA-WAB",
+        "DOHA-SPC",
+        "DOHA-AZZ"
+      ]
+    ],
+    [
+      [
+        "DOHA-HIA"
+      ],
+      [
+        "DOHA-RIF",
+        "DOHA-EDC",
+        "DOHA-QNL",
+        "DOHA-SHA"
+      ]
+    ],
+    [
+      [
+        "DOHA-HIA"
+      ],
+      [
+        "DOHA-WAB",
+        "DOHA-SPC",
+        "DOHA-AZZ"
+      ]
+    ]
+  ],
+  "cat_b": {
+    "origin": "DOHA-MSH",
+    "dest": "DOHA-HIA",
+    "payment": "travel_card",
+    "compositions": [
+      [
+        "1 adult",
+        {
+          "adults": 1
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "2 adults",
+        {
+          "adults": 2
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "1 adult + 1 child",
+        {
+          "adults": 1,
+          "children": 1
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "1 adult + 2 children",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "1 adult + 3 children (1 pays)",
+        {
+          "adults": 1,
+          "children": 3
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "2 adults + 2 children",
+        {
+          "adults": 2,
+          "children": 2
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "2 adults + 4 children",
+        {
+          "adults": 2,
+          "children": 4
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "2 adults + 5 children (1 pays)",
+        {
+          "adults": 2,
+          "children": 5
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "3 adults",
+        {
+          "adults": 3
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "0 adults + 2 children",
+        {
+          "children": 2
+        },
+        "single",
+        "travel_card"
+      ],
+      [
+        "1 adult (gold class)",
+        {
+          "adults": 1
+        },
+        "single",
+        "gold_travel_card"
+      ],
+      [
+        "2 adults (gold class)",
+        {
+          "adults": 2
+        },
+        "single",
+        "gold_travel_card"
+      ],
+      [
+        "1 adult + 2 children (gold class)",
+        {
+          "adults": 1,
+          "children": 2
+        },
+        "single",
+        "gold_travel_card"
+      ],
+      [
+        "2 adults + 3 children (gold class)",
+        {
+          "adults": 2,
+          "children": 3
+        },
+        "single",
+        "gold_travel_card"
+      ],
+      [
+        "3 adults + 1 child (gold class)",
+        {
+          "adults": 3,
+          "children": 1
+        },
+        "single",
+        "gold_travel_card"
+      ]
+    ]
+  },
+  "cat_c_pairs": [
+    [
+      "sc-msheireb",
+      "DOHA-LUS",
+      "DOHA-SWQ"
+    ],
+    [
+      "sc-al-bidda",
+      "DOHA-KAT",
+      "DOHA-WHP"
+    ],
+    [
+      "sc-hia",
+      "DOHA-MSH",
+      "DOHA-HIA"
+    ],
+    [
+      "sc-west-bay",
+      "DOHA-LUS",
+      "DOHA-MSH"
+    ],
+    [
+      "sc-education-city",
+      "DOHA-RIF",
+      "DOHA-MSH"
+    ],
+    [
+      "pm-red-south",
+      "DOHA-MSH",
+      "DOHA-WKR"
+    ],
+    [
+      "pm-green-west",
+      "DOHA-MSH",
+      "DOHA-RIF"
+    ],
+    [
+      "pm-gold-east",
+      "DOHA-MSH",
+      "DOHA-RBA"
+    ],
+    [
+      "pm-red-north",
+      "DOHA-MSH",
+      "DOHA-LUS"
+    ],
+    [
+      "pm-gold-west",
+      "DOHA-MSH",
+      "DOHA-AZZ"
+    ],
+    [
+      "sw-approaching",
+      "DOHA-HIA",
+      "DOHA-MSH"
+    ],
+    [
+      "sw-moderate",
+      "DOHA-LUS",
+      "DOHA-SWQ"
+    ],
+    [
+      "sw-severe",
+      "DOHA-RIF",
+      "DOHA-MSH"
+    ],
+    [
+      "sw-extreme",
+      "DOHA-HIA",
+      "DOHA-MSH"
+    ],
+    [
+      "sw-post-storm",
+      "DOHA-RBA",
+      "DOHA-MSH"
+    ],
+    [
+      "ls-gold-maintenance",
+      "DOHA-AZZ",
+      "DOHA-MSH"
+    ]
+  ],
+  "cat_d": {
+    "tier1": [
+      [
+        "DOHA-LUS",
+        "DOHA-KAT",
+        "wheelchair"
+      ],
+      [
+        "DOHA-DAJ",
+        "DOHA-MAQ",
+        "step_free"
+      ],
+      [
+        "DOHA-RIF",
+        "DOHA-EDC",
+        "elevator_required"
+      ],
+      [
+        "DOHA-AZZ",
+        "DOHA-SPC",
+        "wheelchair"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-NMU",
+        "step_free"
+      ]
+    ],
+    "tier2": [
+      [
+        "DOHA-KAT",
+        "DOHA-DAJ",
+        "wheelchair"
+      ],
+      [
+        "DOHA-HIA",
+        "DOHA-WKR",
+        "step_free"
+      ],
+      [
+        "DOHA-MAN",
+        "DOHA-HHO",
+        "elevator_required"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-BID",
+        "wheelchair"
+      ],
+      [
+        "DOHA-KAT",
+        "DOHA-JOA",
+        "step_free"
+      ]
+    ],
+    "tier3": [
+      [
+        "DOHA-LUS",
+        "DOHA-MSH",
+        "wheelchair"
+      ],
+      [
+        "DOHA-HIA",
+        "DOHA-OQB",
+        "step_free"
+      ],
+      [
+        "DOHA-MAN",
+        "DOHA-WHP",
+        "elevator_required"
+      ],
+      [
+        "DOHA-RBA",
+        "DOHA-SAD",
+        "wheelchair"
+      ],
+      [
+        "DOHA-AZZ",
+        "DOHA-MSH",
+        "step_free"
+      ]
+    ]
+  },
+  "tolerances": {
+    "fare": 0.5,
+    "time_minutes": 10,
+    "distance_miles": 2.0
+  },
+  "id_prefix": "DOHA",
+  "closed_station_name": "Nonexistent Station",
+  "main_line": "red"
+}

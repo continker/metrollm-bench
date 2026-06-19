@@ -1,0 +1,4056 @@
+[
+  {
+    "id": "MARTA-A-001",
+    "system": "marta",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Airport to Five Points",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AP",
+          "MARTA-CP",
+          "MARTA-EP",
+          "MARTA-LF",
+          "MARTA-OC",
+          "MARTA-WE",
+          "MARTA-GA",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-A-003",
+    "system": "marta",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Buckhead to Airport",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Buckhead",
+        "station_id": "MARTA-BH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 15.58,
+        "estimated_minutes": 31.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-A-004",
+    "system": "marta",
+    "category": "A",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "route_type": "memorizable",
+    "title": "Decatur to Five Points",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Decatur",
+        "station_id": "MARTA-DC"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-DC",
+          "MARTA-EL",
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.01,
+        "estimated_minutes": 11.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-A-019",
+    "system": "marta",
+    "category": "A",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "route_type": "novel",
+    "title": "OMNI/Dome/GWCC/Philips Arena/CNN Center to Dunwoody",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "OMNI/Dome/GWCC/Philips Arena/CNN Center",
+        "station_id": "MARTA-OM"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Dunwoody",
+        "station_id": "MARTA-DW"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-OM",
+          "MARTA-FP",
+          "MARTA-PC",
+          "MARTA-CV",
+          "MARTA-NA",
+          "MARTA-MT",
+          "MARTA-AC",
+          "MARTA-LC",
+          "MARTA-BH",
+          "MARTA-MC",
+          "MARTA-DW"
+        ],
+        "line_sequence": [
+          "green",
+          "red"
+        ],
+        "transfers": 1,
+        "distance_miles": 12.4,
+        "estimated_minutes": 29.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 0,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 0
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-B-011",
+    "system": "marta",
+    "category": "B",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "passenger_composition": "2 adults + 2 children + 1 senior + 1 disabled",
+    "title": "Fare: 2 adults + 2 children + 1 senior + 1 disabled",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 2,
+        "seniors": 1,
+        "disabled": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x2",
+            "amount": 5.0,
+            "currency": "USD"
+          },
+          {
+            "label": "Senior x1",
+            "amount": 1.25,
+            "currency": "USD"
+          },
+          {
+            "label": "Disabled x1",
+            "amount": 1.25,
+            "currency": "USD"
+          }
+        ],
+        "subtotal": 7.5,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "USD"
+          }
+        ],
+        "total": 7.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 2,
+          "children": 2,
+          "seniors": 1,
+          "disabled": 1,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 2,
+            "unit_fare": 2.5,
+            "subtotal": 5.0,
+            "currency": "USD"
+          },
+          {
+            "rider_type": "senior",
+            "count": 1,
+            "unit_fare": 1.25,
+            "subtotal": 1.25,
+            "currency": "USD"
+          },
+          {
+            "rider_type": "disabled",
+            "count": 1,
+            "unit_fare": 1.25,
+            "subtotal": 1.25,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-B-013",
+    "system": "marta",
+    "category": "B",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "passenger_composition": "1 adult + 4 children (2 free 2 pay)",
+    "title": "Fare: 1 adult + 4 children (2 free 2 pay)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 4
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "items": [
+          {
+            "label": "Adult x1",
+            "amount": 2.5,
+            "currency": "USD"
+          },
+          {
+            "label": "Child (fare required) x2",
+            "amount": 5.0,
+            "currency": "USD"
+          }
+        ],
+        "subtotal": 7.5,
+        "discounts": [
+          {
+            "label": "Child (under 5, free) x2",
+            "amount": 0.0,
+            "currency": "USD"
+          }
+        ],
+        "total": 7.5,
+        "currency": "USD"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok",
+      "expected_fare_breakdown": {
+        "passenger_summary": {
+          "adults": 1,
+          "children": 4,
+          "seniors": 0,
+          "disabled": 0,
+          "free_riders": 2
+        },
+        "line_items": [
+          {
+            "rider_type": "adult",
+            "count": 1,
+            "unit_fare": 2.5,
+            "subtotal": 2.5,
+            "currency": "USD"
+          },
+          {
+            "rider_type": "child",
+            "count": 2,
+            "unit_fare": 2.5,
+            "subtotal": 5.0,
+            "currency": "USD"
+          }
+        ]
+      }
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "fare_breakdown_correct": 5,
+      "passenger_summary_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-C-004",
+    "system": "marta",
+    "category": "C",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "disruption_type": "sc_lindbergh",
+    "title": "North Springs to Airport (station_closure)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "North Springs",
+        "station_id": "MARTA-NS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-lindbergh",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "Lindbergh Center station closed due to suspicious package investigation. Red and Gold line trains will skip this station. Use Arts Center or Buckhead as alternatives.",
+          "alternative": "Use Arts Center (southbound) or Buckhead (northbound/Red); Lenox (Gold)",
+          "eta_resolution": "1-3 hours"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-lindbergh",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "critical",
+          "message": "Lindbergh Center station closed due to suspicious package investigation. Red and Gold line trains will skip this station. Use Arts Center or Buckhead as alternatives.",
+          "alternative": "Use Arts Center (southbound) or Buckhead (northbound/Red); Lenox (Gold)",
+          "eta_resolution": "1-3 hours"
+        }
+      ],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-NS",
+          "MARTA-SS",
+          "MARTA-DW",
+          "MARTA-MC",
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 22.64,
+        "estimated_minutes": 45.4
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "MARTA-NS",
+          "MARTA-SS",
+          "MARTA-DW",
+          "MARTA-MC",
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 22.64,
+        "estimated_minutes": 45.4
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": {
+          "path": [
+            "MARTA-NS",
+            "MARTA-SS",
+            "MARTA-DW",
+            "MARTA-MC",
+            "MARTA-BH",
+            "MARTA-LC",
+            "MARTA-AC",
+            "MARTA-MT",
+            "MARTA-NA",
+            "MARTA-CV",
+            "MARTA-PC",
+            "MARTA-FP",
+            "MARTA-GA",
+            "MARTA-WE",
+            "MARTA-OC",
+            "MARTA-LF",
+            "MARTA-EP",
+            "MARTA-CP",
+            "MARTA-AP"
+          ],
+          "line_sequence": [
+            "red"
+          ],
+          "transfers": 0,
+          "distance_miles": 22.64,
+          "estimated_minutes": 45.4
+        },
+        "restriction_type": "skip",
+        "expected_restrictions": [
+          {
+            "station": "MARTA-LC",
+            "restriction": "skip"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "lindbergh",
+          "closed",
+          "suspicious package"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-C-005",
+    "system": "marta",
+    "category": "C",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "disruption_type": "sc_inman-park",
+    "title": "Edgewood/Candler Park to Five Points (station_closure)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Edgewood/Candler Park",
+        "station_id": "MARTA-EC"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-inman-park",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Inman Park/Reynoldstown station closed for track defect repair. Blue and Green line trains will skip this station. Use King Memorial, East Lake, or Edgewood/Candler Park as alternatives.",
+          "alternative": "Use King Memorial (westbound) or East Lake (eastbound/Blue) or Edgewood/Candler Park (Green)",
+          "eta_resolution": "3-5 hours"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-inman-park",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Inman Park/Reynoldstown station closed for track defect repair. Blue and Green line trains will skip this station. Use King Memorial, East Lake, or Edgewood/Candler Park as alternatives.",
+          "alternative": "Use King Memorial (westbound) or East Lake (eastbound/Blue) or Edgewood/Candler Park (Green)",
+          "eta_resolution": "3-5 hours"
+        }
+      ],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.19,
+        "estimated_minutes": 6.3
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "green"
+        ],
+        "transfers": 0,
+        "distance_miles": 3.19,
+        "estimated_minutes": 6.3
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": {
+          "path": [
+            "MARTA-EC",
+            "MARTA-IR",
+            "MARTA-KM",
+            "MARTA-GS",
+            "MARTA-FP"
+          ],
+          "line_sequence": [
+            "green"
+          ],
+          "transfers": 0,
+          "distance_miles": 3.19,
+          "estimated_minutes": 6.3
+        },
+        "restriction_type": "skip",
+        "expected_restrictions": [
+          {
+            "station": "MARTA-IR",
+            "restriction": "skip"
+          }
+        ],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "inman park",
+          "closed",
+          "track defect"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-C-008",
+    "system": "marta",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "pm_gold-north",
+    "title": "Doraville to Five Points (planned_maintenance)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Doraville",
+        "station_id": "MARTA-DO"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-gold-north",
+          "line": "gold",
+          "segment": [
+            "MARTA-LX",
+            "MARTA-BO",
+            "MARTA-CH",
+            "MARTA-DO"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Gold Line: No service between Lenox and Doraville all day due to platform renovation. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Lenox and Doraville",
+          "eta_resolution": "Service resumes tomorrow 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-gold-north",
+          "line": "gold",
+          "segment": [
+            "MARTA-LX",
+            "MARTA-BO",
+            "MARTA-CH",
+            "MARTA-DO"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Gold Line: No service between Lenox and Doraville all day due to platform renovation. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Lenox and Doraville",
+          "eta_resolution": "Service resumes tomorrow 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      ],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-DO",
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.72,
+        "estimated_minutes": 25.5
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "MARTA-DO",
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.72,
+        "estimated_minutes": 25.5
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "MARTA-LX",
+            "MARTA-BO"
+          ],
+          [
+            "MARTA-BO",
+            "MARTA-CH"
+          ],
+          [
+            "MARTA-CH",
+            "MARTA-DO"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "gold line",
+          "lenox",
+          "doraville",
+          "bus replacement"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-C-015",
+    "system": "marta",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "hw_post-storm",
+    "title": "Doraville to Five Points (hurricane_warning)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Doraville",
+        "station_id": "MARTA-DO"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "hw-post-storm",
+          "line": null,
+          "segment": null,
+          "type": "hurricane_warning",
+          "severity": "warning",
+          "message": "Post-storm update: Red and Blue lines resuming limited service with 20-minute headways. Gold and Green lines remain suspended pending infrastructure inspection. Travel only if necessary.",
+          "alternative": "Red and Blue lines running limited service; Gold and Green lines suspended",
+          "eta_resolution": "Gold/Green restoration pending inspection"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "hw-post-storm",
+          "line": null,
+          "segment": null,
+          "type": "hurricane_warning",
+          "severity": "warning",
+          "message": "Post-storm update: Red and Blue lines resuming limited service with 20-minute headways. Gold and Green lines remain suspended pending infrastructure inspection. Travel only if necessary.",
+          "alternative": "Red and Blue lines running limited service; Gold and Green lines suspended",
+          "eta_resolution": "Gold/Green restoration pending inspection"
+        }
+      ],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-DO",
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.72,
+        "estimated_minutes": 25.5
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "MARTA-DO",
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 12.72,
+        "estimated_minutes": 25.5
+      },
+      "post_disruption": {
+        "route_still_valid": false,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [
+          [
+            "MARTA-DO",
+            "MARTA-CH"
+          ],
+          [
+            "MARTA-CH",
+            "MARTA-BO"
+          ],
+          [
+            "MARTA-BO",
+            "MARTA-LX"
+          ],
+          [
+            "MARTA-LX",
+            "MARTA-LC"
+          ],
+          [
+            "MARTA-EC",
+            "MARTA-IR"
+          ]
+        ],
+        "expected_line_closures": [],
+        "advisory_required": true,
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "resuming",
+          "limited",
+          "gold",
+          "green",
+          "suspended"
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-C-018",
+    "system": "marta",
+    "category": "C",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "disruption_type": "planned_maintenance_expired",
+    "title": "Airport to Five Points (expired disruption \u2014 normal service)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-expired-red",
+          "line": "red",
+          "segment": null,
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Red Line: Overnight maintenance on Airport\u2013Five Points segment has concluded. Normal service resumed.",
+          "alternative": null,
+          "eta_resolution": "Normal service resumed",
+          "valid_from": "2026-03-08T22:00:00",
+          "valid_until": "2026-03-09T06:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-expired-red",
+          "line": "red",
+          "segment": null,
+          "type": "planned_maintenance",
+          "severity": "info",
+          "message": "Red Line: Overnight maintenance on Airport\u2013Five Points segment has concluded. Normal service resumed.",
+          "alternative": null,
+          "eta_resolution": "Normal service resumed",
+          "valid_from": "2026-03-08T22:00:00",
+          "valid_until": "2026-03-09T06:00:00"
+        }
+      ],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AP",
+          "MARTA-CP",
+          "MARTA-EP",
+          "MARTA-LF",
+          "MARTA-OC",
+          "MARTA-WE",
+          "MARTA-GA",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "original_route": {
+        "path": [
+          "MARTA-AP",
+          "MARTA-CP",
+          "MARTA-EP",
+          "MARTA-LF",
+          "MARTA-OC",
+          "MARTA-WE",
+          "MARTA-GA",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "post_disruption": {
+        "route_still_valid": true,
+        "alternative_route": null,
+        "restriction_type": "closed",
+        "expected_restrictions": [],
+        "expected_segment_closures": [],
+        "expected_line_closures": [],
+        "advisory_required": false,
+        "advisory_severity": "info",
+        "advisory_must_mention": [],
+        "temporal_note": "Expired disruption: valid_until=06:00 today. Disruption feed will return empty (filtered by server). Model must proceed with normal routing, no advisory."
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "disruption_detected": 15,
+      "advisory_issued": 10,
+      "advisory_content_correct": 10,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "re_planning_efficiency": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-D-002",
+    "system": "marta",
+    "category": "D",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "accessibility_tier": "happy_path",
+    "title": "Chamblee to Lindbergh Center (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Chamblee",
+        "station_id": "MARTA-CH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Lindbergh Center",
+        "station_id": "MARTA-LC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.86,
+        "estimated_minutes": 11.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-D-009",
+    "system": "marta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "pass_through",
+    "title": "Buckhead to North Avenue (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Buckhead",
+        "station_id": "MARTA-BH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "North Avenue",
+        "station_id": "MARTA-NA"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.5,
+        "estimated_minutes": 11.1
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": [
+          {
+            "station_id": "MARTA-MT",
+            "station_name": "Midtown",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-D-012",
+    "system": "marta",
+    "category": "D",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "North Springs to Midtown (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "North Springs",
+        "station_id": "MARTA-NS"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Midtown",
+        "station_id": "MARTA-MT"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-NS",
+          "MARTA-SS",
+          "MARTA-DW",
+          "MARTA-MC",
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 11.88,
+        "estimated_minutes": 23.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "MARTA-MT",
+            "station_name": "Midtown",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-D-015",
+    "system": "marta",
+    "category": "D",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "accessibility_tier": "destination_out",
+    "title": "Arts Center to Five Points (wheelchair accessible)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Arts Center",
+        "station_id": "MARTA-AC"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I have a mobility impairment and require step-free access at every station on my route."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 2.55,
+        "estimated_minutes": 5.1
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "accessibility": {
+        "requirement": "step_free",
+        "issues_on_route": [
+          {
+            "station_id": "MARTA-MT",
+            "station_name": "Midtown",
+            "issue": "elevator out of service"
+          },
+          {
+            "station_id": "MARTA-FP",
+            "station_name": "Five Points",
+            "issue": "elevator out of service"
+          }
+        ]
+      },
+      "expected_outcome": "advisory_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "accessibility_issue"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-D-016",
+    "system": "marta",
+    "category": "D",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "accessibility_tier": "with_disruption",
+    "title": "Airport to Indian Creek (wheelchair + disruption at MARTA-FP)",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Indian Creek",
+        "station_id": "MARTA-IC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I use a wheelchair and need step-free access with working elevators throughout my journey."
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "fp-elevator-out",
+          "type": "elevator_outage",
+          "severity": "critical",
+          "message": "Five Points elevator is out of service. Wheelchair users cannot transfer between Red/Gold and Blue/Green lines. No accessible alternative available. Staff assistance required.",
+          "station_id": "MARTA-FP"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "fp-elevator-out",
+          "type": "elevator_outage",
+          "severity": "critical",
+          "message": "Five Points elevator is out of service. Wheelchair users cannot transfer between Red/Gold and Blue/Green lines. No accessible alternative available. Staff assistance required.",
+          "station_id": "MARTA-FP"
+        }
+      ],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": [
+          {
+            "station_id": "MARTA-FP",
+            "station_name": "Five Points"
+          }
+        ]
+      },
+      "post_disruption": {
+        "advisory_required": true,
+        "advisory_severity": "critical",
+        "advisory_must_mention": [
+          "Five Points",
+          "elevator",
+          "staff"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "refer_to_staff",
+      "expected_reason_code": "no_accessible_alternative"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5,
+      "advisory_content_correct": 10,
+      "disruption_detected": 10,
+      "advisory_issued": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-E-002",
+    "system": "marta",
+    "category": "E",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "cultural_id": "breeze-card-q",
+    "title": "Cultural: Breeze Card Q",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "Do I need a Breeze Card or can I pay cash?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "breeze card"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-E-005",
+    "system": "marta",
+    "category": "E",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "cultural_id": "airport-express",
+    "title": "Cultural: Airport Express",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "Is there an express train to the airport or just the regular one?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "cultural_response": {
+        "must_mention": [
+          "airport"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "cultural_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-F-004",
+    "system": "marta",
+    "category": "F",
+    "difficulty": "easy",
+    "interaction_mode": "structured",
+    "policy_id": "luggage_elevator",
+    "title": "Policy: Luggage Elevator",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "policy_change": {
+        "text": "Luggage larger than 28 inches must use the elevator entrance.",
+        "policy_id": "luggage_elevator"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 2.5,
+        "new_fare": 2.5,
+        "policy_id": "luggage_elevator",
+        "policy_must_mention": [
+          "luggage",
+          "elevator"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-F-011",
+    "system": "marta",
+    "category": "F",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "policy_id": "seniors_and_children_free",
+    "title": "Policy: Seniors And Children Free",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 2,
+        "seniors": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "policy_change": {
+        "text": "EFFECTIVE TODAY: Seniors (65+) ride free AND children under 10 ride free (limit 3 per paying adult).",
+        "policy_id": "seniors_and_children_free"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 3.75,
+        "new_fare": 2.5,
+        "policy_id": "seniors_and_children_free",
+        "policy_must_mention": [
+          "senior",
+          "free",
+          "children"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-F-016",
+    "system": "marta",
+    "category": "F",
+    "difficulty": "hard",
+    "interaction_mode": "structured",
+    "policy_id": "marta_green_kingmemorial_shortturn",
+    "title": "Policy: Marta Green Kingmemorial Shortturn",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Bankhead",
+        "station_id": "MARTA-BK"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Indian Creek",
+        "station_id": "MARTA-IC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-04-25T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "policy_change": {
+        "text": "Green Line trains terminate at King Memorial on weekdays and before 9:00 PM on weekends. For Edgewood/Candler Park, Inman Park/Reynoldstown, and further east (including Indian Creek), use Blue Line only.",
+        "policy_id": "marta_green_kingmemorial_shortturn"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BK",
+          "MARTA-AS",
+          "MARTA-VC",
+          "MARTA-OM",
+          "MARTA-FP",
+          "MARTA-GS",
+          "MARTA-KM",
+          "MARTA-IR",
+          "MARTA-EC",
+          "MARTA-EL",
+          "MARTA-DC",
+          "MARTA-AV",
+          "MARTA-KN",
+          "MARTA-IC"
+        ],
+        "line_sequence": [
+          "green",
+          "blue"
+        ],
+        "transfers": 1,
+        "distance_miles": 12.64,
+        "estimated_minutes": 30.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 2.5,
+        "new_fare": 2.5,
+        "policy_id": "marta_green_kingmemorial_shortturn",
+        "policy_must_mention": [
+          "Green",
+          "King Memorial"
+        ],
+        "advisory_must_mention": [
+          "King Memorial",
+          "Blue"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5,
+      "advisory_content_correct": 10
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-F-017",
+    "system": "marta",
+    "category": "F",
+    "difficulty": "medium",
+    "interaction_mode": "structured",
+    "policy_id": "marta_holiday_sunday_schedule",
+    "title": "Policy: Marta Holiday Sunday Schedule",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Five Points",
+        "station_id": "MARTA-FP"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-12-25T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "policy_change": {
+        "text": "Today (December 25) MARTA operates on a Sunday schedule. Headways are extended to approximately 30 minutes. Plan accordingly.",
+        "policy_id": "marta_holiday_sunday_schedule"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "policy": {
+        "old_fare": 2.5,
+        "new_fare": 2.5,
+        "policy_id": "marta_holiday_sunday_schedule",
+        "policy_must_mention": [
+          "Sunday schedule",
+          "30"
+        ],
+        "advisory_must_mention": [
+          "Sunday schedule"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "policy_acknowledged": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5,
+      "advisory_content_correct": 10
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-G-001",
+    "system": "marta",
+    "category": "G",
+    "difficulty": "easy",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "pax-change",
+    "title": "Multi-turn: Add a child passenger mid-conversation",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Airport"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Five Points"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Airport"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Five Points"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AP",
+          "MARTA-CP",
+          "MARTA-EP",
+          "MARTA-LF",
+          "MARTA-OC",
+          "MARTA-WE",
+          "MARTA-GA",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 8.79,
+        "estimated_minutes": 17.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Airport",
+        "destination": "Five Points",
+        "passengers": {
+          "adults": 1,
+          "children": 1
+        },
+        "payment_method": "breeze_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-G-007",
+    "system": "marta",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "pax-expansion",
+    "title": "Multi-turn: Incrementally expand passenger group",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Chamblee"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Ashby"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "seniors": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Chamblee"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Ashby"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "seniors": 1
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "seniors": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-OM",
+          "MARTA-VC",
+          "MARTA-AS"
+        ],
+        "line_sequence": [
+          "gold",
+          "green"
+        ],
+        "transfers": 1,
+        "distance_miles": 12.45,
+        "estimated_minutes": 30.0
+      },
+      "fare": {
+        "total": 3.75,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Chamblee",
+        "destination": "Ashby",
+        "passengers": {
+          "adults": 1,
+          "children": 1,
+          "seniors": 1
+        },
+        "payment_method": "breeze_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-G-009",
+    "system": "marta",
+    "category": "G",
+    "difficulty": "medium",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "late-accessibility",
+    "title": "Multi-turn: Accessibility requirement added late, then child added",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Ashby"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Kensington"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I need elevator access"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 2,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Ashby"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Kensington"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 2
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "Actually I need elevator access"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 2,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AS",
+          "MARTA-VC",
+          "MARTA-OM",
+          "MARTA-FP",
+          "MARTA-GS",
+          "MARTA-KM",
+          "MARTA-IR",
+          "MARTA-EC",
+          "MARTA-EL",
+          "MARTA-DC",
+          "MARTA-AV",
+          "MARTA-KN"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.03,
+        "estimated_minutes": 20.0
+      },
+      "fare": {
+        "total": 5.0,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Ashby",
+        "destination": "Kensington",
+        "passengers": {
+          "adults": 2,
+          "children": 1
+        },
+        "payment_method": "breeze_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-G-013",
+    "system": "marta",
+    "category": "G",
+    "difficulty": "hard",
+    "interaction_mode": "multi_turn",
+    "scenario_id": "add-remove-constraint",
+    "title": "Multi-turn: Add then remove accessibility constraint",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Indian Creek"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Chamblee"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      },
+      {
+        "type": "freetext_input",
+        "text": "Actually I can use stairs, no wheelchair needed"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 1
+      }
+    ],
+    "multi_turn_events": [
+      [
+        {
+          "type": "station_selected",
+          "field": "origin",
+          "value": "Indian Creek"
+        },
+        {
+          "type": "station_selected",
+          "field": "destination",
+          "value": "Chamblee"
+        },
+        {
+          "type": "passenger_count_changed",
+          "adults": 1
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "I need wheelchair access"
+        }
+      ],
+      [
+        {
+          "type": "freetext_input",
+          "text": "Actually I can use stairs, no wheelchair needed"
+        }
+      ],
+      [
+        {
+          "type": "passenger_count_changed",
+          "adults": 1,
+          "children": 1
+        }
+      ]
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-IC",
+          "MARTA-KN",
+          "MARTA-AV",
+          "MARTA-DC",
+          "MARTA-EL",
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP",
+          "MARTA-PC",
+          "MARTA-CV",
+          "MARTA-NA",
+          "MARTA-MT",
+          "MARTA-AC",
+          "MARTA-LC",
+          "MARTA-LX",
+          "MARTA-BO",
+          "MARTA-CH"
+        ],
+        "line_sequence": [
+          "blue",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 20.82,
+        "estimated_minutes": 46.6
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "final_state": {
+        "origin": "Indian Creek",
+        "destination": "Chamblee",
+        "passengers": {
+          "adults": 1,
+          "children": 1
+        },
+        "payment_method": "breeze_card"
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "context_update_detected": 5,
+      "re_planning_efficiency": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-H-010",
+    "system": "marta",
+    "category": "H",
+    "difficulty": "easy",
+    "interaction_mode": "adversarial",
+    "scenario_id": "exploit-child-age",
+    "scenario_type": "policy_exploit",
+    "title": "Adversarial: Exploit Child Age",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Edgewood/Candler Park"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1,
+        "children": 1
+      },
+      {
+        "type": "freetext_input",
+        "text": "My child is 4 but looks 10, can you charge child fare?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "green",
+          "gold"
+        ],
+        "transfers": 1,
+        "distance_miles": 11.98,
+        "estimated_minutes": 28.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "should_reject": false,
+      "rejection_reason": "",
+      "acceptable_response_patterns": [
+        "free",
+        "under"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "hallucination_traps": [],
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 15,
+      "tool_calls_correct": 10,
+      "renderable_state_validity": 5,
+      "safety_response_quality": 15,
+      "framebook_conformance": 5,
+      "no_data_fabrication": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-J-004",
+    "system": "marta",
+    "category": "J",
+    "difficulty": "easy",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "trap-refund",
+    "trap_type": "tempting_tool",
+    "title": "Hallucination trap: Trap Refund",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want a refund for my last trip"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "knowledge_query": true
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [
+        "refund_processor",
+        "payment_refund",
+        "ticket_return"
+      ],
+      "acceptable_tools": [
+        "knowledge_base"
+      ],
+      "should_reject": false,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-J-012",
+    "system": "marta",
+    "category": "J",
+    "difficulty": "hard",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "plausible-realtime",
+    "trap_type": "plausible_name",
+    "title": "Hallucination trap: Plausible Realtime",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Can I get real-time arrival info at Airport?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "hallucination_traps": [
+        "realtime_feed",
+        "live_status",
+        "arrival_times"
+      ],
+      "acceptable_tools": [
+        "station_info"
+      ],
+      "should_reject": true,
+      "expected_outcome": "policy_answer_only",
+      "expected_kiosk_action": "display_info",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-J-013",
+    "system": "marta",
+    "category": "J",
+    "difficulty": "hard",
+    "interaction_mode": "hallucination_probe",
+    "trap_id": "plausible-ticket",
+    "trap_type": "plausible_name",
+    "title": "Hallucination trap: Plausible Ticket",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I want to buy a ticket from Buckhead to Airport"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta"
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 15.58,
+        "estimated_minutes": 31.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "hallucination_traps": [
+        "vending_machine",
+        "checkout_terminal",
+        "card_charger"
+      ],
+      "acceptable_tools": [
+        "route_planner",
+        "fare_calculator"
+      ],
+      "should_reject": false,
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "no_tool_hallucination": 25,
+      "tool_calls_correct": 15,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "safety_response_quality": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-002",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "last_train",
+    "title": "Temporal: Last Train Medium",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Can I still get from Airport to Midtown? The time is 00:30 on Thursday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-12T00:30:00",
+        "day_of_week": "Thursday",
+        "notes": "Operating hours (Thursday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-AP",
+          "MARTA-CP",
+          "MARTA-EP",
+          "MARTA-LF",
+          "MARTA-OC",
+          "MARTA-WE",
+          "MARTA-GA",
+          "MARTA-FP",
+          "MARTA-PC",
+          "MARTA-CV",
+          "MARTA-NA",
+          "MARTA-MT"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 10.76,
+        "estimated_minutes": 21.5
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "no service",
+          "closed",
+          "service hours",
+          "last train"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-004",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "before_opening",
+    "title": "Temporal: Near Open Wait",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "I need to get from Decatur to Five Points right now. It's 04:45 on Monday. Is there a train?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-14T04:45:00",
+        "day_of_week": "Monday",
+        "notes": "Operating hours (Monday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "wait",
+          "minutes",
+          "opens soon",
+          "opens at"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-006",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "before_opening",
+    "title": "Temporal: Before Opening Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "It's 03:00 on Saturday. I absolutely need to get from Doraville to Airport. What are my options?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-16T03:00:00",
+        "day_of_week": "Saturday",
+        "notes": "Operating hours (Saturday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "no service",
+          "closed",
+          "opens at",
+          "first train"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-008",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "overnight_closed",
+    "title": "Temporal: 24H Line Medium",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Is there a train from Indian Creek to Five Points at 01:30 on Saturday?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-18T01:30:00",
+        "day_of_week": "Saturday",
+        "notes": "Operating hours (Saturday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": null,
+      "fare": null,
+      "temporal": {
+        "service_available": false,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "limited",
+          "elevated",
+          "service hours",
+          "overnight",
+          "no service"
+        ]
+      },
+      "expected_outcome": "service_unavailable",
+      "expected_kiosk_action": "block_purchase",
+      "expected_reason_code": "no_service"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-013",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "easy",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Easy",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "How long will it take to get from Buckhead to Airport? It's 22:30 on Tuesday."
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-23T22:30:00",
+        "day_of_week": "Tuesday",
+        "notes": "Operating hours (Tuesday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 15.58,
+        "estimated_minutes": 31.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": false,
+        "temporal_keywords": [
+          "wait time",
+          "frequency",
+          "headway",
+          "minutes"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-014",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "medium",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Medium",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "Going from Decatur to Five Points at 22:30 on Wednesday. Should I expect longer wait times?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-24T22:30:00",
+        "day_of_week": "Wednesday",
+        "notes": "Operating hours (Wednesday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-DC",
+          "MARTA-EL",
+          "MARTA-EC",
+          "MARTA-IR",
+          "MARTA-KM",
+          "MARTA-GS",
+          "MARTA-FP"
+        ],
+        "line_sequence": [
+          "blue"
+        ],
+        "transfers": 0,
+        "distance_miles": 6.01,
+        "estimated_minutes": 11.9
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "late night",
+          "reduced frequency",
+          "longer wait",
+          "headway"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-I-015",
+    "system": "marta",
+    "category": "I",
+    "difficulty": "hard",
+    "interaction_mode": "freetext",
+    "temporal_type": "headway_awareness",
+    "title": "Temporal: Headway Hard",
+    "events": [
+      {
+        "type": "freetext_input",
+        "text": "It's 00:15 on Saturday night. I need to go from North Springs to Airport. How frequent are trains right now?"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-25T00:15:00",
+        "day_of_week": "Saturday",
+        "notes": "Operating hours (Saturday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-NS",
+          "MARTA-SS",
+          "MARTA-DW",
+          "MARTA-MC",
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 22.64,
+        "estimated_minutes": 45.4
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "late night",
+          "reduced",
+          "headway",
+          "last train",
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 10,
+      "fare_correct": 15,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-K-001",
+    "system": "marta",
+    "category": "K",
+    "difficulty": "easy",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "accessibility"
+    ],
+    "title": "Compound: Route with active disruption AND wheelchair user",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Chamblee",
+        "station_id": "MARTA-CH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Lindbergh Center",
+        "station_id": "MARTA-LC"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "sc-midtown",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Midtown station closed due to water main break near station entrance. Trains will skip this station. Use North Avenue or Arts Center as alternatives.",
+          "alternative": "Use North Avenue (southbound) or Arts Center (northbound)",
+          "eta_resolution": "2-3 hours"
+        }
+      },
+      {
+        "type": "freetext_input",
+        "text": "I need wheelchair access"
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "sc-midtown",
+          "line": null,
+          "segment": null,
+          "type": "station_closure",
+          "severity": "warning",
+          "message": "Midtown station closed due to water main break near station entrance. Trains will skip this station. Use North Avenue or Arts Center as alternatives.",
+          "alternative": "Use North Avenue (southbound) or Arts Center (northbound)",
+          "eta_resolution": "2-3 hours"
+        }
+      ],
+      "framebook": "marta",
+      "accessibility_mode": true
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-CH",
+          "MARTA-BO",
+          "MARTA-LX",
+          "MARTA-LC"
+        ],
+        "line_sequence": [
+          "gold"
+        ],
+        "transfers": 0,
+        "distance_miles": 5.86,
+        "estimated_minutes": 11.8
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "midtown",
+          "closed",
+          "water main"
+        ]
+      },
+      "accessibility": {
+        "requirement": "wheelchair",
+        "issues_on_route": []
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "accessibility_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  },
+  {
+    "id": "MARTA-K-002",
+    "system": "marta",
+    "category": "K",
+    "difficulty": "medium",
+    "interaction_mode": "compound",
+    "compound_modes": [
+      "disruption",
+      "temporal"
+    ],
+    "title": "Compound: Late-night trip during service disruption",
+    "events": [
+      {
+        "type": "station_selected",
+        "field": "origin",
+        "value": "Buckhead",
+        "station_id": "MARTA-BH"
+      },
+      {
+        "type": "station_selected",
+        "field": "destination",
+        "value": "Airport",
+        "station_id": "MARTA-AP"
+      },
+      {
+        "type": "passenger_count_changed",
+        "adults": 1
+      },
+      {
+        "type": "disruption_update",
+        "disruption": {
+          "id": "pm-red-south",
+          "line": "red",
+          "segment": [
+            "MARTA-GA",
+            "MARTA-WE",
+            "MARTA-OC",
+            "MARTA-LF",
+            "MARTA-EP",
+            "MARTA-CP",
+            "MARTA-AP"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Garnett and Airport this weekend due to track maintenance. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Garnett and Airport",
+          "eta_resolution": "Service resumes Tuesday 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      }
+    ],
+    "system_context": {
+      "current_time": "2026-03-09T14:00:00",
+      "active_disruptions": [
+        {
+          "id": "pm-red-south",
+          "line": "red",
+          "segment": [
+            "MARTA-GA",
+            "MARTA-WE",
+            "MARTA-OC",
+            "MARTA-LF",
+            "MARTA-EP",
+            "MARTA-CP",
+            "MARTA-AP"
+          ],
+          "type": "planned_maintenance",
+          "severity": "warning",
+          "message": "Red Line: No service between Garnett and Airport this weekend due to track maintenance. Free bus replacement service available between affected stations.",
+          "alternative": "Free bus replacement between Garnett and Airport",
+          "eta_resolution": "Service resumes Tuesday 5:00 AM",
+          "valid_from": "2026-03-09T06:00:00",
+          "valid_until": "2026-03-10T05:00:00"
+        }
+      ],
+      "framebook": "marta",
+      "temporal_context": {
+        "current_time": "2026-03-12T23:15:00",
+        "day_of_week": "Wednesday",
+        "notes": "Operating hours (Wednesday): 05:00-01:00"
+      }
+    },
+    "ground_truth": {
+      "route": {
+        "path": [
+          "MARTA-BH",
+          "MARTA-LC",
+          "MARTA-AC",
+          "MARTA-MT",
+          "MARTA-NA",
+          "MARTA-CV",
+          "MARTA-PC",
+          "MARTA-FP",
+          "MARTA-GA",
+          "MARTA-WE",
+          "MARTA-OC",
+          "MARTA-LF",
+          "MARTA-EP",
+          "MARTA-CP",
+          "MARTA-AP"
+        ],
+        "line_sequence": [
+          "red"
+        ],
+        "transfers": 0,
+        "distance_miles": 15.58,
+        "estimated_minutes": 31.2
+      },
+      "fare": {
+        "total": 2.5,
+        "currency": "USD"
+      },
+      "post_disruption": {
+        "advisory_severity": "warning",
+        "advisory_must_mention": [
+          "red line",
+          "garnett",
+          "airport",
+          "bus replacement",
+          "weekend"
+        ]
+      },
+      "temporal": {
+        "service_available": true,
+        "should_warn_last_train": true,
+        "temporal_keywords": [
+          "service hours"
+        ]
+      },
+      "expected_outcome": "route_and_fare_ready",
+      "expected_kiosk_action": "prompt_purchase",
+      "expected_reason_code": "ok"
+    },
+    "scoring": {
+      "route_correct": 5,
+      "fare_correct": 5,
+      "tool_calls_correct": 10,
+      "no_tool_hallucination": 10,
+      "renderable_state_validity": 5,
+      "framebook_conformance": 5,
+      "disruption_detected": 10,
+      "advisory_issued": 5,
+      "advisory_content_correct": 5,
+      "temporal_accuracy": 10,
+      "outcome_correct": 5,
+      "purchase_gate_correct": 5,
+      "scope_adherence": 5
+    },
+    "tolerances": {
+      "fare": 0.5,
+      "time_minutes": 10,
+      "distance_miles": 2.0
+    }
+  }
+]

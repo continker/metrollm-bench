@@ -1,0 +1,41 @@
+framebook:
+  org_name: "MARTA"
+  full_name: "Metropolitan Atlanta Rapid Transit Authority"
+  primary_language: en
+  secondary_languages: []
+  currency_symbol: "$"
+  currency_code: "USD"
+  fare_display_format: "$X.XX"
+  terminology:
+    smartcard: "Breeze Card"
+    contactless: "Contactless payment"
+    reduced_fare: "Reduced Fare"
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: info
+  accessibility_labels:
+    step_free: "Wheelchair Accessible"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+  operating_hours:
+    default: "05:00-01:00"
+    weekday: "05:00-01:00"
+    saturday: "05:00-01:00"
+    sunday: "05:00-01:00"
+    late_night_headway_min: 20
+    notes: "All lines follow the same schedule. Headways double after 10 PM."
+  cultural_notes: []

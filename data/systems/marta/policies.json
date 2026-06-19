@@ -1,0 +1,89 @@
+{
+  "system": "marta",
+  "policies": [
+    {
+      "policy_id": "marta-refund-001",
+      "category": "refunds",
+      "title": "Breeze Card Refund Policy",
+      "content": "Unused Breeze Card value may be refunded within 30 days of purchase at the MARTA Customer Service Center, 2424 Piedmont Road NE, Atlanta, GA 30324. A $5.00 processing fee applies to all refunds. Bring the original Breeze Card and a valid photo ID.",
+      "synonyms": ["money back on my Breeze Card", "return my Breeze Card", "get a refund", "how do I get reimbursed"]
+    },
+    {
+      "policy_id": "marta-refund-002",
+      "category": "refunds",
+      "title": "Day Pass Refund Policy",
+      "content": "Single-ride tickets and day passes are non-refundable once purchased. Multi-day passes (2-day, 3-day, 7-day, 30-day) may be refunded only if completely unused, by mailing the pass to MARTA Customer Service, P.O. Box 4306, Atlanta, GA 30302. Allow 10-15 business days for processing.",
+      "synonyms": ["return my day pass", "can I get money back for my pass", "unused pass refund", "cancel my multi-day pass"]
+    },
+    {
+      "policy_id": "marta-lost-001",
+      "category": "lost_property",
+      "title": "Lost and Found Reporting",
+      "content": "Report lost items by calling MARTA Lost & Found at (404) 848-5000 within 72 hours. Items are held at the Five Points Lost & Found office for 30 days before being donated or discarded. A valid photo ID is required for item retrieval.",
+      "synonyms": ["I left something on the train", "forgot my bag", "lost my phone on MARTA", "where is lost and found"]
+    },
+    {
+      "policy_id": "marta-lost-002",
+      "category": "lost_property",
+      "title": "Found Breeze Card Procedure",
+      "content": "Lost Breeze Cards cannot be replaced or their balance transferred unless the card was registered online at breezecard.com before loss. Registered card holders should call (404) 848-5000 to freeze the card and transfer the remaining balance to a replacement card within 7 business days.",
+      "synonyms": ["lost my Breeze Card", "my card was stolen", "can I get a new Breeze Card", "replace my Breeze Card"]
+    },
+    {
+      "policy_id": "marta-access-001",
+      "category": "accessibility",
+      "title": "Wheelchair Accessibility",
+      "content": "All 38 MARTA rail stations are wheelchair accessible with elevators and level boarding platforms. Station agents can provide assistance upon request. If an elevator is out of service, MARTA will arrange complimentary paratransit shuttle service between accessible stations by calling (404) 848-5826.",
+      "synonyms": ["wheelchair access", "is there an elevator", "I use a wheelchair", "handicap accessible"]
+    },
+    {
+      "policy_id": "marta-access-002",
+      "category": "accessibility",
+      "title": "Reduced Fare Eligibility",
+      "content": "Seniors aged 65 and older, Medicare cardholders, and persons with disabilities are eligible for the $1.25 Reduced Fare. Apply in person at the MARTA Reduced Fare Office at Five Points station with a valid photo ID and proof of eligibility. Reduced Fare Breeze Cards are issued same day.",
+      "synonyms": ["senior discount", "disabled fare", "do old people get a discount", "reduced price for elderly"]
+    },
+    {
+      "policy_id": "marta-fare-001",
+      "category": "fare_policy",
+      "title": "Transfer Policy",
+      "content": "Free transfers between MARTA rail and bus services are available within 3 hours of the initial tap using a Breeze Card or contactless payment. Each transfer must be tapped at a fare gate or bus validator. Paper tickets do not receive free transfers.",
+      "synonyms": ["do I pay again to transfer", "free transfer to bus", "switching trains cost extra", "can I change lines for free"]
+    },
+    {
+      "policy_id": "marta-fare-002",
+      "category": "fare_policy",
+      "title": "Children's Fare Policy",
+      "content": "Children under 5 ride free on MARTA when accompanied by a paying adult, with a maximum of 2 free children per adult. Children aged 5 and older pay the full $2.50 fare. Strollers may be brought onboard but must not block doorways or aisles.",
+      "synonyms": ["do kids ride free", "how much for children", "my kid needs a ticket", "bringing a stroller"]
+    },
+    {
+      "policy_id": "marta-safety-001",
+      "category": "safety",
+      "title": "Emergency Procedures",
+      "content": "In an emergency, use the red emergency intercom located on every MARTA train car to contact the train operator. Do not pull emergency exit handles unless directed by MARTA personnel. MARTA Police can be reached 24/7 at (404) 848-4911.",
+      "synonyms": ["there is an emergency", "how do I call for help", "someone needs help on the train", "emergency button"]
+    },
+    {
+      "policy_id": "marta-safety-002",
+      "category": "safety",
+      "title": "Prohibited Items",
+      "content": "Firearms, explosives, flammable liquids, and open containers of alcohol are prohibited on all MARTA vehicles and in stations. Bicycles are permitted on trains at all times except during special events as posted. Violation of these rules may result in a fine up to $1,000 or criminal prosecution.",
+      "synonyms": ["can I bring my bike", "what can I not bring on the train", "is alcohol allowed", "are weapons banned"]
+    },
+    {
+      "policy_id": "marta-general-001",
+      "category": "general",
+      "title": "Operating Hours",
+      "content": "MARTA rail operates Monday through Saturday from 5:00 AM to 1:00 AM, and Sunday from 6:00 AM to 12:30 AM. Last trains depart terminal stations approximately 45 minutes before closing. Holiday schedules are posted at itsmarta.com at least 14 days in advance.",
+      "synonyms": ["what time does MARTA open", "when is the last train", "is MARTA running right now", "weekend hours"]
+    },
+    {
+      "policy_id": "marta-general-002",
+      "category": "general",
+      "title": "Customer Feedback",
+      "content": "Submit comments, complaints, or commendations online at itsmarta.com/contact or by calling (404) 848-5000 during business hours (Monday-Friday 8:00 AM to 5:00 PM). Written complaints receive a response within 15 business days. Service disruption updates are available on the MARTA app and @MARTAservice on X.",
+      "synonyms": ["I want to make a complaint", "how do I contact MARTA", "where do I give feedback", "report a problem"]
+    }
+  ]
+}

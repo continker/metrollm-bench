@@ -1,0 +1,2569 @@
+[
+  {
+    "id": "CTA-18T",
+    "name": "18th",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-35T",
+    "name": "35th-Bronzeville-IIT",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-35T2",
+    "name": "35th/Archer",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "CTA-43R",
+    "name": "43rd",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-47T",
+    "name": "47th (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-47T2",
+    "name": "47th (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-51S",
+    "name": "51st",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-54C",
+    "name": "54th/Cermak",
+    "lines": [
+      "pink"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-63R",
+    "name": "63rd",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-69T",
+    "name": "69th",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-79T",
+    "name": "79th",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-87T",
+    "name": "87th",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-95D",
+    "name": "95th/Dan Ryan",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-ADD",
+    "name": "Addison (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-BLM"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-ADD2",
+    "name": "Addison (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-ADD3",
+    "name": "Addison (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-ARG",
+    "name": "Argyle",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-ARM",
+    "name": "Armitage",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-FUL",
+      "CTA-SED"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-ASH",
+    "name": "Ashland",
+    "lines": [
+      "green",
+      "pink"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-MOR2"
+    ],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-ASH2",
+    "name": "Ashland (Orange)",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "CTA-AUS",
+    "name": "Austin (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-AUS2",
+    "name": "Austin (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-AWB",
+    "name": "Adams/Wabash",
+    "lines": [
+      "brown",
+      "green",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-HWL",
+      "CTA-RSV",
+      "CTA-WAB"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-BEL",
+    "name": "Belmont (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-BER",
+    "name": "Berwyn",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-BLM",
+    "name": "Belmont",
+    "lines": [
+      "brown",
+      "purple",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-FUL",
+      "CTA-WEL",
+      "CTA-WIL"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-BRM",
+    "name": "Bryn Mawr",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-CAL",
+    "name": "California (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-CAL2",
+    "name": "California (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-CEN",
+    "name": "Central",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-CEN2",
+    "name": "Central (Purple)",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-CEP",
+    "name": "Cermak-McCormick Place",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-RSV"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-CEP2",
+    "name": "Central Park",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-CHI",
+    "name": "Chicago (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-CHI2",
+    "name": "Chicago (Brown/Purple)",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-MRC",
+      "CTA-SED"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-CHI3",
+    "name": "Chicago (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-CIC",
+    "name": "Cicero",
+    "lines": [
+      "pink"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_suburbs"
+  },
+  {
+    "id": "CTA-CIC2",
+    "name": "Cicero (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-CIC3",
+    "name": "Cicero (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-CLA",
+    "name": "Clark/Division",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-CLI",
+    "name": "Clinton (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-CLK",
+    "name": "Clark/Lake",
+    "lines": [
+      "blue",
+      "brown",
+      "green",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-CLN",
+      "CTA-MRC",
+      "CTA-STL",
+      "CTA-WAW"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-CLN",
+    "name": "Clinton",
+    "lines": [
+      "green",
+      "pink"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-CLK",
+      "CTA-MOR2",
+      "CTA-WAW"
+    ],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-CLP",
+    "name": "California (Pink)",
+    "lines": [
+      "pink"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-COG",
+    "name": "Cottage Grove",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-CON",
+    "name": "Conservatory",
+    "lines": [
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-CRM",
+    "name": "Cermak/Chinatown",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-RSV"
+    ],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-CUM",
+    "name": "Cumberland",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "ohare"
+  },
+  {
+    "id": "CTA-DAM",
+    "name": "Damen",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-DAM2",
+    "name": "Damen (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-DAM3",
+    "name": "Damen (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-ASH"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-DAM4",
+    "name": "Damen (Pink)",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-DEM",
+    "name": "Dempster",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-DIV",
+    "name": "Division",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-DMP",
+    "name": "Dempster-Skokie",
+    "lines": [
+      "yellow"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_suburbs"
+  },
+  {
+    "id": "CTA-DVS",
+    "name": "Davis",
+    "lines": [
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_suburbs"
+  },
+  {
+    "id": "CTA-DVY",
+    "name": "Diversey",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-FUL",
+      "CTA-WEL"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-FOS",
+    "name": "Foster",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-FPK",
+    "name": "Forest Park",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_suburbs"
+  },
+  {
+    "id": "CTA-FRA",
+    "name": "Francisco",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-FUL",
+    "name": "Fullerton",
+    "lines": [
+      "brown",
+      "purple",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-ARM",
+      "CTA-BLM",
+      "CTA-DVY"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-GAR",
+    "name": "Garfield (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-GAR2",
+    "name": "Garfield (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-GRA",
+    "name": "Grand (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-GRA2",
+    "name": "Grand (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-CLK"
+    ],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-GRN",
+    "name": "Granville",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-HAL",
+    "name": "Halsted",
+    "lines": [
+      "orange"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-RSV"
+    ],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-HAR",
+    "name": "Harrison",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-RSV"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-HAR2",
+    "name": "Harlem (Blue-O'Hare)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-HAR3",
+    "name": "Harlem (Blue-Forest Park)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-HLK",
+    "name": "Harlem/Lake",
+    "lines": [
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_suburbs"
+  },
+  {
+    "id": "CTA-HOW",
+    "name": "Howard",
+    "lines": [
+      "purple",
+      "red",
+      "yellow"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-WIL"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-HWL",
+    "name": "Harold Washington Library",
+    "lines": [
+      "brown",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-AWB",
+      "CTA-LVB",
+      "CTA-RSV"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-IMD",
+    "name": "Illinois Medical District",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-IND",
+    "name": "Indiana",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-IRP",
+    "name": "Irving Park (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-IRP2",
+    "name": "Irving Park (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-JAC",
+    "name": "Jackson (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-JAC2",
+    "name": "Jackson (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-JEF",
+    "name": "Jefferson Park",
+    "lines": [
+      "blue"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-JRV",
+    "name": "Jarvis",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-HOW"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-KDZ",
+    "name": "Kedzie",
+    "lines": [
+      "orange"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-KED",
+    "name": "Kedzie-Homan",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-KED2",
+    "name": "Kedzie (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-KED3",
+    "name": "Kedzie (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-KED4",
+    "name": "Kedzie (Pink)",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-KID",
+    "name": "King Drive",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-KIM",
+    "name": "Kimball",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-KOS",
+    "name": "Kostner",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-LAK",
+    "name": "Lake",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-LAR",
+    "name": "Laramie",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-LAS",
+    "name": "LaSalle",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-LAW",
+    "name": "Lawrence",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-WIL"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-LIN",
+    "name": "Linden",
+    "lines": [
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_suburbs"
+  },
+  {
+    "id": "CTA-LOG",
+    "name": "Logan Square",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_side"
+  },
+  {
+    "id": "CTA-LVB",
+    "name": "LaSalle/Van Buren",
+    "lines": [
+      "brown",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-HWL",
+      "CTA-QCY"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-LYL",
+    "name": "Loyola",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-MAI",
+    "name": "Main",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-MID",
+    "name": "Midway",
+    "lines": [
+      "orange"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-MON",
+    "name": "Monroe (Red)",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-MON2",
+    "name": "Montrose (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-MON3",
+    "name": "Monroe (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-MON4",
+    "name": "Montrose (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-MOR",
+    "name": "Morse",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-MOR2",
+    "name": "Morgan",
+    "lines": [
+      "green",
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-ASH",
+      "CTA-CLN"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-MRC",
+    "name": "Merchandise Mart",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-CHI2",
+      "CTA-CLK",
+      "CTA-WAW"
+    ],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-NOR",
+    "name": "North/Clybourn",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-FUL"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-NOY",
+    "name": "Noyes",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-OAK",
+    "name": "Oak Park",
+    "lines": [
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "west_suburbs"
+  },
+  {
+    "id": "CTA-OAP",
+    "name": "Oak Park (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-OKT",
+    "name": "Oakton-Skokie",
+    "lines": [
+      "yellow"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-HOW"
+    ],
+    "zone": "north_suburbs"
+  },
+  {
+    "id": "CTA-ORD",
+    "name": "O'Hare",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "ohare"
+  },
+  {
+    "id": "CTA-PAU",
+    "name": "Paulina",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-POL",
+    "name": "Polk",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-ASH"
+    ],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-PUL",
+    "name": "Pulaski (Orange)",
+    "lines": [
+      "orange"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-PUL2",
+    "name": "Pulaski (Blue)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-PUL3",
+    "name": "Pulaski (Green)",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-PUL4",
+    "name": "Pulaski (Pink)",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-QCY",
+    "name": "Quincy",
+    "lines": [
+      "brown",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-LVB",
+      "CTA-WAW"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-RAC",
+    "name": "Racine",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-RID",
+    "name": "Ridgeland",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "CTA-ROC",
+    "name": "Rockwell",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-ROS",
+    "name": "Rosemont",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "ohare"
+  },
+  {
+    "id": "CTA-RSV",
+    "name": "Roosevelt",
+    "lines": [
+      "green",
+      "orange",
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-AWB",
+      "CTA-HWL"
+    ],
+    "zone": "south_side"
+  },
+  {
+    "id": "CTA-SED",
+    "name": "Sedgwick",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-ARM",
+      "CTA-CHI2"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-SHE",
+    "name": "Sheridan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-WIL"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-SOB",
+    "name": "South Boulevard",
+    "lines": [
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-HOW"
+    ],
+    "zone": "purple"
+  },
+  {
+    "id": "CTA-SOU",
+    "name": "Southport",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-BLM"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-SOX",
+    "name": "Sox-35th",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "CTA-STL",
+    "name": "State/Lake",
+    "lines": [
+      "brown",
+      "green",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-CLK",
+      "CTA-WAB"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-THN",
+    "name": "Thorndale",
+    "lines": [
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-UIC",
+    "name": "UIC-Halsted",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-WAB",
+    "name": "Washington/Wabash",
+    "lines": [
+      "brown",
+      "green",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-AWB",
+      "CTA-STL"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-WAS",
+    "name": "Washington",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "CTA-CLK"
+    ],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-WAW",
+    "name": "Washington/Wells",
+    "lines": [
+      "brown",
+      "orange",
+      "pink",
+      "purple"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-CLK",
+      "CTA-CLN",
+      "CTA-MRC",
+      "CTA-QCY"
+    ],
+    "zone": "loop"
+  },
+  {
+    "id": "CTA-WBR",
+    "name": "Western (Brown)",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north_side"
+  },
+  {
+    "id": "CTA-WEL",
+    "name": "Wellington",
+    "lines": [
+      "brown",
+      "purple"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-BLM",
+      "CTA-DVY"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "CTA-WES",
+    "name": "Western (Blue-O'Hare)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-WES2",
+    "name": "Western (Blue-Forest Park)",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "CTA-WES3",
+    "name": "Western (Orange)",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "CTA-WES4",
+    "name": "Western (Pink)",
+    "lines": [
+      "pink"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "pink"
+  },
+  {
+    "id": "CTA-WIL",
+    "name": "Wilson",
+    "lines": [
+      "purple",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "CTA-BLM",
+      "CTA-HOW"
+    ],
+    "zone": "red"
+  }
+]

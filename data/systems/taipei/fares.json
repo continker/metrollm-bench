@@ -1,0 +1,26 @@
+{
+  "system": "taipei",
+  "model": "distance",
+  "currency": "TWD",
+  "currency_symbol": "NT$",
+  "base_fare": 20,
+  "fare_brackets": [
+    {"max_miles": 3.1, "fare": 20},
+    {"max_miles": 5.0, "fare": 25},
+    {"max_miles": 7.5, "fare": 30},
+    {"max_miles": 9.9, "fare": 35},
+    {"max_miles": 12.4, "fare": 40},
+    {"max_miles": 14.9, "fare": 45},
+    {"max_miles": 19.3, "fare": 55},
+    {"max_miles": 999, "fare": 65}
+  ],
+  "payment_methods": {
+    "easycard": {"fare_adjustment": 0.0},
+    "contactless": {"fare_adjustment": 0.0}
+  },
+  "discounts": {
+    "children": {"fare": 0, "max_per_adult": 2, "qualifier": "under 5"},
+    "senior_65_plus": {"multiplier": 0.5},
+    "disabled": {"multiplier": 0.5}
+  }
+}

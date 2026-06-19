@@ -1,0 +1,416 @@
+templates:
+  station_closure:
+    instantiations:
+      - id: "sc-embarcadero"
+        disruption:
+          id: "sc-embarcadero"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Embarcadero station closed due to police activity. All trains skip this station. Use Montgomery St as an alternative."
+          alternative: "Use Montgomery St (one station south)"
+          eta_resolution: "2-4 hours"
+        station_id: "BART-EMBR"
+        station_name: "Embarcadero"
+        reason: "Police activity"
+        nearest_alternatives: ["BART-MONT"]
+        advisory_must_mention: ["embarcadero", "closed", "police"]
+        blocked_stations: ["BART-EMBR"]
+        blocked_edges: []
+
+      - id: "sc-macarthur"
+        disruption:
+          id: "sc-macarthur"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "MacArthur station closed for emergency track repair. Red and Orange line trains from Richmond and Yellow line trains from Antioch cannot pass through. Use 19th St Oakland or Ashby/Rockridge as alternatives."
+          alternative: "Use 19th St Oakland (southbound) or Ashby/Rockridge (northbound)"
+          eta_resolution: "4-6 hours"
+        station_id: "BART-MCAR"
+        station_name: "MacArthur"
+        reason: "Emergency track repair"
+        nearest_alternatives: ["BART-19TH", "BART-ASHB", "BART-ROCK"]
+        advisory_must_mention: ["macarthur", "closed", "track repair"]
+        blocked_stations: ["BART-MCAR"]
+        blocked_edges: []
+
+      - id: "sc-12th-st"
+        disruption:
+          id: "sc-12th-st"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "12th St Oakland station closed due to flooding from water main break. No service through this station. Use 19th St Oakland or Lake Merritt as alternatives."
+          alternative: "Use 19th St Oakland (northbound) or Lake Merritt (southbound/eastbound)"
+          eta_resolution: "6-8 hours"
+        station_id: "BART-12TH"
+        station_name: "12th St Oakland"
+        reason: "Flooding from water main break"
+        nearest_alternatives: ["BART-19TH", "BART-LAKE"]
+        advisory_must_mention: ["12th", "closed", "flooding"]
+        blocked_stations: ["BART-12TH"]
+        blocked_edges: []
+
+      - id: "sc-bay-fair"
+        disruption:
+          id: "sc-bay-fair"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Bay Fair station closed for platform renovation. Dublin/Pleasanton and Fremont branch trains will skip this station. Use San Leandro or Castro Valley/Hayward as alternatives."
+          alternative: "Use San Leandro (northbound), Castro Valley (Dublin branch), or Hayward (Fremont branch)"
+          eta_resolution: "weekend closure"
+        station_id: "BART-BAYF"
+        station_name: "Bay Fair"
+        reason: "Platform renovation"
+        nearest_alternatives: ["BART-SANL", "BART-CAST", "BART-HAYW"]
+        advisory_must_mention: ["bay fair", "closed", "renovation"]
+        blocked_stations: ["BART-BAYF"]
+        blocked_edges: []
+
+      - id: "sc-powell"
+        disruption:
+          id: "sc-powell"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Powell St station closed due to medical emergency on platform. Trains skip this station. Use Montgomery St or Civic Center as alternatives."
+          alternative: "Use Montgomery St (northbound) or Civic Center (southbound)"
+          eta_resolution: "1-2 hours"
+        station_id: "BART-POWL"
+        station_name: "Powell St"
+        reason: "Medical emergency on platform"
+        nearest_alternatives: ["BART-MONT", "BART-CIVC"]
+        advisory_must_mention: ["powell", "closed", "medical"]
+        blocked_stations: ["BART-POWL"]
+        blocked_edges: []
+
+  planned_maintenance:
+    instantiations:
+      - id: "pm-transbay-tube"
+        disruption:
+          id: "pm-transbay-tube"
+          line: null
+          segment:
+            from_station: "BART-WOAK"
+            to_station: "BART-EMBR"
+            stations: ["BART-WOAK", "BART-EMBR"]
+          type: "planned_maintenance"
+          severity: "critical"
+          message: "Transbay Tube closed this weekend for seismic retrofit work. No service between West Oakland and Embarcadero. Free AC Transit bus bridges available between West Oakland and Embarcadero."
+          alternative: "Free AC Transit bus bridge between West Oakland and Embarcadero"
+          eta_resolution: "Service resumes Tuesday 4:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T04:00:00"
+        line: null
+        segment:
+          from_station: "BART-WOAK"
+          to_station: "BART-EMBR"
+          stations: ["BART-WOAK", "BART-EMBR"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["transbay", "tube", "closed", "bus"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-WOAK", "BART-EMBR"]
+
+      - id: "pm-yellow-north"
+        disruption:
+          id: "pm-yellow-north"
+          line: "yellow"
+          segment:
+            from_station: "BART-CONC"
+            to_station: "BART-ANTC"
+            stations: ["BART-CONC", "BART-NCON", "BART-PITT", "BART-PCTR", "BART-ANTC"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Yellow Line: No service between Concord and Antioch this weekend due to signal upgrade. Free bus replacement available between affected stations."
+          alternative: "Free bus replacement between Concord and Antioch"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "yellow"
+        segment:
+          from_station: "BART-CONC"
+          to_station: "BART-ANTC"
+          stations: ["BART-CONC", "BART-NCON", "BART-PITT", "BART-PCTR", "BART-ANTC"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["yellow line", "concord", "antioch", "bus replacement"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-CONC", "BART-NCON"]
+          - ["BART-NCON", "BART-PITT"]
+          - ["BART-PITT", "BART-PCTR"]
+          - ["BART-PCTR", "BART-ANTC"]
+
+      - id: "pm-dublin-branch"
+        disruption:
+          id: "pm-dublin-branch"
+          line: "blue"
+          segment:
+            from_station: "BART-BAYF"
+            to_station: "BART-DUBL"
+            stations: ["BART-BAYF", "BART-CAST", "BART-WDUB", "BART-DUBL"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Blue Line: No service between Bay Fair and Dublin/Pleasanton all day due to track maintenance. Free shuttle bus available between affected stations."
+          alternative: "Free shuttle bus between Bay Fair and Dublin/Pleasanton"
+          eta_resolution: "Service resumes tomorrow 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "blue"
+        segment:
+          from_station: "BART-BAYF"
+          to_station: "BART-DUBL"
+          stations: ["BART-BAYF", "BART-CAST", "BART-WDUB", "BART-DUBL"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["blue line", "bay fair", "dublin", "shuttle"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-BAYF", "BART-CAST"]
+          - ["BART-CAST", "BART-WDUB"]
+          - ["BART-WDUB", "BART-DUBL"]
+
+      - id: "pm-peninsula"
+        disruption:
+          id: "pm-peninsula"
+          line: "red"
+          segment:
+            from_station: "BART-DALY"
+            to_station: "BART-MLBR"
+            stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-MLBR"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Daly City and Millbrae this weekend for rail replacement. Free bus shuttle available between affected stations."
+          alternative: "Free bus shuttle between Daly City and Millbrae"
+          eta_resolution: "Service resumes Tuesday 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "red"
+        segment:
+          from_station: "BART-DALY"
+          to_station: "BART-MLBR"
+          stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-MLBR"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["daly city", "millbrae", "bus shuttle", "weekend"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-DALY", "BART-COLM"]
+          - ["BART-COLM", "BART-SSAN"]
+          - ["BART-SSAN", "BART-SANB"]
+          - ["BART-SANB", "BART-MLBR"]
+
+      - id: "pm-fremont-south"
+        disruption:
+          id: "pm-fremont-south"
+          line: "green"
+          segment:
+            from_station: "BART-FRMT"
+            to_station: "BART-BERY"
+            stations: ["BART-FRMT", "BART-WARM", "BART-MLPT", "BART-BERY"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Green Line: No late-night service between Fremont and Berryessa due to platform extension work. Last train departs Fremont at 10:00 PM."
+          alternative: "No replacement service; plan travel before 10:00 PM"
+          eta_resolution: "Normal service resumes at 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "green"
+        segment:
+          from_station: "BART-FRMT"
+          to_station: "BART-BERY"
+          stations: ["BART-FRMT", "BART-WARM", "BART-MLPT", "BART-BERY"]
+        schedule: "night"
+        replacement_service: null
+        advisory_must_mention: ["fremont", "berryessa", "night", "platform"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-FRMT", "BART-WARM"]
+          - ["BART-WARM", "BART-MLPT"]
+          - ["BART-MLPT", "BART-BERY"]
+
+  earthquake_warning:
+    instantiations:
+      - id: "eq-advisory"
+        disruption:
+          id: "eq-advisory"
+          line: null
+          segment: null
+          type: "earthquake_warning"
+          severity: "info"
+          message: "Seismic advisory: A moderate earthquake was detected in the East Bay. All BART lines are currently operating normally while inspections are conducted. Passengers should monitor updates."
+          alternative: null
+          eta_resolution: "Monitoring — inspections in progress"
+        category: "advisory"
+        phase: "monitoring"
+        suspended_lines: []
+        reduced_lines: []
+        advisory_must_mention: ["earthquake", "monitoring", "inspections"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "eq-service-pause"
+        disruption:
+          id: "eq-service-pause"
+          line: null
+          segment: null
+          type: "earthquake_warning"
+          severity: "warning"
+          message: "Earthquake service pause: All BART trains holding at stations for track and tunnel inspection following a 5.2 magnitude earthquake. Transbay Tube service suspended pending structural check. East Bay lines operating on 20-minute headways."
+          alternative: "Use AC Transit bus bridges for cross-bay travel"
+          eta_resolution: "Tube inspection expected to take 2-4 hours"
+        category: "service_pause"
+        phase: "inspection"
+        suspended_lines: []
+        reduced_lines: ["red", "orange", "yellow", "blue", "green"]
+        advisory_must_mention: ["earthquake", "inspection", "transbay", "suspended"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-WOAK", "BART-EMBR"]
+
+      - id: "eq-major"
+        disruption:
+          id: "eq-major"
+          line: null
+          segment: null
+          type: "earthquake_warning"
+          severity: "critical"
+          message: "Earthquake emergency: All BART service suspended following a 6.8 magnitude earthquake. All stations are closed. Do not attempt to travel. Seek shelter and follow emergency instructions."
+          alternative: "No rail service available. Follow emergency instructions."
+          eta_resolution: "Until further notice"
+        category: "major"
+        phase: "full_suspension"
+        suspended_lines: ["red", "orange", "yellow", "blue", "green", "oac"]
+        reduced_lines: []
+        advisory_must_mention: ["earthquake", "suspended", "all", "shelter"]
+        blocked_stations:
+          - "BART-RICH"
+          - "BART-DELN"
+          - "BART-DELP"
+          - "BART-NBRK"
+          - "BART-DBRK"
+          - "BART-ASHB"
+          - "BART-MCAR"
+          - "BART-19TH"
+          - "BART-12TH"
+          - "BART-WOAK"
+          - "BART-EMBR"
+          - "BART-MONT"
+          - "BART-POWL"
+          - "BART-CIVC"
+          - "BART-16TH"
+          - "BART-24TH"
+          - "BART-GLEN"
+          - "BART-BALB"
+          - "BART-DALY"
+          - "BART-COLM"
+          - "BART-SSAN"
+          - "BART-SANB"
+          - "BART-SFO"
+          - "BART-MLBR"
+          - "BART-ANTC"
+          - "BART-PCTR"
+          - "BART-PITT"
+          - "BART-NCON"
+          - "BART-CONC"
+          - "BART-PHIL"
+          - "BART-WCRK"
+          - "BART-LAFY"
+          - "BART-ORIN"
+          - "BART-ROCK"
+          - "BART-LAKE"
+          - "BART-FTVL"
+          - "BART-COLS"
+          - "BART-OAKL"
+          - "BART-SANL"
+          - "BART-BAYF"
+          - "BART-CAST"
+          - "BART-WDUB"
+          - "BART-DUBL"
+          - "BART-HAYW"
+          - "BART-SHAY"
+          - "BART-UCTY"
+          - "BART-FRMT"
+          - "BART-WARM"
+          - "BART-MLPT"
+          - "BART-BERY"
+        blocked_edges: []
+
+      - id: "eq-partial-restore"
+        disruption:
+          id: "eq-partial-restore"
+          line: null
+          segment: null
+          type: "earthquake_warning"
+          severity: "warning"
+          message: "Post-earthquake update: East Bay lines (Orange) resuming limited service with 20-minute headways between Richmond and Berryessa. Transbay Tube, Yellow Line, and Dublin branch remain suspended pending inspection."
+          alternative: "Orange Line running limited East Bay service only"
+          eta_resolution: "Tube/Yellow/Dublin restoration pending inspection"
+        category: "partial_restore"
+        phase: "partial_restoration"
+        suspended_lines: ["yellow", "blue"]
+        reduced_lines: ["red", "green"]
+        advisory_must_mention: ["resuming", "limited", "yellow", "dublin", "suspended"]
+        blocked_stations: []
+        blocked_edges:
+          - ["BART-WOAK", "BART-EMBR"]
+          - ["BART-ROCK", "BART-MCAR"]
+          - ["BART-BAYF", "BART-CAST"]
+
+      - id: "eq-crowd-giants"
+        disruption:
+          id: "eq-crowd-giants"
+          line: null
+          segment: null
+          type: "crowd_advisory"
+          severity: "info"
+          message: "Crowd advisory: San Francisco Giants game at Oracle Park. Expect heavy ridership at Embarcadero and Montgomery St stations. Additional trains running on Red and Yellow lines. Allow extra travel time."
+          alternative: "Consider using Powell St or Civic Center to avoid congestion"
+          eta_resolution: "Congestion expected until 11:00 PM"
+        advisory_must_mention: ["giants", "crowd", "embarcadero"]
+        blocked_stations: []
+        blocked_edges: []
+
+  line_suspension:
+    instantiations:
+      - id: "ls-yellow-full"
+        disruption:
+          id: "ls-yellow-full"
+          line: "yellow"
+          segment: null
+          type: "line_suspension"
+          severity: "critical"
+          message: "Yellow Line fully suspended due to trackwork. No Yellow Line service between Antioch and Millbrae. Use other BART lines for Transbay travel where possible."
+          alternative: "Other BART lines remain in service; SFO travelers should use Red Line"
+          eta_resolution: "Service restoration overnight"
+        line_closures:
+          - line: "yellow"
+        advisory_must_mention: ["yellow line", "suspended"]
+        blocked_stations: []
+        blocked_edges: []
+      - id: "ls-blue-partial-east"
+        disruption:
+          id: "ls-blue-partial-east"
+          line: "blue"
+          segment: null
+          type: "line_suspension"
+          severity: "warning"
+          message: "Blue Line closed between Dublin/Pleasanton and Castro Valley for emergency track inspection. East Bay extension to Dublin is out of service. Blue Line continues westbound from Castro Valley."
+          alternative: "Shuttle bus between Dublin/Pleasanton and Castro Valley"
+          eta_resolution: "Inspection expected to complete by evening"
+        line_closures:
+          - line: "blue"
+            from_station: "Dublin/Pleasanton"
+            to_station: "Castro Valley"
+        advisory_must_mention: ["blue line", "dublin", "castro valley"]
+        blocked_stations: []
+        blocked_edges: []

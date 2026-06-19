@@ -1,0 +1,742 @@
+[
+  {
+    "id": "MARTA-AC",
+    "name": "Arts Center",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-LC",
+      "MARTA-MT"
+    ],
+    "zone": "midtown"
+  },
+  {
+    "id": "MARTA-AP",
+    "name": "Airport",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-CP"
+    ],
+    "zone": "south"
+  },
+  {
+    "id": "MARTA-AS",
+    "name": "Ashby",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-VC"
+    ],
+    "zone": "west"
+  },
+  {
+    "id": "MARTA-AV",
+    "name": "Avondale",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "MARTA-BH",
+    "name": "Buckhead",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-LC"
+    ],
+    "zone": "north"
+  },
+  {
+    "id": "MARTA-BK",
+    "name": "Bankhead",
+    "lines": [
+      "green"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-AS"
+    ],
+    "zone": "west"
+  },
+  {
+    "id": "MARTA-BO",
+    "name": "Brookhaven/Oglethorpe",
+    "lines": [
+      "gold"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "northeast"
+  },
+  {
+    "id": "MARTA-CH",
+    "name": "Chamblee",
+    "lines": [
+      "gold"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "northeast"
+  },
+  {
+    "id": "MARTA-CP",
+    "name": "College Park",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-AP",
+      "MARTA-EP"
+    ],
+    "zone": "south"
+  },
+  {
+    "id": "MARTA-CV",
+    "name": "Civic Center",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-NA",
+      "MARTA-PC"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-DC",
+    "name": "Decatur",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "MARTA-DO",
+    "name": "Doraville",
+    "lines": [
+      "gold"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "northeast"
+  },
+  {
+    "id": "MARTA-DW",
+    "name": "Dunwoody",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "MARTA-EC",
+    "name": "Edgewood/Candler Park",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-IR"
+    ],
+    "zone": "eastside"
+  },
+  {
+    "id": "MARTA-EL",
+    "name": "East Lake",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-EC"
+    ],
+    "zone": "east"
+  },
+  {
+    "id": "MARTA-EP",
+    "name": "East Point",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-CP",
+      "MARTA-LF"
+    ],
+    "zone": "south"
+  },
+  {
+    "id": "MARTA-FP",
+    "name": "Five Points",
+    "lines": [
+      "blue",
+      "gold",
+      "green",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-GA",
+      "MARTA-GS",
+      "MARTA-OM",
+      "MARTA-PC"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-GA",
+    "name": "Garnett",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-FP",
+      "MARTA-WE"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-GS",
+    "name": "Georgia State",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-FP",
+      "MARTA-KM"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-HEH",
+    "name": "Hamilton E. Holmes",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "MARTA-IC",
+    "name": "Indian Creek",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "MARTA-IR",
+    "name": "Inman Park/Reynoldstown",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-EC",
+      "MARTA-KM"
+    ],
+    "zone": "eastside"
+  },
+  {
+    "id": "MARTA-KM",
+    "name": "King Memorial",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-GS",
+      "MARTA-IR"
+    ],
+    "zone": "eastside"
+  },
+  {
+    "id": "MARTA-KN",
+    "name": "Kensington",
+    "lines": [
+      "blue"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "east"
+  },
+  {
+    "id": "MARTA-LC",
+    "name": "Lindbergh Center",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-AC"
+    ],
+    "zone": "midtown"
+  },
+  {
+    "id": "MARTA-LF",
+    "name": "Lakewood/Ft McPherson",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-EP",
+      "MARTA-OC"
+    ],
+    "zone": "southwest"
+  },
+  {
+    "id": "MARTA-LX",
+    "name": "Lenox",
+    "lines": [
+      "gold"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-LC"
+    ],
+    "zone": "northeast"
+  },
+  {
+    "id": "MARTA-MC",
+    "name": "Medical Center",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "MARTA-MT",
+    "name": "Midtown",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-AC",
+      "MARTA-NA"
+    ],
+    "zone": "midtown"
+  },
+  {
+    "id": "MARTA-NA",
+    "name": "North Avenue",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-CV",
+      "MARTA-MT"
+    ],
+    "zone": "midtown"
+  },
+  {
+    "id": "MARTA-NS",
+    "name": "North Springs",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "MARTA-OC",
+    "name": "Oakland City",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-LF",
+      "MARTA-WE"
+    ],
+    "zone": "southwest"
+  },
+  {
+    "id": "MARTA-OM",
+    "name": "OMNI/Dome/GWCC/Philips Arena/CNN Center",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-FP",
+      "MARTA-VC"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-PC",
+    "name": "Peachtree Center",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-CV",
+      "MARTA-FP"
+    ],
+    "zone": "downtown"
+  },
+  {
+    "id": "MARTA-SS",
+    "name": "Sandy Springs",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "north"
+  },
+  {
+    "id": "MARTA-VC",
+    "name": "Vine City",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-AS",
+      "MARTA-OM"
+    ],
+    "zone": "west"
+  },
+  {
+    "id": "MARTA-WE",
+    "name": "West End",
+    "lines": [
+      "gold",
+      "red"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "MARTA-GA",
+      "MARTA-OC"
+    ],
+    "zone": "southwest"
+  },
+  {
+    "id": "MARTA-WEL",
+    "name": "West Lake",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "MARTA-AS"
+    ],
+    "zone": "blue"
+  }
+]

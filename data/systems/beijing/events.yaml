@@ -1,0 +1,1067 @@
+templates:
+  station_closure:
+    instantiations:
+    - id: sc-guomao
+      disruption:
+        id: sc-guomao
+        line: null
+        segment: null
+        type: station_closure
+        severity: critical
+        message: Guomao station closed due to security incident. Line 1 and Line 10 trains skip this station. Use Dawang Lu (Line 1) or Jintai Xizhao (Line 10) as alternatives.
+        alternative: Use Dawang Lu (Line 1 east) or Jintai Xizhao (Line 10 south)
+        eta_resolution: 2-4 hours
+      station_id: BJM-GUO
+      station_name: Guomao
+      reason: Security incident
+      nearest_alternatives:
+      - BJM-DAL
+      - BJM-JIX
+      advisory_must_mention:
+      - guomao
+      - closed
+      - security
+      blocked_stations:
+      - BJM-GUO
+      blocked_edges: []
+    - id: sc-xizhimen
+      disruption:
+        id: sc-xizhimen
+        line: null
+        segment: null
+        type: station_closure
+        severity: critical
+        message: Xizhimen station closed for emergency escalator repair. Line 2, Line 4, and Line 13 trains skip this station. Use Chegongzhuang (Line 2/6) or Xinjiekou (Line 4) as alternatives.
+        alternative: Use Chegongzhuang (Line 2) or Xinjiekou (Line 4)
+        eta_resolution: 3-5 hours
+      station_id: BJM-XIZ
+      station_name: Xizhimen
+      reason: Emergency escalator repair
+      nearest_alternatives:
+      - BJM-CHE
+      - BJM-XIK
+      advisory_must_mention:
+      - xizhimen
+      - closed
+      - escalator
+      blocked_stations:
+      - BJM-XIZ
+      blocked_edges: []
+    - id: sc-dongzhimen
+      disruption:
+        id: sc-dongzhimen
+        line: null
+        segment: null
+        type: station_closure
+        severity: critical
+        message: Dongzhimen station closed due to water leak. Line 2, Line 13, and Capital Airport Express trains skip this station. Airport Express passengers should use Sanyuan Qiao. Line 2 passengers
+          use Yonghegong Lama Temple.
+        alternative: 'Airport Express: use Sanyuan Qiao. Line 2: use Yonghegong Lama Temple'
+        eta_resolution: 4-6 hours
+      station_id: BJM-DON2
+      station_name: Dongzhimen
+      reason: Water leak
+      nearest_alternatives:
+      - BJM-SAQ
+      - BJM-YLT
+      advisory_must_mention:
+      - dongzhimen
+      - closed
+      - water
+      blocked_stations:
+      - BJM-DON2
+      blocked_edges: []
+    - id: sc-xidan
+      disruption:
+        id: sc-xidan
+        line: null
+        segment: null
+        type: station_closure
+        severity: warning
+        message: Xidan station closed due to suspicious package investigation. Line 1 and Line 4 trains skip this station. Use Fuxingmen (Line 1/2) or Lingjing Hutong (Line 4) as alternatives.
+        alternative: Use Fuxingmen (Line 1 west) or Lingjing Hutong (Line 4 south)
+        eta_resolution: 1-3 hours
+      station_id: BJM-XID
+      station_name: Xidan
+      reason: Suspicious package investigation
+      nearest_alternatives:
+      - BJM-FUX
+      - BJM-LIH
+      advisory_must_mention:
+      - xidan
+      - closed
+      - suspicious
+      blocked_stations:
+      - BJM-XID
+      blocked_edges: []
+    - id: sc-songjiazhuang
+      disruption:
+        id: sc-songjiazhuang
+        line: null
+        segment: null
+        type: station_closure
+        severity: warning
+        message: Songjiazhuang station closed due to flooding. Line 5, Line 10, and Yizhuang Line trains skip this station. Use Liujiayao (Line 5) or Chengwai Dajie (Line 10) as alternatives.
+        alternative: Use Liujiayao (Line 5 north) or Chengwai Dajie (Line 10)
+        eta_resolution: 6-8 hours
+      station_id: BJM-SON
+      station_name: Songjiazhuang
+      reason: Flooding
+      nearest_alternatives:
+      - BJM-LIU2
+      - BJM-CHS
+      advisory_must_mention:
+      - songjiazhuang
+      - closed
+      - flooding
+      blocked_stations:
+      - BJM-SON
+      blocked_edges: []
+  planned_maintenance:
+    instantiations:
+    - id: pm-line1-west
+      disruption:
+        id: pm-line1-west
+        line: '1'
+        segment:
+          from_station: BJM-PIN
+          to_station: BJM-WUK
+          stations:
+          - BJM-PIN
+          - BJM-GUC
+          - BJM-BAP
+          - BJM-BAB
+          - BJM-YUL
+          - BJM-WUK
+        type: planned_maintenance
+        severity: warning
+        message: 'Line 1: No service between Pingguoyuan and Wukesong this weekend due to track renewal. Free shuttle buses available between affected stations.'
+        alternative: Free shuttle bus between Pingguoyuan and Wukesong
+        eta_resolution: Service resumes Tuesday 5:00 AM
+        valid_from: "2026-03-09T06:00:00"
+        valid_until: "2026-03-10T05:00:00"
+      line: '1'
+      segment:
+        from_station: BJM-PIN
+        to_station: BJM-WUK
+        stations:
+        - BJM-PIN
+        - BJM-GUC
+        - BJM-BAP
+        - BJM-BAB
+        - BJM-YUL
+        - BJM-WUK
+      schedule: weekend
+      replacement_service: bus
+      advisory_must_mention:
+      - line 1
+      - pingguoyuan
+      - wukesong
+      - shuttle
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-PIN
+        - BJM-GUC
+      - - BJM-GUC
+        - BJM-BAP
+      - - BJM-BAP
+        - BJM-BAB
+      - - BJM-BAB
+        - BJM-YUL
+      - - BJM-YUL
+        - BJM-WUK
+    - id: pm-line4-north
+      disruption:
+        id: pm-line4-north
+        line: '4'
+        segment:
+          from_station: BJM-ANH
+          to_station: BJM-PUEG
+          stations:
+          - BJM-ANH
+          - BJM-BEI
+          - BJM-XIY
+          - BJM-YUP
+          - BJM-PUEG
+        type: planned_maintenance
+        severity: warning
+        message: 'Line 4: No service between Anheqiaobei and Peking Univ East Gate this weekend due to signal upgrade. Free shuttle bus available.'
+        alternative: Free shuttle bus between Anheqiaobei and Peking Univ East Gate
+        eta_resolution: Service resumes Tuesday 5:00 AM
+        valid_from: "2026-03-09T06:00:00"
+        valid_until: "2026-03-10T05:00:00"
+      line: '4'
+      segment:
+        from_station: BJM-ANH
+        to_station: BJM-PUEG
+        stations:
+        - BJM-ANH
+        - BJM-BEI
+        - BJM-XIY
+        - BJM-YUP
+        - BJM-PUEG
+      schedule: weekend
+      replacement_service: bus
+      advisory_must_mention:
+      - line 4
+      - anheqiaobei
+      - peking
+      - shuttle
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-ANH
+        - BJM-BEI
+      - - BJM-BEI
+        - BJM-XIY
+      - - BJM-XIY
+        - BJM-YUP
+      - - BJM-YUP
+        - BJM-PUEG
+    - id: pm-line10-north
+      disruption:
+        id: pm-line10-north
+        line: '10'
+        segment:
+          from_station: BJM-BAG
+          to_station: BJM-ZHL3
+          stations:
+          - BJM-BAG
+          - BJM-SUJ
+          - BJM-HAH
+          - BJM-ZHL2
+          - BJM-ZHL3
+        type: planned_maintenance
+        severity: info
+        message: 'Line 10: No late-night service between Bagou and Zhichun Lu due to platform screen door maintenance. Last train departs Bagou at 10:00 PM.'
+        alternative: No replacement service; plan travel before 10:00 PM
+        eta_resolution: Normal service resumes at 5:30 AM
+        valid_from: "2026-03-09T06:00:00"
+        valid_until: "2026-03-10T05:30:00"
+      line: '10'
+      segment:
+        from_station: BJM-BAG
+        to_station: BJM-ZHL3
+        stations:
+        - BJM-BAG
+        - BJM-SUJ
+        - BJM-HAH
+        - BJM-ZHL2
+        - BJM-ZHL3
+      schedule: night
+      replacement_service: null
+      advisory_must_mention:
+      - line 10
+      - bagou
+      - zhichun
+      - night
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-BAG
+        - BJM-SUJ
+      - - BJM-SUJ
+        - BJM-HAH
+      - - BJM-HAH
+        - BJM-ZHL2
+      - - BJM-ZHL2
+        - BJM-ZHL3
+    - id: pm-line6-west
+      disruption:
+        id: pm-line6-west
+        line: '6'
+        segment:
+          from_station: BJM-JIN
+          to_station: BJM-XIH
+          stations:
+          - BJM-JIN
+          - BJM-PIN
+          - BJM-YAN
+          - BJM-XIH
+        type: planned_maintenance
+        severity: warning
+        message: 'Line 6: No service between Jin''anqiao and Xihuangcun all day due to switch replacement. Free shuttle bus runs between affected stations.'
+        alternative: Free shuttle bus between Jin'anqiao and Xihuangcun
+        eta_resolution: Service resumes tomorrow 5:00 AM
+        valid_from: "2026-03-09T06:00:00"
+        valid_until: "2026-03-10T05:00:00"
+      line: '6'
+      segment:
+        from_station: BJM-JIN
+        to_station: BJM-XIH
+        stations:
+        - BJM-JIN
+        - BJM-PIN
+        - BJM-YAN
+        - BJM-XIH
+      schedule: all_day
+      replacement_service: bus
+      advisory_must_mention:
+      - line 6
+      - jin'anqiao
+      - xihuangcun
+      - shuttle
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-JIN
+        - BJM-PIN
+      - - BJM-PIN
+        - BJM-YAN
+      - - BJM-YAN
+        - BJM-XIH
+    - id: pm-line5-south
+      disruption:
+        id: pm-line5-south
+        line: '5'
+        segment:
+          from_station: BJM-PUH
+          to_station: BJM-SON
+          stations:
+          - BJM-PUH
+          - BJM-LIU2
+          - BJM-SON
+        type: planned_maintenance
+        severity: warning
+        message: 'Line 5: No service between Puhuangyu and Songjiazhuang this weekend due to rail grinding. Free shuttle bus available between affected stations.'
+        alternative: Free shuttle bus between Puhuangyu and Songjiazhuang
+        eta_resolution: Service resumes Tuesday 5:00 AM
+        valid_from: "2026-03-09T06:00:00"
+        valid_until: "2026-03-10T05:00:00"
+      line: '5'
+      segment:
+        from_station: BJM-PUH
+        to_station: BJM-SON
+        stations:
+        - BJM-PUH
+        - BJM-LIU2
+        - BJM-SON
+      schedule: weekend
+      replacement_service: bus
+      advisory_must_mention:
+      - line 5
+      - puhuangyu
+      - songjiazhuang
+      - shuttle
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-PUH
+        - BJM-LIU2
+      - - BJM-LIU2
+        - BJM-SON
+  smog_warning:
+    instantiations:
+    - id: sw-advisory
+      disruption:
+        id: sw-advisory
+        line: null
+        segment: null
+        type: smog_warning
+        severity: info
+        message: 'Air quality advisory: AQI exceeds 200 (heavy pollution). All Beijing Metro lines operating normally. Passengers with respiratory conditions are advised to wear N95 masks. Station ventilation
+          systems on maximum. Allow extra time for security screening.'
+        alternative: null
+        eta_resolution: Monitoring — pollution expected through Wednesday
+      category: advisory
+      phase: monitoring
+      suspended_lines: []
+      reduced_lines: []
+      advisory_must_mention:
+      - air quality
+      - pollution
+      - masks
+      blocked_stations: []
+      blocked_edges: []
+    - id: sw-outdoor-reduced
+      disruption:
+        id: sw-outdoor-reduced
+        line: null
+        segment: null
+        type: smog_warning
+        severity: warning
+        message: 'Severe smog service reduction: AQI exceeds 300 (hazardous). Outdoor/elevated sections operating at reduced frequency. Line S1 (maglev), Xijiao Line, and Yanfang Line suspended. Underground
+          lines continue with 10-minute headways. Wear masks at all stations.'
+        alternative: Underground lines remain in service. Use bus alternatives for suspended lines.
+        eta_resolution: Outdoor service restoration pending air quality improvement
+      category: outdoor_reduced
+      phase: partial_suspension
+      suspended_lines:
+      - s1
+      - xijiao
+      - yanfang
+      reduced_lines:
+      - '13'
+      - changping
+      advisory_must_mention:
+      - smog
+      - outdoor
+      - suspended
+      - masks
+      blocked_stations: []
+      blocked_edges:
+      - - BJM-SHI8
+        - BJM-XIA2
+      - - BJM-XIA2
+        - BJM-LIY2
+      - - BJM-LIY2
+        - BJM-SHA4
+      - - BJM-SHA4
+        - BJM-QIA3
+      - - BJM-QIA3
+        - BJM-SIQ2
+      - - BJM-SIQ2
+        - BJM-JIN
+      - - BJM-FRH
+        - BJM-CNBG
+      - - BJM-CNBG
+        - BJM-WAN10
+      - - BJM-WAN10
+        - BJM-CHA4
+      - - BJM-CHA4
+        - BJM-SPWG
+      - - BJM-SPWG
+        - BJM-BAG
+      - - BJM-YAN2
+        - BJM-ZIC
+      - - BJM-ZIC
+        - BJM-YAN3
+      - - BJM-YAN3
+        - BJM-XIN4
+      - - BJM-XIN4
+        - BJM-DAS2
+      - - BJM-DAS2
+        - BJM-MAG
+      - - BJM-MAG
+        - BJM-RAF
+      - - BJM-RAF
+        - BJM-FAC
+      - - BJM-FAC
+        - BJM-YAN4
+    - id: sw-full-suspension
+      disruption:
+        id: sw-full-suspension
+        line: null
+        segment: null
+        type: smog_warning
+        severity: critical
+        message: 'Emergency smog shutdown: AQI exceeds 500. Beijing city government has ordered all public transit suspended due to hazardous air quality. All Beijing Metro stations are closed. Do not travel
+          unless absolutely necessary. Follow government emergency instructions.'
+        alternative: No rail service available. Follow government emergency instructions.
+        eta_resolution: Until further notice
+      category: full_suspension
+      phase: full_suspension
+      suspended_lines:
+      - '1'
+      - '10'
+      - '11'
+      - '12'
+      - '13'
+      - '14'
+      - '15'
+      - '16'
+      - '17'
+      - '18'
+      - '19'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - capital_airport
+      - changping
+      - daxing_airport
+      - fangshan
+      - s1
+      - xijiao
+      - yanfang
+      - yizhuang
+      reduced_lines: []
+      advisory_must_mention:
+      - smog
+      - suspended
+      - all
+      - emergency
+      blocked_stations:
+      - BJM-2HH
+      - BJM-3HH
+      - BJM-AEC
+      - BJM-ANB
+      - BJM-ANH
+      - BJM-ANL
+      - BJM-ANM
+      - BJM-ANQ
+      - BJM-ANQ2
+      - BJM-ANZ
+      - BJM-AOG
+      - BJM-AOZ
+      - BJM-BAB
+      - BJM-BAG
+      - BJM-BAI
+      - BJM-BAI2
+      - BJM-BAI3
+      - BJM-BAI4
+      - BJM-BAP
+      - BJM-BAQ
+      - BJM-BEI
+      - BJM-BEI10
+      - BJM-BEI11
+      - BJM-BEI12
+      - BJM-BEI13
+      - BJM-BEI2
+      - BJM-BEI3
+      - BJM-BEI4
+      - BJM-BEI5
+      - BJM-BEI6
+      - BJM-BEI7
+      - BJM-BEI8
+      - BJM-BEI9
+      - BJM-BER
+      - BJM-BEY
+      - BJM-BIB
+      - BJM-BSR
+      - BJM-BUOT
+      - BJM-BWR
+      - BJM-CAI
+      - BJM-CAK
+      - BJM-CAO
+      - BJM-CAO2
+      - BJM-CHA
+      - BJM-CHA2
+      - BJM-CHA3
+      - BJM-CHA4
+      - BJM-CHD
+      - BJM-CHE
+      - BJM-CHE2
+      - BJM-CHE3
+      - BJM-CHJ
+      - BJM-CHM
+      - BJM-CHM2
+      - BJM-CHP
+      - BJM-CHQ
+      - BJM-CHR
+      - BJM-CHS
+      - BJM-CHX
+      - BJM-CIEC
+      - BJM-CIK
+      - BJM-CIQ
+      - BJM-CIQ2
+      - BJM-CIQ3
+      - BJM-CIS
+      - BJM-CNBG
+      - BJM-CUI
+      - BJM-CUOC
+      - BJM-CUOE
+      - BJM-DAB
+      - BJM-DAG
+      - BJM-DAH
+      - BJM-DAJ
+      - BJM-DAJ2
+      - BJM-DAJ3
+      - BJM-DAL
+      - BJM-DAL2
+      - BJM-DAL3
+      - BJM-DAM
+      - BJM-DAO
+      - BJM-DAS
+      - BJM-DAS2
+      - BJM-DAT
+      - BJM-DAW
+      - BJM-DAX
+      - BJM-DEK
+      - BJM-DEM
+      - BJM-DOB
+      - BJM-DON
+      - BJM-DON10
+      - BJM-DON11
+      - BJM-DON12
+      - BJM-DON13
+      - BJM-DON14
+      - BJM-DON2
+      - BJM-DON3
+      - BJM-DON4
+      - BJM-DON5
+      - BJM-DON6
+      - BJM-DON7
+      - BJM-DON8
+      - BJM-DON9
+      - BJM-DOS
+      - BJM-DOY
+      - BJM-ERL
+      - BJM-FAC
+      - BJM-FAN
+      - BJM-FAT
+      - BJM-FED
+      - BJM-FEN
+      - BJM-FEN2
+      - BJM-FER
+      - BJM-FES
+      - BJM-FRH
+      - BJM-FSP
+      - BJM-FUF
+      - BJM-FUM
+      - BJM-FUS
+      - BJM-FUT
+      - BJM-FUX
+      - BJM-GAK
+      - BJM-GAO
+      - BJM-GAO2
+      - BJM-GAO3
+      - BJM-GAO4
+      - BJM-GAO5
+      - BJM-GEP
+      - BJM-GOC
+      - BJM-GON
+      - BJM-GOX
+      - BJM-GUA
+      - BJM-GUA2
+      - BJM-GUC
+      - BJM-GUC2
+      - BJM-GUD
+      - BJM-GUM
+      - BJM-GUN
+      - BJM-GUN2
+      - BJM-GUO
+      - BJM-GUO2
+      - BJM-GUO3
+      - BJM-GUO4
+      - BJM-GUT
+      - BJM-GUW
+      - BJM-HAF
+      - BJM-HAH
+      - BJM-HAI
+      - BJM-HAV
+      - BJM-HAW
+      - BJM-HEB
+      - BJM-HEI
+      - BJM-HEM
+      - BJM-HEX
+      - BJM-HEY
+      - BJM-HON
+      - BJM-HON2
+      - BJM-HON3
+      - BJM-HON4
+      - BJM-HOU
+      - BJM-HUA
+      - BJM-HUA2
+      - BJM-HUA3
+      - BJM-HUA4
+      - BJM-HUA5
+      - BJM-HUD
+      - BJM-HUD2
+      - BJM-HUF
+      - BJM-HUG
+      - BJM-HUJ
+      - BJM-HUO
+      - BJM-HUO2
+      - BJM-HUO3
+      - BJM-HUQ
+      - BJM-HUR
+      - BJM-HUW
+      - BJM-HUX
+      - BJM-HUX2
+      - BJM-HXB
+      - BJM-HXN
+      - BJM-JIA
+      - BJM-JIA2
+      - BJM-JIA3
+      - BJM-JIA4
+      - BJM-JIA5
+      - BJM-JIA6
+      - BJM-JIC
+      - BJM-JIG
+      - BJM-JIH
+      - BJM-JIJ
+      - BJM-JIL
+      - BJM-JIL2
+      - BJM-JIM
+      - BJM-JIN
+      - BJM-JIN2
+      - BJM-JIN3
+      - BJM-JIN4
+      - BJM-JIQ
+      - BJM-JIS
+      - BJM-JIU
+      - BJM-JIU2
+      - BJM-JIX
+      - BJM-KAN
+      - BJM-KEL
+      - BJM-LAI
+      - BJM-LAN
+      - BJM-LAN2
+      - BJM-LIA
+      - BJM-LIB
+      - BJM-LIH
+      - BJM-LIK
+      - BJM-LIN
+      - BJM-LIN2
+      - BJM-LIN3
+      - BJM-LIQ
+      - BJM-LIQ2
+      - BJM-LIQ3
+      - BJM-LIQ4
+      - BJM-LIS
+      - BJM-LIS2
+      - BJM-LIU
+      - BJM-LIU2
+      - BJM-LIU3
+      - BJM-LIY
+      - BJM-LIY2
+      - BJM-LON
+      - BJM-LON2
+      - BJM-LSP
+      - BJM-LUC
+      - BJM-LUT
+      - BJM-LUTN
+      - BJM-LUTW
+      - BJM-LUY
+      - BJM-MAG
+      - BJM-MAJ
+      - BJM-MAL
+      - BJM-MAQ
+      - BJM-MAQ2
+      - BJM-MIM
+      - BJM-MIT
+      - BJM-MOS
+      - BJM-MUD
+      - BJM-MUX
+      - BJM-MUY
+      - BJM-NAL
+      - BJM-NAN
+      - BJM-NAN2
+      - BJM-NAX
+      - BJM-NAZ
+      - BJM-NIU
+      - BJM-NIW
+      - BJM-NON
+      - BJM-PAN
+      - BJM-PAY
+      - BJM-PIF
+      - BJM-PIN
+      - BJM-PIN2
+      - BJM-PIY
+      - BJM-PUEG
+      - BJM-PUH
+      - BJM-QDX
+      - BJM-QIA
+      - BJM-QIA2
+      - BJM-QIA3
+      - BJM-QIL
+      - BJM-QIL2
+      - BJM-QIL3
+      - BJM-QIN
+      - BJM-QIR
+      - BJM-QIX
+      - BJM-QUN
+      - BJM-RAF
+      - BJM-RED
+      - BJM-ROD
+      - BJM-ROD2
+      - BJM-SAQ
+      - BJM-SGN
+      - BJM-SHA
+      - BJM-SHA2
+      - BJM-SHA3
+      - BJM-SHA4
+      - BJM-SHA5
+      - BJM-SHI
+      - BJM-SHI2
+      - BJM-SHI3
+      - BJM-SHI4
+      - BJM-SHI5
+      - BJM-SHI6
+      - BJM-SHI7
+      - BJM-SHI8
+      - BJM-SHQ
+      - BJM-SHU
+      - BJM-SHU2
+      - BJM-SHU3
+      - BJM-SIH
+      - BJM-SIH2
+      - BJM-SIQ
+      - BJM-SIQ2
+      - BJM-SON
+      - BJM-SPWG
+      - BJM-SSP
+      - BJM-SUJ
+      - BJM-SUN
+      - BJM-SUP
+      - BJM-SUQ
+      - BJM-SUZ
+      - BJM-TAI
+      - BJM-TAI2
+      - BJM-TAI3
+      - BJM-TAO
+      - BJM-TAQ
+      - BJM-TIA
+      - BJM-TIA2
+      - BJM-TIA3
+      - BJM-TIA4
+      - BJM-TIA5
+      - BJM-TIA6
+      - BJM-TIA7
+      - BJM-TIA8
+      - BJM-TIY
+      - BJM-TOB
+      - BJM-TOB2
+      - BJM-TOHE
+      - BJM-TOM
+      - BJM-TON
+      - BJM-TUA
+      - BJM-TUN
+      - BJM-TUO
+      - BJM-TUQ
+      - BJM-UNR
+      - BJM-WAJ
+      - BJM-WAL
+      - BJM-WAN
+      - BJM-WAN10
+      - BJM-WAN2
+      - BJM-WAN3
+      - BJM-WAN4
+      - BJM-WAN5
+      - BJM-WAN6
+      - BJM-WAN7
+      - BJM-WAN8
+      - BJM-WAN9
+      - BJM-WAQ
+      - BJM-WAS
+      - BJM-WEI
+      - BJM-WEI2
+      - BJM-WEI3
+      - BJM-WEL
+      - BJM-WEN
+      - BJM-WOS
+      - BJM-WUF
+      - BJM-WUK
+      - BJM-WUK2
+      - BJM-WXL
+      - BJM-XIA
+      - BJM-XIA2
+      - BJM-XIB
+      - BJM-XIB2
+      - BJM-XID
+      - BJM-XID2
+      - BJM-XIE
+      - BJM-XIH
+      - BJM-XIJ
+      - BJM-XIK
+      - BJM-XIK2
+      - BJM-XIM
+      - BJM-XIM2
+      - BJM-XIN
+      - BJM-XIN2
+      - BJM-XIN3
+      - BJM-XIN4
+      - BJM-XIS
+      - BJM-XIT
+      - BJM-XIT2
+      - BJM-XIY
+      - BJM-XIZ
+      - BJM-XUE
+      - BJM-XUE2
+      - BJM-XUM
+      - BJM-YAN
+      - BJM-YAN2
+      - BJM-YAN3
+      - BJM-YAN4
+      - BJM-YAO
+      - BJM-YCP
+      - BJM-YIH
+      - BJM-YIN
+      - BJM-YIQ
+      - BJM-YIR
+      - BJM-YLT
+      - BJM-YOL
+      - BJM-YON
+      - BJM-YON2
+      - BJM-YON3
+      - BJM-YON4
+      - BJM-YUD
+      - BJM-YUL
+      - BJM-YUL2
+      - BJM-YUP
+      - BJM-YUS
+      - BJM-YUX
+      - BJM-ZAO
+      - BJM-ZAO2
+      - BJM-ZHA
+      - BJM-ZHL
+      - BJM-ZHL2
+      - BJM-ZHL3
+      - BJM-ZHM
+      - BJM-ZHO
+      - BJM-ZHO2
+      - BJM-ZHU
+      - BJM-ZHU2
+      - BJM-ZHU3
+      - BJM-ZIC
+      - BJM-ZUO
+      blocked_edges: []
+  crowd_advisory:
+    instantiations:
+    - id: ca-tiananmen
+      disruption:
+        id: ca-tiananmen
+        line: null
+        segment: null
+        type: crowd_advisory
+        severity: info
+        message: 'Crowd advisory: National Day holiday at Tiananmen Square. Expect extremely heavy ridership at Tian''anmenxi and Tian''anmendong (Line 1) and Qianmen (Line 2/8). Flow control in effect.
+          Additional security screening. Allow extra travel time.'
+        alternative: Consider using Xidan or Wangfujing to avoid congestion
+        eta_resolution: Congestion expected through 9:00 PM
+      advisory_must_mention:
+      - national day
+      - crowd
+      - tiananmen
+      blocked_stations: []
+      blocked_edges: []
+    - id: ca-olympic
+      disruption:
+        id: ca-olympic
+        line: null
+        segment: null
+        type: crowd_advisory
+        severity: info
+        message: 'Crowd advisory: Major sporting event at National Stadium (Bird''s Nest). Expect heavy ridership at Olympic Park (Line 8/15) and Olympic Sports Center (Line 8). Additional trains running
+          on Line 8. Allow extra travel time.'
+        alternative: Consider using Beitucheng (Line 10/8) to avoid congestion at Olympic Park
+        eta_resolution: Congestion expected through 11:00 PM
+      advisory_must_mention:
+      - stadium
+      - crowd
+      - olympic
+      blocked_stations: []
+      blocked_edges: []
+  line_suspension:
+    instantiations:
+    - id: ls-line10-full
+      disruption:
+        id: ls-line10-full
+        line: '10'
+        segment: null
+        type: line_suspension
+        severity: critical
+        message: 'Line 10 suspended entirely due to power failure along the loop. All Line 10 trains are out of service. Use alternative routes via Line 16, Line 14, or other connections.'
+        alternative: Use Line 16 + Line 14 as alternatives, or any connecting line
+        eta_resolution: 2-3 hours
+      line_closures:
+      - line: '10'
+      advisory_must_mention:
+      - line 10
+      - suspended
+      blocked_stations: []
+      blocked_edges: []
+    - id: ls-line10-full-central
+      disruption:
+        id: ls-line10-full-central
+        line: '10'
+        segment: null
+        type: line_suspension
+        severity: critical
+        message: 'Line 10 completely out of service for emergency inspection. No Line 10 trains running. Transfer via Line 16 or Line 12 connections where available.'
+        alternative: Line 16 provides east-west coverage; Line 12 serves the north side
+        eta_resolution: Late evening
+      line_closures:
+      - line: '10'
+      advisory_must_mention:
+      - line 10
+      - out of service
+      blocked_stations: []
+      blocked_edges: []
+    - id: ls-line14-partial
+      disruption:
+        id: ls-line14-partial
+        line: '14'
+        segment: null
+        type: line_suspension
+        severity: warning
+        message: 'Line 14 closed between Zhangguozhuang and Beijing South Railway Station for track replacement. No trains running on this segment. Other Line 14 stations east of Beijing South continue normal service.'
+        alternative: Segment east of Beijing South railway remains in service
+        eta_resolution: Weekend only
+      line_closures:
+      - line: '14'
+        from_station: Zhangguozhuang
+        to_station: Beijing South railway
+      advisory_must_mention:
+      - line 14
+      - zhangguozhuang
+      - beijing south
+      blocked_stations: []
+      blocked_edges: []
+    - id: ls-line2-loop-full
+      disruption:
+        id: ls-line2-loop-full
+        line: '2'
+        segment: null
+        type: line_suspension
+        severity: critical
+        message: 'Line 2 (Loop Line) fully suspended due to signal system failure. No trains running around the inner ring. Use Line 13, Line 6, or Line 12 as alternatives around the city center.'
+        alternative: Line 13 (north), Line 6 (east-west), Line 12 (north) as alternative crosstown routes
+        eta_resolution: Ongoing — expect delays through rush hour
+      line_closures:
+      - line: '2'
+      advisory_must_mention:
+      - line 2
+      - loop
+      - suspended
+      blocked_stations: []
+      blocked_edges: []
+    - id: ls-line15-full-noalt
+      disruption:
+        id: ls-line15-full-noalt
+        line: '15'
+        segment: null
+        type: line_suspension
+        severity: critical
+        message: 'Line 15 suspended entirely. No Line 15 trains running from Qinghua Donglu Xikou to Fengbo. Stations served only by Line 15 have no rail service; please use buses or taxis.'
+        alternative: Bus service or taxis for Line 15 exclusive stations
+        eta_resolution: Extended closure — check back later
+      line_closures:
+      - line: '15'
+      advisory_must_mention:
+      - line 15
+      - suspended
+      blocked_stations: []
+      blocked_edges: []
+    - id: ls-line10-plus-line9
+      disruption:
+        id: ls-line10-plus-line9
+        line: '10'
+        segment: null
+        type: line_suspension
+        severity: critical
+        message: 'Compound disruption: Line 10 fully suspended AND Line 9 closed between National Library and Guogongzhuang. Major rerouting required for journeys crossing the west or south of the city.'
+        alternative: Use Line 16, Line 14, Line 4 connections where available
+        eta_resolution: Afternoon restoration expected
+      line_closures:
+      - line: '10'
+      - line: '9'
+        from_station: Guojia Tushuguan (National Library)
+        to_station: Guogongzhuang
+      advisory_must_mention:
+      - line 10
+      - line 9
+      - suspended
+      blocked_stations: []
+      blocked_edges: []
+  station_entry_restriction:
+    instantiations:
+    - id: ser-guomao-peak
+      disruption:
+        id: ser-guomao-peak
+        line: null
+        segment: null
+        type: station_entry_restriction
+        severity: warning
+        message: 'Passenger flow control Level 3 active at Guomao station. Entry gates temporarily closed due to platform capacity. Expected wait 10-15 minutes. Alternate entry at Dawang Lu (Line 1) or Jintai Xizhao (Line 10) if urgent.'
+        alternative: 'Wait ~15 minutes at Guomao, or walk to Dawang Lu / Jintai Xizhao'
+        eta_resolution: ~15 minutes once platform clears
+      station_id: BJM-GUO
+      station_name: Guomao
+      advisory_must_mention:
+      - guomao
+      - wait
+      - flow control
+      blocked_stations: []
+      blocked_edges: []

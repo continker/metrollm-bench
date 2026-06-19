@@ -1,0 +1,4125 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "from": "BJM-FUS",
+      "to": "BJM-PIN",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIN",
+      "to": "BJM-GUC",
+      "distance_miles": 1.5,
+      "travel_time_min": 3.0,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUC",
+      "to": "BJM-BAP",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAP",
+      "to": "BJM-BAB",
+      "distance_miles": 1.23,
+      "travel_time_min": 2.5,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAB",
+      "to": "BJM-YUL",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUL",
+      "to": "BJM-WUK",
+      "distance_miles": 1.12,
+      "travel_time_min": 2.2,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WUK",
+      "to": "BJM-WAL",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAL",
+      "to": "BJM-GON",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GON",
+      "to": "BJM-MIM",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MIM",
+      "to": "BJM-MUX",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MUX",
+      "to": "BJM-NAL",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAL",
+      "to": "BJM-FUX",
+      "distance_miles": 0.23,
+      "travel_time_min": 0.5,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUX",
+      "to": "BJM-XID",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XID",
+      "to": "BJM-TIA",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA",
+      "to": "BJM-TIA2",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA2",
+      "to": "BJM-WAN",
+      "distance_miles": 0.22,
+      "travel_time_min": 0.4,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN",
+      "to": "BJM-DON",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON",
+      "to": "BJM-JIA",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA",
+      "to": "BJM-YOL",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YOL",
+      "to": "BJM-GUO",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUO",
+      "to": "BJM-DAL",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAL",
+      "to": "BJM-SIH",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SIH",
+      "to": "BJM-SIH2",
+      "distance_miles": 1.07,
+      "travel_time_min": 2.1,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SIH2",
+      "to": "BJM-GAO",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO",
+      "to": "BJM-CUOC",
+      "distance_miles": 1.25,
+      "travel_time_min": 2.5,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CUOC",
+      "to": "BJM-SHQ",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHQ",
+      "to": "BJM-GUA",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUA",
+      "to": "BJM-BAQ",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAQ",
+      "to": "BJM-TOB",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TOB",
+      "to": "BJM-GUO2",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUO2",
+      "to": "BJM-JIU",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIU",
+      "to": "BJM-LIY",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIY",
+      "to": "BJM-LIN",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIN",
+      "to": "BJM-TUQ",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TUQ",
+      "to": "BJM-HUA",
+      "distance_miles": 1.14,
+      "travel_time_min": 2.3,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA",
+      "to": "BJM-UNR",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIS",
+      "to": "BJM-XIZ",
+      "distance_miles": 1.11,
+      "travel_time_min": 2.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIZ",
+      "to": "BJM-CHE",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHE",
+      "to": "BJM-FUM",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUM",
+      "to": "BJM-FUX",
+      "distance_miles": 1.12,
+      "travel_time_min": 2.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUX",
+      "to": "BJM-CHJ",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHJ",
+      "to": "BJM-XUM",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XUM",
+      "to": "BJM-HEM",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEM",
+      "to": "BJM-QIA",
+      "distance_miles": 0.41,
+      "travel_time_min": 0.8,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIA",
+      "to": "BJM-CHM",
+      "distance_miles": 1.35,
+      "travel_time_min": 2.7,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHM",
+      "to": "BJM-BER",
+      "distance_miles": 0.23,
+      "travel_time_min": 0.5,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BER",
+      "to": "BJM-JIA",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA",
+      "to": "BJM-CHM2",
+      "distance_miles": 1.09,
+      "travel_time_min": 2.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHM2",
+      "to": "BJM-DOS",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DOS",
+      "to": "BJM-DON2",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON2",
+      "to": "BJM-YLT",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YLT",
+      "to": "BJM-ANM",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANM",
+      "to": "BJM-GUD",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUD",
+      "to": "BJM-JIS",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "2",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DOS",
+      "to": "BJM-WOS",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WOS",
+      "to": "BJM-TUA",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TUA",
+      "to": "BJM-CHP",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHP",
+      "to": "BJM-SHI",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI",
+      "to": "BJM-CHR",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHR",
+      "to": "BJM-YAO",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YAO",
+      "to": "BJM-DON3",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON3",
+      "to": "BJM-DON4",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON4",
+      "to": "BJM-DON5",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "3",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANH",
+      "to": "BJM-BEI",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI",
+      "to": "BJM-XIY",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIY",
+      "to": "BJM-YUP",
+      "distance_miles": 1.36,
+      "travel_time_min": 2.7,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUP",
+      "to": "BJM-PUEG",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PUEG",
+      "to": "BJM-ZHO",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHO",
+      "to": "BJM-HAH",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAH",
+      "to": "BJM-RED",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-RED",
+      "to": "BJM-WEI",
+      "distance_miles": 0.63,
+      "travel_time_min": 1.3,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WEI",
+      "to": "BJM-GUT",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUT",
+      "to": "BJM-DON6",
+      "distance_miles": 0.81,
+      "travel_time_min": 1.6,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON6",
+      "to": "BJM-XIZ",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIZ",
+      "to": "BJM-XIK",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIK",
+      "to": "BJM-PIN2",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIN2",
+      "to": "BJM-XIS",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIS",
+      "to": "BJM-LIH",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIH",
+      "to": "BJM-XID",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XID",
+      "to": "BJM-XUM",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XUM",
+      "to": "BJM-CAK",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAK",
+      "to": "BJM-TAO",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAO",
+      "to": "BJM-BSR",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BSR",
+      "to": "BJM-MAJ",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAJ",
+      "to": "BJM-JIA2",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA2",
+      "to": "BJM-GOX",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GOX",
+      "to": "BJM-XIN",
+      "distance_miles": 1.63,
+      "travel_time_min": 3.3,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIN",
+      "to": "BJM-XIM",
+      "distance_miles": 2.51,
+      "travel_time_min": 5.0,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIM",
+      "to": "BJM-GAO2",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO2",
+      "to": "BJM-GAO3",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO3",
+      "to": "BJM-ZAO",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZAO",
+      "to": "BJM-QIL",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIL",
+      "to": "BJM-HUX",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUX",
+      "to": "BJM-HUR",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUR",
+      "to": "BJM-YIH",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YIH",
+      "to": "BJM-BIB",
+      "distance_miles": 1.79,
+      "travel_time_min": 3.6,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BIB",
+      "to": "BJM-TIY",
+      "distance_miles": 1.12,
+      "travel_time_min": 2.2,
+      "line": "4",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA3",
+      "to": "BJM-TIA4",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA4",
+      "to": "BJM-TIA5",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA5",
+      "to": "BJM-LIQ",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ",
+      "to": "BJM-LIS",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIS",
+      "to": "BJM-BEI2",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI2",
+      "to": "BJM-DAT",
+      "distance_miles": 1.84,
+      "travel_time_min": 3.7,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAT",
+      "to": "BJM-HXB",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HXB",
+      "to": "BJM-HXN",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HXN",
+      "to": "BJM-HEX",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEX",
+      "to": "BJM-HEB",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEB",
+      "to": "BJM-YLT",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YLT",
+      "to": "BJM-BEI3",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI3",
+      "to": "BJM-ZHL",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHL",
+      "to": "BJM-DON7",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON7",
+      "to": "BJM-DEK",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DEK",
+      "to": "BJM-DON",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON",
+      "to": "BJM-CHM",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHM",
+      "to": "BJM-CIK",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIK",
+      "to": "BJM-TOHE",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TOHE",
+      "to": "BJM-PUH",
+      "distance_miles": 1.17,
+      "travel_time_min": 2.3,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PUH",
+      "to": "BJM-LIU",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIU",
+      "to": "BJM-SON",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "5",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN",
+      "to": "BJM-PIN",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIN",
+      "to": "BJM-YAN",
+      "distance_miles": 0.27,
+      "travel_time_min": 0.5,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YAN",
+      "to": "BJM-XIH",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIH",
+      "to": "BJM-LIA",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIA",
+      "to": "BJM-TIA6",
+      "distance_miles": 1.39,
+      "travel_time_min": 2.8,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA6",
+      "to": "BJM-HAW",
+      "distance_miles": 1.6,
+      "travel_time_min": 3.2,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAW",
+      "to": "BJM-CIS",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIS",
+      "to": "BJM-HUQ",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUQ",
+      "to": "BJM-BAI",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAI",
+      "to": "BJM-ERL",
+      "distance_miles": 0.16,
+      "travel_time_min": 0.3,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ERL",
+      "to": "BJM-CHE2",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHE2",
+      "to": "BJM-CHE",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHE",
+      "to": "BJM-PIN2",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIN2",
+      "to": "BJM-BEI4",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI4",
+      "to": "BJM-NAX",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAX",
+      "to": "BJM-DON7",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON7",
+      "to": "BJM-CHM2",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHM2",
+      "to": "BJM-DON8",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON8",
+      "to": "BJM-HUJ",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUJ",
+      "to": "BJM-JIL",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIL",
+      "to": "BJM-SHI2",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI2",
+      "to": "BJM-QIL2",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIL2",
+      "to": "BJM-DAL2",
+      "distance_miles": 2.47,
+      "travel_time_min": 4.9,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAL2",
+      "to": "BJM-HUA2",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA2",
+      "to": "BJM-CHA",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHA",
+      "to": "BJM-CAO",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAO",
+      "to": "BJM-WXL",
+      "distance_miles": 1.24,
+      "travel_time_min": 2.5,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WXL",
+      "to": "BJM-TOB2",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TOB2",
+      "to": "BJM-TOM",
+      "distance_miles": 0.83,
+      "travel_time_min": 1.7,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TOM",
+      "to": "BJM-BEI5",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI5",
+      "to": "BJM-BEI6",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI6",
+      "to": "BJM-HAF",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAF",
+      "to": "BJM-DOY",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DOY",
+      "to": "BJM-LUC",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LUC",
+      "to": "BJM-LUY",
+      "distance_miles": 1.06,
+      "travel_time_min": 2.1,
+      "line": "6",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BWR",
+      "to": "BJM-WAN2",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN2",
+      "to": "BJM-DAG",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAG",
+      "to": "BJM-GUN",
+      "distance_miles": 1.45,
+      "travel_time_min": 2.9,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUN",
+      "to": "BJM-NIU",
+      "distance_miles": 0.01,
+      "travel_time_min": 0.0,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NIU",
+      "to": "BJM-CAK",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAK",
+      "to": "BJM-HUF",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUF",
+      "to": "BJM-ZHU",
+      "distance_miles": 0.73,
+      "travel_time_min": 1.5,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHU",
+      "to": "BJM-QIA2",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIA2",
+      "to": "BJM-CIK",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIK",
+      "to": "BJM-GUN2",
+      "distance_miles": 0.4,
+      "travel_time_min": 0.8,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUN2",
+      "to": "BJM-GUW",
+      "distance_miles": 1.06,
+      "travel_time_min": 2.1,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUW",
+      "to": "BJM-SHU",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHU",
+      "to": "BJM-JIU2",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIU2",
+      "to": "BJM-DAJ",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAJ",
+      "to": "BJM-BAI2",
+      "distance_miles": 0.46,
+      "travel_time_min": 0.9,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAI2",
+      "to": "BJM-HUA3",
+      "distance_miles": 0.47,
+      "travel_time_min": 0.9,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA3",
+      "to": "BJM-NAZ",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAZ",
+      "to": "BJM-HAV",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAV",
+      "to": "BJM-FAT",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FAT",
+      "to": "BJM-SHU2",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHU2",
+      "to": "BJM-JIC",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIC",
+      "to": "BJM-HUA4",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA4",
+      "to": "BJM-LAN",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LAN",
+      "to": "BJM-HEI",
+      "distance_miles": 1.67,
+      "travel_time_min": 3.3,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEI",
+      "to": "BJM-WAN3",
+      "distance_miles": 1.69,
+      "travel_time_min": 3.4,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN3",
+      "to": "BJM-WAN4",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN4",
+      "to": "BJM-QUN",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QUN",
+      "to": "BJM-GAO4",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO4",
+      "to": "BJM-HUA",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA",
+      "to": "BJM-UNR",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "7",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHU2",
+      "to": "BJM-YUL2",
+      "distance_miles": 1.33,
+      "travel_time_min": 2.7,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUL2",
+      "to": "BJM-PIF",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIF",
+      "to": "BJM-HUD",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUD",
+      "to": "BJM-HUO",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUO",
+      "to": "BJM-YUX",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUX",
+      "to": "BJM-XIK2",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIK2",
+      "to": "BJM-YON",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YON",
+      "to": "BJM-LIN2",
+      "distance_miles": 1.46,
+      "travel_time_min": 2.9,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIN2",
+      "to": "BJM-SGN",
+      "distance_miles": 1.32,
+      "travel_time_min": 2.6,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SGN",
+      "to": "BJM-AOG",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-AOG",
+      "to": "BJM-AOZ",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-AOZ",
+      "to": "BJM-BEI7",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI7",
+      "to": "BJM-ANQ",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANQ",
+      "to": "BJM-ANB",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANB",
+      "to": "BJM-GUD",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUD",
+      "to": "BJM-SHI3",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI3",
+      "to": "BJM-NAX",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAX",
+      "to": "BJM-ZHM",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHM",
+      "to": "BJM-JIH",
+      "distance_miles": 0.83,
+      "travel_time_min": 1.7,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIH",
+      "to": "BJM-WAN",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN",
+      "to": "BJM-QIA",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIA",
+      "to": "BJM-ZHU",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHU",
+      "to": "BJM-TIA7",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA7",
+      "to": "BJM-YON2",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YON2",
+      "to": "BJM-MUY",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MUY",
+      "to": "BJM-HAI",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAI",
+      "to": "BJM-DAM",
+      "distance_miles": 0.44,
+      "travel_time_min": 0.9,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAM",
+      "to": "BJM-DAH",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAH",
+      "to": "BJM-HEY",
+      "distance_miles": 1.53,
+      "travel_time_min": 3.1,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEY",
+      "to": "BJM-DON9",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON9",
+      "to": "BJM-HUW",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUW",
+      "to": "BJM-WUF",
+      "distance_miles": 1.09,
+      "travel_time_min": 2.2,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WUF",
+      "to": "BJM-DEM",
+      "distance_miles": 1.27,
+      "travel_time_min": 2.5,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DEM",
+      "to": "BJM-YIN",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "8",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUT",
+      "to": "BJM-BAI",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAI",
+      "to": "BJM-BAI3",
+      "distance_miles": 0.63,
+      "travel_time_min": 1.3,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAI3",
+      "to": "BJM-MIM",
+      "distance_miles": 1.16,
+      "travel_time_min": 2.3,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MIM",
+      "to": "BJM-BWR",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BWR",
+      "to": "BJM-LIU2",
+      "distance_miles": 0.63,
+      "travel_time_min": 1.3,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIU2",
+      "to": "BJM-LIQ2",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ2",
+      "to": "BJM-QIL3",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIL3",
+      "to": "BJM-FED",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FED",
+      "to": "BJM-FEN",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FEN",
+      "to": "BJM-KEL",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-KEL",
+      "to": "BJM-FSP",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FSP",
+      "to": "BJM-GUO3",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "9",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUO2",
+      "to": "BJM-BAG",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAG",
+      "to": "BJM-SUJ",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUJ",
+      "to": "BJM-HAH",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAH",
+      "to": "BJM-ZHL2",
+      "distance_miles": 0.28,
+      "travel_time_min": 0.6,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHL2",
+      "to": "BJM-ZHL3",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHL3",
+      "to": "BJM-XIT",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIT",
+      "to": "BJM-MUD",
+      "distance_miles": 0.49,
+      "travel_time_min": 1.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MUD",
+      "to": "BJM-JIM",
+      "distance_miles": 0.98,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIM",
+      "to": "BJM-BEI7",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI7",
+      "to": "BJM-ANZ",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANZ",
+      "to": "BJM-HXN",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HXN",
+      "to": "BJM-SHA",
+      "distance_miles": 0.97,
+      "travel_time_min": 1.9,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHA",
+      "to": "BJM-TAI",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAI",
+      "to": "BJM-SAQ",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SAQ",
+      "to": "BJM-LIQ3",
+      "distance_miles": 0.88,
+      "travel_time_min": 1.8,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ3",
+      "to": "BJM-AEC",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-AEC",
+      "to": "BJM-TUA",
+      "distance_miles": 0.52,
+      "travel_time_min": 1.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TUA",
+      "to": "BJM-HUJ",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUJ",
+      "to": "BJM-JIX",
+      "distance_miles": 0.45,
+      "travel_time_min": 0.9,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIX",
+      "to": "BJM-GUO",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUO",
+      "to": "BJM-SHU",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHU",
+      "to": "BJM-JIN2",
+      "distance_miles": 0.63,
+      "travel_time_min": 1.3,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN2",
+      "to": "BJM-PAY",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PAY",
+      "to": "BJM-SHI4",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI4",
+      "to": "BJM-FES",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FES",
+      "to": "BJM-CHS",
+      "distance_miles": 0.56,
+      "travel_time_min": 1.1,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHS",
+      "to": "BJM-SON",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SON",
+      "to": "BJM-SHI5",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI5",
+      "to": "BJM-DAM",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAM",
+      "to": "BJM-JIA3",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA3",
+      "to": "BJM-JIA2",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA2",
+      "to": "BJM-CAO2",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAO2",
+      "to": "BJM-JIJ",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIJ",
+      "to": "BJM-CUOE",
+      "distance_miles": 0.7,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CUOE",
+      "to": "BJM-FER",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FER",
+      "to": "BJM-NIW",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NIW",
+      "to": "BJM-XIJ",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIJ",
+      "to": "BJM-LIQ2",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ2",
+      "to": "BJM-LIQ4",
+      "distance_miles": 1.24,
+      "travel_time_min": 2.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ4",
+      "to": "BJM-GON",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GON",
+      "to": "BJM-XID2",
+      "distance_miles": 1.26,
+      "travel_time_min": 2.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XID2",
+      "to": "BJM-CIS",
+      "distance_miles": 0.69,
+      "travel_time_min": 1.4,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIS",
+      "to": "BJM-CHE3",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHE3",
+      "to": "BJM-CHQ",
+      "distance_miles": 0.73,
+      "travel_time_min": 1.5,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHQ",
+      "to": "BJM-HUO2",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "10",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MOS",
+      "to": "BJM-JIN",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "11",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN",
+      "to": "BJM-BEI8",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "11",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI8",
+      "to": "BJM-XIN2",
+      "distance_miles": 0.36,
+      "travel_time_min": 0.7,
+      "line": "11",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HAW",
+      "to": "BJM-SIQ",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SIQ",
+      "to": "BJM-LAN2",
+      "distance_miles": 0.97,
+      "travel_time_min": 1.9,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LAN2",
+      "to": "BJM-CHQ",
+      "distance_miles": 0.95,
+      "travel_time_min": 1.9,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHQ",
+      "to": "BJM-SUQ",
+      "distance_miles": 0.41,
+      "travel_time_min": 0.8,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUQ",
+      "to": "BJM-RED",
+      "distance_miles": 1.14,
+      "travel_time_min": 2.3,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-RED",
+      "to": "BJM-DAS",
+      "distance_miles": 1.26,
+      "travel_time_min": 2.5,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAS",
+      "to": "BJM-JIQ",
+      "distance_miles": 0.21,
+      "travel_time_min": 0.4,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIQ",
+      "to": "BJM-BEI9",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI9",
+      "to": "BJM-MAQ",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAQ",
+      "to": "BJM-ANQ",
+      "distance_miles": 1.1,
+      "travel_time_min": 2.2,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANQ",
+      "to": "BJM-ANQ2",
+      "distance_miles": 0.36,
+      "travel_time_min": 0.7,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANQ2",
+      "to": "BJM-HEX",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HEX",
+      "to": "BJM-GUM",
+      "distance_miles": 0.73,
+      "travel_time_min": 1.5,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUM",
+      "to": "BJM-XIB",
+      "distance_miles": 0.28,
+      "travel_time_min": 0.6,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIB",
+      "to": "BJM-SAQ",
+      "distance_miles": 1.19,
+      "travel_time_min": 2.4,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SAQ",
+      "to": "BJM-JIA4",
+      "distance_miles": 1.09,
+      "travel_time_min": 2.2,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA4",
+      "to": "BJM-GAO5",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO5",
+      "to": "BJM-TUO",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TUO",
+      "to": "BJM-DON10",
+      "distance_miles": 1.6,
+      "travel_time_min": 3.2,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON10",
+      "to": "BJM-DON5",
+      "distance_miles": 1.2,
+      "travel_time_min": 2.4,
+      "line": "12",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIZ",
+      "to": "BJM-DAS",
+      "distance_miles": 1.88,
+      "travel_time_min": 3.8,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAS",
+      "to": "BJM-ZHL3",
+      "distance_miles": 0.73,
+      "travel_time_min": 1.5,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHL3",
+      "to": "BJM-WUK2",
+      "distance_miles": 1.13,
+      "travel_time_min": 2.3,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WUK2",
+      "to": "BJM-SHA2",
+      "distance_miles": 2.93,
+      "travel_time_min": 5.9,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHA2",
+      "to": "BJM-QIR",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIR",
+      "to": "BJM-XIE",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIE",
+      "to": "BJM-LON",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LON",
+      "to": "BJM-HUG",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUG",
+      "to": "BJM-HUO",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUO",
+      "to": "BJM-LIQ",
+      "distance_miles": 3.01,
+      "travel_time_min": 6.0,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIQ",
+      "to": "BJM-BEY",
+      "distance_miles": 1.36,
+      "travel_time_min": 2.7,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEY",
+      "to": "BJM-WAN5",
+      "distance_miles": 3.37,
+      "travel_time_min": 6.7,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN5",
+      "to": "BJM-SHA",
+      "distance_miles": 1.45,
+      "travel_time_min": 2.9,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHA",
+      "to": "BJM-GUM",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUM",
+      "to": "BJM-LIU3",
+      "distance_miles": 0.71,
+      "travel_time_min": 1.4,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIU3",
+      "to": "BJM-DON2",
+      "distance_miles": 1.16,
+      "travel_time_min": 2.3,
+      "line": "13",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHA",
+      "to": "BJM-GEP",
+      "distance_miles": 0.8,
+      "travel_time_min": 1.6,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GEP",
+      "to": "BJM-DAW",
+      "distance_miles": 2.06,
+      "travel_time_min": 4.1,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAW",
+      "to": "BJM-GUO4",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUO4",
+      "to": "BJM-DAJ2",
+      "distance_miles": 1.21,
+      "travel_time_min": 2.4,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAJ2",
+      "to": "BJM-QIL3",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIL3",
+      "to": "BJM-XIJ",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIJ",
+      "to": "BJM-DON11",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON11",
+      "to": "BJM-LIS2",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIS2",
+      "to": "BJM-CAI",
+      "distance_miles": 0.12,
+      "travel_time_min": 0.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAI",
+      "to": "BJM-XIT2",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIT2",
+      "to": "BJM-JIN3",
+      "distance_miles": 0.89,
+      "travel_time_min": 1.8,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN3",
+      "to": "BJM-BSR",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BSR",
+      "to": "BJM-TAQ",
+      "distance_miles": 0.26,
+      "travel_time_min": 0.5,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAQ",
+      "to": "BJM-YON2",
+      "distance_miles": 0.98,
+      "travel_time_min": 2.0,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YON2",
+      "to": "BJM-JIN4",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN4",
+      "to": "BJM-PUH",
+      "distance_miles": 0.58,
+      "travel_time_min": 1.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PUH",
+      "to": "BJM-FAN",
+      "distance_miles": 0.97,
+      "travel_time_min": 1.9,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FAN",
+      "to": "BJM-SHI4",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI4",
+      "to": "BJM-BUOT",
+      "distance_miles": 1.2,
+      "travel_time_min": 2.4,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BUOT",
+      "to": "BJM-PIY",
+      "distance_miles": 0.68,
+      "travel_time_min": 1.4,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIY",
+      "to": "BJM-JIU2",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIU2",
+      "to": "BJM-DAL",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAL",
+      "to": "BJM-HON",
+      "distance_miles": 0.53,
+      "travel_time_min": 1.1,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HON",
+      "to": "BJM-JIL",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIL",
+      "to": "BJM-CHP",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHP",
+      "to": "BJM-ZAO2",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZAO2",
+      "to": "BJM-DOB",
+      "distance_miles": 1.12,
+      "travel_time_min": 2.2,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DOB",
+      "to": "BJM-JIA5",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIA5",
+      "to": "BJM-GAO5",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAO5",
+      "to": "BJM-WAN6",
+      "distance_miles": 0.37,
+      "travel_time_min": 0.7,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN6",
+      "to": "BJM-FUT",
+      "distance_miles": 0.83,
+      "travel_time_min": 1.7,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUT",
+      "to": "BJM-WAN7",
+      "distance_miles": 0.4,
+      "travel_time_min": 0.8,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN7",
+      "to": "BJM-DON12",
+      "distance_miles": 0.81,
+      "travel_time_min": 1.6,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON12",
+      "to": "BJM-LAI",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LAI",
+      "to": "BJM-SHA3",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "14",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QDX",
+      "to": "BJM-LIK",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIK",
+      "to": "BJM-BEI10",
+      "distance_miles": 0.96,
+      "travel_time_min": 1.9,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI10",
+      "to": "BJM-AOG",
+      "distance_miles": 1.21,
+      "travel_time_min": 2.4,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-AOG",
+      "to": "BJM-ANL",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ANL",
+      "to": "BJM-DAT",
+      "distance_miles": 0.51,
+      "travel_time_min": 1.0,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAT",
+      "to": "BJM-GUA2",
+      "distance_miles": 0.74,
+      "travel_time_min": 1.5,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUA2",
+      "to": "BJM-WAN5",
+      "distance_miles": 1.07,
+      "travel_time_min": 2.1,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN5",
+      "to": "BJM-WAN7",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN7",
+      "to": "BJM-WAN8",
+      "distance_miles": 0.99,
+      "travel_time_min": 2.0,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN8",
+      "to": "BJM-CUI",
+      "distance_miles": 1.35,
+      "travel_time_min": 2.7,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CUI",
+      "to": "BJM-MAQ2",
+      "distance_miles": 0.97,
+      "travel_time_min": 1.9,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAQ2",
+      "to": "BJM-SUN",
+      "distance_miles": 1.83,
+      "travel_time_min": 3.7,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUN",
+      "to": "BJM-CIEC",
+      "distance_miles": 2.03,
+      "travel_time_min": 4.1,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIEC",
+      "to": "BJM-HUA5",
+      "distance_miles": 1.0,
+      "travel_time_min": 2.0,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUA5",
+      "to": "BJM-HOU",
+      "distance_miles": 2.08,
+      "travel_time_min": 4.2,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HOU",
+      "to": "BJM-NAN",
+      "distance_miles": 2.59,
+      "travel_time_min": 5.2,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAN",
+      "to": "BJM-SHI6",
+      "distance_miles": 1.67,
+      "travel_time_min": 3.3,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI6",
+      "to": "BJM-SHU3",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHU3",
+      "to": "BJM-FEN2",
+      "distance_miles": 1.47,
+      "travel_time_min": 2.9,
+      "line": "15",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI11",
+      "to": "BJM-WEL",
+      "distance_miles": 1.63,
+      "travel_time_min": 3.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WEL",
+      "to": "BJM-DAL3",
+      "distance_miles": 1.42,
+      "travel_time_min": 2.8,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAL3",
+      "to": "BJM-TUN",
+      "distance_miles": 1.42,
+      "travel_time_min": 2.8,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TUN",
+      "to": "BJM-YON3",
+      "distance_miles": 1.26,
+      "travel_time_min": 2.5,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YON3",
+      "to": "BJM-YON4",
+      "distance_miles": 0.67,
+      "travel_time_min": 1.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YON4",
+      "to": "BJM-XIB2",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIB2",
+      "to": "BJM-MAL",
+      "distance_miles": 1.35,
+      "travel_time_min": 2.7,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAL",
+      "to": "BJM-NON",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NON",
+      "to": "BJM-XIY",
+      "distance_miles": 1.69,
+      "travel_time_min": 3.4,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIY",
+      "to": "BJM-WAQ",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAQ",
+      "to": "BJM-SUJ",
+      "distance_miles": 0.9,
+      "travel_time_min": 1.8,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUJ",
+      "to": "BJM-SUQ",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUQ",
+      "to": "BJM-WAS",
+      "distance_miles": 0.94,
+      "travel_time_min": 1.9,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAS",
+      "to": "BJM-GUT",
+      "distance_miles": 1.19,
+      "travel_time_min": 2.4,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUT",
+      "to": "BJM-ERL",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ERL",
+      "to": "BJM-GAK",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GAK",
+      "to": "BJM-YUD",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUD",
+      "to": "BJM-MUX",
+      "distance_miles": 0.6,
+      "travel_time_min": 1.2,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MUX",
+      "to": "BJM-DAG",
+      "distance_miles": 1.36,
+      "travel_time_min": 2.7,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAG",
+      "to": "BJM-HON2",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HON2",
+      "to": "BJM-LIS2",
+      "distance_miles": 0.64,
+      "travel_time_min": 1.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIS2",
+      "to": "BJM-DON13",
+      "distance_miles": 1.46,
+      "travel_time_min": 2.9,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON13",
+      "to": "BJM-FER",
+      "distance_miles": 1.19,
+      "travel_time_min": 2.4,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FER",
+      "to": "BJM-FEN",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FEN",
+      "to": "BJM-FUF",
+      "distance_miles": 0.92,
+      "travel_time_min": 1.8,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUF",
+      "to": "BJM-KAN",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-KAN",
+      "to": "BJM-YUS",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YUS",
+      "to": "BJM-HON3",
+      "distance_miles": 0.79,
+      "travel_time_min": 1.6,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HON3",
+      "to": "BJM-WAN9",
+      "distance_miles": 1.15,
+      "travel_time_min": 2.3,
+      "line": "16",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WEI2",
+      "to": "BJM-WEI3",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WEI3",
+      "to": "BJM-TIA8",
+      "distance_miles": 3.64,
+      "travel_time_min": 7.3,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA8",
+      "to": "BJM-QIN",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIN",
+      "to": "BJM-HON4",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HON4",
+      "to": "BJM-WAN5",
+      "distance_miles": 2.68,
+      "travel_time_min": 5.4,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN5",
+      "to": "BJM-TAI",
+      "distance_miles": 1.6,
+      "travel_time_min": 3.2,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAI",
+      "to": "BJM-XIB",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIB",
+      "to": "BJM-ZUO",
+      "distance_miles": 1.19,
+      "travel_time_min": 2.4,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZUO",
+      "to": "BJM-WOS",
+      "distance_miles": 1.16,
+      "travel_time_min": 2.3,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WOS",
+      "to": "BJM-DON8",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON8",
+      "to": "BJM-YOL",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YOL",
+      "to": "BJM-GUW",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUW",
+      "to": "BJM-PAN",
+      "distance_miles": 1.36,
+      "travel_time_min": 2.7,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PAN",
+      "to": "BJM-SHI4",
+      "distance_miles": 0.87,
+      "travel_time_min": 1.7,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI4",
+      "to": "BJM-ZHO2",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHO2",
+      "to": "BJM-SHI7",
+      "distance_miles": 1.29,
+      "travel_time_min": 2.6,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI7",
+      "to": "BJM-BEI12",
+      "distance_miles": 3.52,
+      "travel_time_min": 7.0,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI12",
+      "to": "BJM-CIQ",
+      "distance_miles": 1.41,
+      "travel_time_min": 2.8,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIQ",
+      "to": "BJM-CIQ2",
+      "distance_miles": 1.16,
+      "travel_time_min": 2.3,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIQ2",
+      "to": "BJM-JIA6",
+      "distance_miles": 1.11,
+      "travel_time_min": 2.2,
+      "line": "17",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAL",
+      "to": "BJM-SSP",
+      "distance_miles": 0.81,
+      "travel_time_min": 1.6,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SSP",
+      "to": "BJM-DON14",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON14",
+      "to": "BJM-LON2",
+      "distance_miles": 1.51,
+      "travel_time_min": 3.0,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LON2",
+      "to": "BJM-HUX2",
+      "distance_miles": 1.32,
+      "travel_time_min": 2.6,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUX2",
+      "to": "BJM-WEN",
+      "distance_miles": 0.57,
+      "travel_time_min": 1.1,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WEN",
+      "to": "BJM-HUD",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUD",
+      "to": "BJM-HUO3",
+      "distance_miles": 0.35,
+      "travel_time_min": 0.7,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUO3",
+      "to": "BJM-TIA4",
+      "distance_miles": 2.32,
+      "travel_time_min": 4.6,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TIA4",
+      "to": "BJM-TAI2",
+      "distance_miles": 0.45,
+      "travel_time_min": 0.9,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAI2",
+      "to": "BJM-TIA8",
+      "distance_miles": 0.97,
+      "travel_time_min": 1.9,
+      "line": "18",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LON2",
+      "to": "BJM-QIX",
+      "distance_miles": 3.21,
+      "travel_time_min": 6.4,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIX",
+      "to": "BJM-BEI10",
+      "distance_miles": 2.79,
+      "travel_time_min": 5.6,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI10",
+      "to": "BJM-MUD",
+      "distance_miles": 1.86,
+      "travel_time_min": 3.7,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MUD",
+      "to": "BJM-BEI9",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI9",
+      "to": "BJM-JIS",
+      "distance_miles": 1.32,
+      "travel_time_min": 2.6,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIS",
+      "to": "BJM-PIN2",
+      "distance_miles": 1.03,
+      "travel_time_min": 2.1,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-PIN2",
+      "to": "BJM-TAI3",
+      "distance_miles": 1.92,
+      "travel_time_min": 3.8,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TAI3",
+      "to": "BJM-FUX",
+      "distance_miles": 0.11,
+      "travel_time_min": 0.2,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FUX",
+      "to": "BJM-NIU",
+      "distance_miles": 1.24,
+      "travel_time_min": 2.5,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NIU",
+      "to": "BJM-GUN",
+      "distance_miles": 0.01,
+      "travel_time_min": 0.0,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUN",
+      "to": "BJM-JIN3",
+      "distance_miles": 1.9,
+      "travel_time_min": 3.8,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN3",
+      "to": "BJM-CAO2",
+      "distance_miles": 1.38,
+      "travel_time_min": 2.8,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAO2",
+      "to": "BJM-XIN3",
+      "distance_miles": 1.74,
+      "travel_time_min": 3.5,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIN3",
+      "to": "BJM-XIN",
+      "distance_miles": 1.51,
+      "travel_time_min": 3.0,
+      "line": "19",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SON",
+      "to": "BJM-XIA",
+      "distance_miles": 1.33,
+      "travel_time_min": 2.7,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIA",
+      "to": "BJM-XIM2",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIM2",
+      "to": "BJM-JIG",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIG",
+      "to": "BJM-YIQ",
+      "distance_miles": 1.07,
+      "travel_time_min": 2.1,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YIQ",
+      "to": "BJM-YCP",
+      "distance_miles": 0.62,
+      "travel_time_min": 1.2,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YCP",
+      "to": "BJM-WAJ",
+      "distance_miles": 0.83,
+      "travel_time_min": 1.7,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAJ",
+      "to": "BJM-ROD",
+      "distance_miles": 0.77,
+      "travel_time_min": 1.5,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ROD",
+      "to": "BJM-ROD2",
+      "distance_miles": 0.85,
+      "travel_time_min": 1.7,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ROD2",
+      "to": "BJM-TON",
+      "distance_miles": 1.18,
+      "travel_time_min": 2.4,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-TON",
+      "to": "BJM-JIL2",
+      "distance_miles": 1.4,
+      "travel_time_min": 2.8,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIL2",
+      "to": "BJM-CIQ3",
+      "distance_miles": 1.26,
+      "travel_time_min": 2.5,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIQ3",
+      "to": "BJM-CIQ2",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CIQ2",
+      "to": "BJM-YIR",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "yizhuang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON13",
+      "to": "BJM-CUOE",
+      "distance_miles": 0.63,
+      "travel_time_min": 1.3,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CUOE",
+      "to": "BJM-HUD2",
+      "distance_miles": 1.2,
+      "travel_time_min": 2.4,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-HUD2",
+      "to": "BJM-BAI4",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BAI4",
+      "to": "BJM-GUO3",
+      "distance_miles": 0.39,
+      "travel_time_min": 0.8,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUO3",
+      "to": "BJM-DAB",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAB",
+      "to": "BJM-DAO",
+      "distance_miles": 3.96,
+      "travel_time_min": 7.9,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAO",
+      "to": "BJM-CHA2",
+      "distance_miles": 2.17,
+      "travel_time_min": 4.3,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHA2",
+      "to": "BJM-LIB",
+      "distance_miles": 1.26,
+      "travel_time_min": 2.5,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIB",
+      "to": "BJM-GUC2",
+      "distance_miles": 0.91,
+      "travel_time_min": 1.8,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GUC2",
+      "to": "BJM-LUTN",
+      "distance_miles": 1.25,
+      "travel_time_min": 2.5,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LUTN",
+      "to": "BJM-LUT",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LUT",
+      "to": "BJM-LUTW",
+      "distance_miles": 1.08,
+      "travel_time_min": 2.2,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LUTW",
+      "to": "BJM-LIN3",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIN3",
+      "to": "BJM-SUZ",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUZ",
+      "to": "BJM-YAN2",
+      "distance_miles": 1.36,
+      "travel_time_min": 2.7,
+      "line": "fangshan",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YAN2",
+      "to": "BJM-ZIC",
+      "distance_miles": 0.81,
+      "travel_time_min": 1.6,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZIC",
+      "to": "BJM-YAN3",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-YAN3",
+      "to": "BJM-XIN4",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIN4",
+      "to": "BJM-DAS2",
+      "distance_miles": 1.17,
+      "travel_time_min": 2.3,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAS2",
+      "to": "BJM-MAG",
+      "distance_miles": 1.28,
+      "travel_time_min": 2.6,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MAG",
+      "to": "BJM-RAF",
+      "distance_miles": 0.61,
+      "travel_time_min": 1.2,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-RAF",
+      "to": "BJM-FAC",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FAC",
+      "to": "BJM-YAN4",
+      "distance_miles": 1.27,
+      "travel_time_min": 2.5,
+      "line": "yanfang",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHI8",
+      "to": "BJM-XIA2",
+      "distance_miles": 0.75,
+      "travel_time_min": 1.5,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIA2",
+      "to": "BJM-LIY2",
+      "distance_miles": 0.59,
+      "travel_time_min": 1.2,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIY2",
+      "to": "BJM-SHA4",
+      "distance_miles": 0.65,
+      "travel_time_min": 1.3,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHA4",
+      "to": "BJM-QIA3",
+      "distance_miles": 0.54,
+      "travel_time_min": 1.1,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIA3",
+      "to": "BJM-SIQ2",
+      "distance_miles": 0.5,
+      "travel_time_min": 1.0,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SIQ2",
+      "to": "BJM-JIN",
+      "distance_miles": 1.63,
+      "travel_time_min": 3.3,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-JIN",
+      "to": "BJM-PIN",
+      "distance_miles": 0.78,
+      "travel_time_min": 1.6,
+      "line": "s1",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHX",
+      "to": "BJM-MIT",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-MIT",
+      "to": "BJM-CHA3",
+      "distance_miles": 1.93,
+      "travel_time_min": 3.9,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHA3",
+      "to": "BJM-CHD",
+      "distance_miles": 1.5,
+      "travel_time_min": 3.0,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHD",
+      "to": "BJM-BEI13",
+      "distance_miles": 1.05,
+      "travel_time_min": 2.1,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI13",
+      "to": "BJM-NAN2",
+      "distance_miles": 1.04,
+      "travel_time_min": 2.1,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-NAN2",
+      "to": "BJM-SUP",
+      "distance_miles": 2.98,
+      "travel_time_min": 6.0,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SUP",
+      "to": "BJM-SHA5",
+      "distance_miles": 1.22,
+      "travel_time_min": 2.4,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SHA5",
+      "to": "BJM-GOC",
+      "distance_miles": 1.23,
+      "travel_time_min": 2.5,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-GOC",
+      "to": "BJM-ZHU2",
+      "distance_miles": 2.12,
+      "travel_time_min": 4.2,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHU2",
+      "to": "BJM-LSP",
+      "distance_miles": 1.22,
+      "travel_time_min": 2.4,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LSP",
+      "to": "BJM-XIE",
+      "distance_miles": 2.95,
+      "travel_time_min": 5.9,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIE",
+      "to": "BJM-QIR",
+      "distance_miles": 1.02,
+      "travel_time_min": 2.0,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIR",
+      "to": "BJM-ZHU3",
+      "distance_miles": 0.82,
+      "travel_time_min": 1.6,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-ZHU3",
+      "to": "BJM-QIX",
+      "distance_miles": 0.66,
+      "travel_time_min": 1.3,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-QIX",
+      "to": "BJM-XUE",
+      "distance_miles": 1.43,
+      "travel_time_min": 2.9,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XUE",
+      "to": "BJM-LIK",
+      "distance_miles": 0.93,
+      "travel_time_min": 1.9,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIK",
+      "to": "BJM-XUE2",
+      "distance_miles": 1.09,
+      "travel_time_min": 2.2,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XUE2",
+      "to": "BJM-XIT",
+      "distance_miles": 0.72,
+      "travel_time_min": 1.4,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-XIT",
+      "to": "BJM-JIQ",
+      "distance_miles": 0.76,
+      "travel_time_min": 1.5,
+      "line": "changping",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-BEI3",
+      "to": "BJM-DON2",
+      "distance_miles": 1.01,
+      "travel_time_min": 2.0,
+      "line": "capital_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DON2",
+      "to": "BJM-SAQ",
+      "distance_miles": 1.77,
+      "travel_time_min": 3.5,
+      "line": "capital_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SAQ",
+      "to": "BJM-3HH",
+      "distance_miles": 10.56,
+      "travel_time_min": 21.1,
+      "line": "capital_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-3HH",
+      "to": "BJM-2HH",
+      "distance_miles": 2.12,
+      "travel_time_min": 4.2,
+      "line": "capital_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-LIS2",
+      "to": "BJM-CAO2",
+      "distance_miles": 1.74,
+      "travel_time_min": 3.5,
+      "line": "daxing_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CAO2",
+      "to": "BJM-DAX",
+      "distance_miles": 7.93,
+      "travel_time_min": 15.9,
+      "line": "daxing_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-DAX",
+      "to": "BJM-DAJ3",
+      "distance_miles": 15.36,
+      "travel_time_min": 30.7,
+      "line": "daxing_airport",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-FRH",
+      "to": "BJM-CNBG",
+      "distance_miles": 0.55,
+      "travel_time_min": 1.1,
+      "line": "xijiao",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CNBG",
+      "to": "BJM-WAN10",
+      "distance_miles": 1.12,
+      "travel_time_min": 2.2,
+      "line": "xijiao",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-WAN10",
+      "to": "BJM-CHA4",
+      "distance_miles": 0.86,
+      "travel_time_min": 1.7,
+      "line": "xijiao",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-CHA4",
+      "to": "BJM-SPWG",
+      "distance_miles": 0.84,
+      "travel_time_min": 1.7,
+      "line": "xijiao",
+      "type": "rail"
+    },
+    {
+      "from": "BJM-SPWG",
+      "to": "BJM-BAG",
+      "distance_miles": 1.8,
+      "travel_time_min": 3.6,
+      "line": "xijiao",
+      "type": "rail"
+    }
+  ]
+}

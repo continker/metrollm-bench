@@ -1,0 +1,1915 @@
+[
+  {
+    "id": "TRTC-BEI",
+    "name": "Beimen",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-XMN",
+      "TRTC-ZSN"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-BQO",
+    "name": "Banqiao",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-BTO",
+    "name": "Beitou",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "tamsui"
+  },
+  {
+    "id": "TRTC-CAI",
+    "name": "Cailiao",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-CKS",
+    "name": "CKS Memorial Hall",
+    "lines": [
+      "green",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-DGM",
+      "TRTC-GUT"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-CTH",
+    "name": "City Hall",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-DAA",
+    "name": "Daan",
+    "lines": [
+      "brown",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-ZXF"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-DAN",
+    "name": "Danfeng",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-DAP",
+    "name": "Daan Park",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-DAA",
+      "TRTC-DGM"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-DAP2",
+    "name": "Dahu Park",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-DAQ",
+    "name": "Daqiaotou",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-MWR"
+    ],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-DGM",
+    "name": "Dongmen",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-CKS",
+      "TRTC-GUT",
+      "TRTC-ZXS"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-DIN",
+    "name": "Dingpu",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-DON",
+    "name": "Donghu",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-DPL",
+    "name": "Dapinglin",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-DXI",
+    "name": "Dingxi",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-GUT"
+    ],
+    "zone": "xinlu"
+  },
+  {
+    "id": "TRTC-DZH",
+    "name": "Dazhi",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-FEH",
+    "name": "Far Eastern Hospital",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-FJU",
+    "name": "Fu Jen University",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-FUX",
+    "name": "Fuxinggang",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-FUZ",
+    "name": "Fuzhong",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-GAN",
+    "name": "Gangqian",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-GGN",
+    "name": "Gongguan",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-GUA",
+    "name": "Guandu",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-GUT",
+    "name": "Guting",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-CKS",
+      "TRTC-DGM"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-HAI",
+    "name": "Haishan",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-HSL",
+    "name": "Hongshulin",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "tamsui"
+  },
+  {
+    "id": "TRTC-HSP",
+    "name": "Houshanpi",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-HUI",
+    "name": "Huilong",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-HUZ",
+    "name": "Huzhou",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-JIA",
+    "name": "Jiangzicui",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-JIN",
+    "name": "Jingan",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-JIR",
+    "name": "Jiannan Road",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-JME",
+    "name": "Jingmei",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-JNT",
+    "name": "Jiantan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "tamsui"
+  },
+  {
+    "id": "TRTC-KUN",
+    "name": "Kunyang",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-LIN",
+    "name": "Linguang",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-LOT",
+    "name": "Longshan Temple",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-XMN"
+    ],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-LUZ",
+    "name": "Luzhou",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xinlu"
+  },
+  {
+    "id": "TRTC-LZL",
+    "name": "Liuzhangli",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-MIN",
+    "name": "Mingde",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-MWR",
+    "name": "Minquan West Road",
+    "lines": [
+      "orange",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-MZH",
+    "name": "Muzha",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-NAS",
+    "name": "Nanjing Sanmin",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-NEC",
+    "name": "Nangang Exhibition Center",
+    "lines": [
+      "blue",
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-NEI",
+    "name": "Neihu",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-NJF",
+    "name": "Nanjing Fuxing",
+    "lines": [
+      "brown",
+      "green"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-SJN",
+      "TRTC-ZXF"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-NKG",
+    "name": "Nangang",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-NEC"
+    ],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-NSJ",
+    "name": "Nanshijiao",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xinlu"
+  },
+  {
+    "id": "TRTC-NSP",
+    "name": "Nangang Software Park",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-NEC"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-NTH",
+    "name": "NTU Hospital",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-CKS",
+      "TRTC-TPM"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-QIL",
+    "name": "Qilian",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-QIY",
+    "name": "Qiyan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-QZH",
+    "name": "Qizhang",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-SCH",
+    "name": "Sanchong",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xinlu"
+  },
+  {
+    "id": "TRTC-SES",
+    "name": "Sanchong Elementary School",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-SHI",
+    "name": "Shipai",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-SHL",
+    "name": "Shilin",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "tamsui"
+  },
+  {
+    "id": "TRTC-SHT",
+    "name": "Shandao Temple",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-TPM",
+      "TRTC-ZXS"
+    ],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-SHU",
+    "name": "Shuanglian",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-MWR",
+      "TRTC-ZSN"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-SIHS",
+    "name": "St. Ignatius High School",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-SJN",
+    "name": "Songjiang Nanjing",
+    "lines": [
+      "green",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-NJF",
+      "TRTC-ZSN",
+      "TRTC-ZXS"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-SSA",
+    "name": "Songshan Airport",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-SSHS",
+    "name": "Sanmin Senior High School",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-SSN",
+    "name": "Songshan",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-SYS",
+    "name": "Sun Yat-Sen Memorial Hall",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-T101",
+    "name": "Taipei 101/World Trade Center",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-TAA",
+    "name": "Taipei Arena",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-NJF"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-TAB",
+    "name": "Taipower Building",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-GUT"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-TAB2",
+    "name": "Taipei Bridge",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-TAM",
+    "name": "Tamsui",
+    "lines": [
+      "red"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "tamsui"
+  },
+  {
+    "id": "TRTC-TEB",
+    "name": "Technology Building",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-DAA"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-TOU",
+    "name": "Touqianzhuang",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-TPM",
+    "name": "Taipei Main Station",
+    "lines": [
+      "blue",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-XMN",
+      "TRTC-ZSN"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-TPZ",
+    "name": "Taipei Zoo",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-TUC",
+    "name": "Tucheng",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "blue"
+  },
+  {
+    "id": "TRTC-WEN",
+    "name": "Wende",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-WFC",
+    "name": "Wanfang Community",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": false,
+      "escalator": true,
+      "step_free": false,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-WFH",
+    "name": "Wanfang Hospital",
+    "lines": [
+      "brown"
+    ],
+    "type": "elevated",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "wenhu"
+  },
+  {
+    "id": "TRTC-WLG",
+    "name": "Wanlong",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-XDN",
+    "name": "Xindian",
+    "lines": [
+      "green"
+    ],
+    "type": "surface",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xindian"
+  },
+  {
+    "id": "TRTC-XDO",
+    "name": "Xindian District Office",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-XIA",
+    "name": "Xinyi Anhe",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-DAA"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-XIA2",
+    "name": "Xiaonanmen",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-CKS",
+      "TRTC-XMN"
+    ],
+    "zone": "green"
+  },
+  {
+    "id": "TRTC-XIA3",
+    "name": "Xiaobitan",
+    "lines": [
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-XIH",
+    "name": "Xihu",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-XIN",
+    "name": "Xinbeitou",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-XIN2",
+    "name": "Xinhai",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-XIT",
+    "name": "Xingtian Temple",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-SJN"
+    ],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-XIT2",
+    "name": "Xianse Temple",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-XMN",
+    "name": "Ximen",
+    "lines": [
+      "blue",
+      "green"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-TPM"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-XPU",
+    "name": "Xinpu",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-XSH",
+    "name": "Xiangshan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-XZH",
+    "name": "Xinzhuang",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "xinlu"
+  },
+  {
+    "id": "TRTC-YCH",
+    "name": "Yongchun",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-YNG",
+    "name": "Yongning",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-YOM",
+    "name": "Yongan Market",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-YUA",
+    "name": "Yuanshan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-MWR"
+    ],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-ZES",
+    "name": "Zhongshan Elementary School",
+    "lines": [
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-MWR"
+    ],
+    "zone": "orange"
+  },
+  {
+    "id": "TRTC-ZHI",
+    "name": "Zhishan",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-ZHO",
+    "name": "Zhongyi",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-ZHU",
+    "name": "Zhuwei",
+    "lines": [
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [],
+    "zone": "red"
+  },
+  {
+    "id": "TRTC-ZJHS",
+    "name": "Zhongshan Junior High School",
+    "lines": [
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": false
+    },
+    "connections": [
+      "TRTC-NJF"
+    ],
+    "zone": "brown"
+  },
+  {
+    "id": "TRTC-ZSN",
+    "name": "Zhongshan",
+    "lines": [
+      "green",
+      "red"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-SJN",
+      "TRTC-TPM"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-ZXD",
+    "name": "Zhongxiao Dunhua",
+    "lines": [
+      "blue"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-ZXF"
+    ],
+    "zone": "bannan"
+  },
+  {
+    "id": "TRTC-ZXF",
+    "name": "Zhongxiao Fuxing",
+    "lines": [
+      "blue",
+      "brown"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-DAA",
+      "TRTC-NJF",
+      "TRTC-ZXS"
+    ],
+    "zone": "central"
+  },
+  {
+    "id": "TRTC-ZXS",
+    "name": "Zhongxiao Xinsheng",
+    "lines": [
+      "blue",
+      "orange"
+    ],
+    "type": "underground",
+    "accessibility": {
+      "elevator": true,
+      "escalator": true,
+      "step_free": true,
+      "tactile_paving": true,
+      "wide_gate": true
+    },
+    "connections": [
+      "TRTC-DGM",
+      "TRTC-SJN",
+      "TRTC-ZXF"
+    ],
+    "zone": "central"
+  }
+]

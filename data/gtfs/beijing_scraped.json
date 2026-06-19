@@ -1,0 +1,6316 @@
+{
+  "system": "beijing",
+  "scraped_at": "2026-03-25T07:01:58.262981+00:00",
+  "source": "wikipedia",
+  "lines": [
+    {
+      "id": "1",
+      "name": "Line 1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_1_(Beijing_Subway)",
+      "stations": [
+        "Fushouling",
+        "Pingguoyuan",
+        "Gucheng",
+        "Bajiao Amusement Park",
+        "Babaoshan",
+        "Yuquan Lu",
+        "Wukesong",
+        "Wanshou Lu",
+        "Gongzhufen",
+        "Military Museum",
+        "Muxidi",
+        "Nanlishi Lu",
+        "Fuxingmen",
+        "Taipingqiao",
+        "Xidan",
+        "Tian'anmenxi",
+        "Tian'anmendong",
+        "Wangfujing",
+        "Dongdan",
+        "Jianguomen",
+        "Yong'an Li",
+        "Guomao",
+        "Dawang Lu",
+        "Sihui",
+        "Sihuidong",
+        "Gaobeidian",
+        "Communication Univ of China",
+        "Shuang Qiao",
+        "Guaanzhuang",
+        "Bali Qiao",
+        "Tongzhou Beiyuan",
+        "Guoyuan",
+        "Jiukeshu",
+        "Liyuan",
+        "Linheli",
+        "Tu Qiao",
+        "Huazhuang",
+        "Universal Resort",
+        "Zhangguozhuang",
+        "Feihang Yungang"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Line 2",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_2_(Beijing_Subway)",
+      "stations": [
+        "Jishuitan",
+        "Xizhimen",
+        "Chegongzhuang",
+        "Fucheng Men",
+        "Fuxingmen",
+        "Taipingqiao",
+        "Changchun Jie",
+        "Xuanwu Men",
+        "Heping Men",
+        "Qianmen",
+        "Chongwen Men",
+        "Beijing railway",
+        "Jianguomen",
+        "Chaoyang Men",
+        "Dongsi Shitiao",
+        "Dongzhimen",
+        "Yonghegong Lama Temple",
+        "Anding Men",
+        "Gulou Dajie"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Line 3",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_3_(Beijing_Subway)",
+      "stations": [
+        "Dongsi Shitiao",
+        "Workers' Stadium",
+        "Tuanjiehu",
+        "Chaoyang Park",
+        "Shifoying",
+        "Chaoyang railway",
+        "Yaojiayuan",
+        "Dongbanan",
+        "Dongba",
+        "Dongbabei"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Line 4",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_4_(Beijing_Subway)",
+      "stations": [
+        "Anheqiaobei",
+        "Beigongmen",
+        "Xi Yuan",
+        "Yuanmingyuan Park",
+        "Peking Univ East Gate",
+        "Zhongguancun",
+        "Haidian Huangzhuang",
+        "Renmin Daxue (Renmin Univ.)",
+        "Weigongcun",
+        "Guojia Tushuguan (National Library)",
+        "Dongwuyuan (Beijing Zoo)",
+        "Xizhimen",
+        "Xinjie Kou",
+        "Ping'anli",
+        "Xisi",
+        "Lingjing Hutong",
+        "Xidan",
+        "Xuanwu Men",
+        "Caishi Kou",
+        "Taoranting",
+        "Beijing South railway",
+        "Majiapu",
+        "Jiaomenxi",
+        "Gongyi Xiqiao",
+        "Xingong",
+        "Xihong Men",
+        "Gaomidianbei",
+        "Gaomidiannan",
+        "Zaoyuan",
+        "Qingyuan Lu",
+        "Huangcun Xidajie",
+        "Huangcun railway",
+        "Yihezhuang",
+        "Biomedical Base",
+        "Tiangong Yuan"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Line 5",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_5_(Beijing_Subway)",
+      "stations": [
+        "Tiantongyuanbei",
+        "Tiantongyuan",
+        "Tiantongyuannan",
+        "Lishui Qiao",
+        "Lishuiqiaonan",
+        "Beiyuanlubei",
+        "Datunludong",
+        "Huixin Xijie Beikou",
+        "Huixin Xijie Nankou",
+        "Heping Xiqiao",
+        "Hepingli Beijie",
+        "Yonghegong Lama Temple",
+        "Beixinqiao",
+        "Zhangzizhong Lu",
+        "Dongsi",
+        "Dengshi Kou",
+        "Dongdan",
+        "Chongwen Men",
+        "Ciqi Kou",
+        "Temple of Heaven East Gate",
+        "Puhuangyu",
+        "Liujiayao",
+        "Songjiazhuang"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Line 6",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_6_(Beijing_Subway)",
+      "stations": [
+        "Jin'anqiao",
+        "Pingguoyuan",
+        "Yangzhuang",
+        "Xihuangcun",
+        "Liaogongzhuang",
+        "Tiancun",
+        "Haidian Wuluju",
+        "Cishou Si",
+        "Huayuan Qiao",
+        "Baishiqiaonan",
+        "Erligou",
+        "Chegongzhuangxi",
+        "Chegongzhuang",
+        "Ping'anli",
+        "Beihaibei",
+        "Nanluogu Xiang",
+        "Dongsi",
+        "Chaoyang Men",
+        "Dongdaqiao",
+        "Hujialou",
+        "Jintai Lu",
+        "Shilipu",
+        "Qingnian Lu",
+        "Dalianpo",
+        "Huangqu",
+        "Changying",
+        "Caofang",
+        "Wuzi Xueyuan Lu",
+        "Tongzhou Beiguan",
+        "Tongyun Men",
+        "Beiyunhexi",
+        "Beiyunhedong",
+        "Haojia Fu",
+        "Dongxia Yuan",
+        "Lucheng",
+        "Luyang"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Line 7",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_7_(Beijing_Subway)",
+      "stations": [
+        "Beijing West railway",
+        "Wanzi",
+        "Daguanying",
+        "Guang'anmen Nei",
+        "Niujie",
+        "Caishi Kou",
+        "Hufangqiao",
+        "Zhushikou",
+        "Qiaowan",
+        "Ciqi Kou",
+        "Guangqumen Nei",
+        "Guangqumen Wai",
+        "Shuangjing",
+        "Jiulongshan",
+        "Dajiaoting",
+        "Baiziwan",
+        "Huagong",
+        "Nanlouzi Zhuang",
+        "Happy Valley",
+        "Fatou",
+        "Shuanghe",
+        "Jiaohua Chang",
+        "Huangchang",
+        "Langxinzhuang",
+        "Heizhuanghu",
+        "Wanshengxi",
+        "Wanshengdong",
+        "Qunfang",
+        "Gaoloujin",
+        "Huazhuang",
+        "Universal Resort"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Line 8",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_8_(Beijing_Subway)",
+      "stations": [
+        "Zhuxinzhuang",
+        "Yuzhi Lu",
+        "Pingxi Fu",
+        "Huilongguan Dongdajie",
+        "Huoying",
+        "Yuxin",
+        "Xixiao Kou",
+        "Yongtaizhuang",
+        "Lincuiqiao",
+        "Senlin Gongyuan Nanmen (Forest Park South Gate)",
+        "Aolinpike Gongyuan (Olympic Park)",
+        "Aoti Zhongxin (Olympic Sports Center)",
+        "Beitucheng",
+        "Anhua Qiao",
+        "Andeli Beijie",
+        "Gulou Dajie",
+        "Shichahai",
+        "Nanluogu Xiang",
+        "Zhongguo Meishuguan (National Art Museum)",
+        "Jinyu Hutong",
+        "Wangfujing",
+        "Qianmen",
+        "Zhushikou",
+        "Tianqiao",
+        "Yongdingmenwai",
+        "Muxi Yuan",
+        "Haihutun",
+        "Dahong Men",
+        "Dahongmennan",
+        "Heyi",
+        "Donggaodi",
+        "Huojian Wanyuan",
+        "Wufutang",
+        "Demao",
+        "Yinghai"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Line 9",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_9_(Beijing_Subway)",
+      "stations": [
+        "Guojia Tushuguan (National Library)",
+        "Baishiqiaonan",
+        "Baiduizi",
+        "Military Museum",
+        "Beijing West railway",
+        "Liuliqiaodong",
+        "Liuli Qiao",
+        "Qilizhuang",
+        "Fengtai Dongdajie",
+        "Fengtai Nanlu",
+        "Keyi Lu",
+        "Fengtai Science Park",
+        "Guogongzhuang"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Line 10",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_10_(Beijing_Subway)",
+      "stations": [
+        "Huoqiying",
+        "Bagou",
+        "Suzhou Jie",
+        "Haidian Huangzhuang",
+        "Zhichun Li",
+        "Zhichun Lu",
+        "Xitucheng",
+        "Mudanyuan",
+        "Jiande Men",
+        "Beitucheng",
+        "Anzhenmen",
+        "Huixin Xijie Nankou",
+        "Shaoyaoju",
+        "Taiyanggong",
+        "Sanyuan Qiao",
+        "Liangma Qiao",
+        "Agricultural Exhibition Center",
+        "Tuanjiehu",
+        "Hujialou",
+        "Jintai Xizhao",
+        "Guomao",
+        "Shuangjing",
+        "Jingsong",
+        "Panjia Yuan",
+        "Shilihe",
+        "Fenzhong Si",
+        "Chengshou Si",
+        "Songjiazhuang",
+        "Shiliuzhuang",
+        "Dahong Men",
+        "Jiaomendong",
+        "Jiaomenxi",
+        "Caoqiao",
+        "Jijiamiao",
+        "Capital Univ. of Economics & Business",
+        "Fengtai railway",
+        "Niwa",
+        "Xiju",
+        "Liuli Qiao",
+        "Lianhua Qiao",
+        "Gongzhufen",
+        "Xidiaoyutai",
+        "Cishou Si",
+        "Chedaogou",
+        "Changchun Qiao"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Line 11",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_11_(Beijing_Subway)",
+      "stations": [
+        "Moshikou",
+        "Jin'anqiao",
+        "Beixin'an",
+        "Xinshougang (Shougang Park)",
+        "Lianhua Qiao",
+        "Beijing West railway",
+        "Lize Shangwuqu"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Line 12",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_12_(Beijing_Subway)",
+      "stations": [
+        "Haidian Wuluju",
+        "Sijiqing Qiao",
+        "Landianchang",
+        "Changchun Qiao",
+        "Suzhou Qiao",
+        "Renmin Daxue (Renmin Univ.)",
+        "Dazhong Si",
+        "Jimen Qiao",
+        "Beitaipingzhuang",
+        "Madian Qiao",
+        "Anhua Qiao",
+        "Anzhen Qiao",
+        "Heping Xiqiao",
+        "Guangxi Men",
+        "Xibahe",
+        "Sanyuan Qiao",
+        "Jiangtaixi",
+        "Gaojiayuan",
+        "Tuofangying",
+        "Dongbaxi",
+        "Dongbabei"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Line 13",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_13_(Beijing_Subway)",
+      "stations": [
+        "Xizhimen",
+        "Dazhong Si",
+        "Zhichun Lu",
+        "Wudao Kou",
+        "Shangdi",
+        "Qinghe railway",
+        "Xi'erqi",
+        "Longze",
+        "Huilong Guan",
+        "Huoying",
+        "Lishui Qiao",
+        "Bei Yuan",
+        "Wangjingxi",
+        "Shaoyaoju",
+        "Guangxi Men",
+        "Liufang",
+        "Dongzhimen",
+        "Malianwa",
+        "Shangdi Software Park",
+        "Dongbeiwang",
+        "Longzexi",
+        "Huilongguan Xidajie",
+        "Wenhualu",
+        "Huilongguan Dongdajie",
+        "Huoyingdong",
+        "Tiantongyuan",
+        "Taipingzhuang",
+        "Tiantongyuandong",
+        "Chegongzhuang",
+        "Qinghua Donglu Xikou"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Line 14",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_14_(Beijing_Subway)",
+      "stations": [
+        "Zhangguozhuang",
+        "Garden Expo Park",
+        "Dawayao",
+        "Guozhuangzi",
+        "Dajing",
+        "Qilizhuang",
+        "Xiju",
+        "Dongguantou",
+        "Lize Shangwuqu",
+        "Caihuying",
+        "Xitieying",
+        "Jingfengmen",
+        "Beijing South railway",
+        "Taoran Qiao",
+        "Yongdingmenwai",
+        "Jingtai",
+        "Puhuangyu",
+        "Fangzhuang",
+        "Shilihe",
+        "Beijing Univ. of Tech West Gate",
+        "Pingle Yuan",
+        "Jiulongshan",
+        "Dawang Lu",
+        "Hongmiao",
+        "Jintai Lu",
+        "Chaoyang Park",
+        "Zaoying",
+        "Dongfeng Beiqiao",
+        "Jiangtai",
+        "Gaojiayuan",
+        "Wangjing Nan (S)",
+        "Futong",
+        "Wangjing",
+        "Donghuqu",
+        "Laiguangying",
+        "Shangezhuang"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Line 15",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_15_(Beijing_Subway)",
+      "stations": [
+        "Qinghua Donglu Xikou",
+        "Liudao Kou",
+        "Beishatan",
+        "Aolinpike Gongyuan (Olympic Park)",
+        "Anli Lu",
+        "Datunludong",
+        "Guanzhuang",
+        "Wangjingxi",
+        "Wangjing",
+        "Wangjingdong",
+        "Cuigezhuang",
+        "Maquanying",
+        "Sunhe",
+        "China Int'l Exhibition Center",
+        "Hualikan",
+        "Houshayu",
+        "Nanfaxin",
+        "Shimen",
+        "Shunyi",
+        "Fengbo"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Line 16",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_16_(Beijing_Subway)",
+      "stations": [
+        "Bei'anhe",
+        "Wenyang Lu",
+        "Daoxianghu Lu",
+        "Tundian",
+        "Yongfeng",
+        "Yongfengnan",
+        "Xibeiwang",
+        "Malianwa",
+        "Nongda Nanlu",
+        "Xi Yuan",
+        "Wanquanhe Qiao",
+        "Suzhou Jie",
+        "Suzhou Qiao",
+        "Wanshou Si",
+        "Guojia Tushuguan (National Library)",
+        "Erligou",
+        "Ganjia Kou",
+        "Yuyuantan Dongmen (Yuyuantan Park East Gate)",
+        "Muxidi",
+        "Daguanying",
+        "Honglian Nanlu",
+        "Lize Shangwuqu",
+        "Dongguantounan",
+        "Fengtai railway",
+        "Fengtai Nanlu",
+        "Fufengqiao",
+        "Kandan",
+        "Yushuzhuang",
+        "Hongtaizhuang",
+        "Wanpingcheng"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Line 17",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_17_(Beijing_Subway)",
+      "stations": [
+        "Weilaikexuechengbei (Future Science City North)",
+        "Weilaikexuecheng (Future Science City)",
+        "Tiantongyuandong",
+        "Qingheying",
+        "Hongjunying",
+        "Wangjingxi",
+        "Taiyanggong",
+        "Xibahe",
+        "Zuojiazhuang",
+        "Workers' Stadium",
+        "Dongdaqiao",
+        "Yong'an Li",
+        "Guangqumen Wai",
+        "Panjiayuanxi",
+        "Shilihe",
+        "Zhoujiazhuang",
+        "Shibalidian",
+        "Beishenshu",
+        "Ciqubei",
+        "Ciqu",
+        "Jiahuihu"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Line 18",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_18_(Beijing_Subway)",
+      "stations": [
+        "Malianwa",
+        "Shangdi Software Park",
+        "Dongbeiwang",
+        "Longzexi",
+        "Huilongguan Xidajie",
+        "Wenhualu",
+        "Huilongguan Dongdajie",
+        "Huoyingdong",
+        "Tiantongyuan",
+        "Taipingzhuang",
+        "Tiantongyuandong",
+        "Chegongzhuang",
+        "Xizhimen",
+        "Dazhong Si",
+        "Zhichun Lu",
+        "Wudao Kou",
+        "Qinghua Donglu Xikou",
+        "Shangdi",
+        "Qinghe railway",
+        "Xi'erqi"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Line 19",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_19_(Beijing_Subway)",
+      "stations": [
+        "Longzexi",
+        "Qinghe Xiaoyingqiao",
+        "Beishatan",
+        "Mudanyuan",
+        "Beitaipingzhuang",
+        "Jishuitan",
+        "Ping'anli",
+        "Taipingqiao",
+        "Fuxingmen",
+        "Niujie",
+        "Guang'anmen Nei",
+        "Jingfengmen",
+        "Caoqiao",
+        "Xinfadi",
+        "Xingong",
+        "Qinghe railway"
+      ]
+    },
+    {
+      "id": "yizhuang",
+      "name": "Yizhuang Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yizhuang_line",
+      "stations": [
+        "Songjiazhuang",
+        "Xiaocun",
+        "Xiaohong Men",
+        "Jiu Gong",
+        "Yizhuang Qiao",
+        "Yizhuang Culture Park",
+        "Wanyuan Jie",
+        "Rongjing Dongjie",
+        "Rongchang Dongjie",
+        "Tongji Nanlu",
+        "Jinghai Lu",
+        "Ciqunan",
+        "Ciqu",
+        "Yizhuang railway"
+      ]
+    },
+    {
+      "id": "fangshan",
+      "name": "Fangshan Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fangshan_line",
+      "stations": [
+        "Dongguantounan",
+        "Capital Univ. of Economics & Business",
+        "Huaxiang Dongqiao",
+        "Baipenyao",
+        "Guogongzhuang",
+        "Dabaotai",
+        "Daotian",
+        "Changyang",
+        "Libafang",
+        "Guangyang Cheng",
+        "Liangxiang Univ. Town North",
+        "Liangxiang Univ. Town",
+        "Liangxiang Univ. Town West",
+        "Liangxiang Nanguan",
+        "Suzhuang",
+        "Yancundong"
+      ]
+    },
+    {
+      "id": "yanfang",
+      "name": "Yanfang Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yanfang_line",
+      "stations": [
+        "Yancundong",
+        "Zicaowu",
+        "Yancun",
+        "Xingcheng",
+        "Dashihedong",
+        "Magezhuang",
+        "Raole Fu",
+        "Fangshan Chengguan",
+        "Yanshan"
+      ]
+    },
+    {
+      "id": "s1",
+      "name": "Line S1",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Line_S1_(Beijing_Subway)",
+      "stations": [
+        "Shichang",
+        "Xiaoyuan",
+        "Liyuanzhuang",
+        "Shang'an",
+        "Qiaohuying",
+        "Sidao Qiao",
+        "Jin'anqiao",
+        "Pingguoyuan"
+      ]
+    },
+    {
+      "id": "changping",
+      "name": "Changping Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changping_line",
+      "stations": [
+        "Changping Xishankou",
+        "Ming Tombs",
+        "Changping",
+        "Changping Dongguan",
+        "Beishaowa",
+        "Nanshao",
+        "Shahe Univ. Park",
+        "Shahe",
+        "Gonghua Cheng",
+        "Zhuxinzhuang",
+        "Life Science Park",
+        "Xi'erqi",
+        "Qinghe railway",
+        "Zhufangbei",
+        "Qinghe Xiaoyingqiao",
+        "Xuezhiyuan",
+        "Liudao Kou",
+        "Xueyuanqiao",
+        "Xitucheng",
+        "Jimen Qiao"
+      ]
+    },
+    {
+      "id": "capital_airport",
+      "name": "Capital Airport Express",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Airport_Express",
+      "stations": [
+        "Beixinqiao",
+        "Dongzhimen",
+        "Sanyuan Qiao",
+        "3 Hao Hangzhanlou (Terminal 3)",
+        "2 Hao Hangzhanlou (Terminal 2)"
+      ]
+    },
+    {
+      "id": "daxing_airport",
+      "name": "Daxing Airport Express",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daxing_Airport_Express",
+      "stations": [
+        "Lize Shangwuqu",
+        "Caoqiao",
+        "Daxing Xincheng",
+        "Daxing Jichang (Daxing Airport)"
+      ]
+    },
+    {
+      "id": "xijiao",
+      "name": "Xijiao Line",
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xijiao_line",
+      "stations": [
+        "Fragrant Hills",
+        "China National Botanical Garden",
+        "Wan'an",
+        "Chapeng",
+        "Summer Palace West Gate",
+        "Bagou"
+      ]
+    }
+  ],
+  "stations": {
+    "Fushouling": {
+      "name": "Fushouling",
+      "native_name": "福寿岭",
+      "lat": 39.938694,
+      "lon": 116.165469,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fushouling_station"
+    },
+    "Pingguoyuan": {
+      "name": "Pingguoyuan",
+      "native_name": "苹果园",
+      "lat": 39.926727,
+      "lon": 116.177388,
+      "lines": [
+        "Line 1",
+        "Line 6",
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pingguoyuan_station"
+    },
+    "Gucheng": {
+      "name": "Gucheng",
+      "native_name": "古城",
+      "lat": 39.90745,
+      "lon": 116.190337,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gucheng_station"
+    },
+    "Bajiao Amusement Park": {
+      "name": "Bajiao Amusement Park",
+      "native_name": "八角游乐园",
+      "lat": 39.907442,
+      "lon": 116.212684,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bajiao_Amusement_Park_station"
+    },
+    "Babaoshan": {
+      "name": "Babaoshan",
+      "native_name": "八宝山",
+      "lat": 39.90744,
+      "lon": 116.235948,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Babaoshan_station"
+    },
+    "Yuquan Lu": {
+      "name": "Yuquan Lu",
+      "native_name": "玉泉路",
+      "lat": 39.907433,
+      "lon": 116.252888,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuquan_Lu_station"
+    },
+    "Wukesong": {
+      "name": "Wukesong",
+      "native_name": "五棵松",
+      "lat": 39.907456,
+      "lon": 116.273987,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wukesong_station"
+    },
+    "Wanshou Lu": {
+      "name": "Wanshou Lu",
+      "native_name": "万寿路",
+      "lat": 39.907474,
+      "lon": 116.294765,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanshou_Lu_station"
+    },
+    "Gongzhufen": {
+      "name": "Gongzhufen",
+      "native_name": "公主坟",
+      "lat": 39.907469,
+      "lon": 116.309919,
+      "lines": [
+        "Line 1",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gongzhufen_station"
+    },
+    "Military Museum": {
+      "name": "Military Museum",
+      "native_name": "军事博物馆",
+      "lat": 39.907422,
+      "lon": 116.321459,
+      "lines": [
+        "Line 1",
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Military_Museum_station"
+    },
+    "Muxidi": {
+      "name": "Muxidi",
+      "native_name": "木樨地",
+      "lat": 39.907379,
+      "lon": 116.337583,
+      "lines": [
+        "Line 1",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muxidi_station"
+    },
+    "Nanlishi Lu": {
+      "name": "Nanlishi Lu",
+      "native_name": "南礼士路",
+      "lat": 39.907234,
+      "lon": 116.352583,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanlishi_Lu_station"
+    },
+    "Fuxingmen": {
+      "name": "Fuxingmen",
+      "native_name": "复兴门",
+      "lat": 39.907242,
+      "lon": 116.356866,
+      "lines": [
+        "Line 1",
+        "Line 2",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fuxingmen_station_(Beijing_Subway)"
+    },
+    "Taipingqiao": {
+      "name": "Taipingqiao",
+      "native_name": "太平桥",
+      "lat": 39.872,
+      "lon": 116.362,
+      "lines": [
+        "Line 1",
+        "Line 2",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taipingqiao_station_(Beijing_Subway)"
+    },
+    "Xidan": {
+      "name": "Xidan",
+      "native_name": "西单",
+      "lat": 39.907383,
+      "lon": 116.374072,
+      "lines": [
+        "Line 1",
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xidan_station"
+    },
+    "Tian'anmenxi": {
+      "name": "Tian'anmenxi",
+      "native_name": "天安门西",
+      "lat": 39.907472,
+      "lon": 116.391278,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tian%27anmenxi_station"
+    },
+    "Tian'anmendong": {
+      "name": "Tian'anmendong",
+      "native_name": "天安门东",
+      "lat": 39.90778,
+      "lon": 116.401216,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tian%27anmendong_station"
+    },
+    "Wangfujing": {
+      "name": "Wangfujing",
+      "native_name": "王府井",
+      "lat": 39.914,
+      "lon": 116.41,
+      "lines": [
+        "Line 1",
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wangfujing_station"
+    },
+    "Dongdan": {
+      "name": "Dongdan",
+      "native_name": "东单",
+      "lat": 39.908255,
+      "lon": 116.419845,
+      "lines": [
+        "Line 1",
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongdan_station"
+    },
+    "Jianguomen": {
+      "name": "Jianguomen",
+      "native_name": "建国门",
+      "lat": 39.908501,
+      "lon": 116.435806,
+      "lines": [
+        "Line 1",
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jianguomen_station"
+    },
+    "Yong'an Li": {
+      "name": "Yong'an Li",
+      "native_name": "永安里",
+      "lat": 39.908454,
+      "lon": 116.450497,
+      "lines": [
+        "Line 1",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yong%27an_Li_station"
+    },
+    "Guomao": {
+      "name": "Guomao",
+      "native_name": "国贸",
+      "lat": 39.909104,
+      "lon": 116.461841,
+      "lines": [
+        "Line 1",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guomao_station_(Beijing_Subway)"
+    },
+    "Dawang Lu": {
+      "name": "Dawang Lu",
+      "native_name": "大望路",
+      "lat": 39.90833333,
+      "lon": 116.47777778,
+      "lines": [
+        "Line 1",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dawang_Lu_station"
+    },
+    "Sihui": {
+      "name": "Sihui",
+      "native_name": "四惠",
+      "lat": 39.9088,
+      "lon": 116.4955,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sihui_station"
+    },
+    "Sihuidong": {
+      "name": "Sihuidong",
+      "native_name": "四惠东",
+      "lat": 39.9085,
+      "lon": 116.5157,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sihuidong_station"
+    },
+    "Gaobeidian": {
+      "name": "Gaobeidian",
+      "native_name": "高碑店",
+      "lat": 39.909448,
+      "lon": 116.531421,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaobeidian_station"
+    },
+    "Communication Univ of China": {
+      "name": "Communication Univ of China",
+      "native_name": "传媒大学",
+      "lat": 39.9092,
+      "lon": 116.555,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Communication_Univ_of_China_station"
+    },
+    "Shuang Qiao": {
+      "name": "Shuang Qiao",
+      "native_name": "双桥",
+      "lat": 39.910139,
+      "lon": 116.576709,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shuang_Qiao_station"
+    },
+    "Guaanzhuang": {
+      "name": "Guaanzhuang",
+      "native_name": "管庄",
+      "lat": 39.9092,
+      "lon": 116.599,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guaanzhuang_station"
+    },
+    "Bali Qiao": {
+      "name": "Bali Qiao",
+      "native_name": "八里桥",
+      "lat": 39.906,
+      "lon": 116.6,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bali_Qiao_station"
+    },
+    "Tongzhou Beiyuan": {
+      "name": "Tongzhou Beiyuan",
+      "native_name": "通州北苑",
+      "lat": 39.903864,
+      "lon": 116.637252,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tongzhou_Beiyuan_station"
+    },
+    "Guoyuan": {
+      "name": "Guoyuan",
+      "native_name": "果园",
+      "lat": 39.893393,
+      "lon": 116.646606,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guoyuan_station"
+    },
+    "Jiukeshu": {
+      "name": "Jiukeshu",
+      "native_name": "九棵树",
+      "lat": 39.890278,
+      "lon": 116.657533,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiukeshu_station"
+    },
+    "Liyuan": {
+      "name": "Liyuan",
+      "native_name": "栗园庄",
+      "lat": 39.8834,
+      "lon": 116.6692,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liyuan_station_(Beijing_Subway)"
+    },
+    "Linheli": {
+      "name": "Linheli",
+      "native_name": "临河里",
+      "lat": 39.8754,
+      "lon": 116.6787,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Linheli_station"
+    },
+    "Tu Qiao": {
+      "name": "Tu Qiao",
+      "native_name": "土桥",
+      "lat": 39.871689,
+      "lon": 116.686083,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tu_Qiao_station"
+    },
+    "Huazhuang": {
+      "name": "Huazhuang",
+      "native_name": "花庄",
+      "lat": 39.8553663,
+      "lon": 116.6891062,
+      "lines": [
+        "Line 1",
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huazhuang_station"
+    },
+    "Universal Resort": {
+      "name": "Universal Resort",
+      "native_name": "环球度假区",
+      "lat": 39.847936,
+      "lon": 116.673142,
+      "lines": [
+        "Line 1",
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Universal_Resort_station"
+    },
+    "Zhangguozhuang": {
+      "name": "Zhangguozhuang",
+      "native_name": "张郭庄",
+      "lat": 39.8581,
+      "lon": 116.187193,
+      "lines": [
+        "Line 1",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhangguozhuang_station"
+    },
+    "Feihang Yungang": {
+      "name": "Feihang Yungang",
+      "native_name": "飞行运港",
+      "lat": 39.848,
+      "lon": 116.194,
+      "lines": [
+        "Line 1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Feihang_Yungang_station"
+    },
+    "Jishuitan": {
+      "name": "Jishuitan",
+      "native_name": "积水潭",
+      "lat": 39.948653,
+      "lon": 116.373126,
+      "lines": [
+        "Line 2",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jishuitan_station"
+    },
+    "Xizhimen": {
+      "name": "Xizhimen",
+      "native_name": "西直门",
+      "lat": 39.9405,
+      "lon": 116.355,
+      "lines": [
+        "Line 2",
+        "Line 4",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xizhimen_station"
+    },
+    "Chegongzhuang": {
+      "name": "Chegongzhuang",
+      "native_name": "车公庄",
+      "lat": 39.93234722,
+      "lon": 116.35572778,
+      "lines": [
+        "Line 2",
+        "Line 6",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chegongzhuang_station"
+    },
+    "Fucheng Men": {
+      "name": "Fucheng Men",
+      "native_name": "阜成门",
+      "lat": 39.9235,
+      "lon": 116.356,
+      "lines": [
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fucheng_Men_station"
+    },
+    "Changchun Jie": {
+      "name": "Changchun Jie",
+      "native_name": "长椿街",
+      "lat": 39.899433,
+      "lon": 116.363355,
+      "lines": [
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changchun_Jie_station"
+    },
+    "Xuanwu Men": {
+      "name": "Xuanwu Men",
+      "native_name": "宣武门",
+      "lat": 39.8997,
+      "lon": 116.3743,
+      "lines": [
+        "Line 2",
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xuanwu_Men_station"
+    },
+    "Heping Men": {
+      "name": "Heping Men",
+      "native_name": "和平门",
+      "lat": 39.900098,
+      "lon": 116.384209,
+      "lines": [
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heping_Men_station"
+    },
+    "Qianmen": {
+      "name": "Qianmen",
+      "native_name": "前门",
+      "lat": 39.898653,
+      "lon": 116.391659,
+      "lines": [
+        "Line 2",
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qianmen_station"
+    },
+    "Chongwen Men": {
+      "name": "Chongwen Men",
+      "native_name": "崇文门",
+      "lat": 39.9011,
+      "lon": 116.417,
+      "lines": [
+        "Line 2",
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chongwen_Men_station"
+    },
+    "Beijing railway": {
+      "name": "Beijing railway",
+      "native_name": "北京站",
+      "lat": 39.9023,
+      "lon": 116.421,
+      "lines": [
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_railway_station#Beijing_Subway"
+    },
+    "Chaoyang Men": {
+      "name": "Chaoyang Men",
+      "native_name": "朝阳门",
+      "lat": 39.9241,
+      "lon": 116.4329,
+      "lines": [
+        "Line 2",
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaoyang_Men_station"
+    },
+    "Dongsi Shitiao": {
+      "name": "Dongsi Shitiao",
+      "native_name": "东四十条",
+      "lat": 39.933801,
+      "lon": 116.434133,
+      "lines": [
+        "Line 2",
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongsi_Shitiao_station"
+    },
+    "Dongzhimen": {
+      "name": "Dongzhimen",
+      "native_name": "东直门",
+      "lat": 39.941626,
+      "lon": 116.435842,
+      "lines": [
+        "Line 2",
+        "Line 13",
+        "Capital Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongzhimen_station"
+    },
+    "Yonghegong Lama Temple": {
+      "name": "Yonghegong Lama Temple",
+      "native_name": "雍和宫",
+      "lat": 39.9493,
+      "lon": 116.4171,
+      "lines": [
+        "Line 2",
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yonghegong_Lama_Temple_station"
+    },
+    "Anding Men": {
+      "name": "Anding Men",
+      "native_name": "安定门",
+      "lat": 39.94916667,
+      "lon": 116.40833333,
+      "lines": [
+        "Line 2"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anding_Men_station"
+    },
+    "Gulou Dajie": {
+      "name": "Gulou Dajie",
+      "native_name": "鼓楼大街",
+      "lat": 39.949,
+      "lon": 116.3938,
+      "lines": [
+        "Line 2",
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gulou_Dajie_station"
+    },
+    "Workers' Stadium": {
+      "name": "Workers' Stadium",
+      "native_name": "工人体育场",
+      "lat": 39.932233,
+      "lon": 116.44377,
+      "lines": [
+        "Line 3",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Workers%27_Stadium_station"
+    },
+    "Tuanjiehu": {
+      "name": "Tuanjiehu",
+      "native_name": "团结湖",
+      "lat": 39.933747,
+      "lon": 116.461806,
+      "lines": [
+        "Line 3",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuanjiehu_station"
+    },
+    "Chaoyang Park": {
+      "name": "Chaoyang Park",
+      "native_name": "朝阳公园",
+      "lat": 39.9337,
+      "lon": 116.4783,
+      "lines": [
+        "Line 3",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chaoyang_Park_station"
+    },
+    "Shifoying": {
+      "name": "Shifoying",
+      "native_name": "石佛营",
+      "lat": 39.934426,
+      "lon": 116.493011,
+      "lines": [
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shifoying_station"
+    },
+    "Chaoyang railway": {
+      "name": "Chaoyang railway",
+      "native_name": "朝阳站",
+      "lat": 39.94303,
+      "lon": 116.50038,
+      "lines": [
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Chaoyang_railway_station#Beijing_Subway"
+    },
+    "Yaojiayuan": {
+      "name": "Yaojiayuan",
+      "native_name": "姚家园",
+      "lat": 39.94654,
+      "lon": 116.521177,
+      "lines": [
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yaojiayuan_station"
+    },
+    "Dongbanan": {
+      "name": "Dongbanan",
+      "native_name": "东坝南",
+      "lat": 39.951104,
+      "lon": 116.541112,
+      "lines": [
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongbanan_station"
+    },
+    "Dongba": {
+      "name": "Dongba",
+      "native_name": "东坝",
+      "lat": 39.963767,
+      "lon": 116.541293,
+      "lines": [
+        "Line 3"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongba_station"
+    },
+    "Dongbabei": {
+      "name": "Dongbabei",
+      "native_name": "东坝北",
+      "lat": 39.97468,
+      "lon": 116.55127,
+      "lines": [
+        "Line 3",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongbabei_station"
+    },
+    "Anheqiaobei": {
+      "name": "Anheqiaobei",
+      "native_name": "安河桥北",
+      "lat": 40.012195,
+      "lon": 116.269956,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anheqiaobei_station"
+    },
+    "Beigongmen": {
+      "name": "Beigongmen",
+      "native_name": "北宫门",
+      "lat": 40.002373,
+      "lon": 116.277647,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beigongmen_station"
+    },
+    "Xi Yuan": {
+      "name": "Xi Yuan",
+      "native_name": "西苑",
+      "lat": 39.99694,
+      "lon": 116.2847,
+      "lines": [
+        "Line 4",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi_Yuan_station"
+    },
+    "Yuanmingyuan Park": {
+      "name": "Yuanmingyuan Park",
+      "native_name": "圆明园",
+      "lat": 39.999662,
+      "lon": 116.310186,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuanmingyuan_Park_station"
+    },
+    "Peking Univ East Gate": {
+      "name": "Peking Univ East Gate",
+      "native_name": "北京大学东门",
+      "lat": 39.992212,
+      "lon": 116.315842,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Peking_Univ_East_Gate_station"
+    },
+    "Zhongguancun": {
+      "name": "Zhongguancun",
+      "native_name": "中关村",
+      "lat": 39.983991,
+      "lon": 116.316467,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhongguancun_station"
+    },
+    "Haidian Huangzhuang": {
+      "name": "Haidian Huangzhuang",
+      "native_name": "海淀黄庄",
+      "lat": 39.975996,
+      "lon": 116.317564,
+      "lines": [
+        "Line 4",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haidian_Huangzhuang_station"
+    },
+    "Renmin Daxue (Renmin Univ.)": {
+      "name": "Renmin Daxue (Renmin Univ.)",
+      "native_name": "人民大学",
+      "lat": 39.966956,
+      "lon": 116.321367,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Renmin_Daxue_(Renmin_Univ.)_station"
+    },
+    "Weigongcun": {
+      "name": "Weigongcun",
+      "native_name": "魏公村",
+      "lat": 39.957904,
+      "lon": 116.32322,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weigongcun_station"
+    },
+    "Guojia Tushuguan (National Library)": {
+      "name": "Guojia Tushuguan (National Library)",
+      "native_name": "国家图书馆",
+      "lat": 39.943114,
+      "lon": 116.32519,
+      "lines": [
+        "Line 4",
+        "Line 9",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guojia_Tushuguan_(National_Library)_station"
+    },
+    "Dongwuyuan (Beijing Zoo)": {
+      "name": "Dongwuyuan (Beijing Zoo)",
+      "native_name": "动物园",
+      "lat": 39.93825,
+      "lon": 116.339031,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongwuyuan_(Beijing_Zoo)_station"
+    },
+    "Xinjie Kou": {
+      "name": "Xinjie Kou",
+      "native_name": "新街口",
+      "lat": 39.9405,
+      "lon": 116.3673,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xinjie_Kou_station"
+    },
+    "Ping'anli": {
+      "name": "Ping'anli",
+      "native_name": "平安里",
+      "lat": 39.9338,
+      "lon": 116.3729,
+      "lines": [
+        "Line 4",
+        "Line 6",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ping%27anli_station"
+    },
+    "Xisi": {
+      "name": "Xisi",
+      "native_name": "西四",
+      "lat": 39.9249,
+      "lon": 116.3737,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xisi_station"
+    },
+    "Lingjing Hutong": {
+      "name": "Lingjing Hutong",
+      "native_name": "灵境胡同",
+      "lat": 39.9161,
+      "lon": 116.3737,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lingjing_Hutong_station"
+    },
+    "Caishi Kou": {
+      "name": "Caishi Kou",
+      "native_name": "菜市口",
+      "lat": 39.889296,
+      "lon": 116.374425,
+      "lines": [
+        "Line 4",
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caishi_Kou_station"
+    },
+    "Taoranting": {
+      "name": "Taoranting",
+      "native_name": "陶然亭",
+      "lat": 39.8771,
+      "lon": 116.3682,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoranting_station"
+    },
+    "Beijing South railway": {
+      "name": "Beijing South railway",
+      "native_name": "北京南站",
+      "lat": 39.86583333,
+      "lon": 116.37638889,
+      "lines": [
+        "Line 4",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_South_railway_station#Beijing_Subway"
+    },
+    "Majiapu": {
+      "name": "Majiapu",
+      "native_name": "马家堡",
+      "lat": 39.8532,
+      "lon": 116.3714,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Majiapu_station"
+    },
+    "Jiaomenxi": {
+      "name": "Jiaomenxi",
+      "native_name": "角门西",
+      "lat": 39.8458,
+      "lon": 116.3712,
+      "lines": [
+        "Line 4",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiaomenxi_station"
+    },
+    "Gongyi Xiqiao": {
+      "name": "Gongyi Xiqiao",
+      "native_name": "公益西桥",
+      "lat": 39.83583333,
+      "lon": 116.37083333,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gongyi_Xiqiao_station"
+    },
+    "Xingong": {
+      "name": "Xingong",
+      "native_name": "新宫",
+      "lat": 39.812592,
+      "lon": 116.365549,
+      "lines": [
+        "Line 4",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xingong_station"
+    },
+    "Xihong Men": {
+      "name": "Xihong Men",
+      "native_name": "西红门",
+      "lat": 39.7898,
+      "lon": 116.328689,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xihong_Men_station"
+    },
+    "Gaomidianbei": {
+      "name": "Gaomidianbei",
+      "native_name": "高米店北",
+      "lat": 39.773547,
+      "lon": 116.330787,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaomidianbei_station"
+    },
+    "Gaomidiannan": {
+      "name": "Gaomidiannan",
+      "native_name": "高米店南",
+      "lat": 39.763489,
+      "lon": 116.331605,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaomidiannan_station"
+    },
+    "Zaoyuan": {
+      "name": "Zaoyuan",
+      "native_name": "枣园",
+      "lat": 39.753458,
+      "lon": 116.332204,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zaoyuan_station_(Beijing_Subway)"
+    },
+    "Qingyuan Lu": {
+      "name": "Qingyuan Lu",
+      "native_name": "清源路",
+      "lat": 39.742724,
+      "lon": 116.332513,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingyuan_Lu_station"
+    },
+    "Huangcun Xidajie": {
+      "name": "Huangcun Xidajie",
+      "native_name": "黄村西大街",
+      "lat": 39.732361,
+      "lon": 116.33295,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huangcun_Xidajie_station"
+    },
+    "Huangcun railway": {
+      "name": "Huangcun railway",
+      "native_name": "黄村火车站",
+      "lat": 39.720189,
+      "lon": 116.331651,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huangcun_railway_station#Beijing_Subway"
+    },
+    "Yihezhuang": {
+      "name": "Yihezhuang",
+      "native_name": "义和庄",
+      "lat": 39.712387,
+      "lon": 116.319079,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yihezhuang_station"
+    },
+    "Biomedical Base": {
+      "name": "Biomedical Base",
+      "native_name": "生物医药基地",
+      "lat": 39.68651,
+      "lon": 116.321662,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Biomedical_Base_station"
+    },
+    "Tiangong Yuan": {
+      "name": "Tiangong Yuan",
+      "native_name": "天宫院",
+      "lat": 39.670342,
+      "lon": 116.319932,
+      "lines": [
+        "Line 4"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiangong_Yuan_station"
+    },
+    "Tiantongyuanbei": {
+      "name": "Tiantongyuanbei",
+      "native_name": "天通苑北",
+      "lat": 40.083552,
+      "lon": 116.41315,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiantongyuanbei_station"
+    },
+    "Tiantongyuan": {
+      "name": "Tiantongyuan",
+      "native_name": "天通苑",
+      "lat": 40.075222,
+      "lon": 116.412759,
+      "lines": [
+        "Line 5",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiantongyuan_station"
+    },
+    "Tiantongyuannan": {
+      "name": "Tiantongyuannan",
+      "native_name": "天通苑南",
+      "lat": 40.066458,
+      "lon": 116.412661,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiantongyuannan_station"
+    },
+    "Lishui Qiao": {
+      "name": "Lishui Qiao",
+      "native_name": "立水桥",
+      "lat": 40.053032,
+      "lon": 116.41235,
+      "lines": [
+        "Line 5",
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lishui_Qiao_station"
+    },
+    "Lishuiqiaonan": {
+      "name": "Lishuiqiaonan",
+      "native_name": "立水桥南",
+      "lat": 40.041956,
+      "lon": 116.414496,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lishuiqiaonan_station"
+    },
+    "Beiyuanlubei": {
+      "name": "Beiyuanlubei",
+      "native_name": "北苑路北",
+      "lat": 40.030436,
+      "lon": 116.418089,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beiyuanlubei_station"
+    },
+    "Datunludong": {
+      "name": "Datunludong",
+      "native_name": "大屯路东",
+      "lat": 40.003841,
+      "lon": 116.417377,
+      "lines": [
+        "Line 5",
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Datunludong_station"
+    },
+    "Huixin Xijie Beikou": {
+      "name": "Huixin Xijie Beikou",
+      "native_name": "惠新西街北口",
+      "lat": 39.9879,
+      "lon": 116.417,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huixin_Xijie_Beikou_station"
+    },
+    "Huixin Xijie Nankou": {
+      "name": "Huixin Xijie Nankou",
+      "native_name": "惠新西街南口",
+      "lat": 39.977121,
+      "lon": 116.417537,
+      "lines": [
+        "Line 5",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huixin_Xijie_Nankou_station"
+    },
+    "Heping Xiqiao": {
+      "name": "Heping Xiqiao",
+      "native_name": "和平西桥",
+      "lat": 39.9684,
+      "lon": 116.418,
+      "lines": [
+        "Line 5",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heping_Xiqiao_station"
+    },
+    "Hepingli Beijie": {
+      "name": "Hepingli Beijie",
+      "native_name": "和平里北街",
+      "lat": 39.9587,
+      "lon": 116.4185,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hepingli_Beijie_station"
+    },
+    "Beixinqiao": {
+      "name": "Beixinqiao",
+      "native_name": "北新桥",
+      "lat": 39.9408,
+      "lon": 116.4169,
+      "lines": [
+        "Line 5",
+        "Capital Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beixinqiao_station"
+    },
+    "Zhangzizhong Lu": {
+      "name": "Zhangzizhong Lu",
+      "native_name": "张自忠路",
+      "lat": 39.9337,
+      "lon": 116.4172,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhangzizhong_Lu_station"
+    },
+    "Dongsi": {
+      "name": "Dongsi",
+      "native_name": "东四",
+      "lat": 39.92437,
+      "lon": 116.417493,
+      "lines": [
+        "Line 5",
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongsi_station"
+    },
+    "Dengshi Kou": {
+      "name": "Dengshi Kou",
+      "native_name": "灯市口",
+      "lat": 39.9171,
+      "lon": 116.4178,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dengshi_Kou_station"
+    },
+    "Ciqi Kou": {
+      "name": "Ciqi Kou",
+      "native_name": "磁器口",
+      "lat": 39.893172,
+      "lon": 116.41994,
+      "lines": [
+        "Line 5",
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciqi_Kou_station"
+    },
+    "Temple of Heaven East Gate": {
+      "name": "Temple of Heaven East Gate",
+      "native_name": "天坛东门",
+      "lat": 39.8825,
+      "lon": 116.4208,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Temple_of_Heaven_East_Gate_station"
+    },
+    "Puhuangyu": {
+      "name": "Puhuangyu",
+      "native_name": "蒲黄榆",
+      "lat": 39.86555556,
+      "lon": 116.42194444,
+      "lines": [
+        "Line 5",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Puhuangyu_station"
+    },
+    "Liujiayao": {
+      "name": "Liujiayao",
+      "native_name": "刘家窑",
+      "lat": 39.8575,
+      "lon": 116.4221,
+      "lines": [
+        "Line 5"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liujiayao_station"
+    },
+    "Songjiazhuang": {
+      "name": "Songjiazhuang",
+      "native_name": "宋家庄",
+      "lat": 39.845849,
+      "lon": 116.428368,
+      "lines": [
+        "Line 5",
+        "Line 10",
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Songjiazhuang_station"
+    },
+    "Jin'anqiao": {
+      "name": "Jin'anqiao",
+      "native_name": "金安桥",
+      "lat": 39.92362,
+      "lon": 116.163167,
+      "lines": [
+        "Line 6",
+        "Line 11",
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jin%27anqiao_station"
+    },
+    "Yangzhuang": {
+      "name": "Yangzhuang",
+      "native_name": "杨庄",
+      "lat": 39.926729,
+      "lon": 116.182473,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yangzhuang_station"
+    },
+    "Xihuangcun": {
+      "name": "Xihuangcun",
+      "native_name": "西黄村",
+      "lat": 39.932502,
+      "lon": 116.200174,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xihuangcun_station"
+    },
+    "Liaogongzhuang": {
+      "name": "Liaogongzhuang",
+      "native_name": "廖公庄",
+      "lat": 39.931154,
+      "lon": 116.220863,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liaogongzhuang_station"
+    },
+    "Tiancun": {
+      "name": "Tiancun",
+      "native_name": "田村",
+      "lat": 39.928138,
+      "lon": 116.246833,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiancun_station"
+    },
+    "Haidian Wuluju": {
+      "name": "Haidian Wuluju",
+      "native_name": "海淀五路居",
+      "lat": 39.932584,
+      "lon": 116.276531,
+      "lines": [
+        "Line 6",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haidian_Wuluju_station"
+    },
+    "Cishou Si": {
+      "name": "Cishou Si",
+      "native_name": "慈寿寺",
+      "lat": 39.9333,
+      "lon": 116.2952,
+      "lines": [
+        "Line 6",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cishou_Si_station"
+    },
+    "Huayuan Qiao": {
+      "name": "Huayuan Qiao",
+      "native_name": "花园桥",
+      "lat": 39.9324,
+      "lon": 116.3107,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huayuan_Qiao_station"
+    },
+    "Baishiqiaonan": {
+      "name": "Baishiqiaonan",
+      "native_name": "白石桥南",
+      "lat": 39.933,
+      "lon": 116.3257,
+      "lines": [
+        "Line 6",
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baishiqiaonan_station"
+    },
+    "Erligou": {
+      "name": "Erligou",
+      "native_name": "二里沟",
+      "lat": 39.931025,
+      "lon": 116.327294,
+      "lines": [
+        "Line 6",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Erligou_station"
+    },
+    "Chegongzhuangxi": {
+      "name": "Chegongzhuangxi",
+      "native_name": "车公庄西",
+      "lat": 39.931098,
+      "lon": 116.337992,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chegongzhuangxi_station"
+    },
+    "Beihaibei": {
+      "name": "Beihaibei",
+      "native_name": "北海北",
+      "lat": 39.933247,
+      "lon": 116.386829,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beihaibei_station"
+    },
+    "Nanluogu Xiang": {
+      "name": "Nanluogu Xiang",
+      "native_name": "南锣鼓巷",
+      "lat": 39.933848,
+      "lon": 116.404192,
+      "lines": [
+        "Line 6",
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanluogu_Xiang_station"
+    },
+    "Dongdaqiao": {
+      "name": "Dongdaqiao",
+      "native_name": "东大桥",
+      "lat": 39.923054,
+      "lon": 116.451657,
+      "lines": [
+        "Line 6",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongdaqiao_station"
+    },
+    "Hujialou": {
+      "name": "Hujialou",
+      "native_name": "呼家楼",
+      "lat": 39.923337,
+      "lon": 116.461618,
+      "lines": [
+        "Line 6",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hujialou_station"
+    },
+    "Jintai Lu": {
+      "name": "Jintai Lu",
+      "native_name": "金台路",
+      "lat": 39.9229,
+      "lon": 116.4781,
+      "lines": [
+        "Line 6",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jintai_Lu_station"
+    },
+    "Shilipu": {
+      "name": "Shilipu",
+      "native_name": "十里堡",
+      "lat": 39.921597,
+      "lon": 116.496192,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shilipu_station_(Beijing_Subway)"
+    },
+    "Qingnian Lu": {
+      "name": "Qingnian Lu",
+      "native_name": "青年路",
+      "lat": 39.923168,
+      "lon": 116.517429,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingnian_Lu_station"
+    },
+    "Dalianpo": {
+      "name": "Dalianpo",
+      "native_name": "褡裢坡",
+      "lat": 39.924,
+      "lon": 116.564,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dalianpo_station"
+    },
+    "Huangqu": {
+      "name": "Huangqu",
+      "native_name": "黄渠",
+      "lat": 39.9242,
+      "lon": 116.5782,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huangqu_station"
+    },
+    "Changying": {
+      "name": "Changying",
+      "native_name": "常营",
+      "lat": 39.925696,
+      "lon": 116.599722,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changying_station"
+    },
+    "Caofang": {
+      "name": "Caofang",
+      "native_name": "草房",
+      "lat": 39.924781,
+      "lon": 116.616067,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caofang_station"
+    },
+    "Wuzi Xueyuan Lu": {
+      "name": "Wuzi Xueyuan Lu",
+      "native_name": "物资学院路",
+      "lat": 39.9269,
+      "lon": 116.6393,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wuzi_Xueyuan_Lu_station"
+    },
+    "Tongzhou Beiguan": {
+      "name": "Tongzhou Beiguan",
+      "native_name": "通州北关",
+      "lat": 39.917374,
+      "lon": 116.655515,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tongzhou_Beiguan_station"
+    },
+    "Tongyun Men": {
+      "name": "Tongyun Men",
+      "native_name": "通运门",
+      "lat": 39.909603,
+      "lon": 116.667369,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tongyun_Men_station"
+    },
+    "Beiyunhexi": {
+      "name": "Beiyunhexi",
+      "native_name": "北运河西",
+      "lat": 39.9028,
+      "lon": 116.6899,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beiyunhexi_station"
+    },
+    "Beiyunhedong": {
+      "name": "Beiyunhedong",
+      "native_name": "北运河东",
+      "lat": 39.902006,
+      "lon": 116.701131,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beiyunhedong_station"
+    },
+    "Haojia Fu": {
+      "name": "Haojia Fu",
+      "native_name": "郝家府",
+      "lat": 39.9024,
+      "lon": 116.7204,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haojia_Fu_station"
+    },
+    "Dongxia Yuan": {
+      "name": "Dongxia Yuan",
+      "native_name": "东夏园",
+      "lat": 39.9029,
+      "lon": 116.7362,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongxia_Yuan_station"
+    },
+    "Lucheng": {
+      "name": "Lucheng",
+      "native_name": "潞城",
+      "lat": 39.902652,
+      "lon": 116.747434,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lucheng_station"
+    },
+    "Luyang": {
+      "name": "Luyang",
+      "native_name": "潞阳",
+      "lat": 39.88749,
+      "lon": 116.75064,
+      "lines": [
+        "Line 6"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Luyang_station"
+    },
+    "Beijing West railway": {
+      "name": "Beijing West railway",
+      "native_name": "北京西站",
+      "lat": 39.894914,
+      "lon": 116.322062,
+      "lines": [
+        "Line 7",
+        "Line 9",
+        "Line 11"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_West_railway_station#Beijing_Subway"
+    },
+    "Wanzi": {
+      "name": "Wanzi",
+      "native_name": "湾子",
+      "lat": 39.888606,
+      "lon": 116.321708,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanzi_station"
+    },
+    "Daguanying": {
+      "name": "Daguanying",
+      "native_name": "达官营",
+      "lat": 39.888535,
+      "lon": 116.330051,
+      "lines": [
+        "Line 7",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daguanying_station"
+    },
+    "Guang'anmen Nei": {
+      "name": "Guang'anmen Nei",
+      "native_name": "广安门内",
+      "lat": 39.8894,
+      "lon": 116.3574,
+      "lines": [
+        "Line 7",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guang%27anmen_Nei_station"
+    },
+    "Niujie": {
+      "name": "Niujie",
+      "native_name": "牛街",
+      "lat": 39.888,
+      "lon": 116.361,
+      "lines": [
+        "Line 7",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niujie_station"
+    },
+    "Hufangqiao": {
+      "name": "Hufangqiao",
+      "native_name": "虎坊桥",
+      "lat": 39.8895,
+      "lon": 116.3847,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hufangqiao_station"
+    },
+    "Zhushikou": {
+      "name": "Zhushikou",
+      "native_name": "珠市口",
+      "lat": 39.8912,
+      "lon": 116.3982,
+      "lines": [
+        "Line 7",
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhushikou_station"
+    },
+    "Qiaowan": {
+      "name": "Qiaowan",
+      "native_name": "桥湾",
+      "lat": 39.892725,
+      "lon": 116.408464,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qiaowan_station"
+    },
+    "Guangqumen Nei": {
+      "name": "Guangqumen Nei",
+      "native_name": "广渠门内",
+      "lat": 39.89214,
+      "lon": 116.427299,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangqumen_Nei_station"
+    },
+    "Guangqumen Wai": {
+      "name": "Guangqumen Wai",
+      "native_name": "广渠门外",
+      "lat": 39.8934,
+      "lon": 116.4472,
+      "lines": [
+        "Line 7",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangqumen_Wai_station"
+    },
+    "Shuangjing": {
+      "name": "Shuangjing",
+      "native_name": "双井",
+      "lat": 39.893479,
+      "lon": 116.460627,
+      "lines": [
+        "Line 7",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shuangjing_station"
+    },
+    "Jiulongshan": {
+      "name": "Jiulongshan",
+      "native_name": "九龙山",
+      "lat": 39.8927,
+      "lon": 116.4769,
+      "lines": [
+        "Line 7",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiulongshan_station"
+    },
+    "Dajiaoting": {
+      "name": "Dajiaoting",
+      "native_name": "大郊亭",
+      "lat": 39.8932,
+      "lon": 116.4892,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dajiaoting_station"
+    },
+    "Baiziwan": {
+      "name": "Baiziwan",
+      "native_name": "百子湾",
+      "lat": 39.89253,
+      "lon": 116.497768,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baiziwan_station"
+    },
+    "Huagong": {
+      "name": "Huagong",
+      "native_name": "化工",
+      "lat": 39.887369,
+      "lon": 116.503439,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huagong_station"
+    },
+    "Nanlouzi Zhuang": {
+      "name": "Nanlouzi Zhuang",
+      "native_name": "南楼梓庄",
+      "lat": 39.8748,
+      "lon": 116.5011,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanlouzi_Zhuang_station"
+    },
+    "Happy Valley": {
+      "name": "Happy Valley",
+      "native_name": "欢乐谷景区",
+      "lat": 39.867,
+      "lon": 116.4998,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Happy_Valley_station_(Beijing_Subway)"
+    },
+    "Fatou": {
+      "name": "Fatou",
+      "native_name": "垡头",
+      "lat": 39.864082,
+      "lon": 116.513817,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fatou_station"
+    },
+    "Shuanghe": {
+      "name": "Shuanghe",
+      "native_name": "双合",
+      "lat": 39.859691,
+      "lon": 116.526836,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shuanghe_station"
+    },
+    "Jiaohua Chang": {
+      "name": "Jiaohua Chang",
+      "native_name": "焦化厂",
+      "lat": 39.855488,
+      "lon": 116.537247,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiaohua_Chang_station"
+    },
+    "Huangchang": {
+      "name": "Huangchang",
+      "native_name": "黄厂",
+      "lat": 39.847828,
+      "lon": 116.547514,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huangchang_station"
+    },
+    "Langxinzhuang": {
+      "name": "Langxinzhuang",
+      "native_name": "郎辛庄",
+      "lat": 39.855461,
+      "lon": 116.564144,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Langxinzhuang_station"
+    },
+    "Heizhuanghu": {
+      "name": "Heizhuanghu",
+      "native_name": "黑庄户",
+      "lat": 39.857742,
+      "lon": 116.595418,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heizhuanghu_station"
+    },
+    "Wanshengxi": {
+      "name": "Wanshengxi",
+      "native_name": "万盛西",
+      "lat": 39.862344,
+      "lon": 116.626618,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanshengxi_station"
+    },
+    "Wanshengdong": {
+      "name": "Wanshengdong",
+      "native_name": "万盛东",
+      "lat": 39.862276,
+      "lon": 116.650774,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanshengdong_station"
+    },
+    "Qunfang": {
+      "name": "Qunfang",
+      "native_name": "群芳",
+      "lat": 39.86226,
+      "lon": 116.664728,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qunfang_station"
+    },
+    "Gaoloujin": {
+      "name": "Gaoloujin",
+      "native_name": "高楼金",
+      "lat": 39.856,
+      "lon": 116.677,
+      "lines": [
+        "Line 7"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaoloujin_station"
+    },
+    "Zhuxinzhuang": {
+      "name": "Zhuxinzhuang",
+      "native_name": "朱辛庄",
+      "lat": 40.104297,
+      "lon": 116.313698,
+      "lines": [
+        "Line 8",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhuxinzhuang_station"
+    },
+    "Yuzhi Lu": {
+      "name": "Yuzhi Lu",
+      "native_name": "育知路",
+      "lat": 40.0878,
+      "lon": 116.3265,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuzhi_Lu_station"
+    },
+    "Pingxi Fu": {
+      "name": "Pingxi Fu",
+      "native_name": "平西府",
+      "lat": 40.090607,
+      "lon": 116.350425,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pingxi_Fu_station"
+    },
+    "Huilongguan Dongdajie": {
+      "name": "Huilongguan Dongdajie",
+      "native_name": "回龙观东大街",
+      "lat": 40.081175,
+      "lon": 116.363025,
+      "lines": [
+        "Line 8",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huilongguan_Dongdajie_station"
+    },
+    "Huoying": {
+      "name": "Huoying",
+      "native_name": "霍营",
+      "lat": 40.07055556,
+      "lon": 116.36027778,
+      "lines": [
+        "Line 8",
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huoying_station"
+    },
+    "Yuxin": {
+      "name": "Yuxin",
+      "native_name": "育新",
+      "lat": 40.060039,
+      "lon": 116.347328,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuxin_station"
+    },
+    "Xixiao Kou": {
+      "name": "Xixiao Kou",
+      "native_name": "西小口",
+      "lat": 40.0468,
+      "lon": 116.3517,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xixiao_Kou_station"
+    },
+    "Yongtaizhuang": {
+      "name": "Yongtaizhuang",
+      "native_name": "永泰庄",
+      "lat": 40.0377,
+      "lon": 116.3546,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yongtaizhuang_station"
+    },
+    "Lincuiqiao": {
+      "name": "Lincuiqiao",
+      "native_name": "林萃桥",
+      "lat": 40.0219,
+      "lon": 116.373,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lincuiqiao_station"
+    },
+    "Senlin Gongyuan Nanmen (Forest Park South Gate)": {
+      "name": "Senlin Gongyuan Nanmen (Forest Park South Gate)",
+      "native_name": "森林公园南门",
+      "lat": 40.01,
+      "lon": 116.3925,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Senlin_Gongyuan_Nanmen_(Forest_Park_South_Gate)_station"
+    },
+    "Aolinpike Gongyuan (Olympic Park)": {
+      "name": "Aolinpike Gongyuan (Olympic Park)",
+      "native_name": "奥林匹克公园",
+      "lat": 40.002207,
+      "lon": 116.391758,
+      "lines": [
+        "Line 8",
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aolinpike_Gongyuan_(Olympic_Park)_station"
+    },
+    "Aoti Zhongxin (Olympic Sports Center)": {
+      "name": "Aoti Zhongxin (Olympic Sports Center)",
+      "native_name": "奥体中心",
+      "lat": 39.9851,
+      "lon": 116.3928,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aoti_Zhongxin_(Olympic_Sports_Center)_station"
+    },
+    "Beitucheng": {
+      "name": "Beitucheng",
+      "native_name": "北土城",
+      "lat": 39.976953,
+      "lon": 116.394193,
+      "lines": [
+        "Line 8",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beitucheng_station"
+    },
+    "Anhua Qiao": {
+      "name": "Anhua Qiao",
+      "native_name": "安华桥",
+      "lat": 39.9686,
+      "lon": 116.3946,
+      "lines": [
+        "Line 8",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anhua_Qiao_station"
+    },
+    "Andeli Beijie": {
+      "name": "Andeli Beijie",
+      "native_name": "安德里北街",
+      "lat": 39.957227,
+      "lon": 116.395145,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Andeli_Beijie_station"
+    },
+    "Shichahai": {
+      "name": "Shichahai",
+      "native_name": "什刹海",
+      "lat": 39.9376,
+      "lon": 116.3962,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shichahai_station"
+    },
+    "Zhongguo Meishuguan (National Art Museum)": {
+      "name": "Zhongguo Meishuguan (National Art Museum)",
+      "native_name": "中国美术馆",
+      "lat": 39.925274,
+      "lon": 116.410835,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhongguo_Meishuguan_(National_Art_Museum)_station"
+    },
+    "Jinyu Hutong": {
+      "name": "Jinyu Hutong",
+      "native_name": "金鱼胡同",
+      "lat": 39.914162,
+      "lon": 116.404865,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinyu_Hutong_station"
+    },
+    "Tianqiao": {
+      "name": "Tianqiao",
+      "native_name": "天桥",
+      "lat": 39.880809,
+      "lon": 116.39248,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tianqiao_station"
+    },
+    "Yongdingmenwai": {
+      "name": "Yongdingmenwai",
+      "native_name": "永定门外",
+      "lat": 39.867435,
+      "lon": 116.399369,
+      "lines": [
+        "Line 8",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yongdingmenwai_station"
+    },
+    "Muxi Yuan": {
+      "name": "Muxi Yuan",
+      "native_name": "木樨园",
+      "lat": 39.858673,
+      "lon": 116.393598,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Muxi_Yuan_station"
+    },
+    "Haihutun": {
+      "name": "Haihutun",
+      "native_name": "海户屯",
+      "lat": 39.8503,
+      "lon": 116.394,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Haihutun_station"
+    },
+    "Dahong Men": {
+      "name": "Dahong Men",
+      "native_name": "大红门",
+      "lat": 39.845383,
+      "lon": 116.399154,
+      "lines": [
+        "Line 8",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dahong_Men_station"
+    },
+    "Dahongmennan": {
+      "name": "Dahongmennan",
+      "native_name": "大红门南",
+      "lat": 39.835265,
+      "lon": 116.394849,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dahongmennan_station"
+    },
+    "Heyi": {
+      "name": "Heyi",
+      "native_name": "和义",
+      "lat": 39.813069,
+      "lon": 116.395817,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Heyi_station"
+    },
+    "Donggaodi": {
+      "name": "Donggaodi",
+      "native_name": "东高地",
+      "lat": 39.804,
+      "lon": 116.401,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Donggaodi_station"
+    },
+    "Huojian Wanyuan": {
+      "name": "Huojian Wanyuan",
+      "native_name": "火箭万源",
+      "lat": 39.798706,
+      "lon": 116.411861,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huojian_Wanyuan_station"
+    },
+    "Wufutang": {
+      "name": "Wufutang",
+      "native_name": "五福堂",
+      "lat": 39.783533,
+      "lon": 116.417674,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wufutang_station"
+    },
+    "Demao": {
+      "name": "Demao",
+      "native_name": "德茂",
+      "lat": 39.771255,
+      "lon": 116.435509,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Demao_station"
+    },
+    "Yinghai": {
+      "name": "Yinghai",
+      "native_name": "瀛海",
+      "lat": 39.759301,
+      "lon": 116.442778,
+      "lines": [
+        "Line 8"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yinghai_station"
+    },
+    "Baiduizi": {
+      "name": "Baiduizi",
+      "native_name": "白堆子",
+      "lat": 39.9239,
+      "lon": 116.3258,
+      "lines": [
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baiduizi_station"
+    },
+    "Liuliqiaodong": {
+      "name": "Liuliqiaodong",
+      "native_name": "六里桥东",
+      "lat": 39.8871,
+      "lon": 116.3158,
+      "lines": [
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liuliqiaodong_station"
+    },
+    "Liuli Qiao": {
+      "name": "Liuli Qiao",
+      "native_name": "六里桥",
+      "lat": 39.880239,
+      "lon": 116.302808,
+      "lines": [
+        "Line 9",
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liuli_Qiao_station"
+    },
+    "Qilizhuang": {
+      "name": "Qilizhuang",
+      "native_name": "七里庄",
+      "lat": 39.8661,
+      "lon": 116.2921,
+      "lines": [
+        "Line 9",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qilizhuang_station"
+    },
+    "Fengtai Dongdajie": {
+      "name": "Fengtai Dongdajie",
+      "native_name": "丰台东大街",
+      "lat": 39.8551,
+      "lon": 116.2938,
+      "lines": [
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fengtai_Dongdajie_station"
+    },
+    "Fengtai Nanlu": {
+      "name": "Fengtai Nanlu",
+      "native_name": "丰台南路",
+      "lat": 39.8404,
+      "lon": 116.2967,
+      "lines": [
+        "Line 9",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fengtai_Nanlu_station"
+    },
+    "Keyi Lu": {
+      "name": "Keyi Lu",
+      "native_name": "科怡路",
+      "lat": 39.8324,
+      "lon": 116.2976,
+      "lines": [
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Keyi_Lu_station"
+    },
+    "Fengtai Science Park": {
+      "name": "Fengtai Science Park",
+      "native_name": "丰台科技园",
+      "lat": 39.8253,
+      "lon": 116.297,
+      "lines": [
+        "Line 9"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fengtai_Science_Park_station"
+    },
+    "Guogongzhuang": {
+      "name": "Guogongzhuang",
+      "native_name": "郭公庄",
+      "lat": 39.814322,
+      "lon": 116.301889,
+      "lines": [
+        "Line 9",
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guogongzhuang_station"
+    },
+    "Huoqiying": {
+      "name": "Huoqiying",
+      "native_name": "火器营",
+      "lat": 39.965938,
+      "lon": 116.289058,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huoqiying_station"
+    },
+    "Bagou": {
+      "name": "Bagou",
+      "native_name": "巴沟",
+      "lat": 39.974179,
+      "lon": 116.293727,
+      "lines": [
+        "Line 10",
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bagou_station"
+    },
+    "Suzhou Jie": {
+      "name": "Suzhou Jie",
+      "native_name": "苏州街",
+      "lat": 39.975642,
+      "lon": 116.306332,
+      "lines": [
+        "Line 10",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suzhou_Jie_station"
+    },
+    "Zhichun Li": {
+      "name": "Zhichun Li",
+      "native_name": "知春里",
+      "lat": 39.974889,
+      "lon": 116.322695,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhichun_Li_station"
+    },
+    "Zhichun Lu": {
+      "name": "Zhichun Lu",
+      "native_name": "知春路",
+      "lat": 39.976476,
+      "lon": 116.33996,
+      "lines": [
+        "Line 10",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhichun_Lu_station"
+    },
+    "Xitucheng": {
+      "name": "Xitucheng",
+      "native_name": "西土城",
+      "lat": 39.976549,
+      "lon": 116.354098,
+      "lines": [
+        "Line 10",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xitucheng_station"
+    },
+    "Mudanyuan": {
+      "name": "Mudanyuan",
+      "native_name": "牡丹园",
+      "lat": 39.974913,
+      "lon": 116.363064,
+      "lines": [
+        "Line 10",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mudanyuan_station"
+    },
+    "Jiande Men": {
+      "name": "Jiande Men",
+      "native_name": "健德门",
+      "lat": 39.976723,
+      "lon": 116.381353,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiande_Men_station"
+    },
+    "Anzhenmen": {
+      "name": "Anzhenmen",
+      "native_name": "安贞门",
+      "lat": 39.977005,
+      "lon": 116.405954,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anzhenmen_station"
+    },
+    "Shaoyaoju": {
+      "name": "Shaoyaoju",
+      "native_name": "芍药居",
+      "lat": 39.977636,
+      "lon": 116.435914,
+      "lines": [
+        "Line 10",
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shaoyaoju_station"
+    },
+    "Taiyanggong": {
+      "name": "Taiyanggong",
+      "native_name": "太阳宫",
+      "lat": 39.972678,
+      "lon": 116.447469,
+      "lines": [
+        "Line 10",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taiyanggong_station"
+    },
+    "Sanyuan Qiao": {
+      "name": "Sanyuan Qiao",
+      "native_name": "三元桥",
+      "lat": 39.961508,
+      "lon": 116.456997,
+      "lines": [
+        "Line 10",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sanyuan_Qiao_station"
+    },
+    "Liangma Qiao": {
+      "name": "Liangma Qiao",
+      "native_name": "亮马桥",
+      "lat": 39.949326,
+      "lon": 116.461558,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liangma_Qiao_station"
+    },
+    "Agricultural Exhibition Center": {
+      "name": "Agricultural Exhibition Center",
+      "native_name": "农业展览馆",
+      "lat": 39.941344,
+      "lon": 116.461724,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Agricultural_Exhibition_Center_station"
+    },
+    "Jintai Xizhao": {
+      "name": "Jintai Xizhao",
+      "native_name": "金台夕照",
+      "lat": 39.916838,
+      "lon": 116.461743,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jintai_Xizhao_station"
+    },
+    "Jingsong": {
+      "name": "Jingsong",
+      "native_name": "劲松",
+      "lat": 39.884387,
+      "lon": 116.461325,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jingsong_station"
+    },
+    "Panjia Yuan": {
+      "name": "Panjia Yuan",
+      "native_name": "潘家园",
+      "lat": 39.875387,
+      "lon": 116.460926,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Panjia_Yuan_station"
+    },
+    "Shilihe": {
+      "name": "Shilihe",
+      "native_name": "十里河",
+      "lat": 39.866417,
+      "lon": 116.457983,
+      "lines": [
+        "Line 10",
+        "Line 14",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shilihe_station"
+    },
+    "Fenzhong Si": {
+      "name": "Fenzhong Si",
+      "native_name": "分钟寺",
+      "lat": 39.852227,
+      "lon": 116.453976,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fenzhong_Si_station"
+    },
+    "Chengshou Si": {
+      "name": "Chengshou Si",
+      "native_name": "成寿寺",
+      "lat": 39.8459,
+      "lon": 116.4475,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chengshou_Si_station"
+    },
+    "Shiliuzhuang": {
+      "name": "Shiliuzhuang",
+      "native_name": "石榴庄",
+      "lat": 39.8459,
+      "lon": 116.4141,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shiliuzhuang_station"
+    },
+    "Jiaomendong": {
+      "name": "Jiaomendong",
+      "native_name": "角门东",
+      "lat": 39.8451,
+      "lon": 116.3855,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiaomendong_station"
+    },
+    "Caoqiao": {
+      "name": "Caoqiao",
+      "native_name": "草桥",
+      "lat": 39.84583333,
+      "lon": 116.35194444,
+      "lines": [
+        "Line 10",
+        "Line 19",
+        "Daxing Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caoqiao_station"
+    },
+    "Jijiamiao": {
+      "name": "Jijiamiao",
+      "native_name": "纪家庙",
+      "lat": 39.844433,
+      "lon": 116.333381,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jijiamiao_station"
+    },
+    "Capital Univ. of Economics & Business": {
+      "name": "Capital Univ. of Economics & Business",
+      "native_name": "首经贸",
+      "lat": 39.8445,
+      "lon": 116.3202,
+      "lines": [
+        "Line 10",
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Capital_Univ._of_Economics_%26_Business_station"
+    },
+    "Fengtai railway": {
+      "name": "Fengtai railway",
+      "native_name": "丰台站",
+      "lat": 39.849772,
+      "lon": 116.294567,
+      "lines": [
+        "Line 10",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Fengtai_railway_station#Beijing_Subway"
+    },
+    "Niwa": {
+      "name": "Niwa",
+      "native_name": "泥洼",
+      "lat": 39.85858,
+      "lon": 116.30427,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Niwa_station"
+    },
+    "Xiju": {
+      "name": "Xiju",
+      "native_name": "西局",
+      "lat": 39.86677,
+      "lon": 116.303819,
+      "lines": [
+        "Line 10",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiju_station"
+    },
+    "Lianhua Qiao": {
+      "name": "Lianhua Qiao",
+      "native_name": "莲花桥",
+      "lat": 39.8972,
+      "lon": 116.3105,
+      "lines": [
+        "Line 10",
+        "Line 11"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lianhua_Qiao_station"
+    },
+    "Xidiaoyutai": {
+      "name": "Xidiaoyutai",
+      "native_name": "西钓鱼台",
+      "lat": 39.924,
+      "lon": 116.3001,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xidiaoyutai_station"
+    },
+    "Chedaogou": {
+      "name": "Chedaogou",
+      "native_name": "车道沟",
+      "lat": 39.9479,
+      "lon": 116.2938,
+      "lines": [
+        "Line 10"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chedaogou_station"
+    },
+    "Changchun Qiao": {
+      "name": "Changchun Qiao",
+      "native_name": "长春桥",
+      "lat": 39.958527,
+      "lon": 116.294255,
+      "lines": [
+        "Line 10",
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changchun_Qiao_station"
+    },
+    "Moshikou": {
+      "name": "Moshikou",
+      "native_name": "模式口",
+      "lat": 39.932339,
+      "lon": 116.14969,
+      "lines": [
+        "Line 11"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Moshikou_station"
+    },
+    "Beixin'an": {
+      "name": "Beixin'an",
+      "native_name": "北辛安",
+      "lat": 39.913424,
+      "lon": 116.158449,
+      "lines": [
+        "Line 11"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beixin%27an_station"
+    },
+    "Xinshougang (Shougang Park)": {
+      "name": "Xinshougang (Shougang Park)",
+      "native_name": "新首钢",
+      "lat": 39.9082,
+      "lon": 116.1585,
+      "lines": [
+        "Line 11"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xinshougang_(Shougang_Park)_station"
+    },
+    "Lize Shangwuqu": {
+      "name": "Lize Shangwuqu",
+      "native_name": "丽泽商务区",
+      "lat": 39.867957,
+      "lon": 116.336174,
+      "lines": [
+        "Line 11",
+        "Line 14",
+        "Line 16",
+        "Daxing Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lize_Shangwuqu_station"
+    },
+    "Sijiqing Qiao": {
+      "name": "Sijiqing Qiao",
+      "native_name": "四季青桥",
+      "lat": 39.943732,
+      "lon": 116.267568,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sijiqing_Qiao_station"
+    },
+    "Landianchang": {
+      "name": "Landianchang",
+      "native_name": "蓝靛厂",
+      "lat": 39.95584,
+      "lon": 116.27667,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Landianchang_station"
+    },
+    "Suzhou Qiao": {
+      "name": "Suzhou Qiao",
+      "native_name": "苏州桥",
+      "lat": 39.960351,
+      "lon": 116.301686,
+      "lines": [
+        "Line 12",
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suzhou_Qiao_station"
+    },
+    "Dazhong Si": {
+      "name": "Dazhong Si",
+      "native_name": "大钟寺",
+      "lat": 39.966612,
+      "lon": 116.345139,
+      "lines": [
+        "Line 12",
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dazhong_Si_station"
+    },
+    "Jimen Qiao": {
+      "name": "Jimen Qiao",
+      "native_name": "蓟门桥",
+      "lat": 39.966304,
+      "lon": 116.349137,
+      "lines": [
+        "Line 12",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jimen_Qiao_station"
+    },
+    "Beitaipingzhuang": {
+      "name": "Beitaipingzhuang",
+      "native_name": "北太平庄",
+      "lat": 39.96644,
+      "lon": 116.363963,
+      "lines": [
+        "Line 12",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beitaipingzhuang_station"
+    },
+    "Madian Qiao": {
+      "name": "Madian Qiao",
+      "native_name": "马甸桥",
+      "lat": 39.96668,
+      "lon": 116.37404,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Madian_Qiao_station"
+    },
+    "Anzhen Qiao": {
+      "name": "Anzhen Qiao",
+      "native_name": "安贞桥",
+      "lat": 39.96724,
+      "lon": 116.40114,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anzhen_Qiao_station"
+    },
+    "Guangxi Men": {
+      "name": "Guangxi Men",
+      "native_name": "光熙门",
+      "lat": 39.9684,
+      "lon": 116.4318,
+      "lines": [
+        "Line 12",
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangxi_Men_station"
+    },
+    "Xibahe": {
+      "name": "Xibahe",
+      "native_name": "西坝河",
+      "lat": 39.965102,
+      "lon": 116.434989,
+      "lines": [
+        "Line 12",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xibahe_station"
+    },
+    "Jiangtaixi": {
+      "name": "Jiangtaixi",
+      "native_name": "将台西",
+      "lat": 39.970921,
+      "lon": 116.473398,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiangtaixi_station"
+    },
+    "Gaojiayuan": {
+      "name": "Gaojiayuan",
+      "native_name": "高家园",
+      "lat": 39.979253,
+      "lon": 116.482741,
+      "lines": [
+        "Line 12",
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gaojiayuan_station"
+    },
+    "Tuofangying": {
+      "name": "Tuofangying",
+      "native_name": "驼房营",
+      "lat": 39.979212,
+      "lon": 116.499542,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tuofangying_station"
+    },
+    "Dongbaxi": {
+      "name": "Dongbaxi",
+      "native_name": "东坝西",
+      "lat": 39.973186,
+      "lon": 116.528728,
+      "lines": [
+        "Line 12"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongbaxi_station"
+    },
+    "Wudao Kou": {
+      "name": "Wudao Kou",
+      "native_name": "五道口",
+      "lat": 39.99277778,
+      "lon": 116.3375,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wudao_Kou_station"
+    },
+    "Shangdi": {
+      "name": "Shangdi",
+      "native_name": "上地",
+      "lat": 40.033,
+      "lon": 116.3202,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shangdi_station"
+    },
+    "Qinghe railway": {
+      "name": "Qinghe railway",
+      "native_name": "清河站",
+      "lat": 40.03861111,
+      "lon": 116.31,
+      "lines": [
+        "Line 13",
+        "Line 18",
+        "Line 19",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qinghe_railway_station#Beijing_Subway"
+    },
+    "Xi'erqi": {
+      "name": "Xi'erqi",
+      "native_name": "西二旗",
+      "lat": 40.053034,
+      "lon": 116.306295,
+      "lines": [
+        "Line 13",
+        "Line 18",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xi%27erqi_station"
+    },
+    "Longze": {
+      "name": "Longze",
+      "native_name": "龙泽",
+      "lat": 40.0709,
+      "lon": 116.3193,
+      "lines": [
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longze_station"
+    },
+    "Huilong Guan": {
+      "name": "Huilong Guan",
+      "native_name": "回龙观",
+      "lat": 40.07083333,
+      "lon": 116.33611111,
+      "lines": [
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huilong_Guan_station"
+    },
+    "Bei Yuan": {
+      "name": "Bei Yuan",
+      "native_name": "北苑",
+      "lat": 40.042997,
+      "lon": 116.434518,
+      "lines": [
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bei_Yuan_station"
+    },
+    "Wangjingxi": {
+      "name": "Wangjingxi",
+      "native_name": "望京西",
+      "lat": 39.995724,
+      "lon": 116.449884,
+      "lines": [
+        "Line 13",
+        "Line 15",
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wangjingxi_station"
+    },
+    "Liufang": {
+      "name": "Liufang",
+      "native_name": "柳芳",
+      "lat": 39.9582,
+      "lon": 116.4328,
+      "lines": [
+        "Line 13"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liufang_station"
+    },
+    "Malianwa": {
+      "name": "Malianwa",
+      "native_name": "马连洼",
+      "lat": 40.032637,
+      "lon": 116.27252,
+      "lines": [
+        "Line 13",
+        "Line 16",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Malianwa_station"
+    },
+    "Shangdi Software Park": {
+      "name": "Shangdi Software Park",
+      "native_name": "上地",
+      "lat": 40.0426,
+      "lon": 116.280569,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shangdi_Software_Park_station"
+    },
+    "Dongbeiwang": {
+      "name": "Dongbeiwang",
+      "native_name": "东北旺",
+      "lat": 40.051919,
+      "lon": 116.28875,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongbeiwang_station"
+    },
+    "Longzexi": {
+      "name": "Longzexi",
+      "native_name": "龙泽",
+      "lat": 40.0713,
+      "lon": 116.301781,
+      "lines": [
+        "Line 13",
+        "Line 18",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Longzexi_station"
+    },
+    "Huilongguan Xidajie": {
+      "name": "Huilongguan Xidajie",
+      "native_name": "回龙观",
+      "lat": 40.07755,
+      "lon": 116.32545,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huilongguan_Xidajie_station"
+    },
+    "Wenhualu": {
+      "name": "Wenhualu",
+      "native_name": "文华路",
+      "lat": 40.07895,
+      "lon": 116.336061,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wenhualu_station"
+    },
+    "Huoyingdong": {
+      "name": "Huoyingdong",
+      "native_name": "霍营",
+      "lat": 40.0806,
+      "lon": 116.369533,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huoyingdong_station"
+    },
+    "Taipingzhuang": {
+      "name": "Taipingzhuang",
+      "native_name": "太平庄",
+      "lat": 40.072719,
+      "lon": 116.420569,
+      "lines": [
+        "Line 13",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taipingzhuang_station"
+    },
+    "Tiantongyuandong": {
+      "name": "Tiantongyuandong",
+      "native_name": "天通苑东",
+      "lat": 40.06498,
+      "lon": 116.43592,
+      "lines": [
+        "Line 13",
+        "Line 17",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tiantongyuandong_station"
+    },
+    "Qinghua Donglu Xikou": {
+      "name": "Qinghua Donglu Xikou",
+      "native_name": "清华东路西口",
+      "lat": 40.000673,
+      "lon": 116.33953,
+      "lines": [
+        "Line 13",
+        "Line 15",
+        "Line 18"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qinghua_Donglu_Xikou_station"
+    },
+    "Garden Expo Park": {
+      "name": "Garden Expo Park",
+      "native_name": "园博园",
+      "lat": 39.861328,
+      "lon": 116.201643,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Garden_Expo_Park_station"
+    },
+    "Dawayao": {
+      "name": "Dawayao",
+      "native_name": "大瓦窑",
+      "lat": 39.8593,
+      "lon": 116.2403,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dawayao_station"
+    },
+    "Guozhuangzi": {
+      "name": "Guozhuangzi",
+      "native_name": "郭庄子",
+      "lat": 39.8644,
+      "lon": 116.2532,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guozhuangzi_station"
+    },
+    "Dajing": {
+      "name": "Dajing",
+      "native_name": "大井",
+      "lat": 39.865226,
+      "lon": 116.276061,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dajing_station"
+    },
+    "Dongguantou": {
+      "name": "Dongguantou",
+      "native_name": "东管头",
+      "lat": 39.86616,
+      "lon": 116.31469,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongguantou_station"
+    },
+    "Caihuying": {
+      "name": "Caihuying",
+      "native_name": "菜户营",
+      "lat": 39.86627,
+      "lon": 116.33667,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Caihuying_station"
+    },
+    "Xitieying": {
+      "name": "Xitieying",
+      "native_name": "西铁营",
+      "lat": 39.859738,
+      "lon": 116.349568,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xitieying_station"
+    },
+    "Jingfengmen": {
+      "name": "Jingfengmen",
+      "native_name": "景风门",
+      "lat": 39.862723,
+      "lon": 116.365805,
+      "lines": [
+        "Line 14",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jingfengmen_station"
+    },
+    "Taoran Qiao": {
+      "name": "Taoran Qiao",
+      "native_name": "陶然桥",
+      "lat": 39.8673,
+      "lon": 116.3809,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Taoran_Qiao_station"
+    },
+    "Jingtai": {
+      "name": "Jingtai",
+      "native_name": "景泰",
+      "lat": 39.865255,
+      "lon": 116.411027,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jingtai_station_(Beijing_Subway)"
+    },
+    "Fangzhuang": {
+      "name": "Fangzhuang",
+      "native_name": "方庄",
+      "lat": 39.865868,
+      "lon": 116.440244,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fangzhuang_station"
+    },
+    "Beijing Univ. of Tech West Gate": {
+      "name": "Beijing Univ. of Tech West Gate",
+      "native_name": "北工大西门",
+      "lat": 39.875445,
+      "lon": 116.477319,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_Univ._of_Tech_West_Gate_station"
+    },
+    "Pingle Yuan": {
+      "name": "Pingle Yuan",
+      "native_name": "平乐园",
+      "lat": 39.885275,
+      "lon": 116.477307,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pingle_Yuan_station"
+    },
+    "Hongmiao": {
+      "name": "Hongmiao",
+      "native_name": "红庙",
+      "lat": 39.9146,
+      "lon": 116.4721,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hongmiao_station"
+    },
+    "Zaoying": {
+      "name": "Zaoying",
+      "native_name": "枣营",
+      "lat": 39.944132,
+      "lon": 116.474947,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zaoying_station"
+    },
+    "Dongfeng Beiqiao": {
+      "name": "Dongfeng Beiqiao",
+      "native_name": "东风北桥",
+      "lat": 39.9576,
+      "lon": 116.4867,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongfeng_Beiqiao_station"
+    },
+    "Jiangtai": {
+      "name": "Jiangtai",
+      "native_name": "将台",
+      "lat": 39.9713,
+      "lon": 116.4899,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiangtai_station"
+    },
+    "Wangjing Nan (S)": {
+      "name": "Wangjing Nan (S)",
+      "native_name": "望京",
+      "lat": 39.984543,
+      "lon": 116.481691,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wangjing_Nan_(S)_station"
+    },
+    "Futong": {
+      "name": "Futong",
+      "native_name": "阜通",
+      "lat": 39.9927,
+      "lon": 116.4701,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Futong_station"
+    },
+    "Wangjing": {
+      "name": "Wangjing",
+      "native_name": "望京",
+      "lat": 39.998521,
+      "lon": 116.469409,
+      "lines": [
+        "Line 14",
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wangjing_station"
+    },
+    "Donghuqu": {
+      "name": "Donghuqu",
+      "native_name": "东湖渠",
+      "lat": 40.0102,
+      "lon": 116.4674,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Donghuqu_station"
+    },
+    "Laiguangying": {
+      "name": "Laiguangying",
+      "native_name": "来广营",
+      "lat": 40.020588,
+      "lon": 116.466994,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Laiguangying_station"
+    },
+    "Shangezhuang": {
+      "name": "Shangezhuang",
+      "native_name": "善各庄",
+      "lat": 40.02716,
+      "lon": 116.478195,
+      "lines": [
+        "Line 14"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shangezhuang_station"
+    },
+    "Liudao Kou": {
+      "name": "Liudao Kou",
+      "native_name": "六道口",
+      "lat": 40.0011,
+      "lon": 116.3509,
+      "lines": [
+        "Line 15",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liudao_Kou_station"
+    },
+    "Beishatan": {
+      "name": "Beishatan",
+      "native_name": "北沙滩",
+      "lat": 40.0015,
+      "lon": 116.369,
+      "lines": [
+        "Line 15",
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beishatan_station"
+    },
+    "Anli Lu": {
+      "name": "Anli Lu",
+      "native_name": "安立路",
+      "lat": 40.0027,
+      "lon": 116.4078,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Anli_Lu_station"
+    },
+    "Guanzhuang": {
+      "name": "Guanzhuang",
+      "native_name": "关庄",
+      "lat": 40.001134,
+      "lon": 116.430947,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guanzhuang_station_(Line_15)"
+    },
+    "Wangjingdong": {
+      "name": "Wangjingdong",
+      "native_name": "望京东",
+      "lat": 40.0032,
+      "lon": 116.487105,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wangjingdong_station"
+    },
+    "Cuigezhuang": {
+      "name": "Cuigezhuang",
+      "native_name": "崔各庄",
+      "lat": 40.022201,
+      "lon": 116.492968,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Cuigezhuang_station"
+    },
+    "Maquanying": {
+      "name": "Maquanying",
+      "native_name": "马泉营",
+      "lat": 40.033721,
+      "lon": 116.50348,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Maquanying_station"
+    },
+    "Sunhe": {
+      "name": "Sunhe",
+      "native_name": "孙河",
+      "lat": 40.045113,
+      "lon": 116.5347,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sunhe_station"
+    },
+    "China Int'l Exhibition Center": {
+      "name": "China Int'l Exhibition Center",
+      "native_name": "国展",
+      "lat": 40.07003,
+      "lon": 116.555127,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/China_Int%27l_Exhibition_Center_station"
+    },
+    "Hualikan": {
+      "name": "Hualikan",
+      "native_name": "花梨坎",
+      "lat": 40.084436,
+      "lon": 116.557593,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hualikan_station"
+    },
+    "Houshayu": {
+      "name": "Houshayu",
+      "native_name": "后沙峪",
+      "lat": 40.114127,
+      "lon": 116.564211,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Houshayu_station"
+    },
+    "Nanfaxin": {
+      "name": "Nanfaxin",
+      "native_name": "南法信",
+      "lat": 40.128478,
+      "lon": 116.609535,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanfaxin_station"
+    },
+    "Shimen": {
+      "name": "Shimen",
+      "native_name": "石门",
+      "lat": 40.129802,
+      "lon": 116.641117,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shimen_station"
+    },
+    "Shunyi": {
+      "name": "Shunyi",
+      "native_name": "顺义",
+      "lat": 40.129994,
+      "lon": 116.657023,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shunyi_station"
+    },
+    "Fengbo": {
+      "name": "Fengbo",
+      "native_name": "俸伯",
+      "lat": 40.1326,
+      "lon": 116.6847,
+      "lines": [
+        "Line 15"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fengbo_station"
+    },
+    "Bei'anhe": {
+      "name": "Bei'anhe",
+      "native_name": "北安河",
+      "lat": 40.068128,
+      "lon": 116.130428,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bei%27anhe_station"
+    },
+    "Wenyang Lu": {
+      "name": "Wenyang Lu",
+      "native_name": "温阳路",
+      "lat": 40.0685,
+      "lon": 116.1613,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wenyang_Lu_station"
+    },
+    "Daoxianghu Lu": {
+      "name": "Daoxianghu Lu",
+      "native_name": "稻香湖路",
+      "lat": 40.0689,
+      "lon": 116.1881,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daoxianghu_Lu_station"
+    },
+    "Tundian": {
+      "name": "Tundian",
+      "native_name": "屯佃",
+      "lat": 40.0685,
+      "lon": 116.215,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tundian_station"
+    },
+    "Yongfeng": {
+      "name": "Yongfeng",
+      "native_name": "永丰",
+      "lat": 40.071868,
+      "lon": 116.238481,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yongfeng_station_(Beijing_Subway)"
+    },
+    "Yongfengnan": {
+      "name": "Yongfengnan",
+      "native_name": "永丰南",
+      "lat": 40.065575,
+      "lon": 116.248154,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yongfengnan_station"
+    },
+    "Xibeiwang": {
+      "name": "Xibeiwang",
+      "native_name": "西北旺",
+      "lat": 40.048703,
+      "lon": 116.257923,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xibeiwang_station"
+    },
+    "Nongda Nanlu": {
+      "name": "Nongda Nanlu",
+      "native_name": "农大南路",
+      "lat": 40.021398,
+      "lon": 116.282272,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nongda_Nanlu_station"
+    },
+    "Wanquanhe Qiao": {
+      "name": "Wanquanhe Qiao",
+      "native_name": "万泉河桥",
+      "lat": 39.983778,
+      "lon": 116.292941,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanquanhe_Qiao_station"
+    },
+    "Wanshou Si": {
+      "name": "Wanshou Si",
+      "native_name": "万寿寺",
+      "lat": 39.946751,
+      "lon": 116.303318,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanshou_Si_station"
+    },
+    "Ganjia Kou": {
+      "name": "Ganjia Kou",
+      "native_name": "甘家口",
+      "lat": 39.921805,
+      "lon": 116.328378,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ganjia_Kou_station"
+    },
+    "Yuyuantan Dongmen (Yuyuantan Park East Gate)": {
+      "name": "Yuyuantan Dongmen (Yuyuantan Park East Gate)",
+      "native_name": "玉渊潭东门",
+      "lat": 39.912949,
+      "lon": 116.328836,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yuyuantan_Dongmen_(Yuyuantan_Park_East_Gate)_station"
+    },
+    "Honglian Nanlu": {
+      "name": "Honglian Nanlu",
+      "native_name": "红莲南路",
+      "lat": 39.876294,
+      "lon": 116.330804,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Honglian_Nanlu_station"
+    },
+    "Dongguantounan": {
+      "name": "Dongguantounan",
+      "native_name": "东管头南",
+      "lat": 39.853142,
+      "lon": 116.316661,
+      "lines": [
+        "Line 16",
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dongguantounan_station"
+    },
+    "Fufengqiao": {
+      "name": "Fufengqiao",
+      "native_name": "富丰桥",
+      "lat": 39.834921,
+      "lon": 116.280878,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fufengqiao_station"
+    },
+    "Kandan": {
+      "name": "Kandan",
+      "native_name": "看丹",
+      "lat": 39.833599,
+      "lon": 116.26654,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kandan_station"
+    },
+    "Yushuzhuang": {
+      "name": "Yushuzhuang",
+      "native_name": "榆树庄",
+      "lat": 39.837518,
+      "lon": 116.252907,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yushuzhuang_station"
+    },
+    "Hongtaizhuang": {
+      "name": "Hongtaizhuang",
+      "native_name": "洪泰庄",
+      "lat": 39.8462,
+      "lon": 116.2433,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hongtaizhuang_station"
+    },
+    "Wanpingcheng": {
+      "name": "Wanpingcheng",
+      "native_name": "宛平城",
+      "lat": 39.847167,
+      "lon": 116.221684,
+      "lines": [
+        "Line 16"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanpingcheng_station"
+    },
+    "Weilaikexuechengbei (Future Science City North)": {
+      "name": "Weilaikexuechengbei (Future Science City North)",
+      "native_name": "未来科学城北",
+      "lat": 40.12878,
+      "lon": 116.46248,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weilaikexuechengbei_(Future_Science_City_North)_station"
+    },
+    "Weilaikexuecheng (Future Science City)": {
+      "name": "Weilaikexuecheng (Future Science City)",
+      "native_name": "未来科学城",
+      "lat": 40.11424,
+      "lon": 116.46043,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Weilaikexuecheng_(Future_Science_City)_station"
+    },
+    "Qingheying": {
+      "name": "Qingheying",
+      "native_name": "清河营",
+      "lat": 40.04996,
+      "lon": 116.43575,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qingheying_station"
+    },
+    "Hongjunying": {
+      "name": "Hongjunying",
+      "native_name": "红军营",
+      "lat": 40.03287,
+      "lon": 116.43557,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hongjunying_station"
+    },
+    "Zuojiazhuang": {
+      "name": "Zuojiazhuang",
+      "native_name": "左家庄",
+      "lat": 39.94797,
+      "lon": 116.43641,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zuojiazhuang_station"
+    },
+    "Panjiayuanxi": {
+      "name": "Panjiayuanxi",
+      "native_name": "潘家园西",
+      "lat": 39.87387222,
+      "lon": 116.44472222,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Panjiayuanxi_station"
+    },
+    "Zhoujiazhuang": {
+      "name": "Zhoujiazhuang",
+      "native_name": "周家庄",
+      "lat": 39.8551,
+      "lon": 116.47066,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhoujiazhuang_station"
+    },
+    "Shibalidian": {
+      "name": "Shibalidian",
+      "native_name": "十八里店",
+      "lat": 39.84328,
+      "lon": 116.48947,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shibalidian_station"
+    },
+    "Beishenshu": {
+      "name": "Beishenshu",
+      "native_name": "北神树",
+      "lat": 39.81756,
+      "lon": 116.5467,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beishenshu_station"
+    },
+    "Ciqubei": {
+      "name": "Ciqubei",
+      "native_name": "次渠北",
+      "lat": 39.80861,
+      "lon": 116.57058,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciqubei_station"
+    },
+    "Ciqu": {
+      "name": "Ciqu",
+      "native_name": "次渠",
+      "lat": 39.80416667,
+      "lon": 116.59166667,
+      "lines": [
+        "Line 17",
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciqu_station"
+    },
+    "Jiahuihu": {
+      "name": "Jiahuihu",
+      "native_name": "嘉会湖[42]",
+      "lat": 39.79143,
+      "lon": 116.60442,
+      "lines": [
+        "Line 17"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiahuihu_station"
+    },
+    "Qinghe Xiaoyingqiao": {
+      "name": "Qinghe Xiaoyingqiao",
+      "native_name": "清河小营桥",
+      "lat": 40.03357,
+      "lon": 116.337041,
+      "lines": [
+        "Line 19",
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qinghe_Xiaoyingqiao_station"
+    },
+    "Xinfadi": {
+      "name": "Xinfadi",
+      "native_name": "新发地",
+      "lat": 39.82236,
+      "lon": 116.340065,
+      "lines": [
+        "Line 19"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xinfadi_station"
+    },
+    "Xiaocun": {
+      "name": "Xiaocun",
+      "native_name": "肖村",
+      "lat": 39.834217,
+      "lon": 116.448364,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiaocun_station"
+    },
+    "Xiaohong Men": {
+      "name": "Xiaohong Men",
+      "native_name": "小红门",
+      "lat": 39.827951,
+      "lon": 116.459226,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiaohong_Men_station"
+    },
+    "Jiu Gong": {
+      "name": "Jiu Gong",
+      "native_name": "旧宫",
+      "lat": 39.80722,
+      "lon": 116.46083,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jiu_Gong_station"
+    },
+    "Yizhuang Qiao": {
+      "name": "Yizhuang Qiao",
+      "native_name": "亦庄桥",
+      "lat": 39.80306,
+      "lon": 116.48028,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yizhuang_Qiao_station"
+    },
+    "Yizhuang Culture Park": {
+      "name": "Yizhuang Culture Park",
+      "native_name": "亦庄文化园",
+      "lat": 39.80694444,
+      "lon": 116.49083333,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yizhuang_Culture_Park_station"
+    },
+    "Wanyuan Jie": {
+      "name": "Wanyuan Jie",
+      "native_name": "万源街",
+      "lat": 39.80305556,
+      "lon": 116.50555556,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wanyuan_Jie_station"
+    },
+    "Rongjing Dongjie": {
+      "name": "Rongjing Dongjie",
+      "native_name": "荣京东街",
+      "lat": 39.79361111,
+      "lon": 116.51333333,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rongjing_Dongjie_station"
+    },
+    "Rongchang Dongjie": {
+      "name": "Rongchang Dongjie",
+      "native_name": "荣昌东街",
+      "lat": 39.78305556,
+      "lon": 116.52166667,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Rongchang_Dongjie_station"
+    },
+    "Tongji Nanlu": {
+      "name": "Tongji Nanlu",
+      "native_name": "同济南路",
+      "lat": 39.77305556,
+      "lon": 116.53972222,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Tongji_Nanlu_station"
+    },
+    "Jinghai Lu": {
+      "name": "Jinghai Lu",
+      "native_name": "经海路",
+      "lat": 39.78361111,
+      "lon": 116.56222222,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Jinghai_Lu_station"
+    },
+    "Ciqunan": {
+      "name": "Ciqunan",
+      "native_name": "次渠南",
+      "lat": 39.79472222,
+      "lon": 116.58111111,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ciqunan_station"
+    },
+    "Yizhuang railway": {
+      "name": "Yizhuang railway",
+      "native_name": "亦庄火车站",
+      "lat": 39.81194444,
+      "lon": 116.59611111,
+      "lines": [
+        "Yizhuang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yizhuang_railway_station#Beijing_Subway"
+    },
+    "Huaxiang Dongqiao": {
+      "name": "Huaxiang Dongqiao",
+      "native_name": "花乡东桥",
+      "lat": 39.827783,
+      "lon": 116.313899,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huaxiang_Dongqiao_station"
+    },
+    "Baipenyao": {
+      "name": "Baipenyao",
+      "native_name": "白盆窑",
+      "lat": 39.818147,
+      "lon": 116.30724,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Baipenyao_station"
+    },
+    "Dabaotai": {
+      "name": "Dabaotai",
+      "native_name": "大葆台",
+      "lat": 39.8077,
+      "lon": 116.2915,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dabaotai_station"
+    },
+    "Daotian": {
+      "name": "Daotian",
+      "native_name": "稻田",
+      "lat": 39.794885,
+      "lon": 116.21884,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daotian_station"
+    },
+    "Changyang": {
+      "name": "Changyang",
+      "native_name": "长阳",
+      "lat": 39.763871,
+      "lon": 116.212692,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changyang_station"
+    },
+    "Libafang": {
+      "name": "Libafang",
+      "native_name": "篱笆房",
+      "lat": 39.760685,
+      "lon": 116.18927,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Libafang_station"
+    },
+    "Guangyang Cheng": {
+      "name": "Guangyang Cheng",
+      "native_name": "广阳城",
+      "lat": 39.748,
+      "lon": 116.185,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guangyang_Cheng_station"
+    },
+    "Liangxiang Univ. Town North": {
+      "name": "Liangxiang Univ. Town North",
+      "native_name": "良乡大学城北",
+      "lat": 39.729906,
+      "lon": 116.18348,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liangxiang_Univ._Town_North_station"
+    },
+    "Liangxiang Univ. Town": {
+      "name": "Liangxiang Univ. Town",
+      "native_name": "良乡大学城",
+      "lat": 39.723159,
+      "lon": 116.176541,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liangxiang_Univ._Town_station"
+    },
+    "Liangxiang Univ. Town West": {
+      "name": "Liangxiang Univ. Town West",
+      "native_name": "良乡大学城西",
+      "lat": 39.723157,
+      "lon": 116.156282,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liangxiang_Univ._Town_West_station"
+    },
+    "Liangxiang Nanguan": {
+      "name": "Liangxiang Nanguan",
+      "native_name": "良乡南关",
+      "lat": 39.723202,
+      "lon": 116.140804,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liangxiang_Nanguan_station"
+    },
+    "Suzhuang": {
+      "name": "Suzhuang",
+      "native_name": "苏庄",
+      "lat": 39.723188,
+      "lon": 116.125306,
+      "lines": [
+        "Fangshan Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Suzhuang_station"
+    },
+    "Yancundong": {
+      "name": "Yancundong",
+      "native_name": "阎村东",
+      "lat": 39.729028,
+      "lon": 116.100817,
+      "lines": [
+        "Fangshan Line",
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yancundong_station"
+    },
+    "Zicaowu": {
+      "name": "Zicaowu",
+      "native_name": "紫草坞",
+      "lat": 39.724606,
+      "lon": 116.08672,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zicaowu_station"
+    },
+    "Yancun": {
+      "name": "Yancun",
+      "native_name": "阎村",
+      "lat": 39.716731,
+      "lon": 116.080165,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yancun_station"
+    },
+    "Xingcheng": {
+      "name": "Xingcheng",
+      "native_name": "星城",
+      "lat": 39.713681,
+      "lon": 116.06137,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xingcheng_station_(Beijing_Subway)"
+    },
+    "Dashihedong": {
+      "name": "Dashihedong",
+      "native_name": "大石河东",
+      "lat": 39.709893,
+      "lon": 116.039906,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dashihedong_station"
+    },
+    "Magezhuang": {
+      "name": "Magezhuang",
+      "native_name": "马各庄",
+      "lat": 39.705103,
+      "lon": 116.016606,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Magezhuang_station"
+    },
+    "Raole Fu": {
+      "name": "Raole Fu",
+      "native_name": "饶乐府",
+      "lat": 39.701471,
+      "lon": 116.006103,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Raole_Fu_station"
+    },
+    "Fangshan Chengguan": {
+      "name": "Fangshan Chengguan",
+      "native_name": "房山城关",
+      "lat": 39.706061,
+      "lon": 115.989599,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fangshan_Chengguan_station"
+    },
+    "Yanshan": {
+      "name": "Yanshan",
+      "native_name": "燕山",
+      "lat": 39.719615,
+      "lon": 115.973395,
+      "lines": [
+        "Yanfang Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Yanshan_station_(Beijing_Subway)"
+    },
+    "Shichang": {
+      "name": "Shichang",
+      "native_name": "石厂",
+      "lat": 39.889378,
+      "lon": 116.100334,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shichang_station"
+    },
+    "Xiaoyuan": {
+      "name": "Xiaoyuan",
+      "native_name": "小园",
+      "lat": 39.890465,
+      "lon": 116.114443,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xiaoyuan_station"
+    },
+    "Liyuanzhuang": {
+      "name": "Liyuanzhuang",
+      "native_name": "栗园庄",
+      "lat": 39.89578,
+      "lon": 116.123254,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Liyuanzhuang_station"
+    },
+    "Shang'an": {
+      "name": "Shang'an",
+      "native_name": "上岸",
+      "lat": 39.905138,
+      "lon": 116.122225,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shang%27an_station"
+    },
+    "Qiaohuying": {
+      "name": "Qiaohuying",
+      "native_name": "桥户营",
+      "lat": 39.912383,
+      "lon": 116.125809,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Qiaohuying_station"
+    },
+    "Sidao Qiao": {
+      "name": "Sidao Qiao",
+      "native_name": "四道桥",
+      "lat": 39.91603,
+      "lon": 116.13401,
+      "lines": [
+        "Line S1"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sidao_Qiao_station"
+    },
+    "Changping Xishankou": {
+      "name": "Changping Xishankou",
+      "native_name": "昌平西山口",
+      "lat": 40.244624,
+      "lon": 116.195371,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changping_Xishankou_station"
+    },
+    "Ming Tombs": {
+      "name": "Ming Tombs",
+      "native_name": "十三陵景区",
+      "lat": 40.240255,
+      "lon": 116.207729,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_Tombs_station"
+    },
+    "Changping": {
+      "name": "Changping",
+      "native_name": "昌平",
+      "lat": 40.22055,
+      "lon": 116.23359,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changping_station_(Beijing_Subway)"
+    },
+    "Changping Dongguan": {
+      "name": "Changping Dongguan",
+      "native_name": "昌平东关",
+      "lat": 40.221726,
+      "lon": 116.262059,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Changping_Dongguan_station"
+    },
+    "Beishaowa": {
+      "name": "Beishaowa",
+      "native_name": "北邵洼",
+      "lat": 40.222001,
+      "lon": 116.281949,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Beishaowa_station"
+    },
+    "Nanshao": {
+      "name": "Nanshao",
+      "native_name": "南邵",
+      "lat": 40.207492,
+      "lon": 116.287534,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nanshao_station"
+    },
+    "Shahe Univ. Park": {
+      "name": "Shahe Univ. Park",
+      "native_name": "沙河高教园",
+      "lat": 40.164666,
+      "lon": 116.280465,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahe_Univ._Park_station"
+    },
+    "Shahe": {
+      "name": "Shahe",
+      "native_name": "沙河",
+      "lat": 40.148278,
+      "lon": 116.288865,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Shahe_station_(Beijing_Subway)"
+    },
+    "Gonghua Cheng": {
+      "name": "Gonghua Cheng",
+      "native_name": "巩华城",
+      "lat": 40.130836,
+      "lon": 116.293701,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Gonghua_Cheng_station"
+    },
+    "Life Science Park": {
+      "name": "Life Science Park",
+      "native_name": "生命科学园",
+      "lat": 40.09479,
+      "lon": 116.29423,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Life_Science_Park_station"
+    },
+    "Zhufangbei": {
+      "name": "Zhufangbei",
+      "native_name": "朱房北",
+      "lat": 40.03457,
+      "lon": 116.32467,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Zhufangbei_station"
+    },
+    "Xuezhiyuan": {
+      "name": "Xuezhiyuan",
+      "native_name": "学知园",
+      "lat": 40.01393,
+      "lon": 116.34584,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xuezhiyuan_station"
+    },
+    "Xueyuanqiao": {
+      "name": "Xueyuanqiao",
+      "native_name": "学院桥",
+      "lat": 39.98556,
+      "lon": 116.34727,
+      "lines": [
+        "Changping Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Xueyuanqiao_station"
+    },
+    "3 Hao Hangzhanlou (Terminal 3)": {
+      "name": "3 Hao Hangzhanlou (Terminal 3)",
+      "native_name": "3号航站楼",
+      "lat": 40.0542,
+      "lon": 116.6157,
+      "lines": [
+        "Capital Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/3_Hao_Hangzhanlou_(Terminal_3)_station"
+    },
+    "2 Hao Hangzhanlou (Terminal 2)": {
+      "name": "2 Hao Hangzhanlou (Terminal 2)",
+      "native_name": "2号航站楼",
+      "lat": 40.07944444,
+      "lon": 116.59277778,
+      "lines": [
+        "Capital Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/2_Hao_Hangzhanlou_(Terminal_2)_station"
+    },
+    "Daxing Xincheng": {
+      "name": "Daxing Xincheng",
+      "native_name": "大兴新城",
+      "lat": 39.73121,
+      "lon": 116.359549,
+      "lines": [
+        "Daxing Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daxing_Xincheng_station"
+    },
+    "Daxing Jichang (Daxing Airport)": {
+      "name": "Daxing Jichang (Daxing Airport)",
+      "native_name": "大兴机场",
+      "lat": 39.51249,
+      "lon": 116.41071,
+      "lines": [
+        "Daxing Airport Express"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Daxing_Jichang_(Daxing_Airport)_station"
+    },
+    "Fragrant Hills": {
+      "name": "Fragrant Hills",
+      "native_name": "香山",
+      "lat": 39.994056,
+      "lon": 116.204491,
+      "lines": [
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fragrant_Hills_station"
+    },
+    "China National Botanical Garden": {
+      "name": "China National Botanical Garden",
+      "native_name": "植物园",
+      "lat": 39.993582,
+      "lon": 116.214853,
+      "lines": [
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/China_National_Botanical_Garden_station"
+    },
+    "Wan'an": {
+      "name": "Wan'an",
+      "native_name": "万安",
+      "lat": 39.984001,
+      "lon": 116.231977,
+      "lines": [
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Wan%27an_station_(Beijing_Subway)"
+    },
+    "Chapeng": {
+      "name": "Chapeng",
+      "native_name": "茶棚",
+      "lat": 39.982113,
+      "lon": 116.2481,
+      "lines": [
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Chapeng_station"
+    },
+    "Summer Palace West Gate": {
+      "name": "Summer Palace West Gate",
+      "native_name": "颐和园西门",
+      "lat": 39.985697,
+      "lon": 116.263248,
+      "lines": [
+        "Xijiao Line"
+      ],
+      "station_codes": [],
+      "transfers": [],
+      "opened": null,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Summer_Palace_West_Gate_station"
+    }
+  }
+}

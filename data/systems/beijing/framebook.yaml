@@ -1,0 +1,52 @@
+framebook:
+  org_name: "Beijing Metro"
+  full_name: "Beijing Mass Transit Railway Operation Corporation"
+  primary_language: zh
+  secondary_languages: ["en"]
+  currency_symbol: "¥"
+  currency_code: "CNY"
+  fare_display_format: "¥X"
+  terminology:
+    smartcard: "Yikatong Card"
+    smartcard_premium: null
+    contactless: "Mobile payment (Alipay/WeChat Pay)"
+    reduced_fare: "Half-price ticket"
+    station: "station"
+    line: "line"
+    transfer: "transfer"
+    standard_class: null
+    gold_class: null
+    family_carriage: null
+  advisory_severity_mapping:
+    service_suspended: critical
+    major_delay: warning
+    minor_delay: info
+    planned_works: info
+    crowd_advisory: warning
+    air_quality_warning: warning
+  accessibility_labels:
+    step_free: "Barrier-free Access"
+    elevator: "Elevator Available"
+    escalator_out: "Escalator Out of Service"
+  ui_components_available:
+    - route_map
+    - fare_breakdown
+    - advisory_banner
+    - station_selector
+    - passenger_counter
+    - payment_panel
+    - assistant_chat
+  operating_hours:
+    default: "05:00-23:00"
+    weekday: "05:00-23:00"
+    weekend: "05:00-23:00"
+    late_night_headway_min: 10
+    notes: "First/last train times vary by line and station. Most lines start between 05:00-06:00 and end between 22:30-23:00."
+  cultural_notes:
+    - "Security screening: all passengers must pass bags through X-ray scanners before entering the paid area."
+    - "Real-name ticketing is required for single-journey tickets purchased at vending machines (ID scan)."
+    - "No eating or drinking is allowed on trains."
+    - "Priority seating is available for elderly, pregnant, disabled, and passengers with children."
+    - "During rush hours (07:00-09:00, 17:00-19:00), some stations implement flow control measures."
+    - "Lines 2 and 10 are circular loop lines (no terminus). For trips on these lines, always state the travel direction (clockwise or counterclockwise) in the passenger summary so riders board the correct platform."
+    - "Capital Airport Express (to Terminal 2 ¥25 / Terminal 3 ¥35) uses a separate ticket window, distinct from regular Metro vending machines. When a trip ends at Terminal 2 or Terminal 3, always advise passengers to purchase at the dedicated Airport Express window."

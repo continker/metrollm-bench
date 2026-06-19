@@ -1,0 +1,468 @@
+templates:
+  station_closure:
+    instantiations:
+      - id: "sc-clark-lake"
+        disruption:
+          id: "sc-clark-lake"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Clark/Lake station closed due to structural inspection. All L trains bypass this station. Blue, Brown, Green, Orange, Pink, and Purple line passengers should use Washington/Wabash or Merchandise Mart as alternatives."
+          alternative: "Use Washington/Wabash (Loop) or Merchandise Mart (Brown/Purple)"
+          eta_resolution: "4-6 hours"
+        station_id: "CTA-CLK"
+        station_name: "Clark/Lake"
+        reason: "Structural inspection"
+        nearest_alternatives: ["CTA-WAB", "CTA-MRC"]
+        advisory_must_mention: ["clark/lake", "closed", "inspection"]
+        blocked_stations: ["CTA-CLK"]
+        blocked_edges: []
+
+      - id: "sc-belmont"
+        disruption:
+          id: "sc-belmont"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Belmont station closed due to police activity. Red, Brown, and Purple line trains skip this station. Use Fullerton or Diversey as alternatives."
+          alternative: "Use Fullerton (southbound) or Diversey (Brown Line northbound)"
+          eta_resolution: "2-4 hours"
+        station_id: "CTA-BLM"
+        station_name: "Belmont"
+        reason: "Police activity"
+        nearest_alternatives: ["CTA-FUL", "CTA-DVY"]
+        advisory_must_mention: ["belmont", "closed", "police"]
+        blocked_stations: ["CTA-BLM"]
+        blocked_edges: []
+
+      - id: "sc-fullerton"
+        disruption:
+          id: "sc-fullerton"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Fullerton station closed for emergency elevator repair. Red, Brown, and Purple line trains skip this station. Use Belmont or Chicago (Red) as alternatives."
+          alternative: "Use Belmont (northbound) or Chicago-Red (southbound)"
+          eta_resolution: "3-5 hours"
+        station_id: "CTA-FUL"
+        station_name: "Fullerton"
+        reason: "Emergency elevator repair"
+        nearest_alternatives: ["CTA-BLM", "CTA-CHI"]
+        advisory_must_mention: ["fullerton", "closed", "elevator"]
+        blocked_stations: ["CTA-FUL"]
+        blocked_edges: []
+
+      - id: "sc-roosevelt"
+        disruption:
+          id: "sc-roosevelt"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "warning"
+          message: "Roosevelt station closed due to water main break. Red, Green, and Orange line trains skip this station. Use Cermak/Chinatown (Red Line south) or Adams/Wabash (Green/Orange Loop) as alternatives."
+          alternative: "Use Cermak/Chinatown (Red) or Adams/Wabash (Green/Orange)"
+          eta_resolution: "6-8 hours"
+        station_id: "CTA-RSV"
+        station_name: "Roosevelt"
+        reason: "Water main break"
+        nearest_alternatives: ["CTA-CRM", "CTA-AWB"]
+        advisory_must_mention: ["roosevelt", "closed", "water"]
+        blocked_stations: ["CTA-RSV"]
+        blocked_edges: []
+
+      - id: "sc-howard"
+        disruption:
+          id: "sc-howard"
+          line: null
+          segment: null
+          type: "station_closure"
+          severity: "critical"
+          message: "Howard station closed due to suspicious package investigation. Red, Purple, and Yellow line trains cannot serve this station. Purple Line passengers use Davis, Yellow Line passengers use Oakton-Skokie, Red Line passengers use Jarvis."
+          alternative: "Use Davis (Purple), Oakton-Skokie (Yellow), or Jarvis (Red)"
+          eta_resolution: "2-4 hours"
+        station_id: "CTA-HOW"
+        station_name: "Howard"
+        reason: "Suspicious package investigation"
+        nearest_alternatives: ["CTA-JRV", "CTA-DVS", "CTA-OKT"]
+        advisory_must_mention: ["howard", "closed", "suspicious"]
+        blocked_stations: ["CTA-HOW"]
+        blocked_edges: []
+
+  planned_maintenance:
+    instantiations:
+      - id: "pm-red-north"
+        disruption:
+          id: "pm-red-north"
+          line: "red"
+          segment:
+            from_station: "CTA-HOW"
+            to_station: "CTA-BLM"
+            stations: ["CTA-HOW", "CTA-JRV", "CTA-LYL", "CTA-GRN", "CTA-THN", "CTA-BLM"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Red Line: No service between Howard and Belmont this weekend due to track renewal. Free shuttle buses available between affected stations."
+          alternative: "Free shuttle bus between Howard and Belmont"
+          eta_resolution: "Service resumes Tuesday 4:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T04:00:00"
+        line: "red"
+        segment:
+          from_station: "CTA-HOW"
+          to_station: "CTA-BLM"
+          stations: ["CTA-HOW", "CTA-JRV", "CTA-LYL", "CTA-GRN", "CTA-THN", "CTA-BLM"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["red line", "howard", "belmont", "shuttle"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-HOW", "CTA-JRV"]
+          - ["CTA-JRV", "CTA-LYL"]
+          - ["CTA-LYL", "CTA-GRN"]
+          - ["CTA-GRN", "CTA-THN"]
+          - ["CTA-THN", "CTA-BLM"]
+
+      - id: "pm-blue-ohare"
+        disruption:
+          id: "pm-blue-ohare"
+          line: "blue"
+          segment:
+            from_station: "CTA-ORD"
+            to_station: "CTA-JEF"
+            stations: ["CTA-ORD", "CTA-ROS", "CTA-CUM", "CTA-JEF"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Blue Line: No service between O'Hare and Jefferson Park this weekend due to signal upgrade. Free bus shuttle available between affected stations. CTA Pace bus #250 also serves the corridor."
+          alternative: "Free bus shuttle between O'Hare and Jefferson Park"
+          eta_resolution: "Service resumes Tuesday 4:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T04:00:00"
+        line: "blue"
+        segment:
+          from_station: "CTA-ORD"
+          to_station: "CTA-JEF"
+          stations: ["CTA-ORD", "CTA-ROS", "CTA-CUM", "CTA-JEF"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["blue line", "o'hare", "jefferson park", "shuttle"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-ORD", "CTA-ROS"]
+          - ["CTA-ROS", "CTA-CUM"]
+          - ["CTA-CUM", "CTA-JEF"]
+
+      - id: "pm-brown-kimball"
+        disruption:
+          id: "pm-brown-kimball"
+          line: "brown"
+          segment:
+            from_station: "CTA-KIM"
+            to_station: "CTA-DVY"
+            stations: ["CTA-KIM", "CTA-FRA", "CTA-WBR", "CTA-DVY"]
+          type: "planned_maintenance"
+          severity: "info"
+          message: "Brown Line: No late-night service between Kimball and Diversey due to platform lighting replacement. Last train departs Kimball at 9:30 PM."
+          alternative: "No replacement service; plan travel before 9:30 PM"
+          eta_resolution: "Normal service resumes at 5:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T05:00:00"
+        line: "brown"
+        segment:
+          from_station: "CTA-KIM"
+          to_station: "CTA-DVY"
+          stations: ["CTA-KIM", "CTA-FRA", "CTA-WBR", "CTA-DVY"]
+        schedule: "night"
+        replacement_service: null
+        advisory_must_mention: ["brown line", "kimball", "diversey", "night"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-KIM", "CTA-FRA"]
+          - ["CTA-FRA", "CTA-WBR"]
+          - ["CTA-WBR", "CTA-DVY"]
+
+      - id: "pm-green-west"
+        disruption:
+          id: "pm-green-west"
+          line: "green"
+          segment:
+            from_station: "CTA-HLK"
+            to_station: "CTA-CAL"
+            stations: ["CTA-HLK", "CTA-OAK", "CTA-CON", "CTA-CAL"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Green Line: No service between Harlem/Lake and California this weekend due to rail grinding. Free shuttle bus available between affected stations."
+          alternative: "Free shuttle bus between Harlem/Lake and California"
+          eta_resolution: "Service resumes Tuesday 4:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T04:00:00"
+        line: "green"
+        segment:
+          from_station: "CTA-HLK"
+          to_station: "CTA-CAL"
+          stations: ["CTA-HLK", "CTA-OAK", "CTA-CON", "CTA-CAL"]
+        schedule: "weekend"
+        replacement_service: "bus"
+        advisory_must_mention: ["green line", "harlem", "california", "bus"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-HLK", "CTA-OAK"]
+          - ["CTA-OAK", "CTA-CON"]
+          - ["CTA-CON", "CTA-CAL"]
+
+      - id: "pm-orange-midway"
+        disruption:
+          id: "pm-orange-midway"
+          line: "orange"
+          segment:
+            from_station: "CTA-MID"
+            to_station: "CTA-KDZ"
+            stations: ["CTA-MID", "CTA-PUL", "CTA-KDZ"]
+          type: "planned_maintenance"
+          severity: "warning"
+          message: "Orange Line: No service between Midway and Kedzie all day due to switch replacement. Free shuttle bus runs between Midway and Kedzie stations."
+          alternative: "Free shuttle bus between Midway and Kedzie"
+          eta_resolution: "Service resumes tomorrow 4:00 AM"
+          valid_from: "2026-03-09T06:00:00"
+          valid_until: "2026-03-10T04:00:00"
+        line: "orange"
+        segment:
+          from_station: "CTA-MID"
+          to_station: "CTA-KDZ"
+          stations: ["CTA-MID", "CTA-PUL", "CTA-KDZ"]
+        schedule: "all_day"
+        replacement_service: "bus"
+        advisory_must_mention: ["orange line", "midway", "kedzie", "shuttle"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-MID", "CTA-PUL"]
+          - ["CTA-PUL", "CTA-KDZ"]
+
+  polar_vortex:
+    instantiations:
+      - id: "pv-advisory"
+        disruption:
+          id: "pv-advisory"
+          line: null
+          segment: null
+          type: "polar_vortex"
+          severity: "info"
+          message: "Polar vortex advisory: Extreme cold warning in effect. Temperatures expected to reach -20F. All CTA L lines operating normally with minor delays due to switch heater activation. Passengers should dress warmly and allow extra travel time."
+          alternative: null
+          eta_resolution: "Monitoring — cold snap expected through Thursday"
+        category: "advisory"
+        phase: "monitoring"
+        suspended_lines: []
+        reduced_lines: []
+        advisory_must_mention: ["polar vortex", "cold", "delays"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "pv-elevated-suspended"
+        disruption:
+          id: "pv-elevated-suspended"
+          line: null
+          segment: null
+          type: "polar_vortex"
+          severity: "warning"
+          message: "Polar vortex service reduction: Extreme cold has caused switch failures on elevated tracks. Brown, Green, Orange, Pink, and Purple lines are suspended until further notice. Red and Blue lines (subway) continue operating with 15-minute headways."
+          alternative: "Red and Blue lines remain in service. Use bus bridges for suspended lines."
+          eta_resolution: "Elevated service restoration pending temperature recovery"
+        category: "elevated_suspended"
+        phase: "partial_suspension"
+        suspended_lines: ["brown", "green", "orange", "pink", "purple"]
+        reduced_lines: ["red", "blue"]
+        advisory_must_mention: ["polar vortex", "elevated", "suspended", "red", "blue"]
+        blocked_stations: []
+        blocked_edges:
+          - ["CTA-KIM", "CTA-FRA"]
+          - ["CTA-FRA", "CTA-WBR"]
+          - ["CTA-WBR", "CTA-DVY"]
+          - ["CTA-DVY", "CTA-BLM"]
+          - ["CTA-FUL", "CTA-MRC"]
+          - ["CTA-MRC", "CTA-CLK"]
+          - ["CTA-HLK", "CTA-OAK"]
+          - ["CTA-OAK", "CTA-CON"]
+          - ["CTA-CON", "CTA-CAL"]
+          - ["CTA-CAL", "CTA-ASH"]
+          - ["CTA-ASH", "CTA-CLN"]
+          - ["CTA-CLN", "CTA-CLK"]
+          - ["CTA-MID", "CTA-PUL"]
+          - ["CTA-PUL", "CTA-KDZ"]
+          - ["CTA-KDZ", "CTA-HAL"]
+          - ["CTA-HAL", "CTA-RSV"]
+          - ["CTA-54C", "CTA-CIC"]
+          - ["CTA-CIC", "CTA-CLP"]
+          - ["CTA-CLP", "CTA-18T"]
+          - ["CTA-18T", "CTA-POL"]
+          - ["CTA-POL", "CTA-CLN"]
+          - ["CTA-LIN", "CTA-DVS"]
+          - ["CTA-DVS", "CTA-HOW"]
+          - ["CTA-CLK", "CTA-WAB"]
+          - ["CTA-WAB", "CTA-AWB"]
+          - ["CTA-AWB", "CTA-HWL"]
+          - ["CTA-HWL", "CTA-LVB"]
+          - ["CTA-LVB", "CTA-QCY"]
+          - ["CTA-QCY", "CTA-WAW"]
+          - ["CTA-WAW", "CTA-CLK"]
+          - ["CTA-AWB", "CTA-RSV"]
+          - ["CTA-DMP", "CTA-OKT"]
+          - ["CTA-OKT", "CTA-HOW"]
+
+      - id: "pv-full-suspension"
+        disruption:
+          id: "pv-full-suspension"
+          line: null
+          segment: null
+          type: "polar_vortex"
+          severity: "critical"
+          message: "Polar vortex emergency: All CTA L service suspended due to extreme cold (-30F). Third rail power has been shut down across the system for safety. All stations are closed. Do not attempt to travel. Seek shelter and follow emergency instructions."
+          alternative: "No rail service available. Follow emergency instructions."
+          eta_resolution: "Until further notice"
+        category: "full_suspension"
+        phase: "full_suspension"
+        suspended_lines: ["red", "blue", "brown", "green", "orange", "pink", "purple", "yellow"]
+        reduced_lines: []
+        advisory_must_mention: ["polar vortex", "suspended", "all", "shelter"]
+        blocked_stations:
+          - "CTA-HOW"
+          - "CTA-JRV"
+          - "CTA-LYL"
+          - "CTA-GRN"
+          - "CTA-THN"
+          - "CTA-BLM"
+          - "CTA-FUL"
+          - "CTA-CHI"
+          - "CTA-CLD"
+          - "CTA-LAK"
+          - "CTA-JAK"
+          - "CTA-RSV"
+          - "CTA-CRM"
+          - "CTA-95D"
+          - "CTA-ORD"
+          - "CTA-ROS"
+          - "CTA-CUM"
+          - "CTA-JEF"
+          - "CTA-LOG"
+          - "CTA-WBO"
+          - "CTA-DAM"
+          - "CTA-DIV"
+          - "CTA-CHB"
+          - "CTA-CLK"
+          - "CTA-JKB"
+          - "CTA-UIC"
+          - "CTA-FPK"
+          - "CTA-KIM"
+          - "CTA-FRA"
+          - "CTA-WBR"
+          - "CTA-DVY"
+          - "CTA-MRC"
+          - "CTA-WAB"
+          - "CTA-HLK"
+          - "CTA-OAK"
+          - "CTA-CON"
+          - "CTA-CAL"
+          - "CTA-ASH"
+          - "CTA-CLN"
+          - "CTA-AWB"
+          - "CTA-MID"
+          - "CTA-PUL"
+          - "CTA-KDZ"
+          - "CTA-HAL"
+          - "CTA-54C"
+          - "CTA-CIC"
+          - "CTA-CLP"
+          - "CTA-18T"
+          - "CTA-POL"
+          - "CTA-LIN"
+          - "CTA-DVS"
+          - "CTA-DMP"
+          - "CTA-OKT"
+          - "CTA-HWL"
+          - "CTA-LVB"
+          - "CTA-QCY"
+          - "CTA-WAW"
+        blocked_edges: []
+
+  crowd_advisory:
+    instantiations:
+      - id: "ca-united-center"
+        disruption:
+          id: "ca-united-center"
+          line: null
+          segment: null
+          type: "crowd_advisory"
+          severity: "info"
+          message: "Crowd advisory: Chicago Bulls game at United Center. Expect heavy ridership at UIC-Halsted (Blue Line) and Ashland (Green Line). Additional trains running. Allow extra travel time."
+          alternative: "Consider using Clinton or Jackson (Blue) to avoid congestion"
+          eta_resolution: "Congestion expected until 11:00 PM"
+        advisory_must_mention: ["bulls", "crowd", "united center"]
+        blocked_stations: []
+        blocked_edges: []
+
+      - id: "ca-mccormick"
+        disruption:
+          id: "ca-mccormick"
+          line: null
+          segment: null
+          type: "crowd_advisory"
+          severity: "info"
+          message: "Crowd advisory: Major convention at McCormick Place. Expect heavy ridership at Cermak/Chinatown (Red Line) and Roosevelt (Red/Green/Orange). Additional trains running on Red and Green lines. Allow extra travel time."
+          alternative: "Consider using Jackson (Red) or Adams/Wabash to avoid congestion"
+          eta_resolution: "Congestion expected through 6:00 PM"
+        advisory_must_mention: ["mccormick", "crowd", "convention"]
+        blocked_stations: []
+        blocked_edges: []
+
+  line_suspension:
+    instantiations:
+      - id: "ls-blue-full"
+        disruption:
+          id: "ls-blue-full"
+          line: "blue"
+          segment: null
+          type: "line_suspension"
+          severity: "critical"
+          message: "Blue Line fully suspended due to signal system failure. No trains running between O'Hare and Forest Park. Use CTA buses or alternative L service where available."
+          alternative: "Bus service on parallel routes; Pace buses for O'Hare access"
+          eta_resolution: "4-6 hours"
+        line_closures:
+          - line: "blue"
+        advisory_must_mention: ["blue line", "suspended"]
+        blocked_stations: []
+        blocked_edges: []
+      - id: "ls-red-partial-north"
+        disruption:
+          id: "ls-red-partial-north"
+          line: "red"
+          segment: null
+          type: "line_suspension"
+          severity: "warning"
+          message: "Red Line closed between Howard and Fullerton for emergency track work. No service on the north branch. Stations south of Fullerton continue normal operation."
+          alternative: "Use Purple Line Express or buses along the North Side"
+          eta_resolution: "Service restoration by evening rush"
+        line_closures:
+          - line: "red"
+            from_station: "CTA-HOW"
+            to_station: "CTA-FUL"
+        advisory_must_mention: ["red line", "howard", "fullerton"]
+        blocked_stations: []
+        blocked_edges: []
+      - id: "ls-loop-shutdown"
+        disruption:
+          id: "ls-loop-shutdown"
+          line: null
+          segment: null
+          type: "line_suspension"
+          severity: "critical"
+          message: "Weekend track work at Tower 18: Brown, Orange, and Pink Lines are suspended within the Loop. Pink Line trains are diverted to Racine (Blue Line) for downtown access. Red and Blue subway lines are operating normally — use them for Loop destinations."
+          alternative: "Take Red or Blue subway for downtown; Pink Line connects to Blue via Racine"
+          eta_resolution: "Service resumes Monday at 2 AM"
+        line_closures:
+          - line: "brown"
+          - line: "orange"
+          - line: "pink"
+        advisory_must_mention: ["loop", "suspended", "red", "blue"]
+        blocked_stations: []
+        blocked_edges: []

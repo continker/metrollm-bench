@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetroLLM-Bench Network Verifier</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-polylineoffset@1.1.1/leaflet.polylineoffset.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: flex; height: 100vh; }
+#sidebar { width: 320px; background: #f8f9fa; border-right: 1px solid #dee2e6; display: flex; flex-direction: column; overflow: hidden; }
+#sidebar h1 { font-size: 14px; padding: 12px; background: #343a40; color: #fff; }
+#controls { padding: 12px; border-bottom: 1px solid #dee2e6; }
+#controls label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; }
+#system-select { width: 100%; padding: 6px; font-size: 13px; }
+#line-toggles { padding: 12px; border-bottom: 1px solid #dee2e6; }
+#line-toggles h3 { font-size: 12px; margin-bottom: 6px; }
+.line-toggle { display: flex; align-items: center; gap: 6px; margin: 3px 0; font-size: 12px; cursor: pointer; }
+.line-swatch { width: 14px; height: 14px; border-radius: 2px; display: inline-block; }
+#flags-panel { overflow-y: auto; padding: 12px; border-bottom: 1px solid #dee2e6; max-height: 150px; }
+#flags-panel h3 { font-size: 12px; margin-bottom: 6px; color: #dc3545; }
+.flag-item { font-size: 11px; padding: 4px 0; border-bottom: 1px solid #eee; cursor: pointer; }
+.flag-item:hover { background: #fff3cd; }
+.flag-count { font-size: 11px; color: #6c757d; margin-bottom: 8px; }
+#route-panel { flex: 1; overflow-y: auto; padding: 12px; }
+#route-panel h3 { font-size: 12px; margin-bottom: 6px; color: #0066cc; }
+.route-info { font-size: 12px; line-height: 1.6; }
+.route-info .label { font-weight: 600; color: #555; }
+.route-stops { font-size: 12px; margin: 8px 0; max-height: 300px; overflow-y: auto; }
+.route-segment { margin: 0; padding: 0; }
+.segment-header { display: flex; align-items: center; gap: 6px; padding: 6px 0; font-weight: 600; font-size: 12px; }
+.segment-line-bar { width: 4px; border-radius: 2px; align-self: stretch; min-height: 14px; }
+.segment-stops { padding: 0 0 0 16px; border-left: 3px solid #ddd; margin-left: 7px; }
+.route-stop { padding: 3px 0; display: flex; align-items: center; gap: 6px; }
+.route-stop::before { content: ''; width: 8px; height: 8px; border-radius: 50%; border: 2px solid #999; background: #fff; flex-shrink: 0; margin-left: -20px; }
+.route-stop.first::before, .route-stop.last::before { background: #333; border-color: #333; }
+.route-stop.transfer-point::before { background: #fff; border-color: #d63384; border-width: 3px; width: 10px; height: 10px; margin-left: -21px; }
+.transfer-label { font-size: 10px; color: #d63384; padding: 2px 0 2px 10px; font-weight: 600; }
+.route-hint { font-size: 11px; color: #999; font-style: italic; }
+.route-selection { font-size: 12px; padding: 6px 0; color: #0066cc; font-weight: 600; }
+#clear-route { font-size: 11px; cursor: pointer; color: #dc3545; text-decoration: underline; margin-top: 6px; display: inline-block; }
+#map { flex: 1; cursor: crosshair; }
+</style>
+</head>
+<body>
+<div id="sidebar">
+    <h1>MetroLLM-Bench Network Verifier</h1>
+    <div id="controls">
+        <label for="system-select">System</label>
+        <select id="system-select">
+            <option value="marta">MARTA (Atlanta)</option>
+            <option value="bart">BART (San Francisco)</option>
+            <option value="cta">CTA (Chicago)</option>
+            <option value="taipei">Taipei MRT</option>
+            <option value="doha">Doha Metro</option>
+            <option value="beijing">Beijing Metro</option>
+        </select>
+    </div>
+    <div id="line-toggles">
+        <h3>Lines</h3>
+        <div id="line-list"></div>
+    </div>
+    <div id="flags-panel">
+        <h3>Distance Flags (&gt;20% discrepancy)</h3>
+        <div id="flag-count" class="flag-count"></div>
+        <div id="flag-list"></div>
+    </div>
+    <div id="route-panel">
+        <h3>Route Planner</h3>
+        <div id="route-content">
+            <div class="route-hint">Click two stations on the map to plan a route.</div>
+        </div>
+    </div>
+</div>
+<div id="map"></div>
+
+<script>
+let DATA = null;
+let map = null;
+let stationLayer = null;
+let edgeLayers = {};  // line_id -> L.layerGroup
+let flagLayer = null;
+let routeLayer = null;
+let currentSystem = 'marta';
+let routeOrigin = null;  // {id, name, lat, lon}
+let routeMarkers = [];   // temporary markers for selected stations
+
+async function loadData() {
+    const resp = await fetch('/verify_data.json');
+    DATA = await resp.json();
+    initMap();
+    renderSystem(currentSystem);
+}
+
+function initMap() {
+    map = L.map('map').setView([33.75, -84.39], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 18
+    }).addTo(map);
+    map.on('zoomend', updateWeights);
+}
+
+function getEdgeWeight(zoom) {
+    if (zoom <= 10) return 2;
+    if (zoom <= 12) return 3;
+    if (zoom <= 14) return 5;
+    return 7;
+}
+
+function getStationRadius(zoom, isJunction) {
+    const base = 5;
+    if (zoom <= 10) return base;
+    if (zoom <= 12) return base * 1.2;
+    if (zoom <= 14) return base * 1.5;
+    return base * 2;
+}
+
+function updateWeights() {
+    const zoom = map.getZoom();
+    const w = getEdgeWeight(zoom);
+    Object.values(edgeLayers).forEach(lg => {
+        lg.eachLayer(l => { if (l.setStyle) l.setStyle({ weight: w }); });
+    });
+    if (flagLayer) {
+        flagLayer.eachLayer(l => { if (l.setStyle) l.setStyle({ weight: w + 2 }); });
+    }
+    if (stationLayer) {
+        stationLayer.eachLayer(l => {
+            if (l.setRadius) {
+                const isJunction = l.options._isJunction;
+                l.setRadius(getStationRadius(zoom, isJunction));
+            }
+        });
+    }
+}
+
+function renderSystem(system) {
+    currentSystem = system;
+    const sys = DATA[system];
+    if (!sys) return;
+
+    // Clear layers
+    if (stationLayer) map.removeLayer(stationLayer);
+    if (flagLayer) map.removeLayer(flagLayer);
+    Object.values(edgeLayers).forEach(lg => map.removeLayer(lg));
+    edgeLayers = {};
+
+    stationLayer = L.layerGroup().addTo(map);
+    flagLayer = L.layerGroup().addTo(map);
+
+    // Build coord lookup
+    const coords = {};
+    sys.stations.forEach(s => {
+        if (s.lat != null && s.lon != null) coords[s.id] = [s.lat, s.lon];
+    });
+
+    // Line color lookup
+    const lineColors = {};
+    sys.lines.forEach(l => { lineColors[l.id] = l.color; });
+
+    // Station id lookup
+    const stationMap = {};
+    sys.stations.forEach(s => { stationMap[s.id] = s; });
+
+    // Build wiki station coord lookup (all stations, including thinned)
+    const wikiCoords = {};
+    if (sys.wiki_stations) {
+        sys.wiki_stations.forEach(ws => {
+            if (ws.lat != null && ws.lon != null) wikiCoords[ws.name] = [ws.lat, ws.lon];
+        });
+    }
+
+    // Active station names set
+    const activeNames = new Set();
+    sys.stations.forEach(s => activeNames.add(s.name));
+
+    // Draw lines through ALL stations (wiki_lines sequences)
+    // Count how many lines share each segment for parallel offset
+    const segmentLines = {};  // "lat1,lon1|lat2,lon2" -> [lineId, ...]
+    if (sys.wiki_lines) {
+        sys.wiki_lines.forEach(wl => {
+            for (let i = 0; i < wl.stations.length - 1; i++) {
+                const a = wl.stations[i], b = wl.stations[i + 1];
+                const key = [[a.lat,a.lon].join(','), [b.lat,b.lon].join(',')].sort().join('|');
+                if (!segmentLines[key]) segmentLines[key] = [];
+                if (!segmentLines[key].includes(wl.id)) segmentLines[key].push(wl.id);
+            }
+        });
+    }
+
+    sys.lines.forEach(line => {
+        const lg = L.layerGroup().addTo(map);
+        edgeLayers[line.id] = lg;
+    });
+
+    if (sys.wiki_lines) {
+        sys.wiki_lines.forEach(wl => {
+            const color = wl.color || lineColors[wl.id] || '#999';
+            const lg = edgeLayers[wl.id];
+            if (!lg) return;
+
+            for (let i = 0; i < wl.stations.length - 1; i++) {
+                const a = wl.stations[i], b = wl.stations[i + 1];
+
+                // Normalize direction: always draw from lower sorted key to higher
+                // so offset is consistent regardless of line direction
+                const ka = [a.lat,a.lon].join(',');
+                const kb = [b.lat,b.lon].join(',');
+                const key = [ka, kb].sort().join('|');
+                const forward = ka <= kb;
+                const from = forward ? [a.lat, a.lon] : [b.lat, b.lon];
+                const to = forward ? [b.lat, b.lon] : [a.lat, a.lon];
+
+                const linesOnSeg = segmentLines[key] || [wl.id];
+                const lineIdx = linesOnSeg.indexOf(wl.id);
+                const totalLines = linesOnSeg.length;
+
+                const pixelOffset = totalLines > 1
+                    ? (lineIdx - (totalLines - 1) / 2) * 6
+                    : 0;
+
+                const polyline = L.polyline([from, to], {
+                    color: color, weight: 3, opacity: 0.85,
+                    offset: pixelOffset,
+                });
+                polyline.bindPopup(`${a.name} &rarr; ${b.name}<br>Line: ${wl.id}`);
+                lg.addLayer(polyline);
+            }
+        });
+    }
+
+    // Flag check (from graph edges)
+    const flags = [];
+    sys.edges.forEach(edge => {
+        const from = coords[edge.from];
+        const to = coords[edge.to];
+        if (!from || !to) return;
+        if (edge.haversine_miles != null && edge.haversine_miles > 0.01) {
+            const pctDiff = Math.abs(edge.distance_miles - edge.haversine_miles) / edge.haversine_miles * 100;
+            if (pctDiff > 20) {
+                flags.push({
+                    from: edge.from, to: edge.to, line: edge.line,
+                    graphDist: edge.distance_miles, haversine: edge.haversine_miles,
+                    pct: pctDiff.toFixed(1), latlngs: [from, to]
+                });
+                // No overlay polyline — flags shown in sidebar panel only
+            }
+        }
+    });
+
+    // Draw ALL stations (thinned = hollow, active = solid)
+    if (sys.wiki_stations) {
+        sys.wiki_stations.forEach(ws => {
+            if (ws.lat == null || ws.lon == null) return;
+            const isActive = activeNames.has(ws.name);
+            const activeStation = isActive ? sys.stations.find(s => s.name === ws.name) : null;
+            const isJunction = activeStation ? activeStation.lines.length >= 2 : false;
+
+            const radius = isActive ? 5 : 4;
+            const lineColor = activeStation ? (lineColors[activeStation.lines[0]] || '#999') : '#999';
+            const fillColor = isActive
+                ? (isJunction ? '#fff' : lineColor)
+                : 'transparent';
+            const borderColor = isActive ? (isJunction ? '#333' : '#fff') : '#888';
+            const fillOpacity = isActive ? (isJunction ? 1 : 0.9) : 0;
+            const borderWeight = isActive ? (isJunction ? 2 : 1.5) : 1.5;
+
+            const marker = L.circleMarker([ws.lat, ws.lon], {
+                radius: radius,
+                fillColor: fillColor,
+                color: borderColor,
+                weight: borderWeight,
+                fillOpacity: fillOpacity,
+                _isJunction: isJunction
+            });
+
+            if (isActive && activeStation) {
+                marker.bindPopup(
+                    `<b>${ws.name}</b><br>` +
+                    `ID: ${activeStation.id}<br>` +
+                    `Lines: ${activeStation.lines.join(', ')}<br>` +
+                    `Coords: ${ws.lat.toFixed(5)}, ${ws.lon.toFixed(5)}`
+                );
+                marker.on('click', () => onStationClick(activeStation.id, ws.name, ws.lat, ws.lon));
+            } else {
+                marker.bindPopup(
+                    `<b style="color:#888">${ws.name}</b><br>` +
+                    `<i>Not in benchmark graph</i><br>` +
+                    `Coords: ${ws.lat.toFixed(5)}, ${ws.lon.toFixed(5)}`
+                );
+            }
+            stationLayer.addLayer(marker);
+        });
+    }
+
+    // Center map
+    map.setView(sys.center, 11);
+
+    // Render line toggles
+    renderLineToggles(sys.lines, lineColors);
+
+    // Render flags
+    renderFlags(flags);
+}
+
+function toggleAllLines(checked) {
+    document.querySelectorAll('#line-list input[type=checkbox]').forEach(cb => {
+        if (cb.checked !== checked) { cb.checked = checked; cb.dispatchEvent(new Event('change')); }
+    });
+}
+
+function renderLineToggles(lines, lineColors) {
+    const container = document.getElementById('line-list');
+    container.innerHTML = '';
+
+    const btns = document.createElement('div');
+    btns.style.cssText = 'display:flex;gap:6px;margin-bottom:6px;';
+    const selAll = document.createElement('button');
+    selAll.textContent = 'All';
+    selAll.style.cssText = 'font-size:11px;padding:2px 8px;cursor:pointer;';
+    selAll.onclick = () => toggleAllLines(true);
+    const clrAll = document.createElement('button');
+    clrAll.textContent = 'None';
+    clrAll.style.cssText = 'font-size:11px;padding:2px 8px;cursor:pointer;';
+    clrAll.onclick = () => toggleAllLines(false);
+    btns.appendChild(selAll);
+    btns.appendChild(clrAll);
+    container.appendChild(btns);
+
+    lines.forEach(line => {
+        const label = document.createElement('label');
+        label.className = 'line-toggle';
+
+        const cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.checked = true;
+        cb.addEventListener('change', () => {
+            const lg = edgeLayers[line.id];
+            if (!lg) return;
+            if (cb.checked) { map.addLayer(lg); }
+            else { map.removeLayer(lg); }
+        });
+
+        const swatch = document.createElement('span');
+        swatch.className = 'line-swatch';
+        swatch.style.backgroundColor = line.color;
+
+        const text = document.createTextNode(line.name);
+
+        label.appendChild(cb);
+        label.appendChild(swatch);
+        label.appendChild(text);
+        container.appendChild(label);
+    });
+}
+
+function renderFlags(flags) {
+    const countEl = document.getElementById('flag-count');
+    const listEl = document.getElementById('flag-list');
+    countEl.textContent = `${flags.length} flagged edge(s)`;
+    listEl.innerHTML = '';
+
+    flags.sort((a, b) => parseFloat(b.pct) - parseFloat(a.pct));
+    flags.forEach(f => {
+        const div = document.createElement('div');
+        div.className = 'flag-item';
+        div.innerHTML = `<b>${f.from}</b> &rarr; <b>${f.to}</b> [${f.line}]<br>` +
+            `graph=${f.graphDist}mi, haversine=${f.haversine}mi (${f.pct}%)`;
+        div.addEventListener('click', () => {
+            map.fitBounds(L.latLngBounds(f.latlngs).pad(0.5));
+        });
+        listEl.appendChild(div);
+    });
+}
+
+// System select handler
+document.getElementById('system-select').addEventListener('change', (e) => {
+    renderSystem(e.target.value);
+});
+
+// Init
+// ---------------------------------------------------------------------------
+// Route planning via click
+// ---------------------------------------------------------------------------
+
+function onStationClick(id, name, lat, lon) {
+    if (!routeOrigin) {
+        // First click: set origin
+        routeOrigin = {id, name, lat, lon};
+        const m = L.circleMarker([lat, lon], {radius: 8, color: '#0066cc', fillColor: '#0066cc', fillOpacity: 1, weight: 2});
+        m.addTo(map);
+        routeMarkers.push(m);
+        document.getElementById('route-content').innerHTML =
+            `<div class="route-selection">From: ${name}</div>` +
+            `<div class="route-hint">Click a destination station...</div>`;
+    } else {
+        // Second click: plan route
+        const dest = {id, name, lat, lon};
+        const m = L.circleMarker([lat, lon], {radius: 8, color: '#cc0066', fillColor: '#cc0066', fillOpacity: 1, weight: 2});
+        m.addTo(map);
+        routeMarkers.push(m);
+        planRoute(routeOrigin, dest);
+        routeOrigin = null;
+    }
+}
+
+async function planRoute(origin, dest) {
+    document.getElementById('route-content').innerHTML =
+        `<div class="route-selection">From: ${origin.name}<br>To: ${dest.name}</div>` +
+        `<div class="route-hint">Planning...</div>`;
+
+    try {
+        const resp = await fetch('/verify/route', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({origin: origin.id, destination: dest.id, system: currentSystem}),
+        });
+        const data = await resp.json();
+
+        if (data.error) {
+            document.getElementById('route-content').innerHTML =
+                `<div class="route-selection">From: ${origin.name}<br>To: ${dest.name}</div>` +
+                `<div style="color:#dc3545">${data.error}</div>` +
+                `<span id="clear-route" onclick="clearRoute()">Clear</span>`;
+            return;
+        }
+
+        // Draw route on map
+        if (routeLayer) map.removeLayer(routeLayer);
+        routeLayer = L.layerGroup().addTo(map);
+
+        const curSys = DATA[currentSystem];
+        // Build coord lookup by ID
+        const idCoords = {};
+        curSys.stations.forEach(s => { if (s.lat != null) idCoords[s.id] = [s.lat, s.lon]; });
+
+        const routePoints = data.stops
+            .map(s => idCoords[s.station_id])
+            .filter(c => c);
+
+        // Build Google Maps-style segment display
+        const routeSys = DATA[currentSystem];
+        const lineColors = {};
+        routeSys.lines.forEach(l => { lineColors[l.id] = l.color; });
+        const lineNames = {};
+        routeSys.lines.forEach(l => { lineNames[l.id] = l.name; });
+
+        // Group stops into segments by line
+        // Transfer stations appear at end of old segment AND start of new segment
+        const segments = [];
+        let curSeg = null;
+        data.stops.forEach((s, i) => {
+            if (!curSeg || s.line !== curSeg.line) {
+                // If there's a previous segment and the line changed,
+                // the last stop of the previous segment is the transfer station —
+                // duplicate it as the first stop of the new segment
+                const transferStation = curSeg ? curSeg.stops[curSeg.stops.length - 1] : null;
+                curSeg = { line: s.line, stops: [] };
+                segments.push(curSeg);
+                if (transferStation && transferStation.is_transfer) {
+                    curSeg.stops.push({ ...transferStation, idx: transferStation.idx, isTransferDup: true });
+                }
+            }
+            curSeg.stops.push({ ...s, idx: i });
+        });
+
+        // Draw route per segment in line color with white outline
+        segments.forEach(seg => {
+            const segPoints = seg.stops
+                .map(s => idCoords[s.station_id])
+                .filter(c => c);
+            if (segPoints.length >= 2) {
+                const color = lineColors[seg.line] || '#FFD600';
+                L.polyline(segPoints, {color: '#fff', weight: 12, opacity: 0.9}).addTo(routeLayer);
+                L.polyline(segPoints, {color: color, weight: 7, opacity: 0.95}).addTo(routeLayer);
+            }
+        });
+
+        let stopsHtml = '';
+        segments.forEach((seg, si) => {
+            const color = lineColors[seg.line] || '#999';
+            const lname = lineNames[seg.line] || seg.line || 'Walk';
+            stopsHtml += `<div class="route-segment">`;
+            stopsHtml += `<div class="segment-header"><span class="segment-line-bar" style="background:${color}"></span> ${lname}</div>`;
+            stopsHtml += `<div class="segment-stops" style="border-left-color:${color}">`;
+            seg.stops.forEach((s, i) => {
+                let cls = 'route-stop';
+                if (s.idx === 0 && !s.isTransferDup) cls += ' first';
+                if (s.idx === data.stops.length - 1) cls += ' last';
+                if (s.is_transfer || s.isTransferDup) cls += ' transfer-point';
+                stopsHtml += `<div class="${cls}">${s.station_name}</div>`;
+            });
+            stopsHtml += `</div>`;
+            if (si < segments.length - 1) {
+                stopsHtml += `<div class="transfer-label">⇄ Transfer at ${segments[si].stops[segments[si].stops.length - 1].station_name}</div>`;
+            }
+            stopsHtml += `</div>`;
+        });
+
+        document.getElementById('route-content').innerHTML =
+            `<div class="route-info">` +
+            `<b>${origin.name} → ${dest.name}</b><br>` +
+            `${data.stops.length} stops · ${data.transfers} transfer${data.transfers !== 1 ? 's' : ''} · ${data.distance_miles} mi · ~${Math.round(data.estimated_minutes)} min` +
+            `</div>` +
+            `<div class="route-stops">${stopsHtml}</div>` +
+            `<span id="clear-route" onclick="clearRoute()">Clear route</span>`;
+
+    } catch (e) {
+        document.getElementById('route-content').innerHTML =
+            `<div class="route-selection">From: ${origin.name}<br>To: ${dest.name}</div>` +
+            `<div style="color:#dc3545">Error: ${e.message}. Is the mock server running?</div>` +
+            `<span id="clear-route" onclick="clearRoute()">Clear</span>`;
+    }
+}
+
+function clearRoute() {
+    routeOrigin = null;
+    routeMarkers.forEach(m => map.removeLayer(m));
+    routeMarkers = [];
+    if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+    document.getElementById('route-content').innerHTML =
+        '<div class="route-hint">Click two stations on the map to plan a route.</div>';
+}
+
+loadData();
+</script>
+</body>
+</html>

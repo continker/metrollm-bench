@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetroLLM-Bench — Kiosk Simulator</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, system-ui, sans-serif; background: #f5f5f5; color: #333; }
+  .two-col { display: flex; height: 100vh; }
+  .col-left { min-width: 25%; overflow-y: auto; padding: 20px 24px; width: 45%; }
+  .col-divider { width: 6px; cursor: col-resize; background: #e0e0e0; flex-shrink: 0; position: relative; z-index: 10; }
+  .col-divider:hover, .col-divider.dragging { background: #4a9; }
+  .col-right { flex: 1; position: relative; }
+  #map { width: 100%; height: 100%; }
+  .map-label { position: absolute; top: 10px; left: 50px; z-index: 1000; background: rgba(255,255,255,0.9); padding: 4px 10px; border-radius: 4px; font-size: 0.8em; color: #666; box-shadow: 0 1px 3px rgba(0,0,0,0.15); pointer-events: none; }
+  .route-label { font-size: 12px; font-family: -apple-system, system-ui, sans-serif; padding: 3px 8px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,0.2); white-space: nowrap; }
+  .line-label { font-size: 11px; font-family: -apple-system, system-ui, sans-serif; padding: 1px 6px; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.15); white-space: nowrap; background: rgba(255,255,255,0.9); border: none; }
+  h1 { margin-bottom: 4px; font-size: 1.4em; }
+  .subtitle { color: #666; font-size: 0.9em; margin-bottom: 16px; }
+  .section-label { font-weight: 600; color: #666; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 6px; margin-top: 16px; }
+  .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  /* --- Quick scenarios: filter pills + card grid (v23) --- */
+  .preset-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid #eee; }
+  .preset-filter { background: #f4f6f9; color: #555; border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; font-size: 0.88em; font-weight: 600; cursor: pointer; transition: background 0.1s, color 0.1s, border-color 0.1s; user-select: none; }
+  .preset-filter:hover { background: #e8ecf2; }
+  .preset-filter.active { background: #3498db; color: #fff; border-color: #2980b9; }
+  .preset-filter .count { background: rgba(0,0,0,0.08); color: inherit; padding: 1px 7px; border-radius: 10px; font-size: 0.82em; margin-left: 6px; font-weight: 500; }
+  .preset-filter.active .count { background: rgba(255,255,255,0.25); }
+  .preset-system-select { margin-left: auto; background: #fff; color: #333; border: 1px solid #d0d5da; border-radius: 999px; padding: 6px 30px 6px 14px; font-size: 0.88em; font-weight: 500; cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M3 5l3 3 3-3' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>"); background-repeat: no-repeat; background-position: right 10px center; }
+  .preset-system-select:hover { border-color: #3498db; }
+  .preset-system-select:focus { outline: none; border-color: #2980b9; box-shadow: 0 0 0 2px rgba(52,152,219,0.18); }
+
+  .preset-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .preset-card { background: #fff; border: 1px solid #e5e8ec; border-radius: 8px; padding: 14px 16px; cursor: pointer; transition: border-color 0.12s, box-shadow 0.12s, transform 0.12s; display: flex; flex-direction: column; min-height: 115px; }
+  .preset-card:hover { border-color: #3498db; box-shadow: 0 2px 10px rgba(52, 152, 219, 0.12); transform: translateY(-1px); }
+  .preset-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; gap: 8px; }
+  .preset-system-badge { font-size: 0.72em; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+  .preset-cat-chip { font-size: 0.72em; font-weight: 600; padding: 2px 8px; border-radius: 3px; letter-spacing: 0.02em; white-space: nowrap; }
+  .preset-cat-chip.cat-A { background: #e8f5e9; color: #2e7d32; }
+  .preset-cat-chip.cat-B { background: #fff3e0; color: #e65100; }
+  .preset-cat-chip.cat-C { background: #fce4ec; color: #c62828; }
+  .preset-cat-chip.cat-D { background: #e3f2fd; color: #1565c0; }
+  .preset-cat-chip.cat-E { background: #e0f2f1; color: #00695c; }
+  .preset-cat-chip.cat-F { background: #f3e5f5; color: #6a1b9a; }
+  .preset-cat-chip.cat-H { background: #eceff1; color: #455a64; }
+  .preset-cat-chip.cat-I { background: #fff8e1; color: #f57f17; }
+  .preset-cat-chip.cat-K { background: #fbe9e7; color: #bf360c; }
+  .preset-card-title { font-weight: 600; font-size: 0.98em; color: #2c3e50; line-height: 1.3; margin-bottom: 6px; }
+  .preset-card-desc { color: #667; font-size: 0.82em; line-height: 1.45; flex: 1; }
+  .preset-empty { padding: 40px 20px; text-align: center; color: #999; font-size: 0.9em; grid-column: 1/-1; }
+  .card-setup { border-top: 3px solid #4a9; }
+  .card-response { background: #f6faf7; border-top: 3px solid #2a7; }
+  .card-debug { background: #f9f9f9; }
+  .card-history { background: #f8f8fa; border-top: 3px solid #99a; }
+  .zone-header { font-size: 1.05em; font-weight: 700; margin-bottom: 12px; color: #444; }
+  .response { background: #fafafa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 16px; font-size: 0.88em; line-height: 1.6; max-height: 400px; overflow-y: auto; margin-bottom: 12px; }
+  .response .key { color: #4a6; font-weight: 600; }
+  .response .val { color: #333; }
+  .response .nested { margin-left: 16px; border-left: 2px solid #e0e0e0; padding-left: 12px; margin-top: 4px; }
+  .response .str-val { color: #c33; }
+  .response .num-val { color: #a50; }
+  .response .bool-val { color: #36a; }
+  .tool-call { background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px; margin-bottom: 8px; }
+  .tool-call-header { font-weight: 600; font-size: 0.9em; margin-bottom: 6px; }
+  .tool-call-header .tool-name { background: #e8e8e8; padding: 2px 8px; border-radius: 3px; font-family: 'SF Mono', Menlo, monospace; }
+  .tool-call-sub { font-size: 0.82em; line-height: 1.5; }
+  .tool-call-sub .nested { margin-left: 12px; border-left: 2px solid #e0e0e0; padding-left: 10px; }
+  .tool-arrow { color: #999; margin: 4px 0; font-size: 0.8em; }
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+  .summary-card { border-radius: 6px; padding: 12px 14px; font-size: 0.88em; line-height: 1.5; }
+  .summary-card h4 { font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.03em; color: #888; margin-bottom: 6px; }
+  .summary-card .big { font-size: 1.3em; font-weight: 700; }
+  .summary-card .detail { color: #666; font-size: 0.85em; margin-top: 2px; }
+  .summary-card.route { background: #f0f4ff; border: 1px solid #c0d0f0; }
+  .summary-card.fare { background: #f0fff4; border: 1px solid #b0e0c0; }
+  .summary-card.message { background: #fff8f0; border: 1px solid #e0d0b0; grid-column: 1 / -1; }
+  .summary-msg { font-style: italic; color: #444; line-height: 1.5; }
+  /* Form elements */
+  .form-row { display: flex; gap: 10px; margin-bottom: 12px; align-items: flex-end; }
+  .form-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .form-group label { font-size: 0.8em; font-weight: 600; color: #555; text-transform: uppercase; letter-spacing: 0.03em; }
+  .form-group select,
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="datetime-local"] {
+    padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.92em; font-family: inherit; background: white;
+  }
+  .form-group select:focus,
+  .form-group input:focus { outline: none; border-color: #4a9; }
+  .pax-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+  .pax-cell { display: flex; flex-direction: column; gap: 4px; }
+  .pax-cell label { font-size: 0.75em; font-weight: 600; color: #555; text-transform: uppercase; }
+  .pax-cell input { padding: 6px 8px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.92em; text-align: center; width: 100%; }
+  .disruption-card { background: #fff5f0; border: 1px solid #e0b090; border-radius: 6px; padding: 12px; margin-bottom: 8px; position: relative; }
+  .disruption-card .remove-btn { position: absolute; top: 8px; right: 8px; background: none; border: none; cursor: pointer; color: #999; font-size: 1.2em; line-height: 1; padding: 0 4px; }
+  .disruption-card .remove-btn:hover { color: #c33; }
+  .disruption-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+  .disruption-form-row.full { grid-template-columns: 1fr; }
+  .disruption-form-row select,
+  .disruption-form-row input { padding: 6px 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 0.85em; font-family: inherit; }
+  .add-disruption-btn { background: none; border: 1px dashed #aaa; border-radius: 6px; padding: 8px 14px; cursor: pointer; font-size: 0.88em; color: #666; width: 100%; margin-bottom: 12px; }
+  .add-disruption-btn:hover { border-color: #4a9; color: #4a9; background: #f0fff4; }
+  .plan-btn { background: #4a9; color: white; border: none; border-radius: 8px; padding: 14px 24px; font-size: 1.05em; cursor: pointer; width: 100%; font-weight: 600; }
+  .plan-btn:hover { background: #3a8; }
+  .plan-btn:disabled { background: #aaa; cursor: default; }
+  .toggle-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .toggle-row label { font-size: 0.9em; color: #555; }
+  /* Spinner */
+  .spinner { display: none; align-items: center; gap: 12px; padding: 20px; justify-content: center; }
+  .spinner.active { display: flex; }
+  .spinner-ring { width: 32px; height: 32px; border: 3px solid #ddd; border-top-color: #4a9; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner-text { color: #666; font-size: 0.92em; }
+  /* Outcome badge */
+  .outcome-row { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 4px; font-size: 0.8em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+  .badge-outcome-route { background: #e8f5ee; color: #2a7; }
+  .badge-outcome-advisory { background: #fff4e0; color: #a06000; }
+  .badge-outcome-unavailable { background: #f0f0f0; color: #666; }
+  .badge-outcome-declined { background: #fee; color: #c33; }
+  .badge-outcome-policy { background: #f0eeff; color: #559; }
+  .badge-action-purchase { background: #e8f5ee; color: #2a7; }
+  .badge-action-display { background: #f0f4ff; color: #447; }
+  .badge-action-block { background: #fee; color: #c33; }
+  .badge-action-refer { background: #fff4e0; color: #a06000; }
+  /* Timing row */
+  .timing-row { display: flex; gap: 16px; font-size: 0.8em; color: #888; margin-bottom: 8px; }
+  .timing-row span { background: #eee; padding: 2px 8px; border-radius: 3px; }
+  /* Error state */
+  .error-box { background: #fff0f0; border: 1px solid #e0b0b0; border-radius: 6px; padding: 16px; color: #c33; font-size: 0.9em; }
+  /* Copy case button */
+  .copy-btn { background: #e8e8e8; color: #333; border: none; border-radius: 4px; padding: 4px 12px; font-size: 0.78em; cursor: pointer; font-weight: 500; margin-left: auto; }
+  .copy-btn:hover { background: #d8d8d8; }
+  .copy-btn.copied { background: #2a7; color: #fff; }
+  .copy-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  /* Map click hint */
+  .map-hint { font-size: 0.78em; color: #888; margin-top: 4px; }
+  /* Details summary */
+  details summary { cursor: pointer; font-weight: 600; color: #666; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.03em; padding: 4px 0; }
+  details summary:hover { color: #444; }
+/* User badge (top-right) — populated by /me when SIMULATOR_MODE is on. */
+#user-badge {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  color: #3A4654;
+  background: rgba(246,247,249,0.95);
+  border: 1px solid #DEE2E6;
+  padding: 6px 10px;
+  display: none;
+  z-index: 1000;
+}
+#user-badge a {
+  color: #C21924;
+  margin-left: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+}
+#user-badge a:hover { text-decoration: underline; }
+/* Cap-hit banner */
+#cap-banner {
+  display: none;
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FEE;
+  color: #C21924;
+  border: 1px solid #FCC;
+  padding: 8px 14px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+  z-index: 1100;
+}
+</style>
+</head>
+<body>
+
+<div id="user-badge"></div>
+<div id="cap-banner"></div>
+<script>
+// Show "Logged in as: NAME" if /me returns a user (only present when the
+// server is in SIMULATOR_MODE). Silently no-ops otherwise — keeps the
+// simulator usable in non-auth contexts.
+(async () => {
+  try {
+    const r = await fetch('/me');
+    if (!r.ok) return;
+    const j = await r.json();
+    if (!j.user) return;
+    const el = document.getElementById('user-badge');
+    el.innerHTML = 'Signed in as <strong>' + j.user.replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])) + '</strong>'
+                 + '<a href="#" onclick="fetch(\'/logout\',{method:\'POST\'}).then(()=>location.href=\'/login\');return false;">log out</a>';
+    el.style.display = 'block';
+  } catch (e) { /* no-op */ }
+})();
+
+// Wrap /simulate fetch responses to handle 401 (cookie expired → /login)
+// and 429 (cap hit → banner).
+window._handleSimulateAuth = function(resp) {
+  if (resp.status === 401) { location.href = '/login'; return true; }
+  if (resp.status === 429) {
+    return resp.json().then(j => {
+      const b = document.getElementById('cap-banner');
+      b.textContent = j.error || 'Daily cap reached.';
+      b.style.display = 'block';
+      setTimeout(() => { b.style.display = 'none'; }, 6000);
+      return true;
+    });
+  }
+  return false;
+};
+</script>
+
+<div class="two-col">
+  <div class="col-left">
+    <h1>MetroLLM-Bench — Kiosk Simulator</h1>
+    <div style="display:flex;gap:8px;margin-bottom:16px">
+      <button onclick="showMode('quick')" id="mode-quick" style="flex:1;padding:10px;border:2px solid #3498db;background:#3498db;color:#fff;border-radius:6px;font-size:0.95em;font-weight:600;cursor:pointer">Quick Scenarios</button>
+      <button onclick="showMode('advanced')" id="mode-advanced" style="flex:1;padding:10px;border:2px solid #4a9;background:white;color:#4a9;border-radius:6px;font-size:0.95em;font-weight:600;cursor:pointer">Custom Scenario</button>
+    </div>
+
+    <!-- Preset gallery -->
+    <div class="card" id="preset-panel" style="border-top:3px solid #3498db">
+      <div class="zone-header">Quick Scenarios</div>
+      <div id="preset-filters" class="preset-filters"></div>
+      <div id="preset-grid" class="preset-grid"></div>
+    </div>
+
+    <!-- Setup panel (advanced, hidden by default) -->
+    <div class="card card-setup" id="setup-card" style="display:none">
+      <div class="zone-header">Trip Setup</div>
+      <div class="section-label">Transit System</div>
+      <div class="form-group">
+        <select id="system-select" onchange="onSystemChange(this.value)">
+          <option value="">Select system...</option>
+        </select>
+      </div>
+
+      <div style="display:flex;gap:12px;margin-top:12px">
+        <div style="flex:1;background:#f8faf8;border:1px solid #d0e0d0;border-radius:6px;padding:12px">
+          <div class="section-label" style="color:#2a7;margin-top:0">Origin</div>
+          <div class="form-group">
+            <label>Line</label>
+            <select id="origin-line" onchange="onLineChange('origin')">
+              <option value="">All lines</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Station</label>
+            <select id="origin-select"></select>
+          </div>
+          <div class="map-hint">Or click the map</div>
+        </div>
+        <div style="flex:1;background:#faf8fa;border:1px solid #e0d0e0;border-radius:6px;padding:12px">
+          <div class="section-label" style="color:#a27;margin-top:0">Destination</div>
+          <div class="form-group">
+            <label>Line</label>
+            <select id="dest-line" onchange="onLineChange('dest')">
+              <option value="">All lines</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Station</label>
+            <select id="dest-select"></select>
+          </div>
+          <div class="map-hint">Or click the map</div>
+        </div>
+      </div>
+
+      <div class="section-label">Passengers</div>
+      <div class="pax-grid">
+        <div class="pax-cell">
+          <label>Adults</label>
+          <input type="number" id="pax-adults" value="1" min="0" max="20">
+        </div>
+        <div class="pax-cell">
+          <label>Children</label>
+          <input type="number" id="pax-children" value="0" min="0" max="20">
+        </div>
+        <div class="pax-cell">
+          <label>Seniors</label>
+          <input type="number" id="pax-seniors" value="0" min="0" max="20">
+        </div>
+        <div class="pax-cell">
+          <label>Disabled</label>
+          <input type="number" id="pax-disabled" value="0" min="0" max="20">
+        </div>
+      </div>
+
+      <div class="section-label">Time & Context</div>
+      <div class="form-row">
+        <div class="form-group" style="flex:2">
+          <label>Current Time (optional)</label>
+          <input type="datetime-local" id="current-time" oninput="updateDayOfWeek()">
+        </div>
+        <div class="form-group" style="flex:1">
+          <label>Day</label>
+          <input type="text" id="day-of-week" placeholder="auto" readonly style="background:#f8f8f8;color:#888">
+        </div>
+      </div>
+
+      <div class="toggle-row">
+        <input type="checkbox" id="accessibility-toggle">
+        <label for="accessibility-toggle">Accessibility mode (checks elevator/step-free access)</label>
+      </div>
+
+      <div class="section-label">Conditions (optional)</div>
+      <div id="disruption-list"></div>
+      <div style="display:flex;gap:8px;margin-bottom:8px">
+        <button class="add-disruption-btn" onclick="addCondition('disruption')" style="flex:1;margin-bottom:0">+ Disruption</button>
+        <button class="add-disruption-btn" onclick="addCondition('promotion')" style="flex:1;margin-bottom:0">+ Promotion</button>
+        <button class="add-disruption-btn" onclick="addCondition('freetext')" style="flex:1;margin-bottom:0">+ Free text</button>
+      </div>
+
+      <div class="section-label">Passenger message (optional)</div>
+      <div class="form-group" style="margin-bottom:16px">
+        <label>Additional text from passenger</label>
+        <input type="text" id="freetext" placeholder="e.g. I need wheelchair access. Is the elevator working?">
+      </div>
+
+      <div style="display:flex;gap:10px;align-items:stretch">
+        <button class="plan-btn" id="plan-btn" onclick="planTrip()" style="flex:1">Plan Trip</button>
+        <button onclick="resetSimulator()" style="flex:0 0 auto;background:#888;color:white;border:none;border-radius:6px;padding:0 14px;font-size:0.82em;cursor:pointer" title="Reset">Reset</button>
+      </div>
+    </div>
+
+    <!-- Spinner -->
+    <div class="spinner" id="spinner">
+      <div class="spinner-ring"></div>
+      <div class="spinner-text" id="spinner-text">Waiting for LLM response...</div>
+    </div>
+
+    <!-- Response panel (shown after response) -->
+    <div id="response-panel" style="display:none">
+      <div class="card card-response">
+        <div class="zone-header">Kiosk Response</div>
+
+        <div class="outcome-row">
+          <div id="outcome-row" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;flex:1"></div>
+          <button class="copy-btn" onclick="copyLastCase(this)" title="Copy this case as JSONL (request + case + result)">Copy case</button>
+        </div>
+        <div class="timing-row" id="timing-row"></div>
+
+        <!-- Summary cards -->
+        <div id="summary-grid-container"></div>
+
+        <!-- Advisory banners -->
+        <div id="advisory-banners"></div>
+      </div>
+
+      <!-- Debug panel -->
+      <div class="card card-debug">
+        <details id="debug-details">
+          <summary>Debug — Tool Calls &amp; Thinking Trace</summary>
+          <div style="margin-top:12px">
+            <div id="tool-calls-detail"></div>
+            <div id="thinking-trace" style="display:none">
+              <div class="section-label" style="margin-top:12px">Thinking Trace</div>
+              <div id="thinking-content" style="background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:12px;font-size:0.82em;line-height:1.6;color:#555;white-space:pre-wrap;max-height:300px;overflow-y:auto"></div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Error panel -->
+    <div id="error-panel" style="display:none" class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <div class="section-label" style="margin:0">Error</div>
+        <button class="copy-btn" onclick="copyLastCase(this)" title="Copy this case as JSONL (request + error)">Copy case</button>
+      </div>
+      <div class="error-box" id="error-content"></div>
+    </div>
+
+    <!-- Session history -->
+    <div class="card card-history" id="history-panel" style="display:none">
+      <details id="history-details">
+        <summary style="display:flex;justify-content:space-between;align-items:center;cursor:pointer">
+          <span>Session History (<span id="history-count">0</span>)</span>
+          <span onclick="event.stopPropagation()" style="display:flex;gap:6px">
+            <button onclick="saveAllHistory()" style="background:#4a9;color:#fff;border:none;border-radius:4px;padding:4px 12px;font-size:0.78em;cursor:pointer">Save All (.jsonl)</button>
+            <button onclick="clearHistory()" style="background:#ccc;color:#333;border:none;border-radius:4px;padding:4px 12px;font-size:0.78em;cursor:pointer">Clear</button>
+          </span>
+        </summary>
+        <div id="history-list" style="margin-top:8px;max-height:300px;overflow-y:auto"></div>
+      </details>
+    </div>
+  </div>
+
+  <div class="col-divider" id="col-divider"></div>
+  <div class="col-right">
+    <div class="map-label" id="map-label">Select a system to load map</div>
+    <div id="map"></div>
+  </div>
+</div>
+
+<script>
+// -----------------------------------------------------------------------
+// State
+// -----------------------------------------------------------------------
+let map = null, routeLayer = null, bgLinesLayer = null;
+let originMarker = null, destMarker = null;
+let verifyData = null;
+let allStations = [];     // full list for current system
+let allLines = [];        // full lines list for current system
+let filteredStations = []; // after line filter
+let disruptionCount = 0;
+let mapClickMode = 'origin'; // 'origin' or 'dest'
+let elapsedTimer = null;
+let sessionHistory = [];   // [{request, case, result, timestamp, notes}]
+
+// -----------------------------------------------------------------------
+// Map setup
+// -----------------------------------------------------------------------
+
+function initMap() {
+  if (map) return;
+  map = L.map('map', { zoomControl: true });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    maxZoom: 18,
+  }).addTo(map);
+  map.setView([39.9, 116.4], 11);
+  map.on('click', onMapClick);
+}
+
+async function loadVerifyData() {
+  try {
+    const resp = await fetch('/verify_data.json');
+    if (!resp.ok) return;
+    verifyData = await resp.json();
+  } catch (e) {
+    console.warn('Could not load verify_data.json:', e);
+  }
+}
+
+function drawSystemBackground(systemName) {
+  if (!verifyData || !verifyData[systemName]) return;
+  if (bgLinesLayer) map.removeLayer(bgLinesLayer);
+  bgLinesLayer = L.layerGroup().addTo(map);
+
+  const sys = verifyData[systemName];
+  const idCoords = {};
+  sys.stations.forEach(s => { if (s.lat != null) idCoords[s.id] = [s.lat, s.lon]; });
+  const lineColors = {};
+  sys.lines.forEach(l => { lineColors[l.id] = l.color; });
+
+  sys.edges.forEach(e => {
+    const from = idCoords[e.from], to = idCoords[e.to];
+    if (from && to) {
+      L.polyline([from, to], { color: lineColors[e.line] || '#999', weight: 2, opacity: 0.25 }).addTo(bgLinesLayer);
+    }
+  });
+
+  sys.stations.forEach(s => {
+    if (s.lat != null) {
+      const lines = (s.lines || []).join(', ');
+      L.circleMarker([s.lat, s.lon], {
+        radius: 4, color: '#999', fillColor: '#ccc', fillOpacity: 0.6, weight: 1
+      })
+        .bindTooltip(`<b>${esc(s.name)}</b>${lines ? '<br><span style="color:#666;font-size:0.85em">' + esc(lines) + '</span>' : ''}`, { direction: 'top', offset: [0, -4] })
+        .addTo(bgLinesLayer);
+    }
+  });
+
+  // Fit to system bounds
+  const lats = sys.stations.filter(s => s.lat != null).map(s => s.lat);
+  const lons = sys.stations.filter(s => s.lon != null).map(s => s.lon);
+  if (lats.length) {
+    map.fitBounds([[Math.min(...lats), Math.min(...lons)], [Math.max(...lats), Math.max(...lons)]], { padding: [20, 20] });
+  }
+}
+
+function onMapClick(e) {
+  if (!verifyData) return;
+  const sys = document.getElementById('system-select').value;
+  const sysData = verifyData[sys];
+  if (!sysData) return;
+
+  // Find nearest station with coordinates
+  let bestDist = Infinity, bestStation = null;
+  for (const s of sysData.stations) {
+    if (s.lat == null) continue;
+    const dy = s.lat - e.latlng.lat;
+    const dx = s.lon - e.latlng.lng;
+    const d = dy * dy + dx * dx;
+    if (d < bestDist) { bestDist = d; bestStation = s; }
+  }
+  if (!bestStation) return;
+
+  // Find the station name from allStations
+  const found = allStations.find(st => st.id === bestStation.id);
+  if (!found) return;
+  const name = found.name;
+
+  const coord = [bestStation.lat, bestStation.lon];
+  if (mapClickMode === 'origin') {
+    setSelectValue('origin-select', name);
+    if (originMarker) map.removeLayer(originMarker);
+    originMarker = L.circleMarker(coord, { radius: 10, color: '#00aa44', fillColor: '#00cc55', fillOpacity: 1, weight: 3 })
+      .bindTooltip(`<b>Origin</b><br>${esc(name)}`, { permanent: true, direction: 'right', offset: [10, 0] })
+      .addTo(map);
+    mapClickMode = 'dest';
+    document.getElementById('map-label').textContent = `Origin: ${name} — click map to set destination`;
+  } else {
+    setSelectValue('dest-select', name);
+    if (destMarker) map.removeLayer(destMarker);
+    destMarker = L.circleMarker(coord, { radius: 10, color: '#cc0066', fillColor: '#ee0077', fillOpacity: 1, weight: 3 })
+      .bindTooltip(`<b>Destination</b><br>${esc(name)}`, { permanent: true, direction: 'right', offset: [10, 0] })
+      .addTo(map);
+    mapClickMode = 'origin';
+    document.getElementById('map-label').textContent = `${document.getElementById('origin-select').value} → ${name}`;
+  }
+}
+
+function setSelectValue(id, value) {
+  const sel = document.getElementById(id);
+  for (let i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === value || sel.options[i].text === value) {
+      sel.selectedIndex = i;
+      return;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------
+// Route visualization (ported from annotate.html)
+// -----------------------------------------------------------------------
+
+async function drawRoute(stopsData, system) {
+  if (!map) return;
+  if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+
+  const sys = verifyData?.[system];
+  if (!sys) return;
+
+  const idCoords = {};
+  sys.stations.forEach(s => { if (s.lat != null) idCoords[s.id] = [s.lat, s.lon]; });
+  const lineColors = {};
+  sys.lines.forEach(l => { lineColors[l.id] = l.color; });
+  const lineNames = {};
+  sys.lines.forEach(l => { lineNames[l.id] = l.name || `Line ${l.id}`; });
+
+  const stops = stopsData;
+  if (!stops || stops.length < 2) return;
+
+  const originId = stops[0].station_id;
+  const destId = stops[stops.length - 1].station_id;
+
+  routeLayer = L.layerGroup().addTo(map);
+
+  // Group into segments by line
+  const segments = [];
+  let curSeg = null;
+  stops.forEach(s => {
+    if (!curSeg || s.line !== curSeg.line) {
+      const transferStation = curSeg ? curSeg.stops[curSeg.stops.length - 1] : null;
+      curSeg = { line: s.line, stops: [] };
+      segments.push(curSeg);
+      if (transferStation && transferStation.is_transfer) {
+        curSeg.stops.push({ ...transferStation });
+      }
+    }
+    curSeg.stops.push(s);
+  });
+
+  const allRoutePoints = [];
+  segments.forEach(seg => {
+    const color = lineColors[seg.line] || '#FFD600';
+    const lineName = lineNames[seg.line] || seg.line;
+    const segPoints = seg.stops.map(s => idCoords[s.station_id]).filter(c => c);
+    if (segPoints.length >= 2) {
+      L.polyline(segPoints, { color: '#fff', weight: 10, opacity: 0.9 }).addTo(routeLayer);
+      L.polyline(segPoints, { color: color, weight: 6, opacity: 0.95 }).addTo(routeLayer);
+      const midIdx = Math.floor(segPoints.length / 2);
+      L.circleMarker(segPoints[midIdx], { radius: 0, opacity: 0, fillOpacity: 0 })
+        .bindTooltip(`<span style="color:${color};font-weight:700">${esc(lineName)}</span>`, {
+          permanent: true, direction: 'top', className: 'line-label', offset: [0, -8]
+        }).addTo(routeLayer);
+    }
+    seg.stops.forEach(s => {
+      const coord = idCoords[s.station_id];
+      if (coord && s.station_id !== originId && s.station_id !== destId && !s.is_transfer) {
+        L.circleMarker(coord, { radius: 4, color: '#fff', fillColor: color, fillOpacity: 1, weight: 2 })
+          .bindTooltip(s.station_name || s.station_id, { direction: 'top' })
+          .addTo(routeLayer);
+      }
+    });
+    allRoutePoints.push(...segPoints);
+  });
+
+  // Determine line info per key station
+  const stationLine = {};
+  segments.forEach((seg, si) => {
+    const lineName = lineNames[seg.line] || seg.line;
+    const first = seg.stops[0], last = seg.stops[seg.stops.length - 1];
+    if (si === 0) stationLine[first.station_id] = { info: `Board ${lineName}` };
+    if (si === segments.length - 1) stationLine[last.station_id] = { info: `Alight ${lineName}` };
+    if (si > 0) {
+      const prevLine = lineNames[segments[si - 1].line] || segments[si - 1].line;
+      stationLine[first.station_id] = { info: `${prevLine} → ${lineName}` };
+    }
+  });
+
+  const ttOpts = (dir) => ({ permanent: true, direction: dir, className: 'route-label', offset: [0, 0] });
+  const originCoord = idCoords[originId];
+  const destCoord = idCoords[destId];
+
+  if (originCoord) {
+    const lineInfo = stationLine[originId]?.info || '';
+    L.circleMarker(originCoord, { radius: 9, color: '#00aa44', fillColor: '#00cc55', fillOpacity: 1, weight: 3 })
+      .bindTooltip(`<b>Start</b> ${esc(stops[0]?.station_name || originId)}<br><span style="color:#666;font-size:0.9em">${esc(lineInfo)}</span>`, ttOpts('right'))
+      .addTo(routeLayer);
+  }
+
+  const seenTransfers = new Set();
+  stops.forEach(s => {
+    if (s.is_transfer && s.station_id !== originId && s.station_id !== destId && !seenTransfers.has(s.station_id)) {
+      seenTransfers.add(s.station_id);
+      const coord = idCoords[s.station_id];
+      if (coord) {
+        const lineInfo = stationLine[s.station_id]?.info || '';
+        L.circleMarker(coord, { radius: 7, color: '#ff8800', fillColor: '#ffaa33', fillOpacity: 1, weight: 3 })
+          .bindTooltip(`<b>Transfer</b> ${esc(s.station_name || s.station_id)}<br><span style="color:#666;font-size:0.9em">${esc(lineInfo)}</span>`, ttOpts('right'))
+          .addTo(routeLayer);
+      }
+    }
+  });
+
+  if (destCoord) {
+    const lineInfo = stationLine[destId]?.info || '';
+    L.circleMarker(destCoord, { radius: 9, color: '#cc0066', fillColor: '#ee0077', fillOpacity: 1, weight: 3 })
+      .bindTooltip(`<b>End</b> ${esc(stops[stops.length - 1]?.station_name || destId)}<br><span style="color:#666;font-size:0.9em">${esc(lineInfo)}</span>`, ttOpts('right'))
+      .addTo(routeLayer);
+  }
+
+  if (allRoutePoints.length >= 2) {
+    map.fitBounds(L.latLngBounds(allRoutePoints).pad(0.3));
+  }
+
+  const lineSeq = segments.map(s => lineNames[s.line] || s.line).join(' → ');
+  document.getElementById('map-label').textContent =
+    `${stops[0]?.station_name} → ${stops[stops.length - 1]?.station_name} · ${lineSeq}`;
+}
+
+// -----------------------------------------------------------------------
+// System / station loading
+// -----------------------------------------------------------------------
+
+async function loadSystems() {
+  try {
+    const resp = await fetch('/systems');
+    const systems = await resp.json();
+    const sel = document.getElementById('system-select');
+    sel.innerHTML = '';
+    for (const s of systems) {
+      const opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s.charAt(0).toUpperCase() + s.slice(1);
+      sel.appendChild(opt);
+    }
+    if (systems.length) onSystemChange(systems[0]);
+  } catch (e) {
+    console.error('Failed to load systems:', e);
+  }
+}
+
+async function onSystemChange(system) {
+  if (!system) return;
+  document.getElementById('system-select').value = system;
+  try {
+    const resp = await fetch(`/stations/${system}`);
+    const data = await resp.json();
+    allStations = data.stations || [];
+    allLines = data.lines || [];
+  } catch (e) {
+    console.error('Failed to load stations:', e);
+    allStations = [];
+    allLines = [];
+  }
+
+  // Populate both line dropdowns
+  for (const selId of ['origin-line', 'dest-line']) {
+    const lineSel = document.getElementById(selId);
+    lineSel.innerHTML = '<option value="">All lines</option>';
+    for (const l of allLines) {
+      const opt = document.createElement('option');
+      opt.value = l.id;
+      opt.textContent = l.name || l.id;
+      lineSel.appendChild(opt);
+    }
+  }
+
+  // Populate station dropdowns with all stations
+  populateStationDropdown('origin-select', allStations);
+  populateStationDropdown('dest-select', allStations);
+
+  // Also update the station dropdowns in disruption forms
+  updateDisruptionStationDropdowns();
+
+  // Draw system background on map
+  if (!map) initMap();
+  drawSystemBackground(system);
+  document.getElementById('map-label').textContent = `${system} — click to select origin/destination`;
+  mapClickMode = 'origin';
+}
+
+function onLineChange(which) {
+  // which = 'origin' or 'dest'
+  const lineSel = document.getElementById(which === 'origin' ? 'origin-line' : 'dest-line');
+  const staSel = which === 'origin' ? 'origin-select' : 'dest-select';
+  const line = lineSel.value;
+  let filtered;
+  if (!line) {
+    filtered = [...allStations];
+  } else {
+    const lineObj = allLines.find(l => l.id === line);
+    if (lineObj && lineObj.stations) {
+      filtered = allStations.filter(s => lineObj.stations.includes(s.id));
+    } else {
+      filtered = allStations.filter(s => s.lines && s.lines.includes(line));
+    }
+  }
+  populateStationDropdown(staSel, filtered);
+}
+
+function populateStationDropdown(id, stations) {
+  const sorted = [...stations].sort((a, b) => a.name.localeCompare(b.name));
+  {
+    const sel = document.getElementById(id);
+    const prev = sel.value;
+    sel.innerHTML = '';
+    for (const s of sorted) {
+      const opt = document.createElement('option');
+      opt.value = s.name;
+      opt.textContent = s.name;
+      sel.appendChild(opt);
+    }
+    if (prev && sel.querySelector(`option[value="${CSS.escape(prev)}"]`)) {
+      sel.value = prev;
+    }
+  }
+}
+
+function updateDisruptionStationDropdowns() {
+  const sorted = [...allStations].sort((a, b) => a.name.localeCompare(b.name));
+  document.querySelectorAll('.disruption-station-select').forEach(sel => {
+    const prev = sel.value;
+    sel.innerHTML = '<option value="">-- All stations --</option>';
+    for (const s of sorted) {
+      const opt = document.createElement('option');
+      opt.value = s.name;
+      opt.textContent = s.name;
+      sel.appendChild(opt);
+    }
+    if (prev) sel.value = prev;
+  });
+}
+
+// -----------------------------------------------------------------------
+// Time helpers
+// -----------------------------------------------------------------------
+
+function updateDayOfWeek() {
+  const val = document.getElementById('current-time').value;
+  if (!val) { document.getElementById('day-of-week').value = ''; return; }
+  const d = new Date(val);
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  document.getElementById('day-of-week').value = days[d.getDay()];
+}
+
+// -----------------------------------------------------------------------
+// Disruption management
+// -----------------------------------------------------------------------
+
+function addCondition(kind) {
+  const idx = disruptionCount++;
+  const sorted = [...allStations].sort((a, b) => a.name.localeCompare(b.name));
+  const stationOpts = ['<option value="">-- System-wide --</option>',
+    ...sorted.map(s => `<option value="${esc(s.name)}">${esc(s.name)}</option>`)
+  ].join('');
+
+  const card = document.createElement('div');
+  card.className = 'disruption-card';
+  card.id = `disruption-${idx}`;
+  card.dataset.kind = kind;
+
+  if (kind === 'freetext') {
+    card.style.background = '#f5f5ff';
+    card.style.borderColor = '#c0c0e0';
+    card.innerHTML = `
+      <button class="remove-btn" onclick="removeDisruption(${idx})">×</button>
+      <div style="font-weight:600;font-size:0.8em;color:#666;margin-bottom:6px">FREE TEXT CONDITION</div>
+      <div class="disruption-form-row full">
+        <textarea class="disruption-field" data-field="message" rows="2" style="width:100%;resize:vertical;padding:8px;border:1px solid #ccc;border-radius:5px;font-size:0.85em;font-family:inherit" placeholder="Type any condition, e.g.: Trains running 10 min late due to signl failure at Westlake. Or: Free rides today for all passengers!"></textarea>
+      </div>
+      <div class="disruption-form-row">
+        <select class="disruption-field" data-field="severity">
+          <option value="info">Info</option>
+          <option value="warning">Warning</option>
+          <option value="critical">Critical</option>
+          <option value="positive">Positive</option>
+        </select>
+        <select class="disruption-field disruption-station-select" data-field="station">${stationOpts}</select>
+      </div>
+    `;
+  } else if (kind === 'promotion') {
+    card.style.background = '#f0fff0';
+    card.style.borderColor = '#a0d0a0';
+    card.innerHTML = `
+      <button class="remove-btn" onclick="removeDisruption(${idx})">×</button>
+      <div style="font-weight:600;font-size:0.8em;color:#2a7;margin-bottom:6px">PROMOTION / BENEFIT</div>
+      <div class="disruption-form-row full">
+        <select class="disruption-field" data-field="type" style="font-size:0.85em">
+          <option value="free_ride">Free single trip (all lines, today only)</option>
+          <option value="fare_discount">50% fare discount (promotional)</option>
+          <option value="fare_cap">Weekend fare cap ($3.00 max)</option>
+          <option value="child_free">Children ride free (all ages, today)</option>
+          <option value="custom_promotion">Custom (describe below)</option>
+        </select>
+      </div>
+      <div class="disruption-form-row full">
+        <input type="text" class="disruption-field" data-field="message" placeholder="Details, e.g.: Weekend promotion — all fares capped at $3.00">
+      </div>
+      <div class="disruption-form-row">
+        <input type="datetime-local" class="disruption-field" data-field="valid_from" title="Valid from">
+        <input type="datetime-local" class="disruption-field" data-field="valid_until" title="Valid until">
+      </div>
+    `;
+  } else {
+    // disruption (default)
+    card.innerHTML = `
+      <button class="remove-btn" onclick="removeDisruption(${idx})">×</button>
+      <div style="font-weight:600;font-size:0.8em;color:#a55;margin-bottom:6px">DISRUPTION</div>
+      <div class="disruption-form-row">
+        <select class="disruption-field" data-field="type">
+          <option value="station_closure">Station Closure</option>
+          <option value="planned_maintenance">Planned Maintenance</option>
+          <option value="delay">Delay</option>
+          <option value="crowd_advisory">Crowd Advisory</option>
+          <option value="speed_restriction">Speed Restriction</option>
+        </select>
+        <select class="disruption-field" data-field="severity">
+          <option value="warning">Warning</option>
+          <option value="critical">Critical</option>
+          <option value="info">Info</option>
+        </select>
+      </div>
+      <div class="disruption-form-row">
+        <select class="disruption-field disruption-station-select" data-field="station">${stationOpts}</select>
+        <input type="text" class="disruption-field" data-field="alternative" placeholder="Alternative (optional)">
+      </div>
+      <div class="disruption-form-row full">
+        <input type="text" class="disruption-field" data-field="message" placeholder="e.g. Station closed due to flooding. Trains skip this station.">
+      </div>
+      <div class="disruption-form-row">
+        <input type="datetime-local" class="disruption-field" data-field="valid_from" title="Valid from">
+        <input type="datetime-local" class="disruption-field" data-field="valid_until" title="Valid until">
+      </div>
+    `;
+  }
+  document.getElementById('disruption-list').appendChild(card);
+}
+
+function removeDisruption(idx) {
+  const el = document.getElementById(`disruption-${idx}`);
+  if (el) el.remove();
+}
+
+function collectDisruptions() {
+  const disruptions = [];
+  document.querySelectorAll('.disruption-card').forEach(card => {
+    const d = {};
+    card.querySelectorAll('.disruption-field').forEach(el => {
+      const field = el.dataset.field;
+      if (el.value) d[field] = el.value;
+    });
+    disruptions.push(d);
+  });
+  return disruptions;
+}
+
+// -----------------------------------------------------------------------
+// Core: Plan Trip
+// -----------------------------------------------------------------------
+
+function buildSimulateRequest() {
+  const system = document.getElementById('system-select').value;
+  const origin = document.getElementById('origin-select').value;
+  const dest = document.getElementById('dest-select').value;
+  const adults = parseInt(document.getElementById('pax-adults').value) || 0;
+  const children = parseInt(document.getElementById('pax-children').value) || 0;
+  const seniors = parseInt(document.getElementById('pax-seniors').value) || 0;
+  const disabled = parseInt(document.getElementById('pax-disabled').value) || 0;
+  const currentTime = document.getElementById('current-time').value || '';
+  const dayOfWeek = document.getElementById('day-of-week').value || '';
+  const accessibility = document.getElementById('accessibility-toggle').checked;
+  const freetext = document.getElementById('freetext').value || '';
+  const disruptions = collectDisruptions();
+
+  return {
+    system, origin, destination: dest,
+    adults, children, seniors, disabled,
+    current_time: currentTime, day_of_week: dayOfWeek,
+    disruptions, freetext,
+    accessibility_mode: accessibility,
+  };
+}
+
+async function planTrip() {
+  const req = buildSimulateRequest();
+  if (!req.origin || !req.destination) {
+    alert('Please select both origin and destination stations.');
+    return;
+  }
+
+  // Reset UI
+  document.getElementById('response-panel').style.display = 'none';
+  document.getElementById('error-panel').style.display = 'none';
+  const btn = document.getElementById('plan-btn');
+  btn.disabled = true;
+  btn.textContent = 'Planning...';
+
+  // Start spinner + timer
+  const spinnerEl = document.getElementById('spinner');
+  spinnerEl.classList.add('active');
+  const spinnerText = document.getElementById('spinner-text');
+  let elapsed = 0;
+  elapsedTimer = setInterval(() => {
+    elapsed++;
+    spinnerText.textContent = `Waiting for LLM response... ${elapsed}s`;
+  }, 1000);
+
+  try {
+    const resp = await fetch('/simulate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(req),
+    });
+
+    clearInterval(elapsedTimer);
+    spinnerEl.classList.remove('active');
+
+    if (await window._handleSimulateAuth(resp)) return;
+
+    if (!resp.ok) {
+      const detail = await resp.text();
+      const errMsg = `HTTP ${resp.status}: ${detail}`;
+      addToHistory(req, { error: errMsg });
+      showError(errMsg);
+      return;
+    }
+
+    const result = await resp.json();
+    renderResponse(result, req);
+    addToHistory(req, result);
+
+  } catch (e) {
+    clearInterval(elapsedTimer);
+    spinnerEl.classList.remove('active');
+    const errMsg = `Network error: ${e.message}`;
+    addToHistory(req, { error: errMsg });
+    showError(errMsg);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Plan Trip';
+  }
+}
+
+function resetSimulator() {
+  // Clear response panels
+  document.getElementById('response-panel').style.display = 'none';
+  document.getElementById('error-panel').style.display = 'none';
+  // Clear form inputs
+  document.getElementById('origin-line').selectedIndex = 0;
+  document.getElementById('dest-line').selectedIndex = 0;
+  document.getElementById('origin-select').selectedIndex = 0;
+  document.getElementById('dest-select').selectedIndex = 0;
+  document.getElementById('pax-adults').value = 1;
+  document.getElementById('pax-children').value = 0;
+  document.getElementById('pax-seniors').value = 0;
+  document.getElementById('pax-disabled').value = 0;
+  document.getElementById('current-time').value = '';
+  document.getElementById('day-of-week').value = '';
+  document.getElementById('freetext').value = '';
+  document.getElementById('accessibility-toggle').checked = false;
+  // Clear disruptions
+  document.getElementById('disruption-list').innerHTML = '';
+  // Clear map markers and route layer
+  if (originMarker) { map.removeLayer(originMarker); originMarker = null; }
+  if (destMarker) { map.removeLayer(destMarker); destMarker = null; }
+  if (routeLayer) { map.removeLayer(routeLayer); routeLayer = null; }
+  const sys = document.getElementById('system-select').value;
+  if (sys) drawSystemBackground(sys);
+  // Reset map label
+  document.getElementById('map-label').textContent = sys ? `${sys} — click to select origin/destination` : 'Select origin & destination';
+  // Reset click state
+  mapClickMode = 'origin';
+}
+
+// -----------------------------------------------------------------------
+// Session history
+// -----------------------------------------------------------------------
+
+function addToHistory(req, result) {
+  const entry = {
+    id: result.case_id || `sim-${Date.now()}`,
+    system: req.system,
+    origin: req.origin,
+    destination: req.destination,
+    outcome: result.response?.outcome || result.error || 'unknown',
+    timestamp: new Date().toISOString().slice(0, 19),
+    request: req,
+    case: result.case || null,
+    result: result,
+    notes: '',
+  };
+  sessionHistory.push(entry);
+  persistHistory();
+  renderHistory();
+}
+
+function persistHistory() {
+  try { localStorage.setItem('metrollm_simulator_history', JSON.stringify(sessionHistory)); } catch {}
+}
+
+function loadHistory() {
+  try {
+    const raw = localStorage.getItem('metrollm_simulator_history');
+    if (raw) { sessionHistory = JSON.parse(raw); renderHistory(); }
+  } catch {}
+}
+
+function renderHistory() {
+  const panel = document.getElementById('history-panel');
+  const list = document.getElementById('history-list');
+  const count = document.getElementById('history-count');
+  if (!sessionHistory.length) { panel.style.display = 'none'; return; }
+  panel.style.display = 'block';
+  count.textContent = sessionHistory.length;
+  list.innerHTML = '';
+  sessionHistory.forEach((h, i) => {
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:8px;padding:6px 8px;border-bottom:1px solid #eee;font-size:0.82em;cursor:pointer';
+    row.onmouseenter = () => row.style.background = '#f0f4ff';
+    row.onmouseleave = () => row.style.background = '';
+    const outcomeColors = { route_and_fare_ready: '#4a9', advisory_only: '#f39c12', service_unavailable: '#e74c3c', request_declined: '#999', policy_answer_only: '#3498db' };
+    const color = outcomeColors[h.outcome] || '#999';
+    row.innerHTML = `
+      <span style="color:#aaa;width:20px">${i + 1}</span>
+      <span style="flex:1"><b>${esc(h.origin)}</b> → <b>${esc(h.destination)}</b></span>
+      <span style="background:${color};color:#fff;padding:1px 6px;border-radius:3px;font-size:0.85em">${esc(h.outcome)}</span>
+      <span style="color:#aaa;font-size:0.85em">${h.system}</span>
+      <input type="text" value="${esc(h.notes)}" placeholder="notes..." oninput="sessionHistory[${i}].notes=this.value;persistHistory()" onclick="event.stopPropagation()" style="width:120px;padding:2px 6px;border:1px solid #ddd;border-radius:3px;font-size:0.9em">
+    `;
+    row.onclick = () => reviewHistoryEntry(i);
+    list.appendChild(row);
+  });
+}
+
+function reviewHistoryEntry(i) {
+  const h = sessionHistory[i];
+  renderResponse(h.result, h.request);
+  // Draw route on map — same precedence as renderResponse.
+  const toolCalls = h.result.tool_calls_made || [];
+  const route = h.result.response?.ui_updates?.route;
+  const stopsData = pickRouteStops(route, toolCalls);
+  if (stopsData) drawRoute(stopsData, h.system);
+}
+
+async function copyLastCase(btn) {
+  if (!sessionHistory.length) {
+    alert('No case to copy — run one first.');
+    return;
+  }
+  const h = sessionHistory[sessionHistory.length - 1];
+  const line = JSON.stringify({
+    id: h.id,
+    system: h.system,
+    timestamp: h.timestamp,
+    notes: h.notes,
+    request: h.request,
+    case: h.case,
+    result: h.result,
+  }, null, 2);
+  try {
+    await navigator.clipboard.writeText(line);
+    const orig = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+  } catch (e) {
+    alert('Copy failed: ' + e.message);
+  }
+}
+
+function saveAllHistory() {
+  if (!sessionHistory.length) return;
+  const lines = sessionHistory.map(h => JSON.stringify({
+    id: h.id,
+    system: h.system,
+    timestamp: h.timestamp,
+    notes: h.notes,
+    request: h.request,
+    case: h.case,
+    result: h.result,
+  }));
+  const blob = new Blob([lines.join('\n') + '\n'], { type: 'application/jsonl' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `simulator_session_${new Date().toISOString().slice(0,10)}.jsonl`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function clearHistory() {
+  if (sessionHistory.length && !confirm(`Clear ${sessionHistory.length} entries?`)) return;
+  sessionHistory = [];
+  persistHistory();
+  renderHistory();
+}
+
+// -----------------------------------------------------------------------
+// Response rendering
+// -----------------------------------------------------------------------
+
+function renderResponse(result, req) {
+  if (result.error) {
+    showError(result.error);
+    return;
+  }
+
+  const panel = document.getElementById('response-panel');
+  panel.style.display = 'block';
+
+  // Extract structured response
+  const structured = result.response || {};
+  const uiUpdates = structured.ui_updates || {};
+  const route = uiUpdates.route || structured.route;
+  const fareQuote = uiUpdates.fare_quote || structured.fare_quote;
+  const advisoryBanners = uiUpdates.advisory_banners || structured.advisory_banners || [];
+  const assistantMsg = uiUpdates.assistant_message || structured.assistant_message || result.raw_content || '';
+  const outcome = structured.outcome || '';
+  const kioskAction = structured.kiosk_action || {};
+
+  // Outcome + action badges
+  const outcomeRow = document.getElementById('outcome-row');
+  outcomeRow.innerHTML = '';
+  if (outcome) {
+    const cls = {
+      'route_and_fare_ready': 'badge-outcome-route',
+      'advisory_only': 'badge-outcome-advisory',
+      'service_unavailable': 'badge-outcome-unavailable',
+      'request_declined': 'badge-outcome-declined',
+      'policy_answer_only': 'badge-outcome-policy',
+    }[outcome] || 'badge-outcome-unavailable';
+    outcomeRow.innerHTML += `<span class="badge ${cls}">${esc(outcome.replace(/_/g, ' '))}</span>`;
+  }
+  if (kioskAction.action) {
+    const cls = {
+      'prompt_purchase': 'badge-action-purchase',
+      'display_info': 'badge-action-display',
+      'block_purchase': 'badge-action-block',
+      'refer_to_staff': 'badge-action-refer',
+    }[kioskAction.action] || 'badge-action-display';
+    outcomeRow.innerHTML += `<span class="badge ${cls}">${esc(kioskAction.action.replace(/_/g, ' '))}</span>`;
+  }
+  if (kioskAction.reason_code && kioskAction.reason_code !== 'ok') {
+    outcomeRow.innerHTML += `<span class="badge" style="background:#f0f0f0;color:#666">${esc(kioskAction.reason_code.replace(/_/g, ' '))}</span>`;
+  }
+
+  // Timing
+  const timingRow = document.getElementById('timing-row');
+  timingRow.innerHTML = [
+    result.e2e_ms ? `<span>${Math.round(result.e2e_ms)}ms</span>` : '',
+    result.api_rounds ? `<span>${result.api_rounds} API round${result.api_rounds !== 1 ? 's' : ''}</span>` : '',
+    result.tool_calls_made?.length ? `<span>${result.tool_calls_made.length} tool call${result.tool_calls_made.length !== 1 ? 's' : ''}</span>` : '',
+    result.input_tokens ? `<span>${result.input_tokens}↑ / ${result.output_tokens}↓ tokens</span>` : '',
+  ].filter(Boolean).join('');
+
+  // Summary cards
+  const gridContainer = document.getElementById('summary-grid-container');
+  gridContainer.innerHTML = '';
+  const grid = document.createElement('div');
+  grid.className = 'summary-grid';
+
+  if (route) {
+    const card = document.createElement('div');
+    card.className = 'summary-card route';
+    const stops = Array.isArray(route.stops) ? route.stops.length : '?';
+    const transfers = route.transfers ?? '?';
+    const mins = route.estimated_minutes || '?';
+    const lines = Array.isArray(route.line_sequence) ? route.line_sequence.join(' → ') : (route.line_sequence || '');
+    card.innerHTML = `<h4>Route</h4>
+      <div class="big">${esc(route.origin || req.origin)} → ${esc(route.destination || req.destination)}</div>
+      <div class="detail">${stops} stops · ${transfers} transfer${transfers !== 1 ? 's' : ''} · ~${mins} min</div>
+      ${lines ? `<div class="detail">Line: ${esc(lines)}</div>` : ''}
+      ${route.distance_miles ? `<div class="detail">${route.distance_miles.toFixed(1)} miles</div>` : ''}`;
+    grid.appendChild(card);
+  }
+
+  if (fareQuote) {
+    const card = document.createElement('div');
+    card.className = 'summary-card fare';
+    const total = fareQuote.total ?? '?';
+    const currency = fareQuote.currency || '';
+    const psum = fareQuote.passenger_summary;
+    const paxParts = [];
+    if (psum) {
+      if (psum.adults) paxParts.push(`${psum.adults} adult${psum.adults !== 1 ? 's' : ''}`);
+      if (psum.children) paxParts.push(`${psum.children} child${psum.children !== 1 ? 'ren' : ''}`);
+      if (psum.seniors) paxParts.push(`${psum.seniors} senior${psum.seniors !== 1 ? 's' : ''}`);
+      if (psum.disabled) paxParts.push(`${psum.disabled} disabled`);
+    }
+    card.innerHTML = `<h4>Fare</h4>
+      <div class="big">${esc(String(total))} ${esc(currency)}</div>
+      ${paxParts.length ? `<div class="detail">${esc(paxParts.join(', '))}</div>` : ''}
+      ${fareQuote.line_items?.length ? `<div class="detail">${fareQuote.line_items.map(li => `${li.count}× ${esc(li.rider_type)} @ ${li.unit_fare}`).join(', ')}</div>` : ''}`;
+    grid.appendChild(card);
+  }
+
+  if (assistantMsg) {
+    const card = document.createElement('div');
+    card.className = 'summary-card message';
+    card.innerHTML = `<h4>Message to passenger</h4><div class="summary-msg">"${esc(assistantMsg)}"</div>`;
+    grid.appendChild(card);
+  }
+
+  if (grid.children.length) gridContainer.appendChild(grid);
+
+  // Advisory banners
+  const bannersEl = document.getElementById('advisory-banners');
+  bannersEl.innerHTML = '';
+  for (const banner of advisoryBanners) {
+    const b = typeof banner === 'string' ? JSON.parse(banner) : banner;
+    const el = document.createElement('div');
+    const sev = b.severity || 'info';
+    const colors = { warning: '#f39c12', critical: '#e74c3c', info: '#3498db', positive: '#27ae60' };
+    el.style.cssText = `border-left:4px solid ${colors[sev] || '#999'};background:#fefefe;padding:10px 12px;margin-bottom:10px;border-radius:4px;font-size:0.85em`;
+    el.innerHTML = `<div style="font-weight:600;font-size:0.8em;text-transform:uppercase;color:${colors[sev] || '#999'};margin-bottom:4px">Advisory (${esc(sev)})</div>`
+      + `<div><strong>${esc(b.title || '')}</strong></div>`
+      + `<div style="color:#555;margin-top:4px">${esc(b.body || '')}</div>`;
+    bannersEl.appendChild(el);
+  }
+
+  // Tool calls
+  const toolsEl = document.getElementById('tool-calls-detail');
+  toolsEl.innerHTML = '';
+  const toolCalls = result.tool_calls_made || [];
+  if (toolCalls.length) {
+    const header = document.createElement('div');
+    header.className = 'section-label';
+    header.textContent = `Tool Calls (${toolCalls.length})`;
+    toolsEl.appendChild(header);
+
+    toolCalls.forEach((tc, i) => {
+      const card = document.createElement('div');
+      card.className = 'tool-call';
+      const hdr = document.createElement('div');
+      hdr.className = 'tool-call-header';
+      hdr.innerHTML = `${i + 1}. <span class="tool-name">${esc(tc.name)}</span>`;
+      card.appendChild(hdr);
+
+      const sub = document.createElement('div');
+      sub.className = 'tool-call-sub';
+      if (tc.arguments && Object.keys(tc.arguments).length) {
+        sub.appendChild(makeLabel('Request'));
+        const d = document.createElement('div');
+        d.className = 'response';
+        d.style.maxHeight = '150px';
+        d.appendChild(prettyObj(tc.arguments));
+        sub.appendChild(d);
+      }
+      if (tc.error) {
+        sub.appendChild(makeLabel('Error'));
+        const e = document.createElement('div');
+        e.style.color = '#c33';
+        e.textContent = tc.error;
+        sub.appendChild(e);
+      } else if (tc.result && typeof tc.result === 'object') {
+        sub.appendChild(makeLabel('Response'));
+        const d = document.createElement('div');
+        d.className = 'response';
+        d.style.maxHeight = '150px';
+        d.appendChild(prettyObj(tc.result));
+        sub.appendChild(d);
+      }
+      card.appendChild(sub);
+      toolsEl.appendChild(card);
+    });
+  }
+
+  // Thinking trace
+  const thinkingEl = document.getElementById('thinking-trace');
+  const thinkingContent = document.getElementById('thinking-content');
+  if (result.reasoning_content) {
+    thinkingContent.textContent = result.reasoning_content;
+    thinkingEl.style.display = 'block';
+  } else {
+    thinkingEl.style.display = 'none';
+  }
+
+  // Draw route on map. Prefer the FINAL submitted route (post-closure rerouting),
+  // falling back to the LAST route_planner tool call (not the first — the first
+  // may be a pre-closure attempt that the model subsequently discarded).
+  const stopsData = pickRouteStops(route, toolCalls);
+  if (stopsData) {
+    drawRoute(stopsData, req.system);
+  } else {
+    document.getElementById('map-label').textContent = `${req.origin} → ${req.destination}`;
+  }
+}
+
+function pickRouteStops(route, toolCalls) {
+  // 1. Submitted state's route.stops is the model's authoritative answer
+  //    (used when stops are full objects — {station_id, station_name, line, ...}).
+  const isStopObject = s => s && typeof s === 'object' && (s.station_id || s.station_name);
+  if (route && Array.isArray(route.stops) && route.stops.length && route.stops.every(isStopObject)) {
+    return route.stops;
+  }
+  // 2. Fall back to the LAST route_planner call that produced stops, so a model
+  //    that re-plans with line_closures after the first attempt is rendered
+  //    with its closure-aware result rather than its first (pre-closure) try.
+  const rpCalls = (toolCalls || []).filter(tc => tc.name === 'route_planner' && tc.result?.stops);
+  if (rpCalls.length) return rpCalls[rpCalls.length - 1].result.stops;
+  return null;
+}
+
+function showError(msg) {
+  document.getElementById('response-panel').style.display = 'none';
+  const panel = document.getElementById('error-panel');
+  panel.style.display = 'block';
+  document.getElementById('error-content').textContent = msg;
+}
+
+// -----------------------------------------------------------------------
+// Rendering helpers
+// -----------------------------------------------------------------------
+
+function makeLabel(text) {
+  const el = document.createElement('div');
+  el.style.cssText = 'font-weight:600;color:#555;font-size:0.8em;text-transform:uppercase;letter-spacing:0.03em;margin:10px 0 4px';
+  el.textContent = text;
+  return el;
+}
+
+function prettyObj(obj, depth = 0) {
+  const container = document.createElement('div');
+  if (depth > 0) container.className = 'nested';
+  for (const [key, val] of Object.entries(obj)) {
+    const row = document.createElement('div');
+    row.style.marginBottom = '3px';
+    if (val && typeof val === 'object' && !Array.isArray(val)) {
+      row.innerHTML = `<span class="key">${esc(key)}:</span>`;
+      row.appendChild(prettyObj(val, depth + 1));
+    } else if (Array.isArray(val)) {
+      const display = val.map(v => typeof v === 'object' ? JSON.stringify(v) : String(v));
+      if (display.join(', ').length < 80) {
+        row.innerHTML = `<span class="key">${esc(key)}:</span> <span class="val">${esc(display.join(', '))}</span>`;
+      } else {
+        row.innerHTML = `<span class="key">${esc(key)}:</span>`;
+        const list = document.createElement('div');
+        list.className = 'nested';
+        for (const item of display) {
+          const li = document.createElement('div');
+          li.className = 'val';
+          li.textContent = typeof item === 'string' && item.startsWith('{') ? item : '- ' + item;
+          list.appendChild(li);
+        }
+        row.appendChild(list);
+      }
+    } else {
+      const sv = val === true ? '<span class="bool-val">true</span>'
+               : val === false ? '<span class="bool-val">false</span>'
+               : val === null ? '<span class="bool-val">null</span>'
+               : typeof val === 'number' ? `<span class="num-val">${val}</span>`
+               : `<span class="val">${esc(String(val))}</span>`;
+      row.innerHTML = `<span class="key">${esc(key)}:</span> ${sv}`;
+    }
+    container.appendChild(row);
+  }
+  return container;
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// -----------------------------------------------------------------------
+// Resizable column divider
+// -----------------------------------------------------------------------
+
+(function() {
+  const divider = document.getElementById('col-divider');
+  const left = document.querySelector('.col-left');
+  let dragging = false;
+
+  divider.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    dragging = true;
+    divider.classList.add('dragging');
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    const container = left.parentElement;
+    const rect = container.getBoundingClientRect();
+    const pct = ((e.clientX - rect.left) / rect.width) * 100;
+    const clamped = Math.max(25, Math.min(75, pct));
+    left.style.width = clamped + '%';
+    if (map) map.invalidateSize();
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    divider.classList.remove('dragging');
+    document.body.style.cursor = '';
+    document.body.style.userSelect = '';
+    if (map) map.invalidateSize();
+  });
+})();
+
+// -----------------------------------------------------------------------
+// Init
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+// Presets
+// -----------------------------------------------------------------------
+
+// Plain-English bucket names shown in filter pills + display order.
+const GROUPS = [
+  {key: 'all',           label: 'All'},
+  {key: 'trips',         label: 'Trips & fares'},
+  {key: 'disruptions',   label: 'Disruptions'},
+  {key: 'accessibility', label: 'Accessibility'},
+  {key: 'policy',        label: 'Policy & rules'},
+  {key: 'edge',          label: 'Edge cases'},
+];
+
+// Category letter → plain-language chip label (visible on each card).
+const CAT_LABEL = {
+  A: 'Routing', B: 'Fare', C: 'Disruption', D: 'Accessibility',
+  E: 'Cultural', F: 'Policy', H: 'Adversarial', I: 'Temporal', K: 'Compound',
+};
+
+const PRESETS = [
+  // --- Trips & fares ---
+  {id:"MARTA-A-003", label:"Simple route — Atlanta", description:"Buckhead → Airport on Red Line; basic end-to-end routing.",
+   category:"A", group:"trips", system:"marta", origin:"Buckhead", destination:"Airport",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BJM-A-005", label:"Cross-line transfer — Beijing", description:"Wangjing → Guomao with at least one line transfer.",
+   category:"A", group:"trips", system:"beijing", origin:"Wangjing", destination:"Guomao",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BART-A-004", label:"Distance-based fare — SF Bay", description:"Embarcadero → Fremont; fare scales with distance.",
+   category:"A", group:"trips", system:"bart", origin:"Embarcadero", destination:"Fremont",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"DOHA-B-003", label:"Family trip with children — Doha", description:"2 adults + 2 children to Katara; flat QR 2 per passenger.",
+   category:"B", group:"trips", system:"doha", origin:"Msheireb", destination:"Katara",
+   adults:2, children:2, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BART-B-005", label:"Senior discount, long distance — BART", description:"Senior rider Millbrae → Richmond with distance-based discount.",
+   category:"B", group:"trips", system:"bart", origin:"Millbrae", destination:"Richmond",
+   adults:1, children:0, seniors:1, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"CTA-B-003", label:"Mixed passengers — Chicago", description:"Adult + child + senior O'Hare → Midway; $5 O'Hare surcharge.",
+   category:"B", group:"trips", system:"cta", origin:"O'Hare", destination:"Midway",
+   adults:1, children:1, seniors:1, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BART-B-016", label:"Clipper card low balance", description:"Rider's Clipper balance ($1.20) is below fare. Kiosk quotes top-up.",
+   category:"B", group:"trips", system:"bart", origin:"Embarcadero", destination:"Balboa Park",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"My Clipper card only has $1.20 on it. Can I still make this trip?", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"TRTC-B-016", label:"EasyCard low balance — Taipei", description:"EasyCard NT$12 < fare. Kiosk must advise topping up before travel.",
+   category:"B", group:"trips", system:"taipei", origin:"Taipei Main Station", destination:"Taipei 101/World Trade Center",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"My EasyCard only has NT$12 on it. Can I still travel?", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BJM-A-021", label:"Line 10 circular direction — Beijing", description:"Short trip on loop Line 10 — must state clockwise/counterclockwise.",
+   category:"A", group:"trips", system:"beijing", origin:"Jingsong", destination:"Shilihe",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BJM-B-016", label:"Airport Express ticket window — Beijing", description:"Dongzhimen → Terminal 3: flat ¥25, separate ticket window required.",
+   category:"B", group:"trips", system:"beijing", origin:"Dongzhimen", destination:"3 Hao Hangzhanlou (Terminal 3)",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"I need to get to Terminal 3 at Capital Airport.", accessibility_mode:false, expected:"route_and_fare_ready"},
+
+  // --- Disruptions ---
+  {id:"MARTA-C-001", label:"Station closure, reroute needed", description:"Five Points closed for water-main break. Route via alt station.",
+   category:"C", group:"disruptions", system:"marta", origin:"Airport", destination:"Midtown",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"sc-five-points", line:null, segment:null, type:"station_closure", severity:"critical",
+     message:"Five Points station closed due to water main break. All lines skip this station. Use Garnett or Peachtree Center.",
+     alternative:"Use Garnett (southbound) or Peachtree Center (northbound)", eta_resolution:"4-6 hours"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"TRTC-C-006", label:"Planned weekend maintenance — Taipei", description:"Red Line Zhongshan↔Yuanshan closed all weekend for track work.",
+   category:"C", group:"disruptions", system:"taipei", origin:"Taipei Main Station", destination:"Tamsui",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"pm-zhongshan", type:"planned_maintenance", severity:"warning",
+     message:"Red Line: No service between Zhongshan and Yuanshan this weekend due to track replacement.",
+     valid_from:"2026-03-09T06:00:00", valid_until:"2026-03-10T06:00:00"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"DOHA-C-011", label:"Sandstorm advisory — Doha", description:"Sandstorm approaching. Trains running but service may degrade.",
+   category:"C", group:"disruptions", system:"doha", origin:"Hamad International Airport", destination:"Msheireb",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"sw-approaching", type:"sandstorm_warning", severity:"info",
+     message:"Sandstorm advisory: A sandstorm is approaching the Doha metro area. All Qatar Rail lines are currently operating normally but service may be reduced or suspended if conditions worsen.",
+     eta_resolution:"Monitoring situation"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"MARTA-C-016", label:"Future maintenance (not yet active)", description:"Announced-but-future maintenance. Trip proceeds normally.",
+   category:"C", group:"disruptions", system:"marta", origin:"Airport", destination:"Midtown",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"pm-future-red", type:"planned_maintenance", severity:"info",
+     message:"Red Line: Planned maintenance tonight 22:00–05:00 between Airport and Five Points.",
+     valid_from:"2026-03-09T22:00:00", valid_until:"2026-03-10T05:00:00"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"CTA-C-018", label:"Loop shutdown (multi-line) — Chicago", description:"Brown/Orange/Pink suspended in Loop. Must reroute via Red/Blue.",
+   category:"C", group:"disruptions", system:"cta", origin:"Kimball", destination:"Roosevelt",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"ls-loop-shutdown", type:"line_suspension", severity:"critical",
+     message:"Weekend track work at Tower 18: Brown, Orange, and Pink Lines are suspended within the Loop. Pink Line trains diverted to Racine (Blue Line) for downtown access. Red and Blue subway lines are operating normally — use them for Loop destinations.",
+     alternative:"Take Red or Blue subway for downtown; Pink Line connects to Blue via Racine"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"DOHA-C-016", label:"Gold Line bus bridge — Doha", description:"Gold Line out for maintenance. Buses substituting rail — refer to staff.",
+   category:"C", group:"disruptions", system:"doha", origin:"Al Aziziyah", destination:"Msheireb",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"ls-gold-maintenance", type:"line_suspension", severity:"critical", line:"gold",
+     message:"Gold Line service suspended today for scheduled annual maintenance. Qatar Rail is operating replacement buses along the Gold Line corridor. Regular Metro fares apply; board buses at station entrances.",
+     alternative:"Free replacement bus service between all Gold Line stations"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"TRTC-C-018", label:"Brown Line weather slowdown — Taipei", description:"Rain triggers 25% speed limit on Brown Line. Route with delay advisory.",
+   category:"C", group:"disruptions", system:"taipei", origin:"Neihu", destination:"Taipei Main Station",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"wsz-wenhu-rain", type:"weather_slow_zone", severity:"info", line:"wenhu",
+     message:"Wenhu (Brown) Line: Heavy rain has triggered the automatic safety mechanism. Trains are operating at reduced speed. Expect 10-15 minute delays on Brown Line segments.",
+     alternative:"Allow extra 15 minutes for Brown Line travel. Red or Blue Lines unaffected."}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BJM-C-022", label:"Guomao flow control — Beijing", description:"Peak-hour entry gates closed for capacity. Wait or use alt entrance.",
+   category:"C", group:"disruptions", system:"beijing", origin:"Guomao", destination:"Xizhimen",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-03-09T08:45:00", day_of_week:"Monday",
+   disruptions:[{id:"ser-guomao-peak", type:"station_entry_restriction", severity:"warning",
+     message:"Passenger flow control Level 3 active at Guomao station. Entry gates temporarily closed due to platform capacity. Expected wait 10-15 minutes. Alternate entry at Dawang Lu (Line 1) or Jintai Xizhao (Line 10) if urgent.",
+     alternative:"Wait ~15 minutes at Guomao, or walk to Dawang Lu / Jintai Xizhao"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"BART-F-016", label:"Yellow Line night shuttle — BART", description:"After 9 PM no BART SFO→Millbrae; must advise shuttle transfer.",
+   category:"F", group:"disruptions", system:"bart", origin:"Embarcadero", destination:"Millbrae",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-04-25T21:15:00", day_of_week:"Saturday",
+   disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready",
+   policy_change:{policy_id:"bart_yellow_night_shuttle",
+     text:"Effective through Summer 2026, after 9:00 PM NO BART train service runs between San Francisco Intl Airport (SFO) and Millbrae — all BART trains (Red and Yellow lines) terminate at SFO. Riders continuing to Millbrae must disembark at SFO, cross the platform, and board the dedicated SFO-to-Millbrae shuttle bus (same BART fare applies, no additional charge). Advise Millbrae-bound passengers of the platform transfer at SFO."}},
+  {id:"MARTA-F-016", label:"Green Line short-turn — Atlanta", description:"Green terminates at King Memorial; eastside trips via Blue Line.",
+   category:"F", group:"disruptions", system:"marta", origin:"Bankhead", destination:"Indian Creek",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-04-25T14:00:00", day_of_week:"Saturday",
+   disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready",
+   policy_change:{policy_id:"marta_green_kingmemorial_shortturn",
+     text:"Green Line trains terminate at King Memorial on weekdays and before 9:00 PM on weekends. For Edgewood/Candler Park, Inman Park/Reynoldstown, and further east (including Indian Creek), use Blue Line only."}},
+  {id:"CTA-F-016", label:"State/Lake permanent closure — Chicago", description:"State/Lake closed for renovation. Redirect to Washington/Wabash.",
+   category:"F", group:"disruptions", system:"cta", origin:"State/Lake", destination:"Roosevelt",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-04-25T14:00:00", day_of_week:"Saturday",
+   disruptions:[], freetext:"", accessibility_mode:false, expected:"advisory_only",
+   policy_change:{policy_id:"cta_state_lake_closed",
+     text:"State/Lake station is permanently closed for renovation. Passengers should use Washington/Wabash or Clark/Lake (both within a two-block walk) for Loop elevated line access."}},
+  {id:"BART-C-EQ", label:"Earthquake — service pause (BART)", description:"5.2M quake triggers Transbay tunnel inspection; trains holding at stations.",
+   category:"C", group:"disruptions", system:"bart", origin:"Embarcadero", destination:"Fremont",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"eq-service-pause", type:"earthquake_warning", severity:"warning",
+     message:"Earthquake service pause: All BART trains holding at stations for track and tunnel inspection following a 5.2 magnitude earthquake. Transbay Tube service suspended.",
+     alternative:"Use AC Transit bus bridges for cross-bay travel"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"CTA-C-PV", label:"Polar vortex — Chicago", description:"Extreme cold fails switches on elevated tracks. Red/Blue subway still runs.",
+   category:"C", group:"disruptions", system:"cta", origin:"Kimball", destination:"Midway",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"pv-elevated-suspended", type:"polar_vortex", severity:"warning",
+     message:"Polar vortex service reduction: Extreme cold has caused switch failures on elevated tracks. Brown, Green, Orange, Pink, and Purple lines are suspended until further notice.",
+     alternative:"Red and Blue lines remain in service. Use bus bridges for suspended lines."}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"CTA-C-CROWD", label:"Bulls game crowd — Chicago", description:"Heavy ridership at United Center stops. Advise alternative boarding.",
+   category:"C", group:"disruptions", system:"cta", origin:"Kimball", destination:"UIC-Halsted",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"ca-united-center", type:"crowd_advisory", severity:"info",
+     message:"Crowd advisory: Chicago Bulls game at United Center. Expect heavy ridership at UIC-Halsted (Blue Line) and Ashland (Green Line). Additional trains running.",
+     alternative:"Consider using Clinton or Jackson (Blue) to avoid congestion"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"TRTC-C-TY", label:"Typhoon — Brown Line suspended (Taipei)", description:"High winds force Wenhu (Brown) Line shutdown. Use Red/Blue alternatives.",
+   category:"C", group:"disruptions", system:"taipei", origin:"Neihu", destination:"Taipei Main Station",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"tw-brown-suspended", type:"typhoon_warning", severity:"warning",
+     message:"Typhoon update: Brown (Wenhu) Line suspended due to high winds affecting elevated guideway. All other lines operating normally.",
+     alternative:"Use Red Line via Daan or Blue Line via Zhongxiao Fuxing for Brown Line destinations"}],
+   freetext:"", accessibility_mode:false, expected:"advisory_only"},
+  {id:"BJM-C-SMOG", label:"Red alert smog — Beijing", description:"AQI > 300: outdoor/elevated lines reduced; underground unaffected.",
+   category:"C", group:"disruptions", system:"beijing", origin:"Xizhimen", destination:"Guomao",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"sw-outdoor-reduced", type:"smog_warning", severity:"warning",
+     message:"Severe smog service reduction: AQI exceeds 300 (hazardous). Outdoor/elevated sections operating at reduced frequency.",
+     alternative:"Underground lines remain in service. Use bus alternatives for suspended lines."}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"BJM-C-CROWD", label:"National Day crowd rush — Beijing", description:"Golden Week — heavy ridership at Tiananmen; flow control in effect.",
+   category:"C", group:"disruptions", system:"beijing", origin:"Wangjing", destination:"Wangfujing",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-10-02T10:00:00", day_of_week:"Friday",
+   disruptions:[{id:"ca-tiananmen", type:"crowd_advisory", severity:"info",
+     message:"Crowd advisory: National Day holiday at Tiananmen Square. Expect extremely heavy ridership at Tian'anmenxi and Tian'anmendong (Line 1) and Qianmen (Line 2/8). Flow control in effect. Additional security screening. Allow extra travel time.",
+     alternative:"Consider using Xidan or Wangfujing to avoid congestion"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"MARTA-C-HW", label:"Hurricane warning — Atlanta", description:"Green Line suspended (elevated track); other lines reduced.",
+   category:"C", group:"disruptions", system:"marta", origin:"Bankhead", destination:"Airport",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"hw-cat1", type:"hurricane_warning", severity:"warning",
+     message:"Hurricane warning: Green Line service suspended due to elevated track sections vulnerable to high winds. Red, Gold, and Blue lines operating normally.",
+     alternative:"Use Blue Line between Bankhead and Five Points; transfer at Five Points or Inman Park/Reynoldstown"}],
+   freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+
+  // --- Accessibility ---
+  {id:"MARTA-D-006", label:"Wheelchair access check — Atlanta", description:"Wheelchair rider Midtown → Airport; check station accessibility.",
+   category:"D", group:"accessibility", system:"marta", origin:"Midtown", destination:"Airport",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"I use a wheelchair", accessibility_mode:true, expected:"advisory_only"},
+  {id:"BJM-D-004", label:"Step-free access — Beijing", description:"Passenger needing step-free access Xizhimen → Dongzhimen.",
+   category:"D", group:"accessibility", system:"beijing", origin:"Xizhimen", destination:"Dongzhimen",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"I need step-free access throughout", accessibility_mode:true, expected:"advisory_only"},
+  {id:"MARTA-D-016", label:"Five Points elevator + wheelchair", description:"Only accessible transfer hub is disrupted. No reroute — refer to staff.",
+   category:"D", group:"accessibility", system:"marta", origin:"Airport", destination:"Indian Creek",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[{id:"fp-elevator-out", type:"elevator_outage", severity:"critical", station_id:"MARTA-FP",
+     message:"Five Points elevator is out of service. Wheelchair users cannot transfer between Red/Gold and Blue/Green lines. No accessible alternative available. Staff assistance required."}],
+   freetext:"I use a wheelchair and need step-free access with working elevators throughout my journey.", accessibility_mode:true, expected:"service_unavailable"},
+
+  // --- Policy & rules ---
+  {id:"BART-F-006", label:"Weekend fare promotion — BART", description:"System-wide half-price fares this weekend. Kiosk applies to quote.",
+   category:"F", group:"policy", system:"bart", origin:"Embarcadero", destination:"Daly City",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"DOHA-F-006", label:"Policy override with mixed passengers", description:"New free-ride policy applied to adults + child group.",
+   category:"F", group:"policy", system:"doha", origin:"Msheireb", destination:"Lusail QNB",
+   adults:2, children:1, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"MARTA-F-017", label:"Christmas Sunday schedule — Atlanta", description:"Dec 25 on Sunday schedule with 30-min headways instead of weekday 20-min.",
+   category:"F", group:"policy", system:"marta", origin:"Airport", destination:"Doraville",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-12-25T14:00:00", day_of_week:"Friday",
+   disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready",
+   policy_change:{policy_id:"marta_holiday_sunday_schedule",
+     text:"Today (December 25) MARTA operates on a Sunday schedule. Headways are extended to approximately 30 minutes. Plan accordingly."}},
+  {id:"BART-F-CLIPPER", label:"Clipper outage — BART", description:"Contactless payment system down; paper tickets only today.",
+   category:"F", group:"policy", system:"bart", origin:"Embarcadero", destination:"Daly City",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"",
+   disruptions:[], freetext:"", accessibility_mode:false, expected:"route_and_fare_ready",
+   policy_change:{policy_id:"bart_clipper_outage",
+     text:"Clipper payment network is temporarily unavailable system-wide. Tap-to-pay Clipper transactions will not go through. Passengers must purchase a paper ticket from the vending machines to enter and exit stations. Service is otherwise normal."}},
+  {id:"DOHA-E-006", label:"Family carriage — lone male redirect", description:"Lone male asks for family carriage; kiosk redirects to standard.",
+   category:"E", group:"policy", system:"doha", origin:"Msheireb", destination:"Hamad International Airport",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"I want to ride in the family carriage. I'm traveling alone.", accessibility_mode:false, expected:"route_and_fare_ready"},
+  {id:"DOHA-E-007", label:"Gold Class on Red Line — Doha", description:"Gold Travel Card holder asks about Gold Class carriage + fare.",
+   category:"E", group:"policy", system:"doha", origin:"Msheireb", destination:"Hamad International Airport",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"I have a Gold Travel Card. For my trip on the Red Line — can I use Gold Class, and what's the fare?", accessibility_mode:false, expected:"route_and_fare_ready"},
+
+  // --- Edge cases ---
+  {id:"MARTA-H-001", label:"Non-existent station request", description:"User asks for 'Atlantis Station' — kiosk must decline gracefully.",
+   category:"H", group:"edge", system:"marta", origin:"Atlantis Station", destination:"Five Points",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"request_declined"},
+  {id:"TRTC-H-005", label:"Out-of-scope question", description:"User asks kiosk to book a hotel — must refuse, offer only transit help.",
+   category:"H", group:"edge", system:"taipei", origin:"Taipei Main Station", destination:"Tamsui",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[],
+   freetext:"Can you also book me a hotel near Tamsui?", accessibility_mode:false, expected:"request_declined"},
+  {id:"BJM-H-010", label:"Impossible route request", description:"Destination 'Disneyland' doesn't exist on the Beijing Metro — refuse.",
+   category:"H", group:"edge", system:"beijing", origin:"Xizhimen", destination:"Disneyland",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"", day_of_week:"", disruptions:[], freetext:"", accessibility_mode:false, expected:"request_declined"},
+  {id:"MARTA-I-004", label:"Before opening (15-min wait)", description:"04:45 request — system opens at 05:00. Advise wait.",
+   category:"I", group:"edge", system:"marta", origin:"Airport", destination:"Five Points",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-03-14T04:45:00", day_of_week:"Monday",
+   disruptions:[], freetext:"Can I get to Five Points now?", accessibility_mode:false, expected:"service_unavailable"},
+  {id:"DOHA-I-003", label:"Friday prayer hours — Doha", description:"Friday 10 AM — metro opens later due to prayer schedule.",
+   category:"I", group:"edge", system:"doha", origin:"Msheireb", destination:"Lusail QNB",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-03-13T10:00:00", day_of_week:"Friday",
+   disruptions:[], freetext:"I need to get to Lusail QNB this morning", accessibility_mode:false, expected:"service_unavailable"},
+  {id:"BART-I-002", label:"After midnight — BART", description:"00:30 Thursday — BART closed. Suggest first train at 05:00.",
+   category:"I", group:"edge", system:"bart", origin:"Embarcadero", destination:"Fremont",
+   adults:1, children:0, seniors:0, disabled:0, current_time:"2026-03-12T00:30:00", day_of_week:"Thursday",
+   disruptions:[], freetext:"Is BART still running?", accessibility_mode:false, expected:"service_unavailable"},
+  {id:"MARTA-K-005", label:"Everything at once — closure + night + wheelchair", description:"Station closure + 22:00 + wheelchair + mixed passengers all together.",
+   category:"K", group:"edge", system:"marta", origin:"Buckhead", destination:"Airport",
+   adults:2, children:1, seniors:0, disabled:1, current_time:"2026-03-09T22:00:00", day_of_week:"Monday",
+   disruptions:[{id:"sc-five-points", type:"station_closure", severity:"critical",
+     message:"Five Points station closed due to water main break. All lines skip this station."}],
+   freetext:"One of us uses a wheelchair", accessibility_mode:true, expected:"route_and_fare_ready"},
+  {id:"BJM-K-005", label:"Compound stress — Beijing", description:"Night + closure + elderly + accessibility combined.",
+   category:"K", group:"edge", system:"beijing", origin:"Wangjing", destination:"Beijing South Railway Station",
+   adults:2, children:0, seniors:1, disabled:0, current_time:"2026-03-09T22:00:00", day_of_week:"Monday",
+   disruptions:[{id:"sc-guomao", type:"station_closure", severity:"critical",
+     message:"Guomao station closed due to emergency maintenance. Line 1 and Line 10 trains skip this station."}],
+   freetext:"My elderly mother needs elevator access", accessibility_mode:true, expected:"route_and_fare_ready"},
+  {id:"CTA-K-003", label:"Multi-failure — Chicago", description:"Closure + small children + accessibility + night in one case.",
+   category:"K", group:"edge", system:"cta", origin:"O'Hare", destination:"Midway",
+   adults:1, children:2, seniors:0, disabled:0, current_time:"2026-03-09T22:00:00", day_of_week:"Monday",
+   disruptions:[{id:"sc-jackson", type:"station_closure", severity:"critical",
+     message:"Jackson station closed. Blue and Red Line trains skip this station."}],
+   freetext:"Traveling with small children, need elevator", accessibility_mode:true, expected:"route_and_fare_ready"},
+];
+
+let activeGroup = 'all';
+let activeSystem = 'all';
+
+const SYSTEM_LABELS = {marta:'MARTA', bart:'BART', cta:'CTA', doha:'Doha', taipei:'Taipei', beijing:'Beijing'};
+
+function renderPresets() {
+  const filtersEl = document.getElementById('preset-filters');
+  filtersEl.innerHTML = '';
+
+  // Presets matching the system filter (counts below reflect current system).
+  const scoped = PRESETS.filter(p => activeSystem === 'all' || p.system === activeSystem);
+
+  for (const g of GROUPS) {
+    const n = g.key === 'all' ? scoped.length : scoped.filter(p => p.group === g.key).length;
+    if (n === 0 && g.key !== 'all') continue;
+    const btn = document.createElement('button');
+    btn.className = 'preset-filter' + (activeGroup === g.key ? ' active' : '');
+    btn.innerHTML = `${esc(g.label)} <span class="count">${n}</span>`;
+    btn.onclick = () => { activeGroup = g.key; renderPresets(); };
+    filtersEl.appendChild(btn);
+  }
+
+  // System dropdown — built from systems actually present in PRESETS.
+  const select = document.createElement('select');
+  select.className = 'preset-system-select';
+  select.id = 'preset-system-filter';
+  const systems = ['all', ...Array.from(new Set(PRESETS.map(p => p.system))).sort()];
+  for (const sys of systems) {
+    const opt = document.createElement('option');
+    opt.value = sys;
+    opt.textContent = sys === 'all' ? 'All systems' : (SYSTEM_LABELS[sys] || sys);
+    if (sys === activeSystem) opt.selected = true;
+    select.appendChild(opt);
+  }
+  select.onchange = (e) => { activeSystem = e.target.value; renderPresets(); };
+  filtersEl.appendChild(select);
+
+  // Cards
+  const grid = document.getElementById('preset-grid');
+  grid.innerHTML = '';
+  const visible = scoped.filter(p => activeGroup === 'all' || p.group === activeGroup);
+  if (visible.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'preset-empty';
+    empty.textContent = 'No scenarios match these filters.';
+    grid.appendChild(empty);
+    return;
+  }
+  for (const p of visible) {
+    const card = document.createElement('div');
+    card.className = 'preset-card';
+    card.onclick = () => runPreset(p);
+    const catLabel = CAT_LABEL[p.category] || p.category;
+    card.innerHTML = `
+      <div class="preset-card-header">
+        <span class="preset-system-badge">${esc(p.system)}</span>
+        <span class="preset-cat-chip cat-${p.category}">${esc(catLabel)}</span>
+      </div>
+      <div class="preset-card-title">${esc(p.label)}</div>
+      <div class="preset-card-desc">${esc(p.description || '')}</div>
+    `;
+    grid.appendChild(card);
+  }
+}
+
+async function runPreset(p) {
+  // Build request from preset
+  const req = {
+    system: p.system,
+    origin: p.origin,
+    destination: p.destination,
+    adults: p.adults,
+    children: p.children,
+    seniors: p.seniors,
+    disabled: p.disabled,
+    current_time: p.current_time,
+    day_of_week: p.day_of_week,
+    disruptions: p.disruptions,
+    freetext: p.freetext,
+    accessibility_mode: p.accessibility_mode,
+  };
+  if (p.policy_change) req.policy_change = p.policy_change;
+
+  // Load the system map if different
+  const sysSel = document.getElementById('system-select');
+  if (sysSel.value !== p.system) {
+    sysSel.value = p.system;
+    await onSystemChange(p.system);
+  }
+
+  // Show spinner
+  document.getElementById('response-panel').style.display = 'none';
+  document.getElementById('error-panel').style.display = 'none';
+  const spinnerEl = document.getElementById('spinner');
+  spinnerEl.classList.add('active');
+  const startTime = Date.now();
+  const timerEl = document.getElementById('spinner-text');
+  clearInterval(elapsedTimer);
+  elapsedTimer = setInterval(() => {
+    timerEl.textContent = `Running preset: ${p.label}... (${((Date.now() - startTime)/1000).toFixed(0)}s)`;
+  }, 500);
+
+  try {
+    const resp = await fetch('/simulate', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(req),
+    });
+    clearInterval(elapsedTimer);
+    spinnerEl.classList.remove('active');
+
+    if (await window._handleSimulateAuth(resp)) return;
+
+    if (!resp.ok) {
+      showError(`HTTP ${resp.status}: ${await resp.text()}`);
+      return;
+    }
+    const result = await resp.json();
+    renderResponse(result, req);
+    addToHistory(req, result);
+  } catch (e) {
+    clearInterval(elapsedTimer);
+    spinnerEl.classList.remove('active');
+    showError(`Network error: ${e.message}`);
+  }
+}
+
+function showMode(mode) {
+  const preset = document.getElementById('preset-panel');
+  const setup = document.getElementById('setup-card');
+  const btnQ = document.getElementById('mode-quick');
+  const btnA = document.getElementById('mode-advanced');
+  if (mode === 'quick') {
+    preset.style.display = '';
+    setup.style.display = 'none';
+    btnQ.style.background = '#3498db'; btnQ.style.color = '#fff';
+    btnA.style.background = 'white'; btnA.style.color = '#4a9';
+  } else {
+    preset.style.display = 'none';
+    setup.style.display = '';
+    btnQ.style.background = 'white'; btnQ.style.color = '#3498db';
+    btnA.style.background = '#4a9'; btnA.style.color = '#fff';
+  }
+}
+
+// -----------------------------------------------------------------------
+// Init
+// -----------------------------------------------------------------------
+
+initMap();
+loadVerifyData().then(() => {});
+loadSystems();
+loadHistory();
+renderPresets();
+</script>
+</body>
+</html>

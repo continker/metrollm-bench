@@ -7,7 +7,7 @@ It is a 955-case benchmark across six metro systems. It asks whether a language 
 [![Demo](https://img.shields.io/badge/Demo-Live-FF4B4B?logo=huggingface&logoColor=white)](https://huggingface.co/spaces/remcohendriks/metrollm)
 [![Models](https://img.shields.io/badge/Models-continker-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/continker)
 [![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/research)
-[![Paper](https://img.shields.io/badge/Paper-under%20review-B31B1B)](#citation)
+[![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B)](paper.pdf)
 [![License](https://img.shields.io/badge/License-Apache%202.0-3DA639?logo=apache&logoColor=white)](LICENSE)
 
 This is the case for sovereignty. The policy lives in prose the operator writes. The model lives in a box the operator owns. Neither has to reach the cloud. For public infrastructure that cannot send rider data to someone else's servers, a kiosk that needs no network is not a limitation, it is the point.
@@ -58,7 +58,7 @@ Prefer one command? Ollama also serves these. Run `ollama run hf.co/continker/Qw
 
 ### 3. Run the benchmark yourself
 
-The same commands run any model through the full suite. Point `--llm-url` at any OpenAI-compatible endpoint, whether a local llama-server or a hosted API like OpenAI, Azure, or Mistral (see [`docs/usage.md`](docs/usage.md)). Drop `--case-ids` to run all 156 MARTA cases. Then pick a scoring tier.
+For the full paper-reproduction path (partition, teacher traces, PEFT training, statistics, Mac measurements), see [`REPRODUCING.md`](REPRODUCING.md). The same commands run any model through the full suite. Point `--llm-url` at any OpenAI-compatible endpoint, whether a local llama-server or a hosted API like OpenAI, Azure, or Mistral (see [`docs/usage.md`](docs/usage.md)). Drop `--case-ids` to run all 156 MARTA cases. Then pick a scoring tier.
 
 ```bash
 # Tier-1 only, deterministic, no API key
@@ -70,7 +70,7 @@ uv run python -m harness.scorer --system marta \
   --results results/run.json --output results/scored.json
 ```
 
-Tier-1 is the key-free signal that carries the comparative load, covering route, fare, and tool correctness. Tier-2 adds eight semantic components scored by an LLM judge. They need an `ANTHROPIC_API_KEY` (see [`.env.example`](.env.example)), and they are the part most people can skip.
+Tier-1 is the key-free signal that carries the comparative load, covering route, fare, and tool correctness. Tier-2 adds eight semantic components, six scored by an LLM judge and two programmatically. The judged six need an `ANTHROPIC_API_KEY` (see [`.env.example`](.env.example)), and they are the part most people can skip.
 
 ```bash
 # Regenerate a system's cases from ground truth
@@ -102,15 +102,15 @@ The model works through a mock tool server. It can plan routes, calculate fares,
 Twenty-two components split into two tiers.
 
 - **Tier 1 (14 components, deterministic)**: route correctness, fare arithmetic and breakdown, tool-call correctness, hallucination resistance, outcome and purchase-gate correctness, disruption detection, advisory issuance, context tracking, re-planning efficiency, and a cultural-accuracy keyword check. This tier is clean enough to use as a fine-tuning reward signal.
-- **Tier 2 (8 components, semantic)**: framebook conformance, advisory content, policy acknowledgement, temporal accuracy, safety-response quality, data fabrication, accessibility accuracy, scope adherence. Scored by a language model judge (Claude Haiku).
+- **Tier 2 (8 components, semantic)**: framebook conformance, advisory content, policy acknowledgement, temporal accuracy, safety-response quality, data fabrication, accessibility accuracy, scope adherence. Six are scored by a language model judge (Claude Haiku), with temporal accuracy a structural+judge hybrid; framebook conformance and accessibility accuracy are scored programmatically.
 
-The composite combines both tiers. The judge was calibrated against a 100-case human study. It reaches 82% exact agreement and 97% within one point, with a Cohen's κ of 0.53 (moderate on the Landis and Koch scale). The high raw agreement next to a moderate κ is the imbalanced-class paradox, since most rubric cases score 2/2. Comparative claims here lean on the deterministic Tier-1 and composite signals, not on Tier-2 distinctions alone.
+The composite combines both tiers. The deployed scoring stack was calibrated against a 100-case human study. It reaches 82% exact agreement and 97% within one point, with a quadratic-weighted Cohen's κ_w of 0.53 (moderate on the Landis and Koch scale). The high raw agreement next to a moderate κ is the imbalanced-class paradox, since most rubric cases score 2/2. Comparative claims here lean on the deterministic Tier-1 and composite signals, not on Tier-2 distinctions alone.
 
 ## Headline results
 
 A stratified 75/25 case-level partition (seed=42) governs the fine-tuning evaluation. 717 cases generate training data, and 238 are strictly held out for reporting. The split spec ships in [`data/splits/`](data/splits/).
 
-On the 238-case held-out partition, six models cluster within 1.5 composite points, from 89.1 to 90.6. They are Qwen 27B base (90.60), GPT-5.4 full at maximum reasoning effort (90.45), Qwen 35B-A3B base (89.90), and the 27B, 4B, and 9B PEFT students (89.72, 89.12, 88.85). A 4B distilled student in 2.6 GB of Q4_K_M lands within 0.05 Tier-1 points of GPT-5.4 full at maximum effort, and it beats that model at standard effort. A 2.6 GB model is small enough to run in the kiosk and own outright, which is what makes the offline, sovereign deployment viable. A rule-based deterministic baseline reaches 84.6 Tier-1. The language model's advantage concentrates in temporal reasoning, policy adaptation, and disruption-advisory composition.
+On the 238-case held-out partition there is no clear break among the leading models: the top eleven rows span 3.35 composite points, with no adjacent gap above 0.65. The top six are Qwen 27B base (90.60), GPT-5.4 full at maximum reasoning effort (90.45), Qwen 35B-A3B base (89.90), and the 27B, 4B, and 9B PEFT students (89.72, 89.12, 88.85); the GPT model is the only proprietary entry among them. A 4B distilled student in 2.6 GB of Q4_K_M lands within 0.05 Tier-1 points of GPT-5.4 full at maximum effort, and it beats that model at standard effort. A 2.6 GB model is small enough to run in the kiosk and own outright, which is what makes the offline, sovereign deployment viable. A rule-based deterministic baseline reaches 84.6 Tier-1. The language model's advantage concentrates in temporal reasoning, policy adaptation, and disruption-advisory composition.
 
 The PEFT-versus-base delta decays monotonically with base capability and turns negative at 27B (held-out Tier-1, mean of two training seeds):
 
@@ -153,14 +153,18 @@ The held-out partition is fixed in `data/splits/v23_holdout75_seed42.json`. Trai
 
 ## Citation
 
-A paper describing the benchmark is under review. This section will be updated with the preprint citation once it is available. For now, cite the repository.
+The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1, August 2026). Immutable versions are tagged (`paper-v1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
 
 ```bibtex
-@misc{hendriks2026metrollm,
-  title  = {MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes},
-  author = {Hendriks, Remco},
-  year   = {2026},
-  note   = {https://github.com/continker/metrollm-bench}
+@techreport{hendriks2026metrollm,
+  title       = {MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes},
+  author      = {Hendriks, Remco},
+  institution = {Continker},
+  type        = {Technical report},
+  number      = {v1},
+  year        = {2026},
+  month       = {8},
+  url         = {https://github.com/continker/metrollm-bench/blob/main/paper.pdf}
 }
 ```
 

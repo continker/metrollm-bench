@@ -8,6 +8,7 @@ It is a 955-case benchmark across six metro systems. It asks whether a language 
 [![Models](https://img.shields.io/badge/Models-continker-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/continker)
 [![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/research)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B)](paper.pdf)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21893944.svg)](https://doi.org/10.5281/zenodo.21893944)
 [![License](https://img.shields.io/badge/License-Apache%202.0-3DA639?logo=apache&logoColor=white)](LICENSE)
 
 This is the case for sovereignty. The policy lives in prose the operator writes. The model lives in a box the operator owns. Neither has to reach the cloud. For public infrastructure that cannot send rider data to someone else's servers, a kiosk that needs no network is not a limitation, it is the point.
@@ -153,7 +154,7 @@ The held-out partition is fixed in `data/splits/v23_holdout75_seed42.json`. Trai
 
 ## Citation
 
-The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1, August 2026). Immutable versions are tagged (`paper-v1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
+The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1, August 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
 
 ```bibtex
 @techreport{hendriks2026metrollm,
@@ -164,6 +165,7 @@ The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical r
   number      = {v1},
   year        = {2026},
   month       = {8},
+  doi         = {10.5281/zenodo.21893944},
   url         = {https://github.com/continker/metrollm-bench/blob/main/paper.pdf}
 }
 ```

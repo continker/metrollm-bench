@@ -6,7 +6,7 @@ It is a 955-case benchmark across six metro systems. It asks whether a language 
 
 [![Demo](https://img.shields.io/badge/Demo-Live-FF4B4B?logo=huggingface&logoColor=white)](https://huggingface.co/spaces/remcohendriks/metrollm)
 [![Models](https://img.shields.io/badge/Models-continker-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/continker)
-[![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/research)
+[![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/metrollm-bench)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B)](paper.pdf)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21893944.svg)](https://doi.org/10.5281/zenodo.21893944)
 [![License](https://img.shields.io/badge/License-Apache%202.0-3DA639?logo=apache&logoColor=white)](LICENSE)

@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use MetroLLM-Bench or the fine-tuned students, please cite the technical report (see preferred-citation)."
+type: software
+title: "MetroLLM-Bench"
+abstract: "Benchmark evaluating language models as prompt-driven transit kiosk runtimes: 955 cases across six metro systems, a 22-component two-tier scorer, and PEFT-distilled Qwen 3.5 students."
+authors:
+  - family-names: Hendriks
+    given-names: Remco
+    affiliation: Continker
+    email: remco.hendriks@continker.ai
+license: Apache-2.0
+repository-code: "https://github.com/continker/metrollm-bench"
+url: "https://github.com/continker/metrollm-bench"
+version: "paper-v1.1"
+date-released: "2026-09-09"
+keywords:
+  - LLM benchmark
+  - tool calling
+  - transit
+  - PEFT
+  - QLoRA
+  - small language models
+  - edge deployment
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21893944
+    description: "Concept DOI of the technical report; resolves to the latest version."
+preferred-citation:
+  type: report
+  title: "MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes"
+  authors:
+    - family-names: Hendriks
+      given-names: Remco
+      affiliation: Continker
+  institution:
+    name: Continker
+  year: 2026
+  month: 9
+  version: "1.1"
+  doi: 10.5281/zenodo.21893944
+  url: "https://github.com/continker/metrollm-bench/blob/main/paper.pdf"
+  notes: "Technical report, v1.1, September 2026."

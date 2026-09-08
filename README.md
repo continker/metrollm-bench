@@ -111,16 +111,16 @@ The composite combines both tiers. The deployed scoring stack was calibrated aga
 
 A stratified 75/25 case-level partition (seed=42) governs the fine-tuning evaluation. 717 cases generate training data, and 238 are strictly held out for reporting. The split spec ships in [`data/splits/`](data/splits/).
 
-On the 238-case held-out partition there is no clear break among the leading models: the top eleven rows span 3.35 composite points, with no adjacent gap above 0.65. The top six are Qwen 27B base (90.60), GPT-5.4 full at maximum reasoning effort (90.45), Qwen 35B-A3B base (89.90), and the 27B, 4B, and 9B PEFT students (89.72, 89.12, 88.85); the GPT model is the only proprietary entry among them. A 4B distilled student in 2.6 GB of Q4_K_M lands within 0.05 Tier-1 points of GPT-5.4 full at maximum effort, and it beats that model at standard effort. A 2.6 GB model is small enough to run in the kiosk and own outright, which is what makes the offline, sovereign deployment viable. A rule-based deterministic baseline reaches 84.6 Tier-1. The language model's advantage concentrates in temporal reasoning, policy adaptation, and disruption-advisory composition.
+On the 238-case held-out partition there is no clear break among the leading models: the top eleven rows span 3.18 composite points, with no adjacent gap above 0.68. The top six are Muse Glimmer 30B (92.03), Qwen3.8-27B (91.83), Qwen3.6-27B (91.28), Qwen3.5-27B base (90.60), GPT-5.6 luna at medium reasoning effort (90.57), and GPT-5.4 full at maximum effort (90.45); the two OpenAI rows are the only proprietary entries among them. A 4B distilled student in 2.6 GB of Q4_K_M scores 91.32 on Tier 1, above both GPT-5.6 tiers (90.63 for luna at medium effort, 90.00 for sol at maximum effort) and within 0.05 points of GPT-5.4 full at maximum effort, which it beats at medium effort. A 2.6 GB model is small enough to run in the kiosk and own outright, which is what makes the offline, sovereign deployment viable. A rule-based deterministic baseline reaches 84.6 Tier-1. The language model's advantage concentrates in temporal reasoning, policy adaptation, and disruption-advisory composition.
 
-The PEFT-versus-base delta decays monotonically with base capability and turns negative at 27B (held-out Tier-1, mean of two training seeds):
+The PEFT-versus-base delta decays monotonically with base capability and turns negative at 27B (held-out Tier-1, mean over training seeds: three at 2B, two otherwise):
 
-| Size | Base | seed=42 | seed=43 | Mean | Δ vs base | seed spread | GGUF |
-|------|-----:|--------:|--------:|-----:|----------:|------------:|-----:|
-| 2B  | 74.17 | 76.80 | 82.07 | 79.43 | **+5.26** | ±2.63 | 1.2 GB |
-| 4B  | 89.32 | 91.82 | 90.83 | 91.32 | **+2.00** | ±0.49 | 2.6 GB |
-| 9B  | 89.38 | 90.53 | 91.53 | 91.03 | **+1.65** | ±0.50 | 5.3 GB |
-| 27B | 92.32 | 91.93 | 90.88 | 91.41 | **−0.91** | ±0.53 | 16 GB |
+| Size | Base | seed=42 | seed=43 | seed=44 | Mean | Δ vs base | seed spread | GGUF |
+|------|-----:|--------:|--------:|--------:|-----:|----------:|------------:|-----:|
+| 2B  | 74.17 | 76.80 | 82.07 | 84.74 | 81.20 | **+7.03** | ±3.97 | 1.2 GB |
+| 4B  | 89.32 | 91.82 | 90.83 | — | 91.32 | **+2.00** | ±0.49 | 2.6 GB |
+| 9B  | 89.38 | 90.53 | 91.53 | — | 91.03 | **+1.65** | ±0.50 | 5.3 GB |
+| 27B | 92.32 | 91.93 | 90.88 | — | 91.41 | **−0.91** | ±0.53 | 16 GB |
 
 At n=238 the paired-bootstrap CIs include zero. The full 955-case matrix has the power to certify the 4B gain (+1.72, CI [+0.72, +2.74]) and the 27B regression (−1.09, CI [−1.82, −0.38]). The reading is that base competence and task ceiling leave room for an adapter to help at small scale, and that room closes as the base model grows.
 
@@ -154,7 +154,7 @@ The held-out partition is fixed in `data/splits/v23_holdout75_seed42.json`. Trai
 
 ## Citation
 
-The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1, August 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
+The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1.1, September 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`, `paper-v1.1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
 
 ```bibtex
 @techreport{hendriks2026metrollm,
@@ -162,9 +162,9 @@ The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical r
   author      = {Hendriks, Remco},
   institution = {Continker},
   type        = {Technical report},
-  number      = {v1},
+  number      = {v1.1},
   year        = {2026},
-  month       = {8},
+  month       = {9},
   doi         = {10.5281/zenodo.21893944},
   url         = {https://github.com/continker/metrollm-bench/blob/main/paper.pdf}
 }

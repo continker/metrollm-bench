@@ -14073,7 +14073,7 @@
         "estimated_minutes": 20.6
       },
       "fare": {
-        "total": 5.0,
+        "total": 2.5,
         "currency": "USD"
       },
       "should_reject": false,

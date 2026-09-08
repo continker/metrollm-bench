@@ -38,4 +38,8 @@ framebook:
     sunday: "05:00-01:00"
     late_night_headway_min: 20
     notes: "All lines follow the same schedule. Headways double after 10 PM."
+  # NOTE: intentionally empty for v1.1. Adding notes here changes the system
+  # prompt for every MARTA case and would invalidate all published MARTA rows.
+  # MARTA-E-003 (food/drink) is therefore ungrounded — documented as a known
+  # defect, to be fixed with a re-run in v2. See docs/decisions.md.
   cultural_notes: []

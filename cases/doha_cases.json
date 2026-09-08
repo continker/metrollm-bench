@@ -12099,7 +12099,7 @@
         "estimated_minutes": 5.8
       },
       "fare": {
-        "total": 4,
+        "total": 2,
         "currency": "QAR"
       },
       "should_reject": false,

@@ -352,8 +352,12 @@ def analyze(args):
     data = json.load(open(args.annotations))
 
     # Merge progress annotations if provided
-    if hasattr(args, "progress") and args.progress:
-        progress = json.load(open(args.progress))
+    for arg_name, target_key in (("progress", "annotator_1_score"),
+                                 ("progress2", "annotator_2_score")):
+        path = getattr(args, arg_name, None)
+        if not path:
+            continue
+        progress = json.load(open(path))
         # Build lookup: (case_id, rubric) -> score
         prog_map = {}
         for p in progress:
@@ -361,11 +365,11 @@ def analyze(args):
         merged = 0
         for d in data:
             key = (d["case_id"], d["rubric"])
-            if key in prog_map and d.get("annotator_1_score") is None:
-                d["annotator_1_score"] = prog_map[key]
+            if key in prog_map and d.get(target_key) is None:
+                d[target_key] = prog_map[key]
                 merged += 1
         if merged:
-            print(f"Merged {merged} annotations from progress file")
+            print(f"Merged {merged} annotations from {arg_name} into {target_key}")
 
     # Normalize judge scores: raw points -> 0/1/2 scale
     for d in data:
@@ -460,6 +464,33 @@ def _kappa_from_pairs(pairs, weighted=False):
     return (num / n - den / n) / (1 - den / n) if den / n < 1 else 0.0
 
 
+def _ac2_from_pairs(pairs, weights="quadratic"):
+    """Gwet's AC2 for two raters on the 0-1-2 scale (Gwet 2014, Handbook of
+    Inter-Rater Reliability, 4th ed., ch. 4). Chance agreement uses the
+    average marginal π_k = (n_k. + n_.k) / 2n, so the statistic stays
+    informative under skewed marginals, unlike κ. weights: "identity" gives
+    AC1, "linear" 1 - |i-j|/(K-1), "quadratic" 1 - (i-j)^2/(K-1)^2 (the same
+    weights as κ_w above)."""
+    K = 3
+    n = len(pairs)
+    if n == 0:
+        return 0.0
+    if weights == "identity":
+        w = [[1.0 if i == j else 0.0 for j in range(K)] for i in range(K)]
+    elif weights == "linear":
+        w = [[1 - abs(i - j) / (K - 1) for j in range(K)] for i in range(K)]
+    else:
+        w = [[1 - (i - j) ** 2 / (K - 1) ** 2 for j in range(K)] for i in range(K)]
+    matrix = [[0] * K for _ in range(K)]
+    for a, b in pairs:
+        matrix[a][b] += 1
+    pa = sum(w[i][j] * matrix[i][j] for i in range(K) for j in range(K)) / n
+    pi = [(sum(matrix[k]) + sum(matrix[i][k] for i in range(K))) / (2 * n) for k in range(K)]
+    t_w = sum(w[i][j] for i in range(K) for j in range(K))
+    pe = t_w / (K * (K - 1)) * sum(p * (1 - p) for p in pi)
+    return (pa - pe) / (1 - pe) if pe < 1 else 0.0
+
+
 def _compute_agreement(label, cases, key_a, key_b, indent=False):
     """Compute agreement metrics between two score columns (both on 0-1-2 scale)."""
     pairs = [(d[key_a], d[key_b]) for d in cases if d.get(key_a) is not None and d.get(key_b) is not None]
@@ -497,6 +528,7 @@ def _compute_agreement(label, cases, key_a, key_b, indent=False):
         print(f"{prefix}  Within-1 agreement:  {within1_pct:.0f}% ({within1}/{n})")
         print(f"{prefix}  Cohen's κ:           {kappa:.3f}")
         print(f"{prefix}  Weighted κ (quad):   {wkappa:.3f} ({qual}) [95% CI: {ci_lo:.3f}–{ci_hi:.3f}]")
+        print(f"{prefix}  Gwet AC2 (quad):     {_ac2_from_pairs(pairs, 'quadratic'):.3f}")
 
         # 3x3 confusion matrix
         K = 3
@@ -527,7 +559,8 @@ def main():
 
     ana = sub.add_parser("analyze", help="Analyze completed annotations")
     ana.add_argument("--annotations", default="results/calibration_cases.json")
-    ana.add_argument("--progress", help="JSON array of partial annotations [{case_id, rubric, score}] to merge")
+    ana.add_argument("--progress", help="JSON array of partial annotations [{case_id, rubric, score}] to merge into annotator_1_score")
+    ana.add_argument("--progress2", help="Same format, merged into annotator_2_score (second annotator's download)")
 
     args = parser.parse_args()
     if args.command == "select":

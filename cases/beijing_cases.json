@@ -16451,7 +16451,7 @@
         "estimated_minutes": 23.0
       },
       "fare": {
-        "total": 8,
+        "total": 4,
         "currency": "CNY"
       },
       "should_reject": false,

@@ -14508,7 +14508,7 @@
         "estimated_minutes": 8.7
       },
       "fare": {
-        "total": 50,
+        "total": 25,
         "currency": "TWD"
       },
       "should_reject": false,

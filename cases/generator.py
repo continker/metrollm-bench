@@ -935,6 +935,9 @@ ADVERSARIAL_SCENARIOS: list[dict] = [
         ],
         "should_reject": False,
         "rejection_reason": "",
+        # The corrections are prose, so the last passenger_count_changed event
+        # (2 adults) does not reflect the final count. State it explicitly.
+        "final_passengers": {"adults": 1},
         "acceptable_response_patterns": ["1 adult", "fare"],
         "acceptable_tools": ["route_planner", "fare_calculator"],
         "hallucination_traps": [],
@@ -3642,6 +3645,9 @@ def generate_category_h(
                             pax[k] = evt[k]
                     if pax:
                         passengers = pax
+            # Scenarios whose freetext revises the count carry the final value
+            if scenario.get("final_passengers"):
+                passengers = dict(scenario["final_passengers"])
 
             try:
                 route = graph.shortest_path(default_origin_id, default_dest_id)

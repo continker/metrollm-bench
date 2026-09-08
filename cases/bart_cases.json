@@ -5219,6 +5219,7 @@
             "BART-COLM",
             "BART-SSAN",
             "BART-SANB",
+            "BART-SFO",
             "BART-MLBR"
           ],
           "type": "planned_maintenance",
@@ -5242,6 +5243,7 @@
             "BART-COLM",
             "BART-SSAN",
             "BART-SANB",
+            "BART-SFO",
             "BART-MLBR"
           ],
           "type": "planned_maintenance",
@@ -5328,6 +5330,10 @@
           ],
           [
             "BART-SANB",
+            "BART-SFO"
+          ],
+          [
+            "BART-SFO",
             "BART-MLBR"
           ]
         ],
@@ -12925,7 +12931,7 @@
         "estimated_minutes": 18.1
       },
       "fare": {
-        "total": 9.8,
+        "total": 4.9,
         "currency": "USD"
       },
       "should_reject": false,

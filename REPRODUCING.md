@@ -36,7 +36,7 @@ uv run python -m harness.scorer --system marta \
   --results results/run_marta.json --output results/run_marta_scored.json --no-judge
 ```
 
-Repeat per system (`marta doha bart taipei cta beijing`). Drop `--no-judge` to add the six judged Tier-2 rubrics (needs `ANTHROPIC_API_KEY`; judgments are disk-cached). For hosted models point `--llm-url` at the provider's OpenAI-compatible endpoint; the runner handles the family-specific settings from the paper (temperature 0.0 locally and for Mistral; the GPT-5 family requires temperature 1.0, with `reasoning_effort` passed through).
+Repeat per system (`marta doha bart taipei cta beijing`). Drop `--no-judge` to add the six judged Tier-2 rubrics (needs `ANTHROPIC_API_KEY`; judgments are disk-cached). For hosted models point `--llm-url` at the provider's OpenAI-compatible endpoint; the runner handles the family-specific settings from the paper (temperature 0.0 locally and for Mistral; the GPT-5 family requires temperature 1.0, with `reasoning_effort` passed through). The GPT-5.6 deployments on Azure accept function tools together with `reasoning_effort` only on the Responses API: pass `--api-dialect responses`, and the runner converts the payload back to chat shape so scoring is unchanged. When a round overflows the output budget the runner doubles it, up to 32768 tokens; `--no-escalate` pins the budget at `--max-tokens` for configuration-controlled comparisons.
 
 ## 3. Rule-based baseline
 

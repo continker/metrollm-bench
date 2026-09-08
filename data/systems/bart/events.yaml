@@ -186,7 +186,7 @@ templates:
           segment:
             from_station: "BART-DALY"
             to_station: "BART-MLBR"
-            stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-MLBR"]
+            stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-SFO", "BART-MLBR"]
           type: "planned_maintenance"
           severity: "warning"
           message: "Red Line: No service between Daly City and Millbrae this weekend for rail replacement. Free bus shuttle available between affected stations."
@@ -198,7 +198,7 @@ templates:
         segment:
           from_station: "BART-DALY"
           to_station: "BART-MLBR"
-          stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-MLBR"]
+          stations: ["BART-DALY", "BART-COLM", "BART-SSAN", "BART-SANB", "BART-SFO", "BART-MLBR"]
         schedule: "weekend"
         replacement_service: "bus"
         advisory_must_mention: ["daly city", "millbrae", "bus shuttle", "weekend"]
@@ -207,7 +207,8 @@ templates:
           - ["BART-DALY", "BART-COLM"]
           - ["BART-COLM", "BART-SSAN"]
           - ["BART-SSAN", "BART-SANB"]
-          - ["BART-SANB", "BART-MLBR"]
+          - ["BART-SANB", "BART-SFO"]
+          - ["BART-SFO", "BART-MLBR"]
 
       - id: "pm-fremont-south"
         disruption:

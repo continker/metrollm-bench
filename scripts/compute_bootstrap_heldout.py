@@ -82,8 +82,11 @@ def merge_seeds(templates: list[str], holdout: set[str]) -> dict[str, tuple[floa
     common = set(per[0])
     for p in per[1:]:
         common &= set(p)
+    # Sorted so the per-case order (and hence the resample draws) does not
+    # depend on Python's per-process hash seed; without this the PEFT rows
+    # of Table 6 differed between otherwise identical runs.
     return {cid: (sum(p[cid][0] for p in per) / len(per),
-                  sum(p[cid][1] for p in per) / len(per)) for cid in common}
+                  sum(p[cid][1] for p in per) / len(per)) for cid in sorted(common)}
 
 
 def pctile(sv: list[float], p: float) -> float:

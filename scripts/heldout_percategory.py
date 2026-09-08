@@ -38,6 +38,7 @@ MODELS: list[tuple[str, list[tuple[Path, str]]]] = [
                              (REPO / "results/v23_clean", "ft_v23_clean_4b_s2_{sys}_scored.json")]),
     ("Qwen 9B+PEFT",        [(REPO / "results/v23_clean", "ft_v23_clean_9b_{sys}_scored.json"),
                              (REPO / "results/v23_clean", "ft_v23_clean_9b_s2_{sys}_scored.json")]),
+    ("GPT-5.6 sol xhigh",   [(REPO / "results/gpt56_sol", "{sys}_scored.json")]),
 ]
 
 

@@ -11,7 +11,7 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/continker/metrollm-bench"
 url: "https://github.com/continker/metrollm-bench"
-version: "paper-v1.1"
+version: "paper-v1.2"
 date-released: "2026-09-09"
 keywords:
   - LLM benchmark
@@ -36,7 +36,7 @@ preferred-citation:
     name: Continker
   year: 2026
   month: 9
-  version: "1.1"
+  version: "1.2"
   doi: 10.5281/zenodo.21893944
   url: "https://github.com/continker/metrollm-bench/blob/main/paper.pdf"
-  notes: "Technical report, v1.1, September 2026."
+  notes: "Technical report, v1.2, September 2026."

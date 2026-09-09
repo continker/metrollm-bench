@@ -154,7 +154,7 @@ The held-out partition is fixed in `data/splits/v23_holdout75_seed42.json`. Trai
 
 ## Citation
 
-The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1.1, September 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`, `paper-v1.1`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
+The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1.2, September 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`, `paper-v1.1`, `paper-v1.2`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
 
 ```bibtex
 @techreport{hendriks2026metrollm,
@@ -162,7 +162,7 @@ The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical r
   author      = {Hendriks, Remco},
   institution = {Continker},
   type        = {Technical report},
-  number      = {v1.1},
+  number      = {v1.2},
   year        = {2026},
   month       = {9},
   doi         = {10.5281/zenodo.21893944},

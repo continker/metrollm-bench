@@ -25,6 +25,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21893944
     description: "Concept DOI of the technical report; resolves to the latest version."
+  - type: other
+    value: "arXiv:2609.10016"
+    description: "arXiv identifier of the technical report."
 preferred-citation:
   type: report
   title: "MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes"
@@ -38,5 +41,9 @@ preferred-citation:
   month: 9
   version: "1.2"
   doi: 10.5281/zenodo.21893944
-  url: "https://github.com/continker/metrollm-bench/blob/main/paper.pdf"
-  notes: "Technical report, v1.2, September 2026."
+  identifiers:
+    - type: other
+      value: "arXiv:2609.10016"
+      description: "arXiv identifier."
+  url: "https://arxiv.org/abs/2609.10016"
+  notes: "Technical report, v1.2, September 2026. arXiv:2609.10016 [cs.LG]."

@@ -8,6 +8,7 @@ It is a 955-case benchmark across six metro systems. It asks whether a language 
 [![Models](https://img.shields.io/badge/Models-continker-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/continker)
 [![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/metrollm-bench)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B)](paper.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.10016-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.10016)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21893944.svg)](https://doi.org/10.5281/zenodo.21893944)
 [![License](https://img.shields.io/badge/License-Apache%202.0-3DA639?logo=apache&logoColor=white)](LICENSE)
 
@@ -154,7 +155,7 @@ The held-out partition is fixed in `data/splits/v23_holdout75_seed42.json`. Trai
 
 ## Citation
 
-The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1.2, September 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`, `paper-v1.1`, `paper-v1.2`); an arXiv listing will follow, and this section will then be updated with the arXiv ID.
+The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical report, v1.2, September 2026), with a DOI on Zenodo: [10.5281/zenodo.21893944](https://doi.org/10.5281/zenodo.21893944) (concept DOI, always resolving to the latest version). Immutable versions are tagged (`paper-v1`, `paper-v1.1`, `paper-v1.2`). The paper is also on arXiv as [2609.10016](https://arxiv.org/abs/2609.10016) (cs.LG, DOI [10.48550/arXiv.2609.10016](https://doi.org/10.48550/arXiv.2609.10016)).
 
 ```bibtex
 @techreport{hendriks2026metrollm,
@@ -166,7 +167,10 @@ The paper is available in this repository: [`paper.pdf`](paper.pdf) (technical r
   year        = {2026},
   month       = {9},
   doi         = {10.5281/zenodo.21893944},
-  url         = {https://github.com/continker/metrollm-bench/blob/main/paper.pdf}
+  eprint      = {2609.10016},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.LG},
+  url         = {https://arxiv.org/abs/2609.10016}
 }
 ```
 

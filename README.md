@@ -6,6 +6,7 @@ It is a 955-case benchmark across six metro systems. It asks whether a language 
 
 [![Demo](https://img.shields.io/badge/Demo-Live-FF4B4B?logo=huggingface&logoColor=white)](https://huggingface.co/spaces/remcohendriks/metrollm)
 [![Models](https://img.shields.io/badge/Models-continker-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/continker)
+[![Dataset](https://img.shields.io/badge/Dataset-metrollm--bench-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/continker/metrollm-bench)
 [![Research notes](https://img.shields.io/badge/Research-Continker-1f6feb)](https://continker.ai/metrollm-bench)
 [![Paper](https://img.shields.io/badge/Paper-PDF-B31B1B)](paper.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.10016-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.10016)
@@ -127,7 +128,7 @@ At n=238 the paired-bootstrap CIs include zero. The full 955-case matrix has the
 
 ## Open weights
 
-The four distilled students are public under [`continker/`](https://huggingface.co/continker) on HuggingFace. Each repo carries a Q4_K_M GGUF, the LoRA adapter, and a model card.
+The four distilled students are public under [`continker/`](https://huggingface.co/continker) on HuggingFace. Each repo carries a Q4_K_M GGUF, the LoRA adapter, and a model card. The 955 cases are mirrored as the dataset [`continker/metrollm-bench`](https://huggingface.co/datasets/continker/metrollm-bench) with `train` and `holdout` splits; `scripts/build_hf_dataset.py` regenerates it from `cases/`.
 
 - `continker/Qwen3.5-2B-metro-v24` (1.2 GB)
 - `continker/Qwen3.5-4B-metro-v24` (2.6 GB, best size and quality tradeoff)
